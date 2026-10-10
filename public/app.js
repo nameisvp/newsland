@@ -981,17 +981,24 @@ function renderPremarket(data) {
 
 // Helper to fetch live API with static /data fallback for Cloudflare Pages
 async function safeFetch(primaryUrl, fallbackUrl) {
+  const isLocal = ['localhost', '127.0.0.1'].includes(window.location.hostname);
+  const first = isLocal ? primaryUrl : (fallbackUrl || primaryUrl);
+  const second = isLocal ? fallbackUrl : primaryUrl;
+
   try {
-    const res = await fetch(primaryUrl);
-    if (res.ok) return res;
+    const res = await fetch(first);
+    const ct = res.headers.get('content-type') || '';
+    if (res.ok && (ct.includes('json') || first.endsWith('.json'))) return res;
   } catch (_) {}
-  if (fallbackUrl) {
+
+  if (second && second !== first) {
     try {
-      const fb = await fetch(fallbackUrl);
-      if (fb.ok) return fb;
+      const fb = await fetch(second);
+      const ct = fb.headers.get('content-type') || '';
+      if (fb.ok && (ct.includes('json') || second.endsWith('.json'))) return fb;
     } catch (_) {}
   }
-  return fetch(primaryUrl);
+  return fetch(first);
 }
 
 // Load feeds from server or static data
