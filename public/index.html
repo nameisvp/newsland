@@ -1,0 +1,470 @@
+<!doctype html>
+<html lang="en" data-theme="paper" data-font="serif" data-size="md">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>newsland. — market briefing</title>
+  <meta name="description" content="A minimalist financial briefing with market quotes, lead story carousel, and 3-column broadsheet feed.">
+  <link rel="icon" href="/favicon.svg">
+  <link rel="stylesheet" href="/style.css?v=7">
+  <script src="/app.js?v=7" defer></script>
+</head>
+<body>
+  <!-- Top Navigation Bar -->
+  <header class="header">
+    <div class="header-inner">
+      <div class="brand-block">
+        <a class="wordmark" href="/" aria-label="Newsland home">newsland<span class="ink-dot">.</span></a>
+      </div>
+
+      <div class="search-pill-wrap">
+        <input id="search-input" type="search" placeholder="Search news, stocks, sectors..." autocomplete="off" aria-label="Search news">
+        <svg class="search-pill-ico" viewBox="0 0 16 16" aria-hidden="true">
+          <circle cx="7" cy="7" r="4.5" fill="none" stroke="currentColor" stroke-width="1.6"/>
+          <path d="m10.5 10.5 3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+        </svg>
+        <button id="search-clear" class="search-clear" hidden aria-label="Clear search">×</button>
+      </div>
+
+      <div class="header-right">
+        <span id="date" class="header-date"></span>
+        <button id="menu-btn" class="hamburger-btn" aria-label="Open settings &amp; preferences" title="Preferences">
+          <svg viewBox="0 0 18 18" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+            <path d="M2.5 4.5h13M2.5 9h13M2.5 13.5h13"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Live Market Ticker Bar (populated from /api/market) -->
+  <section class="ticker-strip" aria-label="Market benchmarks">
+    <div class="ticker-inner" id="ticker-inner">
+      <span id="ticker-status" class="ticker-loading">Loading market quotes…</span>
+    </div>
+  </section>
+
+  <!-- Subnav: Trending Keywords + Section Tabs -->
+  <div class="subnav-strip">
+    <div class="subnav-inner">
+      <div class="trending-wrap">
+        <span class="trending-label">Trending</span>
+        <div id="trending-keywords" class="trending-pills" aria-label="Trending keywords">
+          <!-- Populated dynamically: Shares, Growth, Sensex, Nifty, Gold, Prices, Data, Fed, War, Yields, Business -->
+        </div>
+      </div>
+
+      <div class="tabs-wrap">
+        <div id="sector-pills" class="sector-pills" aria-label="Filter by sector">
+          <button class="sector-pill active" data-sector="all">All</button>
+          <button class="sector-pill" data-sector="banking">Banking</button>
+          <button class="sector-pill" data-sector="it">IT</button>
+          <button class="sector-pill" data-sector="energy">Energy</button>
+          <button class="sector-pill" data-sector="auto">Auto</button>
+          <button class="sector-pill" data-sector="metals">Metals</button>
+        </div>
+        <span class="subnav-divider" aria-hidden="true">|</span>
+        <button id="movers-filter-btn" class="movers-filter-btn" aria-pressed="false" title="Filter for high-conviction market movers only">⚡ Market Movers</button>
+        <nav id="region-tabs" class="sec-tabs" role="tablist" aria-label="Briefing sections">
+          <button role="tab" aria-selected="true" data-region="All" class="tab-btn active">All</button>
+          <button role="tab" aria-selected="false" data-region="India" class="tab-btn">India</button>
+          <button role="tab" aria-selected="false" data-region="Global" class="tab-btn">Global</button>
+          <button role="tab" aria-selected="false" data-region="Events" class="tab-btn">Catalysts</button>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <main class="content-body">
+    <!-- Notification alert -->
+    <div id="notice" class="notice-strip" hidden role="alert"></div>
+
+    <!-- Pre-Market / Intraday Trading Desk Brief -->
+    <section id="premarket-brief" class="premarket-brief" aria-label="Trading desk brief" hidden>
+      <div class="premarket-header">
+        <div class="premarket-title-wrap">
+          <span id="premarket-tag" class="premarket-tag">PRE-MARKET DESK BRIEF</span>
+          <span class="premarket-sep">·</span>
+          <span id="premarket-bias-badge" class="premarket-bias-badge">--</span>
+        </div>
+        <div class="premarket-actions">
+          <button id="copy-memo-btn" class="copy-memo-btn" title="Copy formatted summary to clipboard">Copy Memo 📋</button>
+          <button id="premarket-toggle" class="premarket-toggle" aria-expanded="true">Collapse ▴</button>
+        </div>
+      </div>
+      <div id="premarket-body" class="premarket-body">
+        <div class="premarket-cols">
+          <!-- Col 1: Indicated Open / Benchmark Pulse & Range -->
+          <div class="premarket-col">
+            <span id="pm-col-label" class="premarket-col-label">LATEST NIFTY QUOTE</span>
+            <div class="premarket-big-stat">
+              <span id="pm-gift-nifty" class="pm-val">--</span>
+              <span id="pm-gift-chg" class="pm-chg down">--</span>
+            </div>
+            <!-- 52-Week Range Ruler -->
+            <div id="pm-nifty-ruler" class="pm-ruler-wrap" hidden>
+              <div class="pm-ruler-labels">
+                <span id="pm-ruler-min" class="ruler-bound">--</span>
+                <span id="pm-ruler-pos" class="ruler-pos">--</span>
+                <span id="pm-ruler-max" class="ruler-bound">--</span>
+              </div>
+              <div class="pm-ruler-track" title="52-Week Range Position">
+                <div class="pm-ruler-band"></div>
+                <div id="pm-ruler-dot" class="pm-ruler-dot" style="left: 0%;"></div>
+              </div>
+            </div>
+            <!-- Inline 50/200 DMA indicator -->
+            <div id="pm-dma-row" class="pm-dma-row" hidden>
+              <span class="dma-item"><span class="dma-lbl">50-DMA:</span> <span id="pm-dma50-val" class="dma-val">--</span> <span id="pm-dma50-chg" class="dma-pct">--</span></span>
+              <span class="dma-sep">·</span>
+              <span class="dma-item"><span class="dma-lbl">200-DMA:</span> <span id="pm-dma200-val" class="dma-val">--</span> <span id="pm-dma200-chg" class="dma-pct">--</span></span>
+            </div>
+          </div>
+
+          <!-- Col 2: Institutional Flows & Sector Breadth -->
+          <div class="premarket-col">
+            <span class="premarket-col-label">INSTITUTIONAL &amp; BREADTH</span>
+            <div class="pm-flows-row">
+              <span class="flow-item"><span class="flow-name">FII:</span> <span id="pm-fii-val" class="flow-val down">--</span></span>
+              <span class="flow-sep">|</span>
+              <span class="flow-item"><span class="flow-name">DII:</span> <span id="pm-dii-val" class="flow-val up">--</span></span>
+            </div>
+            <div class="pm-breadth-row">
+              <span class="breadth-lbl">Sectors:</span>
+              <span id="pm-sector-ratio" class="breadth-ratio">--</span>
+              <div id="pm-sector-chips" class="pm-sector-chips-compact">
+                <!-- Sector chips populated dynamically -->
+              </div>
+            </div>
+            <p id="pm-flows-sub" class="pm-sub">--</p>
+          </div>
+
+          <!-- Col 3: Overnight Macro -->
+          <div class="premarket-col">
+            <span class="premarket-col-label">OVERNIGHT MACRO CUES</span>
+            <div class="pm-overnight-grid">
+              <span class="cue-item"><span class="cue-k">S&amp;P 500:</span> <span id="pm-sp-val" class="cue-v down">--</span></span>
+              <span class="cue-item"><span class="cue-k">Brent:</span> <span id="pm-brent-val" class="cue-v up">--</span></span>
+              <span class="cue-item"><span class="cue-k">Nasdaq:</span> <span id="pm-nasdaq-val" class="cue-v down">--</span></span>
+              <span class="cue-item"><span class="cue-k">US 10Y:</span> <span id="pm-us10y-val" class="cue-v">--</span></span>
+            </div>
+            <p id="pm-gift-sub" class="pm-sub">--</p>
+          </div>
+        </div>
+
+        <!-- Floor Pivots & Regime Strip -->
+        <div id="pm-pivots-strip" class="pm-pivots-strip">
+          <div class="pivots-title-row">
+            <div class="pivots-title-wrap">
+              <span class="pivots-title">CALCULATED FLOOR PIVOTS</span>
+              <span class="pvt-sep">·</span>
+              <span id="pm-regime-badge" class="breadth-badge">--</span>
+            </div>
+            <span class="pivots-sub">Classic S2 · S1 · P · R1 · R2 Reference Levels</span>
+          </div>
+          <div class="pivots-grid">
+            <div class="pivot-index-row">
+              <span class="pvt-idx-name">NIFTY 50</span>
+              <span class="pvt-cell"><span class="pvt-lbl">S2</span> <span id="pm-nifty-s2" class="pvt-num">--</span></span>
+              <span class="pvt-sep">·</span>
+              <span class="pvt-cell"><span class="pvt-lbl">S1</span> <span id="pm-nifty-s1" class="pvt-num">--</span></span>
+              <span class="pvt-sep">·</span>
+              <span class="pvt-cell pivot-mid"><span class="pvt-lbl">P</span> <span id="pm-nifty-pivot" class="pvt-num">--</span></span>
+              <span class="pvt-sep">·</span>
+              <span class="pvt-cell"><span class="pvt-lbl">R1</span> <span id="pm-nifty-r1" class="pvt-num">--</span></span>
+              <span class="pvt-sep">·</span>
+              <span class="pvt-cell"><span class="pvt-lbl">R2</span> <span id="pm-nifty-r2" class="pvt-num">--</span></span>
+            </div>
+            <div class="pivot-index-row">
+              <span class="pvt-idx-name">BANK NIFTY</span>
+              <span class="pvt-cell"><span class="pvt-lbl">S2</span> <span id="pm-bn-s2" class="pvt-num">--</span></span>
+              <span class="pvt-sep">·</span>
+              <span class="pvt-cell"><span class="pvt-lbl">S1</span> <span id="pm-bn-s1" class="pvt-num">--</span></span>
+              <span class="pvt-sep">·</span>
+              <span class="pvt-cell pivot-mid"><span class="pvt-lbl">P</span> <span id="pm-bn-pivot" class="pvt-num">--</span></span>
+              <span class="pvt-sep">·</span>
+              <span class="pvt-cell"><span class="pvt-lbl">R1</span> <span id="pm-bn-r1" class="pvt-num">--</span></span>
+              <span class="pvt-sep">·</span>
+              <span class="pvt-cell"><span class="pvt-lbl">R2</span> <span id="pm-bn-r2" class="pvt-num">--</span></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Desk Takeaway -->
+        <div class="premarket-takeaway">
+          <span class="takeaway-label">Desk Take:</span>
+          <span id="pm-takeaway-text" class="takeaway-text">Awaiting sourced market readings.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lead Story Hero Carousel -->
+    <section id="hero-carousel" class="hero-carousel" aria-label="Lead market catalyst">
+      <div class="hero-content">
+        <div class="hero-meta">
+          <span id="hero-cat" class="hero-cat">GLOBAL MARKETS</span>
+          <span id="hero-cluster-dot" class="hero-dot" hidden>·</span>
+          <span id="hero-cluster" class="hero-cluster-badge" hidden>● 2 SOURCES</span>
+          <span class="hero-dot">·</span>
+          <span id="hero-time" class="hero-time">23 minutes ago</span>
+        </div>
+        <h1 class="hero-headline">
+          <a id="hero-link" href="#" target="_blank" rel="noopener noreferrer">
+            Gold prices steady after weekly slide as weak jobs data ease Fed hike bets
+          </a>
+        </h1>
+        <p id="hero-snippet" class="hero-snippet">Rates and liquidity can influence valuations, borrowing costs and banks.</p>
+        <div id="hero-chain" class="hero-impact-chain" hidden></div>
+        <div id="hero-intel" class="hero-intel" hidden>
+          <span class="hero-intel-label">Impact:</span>
+          <span id="hero-impact" class="hero-impact">Rates · Equities</span>
+          <span class="hero-dot">·</span>
+          <span id="hero-sources" class="hero-sources"></span>
+        </div>
+        <div id="hero-companies" class="hero-companies-row" hidden></div>
+        <div class="hero-nav">
+          <button id="hero-prev" class="hero-nav-arrow" aria-label="Previous story">←</button>
+          <span id="hero-counter" class="hero-counter">1 / 5</span>
+          <button id="hero-next" class="hero-nav-arrow" aria-label="Next story">→</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3-Column Feed Grid -->
+    <section id="briefing" class="feed-section" aria-label="Market wire">
+      <p id="ranking-note" class="ranking-note" hidden></p>
+      <div id="pulse-columns" class="feed-columns">
+        <div id="col-0" class="feed-col"></div>
+        <div id="col-1" class="feed-col"></div>
+        <div id="col-2" class="feed-col"></div>
+      </div>
+      <details id="more-details" class="more-stories" hidden>
+        <summary id="more-label">More headlines</summary>
+        <div class="feed-columns">
+          <div id="more-col-0" class="feed-col"></div>
+          <div id="more-col-1" class="feed-col"></div>
+          <div id="more-col-2" class="feed-col"></div>
+        </div>
+      </details>
+      <div id="empty-feed" class="empty-feed" hidden>
+        <p>No headlines found matching your criteria.</p>
+      </div>
+    </section>
+
+    <!-- Hidden compatibility markers for existing listeners -->
+    <div id="stories" hidden></div>
+    <div id="more" hidden></div>
+    <span id="selection" hidden></span>
+    <span id="all-count" hidden></span>
+    <span id="india-count" hidden></span>
+    <span id="global-count" hidden></span>
+    <span id="freshness" hidden></span>
+
+    <!-- Catalysts / Agenda View -->
+    <section id="calendar-view" class="calendar-view" hidden aria-label="Scheduled catalysts">
+      <div class="calendar-header">
+        <div class="calendar-title-wrap">
+          <h2 id="calendar-title" class="calendar-heading">Market Catalysts</h2>
+          <span id="calendar-health" class="calendar-sub" role="status"></span>
+        </div>
+        <p class="calendar-desc">
+          High-conviction monetary policy statements, corporate earnings releases, macroeconomic data, and derivative expiries.
+        </p>
+        <div class="catalyst-filters" id="catalyst-filters">
+          <button class="cat-filter-btn active" data-filter="all">All Catalysts</button>
+          <button class="cat-filter-btn" data-filter="high">High Impact Only</button>
+          <button class="cat-filter-btn" data-filter="india">India 🇮🇳</button>
+          <button class="cat-filter-btn" data-filter="earnings">Earnings</button>
+          <button class="cat-filter-btn" data-filter="macro">Macro Data</button>
+          <button class="cat-filter-btn" data-filter="expiry">F&amp;O Expiry</button>
+        </div>
+      </div>
+      <div id="events" class="events-stream"></div>
+      <div class="calendar-footer">
+        <p>Verified regulatory schedule: RBI, NSE/BSE announcements, Ministry of Statistics (MoSPI), U.S. Federal Reserve, and official corporate filings.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Off-Canvas Settings & Watchlist Drawer -->
+  <div id="drawer-modal" class="drawer-layer" hidden>
+    <div id="drawer-backdrop" class="drawer-backdrop"></div>
+    <aside class="drawer-panel" aria-label="Settings and Preferences">
+      <div class="drawer-header">
+        <h3>Newsland Settings</h3>
+        <button id="close-drawer" class="drawer-close" aria-label="Close settings">✕</button>
+      </div>
+
+      <div class="drawer-body">
+        <!-- Reading Theme -->
+        <div class="drawer-section">
+          <label class="drawer-label">Reading Theme</label>
+          <div class="pill-group">
+            <button class="pill-btn theme-opt active" data-theme-val="paper">Paper</button>
+            <button class="pill-btn theme-opt" data-theme-val="sepia">Sepia</button>
+            <button class="pill-btn theme-opt" data-theme-val="slate">Slate</button>
+            <button class="pill-btn theme-opt" data-theme-val="night">Night</button>
+          </div>
+        </div>
+
+        <!-- Typography -->
+        <div class="drawer-section">
+          <label class="drawer-label">Typography</label>
+          <div class="pill-group">
+            <button id="font-serif-btn" class="pill-btn active">Book Serif</button>
+            <button id="font-sans-btn" class="pill-btn">Modern Sans</button>
+          </div>
+        </div>
+
+        <!-- Text Size -->
+        <div class="drawer-section">
+          <label class="drawer-label">Text Size</label>
+          <div class="pill-group">
+            <button id="font-dec" class="pill-btn">A−</button>
+            <button id="font-inc" class="pill-btn">A+</button>
+          </div>
+        </div>
+
+        <!-- Horizon -->
+        <div class="drawer-section">
+          <label class="drawer-label">Time Horizon</label>
+          <div class="pill-group">
+            <button data-horizon="today" aria-pressed="true" class="pill-btn horizon-btn active">Today</button>
+            <button data-horizon="week" aria-pressed="false" class="pill-btn horizon-btn">This week</button>
+          </div>
+        </div>
+
+        <!-- Quick Filters -->
+        <div class="drawer-section">
+          <label class="drawer-label">Feed Filters</label>
+          <div class="checkbox-list">
+            <label class="check-item">
+              <input id="watch-only" type="checkbox">
+              <span>Watchlist only</span>
+            </label>
+            <label class="check-item">
+              <input id="new-only" type="checkbox">
+              <span>New since previous visit</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Watchlist -->
+        <div class="drawer-section">
+          <div class="drawer-label-row">
+            <label class="drawer-label">Personal Watchlist</label>
+            <span id="watch-count" class="watch-badge">0</span>
+          </div>
+          <form id="watch-form" class="drawer-form">
+            <input id="watch-input" maxlength="60" placeholder="Add ticker, stock, or sector..." required autocomplete="off">
+            <button type="submit" class="drawer-btn">Add</button>
+          </form>
+          <div id="watch-chips" class="drawer-chips"></div>
+          <button id="reset-feedback" class="quiet-action-link" hidden>Restore hidden stories</button>
+          <p class="drawer-hint">Headline actions: <em>Useful to me</em> provides a subtle personal ranking boost; <em>Hide story</em> removes it from your view.</p>
+        </div>
+
+        <!-- Sources Health & Refresh -->
+        <div class="drawer-section">
+          <div class="drawer-label-row">
+            <label class="drawer-label">Feed Registry</label>
+            <button id="refresh" class="refresh-action-btn">
+              <svg viewBox="0 0 20 20" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 7a6.5 6.5 0 0 0-11.4-2L3 7m0 0V3m0 4h4m-3 6a6.5 6.5 0 0 0 11.4 2L17 13m0 0v4m0-4h-4"/>
+              </svg>
+              Refresh
+            </button>
+          </div>
+          <button id="sources-button" class="sources-panel-btn">
+            Inspect Sources Health (<span id="health">—</span>)
+          </button>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <!-- Sources Health Modal -->
+  <div id="source-modal" class="modal-layer" hidden>
+    <div id="sources-backdrop" class="modal-backdrop"></div>
+    <div class="modal-box">
+      <div class="modal-top">
+        <h3>Connected Feed Sources</h3>
+        <button id="close-sources" class="close-btn" aria-label="Close">✕</button>
+      </div>
+      <div id="source-list" class="source-table"></div>
+    </div>
+  </div>
+
+  <!-- Company Financial X-Ray Flyout Drawer -->
+  <div id="company-modal" class="company-drawer-layer" hidden>
+    <div id="company-backdrop" class="company-backdrop"></div>
+    <aside class="company-drawer-panel" aria-label="Company Financial X-Ray">
+      <div class="company-drawer-header">
+        <div class="company-head-meta">
+          <div class="company-head-titles">
+            <h2 id="xray-name" class="xray-name">Tata Consultancy Services</h2>
+            <div class="xray-subhead">
+              <span id="xray-symbol" class="xray-symbol">TCS.NS</span>
+              <span class="xray-sep">·</span>
+              <span id="xray-sector" class="xray-sector">IT Services</span>
+            </div>
+          </div>
+          <button id="close-company-drawer" class="company-close" aria-label="Close company brief">✕</button>
+        </div>
+        <div class="company-price-strip">
+          <div class="xray-price-block">
+            <span id="xray-price" class="xray-price">--</span>
+            <span id="xray-chg" class="xray-chg">--</span>
+          </div>
+          <span class="xray-exchange-badge">NSE · Live/Delayed</span>
+        </div>
+      </div>
+
+      <div class="company-drawer-body">
+        <!-- 52-Week Range Bar -->
+        <div class="xray-range-section">
+          <div class="xray-range-labels">
+            <span class="range-sub">52W Low: <strong id="xray-52l">--</strong></span>
+            <span class="range-title">52-Week Range</span>
+            <span class="range-sub">52W High: <strong id="xray-52h">--</strong></span>
+          </div>
+          <div class="xray-range-track">
+            <div id="xray-range-needle" class="xray-range-needle" style="left: 50%;"></div>
+          </div>
+        </div>
+
+        <!-- Financial Metrics Grid -->
+        <div class="xray-metrics-grid">
+          <div class="xray-metric-cell">
+            <span class="metric-label">Market Capitalization</span>
+            <span id="xray-mcap" class="metric-val">--</span>
+          </div>
+          <div class="xray-metric-cell">
+            <span class="metric-label">Trailing P/E</span>
+            <span id="xray-pe" class="metric-val">--</span>
+          </div>
+          <div class="xray-metric-cell">
+            <span class="metric-label">Prev Close</span>
+            <span id="xray-prev" class="metric-val">--</span>
+          </div>
+          <div class="xray-metric-cell">
+            <span class="metric-label">Sector Classification</span>
+            <span id="xray-sector-tag" class="metric-val">--</span>
+          </div>
+        </div>
+
+        <!-- Newsland Coverage Clusters for this Company -->
+        <div class="xray-news-section">
+          <div class="xray-news-head">
+            <span class="xray-news-title">NEWSLAND COVERAGE WIRE</span>
+            <span id="xray-news-count" class="xray-news-count">0 stories</span>
+          </div>
+          <div id="xray-stories-list" class="xray-stories-list">
+            <div class="xray-loading-text">Loading company coverage…</div>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </div>
+</body>
+</html>

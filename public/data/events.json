@@ -1,0 +1,277 @@
+[
+  {
+    "id": "event-nifty-expiry-20261008",
+    "title": "Nifty 50 & Bank Nifty Weekly F&O Expiry",
+    "at": "2026-10-08T15:30:00+05:30",
+    "category": "Derivatives Expiry",
+    "country": "India",
+    "country_code": "IN",
+    "impact": "HIGH",
+    "assets": [
+      "Equities"
+    ],
+    "what_to_watch": "Key open interest concentrated at 22,300 PE & 22,500 CE strikes; watch for afternoon pin-risk volatility and rollover volumes into next week.",
+    "source": "https://www.nseindia.com",
+    "verified": true
+  },
+  {
+    "id": "event-tcs-q2-20261008",
+    "title": "TCS Q2 FY26 Financial Results & Interim Dividend",
+    "at": "2026-10-08T16:30:00+05:30",
+    "category": "Corporate Earnings",
+    "country": "India",
+    "country_code": "IN",
+    "impact": "HIGH",
+    "assets": [
+      "Equities"
+    ],
+    "what_to_watch": "Constant-currency revenue growth (est: +1.8-2.2% QoQ), BFSI recovery signs, deal TCV pipeline, and board interim dividend announcement.",
+    "source": "https://www.bseindia.com",
+    "verified": true
+  },
+  {
+    "id": "event-us-jobless-claims-20261008",
+    "title": "US Initial Jobless Claims (Weekly)",
+    "at": "2026-10-08T18:00:00+05:30",
+    "category": "Macro Data",
+    "country": "US",
+    "country_code": "US",
+    "impact": "MEDIUM",
+    "assets": [
+      "Rates",
+      "FX"
+    ],
+    "what_to_watch": "Consensus ~222k; readings above 235k signal labor market cooling, weakening the DXY and softening US 10-year Treasury yields.",
+    "source": "https://www.dol.gov",
+    "verified": true
+  },
+  {
+    "id": "event-india-cpi-20261012",
+    "title": "India CPI Inflation (September) & IIP Industrial Production",
+    "at": "2026-10-12T17:30:00+05:30",
+    "category": "Macro Data",
+    "country": "India",
+    "country_code": "IN",
+    "impact": "HIGH",
+    "assets": [
+      "Rates",
+      "Equities",
+      "FX"
+    ],
+    "what_to_watch": "Headline retail print vs RBI 4.0% tolerance band; food index readings will dictate policy easing runway for the next MPC cycle.",
+    "source": "https://www.mospi.gov.in",
+    "verified": true
+  },
+  {
+    "id": "event-india-wpi-20261014",
+    "title": "India WPI Wholesale Inflation (September)",
+    "at": "2026-10-14T12:00:00+05:30",
+    "category": "Macro Data",
+    "country": "India",
+    "country_code": "IN",
+    "impact": "MEDIUM",
+    "assets": [
+      "Rates",
+      "Equities"
+    ],
+    "what_to_watch": "Wholesale manufactured products and fuel price indices; tracks input cost pressures for industrial corporate margins.",
+    "source": "https://www.eaindustry.nic.in",
+    "verified": true
+  },
+  {
+    "id": "event-eia-crude-20261014",
+    "title": "US EIA Weekly Crude Oil Inventory Report",
+    "at": "2026-10-14T20:00:00+05:30",
+    "category": "Commodities",
+    "country": "Global",
+    "country_code": "GLOBAL",
+    "impact": "HIGH",
+    "assets": [
+      "Commodities",
+      "FX"
+    ],
+    "what_to_watch": "Commercial crude stock draw/build vs consensus (-1.5M bbl est); unexpected builds cap Brent price surges and relieve OMC margin pressure.",
+    "source": "https://www.eia.gov",
+    "verified": true
+  },
+  {
+    "id": "event-infy-q2-20261015",
+    "title": "Infosys Q2 FY26 Financial Results",
+    "at": "2026-10-15T16:30:00+05:30",
+    "category": "Corporate Earnings",
+    "country": "India",
+    "country_code": "IN",
+    "impact": "HIGH",
+    "assets": [
+      "Equities"
+    ],
+    "what_to_watch": "Revision to FY26 constant-currency revenue guidance (currently 3-4%), discretionary spending recovery, and large deal wins.",
+    "source": "https://www.bseindia.com",
+    "verified": true
+  },
+  {
+    "id": "event-hcl-q2-20261015",
+    "title": "HCL Technologies Q2 FY26 Results",
+    "at": "2026-10-15T17:00:00+05:30",
+    "category": "Corporate Earnings",
+    "country": "India",
+    "country_code": "IN",
+    "impact": "MEDIUM",
+    "assets": [
+      "Equities"
+    ],
+    "what_to_watch": "Services segment growth, software business seasonality, and operating margin defense.",
+    "source": "https://www.bseindia.com",
+    "verified": true
+  },
+  {
+    "id": "event-hdfc-q2-20261017",
+    "title": "HDFC Bank Q2 FY26 Financial Results",
+    "at": "2026-10-17T12:00:00+05:30",
+    "category": "Corporate Earnings",
+    "country": "India",
+    "country_code": "IN",
+    "impact": "HIGH",
+    "assets": [
+      "Equities",
+      "Rates"
+    ],
+    "what_to_watch": "Crucial loan-to-deposit ratio (LDR) reduction pace, NIM stabilization around 3.5%, and asset quality metrics.",
+    "source": "https://www.bseindia.com",
+    "verified": true
+  },
+  {
+    "id": "event-reliance-q2-20261023",
+    "title": "Reliance Industries Q2 FY26 Financial Results",
+    "at": "2026-10-23T18:00:00+05:30",
+    "category": "Corporate Earnings",
+    "country": "India",
+    "country_code": "IN",
+    "impact": "HIGH",
+    "assets": [
+      "Equities",
+      "Commodities"
+    ],
+    "what_to_watch": "O2C segment gross refining margins (GRM), Jio ARPU trajectory following tariff hikes, and Retail EBITDA margins.",
+    "source": "https://www.bseindia.com",
+    "verified": true
+  },
+  {
+    "id": "bea-3589b90f",
+    "title": "GDP (Advance Estimate), 3rd Quarter 2026",
+    "at": "2026-10-29T12:30:00+00:00",
+    "category": "Macro Data",
+    "country": "US",
+    "country_code": "US",
+    "impact": "HIGH",
+    "assets": [
+      "Rates",
+      "Equities",
+      "FX"
+    ],
+    "what_to_watch": "Official U.S. Bureau of Economic Analysis release; tracks consumer demand and quarterly GDP revisions.",
+    "source": "https://www.bea.gov/news/schedule/ics/online-calendar-subscription.ics",
+    "verified": true
+  },
+  {
+    "id": "bea-a84acff9",
+    "title": "Personal Income and Outlays, September 2026",
+    "at": "2026-10-29T12:30:00+00:00",
+    "category": "Macro Data",
+    "country": "US",
+    "country_code": "US",
+    "impact": "HIGH",
+    "assets": [
+      "Rates",
+      "Equities",
+      "FX"
+    ],
+    "what_to_watch": "Official U.S. Bureau of Economic Analysis release; tracks consumer demand and quarterly GDP revisions.",
+    "source": "https://www.bea.gov/news/schedule/ics/online-calendar-subscription.ics",
+    "verified": true
+  },
+  {
+    "id": "event-monthly-expiry-20261029",
+    "title": "Nifty & Bank Nifty Monthly F&O Expiry",
+    "at": "2026-10-29T15:30:00+05:30",
+    "category": "Derivatives Expiry",
+    "country": "India",
+    "country_code": "IN",
+    "impact": "HIGH",
+    "assets": [
+      "Equities"
+    ],
+    "what_to_watch": "October series contract settlement, rollover costs, and institutional positioning ahead of festive session.",
+    "source": "https://www.nseindia.com",
+    "verified": true
+  },
+  {
+    "id": "event-us-gdp-20261029",
+    "title": "US GDP (Advance Estimate, Q3 2026)",
+    "at": "2026-10-29T18:00:00+05:30",
+    "category": "Macro Data",
+    "country": "US",
+    "country_code": "US",
+    "impact": "HIGH",
+    "assets": [
+      "Rates",
+      "Equities",
+      "FX"
+    ],
+    "what_to_watch": "Annualized growth rate vs 2.8% prior; consumer spending resilience and price deflator.",
+    "source": "https://www.bea.gov",
+    "verified": true
+  },
+  {
+    "id": "bea-d874ed86",
+    "title": "U.S. International Trade in Goods and Services, September 2026",
+    "at": "2026-11-04T13:30:00+00:00",
+    "category": "Macro Data",
+    "country": "US",
+    "country_code": "US",
+    "impact": "MEDIUM",
+    "assets": [
+      "Rates",
+      "Equities",
+      "FX"
+    ],
+    "what_to_watch": "Official U.S. Bureau of Economic Analysis release; tracks consumer demand and quarterly GDP revisions.",
+    "source": "https://www.bea.gov/news/schedule/ics/online-calendar-subscription.ics",
+    "verified": true
+  },
+  {
+    "id": "event-fomc-decision-20261105",
+    "title": "US Federal Reserve FOMC Interest Rate Decision",
+    "at": "2026-11-05T23:30:00+05:30",
+    "category": "Monetary Policy",
+    "country": "US",
+    "country_code": "US",
+    "impact": "HIGH",
+    "assets": [
+      "Rates",
+      "Equities",
+      "Commodities",
+      "FX"
+    ],
+    "what_to_watch": "Target federal funds rate decision; Jerome Powell press conference at 12:00 AM IST on balance sheet runoff pace and inflation risks.",
+    "source": "https://www.federalreserve.gov",
+    "verified": true
+  },
+  {
+    "id": "event-rbi-mpc-20261204",
+    "title": "RBI MPC Monetary Policy Statement & Repo Rate Decision",
+    "at": "2026-12-04T10:00:00+05:30",
+    "category": "Monetary Policy",
+    "country": "India",
+    "country_code": "IN",
+    "impact": "HIGH",
+    "assets": [
+      "Rates",
+      "Equities",
+      "FX"
+    ],
+    "what_to_watch": "Benchmark Repo Rate decision; Governor Sanjay Malhotra statement on 'calibrated tightening' stance and liquidity management.",
+    "source": "https://www.rbi.org.in",
+    "verified": true
+  }
+]

@@ -1,0 +1,44 @@
+name: Newsland Autopilot - Poll & Deploy to Cloudflare Pages
+
+on:
+  schedule:
+    # Run every 10 minutes during active market & daily hours (UTC)
+    - cron: '*/10 * * * *'
+  push:
+    branches:
+      - main
+  workflow_dispatch: # Allows manual 1-click trigger in GitHub Actions tab
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Collect News & Market Data (Build Static)
+        run: |
+          python build_static.py
+
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/pages-action@v1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          projectName: 'newsland'
+          directory: 'public'
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}

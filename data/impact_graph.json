@@ -1,0 +1,207 @@
+{
+  "CRUDE_SURGE": {
+    "label": "Rising crude \u00b7 potential sector effects",
+    "keywords": [
+      "crude",
+      "oil",
+      "brent",
+      "opec",
+      "energy"
+    ],
+    "tailwinds": [
+      "ONGC",
+      "Oil India"
+    ],
+    "headwinds": [
+      "Asian Paints",
+      "IndiGo",
+      "BPCL",
+      "MRF"
+    ],
+    "rationale": "Crude >$100 boosts upstream realizations but inflates airline ATF and paint solvent raw material costs."
+  },
+  "CRUDE_DROP": {
+    "label": "Falling crude \u00b7 potential sector effects",
+    "keywords": [
+      "crude falls",
+      "oil drops",
+      "crude slumps",
+      "oil slides"
+    ],
+    "tailwinds": [
+      "Asian Paints",
+      "IndiGo",
+      "BPCL",
+      "Apollo Tyres"
+    ],
+    "headwinds": [
+      "ONGC",
+      "Oil India"
+    ],
+    "rationale": "Softening crude reduces airline fuel bills and OMC procurement costs while softening paint raw materials."
+  },
+  "RATE_HIKE": {
+    "label": "Hawkish Central Bank / Rate Hike",
+    "keywords": [
+      "rate hike",
+      "repo rate",
+      "mpc",
+      "fed hike",
+      "interest rate hike",
+      "tightening"
+    ],
+    "tailwinds": [
+      "SBI",
+      "ICICI Bank",
+      "HDFC Bank"
+    ],
+    "headwinds": [
+      "DLF",
+      "Godrej Properties",
+      "Tata Motors",
+      "Bajaj Finance"
+    ],
+    "rationale": "Rate hikes lift net interest margins for large CASA lenders but dampen rate-sensitive housing and auto demand."
+  },
+  "RATE_CUT": {
+    "label": "Dovish Central Bank / Rate Cut",
+    "keywords": [
+      "rate cut",
+      "easing",
+      "repo rate cut",
+      "rate cut bets"
+    ],
+    "tailwinds": [
+      "DLF",
+      "Godrej Properties",
+      "Tata Motors",
+      "Bajaj Finance"
+    ],
+    "headwinds": [
+      "SBI",
+      "ICICI Bank"
+    ],
+    "rationale": "Lower cost of borrowing stimulates home loans, retail credit, and consumer durables."
+  },
+  "INR_WEAK": {
+    "label": "Rupee Depreciation (USD/INR Rise)",
+    "keywords": [
+      "rupee falls",
+      "rupee drops",
+      "rupee hits low",
+      "dollar strengthens",
+      "rupee weakens",
+      "dxy surges"
+    ],
+    "tailwinds": [
+      "TCS",
+      "Infosys",
+      "Sun Pharma",
+      "Cipla"
+    ],
+    "headwinds": [
+      "Voltas",
+      "Dixon Tech",
+      "InterGlobe Aviation"
+    ],
+    "rationale": "Exporters billed in USD gain translation windfalls, while electronics importers face input cost spikes."
+  },
+  "INR_STRONG": {
+    "label": "Rupee Appreciation",
+    "keywords": [
+      "rupee gains",
+      "rupee strengthens",
+      "rupee rallies",
+      "dollar eases"
+    ],
+    "tailwinds": [
+      "Voltas",
+      "Havells",
+      "Dixon Tech"
+    ],
+    "headwinds": [
+      "TCS",
+      "Infosys",
+      "Wipro"
+    ],
+    "rationale": "Stronger INR lowers landed cost of imported components and electronics assemblies."
+  },
+  "GOLD_RALLY": {
+    "label": "Gold / Bullion Surge",
+    "keywords": [
+      "gold price",
+      "gold rises",
+      "gold surges",
+      "bullion",
+      "silver price"
+    ],
+    "tailwinds": [
+      "Titan",
+      "Kalyan Jewellers",
+      "Senco Gold",
+      "Muthoot Finance"
+    ],
+    "headwinds": [],
+    "rationale": "Elevated bullion expands inventory valuation spreads and increases collateral value for gold loan lenders."
+  },
+  "METALS_SPIKE": {
+    "label": "Metals / Commodity Spike",
+    "keywords": [
+      "steel prices",
+      "metal rally",
+      "copper surges",
+      "aluminium",
+      "iron ore"
+    ],
+    "tailwinds": [
+      "Tata Steel",
+      "JSW Steel",
+      "Hindalco",
+      "Vedanta"
+    ],
+    "headwinds": [
+      "Maruti Suzuki",
+      "L&T",
+      "Bharat Electronics"
+    ],
+    "rationale": "Primary producers benefit from expanded realization spreads, while auto and infra face higher bill-of-materials."
+  },
+  "DEFENCE_ORDERS": {
+    "label": "Defence Capex & Orders",
+    "keywords": [
+      "defence order",
+      "defence ministry",
+      "procurement",
+      "warship",
+      "tejas",
+      "missile"
+    ],
+    "tailwinds": [
+      "HAL",
+      "BEL",
+      "Mazagon Dock",
+      "Solar Industries"
+    ],
+    "headwinds": [],
+    "rationale": "Long-term indigenization contracts expand order backlogs and revenue visibility for domestic defence PSUs."
+  },
+  "AI_TECH_BOOM": {
+    "label": "AI Capex & Semiconductor Demand",
+    "keywords": [
+      "ai demand",
+      "chip demand",
+      "semiconductor",
+      "tsmc",
+      "nvidia",
+      "cloud capex"
+    ],
+    "tailwinds": [
+      "TCS",
+      "Infosys",
+      "Tata Elxsi",
+      "Persistent Systems"
+    ],
+    "headwinds": [],
+    "rationale": "Surging enterprise enterprise AI capex accelerates application engineering and data modernization deals."
+  }
+}
