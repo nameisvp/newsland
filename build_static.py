@@ -31,8 +31,28 @@ def main():
     print("[2/5] Collecting calendar events...")
     server.refresh_calendar()
 
+    # Pre-populate from committed data if available
+    local_market = ROOT / 'data' / 'market.json'
+    if local_market.exists():
+        try:
+            saved_m = json.loads(local_market.read_text())
+            if saved_m.get('tickers'):
+                server.MARKET_DATA.update(saved_m)
+        except Exception:
+            pass
+
     print("[3/5] Collecting live market benchmarks...")
-    server.refresh_market()
+    try:
+        server.refresh_market()
+    except Exception as e:
+        print(f"Warning: market refresh error: {e}")
+
+    # Fallback to local market data if yfinance failed
+    if not server.MARKET_DATA.get('tickers') and local_market.exists():
+        try:
+            server.MARKET_DATA = json.loads(local_market.read_text())
+        except Exception:
+            pass
 
     print("[4/5] Generating desk briefing...")
     server.refresh_premarket()
