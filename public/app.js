@@ -191,9 +191,12 @@ function applyFont(font) {
 }
 
 function applySize(size) {
-  currentSize = size;
-  document.documentElement.setAttribute('data-size', size);
-  save('newsland.size', size);
+  currentSize = ['sm', 'md', 'lg'].includes(size) ? size : 'md';
+  document.documentElement.setAttribute('data-size', currentSize);
+  save('newsland.size', currentSize);
+  document.querySelectorAll('.size-opt').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.sizeVal === currentSize);
+  });
 }
 
 applyTheme(currentTheme);
@@ -1262,12 +1265,16 @@ $('new-only').addEventListener('change', render);
 $('font-serif-btn').addEventListener('click', () => applyFont('serif'));
 $('font-sans-btn').addEventListener('click', () => applyFont('sans'));
 
-const sizes = ['sm', 'md', 'lg'];
-$('font-dec').addEventListener('click', () => {
+document.querySelectorAll('.size-opt').forEach(btn => {
+  btn.addEventListener('click', () => applySize(btn.dataset.sizeVal));
+});
+if ($('font-dec')) $('font-dec').addEventListener('click', () => {
+  const sizes = ['sm', 'md', 'lg'];
   const idx = sizes.indexOf(currentSize);
   if (idx > 0) applySize(sizes[idx - 1]);
 });
-$('font-inc').addEventListener('click', () => {
+if ($('font-inc')) $('font-inc').addEventListener('click', () => {
+  const sizes = ['sm', 'md', 'lg'];
   const idx = sizes.indexOf(currentSize);
   if (idx < sizes.length - 1) applySize(sizes[idx + 1]);
 });

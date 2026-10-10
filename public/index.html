@@ -6,8 +6,8 @@
   <title>newsland. — market briefing</title>
   <meta name="description" content="A minimalist financial briefing with market quotes, lead story carousel, and 3-column broadsheet feed.">
   <link rel="icon" href="/favicon.svg">
-  <link rel="stylesheet" href="/style.css?v=7">
-  <script src="/app.js?v=7" defer></script>
+  <link rel="stylesheet" href="/style.css?v=8">
+  <script src="/app.js?v=8" defer></script>
 </head>
 <body>
   <!-- Top Navigation Bar -->
@@ -320,8 +320,9 @@
         <div class="drawer-section">
           <label class="drawer-label">Text Size</label>
           <div class="pill-group">
-            <button id="font-dec" class="pill-btn">A−</button>
-            <button id="font-inc" class="pill-btn">A+</button>
+            <button id="size-sm-btn" class="pill-btn size-opt" data-size-val="sm">A−</button>
+            <button id="size-md-btn" class="pill-btn size-opt active" data-size-val="md">Default</button>
+            <button id="size-lg-btn" class="pill-btn size-opt" data-size-val="lg">A+</button>
           </div>
         </div>
 
