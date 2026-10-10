@@ -100,6 +100,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   transition: background-color 0.12s ease, color 0.12s ease;
+  overflow-x: hidden;
 }
 
 html[data-font="sans"] body {
@@ -2084,7 +2085,14 @@ html[data-font="sans"] .card-title {
 @media (max-width: 680px) {
   .header-inner {
     grid-template-columns: 1fr auto;
-    gap: 12px;
+    padding: 10px 14px;
+    gap: 10px;
+  }
+  .ticker-inner {
+    padding: 7px 14px;
+  }
+  .content-body {
+    padding: 14px 14px 48px;
   }
   .search-pill-wrap {
     grid-column: 1 / -1;
@@ -2094,6 +2102,40 @@ html[data-font="sans"] .card-title {
   .subnav-inner {
     flex-direction: column;
     align-items: flex-start;
+    padding: 10px 14px;
+    gap: 10px;
+  }
+  .tabs-wrap {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding-bottom: 2px;
+  }
+  .tabs-wrap::-webkit-scrollbar {
+    display: none;
+  }
+  .sector-pills {
+    flex-wrap: nowrap;
+  }
+  .premarket-brief {
+    padding: 10px 12px;
+  }
+  .premarket-cols {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .premarket-col:not(:last-child) {
+    border-bottom: 1px dashed var(--border-light);
+    padding-bottom: 12px;
+  }
+  .pivots-title-row {
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .pivot-index-row {
+    font-size: 10px;
+    gap: 6px;
   }
   .feed-columns {
     grid-template-columns: 1fr;
@@ -2101,6 +2143,17 @@ html[data-font="sans"] .card-title {
   }
   .hero-headline {
     font-size: 26px;
+    line-height: 1.22;
+  }
+  .hero-dek {
+    font-size: 14px;
+  }
+  .card-title {
+    font-size: 19px;
+    line-height: 1.3;
+  }
+  .card-snippet {
+    font-size: 14px;
   }
 }
 
