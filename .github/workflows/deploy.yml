@@ -1,16 +1,15 @@
-name: Newsland Autopilot - Poll & Deploy to Cloudflare Pages
+name: Newsland Autopilot - News & Market Collector
 
 on:
   schedule:
-    # Run every 10 minutes during active market & daily hours (UTC)
-    - cron: '*/10 * * * *'
-  push:
-    branches:
-      - main
-  workflow_dispatch: # Allows manual 1-click trigger in GitHub Actions tab
+    # Run every 2 hours on weekdays during Indian market & briefing hours (02:00 to 14:00 UTC = 7:30 AM to 7:30 PM IST)
+    - cron: '0 2,4,6,8,10,12,14 * * 1-5'
+    # Weekend morning briefing at 04:00 UTC (9:30 AM IST) on Saturday & Sunday
+    - cron: '0 4 * * 0,6'
+  workflow_dispatch: # Allows manual 1-click "Run workflow" in GitHub Actions tab anytime
 
 jobs:
-  build-and-deploy:
+  collect-and-publish:
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -34,11 +33,14 @@ jobs:
         run: |
           python build_static.py
 
-      - name: Deploy to Cloudflare Pages
-        uses: cloudflare/pages-action@v1
-        with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          projectName: 'newsland'
-          directory: 'public'
-          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+      - name: Commit and push fresh data
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/ public/data/
+          if git diff --staged --quiet; then
+            echo "No data changes to commit."
+          else
+            git commit -m "Automated briefing & market refresh [skip actions]"
+            git push
+          fi
