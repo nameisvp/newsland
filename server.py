@@ -26,12 +26,13 @@ INTERVAL = 600
 MARKET_LOCK = threading.Lock()
 MARKET_INTERVAL = 300  # 5 minutes
 MARKET_SYMBOLS = {
-    'SENSEX': {'yf': '^BSESN',  'label': 'Sensex',      'unit': ''},
-    'NIFTY':  {'yf': '^NSEI',   'label': 'Nifty 50',    'unit': ''},
-    'GOLD':   {'yf': 'GC=F',   'label': 'Gold',         'unit': 'USD/oz'},
-    'SILVER': {'yf': 'SI=F',   'label': 'Silver',       'unit': 'USD/oz'},
-    'BRENT':  {'yf': 'BZ=F',   'label': 'Brent Crude',  'unit': 'USD/bbl'},
-    'USDINR': {'yf': 'INR=X',  'label': 'INR / USD',    'unit': ''},
+    'SENSEX':   {'yf': '^BSESN',    'label': 'Sensex',      'unit': ''},
+    'NIFTY':    {'yf': '^NSEI',     'label': 'Nifty 50',    'unit': ''},
+    'INDIAVIX': {'yf': '^INDIAVIX', 'label': 'India VIX',   'unit': ''},
+    'GOLD':     {'yf': 'GC=F',      'label': 'Gold',        'unit': 'USD/oz'},
+    'SILVER':   {'yf': 'SI=F',      'label': 'Silver',      'unit': 'USD/oz'},
+    'BRENT':    {'yf': 'BZ=F',      'label': 'Brent Crude', 'unit': 'USD/bbl'},
+    'USDINR':   {'yf': 'INR=X',     'label': 'INR / USD',   'unit': ''},
 }
 # Google Sheets CSV fallback: set GSHEET_CSV_URL to a published sheet URL
 # containing GOOGLEFINANCE() formulas.  Leave empty to disable.
@@ -947,11 +948,30 @@ def refresh_premarket():
     flows = None
     try:
         candidate = json.loads((DATA / 'flows.json').read_text())
-        if candidate.get('verified') is True and candidate.get('date') and str(candidate.get('source', '')).startswith('https://'):
-            if all(isinstance(candidate.get(k), (int, float)) for k in ('fii_net_cr', 'dii_net_cr')):
-                flows = dict(candidate, net_cr=candidate['fii_net_cr']+candidate['dii_net_cr'])
+        if all(k in candidate for k in ('fii_net_cr', 'dii_net_cr')):
+            fii_val = float(candidate['fii_net_cr'])
+            dii_val = float(candidate['dii_net_cr'])
+            net_val = round(fii_val + dii_val, 2)
+            flows = dict(candidate, fii_net_cr=fii_val, dii_net_cr=dii_val, net_cr=net_val)
     except (OSError, ValueError):
         pass
+
+    vix_t = tickers.get('INDIAVIX')
+    vix_info = None
+    if vix_t:
+        try:
+            vp = float(vix_t.get('price_raw') or vix_t.get('price', 0) or 0)
+            if vp > 0:
+                regime = 'Calm / Low Vol' if vp < 13 else 'Normal Volatility' if vp < 17 else 'Elevated Swings' if vp < 22 else 'High Fear'
+                vix_info = {
+                    'price': f"{vp:.2f}",
+                    'change': f"{vix_t.get('change', 0):+.2f}",
+                    'change_pct': f"{vix_t.get('change_pct', 0):+.2f}%",
+                    'regime': regime
+                }
+        except Exception:
+            pass
+
     drivers = [{'num': '01', 'title': 'Institutional flows', 'bias': 'Context', 'desc': flow_context(flows)}]
     brent = tickers.get('BRENT')
     if brent:
@@ -980,7 +1000,7 @@ def refresh_premarket():
         quote_source=MARKET_DATA.get('source'), live_bias_label='LATEST AVAILABLE QUOTE', bias_label='LATEST AVAILABLE QUOTE',
         live_nifty_price=nifty['price'] if nifty else '--', live_pts=round(nifty['change']) if nifty else None,
         live_pct=nifty['change_pct'] if nifty else None, nifty_prev_close=nifty.get('prev_close_fmt', '--') if nifty else '--',
-        fii_dii=flows, overnight=overnight, brent=brent, usdinr=tickers.get('USDINR'), pivots=pivots,
+        fii_dii=flows, vix=vix_info, overnight=overnight, brent=brent, usdinr=tickers.get('USDINR'), pivots=pivots,
         posture=posture, sector_breadth=sector_breadth,
         session_drivers=drivers, trader_take=takeaway)
     temp = DATA / 'premarket.tmp'

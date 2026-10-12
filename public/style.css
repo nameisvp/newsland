@@ -678,6 +678,67 @@ html[data-theme="night"] .ticker-ruler-band {
   gap: 10px;
 }
 
+/* 60-Second Audio Brief Button & Wave */
+.audio-brief-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--ink);
+  color: var(--card-bg);
+  border: 1px solid var(--ink);
+  border-radius: 3px;
+  font-family: var(--font-sans);
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2.5px 8px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  white-space: nowrap;
+}
+
+.audio-brief-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-0.5px);
+}
+
+.audio-brief-btn.is-playing {
+  background: var(--accent-red);
+  border-color: var(--accent-red);
+  color: #fff;
+  box-shadow: 0 0 10px rgba(222, 53, 11, 0.4);
+}
+
+.audio-icon {
+  font-size: 9.5px;
+  line-height: 1;
+}
+
+.soundwave {
+  display: inline-flex;
+  align-items: flex-end;
+  gap: 2px;
+  height: 10px;
+}
+
+.soundwave span {
+  display: inline-block;
+  width: 2px;
+  height: 100%;
+  background: currentColor;
+  border-radius: 1px;
+  animation: audioWave 0.8s ease-in-out infinite alternate;
+}
+
+.soundwave span:nth-child(1) { animation-delay: 0.1s; height: 35%; }
+.soundwave span:nth-child(2) { animation-delay: 0.3s; height: 80%; }
+.soundwave span:nth-child(3) { animation-delay: 0.2s; height: 100%; }
+.soundwave span:nth-child(4) { animation-delay: 0.4s; height: 60%; }
+
+@keyframes audioWave {
+  0% { transform: scaleY(0.3); }
+  100% { transform: scaleY(1); }
+}
+
 .copy-memo-btn {
   background: none;
   border: 1px solid var(--border-light);
@@ -710,6 +771,52 @@ html[data-theme="night"] .ticker-ruler-band {
 
 .premarket-toggle:hover {
   color: var(--ink);
+}
+
+.pm-col-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.pm-vix-badge {
+  font-size: 9px;
+  font-weight: 750;
+  letter-spacing: 0.04em;
+  padding: 1px 6px;
+  border-radius: 3px;
+  background: rgba(100, 116, 139, 0.12);
+  color: var(--ink-secondary);
+  border: 1px solid var(--border-light);
+  font-variant-numeric: tabular-nums;
+  cursor: help;
+  transition: all 0.15s ease;
+}
+
+.pm-vix-badge.vix-calm {
+  background: rgba(0, 135, 90, 0.1);
+  color: var(--green-ticker);
+  border-color: rgba(0, 135, 90, 0.3);
+}
+
+.pm-vix-badge.vix-normal {
+  background: rgba(0, 101, 255, 0.1);
+  color: #0052cc;
+  border-color: rgba(0, 101, 255, 0.3);
+}
+
+.pm-vix-badge.vix-elevated {
+  background: rgba(255, 153, 0, 0.12);
+  color: #d97706;
+  border-color: rgba(255, 153, 0, 0.35);
+}
+
+.pm-vix-badge.vix-fear {
+  background: rgba(222, 53, 11, 0.12);
+  color: var(--red-ticker);
+  border-color: rgba(222, 53, 11, 0.4);
+  font-weight: 800;
 }
 
 .premarket-cols {
@@ -2753,6 +2860,63 @@ html[data-font="sans"] .xray-name {
   transform: translateX(-50%);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
   transition: left 0.25s ease;
+}
+
+/* Interactive TradingView Candlestick Chart */
+.xray-chart-section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.xray-chart-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.xray-chart-title {
+  font-size: 9.5px;
+  font-weight: 750;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+
+.xray-chart-symbol-badge {
+  font-size: 9px;
+  font-weight: 700;
+  padding: 1px 6px;
+  border-radius: 3px;
+  background: var(--bg-subtle);
+  color: var(--ink-muted);
+  border: 1px solid var(--border-light);
+}
+
+.xray-chart-container {
+  width: 100%;
+  height: 270px;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid var(--border-light);
+  background: var(--bg-subtle);
+  position: relative;
+}
+
+.xray-chart-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+.xray-chart-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: var(--ink-muted);
+  font-size: 11px;
 }
 
 /* Financial Metrics Grid */

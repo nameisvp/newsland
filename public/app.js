@@ -936,18 +936,39 @@ function renderPremarket(data) {
       $('pm-dii-val').textContent = `${diiSign}₹${Math.abs(Math.round(dii)).toLocaleString('en-IN')} Cr`;
       $('pm-dii-val').className = `flow-val ${dii >= 0 ? 'up' : 'down'}`;
     }
+    const net = data.fii_dii.net_cr ?? (fii + dii);
+    const netSign = net >= 0 ? '+' : '-';
+    if ($('pm-net-val')) {
+      $('pm-net-val').textContent = `${netSign}₹${Math.abs(Math.round(net)).toLocaleString('en-IN')} Cr`;
+      $('pm-net-val').className = `flow-val ${net >= 0 ? 'up' : 'down'}`;
+    }
     if ($('pm-flows-sub')) {
-      const net = data.fii_dii.net_cr ?? (fii + dii);
-      const netSign = net >= 0 ? '+' : '-';
-      const trend = `${data.fii_dii.date} · ${net >= 0 ? 'Net buying' : 'Net selling'}`;
+      const trend = `${data.fii_dii.date || 'Previous session'} · ${net >= 0 ? 'Net institutional buying' : 'Net institutional absorption'}`;
       $('pm-flows-sub').textContent = `${trend} (${netSign}₹${Math.abs(Math.round(net)).toLocaleString('en-IN')} Cr)`;
     }
-  }
-
-  else {
+  } else {
     if ($('pm-fii-val')) $('pm-fii-val').textContent = '--';
     if ($('pm-dii-val')) $('pm-dii-val').textContent = '--';
+    if ($('pm-net-val')) $('pm-net-val').textContent = '--';
     if ($('pm-flows-sub')) $('pm-flows-sub').textContent = 'Unavailable · dated, verified source required';
+  }
+
+  // India VIX Volatility Gauge
+  if (data.vix && $('pm-vix-badge')) {
+    const vx = data.vix;
+    const vPrice = parseFloat(vx.price) || 0;
+    let cls = 'vix-normal';
+    if (vPrice < 13) cls = 'vix-calm';
+    else if (vPrice < 17) cls = 'vix-normal';
+    else if (vPrice < 22) cls = 'vix-elevated';
+    else cls = 'vix-fear';
+
+    $('pm-vix-badge').textContent = `VIX ${vx.price} (${vx.change_pct})`;
+    $('pm-vix-badge').className = `pm-vix-badge ${cls}`;
+    $('pm-vix-badge').title = `India VIX: ${vx.price} (${vx.change_pct}) · Regime: ${vx.regime || 'Observed'}`;
+  } else if ($('pm-vix-badge')) {
+    $('pm-vix-badge').textContent = 'VIX: --';
+    $('pm-vix-badge').className = 'pm-vix-badge';
   }
 
   // Overnight macro cues
@@ -1464,6 +1485,26 @@ document.addEventListener('click', e => {
   }
 });
 
+// Helper to render TradingView candlestick chart
+function renderTradingViewChart(symbolOrName) {
+  const container = $('xray-chart-container');
+  if (!container) return;
+  const rawSym = String(symbolOrName || '').toUpperCase().trim();
+  const cleanTicker = rawSym.replace(/\.NS$/, '').replace(/\.BO$/, '').trim();
+  if (!cleanTicker) {
+    container.innerHTML = '<div class="xray-chart-placeholder">Chart unavailable for this asset</div>';
+    return;
+  }
+  const isDark = document.documentElement.getAttribute('data-theme') === 'slate' ||
+                 document.documentElement.getAttribute('data-theme') === 'night';
+  const tvTheme = isDark ? 'dark' : 'light';
+  if ($('xray-chart-symbol-badge')) {
+    $('xray-chart-symbol-badge').textContent = `BSE / NSE · ${cleanTicker} · Daily`;
+  }
+  const tvUrl = `https://s.tradingview.com/widgetembed/?frameElementId=tradingview_xray&symbol=BSE:${encodeURIComponent(cleanTicker)}&interval=D&hidesidetoolbar=1&symboledit=0&saveimage=0&toolbarbg=f1f3f6&theme=${tvTheme}&style=1&timezone=Asia%2FKolkata&locale=en`;
+  container.innerHTML = `<iframe id="tradingview-xray-iframe" src="${tvUrl}" style="width: 100%; height: 100%; border: none;" allowtransparency="true" scrolling="no"></iframe>`;
+}
+
 // Company Financial X-Ray Flyout Logic
 async function openCompanyXRay(symbolOrName) {
   if (!symbolOrName) return;
@@ -1485,6 +1526,9 @@ async function openCompanyXRay(symbolOrName) {
   $('xray-sector-tag').textContent = '—';
   $('xray-stories-list').innerHTML = '<div class="xray-loading-text">Loading company coverage & stats…</div>';
 
+  // Embed TradingView interactive chart
+  renderTradingViewChart(symbolOrName);
+
   try {
     const cleanSym = String(symbolOrName || '').toLowerCase().replace(/[^a-z0-9]/g, '');
     const res = await safeFetch(`/api/company?q=${encodeURIComponent(symbolOrName)}`, `/data/companies/${cleanSym}.json`);
@@ -1495,6 +1539,9 @@ async function openCompanyXRay(symbolOrName) {
     $('xray-symbol').textContent = data.symbol || symbolOrName;
     $('xray-sector').textContent = data.sector || 'Equities';
     $('xray-sector-tag').textContent = data.sector || 'Equities';
+    if (data.symbol && data.symbol !== symbolOrName) {
+      renderTradingViewChart(data.symbol);
+    }
 
     $('xray-price').textContent = data.price || '--';
     if (data.change_pct !== undefined) {
@@ -2294,9 +2341,136 @@ if ($('short-useful-btn')) {
   });
 })();
 
+// 60-Second Audio Morning Desk Brief (Web Speech API)
+let isAudioPlaying = false;
+
+function stopAudioBrief() {
+  if ('speechSynthesis' in window) {
+    window.speechSynthesis.cancel();
+  }
+  isAudioPlaying = false;
+  const btn = $('audio-brief-btn');
+  const wave = $('audio-soundwave');
+  if (btn) {
+    btn.classList.remove('is-playing');
+    const label = btn.querySelector('.audio-label');
+    const icon = btn.querySelector('.audio-icon');
+    if (label) label.textContent = '60s Audio Brief';
+    if (icon) icon.textContent = '▶';
+  }
+  if (wave) wave.hidden = true;
+}
+
+function playAudioBrief() {
+  if (!('speechSynthesis' in window)) {
+    alert('Web Speech API is not supported in this browser.');
+    return;
+  }
+  window.speechSynthesis.cancel();
+
+  const parts = [];
+  const session = typeof getISTSession === 'function' ? getISTSession() : { tag: 'Market Briefing' };
+  parts.push(`Good day. Here is your Newsland 60-second financial desk brief for the ${session.tag}.`);
+
+  if (premarketData) {
+    if (premarketData.live_nifty_price && premarketData.live_nifty_price !== '--') {
+      const pts = premarketData.live_pts;
+      const dir = (pts != null && pts >= 0) ? 'up' : 'down';
+      const ptsAbs = pts != null ? Math.abs(pts) : '';
+      const pct = premarketData.live_pct ? Math.abs(premarketData.live_pct) : '';
+      parts.push(`Benchmark Nifty is trading at ${premarketData.live_nifty_price}, ${dir} ${ptsAbs} points or ${pct} percent.`);
+    }
+
+    if (premarketData.vix) {
+      parts.push(`India VIX is at ${premarketData.vix.price}, reflecting ${premarketData.vix.regime || 'observed volatility'}.`);
+    }
+
+    if (premarketData.fii_dii) {
+      const fii = Math.round(premarketData.fii_dii.fii_net_cr || 0);
+      const dii = Math.round(premarketData.fii_dii.dii_net_cr || 0);
+      const net = Math.round(premarketData.fii_dii.net_cr || (fii + dii));
+      const fiiAct = fii >= 0 ? `bought ${fii} crores` : `sold ${Math.abs(fii)} crores`;
+      const diiAct = dii >= 0 ? `bought ${dii} crores` : `sold ${Math.abs(dii)} crores`;
+      const netAct = net >= 0 ? `net buying of ${net} crores` : `net selling of ${Math.abs(net)} crores`;
+      parts.push(`In institutional flows, Foreign institutional investors ${fiiAct}, while Domestic institutions ${diiAct}, closing with ${netAct}.`);
+    }
+  }
+
+  // Top catalysts
+  const topStories = (briefing?.stories || [])
+    .slice()
+    .sort((a, b) => (b.score || 0) - (a.score || 0))
+    .slice(0, 2);
+
+  if (topStories.length) {
+    parts.push("Top catalysts driving today's session include:");
+    topStories.forEach((s, idx) => {
+      const cleanTitle = s.title.replace(/[\(\)\[\]"]/g, '').trim();
+      parts.push(`Catalyst ${idx + 1}: ${cleanTitle}.`);
+    });
+  }
+
+  parts.push('Trade your plan, manage risk strictly, and have a profitable session.');
+
+  const speechText = parts.join(' ');
+  const utterance = new SpeechSynthesisUtterance(speechText);
+  utterance.rate = 1.05;
+  utterance.pitch = 1.0;
+
+  const voices = window.speechSynthesis.getVoices();
+  const englishVoice = voices.find(v => v.lang.startsWith('en-IN')) ||
+                       voices.find(v => v.name.includes('Natural') && v.lang.startsWith('en')) ||
+                       voices.find(v => v.lang.startsWith('en-US')) ||
+                       voices.find(v => v.lang.startsWith('en'));
+  if (englishVoice) {
+    utterance.voice = englishVoice;
+  }
+
+  utterance.onstart = () => {
+    isAudioPlaying = true;
+    const btn = $('audio-brief-btn');
+    const wave = $('audio-soundwave');
+    if (btn) {
+      btn.classList.add('is-playing');
+      const label = btn.querySelector('.audio-label');
+      const icon = btn.querySelector('.audio-icon');
+      if (label) label.textContent = 'Playing Brief';
+      if (icon) icon.textContent = '⏹';
+    }
+    if (wave) wave.hidden = false;
+  };
+
+  utterance.onend = () => {
+    stopAudioBrief();
+  };
+
+  utterance.onerror = () => {
+    stopAudioBrief();
+  };
+
+  window.speechSynthesis.speak(utterance);
+}
+
+function initAudioBrief() {
+  const btn = $('audio-brief-btn');
+  if (!btn) return;
+  btn.addEventListener('click', () => {
+    if (isAudioPlaying) {
+      stopAudioBrief();
+    } else {
+      playAudioBrief();
+    }
+  });
+
+  if ('speechSynthesis' in window && window.speechSynthesis.onvoiceschanged !== undefined) {
+    window.speechSynthesis.onvoiceschanged = () => {};
+  }
+}
+
 // Initial boot
 renderWatch();
 load();
 loadMarket();
+initAudioBrief();
 setInterval(load, 30000);
 setInterval(loadMarket, 60000);

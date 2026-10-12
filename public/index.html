@@ -106,6 +106,13 @@
           </span>
         </div>
         <div class="premarket-actions">
+          <button id="audio-brief-btn" class="audio-brief-btn" title="Listen to 60-Second Audio Market Brief" aria-label="Listen to 60-second morning audio brief">
+            <span class="audio-icon">▶</span>
+            <span class="audio-label">60s Audio Brief</span>
+            <span id="audio-soundwave" class="soundwave" hidden>
+              <span></span><span></span><span></span><span></span>
+            </span>
+          </button>
           <button id="copy-memo-btn" class="copy-memo-btn" title="Copy formatted summary to clipboard">Copy Memo 📋</button>
           <button id="premarket-toggle" class="premarket-toggle" aria-expanded="true">Collapse ▴</button>
         </div>
@@ -141,11 +148,16 @@
 
           <!-- Col 2: Institutional Flows & Sector Breadth -->
           <div class="premarket-col">
-            <span class="premarket-col-label">INSTITUTIONAL &amp; BREADTH</span>
+            <div class="pm-col-header-row">
+              <span class="premarket-col-label">INSTITUTIONAL &amp; BREADTH</span>
+              <span id="pm-vix-badge" class="pm-vix-badge" title="India VIX Volatility Gauge">VIX: --</span>
+            </div>
             <div class="pm-flows-row">
               <span class="flow-item"><span class="flow-name">FII:</span> <span id="pm-fii-val" class="flow-val down">--</span></span>
               <span class="flow-sep">|</span>
               <span class="flow-item"><span class="flow-name">DII:</span> <span id="pm-dii-val" class="flow-val up">--</span></span>
+              <span class="flow-sep">|</span>
+              <span class="flow-item"><span class="flow-name">Net:</span> <span id="pm-net-val" class="flow-val">--</span></span>
             </div>
             <div class="pm-breadth-row">
               <span class="breadth-lbl">Sectors:</span>
@@ -462,6 +474,17 @@
           </div>
           <div class="xray-range-track">
             <div id="xray-range-needle" class="xray-range-needle" style="left: 50%;"></div>
+          </div>
+        </div>
+
+        <!-- Interactive TradingView Candlestick Chart -->
+        <div class="xray-chart-section">
+          <div class="xray-chart-header">
+            <span class="xray-chart-title">TradingView Candlestick Chart</span>
+            <span id="xray-chart-symbol-badge" class="xray-chart-symbol-badge">NSE / BSE · Daily</span>
+          </div>
+          <div id="xray-chart-container" class="xray-chart-container">
+            <div class="xray-chart-placeholder">Loading live candlestick chart...</div>
           </div>
         </div>
 

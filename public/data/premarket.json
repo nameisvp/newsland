@@ -1,8 +1,8 @@
 {
-  "updated": "2026-10-12T17:13:18.712138+00:00",
+  "updated": "2026-10-12T17:52:40.481005+00:00",
   "schema_version": 2,
   "is_live": false,
-  "quote_updated": "2026-10-12T17:13:18.711653+00:00",
+  "quote_updated": "2026-10-12T17:52:40.480561+00:00",
   "quote_date": "2026-10-12",
   "quote_source": "yfinance",
   "live_bias_label": "LATEST AVAILABLE QUOTE",
@@ -11,11 +11,23 @@
   "live_pts": -157,
   "live_pct": -0.7,
   "nifty_prev_close": "22,520",
-  "fii_dii": null,
+  "fii_dii": {
+    "date": "08 Oct 2026 (Prev Close)",
+    "fii_net_cr": -2845.6,
+    "dii_net_cr": 2135.4,
+    "net_cr": -710.2,
+    "trend": "FII Selling / DII Absorbing"
+  },
+  "vix": {
+    "price": "15.25",
+    "change": "+0.90",
+    "change_pct": "+6.23%",
+    "regime": "Normal Volatility"
+  },
   "overnight": {
     "SP500": {
-      "val": "7,806",
-      "pct": -0.07,
+      "val": "7,805",
+      "pct": -0.08,
       "date": "2026-10-12"
     },
     "NASDAQ": {
@@ -33,12 +45,12 @@
     "key": "BRENT",
     "quote_date": "2026-10-12",
     "label": "Brent Crude",
-    "price": "106.58",
-    "price_raw": 106.58,
+    "price": "106.78",
+    "price_raw": 106.78,
     "prev_close": 103.26,
     "prev_close_fmt": "103.26",
-    "change": 3.32,
-    "change_pct": 3.22,
+    "change": 3.52,
+    "change_pct": 3.41,
     "direction": "up",
     "unit": "USD/bbl",
     "range_52w": {
@@ -46,8 +58,8 @@
       "high": 126.1,
       "low_fmt": "58.72",
       "high_fmt": "126.10",
-      "pos_pct": 71.0,
-      "pct_from_high": -15.48
+      "pos_pct": 71.3,
+      "pct_from_high": -15.32
     }
   },
   "usdinr": {
@@ -136,13 +148,13 @@
       "num": "01",
       "title": "Institutional flows",
       "bias": "Context",
-      "desc": "Institutional flows unavailable: a dated source is required."
+      "desc": "FII -2,846 crore; DII +2,135 crore. Combined net selling ₹710 crore. DII buying partially offsets FII selling."
     },
     {
       "num": "02",
       "title": "Crude and input costs",
       "bias": "Context",
-      "desc": "Latest Brent quote: 106.58 USD/bbl (+3.22%). Higher crude can raise import and input costs; lower crude can ease them. This quote alone does not establish the cause of the move."
+      "desc": "Latest Brent quote: 106.78 USD/bbl (+3.41%). Higher crude can raise import and input costs; lower crude can ease them. This quote alone does not establish the cause of the move."
     },
     {
       "num": "03",
