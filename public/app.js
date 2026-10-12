@@ -782,6 +782,52 @@ function renderWatch() {
   `).join('');
 }
 
+// Session Monitor / Pre-Market Brief Collapse State Management
+const getTodayISTString = () => {
+  return new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Kolkata' }).format(new Date());
+};
+
+function setSessionMonitorCollapsed(collapsed) {
+  const brief = $('premarket-brief');
+  const body = $('premarket-body');
+  const toggle = $('premarket-toggle');
+  const collapsedSummary = $('premarket-collapsed-summary');
+  if (!body || !toggle) return;
+
+  body.hidden = collapsed;
+  if (brief) brief.classList.toggle('is-collapsed', collapsed);
+  toggle.textContent = collapsed ? 'Expand ▾' : 'Collapse ▴';
+  toggle.setAttribute('aria-expanded', String(!collapsed));
+  if (collapsedSummary) {
+    collapsedSummary.hidden = !collapsed;
+  }
+}
+
+let isSessionMonitorInitialized = false;
+
+function initSessionMonitorState() {
+  if (isSessionMonitorInitialized) return;
+  isSessionMonitorInitialized = true;
+
+  const todayIST = getTodayISTString();
+  const lastSeenDate = read('newsland.brief_seen_date', null);
+  const manualPref = read('newsland.brief_collapsed', null);
+
+  let shouldCollapse = false;
+  if (lastSeenDate !== todayIST) {
+    // First visit of the day: show expanded!
+    shouldCollapse = false;
+    save('newsland.brief_seen_date', todayIST);
+    save('newsland.brief_collapsed', null);
+  } else {
+    // Subsequent visits of the day:
+    // If the user manually toggled it today, respect that choice; otherwise default to collapsed!
+    shouldCollapse = (manualPref !== null) ? Boolean(manualPref) : true;
+  }
+
+  setSessionMonitorCollapsed(shouldCollapse);
+}
+
 // Pre-Market Trading Desk Brief Renderer
 function renderPremarket(data) {
   if (!data || data.schema_version !== 2 || !$('premarket-brief')) {
@@ -820,6 +866,17 @@ function renderPremarket(data) {
     $('pm-gift-chg').textContent = pts == null ? 'Unavailable' : `${sign}${pts} pts (${sign}${pct}%)`;
     $('pm-gift-chg').className = `pm-chg ${isUp ? 'up' : 'down'}`;
   }
+  if ($('pm-collapsed-price')) {
+    $('pm-collapsed-price').textContent = price;
+  }
+  if ($('pm-collapsed-chg')) {
+    const sign = isUp ? '+' : '';
+    $('pm-collapsed-chg').textContent = pts == null ? '' : `${sign}${pts} pts (${sign}${pct}%)`;
+    $('pm-collapsed-chg').className = `pm-collapsed-chg ${isUp ? 'up' : 'down'}`;
+  }
+
+  initSessionMonitorState();
+
   if ($('pm-gift-sub')) {
     $('pm-gift-sub').textContent = `Quote session: ${data.quote_date || 'date unavailable'} · ${data.quote_source || 'source unavailable'} · Previous close ${data.nifty_prev_close || '--'} · Fetched ${data.quote_updated ? new Date(data.quote_updated).toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' }) + ' IST' : 'time unavailable'}`;
   }
@@ -1126,10 +1183,9 @@ if ($('premarket-toggle')) {
   $('premarket-toggle').addEventListener('click', () => {
     const body = $('premarket-body');
     if (!body) return;
-    const isHidden = body.hidden;
-    body.hidden = !isHidden;
-    $('premarket-toggle').textContent = isHidden ? 'Collapse ▴' : 'Expand ▾';
-    $('premarket-toggle').setAttribute('aria-expanded', String(isHidden));
+    const isNowCollapsed = !body.hidden;
+    setSessionMonitorCollapsed(isNowCollapsed);
+    save('newsland.brief_collapsed', isNowCollapsed);
   });
 }
 

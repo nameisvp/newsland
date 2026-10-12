@@ -6,8 +6,8 @@
   <title>newsland. — market briefing</title>
   <meta name="description" content="A minimalist financial briefing with market quotes, lead story carousel, and 3-column broadsheet feed.">
   <link rel="icon" href="/favicon.svg">
-  <link rel="stylesheet" href="/style.css?v=17">
-  <script src="/app.js?v=17" defer></script>
+  <link rel="stylesheet" href="/style.css?v=18">
+  <script src="/app.js?v=18" defer></script>
 </head>
 <body>
   <!-- Top Navigation Bar -->
@@ -98,6 +98,11 @@
           <span id="premarket-tag" class="premarket-tag">PRE-MARKET DESK BRIEF</span>
           <span class="premarket-sep">·</span>
           <span id="premarket-bias-badge" class="premarket-bias-badge">--</span>
+          <span id="premarket-collapsed-summary" class="premarket-collapsed-summary" hidden>
+            <span class="pm-sep">·</span>
+            <span id="pm-collapsed-price" class="pm-collapsed-price">--</span>
+            <span id="pm-collapsed-chg" class="pm-collapsed-chg">--</span>
+          </span>
         </div>
         <div class="premarket-actions">
           <button id="copy-memo-btn" class="copy-memo-btn" title="Copy formatted summary to clipboard">Copy Memo 📋</button>
