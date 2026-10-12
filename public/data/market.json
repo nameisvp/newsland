@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-10T16:33:08.819351+00:00",
+  "updated": "2026-10-12T03:38:13.666969+00:00",
   "tickers": [
     {
       "key": "SENSEX",
@@ -24,14 +24,14 @@
     },
     {
       "key": "NIFTY",
-      "quote_date": "2026-10-09",
+      "quote_date": "2026-10-12",
       "label": "Nifty 50",
-      "price": "22,520",
-      "price_raw": 22520.4492,
+      "price": "22,593",
+      "price_raw": 22593.1992,
       "prev_close": 22231.8008,
       "prev_close_fmt": "22,232",
-      "change": 288.6484,
-      "change_pct": 1.3,
+      "change": 361.3984,
+      "change_pct": 1.63,
       "direction": "up",
       "unit": "",
       "range_52w": {
@@ -39,20 +39,20 @@
         "high": 26373.2,
         "low_fmt": "22,180",
         "high_fmt": "26,373",
-        "pos_pct": 8.1,
-        "pct_from_high": -14.61
+        "pos_pct": 9.9,
+        "pct_from_high": -14.33
       }
     },
     {
       "key": "GOLD",
-      "quote_date": "2026-10-09",
+      "quote_date": "2026-10-11",
       "label": "Gold",
-      "price": "4,216.30",
-      "price_raw": 4216.2998,
-      "prev_close": 4202.2998,
-      "prev_close_fmt": "4,202.30",
-      "change": 14.0,
-      "change_pct": 0.33,
+      "price": "4,226.80",
+      "price_raw": 4226.7998,
+      "prev_close": 4216.2998,
+      "prev_close_fmt": "4,216.30",
+      "change": 10.5,
+      "change_pct": 0.25,
       "direction": "up",
       "unit": "USD/oz",
       "range_52w": {
@@ -60,20 +60,20 @@
         "high": 5586.2,
         "low_fmt": "3,901.30",
         "high_fmt": "5,586.20",
-        "pos_pct": 18.7,
-        "pct_from_high": -24.52
+        "pos_pct": 19.3,
+        "pct_from_high": -24.33
       }
     },
     {
       "key": "SILVER",
-      "quote_date": "2026-10-09",
+      "quote_date": "2026-10-11",
       "label": "Silver",
-      "price": "60.67",
-      "price_raw": 60.67,
-      "prev_close": 60.45,
-      "prev_close_fmt": "60.45",
-      "change": 0.22,
-      "change_pct": 0.36,
+      "price": "61.28",
+      "price_raw": 61.275,
+      "prev_close": 61.048,
+      "prev_close_fmt": "61.05",
+      "change": 0.227,
+      "change_pct": 0.37,
       "direction": "up",
       "unit": "USD/oz",
       "range_52w": {
@@ -81,41 +81,41 @@
         "high": 121.3,
         "low_fmt": "45.85",
         "high_fmt": "121.30",
-        "pos_pct": 19.6,
-        "pct_from_high": -49.98
+        "pos_pct": 20.4,
+        "pct_from_high": -49.48
       }
     },
     {
       "key": "BRENT",
-      "quote_date": "2026-10-09",
+      "quote_date": "2026-10-11",
       "label": "Brent Crude",
-      "price": "104.72",
-      "price_raw": 104.72,
-      "prev_close": 102.92,
-      "prev_close_fmt": "102.92",
-      "change": 1.8,
-      "change_pct": 1.75,
-      "direction": "up",
+      "price": "102.96",
+      "price_raw": 102.96,
+      "prev_close": 104.72,
+      "prev_close_fmt": "104.72",
+      "change": -1.76,
+      "change_pct": -1.68,
+      "direction": "down",
       "unit": "USD/bbl",
       "range_52w": {
         "low": 58.72,
         "high": 126.1,
         "low_fmt": "58.72",
         "high_fmt": "126.10",
-        "pos_pct": 68.3,
-        "pct_from_high": -16.95
+        "pos_pct": 65.7,
+        "pct_from_high": -18.35
       }
     },
     {
       "key": "USDINR",
-      "quote_date": "2026-10-10",
+      "quote_date": "2026-10-12",
       "label": "INR / USD",
-      "price": "96.73",
-      "price_raw": 96.73,
+      "price": "95.91",
+      "price_raw": 95.91,
       "prev_close": 96.78,
       "prev_close_fmt": "96.78",
-      "change": -0.05,
-      "change_pct": -0.05,
+      "change": -0.87,
+      "change_pct": -0.9,
       "direction": "down",
       "unit": "",
       "range_52w": {
@@ -123,8 +123,8 @@
         "high": 97.05,
         "low_fmt": "85.86",
         "high_fmt": "97.05",
-        "pos_pct": 97.1,
-        "pct_from_high": -0.33
+        "pos_pct": 89.8,
+        "pct_from_high": -1.18
       }
     }
   ],
