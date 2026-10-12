@@ -6,8 +6,8 @@
   <title>newsland. — market briefing</title>
   <meta name="description" content="A minimalist financial briefing with market quotes, lead story carousel, and 3-column broadsheet feed.">
   <link rel="icon" href="/favicon.svg">
-  <link rel="stylesheet" href="/style.css?v=15">
-  <script src="/app.js?v=15" defer></script>
+  <link rel="stylesheet" href="/style.css?v=17">
+  <script src="/app.js?v=17" defer></script>
 </head>
 <body>
   <!-- Top Navigation Bar -->
@@ -532,14 +532,12 @@
         <span class="shorts-hint-txt">Tap edges or swipe to browse</span>
       </div>
 
-      <!-- Dual-Card Sliding Stage for Hardware-Accelerated Swipe Transitions -->
-      <div class="shorts-slider-stage" id="shorts-slider-stage">
-        <div class="short-slide-card card-active" id="short-card-active">
-          <!-- Populated dynamically with broadsheet editorial styling -->
-        </div>
-        <div class="short-slide-card card-incoming" id="short-card-incoming" style="display: none;">
-          <!-- Populated dynamically during transitions and gestures -->
-        </div>
+      <!-- Bumble / Tinder-style Stacked Card Swipe Stage -->
+      <div class="shorts-deck-stage" id="shorts-deck-stage">
+        <!-- Underneath Card (visible behind the active card) -->
+        <div class="deck-card card-underneath" id="short-card-underneath" aria-hidden="true"></div>
+        <!-- Active Top Card (the physical card being swiped) -->
+        <div class="deck-card card-top" id="short-card-active"></div>
       </div>
 
       <!-- Bottom Action Bar & Navigation Hints -->

@@ -1604,20 +1604,40 @@ function openShorts(startIndex = 0) {
   if ($('btn-mode-shorts')) $('btn-mode-shorts').classList.add('active');
   if ($('btn-mode-broadsheet')) $('btn-mode-broadsheet').classList.remove('active');
 
-  const activeCard = $('short-card-active');
-  const incomingCard = $('short-card-incoming');
-  if (activeCard) {
-    activeCard.className = 'short-slide-card card-active';
-    activeCard.innerHTML = generateShortCardHTML(shortsList[shortsActiveIndex]);
-    activeCard.scrollTop = 0;
-  }
-  if (incomingCard) {
-    incomingCard.className = 'short-slide-card card-incoming';
-    incomingCard.style.display = 'none';
-  }
-
+  renderDeck(shortsActiveIndex);
   renderShortProgressBar(shortsActiveIndex, shortsList.length);
   updateShortsUI(shortsActiveIndex);
+}
+
+// Render Bumble-Style Dual Stacked Cards
+function renderDeck(index) {
+  const activeCard = $('short-card-active');
+  const underCard = $('short-card-underneath');
+  if (!activeCard) return;
+
+  // Render top active card
+  activeCard.className = 'deck-card card-top';
+  activeCard.style.transform = '';
+  activeCard.style.opacity = '';
+  activeCard.style.transition = '';
+  activeCard.innerHTML = generateShortCardHTML(shortsList[index]);
+  activeCard.scrollTop = 0;
+
+  // Render underneath card if a subsequent story exists
+  if (underCard) {
+    if (index + 1 < shortsList.length) {
+      underCard.style.display = 'block';
+      underCard.className = 'deck-card card-underneath';
+      underCard.style.transform = '';
+      underCard.style.opacity = '';
+      underCard.style.transition = '';
+      underCard.innerHTML = generateShortCardHTML(shortsList[index + 1]);
+      underCard.scrollTop = 0;
+    } else {
+      underCard.style.display = 'none';
+      underCard.innerHTML = '';
+    }
+  }
 }
 
 // Close Shorts Mode
@@ -1632,15 +1652,15 @@ function closeShorts() {
   if ($('btn-mode-shorts')) $('btn-mode-shorts').classList.remove('active');
 }
 
-// Guaranteed Hardware-Accelerated Keyframe Transitions (Prev & Next)
-function navigateShort(direction) {
+// Bumble / Tinder Card Throw Navigation
+function navigateBumble(direction) {
   if (!isShortsOpen || !shortsList.length || isTransitioning) return;
 
   const targetIndex = direction === 'next' ? shortsActiveIndex + 1 : shortsActiveIndex - 1;
   const activeCard = $('short-card-active');
-  const incomingCard = $('short-card-incoming');
+  const underCard = $('short-card-underneath');
 
-  // Boundary check with subtle rubber-band feedback
+  // Boundary checks with rubber-band bump feedback
   if (targetIndex < 0 || targetIndex >= shortsList.length) {
     if (activeCard) {
       activeCard.classList.remove('bounce-left', 'bounce-right');
@@ -1652,48 +1672,63 @@ function navigateShort(direction) {
   }
 
   isTransitioning = true;
-  const targetStory = shortsList[targetIndex];
-
-  // Stage incoming card
-  incomingCard.innerHTML = generateShortCardHTML(targetStory);
-  incomingCard.scrollTop = 0;
-
-  // Clear animation classes and trigger reflow
-  activeCard.classList.remove('anim-slide-out-left', 'anim-slide-out-right', 'bounce-left', 'bounce-right');
-  incomingCard.classList.remove('anim-slide-in-right', 'anim-slide-in-left');
-  void incomingCard.offsetWidth;
 
   if (direction === 'next') {
-    activeCard.classList.add('anim-slide-out-left');
-    incomingCard.classList.add('anim-slide-in-right');
+    // Throw top card off to the left with rotation, revealing card underneath
+    if (activeCard) {
+      activeCard.style.transition = '';
+      activeCard.className = 'deck-card card-top card-throw-left';
+    }
+    if (underCard) {
+      underCard.style.transition = 'transform 0.3s cubic-bezier(0.2, 0.9, 0.3, 1), opacity 0.26s ease';
+      underCard.style.transform = 'scale(1) translate3d(0, 0, 0)';
+      underCard.style.opacity = '1';
+    }
+
+    renderShortProgressBar(targetIndex, shortsList.length);
+    $('short-counter').textContent = `${targetIndex + 1} / ${shortsList.length}`;
+
+    setTimeout(() => {
+      shortsActiveIndex = targetIndex;
+      renderDeck(shortsActiveIndex);
+      updateShortsUI(shortsActiveIndex);
+      isTransitioning = false;
+    }, 300);
+
   } else {
-    activeCard.classList.add('anim-slide-out-right');
-    incomingCard.classList.add('anim-slide-in-left');
+    // Previous card rewinds back in from the left onto the top of the stack
+    if (underCard && activeCard) {
+      underCard.innerHTML = activeCard.innerHTML;
+      underCard.style.display = 'block';
+      underCard.className = 'deck-card card-underneath';
+      underCard.style.transform = 'scale(0.94) translate3d(0, 14px, 0)';
+      underCard.style.opacity = '0.72';
+    }
+    if (activeCard) {
+      activeCard.innerHTML = generateShortCardHTML(shortsList[targetIndex]);
+      activeCard.scrollTop = 0;
+      activeCard.style.transition = '';
+      activeCard.className = 'deck-card card-top card-enter-left';
+    }
+
+    renderShortProgressBar(targetIndex, shortsList.length);
+    $('short-counter').textContent = `${targetIndex + 1} / ${shortsList.length}`;
+
+    setTimeout(() => {
+      shortsActiveIndex = targetIndex;
+      renderDeck(shortsActiveIndex);
+      updateShortsUI(shortsActiveIndex);
+      isTransitioning = false;
+    }, 300);
   }
-
-  // Pre-update progress indicator for snappy responsiveness
-  renderShortProgressBar(targetIndex, shortsList.length);
-  $('short-counter').textContent = `${targetIndex + 1} / ${shortsList.length}`;
-
-  setTimeout(() => {
-    shortsActiveIndex = targetIndex;
-    activeCard.innerHTML = incomingCard.innerHTML;
-    activeCard.className = 'short-slide-card card-active';
-    incomingCard.className = 'short-slide-card card-incoming';
-    incomingCard.style.display = 'none';
-    activeCard.scrollTop = 0;
-
-    updateShortsUI(shortsActiveIndex);
-    isTransitioning = false;
-  }, 280);
 }
 
 function nextShort() {
-  navigateShort('next');
+  navigateBumble('next');
 }
 
 function prevShort() {
-  navigateShort('prev');
+  navigateBumble('prev');
 }
 
 // Attach Shorts event listeners
@@ -1734,25 +1769,6 @@ if ($('short-next-btn')) {
   });
 }
 
-// Clean Non-Blocking Tap Navigation (Edge taps)
-if ($('shorts-slider-stage')) {
-  $('shorts-slider-stage').addEventListener('click', e => {
-    // Ignore clicks on interactive links, buttons, and company tags
-    if (e.target.closest('a, button, .company-tag, .source-link, .related-toggle-btn, .card-btn')) return;
-
-    const rect = $('shorts-slider-stage').getBoundingClientRect();
-    const clickX = e.clientX - rect.left;
-    const width = rect.width;
-
-    // Left 28% goes to previous story; right 72% advances to next story
-    if (clickX < width * 0.28) {
-      prevShort();
-    } else {
-      nextShort();
-    }
-  });
-}
-
 // Filter tabs inside Shorts
 if ($('shorts-region-tabs')) {
   $('shorts-region-tabs').addEventListener('click', e => {
@@ -1783,62 +1799,215 @@ if ($('short-useful-btn')) {
   });
 }
 
-// Interactive Real-Time Touch Drag & Swipe Gestures
+// Interactive Real-Time Touch Drag & Bumble Swipe Gestures
 (function initShortsSwipe() {
-  const stage = $('shorts-slider-stage');
+  const stage = $('shorts-deck-stage');
   if (!stage) return;
 
   let startX = 0;
   let startY = 0;
-  let isSwiping = false;
+  let startTime = 0;
+  let isDragging = false;
+  let isHorizontal = false;
+  let hasDragged = false;
+
+  function getActiveCard() { return $('short-card-active'); }
+  function getUnderCard() { return $('short-card-underneath'); }
 
   stage.addEventListener('touchstart', e => {
     if (!isShortsOpen || isTransitioning) return;
+    if (e.target.closest('a, button, .company-tag, .source-link, .related-toggle-btn, .card-btn, [data-ticker]')) return;
+
     const t = e.touches[0];
     startX = t.clientX;
     startY = t.clientY;
-    isSwiping = true;
+    startTime = Date.now();
+    isDragging = true;
+    isHorizontal = false;
+    hasDragged = false;
+
+    const activeCard = getActiveCard();
+    const underCard = getUnderCard();
+    if (activeCard) activeCard.style.transition = 'none';
+    if (underCard) underCard.style.transition = 'none';
   }, { passive: true });
 
   stage.addEventListener('touchmove', e => {
-    if (!isSwiping || !isShortsOpen || isTransitioning) return;
-  }, { passive: true });
-
-  stage.addEventListener('touchend', e => {
-    if (!isSwiping || !isShortsOpen || isTransitioning) return;
-    isSwiping = false;
-    const t = e.changedTouches[0];
+    if (!isDragging || !isShortsOpen || isTransitioning) return;
+    const t = e.touches[0];
     const dx = t.clientX - startX;
     const dy = t.clientY - startY;
 
-    // Detect horizontal swipe if deltaX is significant and primarily horizontal
-    if (Math.abs(dx) > 35 && Math.abs(dx) > Math.abs(dy) * 1.15) {
-      if (dx < 0) {
-        nextShort(); // Swiped left -> next
-      } else {
-        prevShort(); // Swiped right -> prev
+    if (!isHorizontal) {
+      if (Math.abs(dx) > 8 && Math.abs(dx) > Math.abs(dy)) {
+        isHorizontal = true;
+      } else if (Math.abs(dy) > 10) {
+        // Natural vertical scroll within story
+        isDragging = false;
+        return;
       }
     }
+
+    if (isHorizontal) {
+      hasDragged = true;
+      if (e.cancelable) e.preventDefault();
+
+      const activeCard = getActiveCard();
+      const underCard = getUnderCard();
+      const rot = Math.max(-25, Math.min(25, dx * 0.08));
+
+      if (activeCard) {
+        activeCard.style.transform = `translate3d(${dx}px, ${dy * 0.2}px, 0) rotate(${rot}deg)`;
+      }
+      if (underCard && shortsActiveIndex + 1 < shortsList.length) {
+        const progress = Math.min(1, Math.abs(dx) / 220);
+        underCard.style.transform = `scale(${0.94 + 0.06 * progress}) translate3d(0, ${14 * (1 - progress)}px, 0)`;
+        underCard.style.opacity = `${0.72 + 0.28 * progress}`;
+      }
+    }
+  }, { passive: false });
+
+  function endSwipe(endX) {
+    if (!isDragging || !isShortsOpen || isTransitioning) return;
+    isDragging = false;
+
+    const activeCard = getActiveCard();
+    const underCard = getUnderCard();
+    if (activeCard) activeCard.style.transition = '';
+    if (underCard) underCard.style.transition = '';
+
+    if (isHorizontal) {
+      const dx = endX - startX;
+      const dt = Math.max(1, Date.now() - startTime);
+      const velocity = Math.abs(dx) / dt;
+
+      const isSwipeLeft = (dx < -48) || (dx < -20 && velocity > 0.35);
+      const isSwipeRight = (dx > 48) || (dx > 20 && velocity > 0.35);
+
+      if (isSwipeLeft) {
+        navigateBumble('next');
+      } else if (isSwipeRight) {
+        navigateBumble('prev');
+      } else {
+        // Snap back
+        if (activeCard) {
+          activeCard.style.transition = 'transform 0.24s cubic-bezier(0.18, 0.89, 0.32, 1.15), opacity 0.2s ease';
+          activeCard.style.transform = 'translate3d(0, 0, 0) rotate(0deg)';
+        }
+        if (underCard) {
+          underCard.style.transition = 'transform 0.24s ease, opacity 0.2s ease';
+          underCard.style.transform = '';
+          underCard.style.opacity = '';
+        }
+        setTimeout(() => {
+          if (activeCard) activeCard.style.transition = '';
+          if (underCard) underCard.style.transition = '';
+        }, 250);
+      }
+    }
+    isHorizontal = false;
+  }
+
+  stage.addEventListener('touchend', e => {
+    const t = e.changedTouches[0];
+    endSwipe(t.clientX);
   }, { passive: true });
+
+  stage.addEventListener('touchcancel', () => {
+    if (!isDragging) return;
+    isDragging = false;
+    isHorizontal = false;
+    const activeCard = getActiveCard();
+    const underCard = getUnderCard();
+    if (activeCard) { activeCard.style.transition = ''; activeCard.style.transform = ''; }
+    if (underCard) { underCard.style.transition = ''; underCard.style.transform = ''; underCard.style.opacity = ''; }
+  });
 
   // Mouse drag support for desktop testing & review
   let mouseStartX = 0;
+  let mouseStartY = 0;
   let isMouseDown = false;
 
   stage.addEventListener('mousedown', e => {
     if (!isShortsOpen || isTransitioning) return;
-    if (e.target.closest('a, button, .company-tag, .source-link, .card-btn')) return;
+    if (e.target.closest('a, button, .company-tag, .source-link, .card-btn, [data-ticker]')) return;
     isMouseDown = true;
     mouseStartX = e.clientX;
+    mouseStartY = e.clientY;
+    startTime = Date.now();
+    hasDragged = false;
+    const activeCard = getActiveCard();
+    const underCard = getUnderCard();
+    if (activeCard) activeCard.style.transition = 'none';
+    if (underCard) underCard.style.transition = 'none';
+  });
+
+  window.addEventListener('mousemove', e => {
+    if (!isMouseDown || !isShortsOpen || isTransitioning) return;
+    const dx = e.clientX - mouseStartX;
+    const dy = e.clientY - mouseStartY;
+    if (Math.abs(dx) > 6) {
+      hasDragged = true;
+      const rot = Math.max(-25, Math.min(25, dx * 0.08));
+      const activeCard = getActiveCard();
+      const underCard = getUnderCard();
+      if (activeCard) {
+        activeCard.style.transform = `translate3d(${dx}px, ${dy * 0.2}px, 0) rotate(${rot}deg)`;
+      }
+      if (underCard && shortsActiveIndex + 1 < shortsList.length) {
+        const progress = Math.min(1, Math.abs(dx) / 220);
+        underCard.style.transform = `scale(${0.94 + 0.06 * progress}) translate3d(0, ${14 * (1 - progress)}px, 0)`;
+        underCard.style.opacity = `${0.72 + 0.28 * progress}`;
+      }
+    }
   });
 
   window.addEventListener('mouseup', e => {
-    if (!isMouseDown || !isShortsOpen || isTransitioning) return;
+    if (!isMouseDown) return;
     isMouseDown = false;
     const dx = e.clientX - mouseStartX;
-    if (Math.abs(dx) > 38) {
-      if (dx < 0) nextShort();
-      else prevShort();
+    const activeCard = getActiveCard();
+    const underCard = getUnderCard();
+    if (activeCard) activeCard.style.transition = '';
+    if (underCard) underCard.style.transition = '';
+
+    if (dx < -45) {
+      navigateBumble('next');
+    } else if (dx > 45) {
+      navigateBumble('prev');
+    } else if (hasDragged) {
+      if (activeCard) {
+        activeCard.style.transition = 'transform 0.24s cubic-bezier(0.18, 0.89, 0.32, 1.15), opacity 0.2s ease';
+        activeCard.style.transform = 'translate3d(0, 0, 0) rotate(0deg)';
+      }
+      if (underCard) {
+        underCard.style.transition = 'transform 0.24s ease, opacity 0.2s ease';
+        underCard.style.transform = '';
+        underCard.style.opacity = '';
+      }
+      setTimeout(() => {
+        if (activeCard) activeCard.style.transition = '';
+        if (underCard) underCard.style.transition = '';
+      }, 250);
+    }
+  });
+
+  // Stage click navigation (only when not dragged)
+  stage.addEventListener('click', e => {
+    if (hasDragged) {
+      hasDragged = false;
+      return;
+    }
+    if (e.target.closest('a, button, .company-tag, .source-link, .related-toggle-btn, .card-btn, [data-ticker]')) return;
+
+    const rect = stage.getBoundingClientRect();
+    const clickX = e.clientX - rect.left;
+    const width = rect.width;
+
+    if (clickX < width * 0.28) {
+      navigateBumble('prev');
+    } else {
+      navigateBumble('next');
     }
   });
 })();

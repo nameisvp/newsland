@@ -3230,54 +3230,72 @@ html[data-font="sans"] .shorts-wordmark {
   color: var(--ink-muted);
 }
 
-/* Dual-Card Sliding Stage (Native swipe transition) */
-.shorts-slider-stage {
+/* Bumble / Tinder-style Stacked Card Deck Stage */
+.shorts-deck-stage {
   position: relative;
   flex: 1;
   width: 100%;
+  padding: 10px 14px 12px;
+  box-sizing: border-box;
   overflow: hidden;
-  z-index: 9;
-  background: var(--card-bg);
-  cursor: pointer;
+  perspective: 1200px;
 }
 
-.short-slide-card {
+.deck-card {
   position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
+  inset: 10px 14px 12px;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.08), 0 2px 8px rgba(0, 0, 0, 0.04);
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
-  padding: 20px 22px 22px;
+  padding: 22px 22px 24px;
   box-sizing: border-box;
-  background: var(--card-bg);
   color: var(--ink);
   font-family: var(--font-serif);
+  touch-action: pan-y;
   will-change: transform, opacity;
+  transform-origin: 50% 90%;
+  transition: transform 0.28s cubic-bezier(0.18, 0.89, 0.32, 1.15), opacity 0.24s ease;
 }
 
-html[data-font="sans"] .short-slide-card {
+html[data-font="sans"] .deck-card {
   font-family: var(--font-sans);
 }
 
-.short-slide-card.card-active {
-  z-index: 2;
-  transform: translate3d(0, 0, 0);
-  opacity: 1;
+html[data-theme="night"] .deck-card {
+  box-shadow: 0 16px 44px rgba(0, 0, 0, 0.55);
+  border-color: rgba(255, 255, 255, 0.08);
 }
 
-.short-slide-card.card-incoming {
-  z-index: 3;
+.deck-card.card-underneath {
+  z-index: 1;
+  transform: scale(0.94) translate3d(0, 14px, 0);
+  opacity: 0.72;
+  filter: brightness(0.96);
+  pointer-events: none;
+}
+
+.deck-card.card-top {
+  z-index: 2;
+  transform: translate3d(0, 0, 0) rotate(0deg);
+  opacity: 1;
+  cursor: grab;
+}
+
+.deck-card.card-top:active {
+  cursor: grabbing;
 }
 
 /* Exact Broadsheet Feed Card Styling for Shorts */
-.short-slide-card .feed-card {
+.deck-card .feed-card {
   border-bottom: none !important;
   padding: 0 !important;
   margin: 0 !important;
 }
 
-.short-slide-card .card-title {
+.deck-card .card-title {
   font-family: var(--font-serif);
   font-size: 25px;
   font-weight: 700;
@@ -3288,21 +3306,21 @@ html[data-font="sans"] .short-slide-card {
   display: block;
 }
 
-html[data-font="sans"] .short-slide-card .card-title {
+html[data-font="sans"] .deck-card .card-title {
   font-family: var(--font-sans);
   letter-spacing: -0.3px;
 }
 
 /* Text Size Scalers */
-html[data-size="sm"] .short-slide-card .card-title { font-size: 21.5px; line-height: 1.25; }
-html[data-size="md"] .short-slide-card .card-title { font-size: 25px; line-height: 1.25; }
-html[data-size="lg"] .short-slide-card .card-title { font-size: 29px; line-height: 1.24; }
+html[data-size="sm"] .deck-card .card-title { font-size: 21.5px; line-height: 1.25; }
+html[data-size="md"] .deck-card .card-title { font-size: 25px; line-height: 1.25; }
+html[data-size="lg"] .deck-card .card-title { font-size: 29px; line-height: 1.24; }
 
-html[data-size="sm"] .short-slide-card .card-snippet { font-size: 13.5px; }
-html[data-size="md"] .short-slide-card .card-snippet { font-size: 15px; }
-html[data-size="lg"] .short-slide-card .card-snippet { font-size: 16.5px; }
+html[data-size="sm"] .deck-card .card-snippet { font-size: 13.5px; }
+html[data-size="md"] .deck-card .card-snippet { font-size: 15px; }
+html[data-size="lg"] .deck-card .card-snippet { font-size: 16.5px; }
 
-.short-slide-card .card-snippet {
+.deck-card .card-snippet {
   font-size: 15px;
   line-height: 1.5;
   color: var(--ink-secondary);
@@ -3311,59 +3329,55 @@ html[data-size="lg"] .short-slide-card .card-snippet { font-size: 16.5px; }
 }
 
 /* ========================================================
-   HARDWARE-ACCELERATED KEYFRAME TRANSITIONS (Guaranteed 60fps)
+   BUMBLE / TINDER SWIPE & THROW CARD ANIMATIONS
    ======================================================== */
 
-@keyframes shortSlideOutLeft {
-  0% { transform: translate3d(0, 0, 0); opacity: 1; }
-  100% { transform: translate3d(-100%, 0, 0); opacity: 0.3; }
+@keyframes bumbleThrowLeft {
+  0% { transform: translate3d(0, 0, 0) rotate(0deg); opacity: 1; }
+  100% { transform: translate3d(-150%, 25px, 0) rotate(-24deg); opacity: 0; }
 }
 
-@keyframes shortSlideInRight {
-  0% { transform: translate3d(100%, 0, 0); opacity: 0.3; }
-  100% { transform: translate3d(0, 0, 0); opacity: 1; }
+@keyframes bumbleThrowRight {
+  0% { transform: translate3d(0, 0, 0) rotate(0deg); opacity: 1; }
+  100% { transform: translate3d(150%, 25px, 0) rotate(24deg); opacity: 0; }
 }
 
-@keyframes shortSlideOutRight {
-  0% { transform: translate3d(0, 0, 0); opacity: 1; }
-  100% { transform: translate3d(100%, 0, 0); opacity: 0.3; }
+@keyframes bumbleEnterFromLeft {
+  0% { transform: translate3d(-150%, 25px, 0) rotate(-24deg); opacity: 0; }
+  100% { transform: translate3d(0, 0, 0) rotate(0deg); opacity: 1; }
 }
 
-@keyframes shortSlideInLeft {
-  0% { transform: translate3d(-100%, 0, 0); opacity: 0.3; }
-  100% { transform: translate3d(0, 0, 0); opacity: 1; }
+@keyframes bumbleEnterFromRight {
+  0% { transform: translate3d(150%, 25px, 0) rotate(24deg); opacity: 0; }
+  100% { transform: translate3d(0, 0, 0) rotate(0deg); opacity: 1; }
 }
 
-.anim-slide-out-left {
-  animation: shortSlideOutLeft 0.28s cubic-bezier(0.2, 0.9, 0.3, 1) forwards !important;
+.card-throw-left {
+  animation: bumbleThrowLeft 0.32s cubic-bezier(0.2, 0.9, 0.3, 1) forwards !important;
 }
 
-.anim-slide-in-right {
-  display: block !important;
-  visibility: visible !important;
-  animation: shortSlideInRight 0.28s cubic-bezier(0.2, 0.9, 0.3, 1) forwards !important;
+.card-throw-right {
+  animation: bumbleThrowRight 0.32s cubic-bezier(0.2, 0.9, 0.3, 1) forwards !important;
 }
 
-.anim-slide-out-right {
-  animation: shortSlideOutRight 0.28s cubic-bezier(0.2, 0.9, 0.3, 1) forwards !important;
+.card-enter-left {
+  animation: bumbleEnterFromLeft 0.32s cubic-bezier(0.2, 0.9, 0.3, 1) forwards !important;
 }
 
-.anim-slide-in-left {
-  display: block !important;
-  visibility: visible !important;
-  animation: shortSlideInLeft 0.28s cubic-bezier(0.2, 0.9, 0.3, 1) forwards !important;
+.card-enter-right {
+  animation: bumbleEnterFromRight 0.32s cubic-bezier(0.2, 0.9, 0.3, 1) forwards !important;
 }
 
 @keyframes bounceLeft {
-  0% { transform: translate3d(0, 0, 0); }
-  50% { transform: translate3d(-20px, 0, 0); }
-  100% { transform: translate3d(0, 0, 0); }
+  0% { transform: translate3d(0, 0, 0) rotate(0deg); }
+  50% { transform: translate3d(-24px, 0, 0) rotate(-4deg); }
+  100% { transform: translate3d(0, 0, 0) rotate(0deg); }
 }
 
 @keyframes bounceRight {
-  0% { transform: translate3d(0, 0, 0); }
-  50% { transform: translate3d(20px, 0, 0); }
-  100% { transform: translate3d(0, 0, 0); }
+  0% { transform: translate3d(0, 0, 0) rotate(0deg); }
+  50% { transform: translate3d(24px, 0, 0) rotate(4deg); }
+  100% { transform: translate3d(0, 0, 0) rotate(0deg); }
 }
 
 .bounce-left {

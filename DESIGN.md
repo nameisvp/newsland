@@ -33,13 +33,15 @@ A personal financial reading surface for Indian market participants scanning tod
    - Dividers separating cards with zero heavy boxes or drop shadows.
 7. **Off-Canvas Drawer (`☰`)**:
    - Holds reading surface themes (`Paper`, `Sepia`, `Slate`, `Night`), typography mode (`Book Serif` / `Modern Sans`), font size stepping (`A-` / `A+`), time horizon toggle (`Today` / `This week`), watchlist management, and feed registry health.
-8. **Mobile Short News Stories (Instagram-style Swipe View)**:
-   - Floating action pill button (`⚡ Shorts`) and drawer menu toggle to launch a focused swipeable briefing.
-   - Adopts the exact page theme ground (`Paper`, `Sepia`, `Slate`, `Night`), book serif / modern sans typography mode, and text size scaling.
-   - Features the Newsland masthead (`newsland.`) with signature terracotta ink dot.
-   - Segmented story progress indicator at top (Instagram Stories style).
-   - Dual-card sliding stage with hardware-accelerated slide transitions (`cubic-bezier(0.2, 0.9, 0.3, 1)`) when navigating to next or previous stories.
-   - Horizontal swipe gesture with direct touch tracking plus edge tap navigation (left 25% for previous, right 75% for next).
-   - Strict chronological order: latest news first.
-   - Each card highlights category pill, relative time, publisher badge, clear editorial headline, dedicated Market Takeaway summary box, asset impact chips, and a direct "Read Full Story ↗" action.
+8. **Mobile Short News Stories (Bumble/Tinder-style Card Swipe Feed)**:
+   - Mobile mode switch strip (`[ 📰 Broadsheet | ⚡ Insta Shorts ]`), section tab (`⚡ Shorts`), floating pill button, and drawer toggle.
+   - Adopts the exact page theme ground (`Paper`, `Sepia`, `Slate`, `Night`), typography mode (`Book Serif` / `Modern Sans`), and user text size scaling (`sm` / `md` / `lg`).
+   - Features the Newsland masthead (`newsland.`) with signature terracotta ink dot and segmented story progress indicators.
+   - **Bumble-style Stacked Dual-Card Deck**:
+     - Real-time touch & mouse drag tracking with dynamic card rotation (`rotate(${dx * 0.08}deg) translate3d(${dx}px, ...)`).
+     - Underneath card is stacked behind the top card (`scale(0.94) translateY(14px)`), scaling up smoothly to full size as the top card is dragged away.
+     - Physical card throw animations (`bumbleThrowLeft` / `bumbleEnterFromLeft` with rotational toss) when advancing or rewinding.
+     - Edge tap navigation (left 28% for previous, right 72% for next) and keyboard arrow navigation (`←` / `→`).
+   - Strict chronological ordering: sorted by latest news first.
+   - 100% Broadsheet page card fidelity: exact category pill, relative time, publisher badge, editorial headline, takeaway summary, impact asset badges, and direct "Read Full Story ↗" action.
 
