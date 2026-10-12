@@ -34,9 +34,12 @@ A personal financial reading surface for Indian market participants scanning tod
 7. **Off-Canvas Drawer (`☰`)**:
    - Holds reading surface themes (`Paper`, `Sepia`, `Slate`, `Night`), typography mode (`Book Serif` / `Modern Sans`), font size stepping (`A-` / `A+`), time horizon toggle (`Today` / `This week`), watchlist management, and feed registry health.
 8. **Mobile Short News Stories (Instagram-style Swipe View)**:
-   - Floating action pill button (`⚡ Shorts`) and drawer menu toggle to launch a focused full-screen swipeable briefing.
+   - Floating action pill button (`⚡ Shorts`) and drawer menu toggle to launch a focused swipeable briefing.
+   - Adopts the exact page theme ground (`Paper`, `Sepia`, `Slate`, `Night`), book serif / modern sans typography mode, and text size scaling.
+   - Features the Newsland masthead (`newsland.`) with signature terracotta ink dot.
    - Segmented story progress indicator at top (Instagram Stories style).
-   - Horizontal swipe gesture (left for next, right for previous) plus edge tap navigation (left 25% for previous, right 75% for next).
+   - Dual-card sliding stage with hardware-accelerated slide transitions (`cubic-bezier(0.2, 0.9, 0.3, 1)`) when navigating to next or previous stories.
+   - Horizontal swipe gesture with direct touch tracking plus edge tap navigation (left 25% for previous, right 75% for next).
    - Strict chronological order: latest news first.
    - Each card highlights category pill, relative time, publisher badge, clear editorial headline, dedicated Market Takeaway summary box, asset impact chips, and a direct "Read Full Story ↗" action.
 

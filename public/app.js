@@ -1486,6 +1486,7 @@ document.addEventListener('keydown', e => {
 let shortsList = [];
 let shortsActiveIndex = 0;
 let isShortsOpen = false;
+let isTransitioning = false;
 
 function getLatestSortedStories() {
   const isMonday = new Date().toLocaleDateString('en-US', { ...ist, weekday: 'short' }) === 'Mon';
@@ -1517,16 +1518,77 @@ function getLatestSortedStories() {
   return base;
 }
 
+// Generate Card HTML adhering 100% to Newsland's Exact Broadsheet Page Styling
+function generateShortCardHTML(s) {
+  if (!s) return '';
+  return cardHTML(s);
+}
+
+// Render Instagram-Style Progress Bar Segments
+function renderShortProgressBar(index, total) {
+  const pBar = $('shorts-progress-bar');
+  if (!pBar) return;
+  const maxVisibleSegments = 20;
+  let segmentsHtml = '';
+
+  if (total <= maxVisibleSegments) {
+    for (let i = 0; i < total; i++) {
+      const status = i < index ? 'completed' : i === index ? 'active' : '';
+      segmentsHtml += `<div class="short-prog-seg ${status}"><span class="short-prog-fill"></span></div>`;
+    }
+  } else {
+    const half = Math.floor(maxVisibleSegments / 2);
+    let start = Math.max(0, Math.min(index - half, total - maxVisibleSegments));
+    let end = start + maxVisibleSegments;
+    for (let i = start; i < end; i++) {
+      const status = i < index ? 'completed' : i === index ? 'active' : '';
+      segmentsHtml += `<div class="short-prog-seg ${status}"><span class="short-prog-fill"></span></div>`;
+    }
+  }
+  pBar.innerHTML = segmentsHtml;
+}
+
+// Update Footer Buttons & Header Counter
+function updateShortsUI(index) {
+  const total = shortsList.length;
+  const s = shortsList[index];
+  if (!s) return;
+
+  $('short-counter').textContent = `${index + 1} / ${total}`;
+
+  const readBtn = $('short-read-btn');
+  if (readBtn) readBtn.href = safeUrl(s.url);
+
+  const usefulBtn = $('short-useful-btn');
+  if (usefulBtn) {
+    const isUseful = feedback[s.id] === 'useful';
+    usefulBtn.classList.toggle('is-useful', isUseful);
+    const icon = $('short-useful-icon');
+    if (icon) icon.textContent = isUseful ? '★' : '☆';
+  }
+
+  const prevBtn = $('short-prev-btn');
+  const nextBtn = $('short-next-btn');
+  if (prevBtn) {
+    prevBtn.disabled = (index === 0);
+    prevBtn.style.opacity = index === 0 ? '0.35' : '1';
+  }
+  if (nextBtn) {
+    nextBtn.disabled = (index === total - 1);
+    nextBtn.style.opacity = index === total - 1 ? '0.35' : '1';
+  }
+}
+
+// Open Shorts Mode
 function openShorts(startIndex = 0) {
   shortsList = getLatestSortedStories();
   if (!shortsList.length) {
-    // Fallback to all unhidden stories if filtered list is empty
     shortsList = (briefing.stories || [])
       .filter(s => feedback[s.id] !== 'hide')
       .sort((a, b) => (b.published || 0) - (a.published || 0));
   }
   if (!shortsList.length) {
-    alert('No active stories available at this moment.');
+    alert('No active stories available right now.');
     return;
   }
 
@@ -1538,193 +1600,114 @@ function openShorts(startIndex = 0) {
   isShortsOpen = true;
   document.body.style.overflow = 'hidden';
 
-  renderShortStory(shortsActiveIndex, 'none');
+  // Update mobile mode switcher pills
+  if ($('btn-mode-shorts')) $('btn-mode-shorts').classList.add('active');
+  if ($('btn-mode-broadsheet')) $('btn-mode-broadsheet').classList.remove('active');
+
+  const activeCard = $('short-card-active');
+  const incomingCard = $('short-card-incoming');
+  if (activeCard) {
+    activeCard.className = 'short-slide-card card-active';
+    activeCard.innerHTML = generateShortCardHTML(shortsList[shortsActiveIndex]);
+    activeCard.scrollTop = 0;
+  }
+  if (incomingCard) {
+    incomingCard.className = 'short-slide-card card-incoming';
+    incomingCard.style.display = 'none';
+  }
+
+  renderShortProgressBar(shortsActiveIndex, shortsList.length);
+  updateShortsUI(shortsActiveIndex);
 }
 
+// Close Shorts Mode
 function closeShorts() {
   const modal = $('shorts-modal');
   if (modal) modal.hidden = true;
   isShortsOpen = false;
   document.body.style.overflow = '';
+
+  // Update mobile mode switcher pills
+  if ($('btn-mode-broadsheet')) $('btn-mode-broadsheet').classList.add('active');
+  if ($('btn-mode-shorts')) $('btn-mode-shorts').classList.remove('active');
+}
+
+// Guaranteed Hardware-Accelerated Keyframe Transitions (Prev & Next)
+function navigateShort(direction) {
+  if (!isShortsOpen || !shortsList.length || isTransitioning) return;
+
+  const targetIndex = direction === 'next' ? shortsActiveIndex + 1 : shortsActiveIndex - 1;
+  const activeCard = $('short-card-active');
+  const incomingCard = $('short-card-incoming');
+
+  // Boundary check with subtle rubber-band feedback
+  if (targetIndex < 0 || targetIndex >= shortsList.length) {
+    if (activeCard) {
+      activeCard.classList.remove('bounce-left', 'bounce-right');
+      void activeCard.offsetWidth;
+      activeCard.classList.add(direction === 'next' ? 'bounce-left' : 'bounce-right');
+      setTimeout(() => activeCard.classList.remove('bounce-left', 'bounce-right'), 220);
+    }
+    return;
+  }
+
+  isTransitioning = true;
+  const targetStory = shortsList[targetIndex];
+
+  // Stage incoming card
+  incomingCard.innerHTML = generateShortCardHTML(targetStory);
+  incomingCard.scrollTop = 0;
+
+  // Clear animation classes and trigger reflow
+  activeCard.classList.remove('anim-slide-out-left', 'anim-slide-out-right', 'bounce-left', 'bounce-right');
+  incomingCard.classList.remove('anim-slide-in-right', 'anim-slide-in-left');
+  void incomingCard.offsetWidth;
+
+  if (direction === 'next') {
+    activeCard.classList.add('anim-slide-out-left');
+    incomingCard.classList.add('anim-slide-in-right');
+  } else {
+    activeCard.classList.add('anim-slide-out-right');
+    incomingCard.classList.add('anim-slide-in-left');
+  }
+
+  // Pre-update progress indicator for snappy responsiveness
+  renderShortProgressBar(targetIndex, shortsList.length);
+  $('short-counter').textContent = `${targetIndex + 1} / ${shortsList.length}`;
+
+  setTimeout(() => {
+    shortsActiveIndex = targetIndex;
+    activeCard.innerHTML = incomingCard.innerHTML;
+    activeCard.className = 'short-slide-card card-active';
+    incomingCard.className = 'short-slide-card card-incoming';
+    incomingCard.style.display = 'none';
+    activeCard.scrollTop = 0;
+
+    updateShortsUI(shortsActiveIndex);
+    isTransitioning = false;
+  }, 280);
 }
 
 function nextShort() {
-  if (!isShortsOpen || !shortsList.length) return;
-  if (shortsActiveIndex < shortsList.length - 1) {
-    shortsActiveIndex++;
-    renderShortStory(shortsActiveIndex, 'next');
-  } else {
-    // Subtle bounce when reaching the end
-    const cardBody = $('shorts-content-body');
-    if (cardBody) {
-      cardBody.classList.remove('anim-slide-next');
-      void cardBody.offsetWidth;
-      cardBody.classList.add('anim-slide-next');
-    }
-  }
+  navigateShort('next');
 }
 
 function prevShort() {
-  if (!isShortsOpen || !shortsList.length) return;
-  if (shortsActiveIndex > 0) {
-    shortsActiveIndex--;
-    renderShortStory(shortsActiveIndex, 'prev');
-  } else {
-    const cardBody = $('shorts-content-body');
-    if (cardBody) {
-      cardBody.classList.remove('anim-slide-prev');
-      void cardBody.offsetWidth;
-      cardBody.classList.add('anim-slide-prev');
-    }
-  }
-}
-
-function renderShortStory(index, animDirection) {
-  const s = shortsList[index];
-  if (!s) return;
-
-  // 1. Progress Bar (Instagram Stories segment indicator)
-  const pBar = $('shorts-progress-bar');
-  if (pBar) {
-    const total = shortsList.length;
-    const maxVisibleSegments = 20;
-    let segmentsHtml = '';
-    
-    if (total <= maxVisibleSegments) {
-      for (let i = 0; i < total; i++) {
-        const status = i < index ? 'completed' : i === index ? 'active' : '';
-        segmentsHtml += `<div class="short-prog-seg ${status}"><span class="short-prog-fill"></span></div>`;
-      }
-    } else {
-      const half = Math.floor(maxVisibleSegments / 2);
-      let start = Math.max(0, Math.min(index - half, total - maxVisibleSegments));
-      let end = start + maxVisibleSegments;
-      for (let i = start; i < end; i++) {
-        const status = i < index ? 'completed' : i === index ? 'active' : '';
-        segmentsHtml += `<div class="short-prog-seg ${status}"><span class="short-prog-fill"></span></div>`;
-      }
-    }
-    pBar.innerHTML = segmentsHtml;
-  }
-
-  // 2. Header Metadata
-  const catTag = getCategoryTag(s);
-  $('short-category').textContent = catTag;
-  $('short-time').textContent = timeAgo(s.published);
-  
-  const sources = s.sources || [];
-  const numSources = sources.length;
-  const isMultiSource = numSources > 1;
-  const pubName = getPublisherName(s.url, sources[0]?.name);
-  $('short-source').textContent = isMultiSource ? `${pubName} +${numSources - 1}` : pubName;
-  $('short-counter').textContent = `${index + 1} / ${shortsList.length}`;
-
-  // 3. Eyebrows & Badges
-  const tier = viewTier(s);
-  const tierBadge = $('short-tier-badge');
-  tierBadge.textContent = tier === 'Must know' ? 'MARKET DRIVER' : tier === 'Watch' ? 'WATCHLIST FOCUS' : 'HEADLINE';
-  tierBadge.className = `short-tier-badge tier-${tier === 'Must know' ? 'driver' : tier.toLowerCase()}`;
-
-  const clusterBadge = $('short-cluster-badge');
-  if (isMultiSource) {
-    clusterBadge.textContent = `● ${numSources} SOURCES`;
-    clusterBadge.hidden = false;
-  } else {
-    clusterBadge.hidden = true;
-  }
-
-  // 4. Headline
-  $('short-headline').textContent = s.title;
-
-  // 5. Takeaway / Summary Box
-  const snippet = s.why_it_matters || s.summary || s.reason || 'Curated high-conviction market development.';
-  $('short-snippet').textContent = snippet;
-
-  // 6. Impact Assets
-  const impactWrap = $('short-impact-wrap');
-  const impactAssetsEl = $('short-impact-assets');
-  if (s.impact_assets && s.impact_assets.length) {
-    impactAssetsEl.innerHTML = s.impact_assets.map(a => `<span class="short-impact-tag">${esc(a)}</span>`).join('');
-    impactWrap.hidden = false;
-  } else {
-    impactWrap.hidden = true;
-  }
-
-  // 7. Transmission Chain (Tailwinds / Headwinds)
-  const chainWrap = $('short-chain-wrap');
-  if (s.impact_chain) {
-    const chain = s.impact_chain;
-    const tailwinds = chain.tailwinds?.length
-      ? `<span class="chain-group up"><span class="chain-arrow">↗</span> ${chain.tailwinds.map(w => `<button class="company-tag" data-symbol="${esc(w)}" title="Inspect ${esc(w)} X-Ray">${esc(w)}</button>`).join(', ')}</span>`
-      : '';
-    const headwinds = chain.headwinds?.length
-      ? `<span class="chain-group down"><span class="chain-arrow">↘</span> ${chain.headwinds.map(h => `<button class="company-tag" data-symbol="${esc(h)}" title="Inspect ${esc(h)} X-Ray">${esc(h)}</button>`).join(', ')}</span>`
-      : '';
-    const sep = (tailwinds && headwinds) ? '<span class="chain-sep">·</span>' : '';
-    chainWrap.innerHTML = `
-      <div class="card-impact-chain">
-        <span class="chain-catalyst">${esc(chain.catalyst)}:</span>
-        ${tailwinds}
-        ${sep}
-        ${headwinds}
-      </div>`;
-    chainWrap.hidden = false;
-  } else {
-    chainWrap.hidden = true;
-  }
-
-  // 8. Named Entities
-  const compWrap = $('short-companies-wrap');
-  const compListEl = $('short-companies-list');
-  if (s.companies && s.companies.length) {
-    compListEl.innerHTML = s.companies.map(c =>
-      `<button class="company-tag" data-symbol="${esc(c.symbol || c.name)}" title="Inspect ${esc(c.name)} Financial X-Ray">↗ ${esc(c.name)}</button>`
-    ).join('');
-    compWrap.hidden = false;
-  } else {
-    compWrap.hidden = true;
-  }
-
-  // 9. Multi-source cluster links
-  const clusterWrap = $('short-sources-cluster');
-  const clusterLinksEl = $('short-cluster-links');
-  if (isMultiSource) {
-    clusterLinksEl.innerHTML = sources.map(src =>
-      `<a class="short-source-item" href="${safeUrl(src.url)}" target="_blank" rel="noopener noreferrer">${esc(src.name)} ↗</a>`
-    ).join('');
-    clusterWrap.hidden = false;
-  } else {
-    clusterWrap.hidden = true;
-  }
-
-  // 10. Footer Action Bar
-  const readBtn = $('short-read-btn');
-  readBtn.href = safeUrl(s.url);
-
-  const usefulBtn = $('short-useful-btn');
-  const isUseful = feedback[s.id] === 'useful';
-  usefulBtn.classList.toggle('is-useful', isUseful);
-  $('short-useful-icon').textContent = isUseful ? '★' : '☆';
-
-  $('short-prev-btn').disabled = (index === 0);
-  $('short-next-btn').disabled = (index === shortsList.length - 1);
-  $('short-prev-btn').style.opacity = index === 0 ? '0.35' : '1';
-  $('short-next-btn').style.opacity = index === shortsList.length - 1 ? '0.35' : '1';
-
-  // 11. Scroll Reset & Animation
-  $('shorts-scroll-area').scrollTop = 0;
-
-  const cardBody = $('shorts-content-body');
-  if (cardBody && animDirection !== 'none') {
-    cardBody.classList.remove('anim-slide-next', 'anim-slide-prev');
-    void cardBody.offsetWidth;
-    cardBody.classList.add(animDirection === 'next' ? 'anim-slide-next' : 'anim-slide-prev');
-  }
+  navigateShort('prev');
 }
 
 // Attach Shorts event listeners
 if ($('shorts-floating-btn')) {
   $('shorts-floating-btn').addEventListener('click', () => openShorts(0));
+}
+if ($('nav-shorts-btn')) {
+  $('nav-shorts-btn').addEventListener('click', () => openShorts(0));
+}
+if ($('btn-mode-shorts')) {
+  $('btn-mode-shorts').addEventListener('click', () => openShorts(0));
+}
+if ($('btn-mode-broadsheet')) {
+  $('btn-mode-broadsheet').addEventListener('click', closeShorts);
 }
 if ($('drawer-shorts-btn')) {
   $('drawer-shorts-btn').addEventListener('click', () => {
@@ -1751,17 +1734,35 @@ if ($('short-next-btn')) {
   });
 }
 
-// Instagram-style Tap Zones
-if ($('shorts-tap-prev')) {
-  $('shorts-tap-prev').addEventListener('click', e => {
-    e.stopPropagation();
-    prevShort();
+// Clean Non-Blocking Tap Navigation (Edge taps)
+if ($('shorts-slider-stage')) {
+  $('shorts-slider-stage').addEventListener('click', e => {
+    // Ignore clicks on interactive links, buttons, and company tags
+    if (e.target.closest('a, button, .company-tag, .source-link, .related-toggle-btn, .card-btn')) return;
+
+    const rect = $('shorts-slider-stage').getBoundingClientRect();
+    const clickX = e.clientX - rect.left;
+    const width = rect.width;
+
+    // Left 28% goes to previous story; right 72% advances to next story
+    if (clickX < width * 0.28) {
+      prevShort();
+    } else {
+      nextShort();
+    }
   });
 }
-if ($('shorts-tap-next')) {
-  $('shorts-tap-next').addEventListener('click', e => {
-    e.stopPropagation();
-    nextShort();
+
+// Filter tabs inside Shorts
+if ($('shorts-region-tabs')) {
+  $('shorts-region-tabs').addEventListener('click', e => {
+    const btn = e.target.closest('.s-tab-btn');
+    if (!btn) return;
+    $('shorts-region-tabs').querySelectorAll('.s-tab-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const sReg = btn.dataset.sregion;
+    region = sReg;
+    openShorts(0);
   });
 }
 
@@ -1777,42 +1778,41 @@ if ($('short-useful-btn')) {
       feedback[s.id] = 'useful';
     }
     save('newsland.feedback', feedback);
-    renderShortStory(shortsActiveIndex, 'none');
+    updateShortsUI(shortsActiveIndex);
     render();
   });
 }
 
-// Gesture Handling: Touch swipe left / right
+// Interactive Real-Time Touch Drag & Swipe Gestures
 (function initShortsSwipe() {
-  const cardShell = $('shorts-card-shell');
-  if (!cardShell) return;
+  const stage = $('shorts-slider-stage');
+  if (!stage) return;
 
   let startX = 0;
   let startY = 0;
   let isSwiping = false;
 
-  cardShell.addEventListener('touchstart', e => {
-    if (!isShortsOpen) return;
+  stage.addEventListener('touchstart', e => {
+    if (!isShortsOpen || isTransitioning) return;
     const t = e.touches[0];
     startX = t.clientX;
     startY = t.clientY;
     isSwiping = true;
   }, { passive: true });
 
-  cardShell.addEventListener('touchmove', e => {
-    if (!isSwiping || !isShortsOpen) return;
-    // We let native vertical scrolling work in shorts-scroll-area
+  stage.addEventListener('touchmove', e => {
+    if (!isSwiping || !isShortsOpen || isTransitioning) return;
   }, { passive: true });
 
-  cardShell.addEventListener('touchend', e => {
-    if (!isSwiping || !isShortsOpen) return;
+  stage.addEventListener('touchend', e => {
+    if (!isSwiping || !isShortsOpen || isTransitioning) return;
     isSwiping = false;
     const t = e.changedTouches[0];
     const dx = t.clientX - startX;
     const dy = t.clientY - startY;
 
-    // Detect horizontal swipe if deltaX is significant and more horizontal than vertical
-    if (Math.abs(dx) > 42 && Math.abs(dx) > Math.abs(dy) * 1.25) {
+    // Detect horizontal swipe if deltaX is significant and primarily horizontal
+    if (Math.abs(dx) > 35 && Math.abs(dx) > Math.abs(dy) * 1.15) {
       if (dx < 0) {
         nextShort(); // Swiped left -> next
       } else {
@@ -1821,22 +1821,22 @@ if ($('short-useful-btn')) {
     }
   }, { passive: true });
 
-  // Mouse drag support for desktop testing
+  // Mouse drag support for desktop testing & review
   let mouseStartX = 0;
   let isMouseDown = false;
 
-  cardShell.addEventListener('mousedown', e => {
-    if (!isShortsOpen) return;
-    if (e.target.closest('a, button, .company-tag, .short-source-item')) return;
+  stage.addEventListener('mousedown', e => {
+    if (!isShortsOpen || isTransitioning) return;
+    if (e.target.closest('a, button, .company-tag, .source-link, .card-btn')) return;
     isMouseDown = true;
     mouseStartX = e.clientX;
   });
 
   window.addEventListener('mouseup', e => {
-    if (!isMouseDown || !isShortsOpen) return;
+    if (!isMouseDown || !isShortsOpen || isTransitioning) return;
     isMouseDown = false;
     const dx = e.clientX - mouseStartX;
-    if (Math.abs(dx) > 50) {
+    if (Math.abs(dx) > 38) {
       if (dx < 0) nextShort();
       else prevShort();
     }

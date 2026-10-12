@@ -6,8 +6,8 @@
   <title>newsland. — market briefing</title>
   <meta name="description" content="A minimalist financial briefing with market quotes, lead story carousel, and 3-column broadsheet feed.">
   <link rel="icon" href="/favicon.svg">
-  <link rel="stylesheet" href="/style.css?v=12">
-  <script src="/app.js?v=12" defer></script>
+  <link rel="stylesheet" href="/style.css?v=15">
+  <script src="/app.js?v=15" defer></script>
 </head>
 <body>
   <!-- Top Navigation Bar -->
@@ -70,7 +70,19 @@
           <button role="tab" aria-selected="false" data-region="India" class="tab-btn">India</button>
           <button role="tab" aria-selected="false" data-region="Global" class="tab-btn">Global</button>
           <button role="tab" aria-selected="false" data-region="Events" class="tab-btn">Catalysts</button>
+          <button id="nav-shorts-btn" class="tab-btn shorts-accent-tab" title="Turn into Instagram-style Short News stories">⚡ Shorts</button>
         </nav>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile View Mode Switcher Strip (Prominent on Mobile) -->
+  <div class="mobile-mode-strip" id="mobile-mode-strip">
+    <div class="mobile-mode-inner">
+      <span class="mobile-mode-label">VIEW MODE:</span>
+      <div class="mobile-mode-toggle-group">
+        <button id="btn-mode-broadsheet" class="mobile-mode-btn active" title="Desktop Broadsheet newspaper view">📰 Broadsheet</button>
+        <button id="btn-mode-shorts" class="mobile-mode-btn" title="Instagram-style short news cards">⚡ Insta Shorts</button>
       </div>
     </div>
   </div>
@@ -493,72 +505,40 @@
     <div id="shorts-backdrop" class="shorts-backdrop"></div>
     <div class="shorts-viewport-card" id="shorts-card-shell">
       
-      <!-- Top Progress Bars (Instagram Stories segments) -->
-      <div id="shorts-progress-bar" class="shorts-progress-bar" aria-label="Story progress">
-        <!-- Rendered dynamically -->
-      </div>
-
-      <!-- Top Story Meta Header -->
-      <div class="shorts-header">
-        <div class="shorts-header-left">
-          <span id="short-category" class="short-cat-pill">MARKET DRIVER</span>
-          <span class="short-meta-sep">·</span>
-          <span id="short-time" class="short-time">Just now</span>
-          <span class="short-meta-sep">·</span>
-          <span id="short-source" class="short-source">Source</span>
+      <!-- Newsland Branded Masthead Header -->
+      <div class="shorts-masthead">
+        <div class="shorts-brand-block">
+          <span class="shorts-wordmark">newsland<span class="ink-dot">.</span></span>
+          <span class="shorts-edition-pill">SHORTS</span>
         </div>
-        <div class="shorts-header-right">
+        <div class="shorts-head-meta">
           <span id="short-counter" class="short-counter">1 / --</span>
           <button id="close-shorts" class="shorts-close-btn" aria-label="Close short stories" title="Close (Esc)">✕</button>
         </div>
       </div>
 
-      <!-- Tap Navigation Zones for quick one-handed browsing -->
-      <div class="shorts-tap-nav" aria-hidden="true">
-        <div id="shorts-tap-prev" class="shorts-tap-side shorts-tap-left" title="Tap or swipe right for previous"></div>
-        <div id="shorts-tap-next" class="shorts-tap-side shorts-tap-right" title="Tap or swipe left for next"></div>
+      <!-- Top Progress Bars (Instagram Stories segments) -->
+      <div id="shorts-progress-bar" class="shorts-progress-bar" aria-label="Story progress">
+        <!-- Rendered dynamically -->
       </div>
 
-      <!-- Main Story Editorial Card -->
-      <div class="shorts-content-body" id="shorts-content-body">
-        <div class="shorts-scroll-area" id="shorts-scroll-area">
-          <div class="short-eyebrow-row">
-            <span id="short-tier-badge" class="short-tier-badge">MUST KNOW</span>
-            <span id="short-cluster-badge" class="short-cluster-badge" hidden>● 2 SOURCES</span>
-          </div>
+      <!-- Quick Section Filter Inside Shorts -->
+      <div class="shorts-tabs-bar">
+        <div class="shorts-tabs-group" id="shorts-region-tabs">
+          <button class="s-tab-btn active" data-sregion="All">All</button>
+          <button class="s-tab-btn" data-sregion="India">India</button>
+          <button class="s-tab-btn" data-sregion="Global">Global</button>
+        </div>
+        <span class="shorts-hint-txt">Tap edges or swipe to browse</span>
+      </div>
 
-          <h1 id="short-headline" class="short-headline">
-            Loading market news…
-          </h1>
-
-          <!-- Distilled Market Takeaway / Summary Box -->
-          <div id="short-takeaway-card" class="short-takeaway-card">
-            <div class="takeaway-head">
-              <span class="takeaway-badge">MARKET TAKEAWAY</span>
-            </div>
-            <p id="short-snippet" class="short-snippet-text"></p>
-          </div>
-
-          <!-- Impact Assets Row -->
-          <div id="short-impact-wrap" class="short-impact-wrap" hidden>
-            <span class="short-impact-label">Market Impact:</span>
-            <div id="short-impact-assets" class="short-impact-assets"></div>
-          </div>
-
-          <!-- Transmission Chain (Tailwinds / Headwinds) -->
-          <div id="short-chain-wrap" class="short-chain-wrap" hidden></div>
-
-          <!-- Named Entities / Companies -->
-          <div id="short-companies-wrap" class="short-companies-wrap" hidden>
-            <span class="short-companies-label">Related Entities:</span>
-            <div id="short-companies-list" class="short-companies-list"></div>
-          </div>
-
-          <!-- Multi-source reporting references -->
-          <div id="short-sources-cluster" class="short-sources-cluster" hidden>
-            <span class="short-cluster-label">Reported by:</span>
-            <div id="short-cluster-links" class="short-cluster-links"></div>
-          </div>
+      <!-- Dual-Card Sliding Stage for Hardware-Accelerated Swipe Transitions -->
+      <div class="shorts-slider-stage" id="shorts-slider-stage">
+        <div class="short-slide-card card-active" id="short-card-active">
+          <!-- Populated dynamically with broadsheet editorial styling -->
+        </div>
+        <div class="short-slide-card card-incoming" id="short-card-incoming" style="display: none;">
+          <!-- Populated dynamically during transitions and gestures -->
         </div>
       </div>
 
