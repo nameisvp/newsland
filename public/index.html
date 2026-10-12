@@ -6,8 +6,8 @@
   <title>newsland. — market briefing</title>
   <meta name="description" content="A minimalist financial briefing with market quotes, lead story carousel, and 3-column broadsheet feed.">
   <link rel="icon" href="/favicon.svg">
-  <link rel="stylesheet" href="/style.css?v=11">
-  <script src="/app.js?v=11" defer></script>
+  <link rel="stylesheet" href="/style.css?v=12">
+  <script src="/app.js?v=12" defer></script>
 </head>
 <body>
   <!-- Top Navigation Bar -->
@@ -335,6 +335,19 @@
           </div>
         </div>
 
+        <!-- Mobile Short News / Story Mode -->
+        <div class="drawer-section">
+          <label class="drawer-label">Mobile Reading Surface</label>
+          <button id="drawer-shorts-btn" class="drawer-shorts-launch-btn">
+            <span class="d-shorts-icon">⚡</span>
+            <div class="d-shorts-text">
+              <span class="d-shorts-title">Open Short News Stories</span>
+              <span class="d-shorts-sub">Instagram-style swipe view (Latest first)</span>
+            </div>
+            <span class="d-shorts-arrow">›</span>
+          </button>
+        </div>
+
         <!-- Quick Filters -->
         <div class="drawer-section">
           <label class="drawer-label">Feed Filters</label>
@@ -466,6 +479,108 @@
         </div>
       </div>
     </aside>
+  </div>
+
+  <!-- Floating Mobile Short Stories Pill Trigger -->
+  <button id="shorts-floating-btn" class="shorts-floating-btn" aria-label="Open short news stories" title="Swipeable Short News Stories">
+    <span class="shorts-btn-icon">⚡</span>
+    <span class="shorts-btn-label">Shorts</span>
+    <span class="shorts-btn-pulse"></span>
+  </button>
+
+  <!-- Fullscreen Instagram-style Short News Stories Modal -->
+  <div id="shorts-modal" class="shorts-layer" hidden role="dialog" aria-modal="true" aria-label="Short News Stories">
+    <div id="shorts-backdrop" class="shorts-backdrop"></div>
+    <div class="shorts-viewport-card" id="shorts-card-shell">
+      
+      <!-- Top Progress Bars (Instagram Stories segments) -->
+      <div id="shorts-progress-bar" class="shorts-progress-bar" aria-label="Story progress">
+        <!-- Rendered dynamically -->
+      </div>
+
+      <!-- Top Story Meta Header -->
+      <div class="shorts-header">
+        <div class="shorts-header-left">
+          <span id="short-category" class="short-cat-pill">MARKET DRIVER</span>
+          <span class="short-meta-sep">·</span>
+          <span id="short-time" class="short-time">Just now</span>
+          <span class="short-meta-sep">·</span>
+          <span id="short-source" class="short-source">Source</span>
+        </div>
+        <div class="shorts-header-right">
+          <span id="short-counter" class="short-counter">1 / --</span>
+          <button id="close-shorts" class="shorts-close-btn" aria-label="Close short stories" title="Close (Esc)">✕</button>
+        </div>
+      </div>
+
+      <!-- Tap Navigation Zones for quick one-handed browsing -->
+      <div class="shorts-tap-nav" aria-hidden="true">
+        <div id="shorts-tap-prev" class="shorts-tap-side shorts-tap-left" title="Tap or swipe right for previous"></div>
+        <div id="shorts-tap-next" class="shorts-tap-side shorts-tap-right" title="Tap or swipe left for next"></div>
+      </div>
+
+      <!-- Main Story Editorial Card -->
+      <div class="shorts-content-body" id="shorts-content-body">
+        <div class="shorts-scroll-area" id="shorts-scroll-area">
+          <div class="short-eyebrow-row">
+            <span id="short-tier-badge" class="short-tier-badge">MUST KNOW</span>
+            <span id="short-cluster-badge" class="short-cluster-badge" hidden>● 2 SOURCES</span>
+          </div>
+
+          <h1 id="short-headline" class="short-headline">
+            Loading market news…
+          </h1>
+
+          <!-- Distilled Market Takeaway / Summary Box -->
+          <div id="short-takeaway-card" class="short-takeaway-card">
+            <div class="takeaway-head">
+              <span class="takeaway-badge">MARKET TAKEAWAY</span>
+            </div>
+            <p id="short-snippet" class="short-snippet-text"></p>
+          </div>
+
+          <!-- Impact Assets Row -->
+          <div id="short-impact-wrap" class="short-impact-wrap" hidden>
+            <span class="short-impact-label">Market Impact:</span>
+            <div id="short-impact-assets" class="short-impact-assets"></div>
+          </div>
+
+          <!-- Transmission Chain (Tailwinds / Headwinds) -->
+          <div id="short-chain-wrap" class="short-chain-wrap" hidden></div>
+
+          <!-- Named Entities / Companies -->
+          <div id="short-companies-wrap" class="short-companies-wrap" hidden>
+            <span class="short-companies-label">Related Entities:</span>
+            <div id="short-companies-list" class="short-companies-list"></div>
+          </div>
+
+          <!-- Multi-source reporting references -->
+          <div id="short-sources-cluster" class="short-sources-cluster" hidden>
+            <span class="short-cluster-label">Reported by:</span>
+            <div id="short-cluster-links" class="short-cluster-links"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Action Bar & Navigation Hints -->
+      <div class="shorts-footer-bar">
+        <button id="short-prev-btn" class="short-nav-arrow" aria-label="Previous story" title="Previous story">‹</button>
+        <a id="short-read-btn" class="short-read-action-btn" href="#" target="_blank" rel="noopener noreferrer">
+          <span>Read Full Story</span>
+          <span class="short-arrow-icon">↗</span>
+        </a>
+        <button id="short-useful-btn" class="short-action-icon-btn" aria-label="Mark useful" title="Useful to me">
+          <span id="short-useful-icon">★</span>
+        </button>
+        <button id="short-next-btn" class="short-nav-arrow" aria-label="Next story" title="Next story">›</button>
+      </div>
+
+      <!-- Subtle Swipe Guide Indicator -->
+      <div class="shorts-swipe-hint" aria-hidden="true">
+        <span>← Swipe left / right to browse →</span>
+      </div>
+
+    </div>
   </div>
 </body>
 </html>

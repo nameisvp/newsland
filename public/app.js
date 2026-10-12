@@ -1460,11 +1460,388 @@ document.addEventListener('keydown', e => {
     $('search-input').focus();
   }
   if (e.key === 'Escape') {
+    if (isShortsOpen) {
+      closeShorts();
+      return;
+    }
     $('drawer-modal').hidden = true;
     $('source-modal').hidden = true;
     if ($('company-modal')) $('company-modal').hidden = true;
   }
+  if (isShortsOpen) {
+    if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
+      e.preventDefault();
+      nextShort();
+    } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
+      e.preventDefault();
+      prevShort();
+    }
+  }
 });
+
+/* ========================================================
+   9. MOBILE INSTAGRAM-STYLE SHORT NEWS STORIES (SHORTS)
+   ======================================================== */
+
+let shortsList = [];
+let shortsActiveIndex = 0;
+let isShortsOpen = false;
+
+function getLatestSortedStories() {
+  const isMonday = new Date().toLocaleDateString('en-US', { ...ist, weekday: 'short' }) === 'Mon';
+  const cutoff = Date.now() / 1000 - (horizon === 'week' ? 7 : isMonday ? 3 : 1) * 86400;
+
+  let base = (briefing.stories || []).filter(s =>
+    s.published &&
+    s.published >= cutoff &&
+    feedback[s.id] !== 'hide'
+  );
+
+  // If sector is selected
+  if (activeSector !== 'all') {
+    const kws = SECTOR_KEYWORDS[activeSector] || [];
+    base = base.filter(s => {
+      const titleLower = s.title.toLowerCase();
+      const catLower = (s.category || '').toLowerCase();
+      const assets = (s.impact_assets || []).map(a => a.toLowerCase());
+      return kws.some(kw => titleLower.includes(kw) || catLower.includes(kw) || assets.includes(kw));
+    });
+  }
+
+  // If region is selected
+  if (region === 'Global') base = base.filter(s => s.region === 'Global');
+  else if (region === 'India') base = base.filter(s => s.region === 'India');
+
+  // Strict sorting: latest news first
+  base.sort((a, b) => (b.published || 0) - (a.published || 0));
+  return base;
+}
+
+function openShorts(startIndex = 0) {
+  shortsList = getLatestSortedStories();
+  if (!shortsList.length) {
+    // Fallback to all unhidden stories if filtered list is empty
+    shortsList = (briefing.stories || [])
+      .filter(s => feedback[s.id] !== 'hide')
+      .sort((a, b) => (b.published || 0) - (a.published || 0));
+  }
+  if (!shortsList.length) {
+    alert('No active stories available at this moment.');
+    return;
+  }
+
+  shortsActiveIndex = Math.max(0, Math.min(startIndex, shortsList.length - 1));
+  const modal = $('shorts-modal');
+  if (!modal) return;
+
+  modal.hidden = false;
+  isShortsOpen = true;
+  document.body.style.overflow = 'hidden';
+
+  renderShortStory(shortsActiveIndex, 'none');
+}
+
+function closeShorts() {
+  const modal = $('shorts-modal');
+  if (modal) modal.hidden = true;
+  isShortsOpen = false;
+  document.body.style.overflow = '';
+}
+
+function nextShort() {
+  if (!isShortsOpen || !shortsList.length) return;
+  if (shortsActiveIndex < shortsList.length - 1) {
+    shortsActiveIndex++;
+    renderShortStory(shortsActiveIndex, 'next');
+  } else {
+    // Subtle bounce when reaching the end
+    const cardBody = $('shorts-content-body');
+    if (cardBody) {
+      cardBody.classList.remove('anim-slide-next');
+      void cardBody.offsetWidth;
+      cardBody.classList.add('anim-slide-next');
+    }
+  }
+}
+
+function prevShort() {
+  if (!isShortsOpen || !shortsList.length) return;
+  if (shortsActiveIndex > 0) {
+    shortsActiveIndex--;
+    renderShortStory(shortsActiveIndex, 'prev');
+  } else {
+    const cardBody = $('shorts-content-body');
+    if (cardBody) {
+      cardBody.classList.remove('anim-slide-prev');
+      void cardBody.offsetWidth;
+      cardBody.classList.add('anim-slide-prev');
+    }
+  }
+}
+
+function renderShortStory(index, animDirection) {
+  const s = shortsList[index];
+  if (!s) return;
+
+  // 1. Progress Bar (Instagram Stories segment indicator)
+  const pBar = $('shorts-progress-bar');
+  if (pBar) {
+    const total = shortsList.length;
+    const maxVisibleSegments = 20;
+    let segmentsHtml = '';
+    
+    if (total <= maxVisibleSegments) {
+      for (let i = 0; i < total; i++) {
+        const status = i < index ? 'completed' : i === index ? 'active' : '';
+        segmentsHtml += `<div class="short-prog-seg ${status}"><span class="short-prog-fill"></span></div>`;
+      }
+    } else {
+      const half = Math.floor(maxVisibleSegments / 2);
+      let start = Math.max(0, Math.min(index - half, total - maxVisibleSegments));
+      let end = start + maxVisibleSegments;
+      for (let i = start; i < end; i++) {
+        const status = i < index ? 'completed' : i === index ? 'active' : '';
+        segmentsHtml += `<div class="short-prog-seg ${status}"><span class="short-prog-fill"></span></div>`;
+      }
+    }
+    pBar.innerHTML = segmentsHtml;
+  }
+
+  // 2. Header Metadata
+  const catTag = getCategoryTag(s);
+  $('short-category').textContent = catTag;
+  $('short-time').textContent = timeAgo(s.published);
+  
+  const sources = s.sources || [];
+  const numSources = sources.length;
+  const isMultiSource = numSources > 1;
+  const pubName = getPublisherName(s.url, sources[0]?.name);
+  $('short-source').textContent = isMultiSource ? `${pubName} +${numSources - 1}` : pubName;
+  $('short-counter').textContent = `${index + 1} / ${shortsList.length}`;
+
+  // 3. Eyebrows & Badges
+  const tier = viewTier(s);
+  const tierBadge = $('short-tier-badge');
+  tierBadge.textContent = tier === 'Must know' ? 'MARKET DRIVER' : tier === 'Watch' ? 'WATCHLIST FOCUS' : 'HEADLINE';
+  tierBadge.className = `short-tier-badge tier-${tier === 'Must know' ? 'driver' : tier.toLowerCase()}`;
+
+  const clusterBadge = $('short-cluster-badge');
+  if (isMultiSource) {
+    clusterBadge.textContent = `● ${numSources} SOURCES`;
+    clusterBadge.hidden = false;
+  } else {
+    clusterBadge.hidden = true;
+  }
+
+  // 4. Headline
+  $('short-headline').textContent = s.title;
+
+  // 5. Takeaway / Summary Box
+  const snippet = s.why_it_matters || s.summary || s.reason || 'Curated high-conviction market development.';
+  $('short-snippet').textContent = snippet;
+
+  // 6. Impact Assets
+  const impactWrap = $('short-impact-wrap');
+  const impactAssetsEl = $('short-impact-assets');
+  if (s.impact_assets && s.impact_assets.length) {
+    impactAssetsEl.innerHTML = s.impact_assets.map(a => `<span class="short-impact-tag">${esc(a)}</span>`).join('');
+    impactWrap.hidden = false;
+  } else {
+    impactWrap.hidden = true;
+  }
+
+  // 7. Transmission Chain (Tailwinds / Headwinds)
+  const chainWrap = $('short-chain-wrap');
+  if (s.impact_chain) {
+    const chain = s.impact_chain;
+    const tailwinds = chain.tailwinds?.length
+      ? `<span class="chain-group up"><span class="chain-arrow">↗</span> ${chain.tailwinds.map(w => `<button class="company-tag" data-symbol="${esc(w)}" title="Inspect ${esc(w)} X-Ray">${esc(w)}</button>`).join(', ')}</span>`
+      : '';
+    const headwinds = chain.headwinds?.length
+      ? `<span class="chain-group down"><span class="chain-arrow">↘</span> ${chain.headwinds.map(h => `<button class="company-tag" data-symbol="${esc(h)}" title="Inspect ${esc(h)} X-Ray">${esc(h)}</button>`).join(', ')}</span>`
+      : '';
+    const sep = (tailwinds && headwinds) ? '<span class="chain-sep">·</span>' : '';
+    chainWrap.innerHTML = `
+      <div class="card-impact-chain">
+        <span class="chain-catalyst">${esc(chain.catalyst)}:</span>
+        ${tailwinds}
+        ${sep}
+        ${headwinds}
+      </div>`;
+    chainWrap.hidden = false;
+  } else {
+    chainWrap.hidden = true;
+  }
+
+  // 8. Named Entities
+  const compWrap = $('short-companies-wrap');
+  const compListEl = $('short-companies-list');
+  if (s.companies && s.companies.length) {
+    compListEl.innerHTML = s.companies.map(c =>
+      `<button class="company-tag" data-symbol="${esc(c.symbol || c.name)}" title="Inspect ${esc(c.name)} Financial X-Ray">↗ ${esc(c.name)}</button>`
+    ).join('');
+    compWrap.hidden = false;
+  } else {
+    compWrap.hidden = true;
+  }
+
+  // 9. Multi-source cluster links
+  const clusterWrap = $('short-sources-cluster');
+  const clusterLinksEl = $('short-cluster-links');
+  if (isMultiSource) {
+    clusterLinksEl.innerHTML = sources.map(src =>
+      `<a class="short-source-item" href="${safeUrl(src.url)}" target="_blank" rel="noopener noreferrer">${esc(src.name)} ↗</a>`
+    ).join('');
+    clusterWrap.hidden = false;
+  } else {
+    clusterWrap.hidden = true;
+  }
+
+  // 10. Footer Action Bar
+  const readBtn = $('short-read-btn');
+  readBtn.href = safeUrl(s.url);
+
+  const usefulBtn = $('short-useful-btn');
+  const isUseful = feedback[s.id] === 'useful';
+  usefulBtn.classList.toggle('is-useful', isUseful);
+  $('short-useful-icon').textContent = isUseful ? '★' : '☆';
+
+  $('short-prev-btn').disabled = (index === 0);
+  $('short-next-btn').disabled = (index === shortsList.length - 1);
+  $('short-prev-btn').style.opacity = index === 0 ? '0.35' : '1';
+  $('short-next-btn').style.opacity = index === shortsList.length - 1 ? '0.35' : '1';
+
+  // 11. Scroll Reset & Animation
+  $('shorts-scroll-area').scrollTop = 0;
+
+  const cardBody = $('shorts-content-body');
+  if (cardBody && animDirection !== 'none') {
+    cardBody.classList.remove('anim-slide-next', 'anim-slide-prev');
+    void cardBody.offsetWidth;
+    cardBody.classList.add(animDirection === 'next' ? 'anim-slide-next' : 'anim-slide-prev');
+  }
+}
+
+// Attach Shorts event listeners
+if ($('shorts-floating-btn')) {
+  $('shorts-floating-btn').addEventListener('click', () => openShorts(0));
+}
+if ($('drawer-shorts-btn')) {
+  $('drawer-shorts-btn').addEventListener('click', () => {
+    $('drawer-modal').hidden = true;
+    openShorts(0);
+  });
+}
+if ($('close-shorts')) {
+  $('close-shorts').addEventListener('click', closeShorts);
+}
+if ($('shorts-backdrop')) {
+  $('shorts-backdrop').addEventListener('click', closeShorts);
+}
+if ($('short-prev-btn')) {
+  $('short-prev-btn').addEventListener('click', e => {
+    e.stopPropagation();
+    prevShort();
+  });
+}
+if ($('short-next-btn')) {
+  $('short-next-btn').addEventListener('click', e => {
+    e.stopPropagation();
+    nextShort();
+  });
+}
+
+// Instagram-style Tap Zones
+if ($('shorts-tap-prev')) {
+  $('shorts-tap-prev').addEventListener('click', e => {
+    e.stopPropagation();
+    prevShort();
+  });
+}
+if ($('shorts-tap-next')) {
+  $('shorts-tap-next').addEventListener('click', e => {
+    e.stopPropagation();
+    nextShort();
+  });
+}
+
+// Feedback toggle within shorts
+if ($('short-useful-btn')) {
+  $('short-useful-btn').addEventListener('click', e => {
+    e.stopPropagation();
+    if (!shortsList[shortsActiveIndex]) return;
+    const s = shortsList[shortsActiveIndex];
+    if (feedback[s.id] === 'useful') {
+      delete feedback[s.id];
+    } else {
+      feedback[s.id] = 'useful';
+    }
+    save('newsland.feedback', feedback);
+    renderShortStory(shortsActiveIndex, 'none');
+    render();
+  });
+}
+
+// Gesture Handling: Touch swipe left / right
+(function initShortsSwipe() {
+  const cardShell = $('shorts-card-shell');
+  if (!cardShell) return;
+
+  let startX = 0;
+  let startY = 0;
+  let isSwiping = false;
+
+  cardShell.addEventListener('touchstart', e => {
+    if (!isShortsOpen) return;
+    const t = e.touches[0];
+    startX = t.clientX;
+    startY = t.clientY;
+    isSwiping = true;
+  }, { passive: true });
+
+  cardShell.addEventListener('touchmove', e => {
+    if (!isSwiping || !isShortsOpen) return;
+    // We let native vertical scrolling work in shorts-scroll-area
+  }, { passive: true });
+
+  cardShell.addEventListener('touchend', e => {
+    if (!isSwiping || !isShortsOpen) return;
+    isSwiping = false;
+    const t = e.changedTouches[0];
+    const dx = t.clientX - startX;
+    const dy = t.clientY - startY;
+
+    // Detect horizontal swipe if deltaX is significant and more horizontal than vertical
+    if (Math.abs(dx) > 42 && Math.abs(dx) > Math.abs(dy) * 1.25) {
+      if (dx < 0) {
+        nextShort(); // Swiped left -> next
+      } else {
+        prevShort(); // Swiped right -> prev
+      }
+    }
+  }, { passive: true });
+
+  // Mouse drag support for desktop testing
+  let mouseStartX = 0;
+  let isMouseDown = false;
+
+  cardShell.addEventListener('mousedown', e => {
+    if (!isShortsOpen) return;
+    if (e.target.closest('a, button, .company-tag, .short-source-item')) return;
+    isMouseDown = true;
+    mouseStartX = e.clientX;
+  });
+
+  window.addEventListener('mouseup', e => {
+    if (!isMouseDown || !isShortsOpen) return;
+    isMouseDown = false;
+    const dx = e.clientX - mouseStartX;
+    if (Math.abs(dx) > 50) {
+      if (dx < 0) nextShort();
+      else prevShort();
+    }
+  });
+})();
 
 // Initial boot
 renderWatch();
