@@ -2,11 +2,19 @@ name: Newsland Autopilot - News & Market Collector
 
 on:
   schedule:
-    # Run every 2 hours on weekdays during Indian market & briefing hours (02:00 to 14:00 UTC = 7:30 AM to 7:30 PM IST)
-    - cron: '0 2,4,6,8,10,12,14 * * 1-5'
+    # Run hourly on weekdays during Indian market & briefing hours (02:00 to 12:00 UTC = 7:30 AM to 5:30 PM IST)
+    - cron: '0 2-12 * * 1-5'
     # Weekend morning briefing at 04:00 UTC (9:30 AM IST) on Saturday & Sunday
     - cron: '0 4 * * 0,6'
   workflow_dispatch: # Allows manual 1-click "Run workflow" in GitHub Actions tab anytime
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/workflows/**'
+      - 'build_static.py'
+      - 'server.py'
+      - 'requirements.txt'
 
 jobs:
   collect-and-publish:
