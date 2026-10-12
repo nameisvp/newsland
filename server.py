@@ -652,6 +652,13 @@ def refresh():
         CACHE={'updated':datetime.now(timezone.utc).isoformat(), 'stories':group(stories), 'sources':[s for _,s in results], 'refreshing':False}
         temp=DATA/'cache.tmp'
         temp.write_text(json.dumps(CACHE)); temp.replace(DATA/'cache.json')
+        try:
+            pub_brief = ROOT / 'public' / 'data' / 'briefing.json'
+            if pub_brief.parent.exists():
+                payload = dict(CACHE, calendar={k:v for k,v in CALENDAR.items() if k!='events'}, premarket=PREMARKET_DATA)
+                pub_brief.write_text(json.dumps(payload))
+        except Exception:
+            pass
     finally:
         CACHE['refreshing']=False
         LOCK.release()

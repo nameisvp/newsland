@@ -65,6 +65,7 @@
         </div>
         <span class="subnav-divider" aria-hidden="true">|</span>
         <button id="movers-filter-btn" class="movers-filter-btn" aria-pressed="false" title="Filter for high-conviction market movers only">⚡ Market Movers</button>
+        <button id="latest-sort-btn" class="latest-sort-btn" aria-pressed="false" title="Sort broadsheet by latest news first">🕒 Latest First</button>
         <nav id="region-tabs" class="sec-tabs" role="tablist" aria-label="Briefing sections">
           <button role="tab" aria-selected="true" data-region="All" class="tab-btn active">All</button>
           <button role="tab" aria-selected="false" data-region="India" class="tab-btn">India</button>
@@ -534,7 +535,12 @@
           <button class="s-tab-btn" data-sregion="India">India</button>
           <button class="s-tab-btn" data-sregion="Global">Global</button>
         </div>
-        <span class="shorts-hint-txt">Tap edges or swipe to browse</span>
+        <div class="shorts-right-controls">
+          <button id="shorts-filter-unread-btn" class="s-filter-pill active" title="Show only unread stories">
+            <span class="unread-dot">●</span> <span id="shorts-unread-label">Unread</span>
+          </button>
+          <button id="shorts-reset-read-btn" class="s-filter-link-btn" title="Mark all stories as unread to re-read them">Reset</button>
+        </div>
       </div>
 
       <!-- Bumble / Tinder-style Stacked Card Swipe Stage -->

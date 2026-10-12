@@ -22,11 +22,40 @@ let region = 'All';
 let briefing = { stories: [], sources: [] };
 let watchlist = read('newsland.watchlist', []);
 let feedback = read('newsland.feedback', {});
+let readStories = read('newsland.read_stories', {});
+let shortsFilterUnreadOnly = true;
+let shortsRegion = 'All';
+
+function markStoryAsRead(id) {
+  if (!id) return;
+  if (!readStories[id]) {
+    readStories[id] = Date.now();
+    // Prune entries older than 14 days
+    const maxAge = Date.now() - 14 * 86400 * 1000;
+    for (const k in readStories) {
+      if (readStories[k] < maxAge) delete readStories[k];
+    }
+    save('newsland.read_stories', readStories);
+    if (typeof updateShortsFilterCounts === 'function') updateShortsFilterCounts();
+  }
+}
+
+function isStoryRead(id) {
+  return Boolean(id && readStories[id]);
+}
+
+function resetReadStories() {
+  readStories = {};
+  save('newsland.read_stories', readStories);
+  if (typeof updateShortsFilterCounts === 'function') updateShortsFilterCounts();
+}
+
 let events = [];
 let searchQuery = '';
 let activeTrendingWord = '';
 let activeCatalystFilter = 'all';
 let activeMarketMoversOnly = false;
+let activeLatestFirst = read('newsland.sort_latest', false);
 let activeSector = 'all';
 let premarketData = null;
 
@@ -465,13 +494,14 @@ function viewScore(story) {
 
   // Intraday freshness velocity curve: boost breaking news within today's session
   if (horizon === 'today') {
-    if (ageHours < 1) score += 5;        // Breaking in last hour
-    else if (ageHours < 3) score += 3.5; // Fresh morning catalyst
-    else if (ageHours < 6) score += 1.5; // Active intraday session
-    else if (ageHours < 10) score += 0;  // Normal day pace
-    else if (ageHours < 16) score -= 3;  // Older overnight news
-    else if (ageHours < 24) score -= 5.5;// Previous session
-    else score -= 8;                     // Multi-day old
+    if (ageHours < 1) score += 6;        // Breaking in last hour
+    else if (ageHours < 2) score += 4.5; // Fresh catalyst
+    else if (ageHours < 4) score += 3.0; // Recent session catalyst
+    else if (ageHours < 6) score += 1.0; // Midday session
+    else if (ageHours < 10) score -= 2.0;// Past session wrap
+    else if (ageHours < 16) score -= 4.0;// Older overnight news
+    else if (ageHours < 24) score -= 6.0;// Previous session
+    else score -= 9;                     // Multi-day old
   } else if (horizon === 'week') {
     if (ageHours > 72) score -= 1;
   }
@@ -553,10 +583,19 @@ function render() {
     });
   }
 
-  // Keep the rule-based impact score ahead of recency; feedback/watchlist are small personal adjustments.
-  base.sort((a, b) => {
-    return (viewScore(b) - viewScore(a)) || ((b.published || 0) - (a.published || 0));
-  });
+  // Sort: Latest First if toggled, otherwise Top Impact Score
+  if (activeLatestFirst) {
+    base.sort((a, b) => {
+      const timeA = Number(a.published) || 0;
+      const timeB = Number(b.published) || 0;
+      if (timeB !== timeA) return timeB - timeA;
+      return (viewScore(b) - viewScore(a));
+    });
+  } else {
+    base.sort((a, b) => {
+      return (viewScore(b) - viewScore(a)) || ((b.published || 0) - (a.published || 0));
+    });
+  }
 
   let filtered = base;
   if (region === 'Global') filtered = base.filter(s => s.region === 'Global');
@@ -565,7 +604,7 @@ function render() {
   // Render trending keywords list
   renderTrendingKeywords(filtered);
 
-  const narrowed = Boolean(searchQuery.trim() || activeTrendingWord || activeMarketMoversOnly || (activeSector !== 'all') || $('watch-only').checked || $('new-only').checked);
+  const narrowed = Boolean(searchQuery.trim() || activeTrendingWord || activeMarketMoversOnly || activeLatestFirst || (activeSector !== 'all') || $('watch-only').checked || $('new-only').checked);
   const ranked = filtered.map(story => ({ story, tier: viewTier(story) }));
 
   const FRONT_PAGE_LIMIT = 18; // 6 balanced rows of 3 columns
@@ -600,7 +639,9 @@ function render() {
   }
 
   const mustKnow = filtered.filter(s => viewTier(s) === 'Must know');
-  const heroCandidates = [...mustKnow].sort((a, b) => (heroRank(b) - heroRank(a)) || ((b.published || 0) - (a.published || 0)));
+  const heroCandidates = activeLatestFirst
+    ? [...filtered].sort((a, b) => (Number(b.published) || 0) - (Number(a.published) || 0))
+    : [...mustKnow].sort((a, b) => (heroRank(b) - heroRank(a)) || ((b.published || 0) - (a.published || 0)));
   heroStories = heroCandidates.slice(0, 3);
 
   if (heroStories.length) {
@@ -1042,20 +1083,21 @@ async function safeFetch(primaryUrl, fallbackUrl) {
   const first = isLocal ? primaryUrl : (fallbackUrl || primaryUrl);
   const second = isLocal ? fallbackUrl : primaryUrl;
 
+  const fetchOpt = { cache: 'no-cache' };
   try {
-    const res = await fetch(first);
+    const res = await fetch(first, fetchOpt);
     const ct = res.headers.get('content-type') || '';
     if (res.ok && (ct.includes('json') || first.endsWith('.json'))) return res;
   } catch (_) {}
 
   if (second && second !== first) {
     try {
-      const fb = await fetch(second);
+      const fb = await fetch(second, fetchOpt);
       const ct = fb.headers.get('content-type') || '';
       if (fb.ok && (ct.includes('json') || second.endsWith('.json'))) return fb;
     } catch (_) {}
   }
-  return fetch(first);
+  return fetch(first, fetchOpt);
 }
 
 // Load feeds from server or static data
@@ -1073,6 +1115,13 @@ async function load() {
       renderPremarket(premarketData);
     }
     render();
+    updateShortsFilterCounts();
+    if (isShortsOpen && !shortsList.length) {
+      const freshList = getLatestSortedStories({ unreadOnly: shortsFilterUnreadOnly, region: shortsRegion });
+      if (freshList.length > 0) {
+        openShorts(0);
+      }
+    }
   } catch (error) {
     $('notice').hidden = false;
     $('notice').textContent = `Cannot load briefing · ${error?.message || 'check server'}`;
@@ -1174,6 +1223,19 @@ if ($('movers-filter-btn')) {
     activeMarketMoversOnly = !activeMarketMoversOnly;
     $('movers-filter-btn').classList.toggle('active', activeMarketMoversOnly);
     $('movers-filter-btn').setAttribute('aria-pressed', String(activeMarketMoversOnly));
+    render();
+  });
+}
+
+// Latest First Sort Toggle Button
+if ($('latest-sort-btn')) {
+  $('latest-sort-btn').classList.toggle('active', activeLatestFirst);
+  $('latest-sort-btn').setAttribute('aria-pressed', String(activeLatestFirst));
+  $('latest-sort-btn').addEventListener('click', () => {
+    activeLatestFirst = !activeLatestFirst;
+    save('newsland.sort_latest', activeLatestFirst);
+    $('latest-sort-btn').classList.toggle('active', activeLatestFirst);
+    $('latest-sort-btn').setAttribute('aria-pressed', String(activeLatestFirst));
     render();
   });
 }
@@ -1392,6 +1454,14 @@ document.addEventListener('click', e => {
     render();
     return;
   }
+
+  const a = e.target.closest('a');
+  if (a) {
+    const card = a.closest('.feed-card');
+    if (card && card.dataset.storyId) {
+      markStoryAsRead(card.dataset.storyId);
+    }
+  }
 });
 
 // Company Financial X-Ray Flyout Logic
@@ -1544,15 +1614,25 @@ let shortsActiveIndex = 0;
 let isShortsOpen = false;
 let isTransitioning = false;
 
-function getLatestSortedStories() {
+function getLatestSortedStories(options = {}) {
+  const unreadOnly = options.unreadOnly ?? shortsFilterUnreadOnly;
+  const targetRegion = options.region ?? shortsRegion;
+
   const isMonday = new Date().toLocaleDateString('en-US', { ...ist, weekday: 'short' }) === 'Mon';
   const cutoff = Date.now() / 1000 - (horizon === 'week' ? 7 : isMonday ? 3 : 1) * 86400;
 
-  let base = (briefing.stories || []).filter(s =>
-    s.published &&
-    s.published >= cutoff &&
-    feedback[s.id] !== 'hide'
-  );
+  let base = (briefing.stories || []).filter(s => {
+    // 1. Hide filter
+    if (feedback[s.id] === 'hide') return false;
+
+    // 2. Unread filter
+    if (unreadOnly && isStoryRead(s.id)) return false;
+
+    // 3. Time cutoff (keep stories within horizon, but retain if published timestamp is slightly recent or unset)
+    if (s.published && s.published < cutoff) return false;
+
+    return true;
+  });
 
   // If sector is selected
   if (activeSector !== 'all') {
@@ -1566,12 +1646,32 @@ function getLatestSortedStories() {
   }
 
   // If region is selected
-  if (region === 'Global') base = base.filter(s => s.region === 'Global');
-  else if (region === 'India') base = base.filter(s => s.region === 'India');
+  if (targetRegion === 'Global') base = base.filter(s => s.region === 'Global');
+  else if (targetRegion === 'India') base = base.filter(s => s.region === 'India');
 
   // Strict sorting: latest news first
-  base.sort((a, b) => (b.published || 0) - (a.published || 0));
+  base.sort((a, b) => {
+    const timeA = Number(a.published) || 0;
+    const timeB = Number(b.published) || 0;
+    if (timeB !== timeA) return timeB - timeA;
+    return (viewScore(b) || 0) - (viewScore(a) || 0);
+  });
+
   return base;
+}
+
+function updateShortsFilterCounts() {
+  const unreadStories = getLatestSortedStories({ unreadOnly: true, region: shortsRegion });
+  const count = unreadStories.length;
+  const label = $('shorts-unread-label');
+  if (label) {
+    label.textContent = shortsFilterUnreadOnly ? `Unread (${count})` : 'All Stories';
+  }
+  const unreadBtn = $('shorts-filter-unread-btn');
+  if (unreadBtn) {
+    unreadBtn.classList.toggle('active', shortsFilterUnreadOnly);
+    unreadBtn.title = shortsFilterUnreadOnly ? `Showing unread stories only (${count} available). Tap to show all.` : 'Showing all stories. Tap to filter unread only.';
+  }
 }
 
 // Generate Card HTML adhering 100% to Newsland's Exact Broadsheet Page Styling
@@ -1584,6 +1684,10 @@ function generateShortCardHTML(s) {
 function renderShortProgressBar(index, total) {
   const pBar = $('shorts-progress-bar');
   if (!pBar) return;
+  if (total <= 0) {
+    pBar.innerHTML = '';
+    return;
+  }
   const maxVisibleSegments = 20;
   let segmentsHtml = '';
 
@@ -1607,13 +1711,29 @@ function renderShortProgressBar(index, total) {
 // Update Footer Buttons & Header Counter
 function updateShortsUI(index) {
   const total = shortsList.length;
+  if (!total) {
+    $('short-counter').textContent = 'Caught Up';
+    const prevBtn = $('short-prev-btn');
+    const nextBtn = $('short-next-btn');
+    if (prevBtn) { prevBtn.disabled = true; prevBtn.style.opacity = '0.35'; }
+    if (nextBtn) { nextBtn.disabled = true; nextBtn.style.opacity = '0.35'; }
+    const readBtn = $('short-read-btn');
+    if (readBtn) { readBtn.removeAttribute('href'); readBtn.style.pointerEvents = 'none'; }
+    return;
+  }
+
   const s = shortsList[index];
   if (!s) return;
 
-  $('short-counter').textContent = `${index + 1} / ${total}`;
+  const modeTag = shortsFilterUnreadOnly ? ' unread' : '';
+  $('short-counter').textContent = `${index + 1} / ${total}${modeTag}`;
 
   const readBtn = $('short-read-btn');
-  if (readBtn) readBtn.href = safeUrl(s.url);
+  if (readBtn) {
+    readBtn.href = safeUrl(s.url);
+    readBtn.style.pointerEvents = 'auto';
+    readBtn.onclick = () => markStoryAsRead(s.id);
+  }
 
   const usefulBtn = $('short-useful-btn');
   if (usefulBtn) {
@@ -1637,18 +1757,9 @@ function updateShortsUI(index) {
 
 // Open Shorts Mode
 function openShorts(startIndex = 0) {
-  shortsList = getLatestSortedStories();
-  if (!shortsList.length) {
-    shortsList = (briefing.stories || [])
-      .filter(s => feedback[s.id] !== 'hide')
-      .sort((a, b) => (b.published || 0) - (a.published || 0));
-  }
-  if (!shortsList.length) {
-    alert('No active stories available right now.');
-    return;
-  }
+  updateShortsFilterCounts();
+  shortsList = getLatestSortedStories({ unreadOnly: shortsFilterUnreadOnly, region: shortsRegion });
 
-  shortsActiveIndex = Math.max(0, Math.min(startIndex, shortsList.length - 1));
   const modal = $('shorts-modal');
   if (!modal) return;
 
@@ -1660,9 +1771,92 @@ function openShorts(startIndex = 0) {
   if ($('btn-mode-shorts')) $('btn-mode-shorts').classList.add('active');
   if ($('btn-mode-broadsheet')) $('btn-mode-broadsheet').classList.remove('active');
 
+  if (!shortsList.length) {
+    shortsActiveIndex = 0;
+    renderCaughtUpDeck();
+    renderShortProgressBar(0, 0);
+    updateShortsUI(0);
+    return;
+  }
+
+  shortsActiveIndex = Math.max(0, Math.min(startIndex, shortsList.length - 1));
+
+  // Mark the displayed story as read
+  if (shortsList[shortsActiveIndex]) {
+    markStoryAsRead(shortsList[shortsActiveIndex].id);
+  }
+
   renderDeck(shortsActiveIndex);
   renderShortProgressBar(shortsActiveIndex, shortsList.length);
   updateShortsUI(shortsActiveIndex);
+}
+
+// Render Caught Up Card when 0 unread stories
+function renderCaughtUpDeck() {
+  const activeCard = $('short-card-active');
+  const underCard = $('short-card-underneath');
+  if (!activeCard) return;
+
+  activeCard.className = 'deck-card card-top';
+  activeCard.style.transform = '';
+  activeCard.style.opacity = '';
+  activeCard.style.transition = '';
+  activeCard.scrollTop = 0;
+
+  const readCount = Object.keys(readStories).length;
+
+  activeCard.innerHTML = `
+    <article class="feed-card shorts-caught-up-card">
+      <div class="caught-up-icon">🎉</div>
+      <div class="card-eyebrow" style="justify-content: center; margin-bottom: 6px;">
+        <span class="card-tag">ALL CAUGHT UP</span>
+        <span class="card-dot">·</span>
+        <span class="card-time">${esc(shortsRegion)} Edition</span>
+      </div>
+      <h2 class="caught-up-title">You've read all latest stories!</h2>
+      <p class="caught-up-sub">
+        No new unread stories right now in <strong>${esc(shortsRegion)}</strong>.
+        Fresh market news will arrive here automatically as feeds update.
+      </p>
+      <div class="caught-up-stats">
+        <span>✓ ${readCount} stories read</span>
+      </div>
+      <div class="caught-up-actions">
+        <button id="btn-replay-all-shorts" class="short-read-action-btn caught-up-btn">
+          <span>↺ Browse All Stories Anyway</span>
+        </button>
+        <button id="btn-reset-read-shorts" class="caught-up-secondary-btn">
+          <span>Mark All as Unread</span>
+        </button>
+      </div>
+    </article>
+  `;
+
+  if (underCard) {
+    underCard.style.display = 'none';
+    underCard.innerHTML = '';
+  }
+
+  const replayBtn = $('btn-replay-all-shorts');
+  if (replayBtn) {
+    replayBtn.addEventListener('click', () => {
+      shortsFilterUnreadOnly = false;
+      const unreadBtn = $('shorts-filter-unread-btn');
+      if (unreadBtn) unreadBtn.classList.remove('active');
+      openShorts(0);
+    });
+  }
+
+  const resetBtn = $('btn-reset-read-shorts');
+  if (resetBtn) {
+    resetBtn.addEventListener('click', () => {
+      resetReadStories();
+      shortsFilterUnreadOnly = true;
+      const unreadBtn = $('shorts-filter-unread-btn');
+      if (unreadBtn) unreadBtn.classList.add('active');
+      openShorts(0);
+    });
+  }
 }
 
 // Render Bumble-Style Dual Stacked Cards
@@ -1670,6 +1864,11 @@ function renderDeck(index) {
   const activeCard = $('short-card-active');
   const underCard = $('short-card-underneath');
   if (!activeCard) return;
+
+  if (!shortsList.length) {
+    renderCaughtUpDeck();
+    return;
+  }
 
   // Render top active card
   activeCard.className = 'deck-card card-top';
@@ -1742,10 +1941,14 @@ function navigateBumble(direction) {
     }
 
     renderShortProgressBar(targetIndex, shortsList.length);
-    $('short-counter').textContent = `${targetIndex + 1} / ${shortsList.length}`;
+    const modeTag = shortsFilterUnreadOnly ? ' unread' : '';
+    $('short-counter').textContent = `${targetIndex + 1} / ${shortsList.length}${modeTag}`;
 
     setTimeout(() => {
       shortsActiveIndex = targetIndex;
+      if (shortsList[shortsActiveIndex]) {
+        markStoryAsRead(shortsList[shortsActiveIndex].id);
+      }
       renderDeck(shortsActiveIndex);
       updateShortsUI(shortsActiveIndex);
       isTransitioning = false;
@@ -1768,10 +1971,14 @@ function navigateBumble(direction) {
     }
 
     renderShortProgressBar(targetIndex, shortsList.length);
-    $('short-counter').textContent = `${targetIndex + 1} / ${shortsList.length}`;
+    const modeTag = shortsFilterUnreadOnly ? ' unread' : '';
+    $('short-counter').textContent = `${targetIndex + 1} / ${shortsList.length}${modeTag}`;
 
     setTimeout(() => {
       shortsActiveIndex = targetIndex;
+      if (shortsList[shortsActiveIndex]) {
+        markStoryAsRead(shortsList[shortsActiveIndex].id);
+      }
       renderDeck(shortsActiveIndex);
       updateShortsUI(shortsActiveIndex);
       isTransitioning = false;
@@ -1832,8 +2039,27 @@ if ($('shorts-region-tabs')) {
     if (!btn) return;
     $('shorts-region-tabs').querySelectorAll('.s-tab-btn').forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
-    const sReg = btn.dataset.sregion;
-    region = sReg;
+    const sReg = btn.dataset.sregion || btn.dataset.region || 'All';
+    shortsRegion = sReg;
+    openShorts(0);
+  });
+}
+
+// Unread filter pill toggle
+if ($('shorts-filter-unread-btn')) {
+  $('shorts-filter-unread-btn').addEventListener('click', () => {
+    shortsFilterUnreadOnly = !shortsFilterUnreadOnly;
+    $('shorts-filter-unread-btn').classList.toggle('active', shortsFilterUnreadOnly);
+    openShorts(0);
+  });
+}
+
+// Reset read stories button
+if ($('shorts-reset-read-btn')) {
+  $('shorts-reset-read-btn').addEventListener('click', () => {
+    resetReadStories();
+    shortsFilterUnreadOnly = true;
+    if ($('shorts-filter-unread-btn')) $('shorts-filter-unread-btn').classList.add('active');
     openShorts(0);
   });
 }
