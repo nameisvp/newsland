@@ -1,16 +1,16 @@
 {
-  "updated": "2026-10-13T00:27:02.343869+00:00",
+  "updated": "2026-10-13T07:34:14.340946+00:00",
   "schema_version": 2,
   "is_live": false,
-  "quote_updated": "2026-10-13T00:27:02.343591+00:00",
-  "quote_date": "2026-10-09",
+  "quote_updated": "2026-10-13T07:34:14.340496+00:00",
+  "quote_date": "2026-10-13",
   "quote_source": "yfinance",
   "live_bias_label": "LATEST AVAILABLE QUOTE",
   "bias_label": "LATEST AVAILABLE QUOTE",
-  "live_nifty_price": "22,363",
-  "live_pts": -157,
-  "live_pct": -0.7,
-  "nifty_prev_close": "22,520",
+  "live_nifty_price": "22,534",
+  "live_pts": 170,
+  "live_pct": 0.76,
+  "nifty_prev_close": "22,363",
   "fii_dii": {
     "date": "08 Oct 2026 (Prev Close)",
     "fii_net_cr": -2845.6,
@@ -19,9 +19,9 @@
     "trend": "FII Selling / DII Absorbing"
   },
   "vix": {
-    "price": "15.25",
-    "change": "+0.89",
-    "change_pct": "+6.23%",
+    "price": "14.26",
+    "change": "-0.98",
+    "change_pct": "-6.46%",
     "regime": "Normal Volatility"
   },
   "overnight": {
@@ -43,105 +43,105 @@
   },
   "brent": {
     "key": "BRENT",
-    "quote_date": "2026-10-12",
+    "quote_date": "2026-10-13",
     "label": "Brent Crude",
-    "price": "105.73",
-    "price_raw": 105.73,
-    "prev_close": 103.26,
-    "prev_close_fmt": "103.26",
-    "change": 2.47,
-    "change_pct": 2.39,
-    "direction": "up",
+    "price": "105.26",
+    "price_raw": 105.26,
+    "prev_close": 105.44,
+    "prev_close_fmt": "105.44",
+    "change": -0.18,
+    "change_pct": -0.17,
+    "direction": "down",
     "unit": "USD/bbl",
     "range_52w": {
       "low": 58.72,
       "high": 126.1,
       "low_fmt": "58.72",
       "high_fmt": "126.10",
-      "pos_pct": 69.8,
-      "pct_from_high": -16.15
+      "pos_pct": 69.1,
+      "pct_from_high": -16.53
     }
   },
   "usdinr": {
     "key": "USDINR",
     "quote_date": "2026-10-13",
     "label": "INR / USD",
-    "price": "95.76",
-    "price_raw": 95.76,
+    "price": "95.25",
+    "price_raw": 95.2525,
     "prev_close": 95.76,
     "prev_close_fmt": "95.76",
-    "change": 0.0,
-    "change_pct": 0.0,
-    "direction": "up",
+    "change": -0.5075,
+    "change_pct": -0.53,
+    "direction": "down",
     "unit": "",
     "range_52w": {
       "low": 85.86,
       "high": 97.05,
       "low_fmt": "85.86",
       "high_fmt": "97.05",
-      "pos_pct": 88.4,
-      "pct_from_high": -1.33
+      "pos_pct": 83.9,
+      "pct_from_high": -1.86
     }
   },
   "pivots": {
     "nifty": {
-      "pivot": 22465,
-      "s1": 22350,
-      "r1": 22636,
-      "s2": 22179,
-      "r2": 22751,
-      "date": "2026-10-09"
+      "pivot": 22440,
+      "s1": 22228,
+      "r1": 22575,
+      "s2": 22093,
+      "r2": 22786,
+      "date": "2026-10-12"
     },
     "banknifty": {
-      "pivot": 55098,
-      "s1": 54776,
-      "r1": 55578,
-      "s2": 54296,
-      "r2": 55900,
-      "date": "2026-10-09"
+      "pivot": 55014,
+      "s1": 54612,
+      "r1": 55320,
+      "s2": 54307,
+      "r2": 55722,
+      "date": "2026-10-12"
     }
   },
   "posture": {
-    "dma50": 23726,
-    "dma50_fmt": "23,726",
-    "pct_dma50": -5.08,
-    "dma200": 24271,
-    "dma200_fmt": "24,271",
-    "pct_dma200": -7.21,
+    "dma50": 23650,
+    "dma50_fmt": "23,650",
+    "pct_dma50": -4.72,
+    "dma200": 24238,
+    "dma200_fmt": "24,238",
+    "pct_dma200": -7.03,
     "high52": 26373,
     "high52_fmt": "26,373",
     "low52": 22180,
     "low52_fmt": "22,180",
-    "pct_from_high52": -14.61,
-    "pos_52w": 8.1,
+    "pct_from_high52": -14.56,
+    "pos_52w": 8.4,
     "regime": "CORRECTIVE TREND"
   },
   "sector_breadth": {
-    "advances": 1,
+    "advances": 5,
     "total": 5,
     "sectors": [
       {
-        "name": "Auto",
-        "pct": 0.9
-      },
-      {
-        "name": "Metal",
-        "pct": -0.41
-      },
-      {
-        "name": "Bank",
-        "pct": -0.61
-      },
-      {
         "name": "IT",
-        "pct": -0.79
+        "pct": 4.37
       },
       {
         "name": "FMCG",
-        "pct": -1.67
+        "pct": 1.06
+      },
+      {
+        "name": "Auto",
+        "pct": 0.51
+      },
+      {
+        "name": "Metal",
+        "pct": 0.28
+      },
+      {
+        "name": "Bank",
+        "pct": 0.26
       }
     ],
-    "summary": "1/5 sectors in green"
+    "summary": "5/5 sectors in green"
   },
   "session_drivers": [
     {
@@ -154,14 +154,14 @@
       "num": "02",
       "title": "Crude and input costs",
       "bias": "Context",
-      "desc": "Latest Brent quote: 105.73 USD/bbl (+2.39%). Higher crude can raise import and input costs; lower crude can ease them. This quote alone does not establish the cause of the move."
+      "desc": "Latest Brent quote: 105.26 USD/bbl (-0.17%). Higher crude can raise import and input costs; lower crude can ease them. This quote alone does not establish the cause of the move."
     },
     {
       "num": "03",
       "title": "Market posture & breadth",
       "bias": "Context",
-      "desc": "Nifty is 14.6% below 52W high (26,373), trading 7.2% below 200-DMA (24,271). Sector participation: 1/5 sectors in green (Top: Auto +0.90%)."
+      "desc": "Nifty is 14.6% below 52W high (26,373), trading 7.0% below 200-DMA (24,238). Sector participation: 5/5 sectors in green (Top: IT +4.37%)."
     }
   ],
-  "trader_take": "Latest available Nifty quote: 22,363 (-0.70% versus previous close). Latest Nifty reading is below the 22,465 pivot. Next calculated resistance above this reading: 22,636. Pivots are calculated references, not confirmed support or resistance. Market regime: CORRECTIVE TREND (-14.6% from 52W peak, -7.2% vs 200-DMA). Sector breadth: 1/5 sectors in green."
+  "trader_take": "Latest available Nifty quote: 22,534 (+0.76% versus previous close). Latest Nifty reading is above the 22,440 pivot. Next calculated resistance above this reading: 22,575. Pivots are calculated references, not confirmed support or resistance. Market regime: CORRECTIVE TREND (-14.6% from 52W peak, -7.0% vs 200-DMA). Sector breadth: 5/5 sectors in green."
 }
