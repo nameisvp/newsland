@@ -1,9 +1,9 @@
 {
-  "updated": "2026-10-12T17:53:30.301155+00:00",
+  "updated": "2026-10-13T00:27:02.343869+00:00",
   "schema_version": 2,
   "is_live": false,
-  "quote_updated": "2026-10-12T17:53:30.300620+00:00",
-  "quote_date": "2026-10-12",
+  "quote_updated": "2026-10-13T00:27:02.343591+00:00",
+  "quote_date": "2026-10-09",
   "quote_source": "yfinance",
   "live_bias_label": "LATEST AVAILABLE QUOTE",
   "bias_label": "LATEST AVAILABLE QUOTE",
@@ -20,19 +20,19 @@
   },
   "vix": {
     "price": "15.25",
-    "change": "+0.90",
+    "change": "+0.89",
     "change_pct": "+6.23%",
     "regime": "Normal Volatility"
   },
   "overnight": {
     "SP500": {
-      "val": "7,804",
-      "pct": -0.09,
+      "val": "7,807",
+      "pct": -0.06,
       "date": "2026-10-12"
     },
     "NASDAQ": {
-      "val": "27,251",
-      "pct": -0.42,
+      "val": "27,246",
+      "pct": -0.44,
       "date": "2026-10-12"
     },
     "US10Y": {
@@ -45,12 +45,12 @@
     "key": "BRENT",
     "quote_date": "2026-10-12",
     "label": "Brent Crude",
-    "price": "106.83",
-    "price_raw": 106.83,
+    "price": "105.73",
+    "price_raw": 105.73,
     "prev_close": 103.26,
     "prev_close_fmt": "103.26",
-    "change": 3.57,
-    "change_pct": 3.46,
+    "change": 2.47,
+    "change_pct": 2.39,
     "direction": "up",
     "unit": "USD/bbl",
     "range_52w": {
@@ -58,21 +58,21 @@
       "high": 126.1,
       "low_fmt": "58.72",
       "high_fmt": "126.10",
-      "pos_pct": 71.4,
-      "pct_from_high": -15.28
+      "pos_pct": 69.8,
+      "pct_from_high": -16.15
     }
   },
   "usdinr": {
     "key": "USDINR",
-    "quote_date": "2026-10-12",
+    "quote_date": "2026-10-13",
     "label": "INR / USD",
     "price": "95.76",
     "price_raw": 95.76,
-    "prev_close": 96.78,
-    "prev_close_fmt": "96.78",
-    "change": -1.02,
-    "change_pct": -1.05,
-    "direction": "down",
+    "prev_close": 95.76,
+    "prev_close_fmt": "95.76",
+    "change": 0.0,
+    "change_pct": 0.0,
+    "direction": "up",
     "unit": "",
     "range_52w": {
       "low": 85.86,
@@ -85,35 +85,35 @@
   },
   "pivots": {
     "nifty": {
-      "pivot": 22440,
-      "s1": 22228,
-      "r1": 22575,
-      "s2": 22093,
-      "r2": 22786,
-      "date": "2026-10-12"
+      "pivot": 22465,
+      "s1": 22350,
+      "r1": 22636,
+      "s2": 22179,
+      "r2": 22751,
+      "date": "2026-10-09"
     },
     "banknifty": {
-      "pivot": 55014,
-      "s1": 54612,
-      "r1": 55320,
-      "s2": 54307,
-      "r2": 55722,
-      "date": "2026-10-12"
+      "pivot": 55098,
+      "s1": 54776,
+      "r1": 55578,
+      "s2": 54296,
+      "r2": 55900,
+      "date": "2026-10-09"
     }
   },
   "posture": {
-    "dma50": 23687,
-    "dma50_fmt": "23,687",
-    "pct_dma50": -5.59,
-    "dma200": 24254,
-    "dma200_fmt": "24,254",
-    "pct_dma200": -7.8,
+    "dma50": 23726,
+    "dma50_fmt": "23,726",
+    "pct_dma50": -5.08,
+    "dma200": 24271,
+    "dma200_fmt": "24,271",
+    "pct_dma200": -7.21,
     "high52": 26373,
     "high52_fmt": "26,373",
     "low52": 22180,
     "low52_fmt": "22,180",
-    "pct_from_high52": -15.2,
-    "pos_52w": 4.4,
+    "pct_from_high52": -14.61,
+    "pos_52w": 8.1,
     "regime": "CORRECTIVE TREND"
   },
   "sector_breadth": {
@@ -154,14 +154,14 @@
       "num": "02",
       "title": "Crude and input costs",
       "bias": "Context",
-      "desc": "Latest Brent quote: 106.83 USD/bbl (+3.46%). Higher crude can raise import and input costs; lower crude can ease them. This quote alone does not establish the cause of the move."
+      "desc": "Latest Brent quote: 105.73 USD/bbl (+2.39%). Higher crude can raise import and input costs; lower crude can ease them. This quote alone does not establish the cause of the move."
     },
     {
       "num": "03",
       "title": "Market posture & breadth",
       "bias": "Context",
-      "desc": "Nifty is 15.2% below 52W high (26,373), trading 7.8% below 200-DMA (24,254). Sector participation: 1/5 sectors in green (Top: Auto +0.90%)."
+      "desc": "Nifty is 14.6% below 52W high (26,373), trading 7.2% below 200-DMA (24,271). Sector participation: 1/5 sectors in green (Top: Auto +0.90%)."
     }
   ],
-  "trader_take": "Latest available Nifty quote: 22,363 (-0.70% versus previous close). Latest Nifty reading is below the 22,440 pivot. Next calculated resistance above this reading: 22,575. Pivots are calculated references, not confirmed support or resistance. Market regime: CORRECTIVE TREND (-15.2% from 52W peak, -7.8% vs 200-DMA). Sector breadth: 1/5 sectors in green."
+  "trader_take": "Latest available Nifty quote: 22,363 (-0.70% versus previous close). Latest Nifty reading is below the 22,465 pivot. Next calculated resistance above this reading: 22,636. Pivots are calculated references, not confirmed support or resistance. Market regime: CORRECTIVE TREND (-14.6% from 52W peak, -7.2% vs 200-DMA). Sector breadth: 1/5 sectors in green."
 }
