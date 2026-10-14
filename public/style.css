@@ -739,23 +739,34 @@ html[data-theme="night"] .ticker-ruler-band {
   100% { transform: scaleY(1); }
 }
 
+.share-card-btn,
 .copy-memo-btn {
-  background: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: var(--bg-subtle);
   border: 1px solid var(--border-light);
   border-radius: 3px;
   font-family: var(--font-sans);
   font-size: 10px;
-  font-weight: 600;
-  color: var(--ink-muted);
+  font-weight: 700;
+  color: var(--ink);
   cursor: pointer;
-  padding: 2px 8px;
-  transition: all 0.12s ease;
+  padding: 2.5px 8px;
+  transition: all 0.15s ease;
   white-space: nowrap;
 }
 
+.share-card-btn:hover,
 .copy-memo-btn:hover {
-  color: var(--ink);
+  background: var(--ink);
+  color: var(--card-bg);
   border-color: var(--ink);
+}
+
+.share-card-btn .share-icon {
+  font-size: 9.5px;
+  line-height: 1;
 }
 
 .premarket-toggle {
@@ -3847,6 +3858,241 @@ html[data-size="lg"] .deck-card .card-snippet { font-size: 16.5px; }
   background: var(--bg-hover);
   color: var(--ink);
   border-color: var(--ink);
+}
+
+/* ── Share Pre-Market Card Modal ─────────────────────────────────────── */
+.share-modal-layer {
+  position: fixed;
+  inset: 0;
+  z-index: 1100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+.share-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(4px);
+}
+
+.share-modal-dialog {
+  position: relative;
+  width: min(540px, 94vw);
+  max-height: 90vh;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 2;
+  font-family: var(--font-sans);
+  animation: modalPop 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes modalPop {
+  from { opacity: 0; transform: scale(0.96) translateY(8px); }
+  to { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+.share-modal-header {
+  padding: 16px 20px 12px;
+  border-bottom: 1px solid var(--border-light);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.share-modal-tag {
+  font-size: 9px;
+  font-weight: 750;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent-red);
+}
+
+.share-modal-title {
+  margin: 2px 0 0;
+  font-size: 16px;
+  font-weight: 750;
+  color: var(--ink);
+}
+
+.share-close-btn {
+  background: none;
+  border: none;
+  font-size: 16px;
+  color: var(--ink-muted);
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+  line-height: 1;
+}
+
+.share-close-btn:hover {
+  color: var(--ink);
+  background: var(--bg-subtle);
+}
+
+.share-tab-bar {
+  display: flex;
+  padding: 0 20px;
+  border-bottom: 1px solid var(--border-light);
+  background: var(--bg-subtle);
+  gap: 16px;
+}
+
+.share-tab {
+  background: none;
+  border: none;
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--ink-muted);
+  padding: 10px 0;
+  cursor: pointer;
+  position: relative;
+  transition: color 0.15s ease;
+}
+
+.share-tab:hover {
+  color: var(--ink);
+}
+
+.share-tab.active {
+  color: var(--ink);
+}
+
+.share-tab.active::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--accent-red);
+}
+
+.share-modal-body {
+  padding: 16px 20px 20px;
+  overflow-y: auto;
+}
+
+.share-pane {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.share-pane[hidden] {
+  display: none !important;
+}
+
+.card-preview-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #06090e;
+  border-radius: 8px;
+  padding: 12px;
+  border: 1px solid var(--border-light);
+}
+
+.share-canvas-preview {
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  border-radius: 6px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+}
+
+.share-textarea {
+  width: 100%;
+  font-family: var(--font-mono, monospace);
+  font-size: 11px;
+  line-height: 1.5;
+  padding: 12px;
+  background: var(--bg-subtle);
+  border: 1px solid var(--border-light);
+  border-radius: 6px;
+  color: var(--ink);
+  resize: vertical;
+}
+
+.share-actions-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.share-action-btn {
+  flex: 1;
+  min-width: 110px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 8px 14px;
+  border-radius: 5px;
+  font-family: var(--font-sans);
+  font-size: 11.5px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  white-space: nowrap;
+}
+
+.share-action-btn.primary {
+  background: var(--ink);
+  color: var(--card-bg);
+  border: 1px solid var(--ink);
+}
+
+.share-action-btn.primary:hover {
+  opacity: 0.9;
+  transform: translateY(-0.5px);
+}
+
+.share-action-btn.secondary {
+  background: var(--bg-subtle);
+  color: var(--ink);
+  border: 1px solid var(--border-light);
+}
+
+.share-action-btn.secondary:hover {
+  border-color: var(--ink);
+}
+
+.share-action-btn.social-x {
+  background: #000;
+  color: #fff;
+  border: 1px solid #222;
+}
+
+.share-action-btn.social-x:hover {
+  background: #111;
+}
+
+.share-action-btn.social-wa {
+  background: #25D366;
+  color: #fff;
+  border: 1px solid #20b858;
+}
+
+.share-action-btn.social-wa:hover {
+  background: #20b858;
+}
+
+.share-status-msg {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--green-ticker);
+  margin: 0;
+  text-align: center;
 }
 
 

@@ -3,11 +3,26 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>newsland. — market briefing</title>
-  <meta name="description" content="A minimalist financial briefing with market quotes, lead story carousel, and 3-column broadsheet feed.">
+  <title>newsland. — Zero-Noise Market Intelligence Terminal</title>
+  <meta name="description" content="Dalal Street & Global Market Desk: Live indicated open, floor pivots, institutional FII/DII net flows, India VIX regime, and high-conviction trading catalysts.">
   <link rel="icon" href="/favicon.svg">
-  <link rel="stylesheet" href="/style.css?v=18">
-  <script src="/app.js?v=18" defer></script>
+
+  <!-- Open Graph / Facebook / LinkedIn / WhatsApp -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Newsland">
+  <meta property="og:title" content="Newsland — Zero-Noise Market Intelligence Terminal">
+  <meta property="og:description" content="Dalal Street & Global Market Desk: Live indicated open, floor pivots, institutional FII/DII net flows, India VIX regime, and high-conviction catalysts.">
+  <meta property="og:image" content="/og-preview.png">
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Newsland — Zero-Noise Market Intelligence Terminal">
+  <meta name="twitter:description" content="Dalal Street & Global Market Desk: Live indicated open, floor pivots, institutional FII/DII net flows, India VIX regime, and high-conviction catalysts.">
+  <meta name="twitter:image" content="/og-preview.png">
+  <meta name="theme-color" content="#090D14">
+
+  <link rel="stylesheet" href="/style.css?v=19">
+  <script src="/app.js?v=19" defer></script>
 </head>
 <body>
   <!-- Top Navigation Bar -->
@@ -113,7 +128,10 @@
               <span></span><span></span><span></span><span></span>
             </span>
           </button>
-          <button id="copy-memo-btn" class="copy-memo-btn" title="Copy formatted summary to clipboard">Copy Memo 📋</button>
+          <button id="share-card-btn" class="share-card-btn" title="Export & Share Pre-Market Card">
+            <span class="share-icon">📤</span>
+            <span class="share-label">Share Card</span>
+          </button>
           <button id="premarket-toggle" class="premarket-toggle" aria-expanded="true">Collapse ▴</button>
         </div>
       </div>
@@ -592,6 +610,61 @@
         <span>← Swipe left / right to browse →</span>
       </div>
 
+    </div>
+  </div>
+
+  <!-- Share & Export Pre-Market Desk Brief Modal -->
+  <div id="share-modal" class="share-modal-layer" hidden>
+    <div id="share-backdrop" class="share-backdrop"></div>
+    <div class="share-modal-dialog">
+      <div class="share-modal-header">
+        <div class="share-title-block">
+          <span class="share-modal-tag">SHAREABLE DESK BRIEF</span>
+          <h2 class="share-modal-title">Pre-Market Intelligence Card</h2>
+        </div>
+        <button id="close-share-modal" class="share-close-btn" aria-label="Close share modal">✕</button>
+      </div>
+
+      <!-- Segmented Tab Switcher: Visual Card vs Text Memo -->
+      <div class="share-tab-bar">
+        <button id="tab-visual-card" class="share-tab active" data-tab="visual">Visual Card (Image)</button>
+        <button id="tab-text-memo" class="share-tab" data-tab="text">Text Memo (WhatsApp/X)</button>
+      </div>
+
+      <div class="share-modal-body">
+        <!-- Tab 1: Visual Card View -->
+        <div id="pane-visual-card" class="share-pane active">
+          <div class="card-preview-container">
+            <canvas id="share-canvas" width="600" height="600" class="share-canvas-preview"></canvas>
+          </div>
+          <div class="share-actions-row">
+            <button id="copy-image-btn" class="share-action-btn primary">
+              <span class="btn-icon">📋</span> Copy Image
+            </button>
+            <button id="download-image-btn" class="share-action-btn secondary">
+              <span class="btn-icon">💾</span> Download PNG
+            </button>
+          </div>
+          <p id="image-copy-status" class="share-status-msg" hidden></p>
+        </div>
+
+        <!-- Tab 2: Text Memo View -->
+        <div id="pane-text-memo" class="share-pane" hidden>
+          <textarea id="share-text-area" class="share-textarea" readonly rows="9"></textarea>
+          <div class="share-actions-row">
+            <button id="copy-text-btn" class="share-action-btn primary">
+              <span class="btn-icon">📋</span> Copy Text
+            </button>
+            <button id="share-x-btn" class="share-action-btn social-x">
+              <span class="btn-icon">🐦</span> Share on X
+            </button>
+            <button id="share-wa-btn" class="share-action-btn social-wa">
+              <span class="btn-icon">💬</span> WhatsApp
+            </button>
+          </div>
+          <p id="text-copy-status" class="share-status-msg" hidden></p>
+        </div>
+      </div>
     </div>
   </div>
 </body>

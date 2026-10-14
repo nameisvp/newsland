@@ -1416,65 +1416,586 @@ document.querySelectorAll('.sector-pill').forEach(btn => {
   });
 });
 
-// Copy Trading Desk Memo to Clipboard
-if ($('copy-memo-btn')) {
-  $('copy-memo-btn').addEventListener('click', async () => {
-    if (!premarketData) return;
-    const session = getISTSession();
-    const dateStr = new Date().toLocaleDateString('en-IN', { ...ist, day: 'numeric', month: 'short', year: 'numeric' });
-    const bias = 'Latest available quote';
-    const price = premarketData.live_nifty_price || '--';
-    const pts = premarketData.live_pts ?? '--';
-    const pct = premarketData.live_pct ?? '--';
-    const ptsSign = pts >= 0 ? '+' : '';
-    const pctSign = pct >= 0 ? '+' : '';
+// ============================================================================
+// Share Modal & Pre-Market Visual Card Engine
+// ============================================================================
 
-    let text = `*Newsland ${session.tag}* (${dateStr})\n`;
-    text += `• Bias / Benchmark: ${bias} (${price} · ${ptsSign}${pts} pts, ${pctSign}${pct}%)\n`;
-    if (premarketData.fii_dii) {
-      const fii = premarketData.fii_dii.fii_net_cr ?? 0;
-      const dii = premarketData.fii_dii.dii_net_cr ?? 0;
-      const net = premarketData.fii_dii.net_cr ?? 0;
-      text += `• Institutional Flows (${premarketData.fii_dii.date}): FII ${fii >= 0 ? '+' : '-'}₹${Math.abs(Math.round(fii)).toLocaleString('en-IN')} Cr | DII ${dii >= 0 ? '+' : '-'}₹${Math.abs(Math.round(dii)).toLocaleString('en-IN')} Cr (Net ${net >= 0 ? '+' : '-'}₹${Math.abs(Math.round(net)).toLocaleString('en-IN')} Cr)\n`;
-    }
-    if (premarketData.overnight) {
-      const sp = premarketData.overnight.SP500;
-      const brent = premarketData.brent;
-      text += `• Macro Cues: S&P 500 (${sp?.val || '--'} · ${sp?.pct >= 0 ? '+' : ''}${sp?.pct ?? 0}%) | Brent Crude (${brent?.price || '--'} · ${brent?.change_pct >= 0 ? '+' : ''}${brent?.change_pct ?? 0}%)\n`;
-    }
-    if (premarketData.pivots?.nifty) {
-      const np = premarketData.pivots.nifty;
-      text += `• Nifty 50 Pivots: S2 ${np.s2} · S1 ${np.s1} · Pivot ${np.pivot} · R1 ${np.r1} · R2 ${np.r2}\n`;
-    }
-    if (premarketData.posture) {
-      const p = premarketData.posture;
-      text += `• Market Regime: ${p.regime} (${p.pct_from_high52}% from 52W peak · 50-DMA: ${p.dma50_fmt} · 200-DMA: ${p.dma200_fmt || '--'})\n`;
-    }
-    if (premarketData.sector_breadth) {
-      const sb = premarketData.sector_breadth;
-      const secSummary = sb.sectors ? sb.sectors.map(s => `${s.name} ${s.pct >= 0 ? '+' : ''}${s.pct}%`).join(', ') : '';
-      text += `• Sector Breadth: ${sb.summary} [${secSummary}]\n`;
-    }
-    if (premarketData.session_drivers?.length) {
-      text += `• Session Drivers:\n`;
-      premarketData.session_drivers.forEach(d => {
-        text += `  [${d.num}] ${d.title} (${d.bias}): ${d.desc}\n`;
-      });
-    }
-    if (premarketData.trader_take) {
-      text += `• Desk Take: ${premarketData.trader_take}\n`;
-    }
+function drawShareCard(canvas, pm, stories) {
+  if (!canvas) return;
+  const ctx = canvas.getContext('2d');
+  const W = 1200;
+  const H = 1200;
+  canvas.width = W;
+  canvas.height = H;
 
-    try {
-      await navigator.clipboard.writeText(text);
-      const btn = $('copy-memo-btn');
-      const orig = btn.textContent;
-      btn.textContent = 'Copied ✓';
-      setTimeout(() => { btn.textContent = orig; }, 2000);
-    } catch (err) {
-      console.warn('Clipboard failed', err);
+  // Background Gradient
+  const bgGrad = ctx.createLinearGradient(0, 0, 0, H);
+  bgGrad.addColorStop(0, '#090D16');
+  bgGrad.addColorStop(0.5, '#0E1726');
+  bgGrad.addColorStop(1, '#070A10');
+  ctx.fillStyle = bgGrad;
+  ctx.fillRect(0, 0, W, H);
+
+  // Subtle ambient glow
+  const r1 = ctx.createRadialGradient(1050, 150, 0, 1050, 150, 420);
+  r1.addColorStop(0, 'rgba(16, 185, 129, 0.08)');
+  r1.addColorStop(1, 'rgba(16, 185, 129, 0)');
+  ctx.fillStyle = r1;
+  ctx.fillRect(600, 0, 600, 600);
+
+  const r2 = ctx.createRadialGradient(150, 650, 0, 150, 650, 450);
+  r2.addColorStop(0, 'rgba(56, 189, 248, 0.05)');
+  r2.addColorStop(1, 'rgba(56, 189, 248, 0)');
+  ctx.fillStyle = r2;
+  ctx.fillRect(0, 350, 600, 700);
+
+  // Card Outer Inset Border
+  drawRoundRect(ctx, 28, 28, W - 56, H - 56, 20, null, 'rgba(255, 255, 255, 0.08)', 1.5);
+
+  // Helper: Rounded Rectangle
+  function drawRoundRect(c, x, y, w, h, r, fill, stroke, lw) {
+    c.save();
+    c.beginPath();
+    c.moveTo(x + r, y);
+    c.arcTo(x + w, y, x + w, y + h, r);
+    c.arcTo(x + w, y + h, x, y + h, r);
+    c.arcTo(x, y + h, x, y, r);
+    c.arcTo(x, y, x + w, y, r);
+    c.closePath();
+    if (fill) { c.fillStyle = fill; c.fill(); }
+    if (stroke) { c.strokeStyle = stroke; c.lineWidth = lw || 1; c.stroke(); }
+    c.restore();
+  }
+
+  // Helper: Wrap Text
+  function wrapText(c, text, x, y, maxW, lineH, maxLines) {
+    const words = (text || '').split(' ');
+    let line = '';
+    let curY = y;
+    let linesDrawn = 0;
+
+    for (let n = 0; n < words.length; n++) {
+      const testLine = line + words[n] + ' ';
+      const metrics = c.measureText(testLine);
+      if (metrics.width > maxW && n > 0) {
+        linesDrawn++;
+        if (maxLines && linesDrawn >= maxLines) {
+          c.fillText(line.trim() + '...', x, curY);
+          return curY;
+        }
+        c.fillText(line.trim(), x, curY);
+        line = words[n] + ' ';
+        curY += lineH;
+      } else {
+        line = testLine;
+      }
+    }
+    c.fillText(line.trim(), x, curY);
+    return curY;
+  }
+
+  // Header: Brand & Meta
+  ctx.font = '800 34px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
+  ctx.fillStyle = '#FFFFFF';
+  ctx.textAlign = 'left';
+  ctx.fillText('NEWSLAND.', 64, 88);
+
+  const session = typeof getISTSession === 'function' ? getISTSession() : { tag: 'PRE-MARKET' };
+  const sessionTag = (session.tag || 'PRE-MARKET').toUpperCase();
+  drawRoundRect(ctx, 290, 60, 200, 36, 18, 'rgba(16, 185, 129, 0.14)', 'rgba(16, 185, 129, 0.45)', 1);
+  ctx.font = '700 12px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
+  ctx.fillStyle = '#34D399';
+  ctx.textAlign = 'center';
+  ctx.fillText(`●  ${sessionTag} BRIEF`, 390, 83);
+
+  const now = new Date();
+  const dateStr = now.toLocaleDateString('en-IN', { ...ist, weekday: 'short', day: 'numeric', month: 'short', year: 'numeric' }).toUpperCase();
+  ctx.font = '600 14px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
+  ctx.fillStyle = '#94A3B8';
+  ctx.textAlign = 'right';
+  ctx.fillText(`${dateStr} · IST`, W - 64, 83);
+
+  // Top Divider
+  ctx.beginPath();
+  ctx.moveTo(64, 116);
+  ctx.lineTo(W - 64, 116);
+  ctx.strokeStyle = 'rgba(255, 255, 255, 0.08)';
+  ctx.lineWidth = 1;
+  ctx.stroke();
+
+  // Section 1: Benchmark Hero Box (Y: 136, H: 144)
+  drawRoundRect(ctx, 64, 136, W - 128, 144, 14, 'rgba(255, 255, 255, 0.025)', 'rgba(255, 255, 255, 0.08)', 1);
+
+  ctx.textAlign = 'left';
+  ctx.font = '700 12px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
+  ctx.fillStyle = '#64748B';
+  ctx.fillText('INDICATIVE BENCHMARK · NIFTY 50', 92, 168);
+
+  const price = pm?.live_nifty_price || '--';
+  const pts = pm?.live_pts ?? 0;
+  const pct = pm?.live_pct ?? 0;
+  const isUp = Number(pts) >= 0;
+  const ptsSign = isUp ? '+' : '';
+  const pctSign = isUp ? '+' : '';
+
+  ctx.font = '800 52px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
+  ctx.fillStyle = '#FFFFFF';
+  ctx.fillText(String(price), 92, 230);
+
+  // Change Pill
+  const pillW = 210;
+  const pillH = 40;
+  const pillX = 330;
+  const pillY = 194;
+  const pillBg = isUp ? 'rgba(16, 185, 129, 0.16)' : 'rgba(239, 68, 68, 0.16)';
+  const pillBorder = isUp ? 'rgba(16, 185, 129, 0.45)' : 'rgba(239, 68, 68, 0.45)';
+  const pillColor = isUp ? '#34D399' : '#F87171';
+  drawRoundRect(ctx, pillX, pillY, pillW, pillH, 8, pillBg, pillBorder, 1);
+  ctx.font = '800 18px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
+  ctx.fillStyle = pillColor;
+  ctx.textAlign = 'center';
+  ctx.fillText(`${ptsSign}${pts} pts (${pctSign}${pct}%)`, pillX + (pillW / 2), pillY + 26);
+
+  // Right column of Hero Box: Posture & Breadth
+  ctx.textAlign = 'right';
+  if (pm?.posture?.regime) {
+    drawRoundRect(ctx, W - 310, 154, 218, 28, 6, 'rgba(245, 158, 11, 0.12)', 'rgba(245, 158, 11, 0.4)', 1);
+    ctx.font = '750 11px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
+    ctx.fillStyle = '#FBBF24';
+    ctx.textAlign = 'center';
+    ctx.fillText(pm.posture.regime, W - 310 + 109, 172);
+  }
+
+  ctx.textAlign = 'right';
+  ctx.font = '600 13px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
+  ctx.fillStyle = '#94A3B8';
+  if (pm?.posture?.pct_from_high52) {
+    ctx.fillText(`${pm.posture.pct_from_high52}% vs 52W High · 50-DMA: ${pm.posture.dma50_fmt || '--'}`, W - 92, 212);
+  }
+  const breadthSummary = pm?.sector_breadth?.summary || 'Sector breadth tracking live';
+  ctx.font = '500 12.5px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
+  ctx.fillStyle = '#64748B';
+  ctx.fillText(`Breadth: ${breadthSummary}`, W - 92, 238);
+
+  // Section 2: Three Mini Cards (Y: 298, H: 136)
+  const colW = (W - 128 - 36) / 3; // 338px
+  const colY = 298;
+  const colH = 136;
+
+  // Mini Card 1: India VIX
+  drawRoundRect(ctx, 64, colY, colW, colH, 12, 'rgba(255, 255, 255, 0.02)', 'rgba(255, 255, 255, 0.06)', 1);
+  ctx.textAlign = 'left';
+  ctx.font = '700 11px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
+  ctx.fillStyle = '#64748B';
+  ctx.fillText('INDIA VIX VOLATILITY GAUGE', 86, colY + 30);
+  ctx.font = '800 36px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
+  ctx.fillStyle = '#F8FAFC';
+  ctx.fillText(pm?.vix?.price || '14.6', 86, colY + 76);
+  ctx.font = '600 13px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
+  ctx.fillStyle = '#38BDF8';
+  ctx.fillText(`${pm?.vix?.regime || 'Normal Volatility'} (${pm?.vix?.change_pct || '--'})`, 86, colY + 106);
+
+  // Mini Card 2: FII / DII Institutional Flows
+  const col2X = 64 + colW + 18;
+  drawRoundRect(ctx, col2X, colY, colW, colH, 12, 'rgba(255, 255, 255, 0.02)', 'rgba(255, 255, 255, 0.06)', 1);
+  ctx.font = '700 11px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
+  ctx.fillStyle = '#64748B';
+  ctx.fillText('INSTITUTIONAL FLOWS (CR)', col2X + 22, colY + 30);
+  const netCr = pm?.fii_dii?.net_cr ?? 0;
+  const netUp = netCr >= 0;
+  ctx.font = '800 24px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
+  ctx.fillStyle = netUp ? '#34D399' : '#F87171';
+  ctx.fillText(`Net ${netUp ? '+' : '-'}₹${Math.abs(Math.round(netCr)).toLocaleString('en-IN')} Cr`, col2X + 22, colY + 68);
+  ctx.font = '600 12.5px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
+  ctx.fillStyle = '#CBD5E1';
+  const fiiVal = Math.round(pm?.fii_dii?.fii_net_cr ?? 0);
+  const diiVal = Math.round(pm?.fii_dii?.dii_net_cr ?? 0);
+  ctx.fillText(`FII: ${fiiVal >= 0 ? '+' : '-'}₹${Math.abs(fiiVal).toLocaleString('en-IN')}  ·  DII: ${diiVal >= 0 ? '+' : '-'}₹${Math.abs(diiVal).toLocaleString('en-IN')}`, col2X + 22, colY + 104);
+
+  // Mini Card 3: Macro & Commodities
+  const col3X = col2X + colW + 18;
+  drawRoundRect(ctx, col3X, colY, colW, colH, 12, 'rgba(255, 255, 255, 0.02)', 'rgba(255, 255, 255, 0.06)', 1);
+  ctx.font = '700 11px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
+  ctx.fillStyle = '#64748B';
+  ctx.fillText('OVERNIGHT MACRO & CRUDE', col3X + 22, colY + 30);
+  const spVal = pm?.overnight?.SP500?.val || '--';
+  const spPct = pm?.overnight?.SP500?.pct ?? 0;
+  ctx.font = '700 14px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
+  ctx.fillStyle = '#F1F5F9';
+  ctx.fillText(`S&P 500: ${spVal} (${spPct >= 0 ? '+' : ''}${spPct}%)`, col3X + 22, colY + 62);
+  const brentVal = pm?.brent?.price || '--';
+  const brentPct = pm?.brent?.change_pct ?? 0;
+  ctx.fillText(`Brent Crude: $${brentVal} (${brentPct >= 0 ? '+' : ''}${brentPct}%)`, col3X + 22, colY + 86);
+  ctx.font = '500 12px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
+  ctx.fillStyle = '#94A3B8';
+  ctx.fillText(`USD/INR: ₹${pm?.usdinr?.price || '--'}`, col3X + 22, colY + 110);
+
+  // Section 3: Key Technical Floor Pivots (Y: 450, H: 86)
+  drawRoundRect(ctx, 64, 450, W - 128, 86, 12, 'rgba(15, 23, 42, 0.65)', 'rgba(255, 255, 255, 0.06)', 1);
+  ctx.font = '700 11px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
+  ctx.fillStyle = '#64748B';
+  ctx.fillText('KEY TECHNICAL LEVELS (FLOOR PIVOTS)', 86, 474);
+
+  const np = pm?.pivots?.nifty || { s1: '--', pivot: '--', r1: '--' };
+  const bp = pm?.pivots?.banknifty || { s1: '--', pivot: '--', r1: '--' };
+
+  ctx.font = '600 13px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
+  ctx.fillStyle = '#E2E8F0';
+  ctx.fillText(`NIFTY 50:    S1  ${np.s1}   ·   [ PIVOT  ${np.pivot} ]   ·   R1  ${np.r1}`, 86, 502);
+  ctx.fillText(`BANK NIFTY:  S1  ${bp.s1}   ·   [ PIVOT  ${bp.pivot} ]   ·   R1  ${bp.r1}`, 86, 523);
+
+  // Section 4: Top 3 Market Catalysts (Y: 554)
+  ctx.font = '800 12px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
+  ctx.fillStyle = '#38BDF8';
+  ctx.fillText('TOP MARKET-MOVING CATALYSTS FOR TODAY', 66, 570);
+
+  const topStories = (stories || [])
+    .slice()
+    .sort((a, b) => (b.score || 0) - (a.score || 0))
+    .slice(0, 3);
+
+  const catYStart = 586;
+  const catH = 138;
+  const catGap = 16;
+
+  topStories.forEach((s, idx) => {
+    const curY = catYStart + idx * (catH + catGap);
+    drawRoundRect(ctx, 64, curY, W - 128, catH, 12, 'rgba(255, 255, 255, 0.02)', 'rgba(255, 255, 255, 0.06)', 1);
+
+    // Number Badge (01, 02, 03)
+    const numBadgeX = 86;
+    const numBadgeY = curY + 22;
+    drawRoundRect(ctx, numBadgeX, numBadgeY, 36, 36, 8, 'rgba(56, 189, 248, 0.12)', 'rgba(56, 189, 248, 0.35)', 1);
+    ctx.font = '800 16px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
+    ctx.fillStyle = '#38BDF8';
+    ctx.textAlign = 'center';
+    ctx.fillText(`0${idx + 1}`, numBadgeX + 18, numBadgeY + 24);
+
+    // Category Eyebrow & Source Tag
+    ctx.textAlign = 'left';
+    ctx.font = '750 11px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
+    ctx.fillStyle = '#94A3B8';
+    const cat = (s.category || 'MARKET PULSE').toUpperCase();
+    const sourceCount = (s.clusterSources && s.clusterSources.length) ? `${s.clusterSources.length} SOURCES` : (s.source || 'WIRE');
+    ctx.fillText(`${cat}  ·  ● ${sourceCount}`, 136, curY + 36);
+
+    // Headline (Wrapped, Max 2 lines)
+    ctx.font = '600 21px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
+    ctx.fillStyle = '#F8FAFC';
+    const cleanHeadline = (s.title || '').replace(/[\(\)\[\]"]/g, '').trim();
+    wrapText(ctx, cleanHeadline, 136, curY + 68, W - 230, 28, 2);
+  });
+
+  // Section 5: Desk Takeaway & Footer Watermark (Y: 1060 to 1140)
+  ctx.textAlign = 'left';
+  if (pm?.trader_take) {
+    ctx.font = 'italic 500 13px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
+    ctx.fillStyle = '#94A3B8';
+    const cleanTake = `Desk Take: ${pm.trader_take}`;
+    ctx.fillText(cleanTake.length > 130 ? cleanTake.slice(0, 127) + '...' : cleanTake, 64, 1076);
+  }
+
+  // Bottom Line Divider
+  ctx.beginPath();
+  ctx.moveTo(64, 1100);
+  ctx.lineTo(W - 64, 1100);
+  ctx.strokeStyle = 'rgba(255, 255, 255, 0.08)';
+  ctx.lineWidth = 1;
+  ctx.stroke();
+
+  // Footer Branding
+  ctx.font = '800 17px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
+  ctx.fillStyle = '#FFFFFF';
+  ctx.fillText('newsland.in', 64, 1136);
+
+  ctx.font = '500 13px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
+  ctx.fillStyle = '#64748B';
+  ctx.fillText('·  Institutional Signal. Zero Noise.', 166, 1136);
+
+  ctx.textAlign = 'right';
+  ctx.font = '600 12px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
+  ctx.fillStyle = '#475569';
+  ctx.fillText('Curated for Serious Traders & Investors', W - 64, 1136);
+}
+
+function generateShareTextMemo(pm, stories) {
+  const session = typeof getISTSession === 'function' ? getISTSession() : { tag: 'PRE-MARKET' };
+  const now = new Date();
+  const dateStr = now.toLocaleDateString('en-IN', { ...ist, weekday: 'long', day: 'numeric', month: 'short', year: 'numeric' });
+  const timeStr = now.toLocaleTimeString('en-IN', { ...ist, hour: '2-digit', minute: '2-digit', hour12: true });
+
+  const price = pm?.live_nifty_price || '--';
+  const pts = pm?.live_pts ?? '--';
+  const pct = pm?.live_pct ?? '--';
+  const ptsSign = Number(pts) >= 0 ? '+' : '';
+  const pctSign = Number(pct) >= 0 ? '+' : '';
+
+  let lines = [];
+  lines.push(`📊 *NEWSLAND ${session.tag.toUpperCase()}*`);
+  lines.push(`🗓️ ${dateStr} · ${timeStr} IST\n`);
+
+  lines.push(`📌 *NIFTY 50 BENCHMARK:*`);
+  lines.push(`• Latest Quote: ${price} (${ptsSign}${pts} pts, ${pctSign}${pct}%)`);
+  if (pm?.posture) {
+    const p = pm.posture;
+    lines.push(`• Regime: ${p.regime} (${p.pct_from_high52}% from 52W High | 50-DMA: ${p.dma50_fmt})`);
+  }
+  lines.push('');
+
+  if (pm?.fii_dii) {
+    const f = pm.fii_dii;
+    const fii = f.fii_net_cr ?? 0;
+    const dii = f.dii_net_cr ?? 0;
+    const net = f.net_cr ?? (fii + dii);
+    lines.push(`🏛️ *INSTITUTIONAL FLOWS:*`);
+    lines.push(`• FII: ${fii >= 0 ? '+' : '-'}₹${Math.abs(Math.round(fii)).toLocaleString('en-IN')} Cr | DII: ${dii >= 0 ? '+' : '-'}₹${Math.abs(Math.round(dii)).toLocaleString('en-IN')} Cr`);
+    lines.push(`• Combined Net: ${net >= 0 ? '+' : '-'}₹${Math.abs(Math.round(net)).toLocaleString('en-IN')} Cr (${f.trend || ''})`);
+    lines.push('');
+  }
+
+  lines.push(`🌐 *MACRO & COMMODITIES:*`);
+  if (pm?.overnight?.SP500) {
+    const sp = pm.overnight.SP500;
+    lines.push(`• S&P 500: ${sp.val || '--'} (${sp.pct >= 0 ? '+' : ''}${sp.pct ?? 0}%)`);
+  }
+  if (pm?.brent) {
+    const b = pm.brent;
+    lines.push(`• Brent Crude: $${b.price || '--'} (${b.change_pct >= 0 ? '+' : ''}${b.change_pct ?? 0}%)`);
+  }
+  if (pm?.usdinr) {
+    lines.push(`• USD/INR: ₹${pm.usdinr.price || '--'}`);
+  }
+  if (pm?.vix) {
+    lines.push(`• India VIX: ${pm.vix.price} (${pm.vix.regime || 'Volatility'})`);
+  }
+  lines.push('');
+
+  if (pm?.pivots?.nifty) {
+    const np = pm.pivots.nifty;
+    const bp = pm.pivots.banknifty;
+    lines.push(`🎯 *KEY FLOOR PIVOTS:*`);
+    lines.push(`• NIFTY: S1 ${np.s1} | Pivot ${np.pivot} | R1 ${np.r1}`);
+    if (bp) {
+      lines.push(`• BANK NIFTY: S1 ${bp.s1} | Pivot ${bp.pivot} | R1 ${bp.r1}`);
+    }
+    lines.push('');
+  }
+
+  const topCats = (stories || [])
+    .slice()
+    .sort((a, b) => (b.score || 0) - (a.score || 0))
+    .slice(0, 3);
+
+  if (topCats.length) {
+    lines.push(`⚡ *TOP MARKET CATALYSTS:*`);
+    topCats.forEach((s, idx) => {
+      const cleanTitle = (s.title || '').replace(/[\(\)\[\]"]/g, '').trim();
+      lines.push(`${idx + 1}. ${cleanTitle}`);
+    });
+    lines.push('');
+  }
+
+  if (pm?.trader_take) {
+    lines.push(`💡 *DESK TAKE:*`);
+    lines.push(`${pm.trader_take}\n`);
+  }
+
+  lines.push(`🔗 Sourced institutional signals with zero noise: https://newsland.in`);
+  return lines.join('\n');
+}
+
+function openShareModal() {
+  const modal = $('share-modal');
+  if (!modal) return;
+  modal.hidden = false;
+  document.body.style.overflow = 'hidden';
+
+  // Render Visual Card onto Canvas
+  const canvas = $('share-canvas');
+  if (canvas) {
+    drawShareCard(canvas, premarketData, briefing?.stories || []);
+  }
+
+  // Populate Text Memo
+  const textArea = $('share-text-area');
+  if (textArea) {
+    textArea.value = generateShareTextMemo(premarketData, briefing?.stories || []);
+  }
+}
+
+function closeShareModal() {
+  const modal = $('share-modal');
+  if (!modal) return;
+  modal.hidden = true;
+  document.body.style.overflow = '';
+}
+
+function initShareModal() {
+  const triggerBtn = $('share-card-btn');
+  if (triggerBtn) {
+    triggerBtn.addEventListener('click', openShareModal);
+  }
+
+  const closeBtn = $('close-share-modal');
+  if (closeBtn) {
+    closeBtn.addEventListener('click', closeShareModal);
+  }
+
+  const backdrop = $('share-backdrop');
+  if (backdrop) {
+    backdrop.addEventListener('click', closeShareModal);
+  }
+
+  // Escape key closes modal
+  window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      const modal = $('share-modal');
+      if (modal && !modal.hidden) closeShareModal();
     }
   });
+
+  // Tab Switcher
+  const tabVisual = $('tab-visual-card');
+  const tabText = $('tab-text-memo');
+  const paneVisual = $('pane-visual-card');
+  const paneText = $('pane-text-memo');
+
+  if (tabVisual && tabText && paneVisual && paneText) {
+    tabVisual.addEventListener('click', () => {
+      tabVisual.classList.add('active');
+      tabText.classList.remove('active');
+      paneVisual.hidden = false;
+      paneText.hidden = true;
+    });
+
+    tabText.addEventListener('click', () => {
+      tabText.classList.add('active');
+      tabVisual.classList.remove('active');
+      paneText.hidden = false;
+      paneVisual.hidden = true;
+    });
+  }
+
+  // Action: Copy Canvas Image to Clipboard
+  const copyImgBtn = $('copy-image-btn');
+  const imgStatus = $('image-copy-status');
+  if (copyImgBtn) {
+    copyImgBtn.addEventListener('click', async () => {
+      const canvas = $('share-canvas');
+      if (!canvas) return;
+
+      const setStatus = (msg, isErr) => {
+        if (!imgStatus) return;
+        imgStatus.textContent = msg;
+        imgStatus.style.color = isErr ? 'var(--red-ticker)' : 'var(--green-ticker)';
+        imgStatus.hidden = false;
+        setTimeout(() => { imgStatus.hidden = true; }, 3500);
+      };
+
+      try {
+        canvas.toBlob(async (blob) => {
+          if (!blob) {
+            setStatus('Failed to export image.', true);
+            return;
+          }
+          if (navigator.clipboard && window.ClipboardItem) {
+            try {
+              await navigator.clipboard.write([new ClipboardItem({ 'image/png': blob })]);
+              setStatus('✓ Card image copied to clipboard! Paste directly into Slack or WhatsApp.');
+              return;
+            } catch (clipErr) {
+              console.warn('ClipboardItem error, falling back to download:', clipErr);
+            }
+          }
+          // Fallback to download if direct clipboard write fails
+          triggerCanvasDownload(canvas);
+          setStatus('✓ Image downloaded (direct clipboard paste not supported on this device).');
+        }, 'image/png');
+      } catch (err) {
+        console.error('Error copying image:', err);
+        triggerCanvasDownload(canvas);
+        setStatus('✓ Image downloaded.');
+      }
+    });
+  }
+
+  // Action: Download Image PNG
+  const downloadImgBtn = $('download-image-btn');
+  if (downloadImgBtn) {
+    downloadImgBtn.addEventListener('click', () => {
+      const canvas = $('share-canvas');
+      if (canvas) {
+        triggerCanvasDownload(canvas);
+        if (imgStatus) {
+          imgStatus.textContent = '✓ High-res card downloaded as PNG.';
+          imgStatus.style.color = 'var(--green-ticker)';
+          imgStatus.hidden = false;
+          setTimeout(() => { imgStatus.hidden = true; }, 3500);
+        }
+      }
+    });
+  }
+
+  function triggerCanvasDownload(canvas) {
+    const link = document.createElement('a');
+    const dateStr = new Date().toISOString().slice(0, 10);
+    link.download = `newsland-brief-${dateStr}.png`;
+    link.href = canvas.toDataURL('image/png');
+    link.click();
+  }
+
+  // Action: Copy Text Memo
+  const copyTextBtn = $('copy-text-btn');
+  const textStatus = $('text-copy-status');
+  if (copyTextBtn) {
+    copyTextBtn.addEventListener('click', async () => {
+      const textArea = $('share-text-area');
+      if (!textArea) return;
+      try {
+        await navigator.clipboard.writeText(textArea.value);
+        if (textStatus) {
+          textStatus.textContent = '✓ Memo text copied to clipboard!';
+          textStatus.style.color = 'var(--green-ticker)';
+          textStatus.hidden = false;
+          setTimeout(() => { textStatus.hidden = true; }, 3000);
+        }
+      } catch (err) {
+        textArea.select();
+        document.execCommand('copy');
+        if (textStatus) {
+          textStatus.textContent = '✓ Memo text copied!';
+          textStatus.hidden = false;
+          setTimeout(() => { textStatus.hidden = true; }, 3000);
+        }
+      }
+    });
+  }
+
+  // Action: Share on X (Twitter)
+  const shareXBtn = $('share-x-btn');
+  if (shareXBtn) {
+    shareXBtn.addEventListener('click', () => {
+      const dateStr = new Date().toLocaleDateString('en-IN', { ...ist, day: 'numeric', month: 'short' });
+      const price = premarketData?.live_nifty_price || '--';
+      const pts = premarketData?.live_pts ?? 0;
+      const ptsSign = Number(pts) >= 0 ? '+' : '';
+      const netCr = premarketData?.fii_dii?.net_cr ?? 0;
+      const netSign = netCr >= 0 ? '+' : '-';
+      const tweet = `📊 Newsland Pre-Market Brief (${dateStr}):\n• Nifty: ${price} (${ptsSign}${pts} pts)\n• FII/DII Net: ${netSign}₹${Math.abs(Math.round(netCr))} Cr\n• VIX: ${premarketData?.vix?.price || '--'}\n\nInstitutional signal. Zero noise 👇\n`;
+      const url = `https://twitter.com/intent/tweet?text=${encodeURIComponent(tweet)}&url=${encodeURIComponent('https://newsland.in')}`;
+      window.open(url, '_blank', 'noopener,noreferrer');
+    });
+  }
+
+  // Action: Share on WhatsApp
+  const shareWaBtn = $('share-wa-btn');
+  if (shareWaBtn) {
+    shareWaBtn.addEventListener('click', () => {
+      const memo = generateShareTextMemo(premarketData, briefing?.stories || []);
+      const url = `https://api.whatsapp.com/send?text=${encodeURIComponent(memo)}`;
+      window.open(url, '_blank', 'noopener,noreferrer');
+    });
+  }
 }
 
 // Section Tabs
@@ -2604,5 +3125,6 @@ renderWatch();
 load();
 loadMarket();
 initAudioBrief();
+initShareModal();
 setInterval(load, 30000);
 setInterval(loadMarket, 60000);
