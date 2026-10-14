@@ -836,6 +836,176 @@ html[data-theme="night"] .ticker-ruler-band {
   gap: 20px;
 }
 
+/* ── 3-Pillar Post-Market Evening Desk Styles ────────────────────────── */
+.postmarket-cols {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.postmarket-pillar-col {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.pillar-status-badge {
+  font-size: 8.5px;
+  font-weight: 750;
+  letter-spacing: 0.04em;
+  padding: 1.5px 6px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+.pillar-status-badge.live {
+  background: rgba(16, 185, 129, 0.12);
+  color: var(--green-ticker);
+  border: 1px solid rgba(16, 185, 129, 0.35);
+}
+
+.pillar-status-badge.prep {
+  background: rgba(245, 158, 11, 0.12);
+  color: #d97706;
+  border: 1px solid rgba(245, 158, 11, 0.35);
+}
+
+.pm-commodity-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+}
+
+.pm-comm-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 7px;
+  background: var(--bg-subtle);
+  border: 1px solid var(--border-light);
+  border-radius: 4px;
+}
+
+.pm-comm-name {
+  font-size: 10px;
+  font-weight: 650;
+  color: var(--ink-secondary);
+}
+
+.pm-comm-val-group {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+
+.pm-comm-price {
+  font-size: 10.5px;
+  font-weight: 750;
+  color: var(--ink);
+  font-variant-numeric: tabular-nums;
+}
+
+.pm-comm-chg {
+  font-size: 9px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.pm-comm-chg.up { color: var(--green-ticker); }
+.pm-comm-chg.down { color: var(--red-ticker); }
+
+.pillar-lead-box {
+  margin-top: 2px;
+  padding: 5px 8px;
+  background: rgba(100, 116, 139, 0.06);
+  border-left: 2.5px solid var(--ink-secondary);
+  border-radius: 0 4px 4px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.pillar-lead-tag {
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  color: var(--ink-muted);
+  text-transform: uppercase;
+}
+
+.pillar-lead-title {
+  font-size: 10.5px;
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.pillar-lead-title:hover {
+  text-decoration: underline;
+  color: var(--blue-primary);
+}
+
+.pm-earnings-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.pm-earnings-card {
+  padding: 5px 7px;
+  background: var(--bg-subtle);
+  border: 1px solid var(--border-light);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.pm-earnings-top {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.pm-earnings-ticker {
+  font-size: 8.5px;
+  font-weight: 800;
+  padding: 1px 4px;
+  border-radius: 2px;
+  background: var(--ink);
+  color: var(--card-bg);
+}
+
+.pm-earnings-title {
+  font-size: 10.5px;
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--ink);
+  text-decoration: none;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.pm-earnings-title:hover {
+  text-decoration: underline;
+}
+
+.pm-earnings-sub {
+  font-size: 9px;
+  color: var(--ink-muted);
+  line-height: 1.25;
+}
+
+.pm-global-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+}
+
+
 .premarket-col {
   display: flex;
   flex-direction: column;

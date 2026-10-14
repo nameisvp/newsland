@@ -64,7 +64,9 @@ const SECTOR_KEYWORDS = {
   it: ['it', 'tech', 'tcs', 'infosys', 'infy', 'wipro', 'hcl', 'accenture', 'software', 'ai', 'chip', 'semiconductor', 'tsmc', 'nasdaq'],
   energy: ['crude', 'oil', 'brent', 'petroleum', 'omc', 'refinery', 'gas', 'reliance', 'ril', 'opec', 'fuel', 'bpcl', 'ioc', 'hpcl'],
   auto: ['auto', 'automotive', 'car', 'vehicle', 'tata motors', 'maruti', 'mahindra', 'bajaj', 'hero', 'ev', 'sales'],
-  metals: ['metal', 'metals', 'steel', 'iron', 'copper', 'aluminum', 'mining', 'vedanta', 'tata steel', 'jsw', 'gold', 'silver', 'bullion']
+  metals: ['metal', 'metals', 'steel', 'iron', 'copper', 'aluminum', 'mining', 'vedanta', 'tata steel', 'jsw', 'gold', 'silver', 'bullion'],
+  earnings: ['earnings', 'quarterly', 'results', 'q1', 'q2', 'q3', 'q4', 'profit', 'revenue', 'pat', 'ebitda', 'dividend', 'buyback', 'margin', 'guidance', 'board meeting'],
+  commodities: ['crude', 'oil', 'brent', 'wti', 'natgas', 'natural gas', 'gold', 'silver', 'copper', 'metals', 'opec', 'eia', 'barrel', 'mcx', 'comex', 'energy']
 };
 
 function getISTSession() {
@@ -867,7 +869,120 @@ function initSessionMonitorState() {
   setSessionMonitorCollapsed(shouldCollapse);
 }
 
-// Pre-Market Trading Desk Brief Renderer
+// ── 3-Pillar Post-Market Evening Desk Renderer ─────────────────────────
+function renderPostMarketPillars(data) {
+  const pillars = data?.postmarket_pillars;
+
+  // Pillar 1: MCX & Commodities Pulse
+  const commContainer = $('pm-commodity-grid');
+  if (commContainer) {
+    const comms = [
+      pillars?.commodities?.brent || data?.brent,
+      pillars?.commodities?.wti,
+      pillars?.commodities?.natgas,
+      pillars?.commodities?.gold,
+      pillars?.commodities?.silver
+    ].filter(Boolean);
+
+    if (comms.length) {
+      commContainer.innerHTML = comms.map(c => {
+        const isUp = (c.change_pct || 0) >= 0;
+        const sign = isUp ? '+' : '';
+        const priceStr = c.price || (c.price_raw != null ? c.price_raw.toFixed(2) : '--');
+        return `<div class="pm-comm-item">
+          <span class="pm-comm-name">${esc(c.label || c.key)}</span>
+          <div class="pm-comm-val-group">
+            <span class="pm-comm-price">${priceStr}</span>
+            <span class="pm-comm-chg ${isUp ? 'up' : 'down'}">${sign}${c.change_pct}%</span>
+          </div>
+        </div>`;
+      }).join('');
+    } else {
+      commContainer.innerHTML = '<span class="pm-sub">Commodity quotes updating...</span>';
+    }
+  }
+
+  // Pillar 1 Catalyst
+  const commCat = pillars?.commodities?.catalyst;
+  if (commCat && $('pm-commodity-lead-box') && $('pm-commodity-lead-link')) {
+    $('pm-commodity-lead-box').hidden = false;
+    $('pm-commodity-lead-link').textContent = commCat.title;
+    $('pm-commodity-lead-link').href = commCat.url && commCat.url !== '#' ? safeUrl(commCat.url) : '#';
+  } else if ($('pm-commodity-lead-box')) {
+    $('pm-commodity-lead-box').hidden = true;
+  }
+
+  // Pillar 2: Corporate Earnings & Board Filings
+  const earningsContainer = $('pm-earnings-list');
+  if (earningsContainer) {
+    const earnings = pillars?.earnings || [];
+    if (earnings.length) {
+      earningsContainer.innerHTML = earnings.map(e => {
+        const comp = (e.companies && e.companies[0]) || 'RESULTS';
+        return `<div class="pm-earnings-card">
+          <div class="pm-earnings-top">
+            <span class="pm-earnings-ticker">${esc(comp)}</span>
+            <a href="${e.url && e.url !== '#' ? safeUrl(e.url) : '#'}" class="pm-earnings-title" target="_blank" rel="noopener">${esc(e.title)}</a>
+          </div>
+          <span class="pm-earnings-sub">${esc(e.why_it_matters || '')}</span>
+        </div>`;
+      }).join('');
+    } else {
+      earningsContainer.innerHTML = `<div class="pm-earnings-card">
+        <span class="pm-earnings-sub">Awaiting next scheduled board filing · Check Corporate Calendar</span>
+      </div>`;
+    }
+  }
+
+  // Pillar 3: Global Markets & Overnight Matrix
+  const ov = pillars?.global_macro?.overnight || data?.overnight;
+  if (ov) {
+    if ($('pm-pm-sp-val') && ov.SP500) {
+      const sp = ov.SP500;
+      const isUp = (sp.pct || 0) >= 0;
+      $('pm-pm-sp-val').textContent = `${sp.val} (${isUp ? '+' : ''}${sp.pct}%)`;
+      $('pm-pm-sp-val').className = `cue-v ${isUp ? 'up' : 'down'}`;
+    }
+    if ($('pm-pm-nasdaq-val') && ov.NASDAQ) {
+      const nq = ov.NASDAQ;
+      const isUp = (nq.pct || 0) >= 0;
+      $('pm-pm-nasdaq-val').textContent = `${nq.val} (${isUp ? '+' : ''}${nq.pct}%)`;
+      $('pm-pm-nasdaq-val').className = `cue-v ${isUp ? 'up' : 'down'}`;
+    }
+    if ($('pm-pm-us10y-val') && ov.US10Y) {
+      const u = ov.US10Y;
+      const isUp = (u.pct || 0) >= 0;
+      $('pm-pm-us10y-val').textContent = `${u.val} (${isUp ? '+' : ''}${u.pct}%)`;
+      $('pm-pm-us10y-val').className = `cue-v ${isUp ? 'up' : 'down'}`;
+    }
+  }
+  if ($('pm-pm-usdinr-val')) {
+    const usd = data?.usdinr;
+    $('pm-pm-usdinr-val').textContent = usd ? `₹${usd.price} (${usd.change_pct >= 0 ? '+' : ''}${usd.change_pct}%)` : '₹95.14';
+  }
+  if ($('pm-global-vix-pill') && data?.vix) {
+    $('pm-global-vix-pill').textContent = `VIX: ${data.vix.price}`;
+    $('pm-global-vix-pill').className = `pm-vix-badge ${data.vix.price < 17 ? 'vix-normal' : 'vix-elevated'}`;
+  }
+
+  // Pillar 3 Catalyst
+  const globCat = pillars?.global_macro?.catalyst;
+  if (globCat && $('pm-global-lead-box') && $('pm-global-lead-link')) {
+    $('pm-global-lead-box').hidden = false;
+    $('pm-global-lead-link').textContent = globCat.title;
+    $('pm-global-lead-link').href = globCat.url && globCat.url !== '#' ? safeUrl(globCat.url) : '#';
+  } else if ($('pm-global-lead-box')) {
+    $('pm-global-lead-box').hidden = true;
+  }
+
+  // Update Floor Pivots Title for Evening Session Setup
+  const pvtTitle = document.querySelector('.pivots-title');
+  if (pvtTitle) {
+    pvtTitle.textContent = "TOMORROW'S CALCULATED FLOOR PIVOTS";
+  }
+}
+
+// Pre-Market / Post-Market Trading Desk Brief Renderer
 function renderPremarket(data) {
   if (!data || data.schema_version !== 2 || !$('premarket-brief')) {
     if ($('premarket-brief')) $('premarket-brief').hidden = true;
@@ -918,6 +1033,14 @@ function renderPremarket(data) {
 
   if ($('pm-gift-sub')) {
     $('pm-gift-sub').textContent = `Quote session: ${data.quote_date || 'date unavailable'} · ${data.quote_source || 'source unavailable'} · Previous close ${data.nifty_prev_close || '--'} · Fetched ${data.quote_updated ? new Date(data.quote_updated).toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' }) + ' IST' : 'time unavailable'}`;
+  }
+
+  const isPostMarket = (session.id === 'postmarket' || session.id === 'overnight');
+  if ($('premarket-cols')) $('premarket-cols').hidden = isPostMarket;
+  if ($('postmarket-cols')) $('postmarket-cols').hidden = !isPostMarket;
+
+  if (isPostMarket) {
+    renderPostMarketPillars(data);
   }
 
   // Institutional flows
@@ -1753,22 +1876,42 @@ function generateShareTextMemo(pm, stories) {
     lines.push('');
   }
 
-  lines.push(`🌐 *MACRO & COMMODITIES:*`);
-  if (pm?.overnight?.SP500) {
-    const sp = pm.overnight.SP500;
-    lines.push(`• S&P 500: ${sp.val || '--'} (${sp.pct >= 0 ? '+' : ''}${sp.pct ?? 0}%)`);
+  if (pm?.postmarket_pillars?.commodities) {
+    const c = pm.postmarket_pillars.commodities;
+    lines.push(`🛢️ *MCX & COMMODITIES (EVENING ACTIVE):*`);
+    if (c.brent) lines.push(`• Brent Crude: $${c.brent.price} (${c.brent.change_pct >= 0 ? '+' : ''}${c.brent.change_pct}%)`);
+    if (c.wti) lines.push(`• WTI Crude: $${c.wti.price} (${c.wti.change_pct >= 0 ? '+' : ''}${c.wti.change_pct}%)`);
+    if (c.natgas) lines.push(`• Natural Gas: $${c.natgas.price} (${c.natgas.change_pct >= 0 ? '+' : ''}${c.natgas.change_pct}%)`);
+    if (c.gold) lines.push(`• Gold: $${c.gold.price} (${c.gold.change_pct >= 0 ? '+' : ''}${c.gold.change_pct}%)`);
+    if (c.silver) lines.push(`• Silver: $${c.silver.price} (${c.silver.change_pct >= 0 ? '+' : ''}${c.silver.change_pct}%)`);
+    if (c.catalyst?.title) lines.push(`• Driver: ${c.catalyst.title}`);
+    lines.push('');
+  } else {
+    lines.push(`🌐 *MACRO & COMMODITIES:*`);
+    if (pm?.overnight?.SP500) {
+      const sp = pm.overnight.SP500;
+      lines.push(`• S&P 500: ${sp.val || '--'} (${sp.pct >= 0 ? '+' : ''}${sp.pct ?? 0}%)`);
+    }
+    if (pm?.brent) {
+      const b = pm.brent;
+      lines.push(`• Brent Crude: $${b.price || '--'} (${b.change_pct >= 0 ? '+' : ''}${b.change_pct ?? 0}%)`);
+    }
+    if (pm?.usdinr) {
+      lines.push(`• USD/INR: ₹${pm.usdinr.price || '--'}`);
+    }
+    if (pm?.vix) {
+      lines.push(`• India VIX: ${pm.vix.price} (${pm.vix.regime || 'Volatility'})`);
+    }
+    lines.push('');
   }
-  if (pm?.brent) {
-    const b = pm.brent;
-    lines.push(`• Brent Crude: $${b.price || '--'} (${b.change_pct >= 0 ? '+' : ''}${b.change_pct ?? 0}%)`);
+
+  if (pm?.postmarket_pillars?.earnings?.length) {
+    lines.push(`📑 *AFTER-MARKET EARNINGS & FILINGS:*`);
+    pm.postmarket_pillars.earnings.forEach((e, idx) => {
+      lines.push(`${idx + 1}. ${e.title}`);
+    });
+    lines.push('');
   }
-  if (pm?.usdinr) {
-    lines.push(`• USD/INR: ₹${pm.usdinr.price || '--'}`);
-  }
-  if (pm?.vix) {
-    lines.push(`• India VIX: ${pm.vix.price} (${pm.vix.regime || 'Volatility'})`);
-  }
-  lines.push('');
 
   if (pm?.pivots?.nifty) {
     const np = pm.pivots.nifty;

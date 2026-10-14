@@ -32,6 +32,8 @@ MARKET_SYMBOLS = {
     'GOLD':     {'yf': 'GC=F',      'label': 'Gold',        'unit': 'USD/oz'},
     'SILVER':   {'yf': 'SI=F',      'label': 'Silver',      'unit': 'USD/oz'},
     'BRENT':    {'yf': 'BZ=F',      'label': 'Brent Crude', 'unit': 'USD/bbl'},
+    'WTI':      {'yf': 'CL=F',      'label': 'WTI Crude',   'unit': 'USD/bbl'},
+    'NATGAS':   {'yf': 'NG=F',      'label': 'Natural Gas', 'unit': 'USD/MMBtu'},
     'USDINR':   {'yf': 'INR=X',     'label': 'INR / USD',   'unit': ''},
 }
 # Google Sheets CSV fallback: set GSHEET_CSV_URL to a published sheet URL
@@ -1079,6 +1081,57 @@ def refresh_premarket():
         else:
             drivers.append({'num': '03', 'title': 'Benchmark change', 'bias': 'Context',
                             'desc': 'The index change measures benchmark performance. Breadth and buyer identity cannot be inferred from this quote.'})
+
+    # ── Post-Market 3-Pillar Curation ─────────────────────────────────────
+    all_stories = CACHE.get('stories', [])
+
+    # Pillar 1: Commodity news catalyst & active commodity tickers
+    comm_rx = re.compile(r'\b(crude|oil|brent|wti|opec|natural gas|natgas|gold|silver|metal|eia|petroleum|saudi|iran|energy)\b', re.I)
+    comm_catalysts = [s for s in all_stories if comm_rx.search(s.get('title', ''))]
+    top_comm_catalyst = comm_catalysts[0] if comm_catalysts else None
+
+    # Pillar 2: Corporate Earnings, quarterly results & boardroom filings
+    earnings_rx = re.compile(r'\b(earnings|quarterly results|q[1-4]\b|net profit|revenue|pat\b|ebitda|board approved?|dividend|bonus share|buyback|order win|deal with|results? beat|results? miss)\b', re.I)
+    earnings_catalysts = [s for s in all_stories if earnings_rx.search(s.get('title', ''))]
+    top_earnings = earnings_catalysts[:3]
+
+    # Pillar 3: Global & Overnight Macro cues
+    global_rx = re.compile(r'\b(fed\b|federal reserve|rate cut|rate hike|inflation|cpi|treasury|yields?|wall street|dow jones|s&p|nasdaq|china|stimulus|tariffs?|dollar index|dxy)\b', re.I)
+    global_catalysts = [s for s in all_stories if global_rx.search(s.get('title', ''))]
+    top_global_catalyst = global_catalysts[0] if global_catalysts else None
+
+    postmarket_pillars = {
+        'commodities': {
+            'brent': tickers.get('BRENT'),
+            'wti': tickers.get('WTI'),
+            'natgas': tickers.get('NATGAS'),
+            'gold': tickers.get('GOLD'),
+            'silver': tickers.get('SILVER'),
+            'catalyst': {
+                'title': top_comm_catalyst['title'],
+                'url': top_comm_catalyst.get('url', '#'),
+                'why_it_matters': top_comm_catalyst.get('why_it_matters', ''),
+                'source': top_comm_catalyst.get('source', '')
+            } if top_comm_catalyst else None
+        },
+        'earnings': [{
+            'title': s['title'],
+            'url': s.get('url', '#'),
+            'companies': s.get('companies', []),
+            'why_it_matters': s.get('why_it_matters', ''),
+            'source': s.get('source', '')
+        } for s in top_earnings],
+        'global_macro': {
+            'overnight': overnight,
+            'catalyst': {
+                'title': top_global_catalyst['title'],
+                'url': top_global_catalyst.get('url', '#'),
+                'why_it_matters': top_global_catalyst.get('why_it_matters', ''),
+                'source': top_global_catalyst.get('source', '')
+            } if top_global_catalyst else None
+        }
+    }
+
     PREMARKET_DATA = dict(updated=now.isoformat(), schema_version=2, is_live=False,
         quote_updated=MARKET_DATA.get('updated'), quote_date=nifty.get('quote_date') if nifty else None,
         quote_source=MARKET_DATA.get('source'), live_bias_label='LATEST AVAILABLE QUOTE', bias_label='LATEST AVAILABLE QUOTE',
@@ -1086,7 +1139,8 @@ def refresh_premarket():
         live_pct=nifty['change_pct'] if nifty else None, nifty_prev_close=nifty.get('prev_close_fmt', '--') if nifty else '--',
         fii_dii=flows, vix=vix_info, overnight=overnight, brent=brent, usdinr=tickers.get('USDINR'), pivots=pivots,
         posture=posture, sector_breadth=sector_breadth,
-        session_drivers=drivers, trader_take=takeaway)
+        session_drivers=drivers, trader_take=takeaway,
+        postmarket_pillars=postmarket_pillars)
     temp = DATA / 'premarket.tmp'
     temp.write_text(json.dumps(PREMARKET_DATA))
     temp.replace(DATA / 'premarket.json')

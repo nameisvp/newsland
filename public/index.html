@@ -72,6 +72,8 @@
       <div class="tabs-wrap">
         <div id="sector-pills" class="sector-pills" aria-label="Filter by sector">
           <button class="sector-pill active" data-sector="all">All</button>
+          <button class="sector-pill" data-sector="earnings">Results / Earnings</button>
+          <button class="sector-pill" data-sector="commodities">MCX &amp; Commodities</button>
           <button class="sector-pill" data-sector="banking">Banking</button>
           <button class="sector-pill" data-sector="it">IT</button>
           <button class="sector-pill" data-sector="energy">Energy</button>
@@ -136,7 +138,7 @@
         </div>
       </div>
       <div id="premarket-body" class="premarket-body">
-        <div class="premarket-cols">
+        <div id="premarket-cols" class="premarket-cols">
           <!-- Col 1: Indicated Open / Benchmark Pulse & Range -->
           <div class="premarket-col">
             <span id="pm-col-label" class="premarket-col-label">LATEST NIFTY QUOTE</span>
@@ -197,6 +199,53 @@
               <span class="cue-item"><span class="cue-k">US 10Y:</span> <span id="pm-us10y-val" class="cue-v">--</span></span>
             </div>
             <p id="pm-gift-sub" class="pm-sub">--</p>
+          </div>
+        </div>
+
+        <!-- 3-Pillar Post-Market / Evening Trading Desk (Active after 3:30 PM IST) -->
+        <div id="postmarket-cols" class="postmarket-cols" hidden>
+          <!-- Pillar 1: MCX & Commodity Pulse -->
+          <div class="premarket-col postmarket-pillar-col">
+            <div class="pm-col-header-row">
+              <span class="premarket-col-label">🛢️ MCX &amp; COMMODITIES PULSE</span>
+              <span class="pillar-status-badge live">● MCX LIVE</span>
+            </div>
+            <div id="pm-commodity-grid" class="pm-commodity-grid">
+              <!-- Populated dynamically: Brent, WTI, NatGas, Gold, Silver -->
+            </div>
+            <div id="pm-commodity-lead-box" class="pillar-lead-box" hidden>
+              <span class="pillar-lead-tag">COMMODITY CATALYST</span>
+              <a id="pm-commodity-lead-link" href="#" class="pillar-lead-title" target="_blank" rel="noopener">--</a>
+            </div>
+          </div>
+
+          <!-- Pillar 2: After-Hours Corporate Earnings & Board Filings -->
+          <div class="premarket-col postmarket-pillar-col">
+            <div class="pm-col-header-row">
+              <span class="premarket-col-label">📑 AFTER-MARKET EARNINGS &amp; WIRE</span>
+              <span class="pillar-status-badge prep">TOMORROW PREP</span>
+            </div>
+            <div id="pm-earnings-list" class="pm-earnings-list">
+              <!-- Populated dynamically with up to 3 high-impact earnings cards -->
+            </div>
+          </div>
+
+          <!-- Pillar 3: Global Markets & Overnight Matrix -->
+          <div class="premarket-col postmarket-pillar-col">
+            <div class="pm-col-header-row">
+              <span class="premarket-col-label">🌐 GLOBAL INDICES &amp; OVERNIGHT</span>
+              <span id="pm-global-vix-pill" class="pm-vix-badge">VIX: --</span>
+            </div>
+            <div class="pm-global-grid">
+              <span class="cue-item"><span class="cue-k">S&amp;P 500:</span> <span id="pm-pm-sp-val" class="cue-v">--</span></span>
+              <span class="cue-item"><span class="cue-k">Nasdaq:</span> <span id="pm-pm-nasdaq-val" class="cue-v">--</span></span>
+              <span class="cue-item"><span class="cue-k">US 10Y:</span> <span id="pm-pm-us10y-val" class="cue-v">--</span></span>
+              <span class="cue-item"><span class="cue-k">USD/INR:</span> <span id="pm-pm-usdinr-val" class="cue-v">--</span></span>
+            </div>
+            <div id="pm-global-lead-box" class="pillar-lead-box" hidden>
+              <span class="pillar-lead-tag">GLOBAL CATALYST</span>
+              <a id="pm-global-lead-link" href="#" class="pillar-lead-title" target="_blank" rel="noopener">--</a>
+            </div>
           </div>
         </div>
 
