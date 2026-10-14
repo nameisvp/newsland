@@ -1,15 +1,15 @@
 {
-  "updated": "2026-10-14T04:09:35.868229+00:00",
+  "updated": "2026-10-14T07:22:47.786776+00:00",
   "schema_version": 2,
   "is_live": false,
-  "quote_updated": "2026-10-14T04:09:35.867674+00:00",
+  "quote_updated": "2026-10-14T07:22:47.784585+00:00",
   "quote_date": "2026-10-14",
   "quote_source": "yfinance",
   "live_bias_label": "LATEST AVAILABLE QUOTE",
   "bias_label": "LATEST AVAILABLE QUOTE",
-  "live_nifty_price": "22,690",
-  "live_pts": -32,
-  "live_pct": -0.14,
+  "live_nifty_price": "22,696",
+  "live_pts": -26,
+  "live_pct": -0.11,
   "nifty_prev_close": "22,722",
   "fii_dii": {
     "date": "08 Oct 2026 (Prev Close)",
@@ -19,9 +19,9 @@
     "trend": "FII Selling / DII Absorbing"
   },
   "vix": {
-    "price": "14.45",
-    "change": "+0.34",
-    "change_pct": "+2.37%",
+    "price": "14.38",
+    "change": "+0.28",
+    "change_pct": "+1.95%",
     "regime": "Normal Volatility"
   },
   "overnight": {
@@ -43,35 +43,35 @@
   },
   "brent": {
     "key": "BRENT",
-    "quote_date": "2026-10-13",
+    "quote_date": "2026-10-14",
     "label": "Brent Crude",
-    "price": "106.38",
-    "price_raw": 106.38,
-    "prev_close": 105.44,
-    "prev_close_fmt": "105.44",
-    "change": 0.94,
-    "change_pct": 0.89,
-    "direction": "up",
+    "price": "106.29",
+    "price_raw": 106.29,
+    "prev_close": 106.47,
+    "prev_close_fmt": "106.47",
+    "change": -0.18,
+    "change_pct": -0.17,
+    "direction": "down",
     "unit": "USD/bbl",
     "range_52w": {
       "low": 58.72,
       "high": 126.1,
       "low_fmt": "58.72",
       "high_fmt": "126.10",
-      "pos_pct": 70.7,
-      "pct_from_high": -15.64
+      "pos_pct": 70.6,
+      "pct_from_high": -15.71
     }
   },
   "usdinr": {
     "key": "USDINR",
     "quote_date": "2026-10-14",
     "label": "INR / USD",
-    "price": "95.00",
-    "price_raw": 94.9975,
+    "price": "95.01",
+    "price_raw": 95.01,
     "prev_close": 95.28,
     "prev_close_fmt": "95.28",
-    "change": -0.2825,
-    "change_pct": -0.3,
+    "change": -0.27,
+    "change_pct": -0.28,
     "direction": "down",
     "unit": "",
     "range_52w": {
@@ -79,8 +79,8 @@
       "high": 97.05,
       "low_fmt": "85.86",
       "high_fmt": "97.05",
-      "pos_pct": 81.6,
-      "pct_from_high": -2.12
+      "pos_pct": 81.7,
+      "pct_from_high": -2.11
     }
   },
   "pivots": {
@@ -102,46 +102,46 @@
     }
   },
   "posture": {
-    "dma50": 23612,
-    "dma50_fmt": "23,612",
-    "pct_dma50": -3.91,
+    "dma50": 23613,
+    "dma50_fmt": "23,613",
+    "pct_dma50": -3.88,
     "dma200": 24222,
     "dma200_fmt": "24,222",
-    "pct_dma200": -6.33,
+    "pct_dma200": -6.3,
     "high52": 26373,
     "high52_fmt": "26,373",
     "low52": 22180,
     "low52_fmt": "22,180",
-    "pct_from_high52": -13.97,
-    "pos_52w": 12.2,
+    "pct_from_high52": -13.94,
+    "pos_52w": 12.3,
     "regime": "CORRECTIVE TREND"
   },
   "sector_breadth": {
-    "advances": 3,
+    "advances": 4,
     "total": 5,
     "sectors": [
       {
-        "name": "IT",
-        "pct": 0.67
-      },
-      {
         "name": "FMCG",
-        "pct": 0.09
+        "pct": 0.89
       },
       {
-        "name": "Bank",
-        "pct": 0.06
+        "name": "IT",
+        "pct": 0.59
       },
       {
         "name": "Auto",
-        "pct": -0.37
+        "pct": 0.04
+      },
+      {
+        "name": "Bank",
+        "pct": 0.01
       },
       {
         "name": "Metal",
-        "pct": -0.43
+        "pct": -0.42
       }
     ],
-    "summary": "3/5 sectors in green"
+    "summary": "4/5 sectors in green"
   },
   "session_drivers": [
     {
@@ -154,14 +154,14 @@
       "num": "02",
       "title": "Crude and input costs",
       "bias": "Context",
-      "desc": "Latest Brent quote: 106.38 USD/bbl (+0.89%). Higher crude can raise import and input costs; lower crude can ease them. This quote alone does not establish the cause of the move."
+      "desc": "Latest Brent quote: 106.29 USD/bbl (-0.17%). Higher crude can raise import and input costs; lower crude can ease them. This quote alone does not establish the cause of the move."
     },
     {
       "num": "03",
       "title": "Market posture & breadth",
       "bias": "Context",
-      "desc": "Nifty is 14.0% below 52W high (26,373), trading 6.3% below 200-DMA (24,222). Sector participation: 3/5 sectors in green (Top: IT +0.67%)."
+      "desc": "Nifty is 13.9% below 52W high (26,373), trading 6.3% below 200-DMA (24,222). Sector participation: 4/5 sectors in green (Top: FMCG +0.89%)."
     }
   ],
-  "trader_take": "Latest available Nifty quote: 22,690 (-0.14% versus previous close). Latest Nifty reading is above the 22,577 pivot. Next calculated resistance above this reading: 22,866. Pivots are calculated references, not confirmed support or resistance. Market regime: CORRECTIVE TREND (-14.0% from 52W peak, -6.3% vs 200-DMA). Sector breadth: 3/5 sectors in green."
+  "trader_take": "Latest available Nifty quote: 22,696 (-0.11% versus previous close). Latest Nifty reading is above the 22,577 pivot. Next calculated resistance above this reading: 22,866. Pivots are calculated references, not confirmed support or resistance. Market regime: CORRECTIVE TREND (-13.9% from 52W peak, -6.3% vs 200-DMA). Sector breadth: 4/5 sectors in green."
 }
