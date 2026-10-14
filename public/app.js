@@ -131,6 +131,7 @@ let heroTimer = null;
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({
   '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
 }[c]));
+const escapeHtml = esc;
 
 const safeUrl = url => {
   try {
@@ -1562,29 +1563,12 @@ function drawShareCard(canvas, pm, stories) {
   canvas.width = W;
   canvas.height = H;
 
-  // Background Gradient
-  const bgGrad = ctx.createLinearGradient(0, 0, 0, H);
-  bgGrad.addColorStop(0, '#090D16');
-  bgGrad.addColorStop(0.5, '#0E1726');
-  bgGrad.addColorStop(1, '#070A10');
-  ctx.fillStyle = bgGrad;
+  // Background: Newsland signature warm paper newsprint
+  ctx.fillStyle = '#FAF9F5';
   ctx.fillRect(0, 0, W, H);
 
-  // Subtle ambient glow
-  const r1 = ctx.createRadialGradient(1050, 150, 0, 1050, 150, 420);
-  r1.addColorStop(0, 'rgba(16, 185, 129, 0.08)');
-  r1.addColorStop(1, 'rgba(16, 185, 129, 0)');
-  ctx.fillStyle = r1;
-  ctx.fillRect(600, 0, 600, 600);
-
-  const r2 = ctx.createRadialGradient(150, 650, 0, 150, 650, 450);
-  r2.addColorStop(0, 'rgba(56, 189, 248, 0.05)');
-  r2.addColorStop(1, 'rgba(56, 189, 248, 0)');
-  ctx.fillStyle = r2;
-  ctx.fillRect(0, 350, 600, 700);
-
-  // Card Outer Inset Border
-  drawRoundRect(ctx, 28, 28, W - 56, H - 56, 20, null, 'rgba(255, 255, 255, 0.08)', 1.5);
+  // Card Outer Inset Container
+  drawRoundRect(ctx, 24, 24, W - 48, H - 48, 16, '#FFFFFF', '#E2E8F0', 2);
 
   // Helper: Rounded Rectangle
   function drawRoundRect(c, x, y, w, h, r, fill, stroke, lw) {
@@ -1629,23 +1613,26 @@ function drawShareCard(canvas, pm, stories) {
   }
 
   // Header: Brand & Meta
-  ctx.font = '800 34px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
-  ctx.fillStyle = '#FFFFFF';
+  ctx.font = '850 34px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
+  ctx.fillStyle = '#0F172A';
   ctx.textAlign = 'left';
-  ctx.fillText('NEWSLAND.', 64, 88);
+  ctx.fillText('NEWSLAND', 64, 88);
+  const brandW = ctx.measureText('NEWSLAND').width;
+  ctx.fillStyle = '#DC2626';
+  ctx.fillText('.', 64 + brandW, 88);
 
   const session = typeof getISTSession === 'function' ? getISTSession() : { tag: 'PRE-MARKET' };
   const sessionTag = (session.tag || 'PRE-MARKET').toUpperCase();
-  drawRoundRect(ctx, 290, 60, 200, 36, 18, 'rgba(16, 185, 129, 0.14)', 'rgba(16, 185, 129, 0.45)', 1);
+  drawRoundRect(ctx, 300, 60, 204, 36, 18, '#FEF2F2', '#FECDD3', 1);
   ctx.font = '700 12px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
-  ctx.fillStyle = '#34D399';
+  ctx.fillStyle = '#DC2626';
   ctx.textAlign = 'center';
-  ctx.fillText(`●  ${sessionTag} BRIEF`, 390, 83);
+  ctx.fillText(`●  ${sessionTag} BRIEF`, 402, 83);
 
   const now = new Date();
   const dateStr = now.toLocaleDateString('en-IN', { ...ist, weekday: 'short', day: 'numeric', month: 'short', year: 'numeric' }).toUpperCase();
   ctx.font = '600 14px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
-  ctx.fillStyle = '#94A3B8';
+  ctx.fillStyle = '#64748B';
   ctx.textAlign = 'right';
   ctx.fillText(`${dateStr} · IST`, W - 64, 83);
 
@@ -1653,15 +1640,15 @@ function drawShareCard(canvas, pm, stories) {
   ctx.beginPath();
   ctx.moveTo(64, 116);
   ctx.lineTo(W - 64, 116);
-  ctx.strokeStyle = 'rgba(255, 255, 255, 0.08)';
-  ctx.lineWidth = 1;
+  ctx.strokeStyle = '#E2E8F0';
+  ctx.lineWidth = 1.5;
   ctx.stroke();
 
   // Section 1: Benchmark Hero Box (Y: 136, H: 144)
-  drawRoundRect(ctx, 64, 136, W - 128, 144, 14, 'rgba(255, 255, 255, 0.025)', 'rgba(255, 255, 255, 0.08)', 1);
+  drawRoundRect(ctx, 64, 136, W - 128, 144, 12, '#FAF9F5', '#E2E8F0', 1);
 
   ctx.textAlign = 'left';
-  ctx.font = '700 12px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
+  ctx.font = '750 11.5px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
   ctx.fillStyle = '#64748B';
   ctx.fillText('INDICATIVE BENCHMARK · NIFTY 50', 92, 168);
 
@@ -1672,8 +1659,8 @@ function drawShareCard(canvas, pm, stories) {
   const ptsSign = isUp ? '+' : '';
   const pctSign = isUp ? '+' : '';
 
-  ctx.font = '800 52px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
-  ctx.fillStyle = '#FFFFFF';
+  ctx.font = '850 52px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
+  ctx.fillStyle = '#0F172A';
   ctx.fillText(String(price), 92, 230);
 
   // Change Pill
@@ -1681,11 +1668,11 @@ function drawShareCard(canvas, pm, stories) {
   const pillH = 40;
   const pillX = 330;
   const pillY = 194;
-  const pillBg = isUp ? 'rgba(16, 185, 129, 0.16)' : 'rgba(239, 68, 68, 0.16)';
-  const pillBorder = isUp ? 'rgba(16, 185, 129, 0.45)' : 'rgba(239, 68, 68, 0.45)';
-  const pillColor = isUp ? '#34D399' : '#F87171';
+  const pillBg = isUp ? '#DCFCE7' : '#FEE2E2';
+  const pillBorder = isUp ? '#86EFAC' : '#FCA5A5';
+  const pillColor = isUp ? '#15803D' : '#B91C1C';
   drawRoundRect(ctx, pillX, pillY, pillW, pillH, 8, pillBg, pillBorder, 1);
-  ctx.font = '800 18px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
+  ctx.font = '800 17px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
   ctx.fillStyle = pillColor;
   ctx.textAlign = 'center';
   ctx.fillText(`${ptsSign}${pts} pts (${pctSign}${pct}%)`, pillX + (pillW / 2), pillY + 26);
@@ -1693,16 +1680,16 @@ function drawShareCard(canvas, pm, stories) {
   // Right column of Hero Box: Posture & Breadth
   ctx.textAlign = 'right';
   if (pm?.posture?.regime) {
-    drawRoundRect(ctx, W - 310, 154, 218, 28, 6, 'rgba(245, 158, 11, 0.12)', 'rgba(245, 158, 11, 0.4)', 1);
+    drawRoundRect(ctx, W - 310, 154, 218, 28, 6, '#FEF3C7', '#FCD34D', 1);
     ctx.font = '750 11px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
-    ctx.fillStyle = '#FBBF24';
+    ctx.fillStyle = '#B45309';
     ctx.textAlign = 'center';
     ctx.fillText(pm.posture.regime, W - 310 + 109, 172);
   }
 
   ctx.textAlign = 'right';
   ctx.font = '600 13px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
-  ctx.fillStyle = '#94A3B8';
+  ctx.fillStyle = '#475569';
   if (pm?.posture?.pct_from_high52) {
     ctx.fillText(`${pm.posture.pct_from_high52}% vs 52W High · 50-DMA: ${pm.posture.dma50_fmt || '--'}`, W - 92, 212);
   }
@@ -1717,70 +1704,70 @@ function drawShareCard(canvas, pm, stories) {
   const colH = 136;
 
   // Mini Card 1: India VIX
-  drawRoundRect(ctx, 64, colY, colW, colH, 12, 'rgba(255, 255, 255, 0.02)', 'rgba(255, 255, 255, 0.06)', 1);
+  drawRoundRect(ctx, 64, colY, colW, colH, 10, '#FAF9F5', '#E2E8F0', 1);
   ctx.textAlign = 'left';
-  ctx.font = '700 11px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
+  ctx.font = '750 11px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
   ctx.fillStyle = '#64748B';
   ctx.fillText('INDIA VIX VOLATILITY GAUGE', 86, colY + 30);
-  ctx.font = '800 36px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
-  ctx.fillStyle = '#F8FAFC';
+  ctx.font = '850 36px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
+  ctx.fillStyle = '#0F172A';
   ctx.fillText(pm?.vix?.price || '14.6', 86, colY + 76);
-  ctx.font = '600 13px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
-  ctx.fillStyle = '#38BDF8';
+  ctx.font = '650 13px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
+  ctx.fillStyle = '#0284C7';
   ctx.fillText(`${pm?.vix?.regime || 'Normal Volatility'} (${pm?.vix?.change_pct || '--'})`, 86, colY + 106);
 
   // Mini Card 2: FII / DII Institutional Flows
   const col2X = 64 + colW + 18;
-  drawRoundRect(ctx, col2X, colY, colW, colH, 12, 'rgba(255, 255, 255, 0.02)', 'rgba(255, 255, 255, 0.06)', 1);
-  ctx.font = '700 11px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
+  drawRoundRect(ctx, col2X, colY, colW, colH, 10, '#FAF9F5', '#E2E8F0', 1);
+  ctx.font = '750 11px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
   ctx.fillStyle = '#64748B';
   ctx.fillText('INSTITUTIONAL FLOWS (CR)', col2X + 22, colY + 30);
   const netCr = pm?.fii_dii?.net_cr ?? 0;
   const netUp = netCr >= 0;
-  ctx.font = '800 24px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
-  ctx.fillStyle = netUp ? '#34D399' : '#F87171';
+  ctx.font = '850 24px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
+  ctx.fillStyle = netUp ? '#15803D' : '#B91C1C';
   ctx.fillText(`Net ${netUp ? '+' : '-'}₹${Math.abs(Math.round(netCr)).toLocaleString('en-IN')} Cr`, col2X + 22, colY + 68);
   ctx.font = '600 12.5px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
-  ctx.fillStyle = '#CBD5E1';
+  ctx.fillStyle = '#475569';
   const fiiVal = Math.round(pm?.fii_dii?.fii_net_cr ?? 0);
   const diiVal = Math.round(pm?.fii_dii?.dii_net_cr ?? 0);
   ctx.fillText(`FII: ${fiiVal >= 0 ? '+' : '-'}₹${Math.abs(fiiVal).toLocaleString('en-IN')}  ·  DII: ${diiVal >= 0 ? '+' : '-'}₹${Math.abs(diiVal).toLocaleString('en-IN')}`, col2X + 22, colY + 104);
 
   // Mini Card 3: Macro & Commodities
   const col3X = col2X + colW + 18;
-  drawRoundRect(ctx, col3X, colY, colW, colH, 12, 'rgba(255, 255, 255, 0.02)', 'rgba(255, 255, 255, 0.06)', 1);
-  ctx.font = '700 11px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
+  drawRoundRect(ctx, col3X, colY, colW, colH, 10, '#FAF9F5', '#E2E8F0', 1);
+  ctx.font = '750 11px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
   ctx.fillStyle = '#64748B';
   ctx.fillText('OVERNIGHT MACRO & CRUDE', col3X + 22, colY + 30);
   const spVal = pm?.overnight?.SP500?.val || '--';
   const spPct = pm?.overnight?.SP500?.pct ?? 0;
-  ctx.font = '700 14px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
-  ctx.fillStyle = '#F1F5F9';
+  ctx.font = '700 13.5px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
+  ctx.fillStyle = '#1E293B';
   ctx.fillText(`S&P 500: ${spVal} (${spPct >= 0 ? '+' : ''}${spPct}%)`, col3X + 22, colY + 62);
   const brentVal = pm?.brent?.price || '--';
   const brentPct = pm?.brent?.change_pct ?? 0;
   ctx.fillText(`Brent Crude: $${brentVal} (${brentPct >= 0 ? '+' : ''}${brentPct}%)`, col3X + 22, colY + 86);
   ctx.font = '500 12px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
-  ctx.fillStyle = '#94A3B8';
+  ctx.fillStyle = '#64748B';
   ctx.fillText(`USD/INR: ₹${pm?.usdinr?.price || '--'}`, col3X + 22, colY + 110);
 
   // Section 3: Key Technical Floor Pivots (Y: 450, H: 86)
-  drawRoundRect(ctx, 64, 450, W - 128, 86, 12, 'rgba(15, 23, 42, 0.65)', 'rgba(255, 255, 255, 0.06)', 1);
-  ctx.font = '700 11px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
+  drawRoundRect(ctx, 64, 450, W - 128, 86, 10, '#FAF9F5', '#E2E8F0', 1);
+  ctx.font = '750 11px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
   ctx.fillStyle = '#64748B';
   ctx.fillText('KEY TECHNICAL LEVELS (FLOOR PIVOTS)', 86, 474);
 
   const np = pm?.pivots?.nifty || { s1: '--', pivot: '--', r1: '--' };
   const bp = pm?.pivots?.banknifty || { s1: '--', pivot: '--', r1: '--' };
 
-  ctx.font = '600 13px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
-  ctx.fillStyle = '#E2E8F0';
+  ctx.font = '650 13px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
+  ctx.fillStyle = '#1E293B';
   ctx.fillText(`NIFTY 50:    S1  ${np.s1}   ·   [ PIVOT  ${np.pivot} ]   ·   R1  ${np.r1}`, 86, 502);
   ctx.fillText(`BANK NIFTY:  S1  ${bp.s1}   ·   [ PIVOT  ${bp.pivot} ]   ·   R1  ${bp.r1}`, 86, 523);
 
   // Section 4: Top 3 Market Catalysts (Y: 554)
   ctx.font = '800 12px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
-  ctx.fillStyle = '#38BDF8';
+  ctx.fillStyle = '#DC2626';
   ctx.fillText('TOP MARKET-MOVING CATALYSTS FOR TODAY', 66, 570);
 
   const topStories = (stories || [])
@@ -1794,28 +1781,28 @@ function drawShareCard(canvas, pm, stories) {
 
   topStories.forEach((s, idx) => {
     const curY = catYStart + idx * (catH + catGap);
-    drawRoundRect(ctx, 64, curY, W - 128, catH, 12, 'rgba(255, 255, 255, 0.02)', 'rgba(255, 255, 255, 0.06)', 1);
+    drawRoundRect(ctx, 64, curY, W - 128, catH, 10, '#FAF9F5', '#E2E8F0', 1);
 
     // Number Badge (01, 02, 03)
     const numBadgeX = 86;
     const numBadgeY = curY + 22;
-    drawRoundRect(ctx, numBadgeX, numBadgeY, 36, 36, 8, 'rgba(56, 189, 248, 0.12)', 'rgba(56, 189, 248, 0.35)', 1);
+    drawRoundRect(ctx, numBadgeX, numBadgeY, 36, 36, 6, '#F1F5F9', '#CBD5E1', 1);
     ctx.font = '800 16px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
-    ctx.fillStyle = '#38BDF8';
+    ctx.fillStyle = '#0F172A';
     ctx.textAlign = 'center';
     ctx.fillText(`0${idx + 1}`, numBadgeX + 18, numBadgeY + 24);
 
     // Category Eyebrow & Source Tag
     ctx.textAlign = 'left';
     ctx.font = '750 11px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
-    ctx.fillStyle = '#94A3B8';
+    ctx.fillStyle = '#64748B';
     const cat = (s.category || 'MARKET PULSE').toUpperCase();
     const sourceCount = (s.clusterSources && s.clusterSources.length) ? `${s.clusterSources.length} SOURCES` : (s.source || 'WIRE');
     ctx.fillText(`${cat}  ·  ● ${sourceCount}`, 136, curY + 36);
 
     // Headline (Wrapped, Max 2 lines)
-    ctx.font = '600 21px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
-    ctx.fillStyle = '#F8FAFC';
+    ctx.font = '650 21px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
+    ctx.fillStyle = '#0F172A';
     const cleanHeadline = (s.title || '').replace(/[\(\)\[\]"]/g, '').trim();
     wrapText(ctx, cleanHeadline, 136, curY + 68, W - 230, 28, 2);
   });
@@ -1824,7 +1811,7 @@ function drawShareCard(canvas, pm, stories) {
   ctx.textAlign = 'left';
   if (pm?.trader_take) {
     ctx.font = 'italic 500 13px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
-    ctx.fillStyle = '#94A3B8';
+    ctx.fillStyle = '#64748B';
     const cleanTake = `Desk Take: ${pm.trader_take}`;
     ctx.fillText(cleanTake.length > 130 ? cleanTake.slice(0, 127) + '...' : cleanTake, 64, 1076);
   }
@@ -1833,13 +1820,13 @@ function drawShareCard(canvas, pm, stories) {
   ctx.beginPath();
   ctx.moveTo(64, 1100);
   ctx.lineTo(W - 64, 1100);
-  ctx.strokeStyle = 'rgba(255, 255, 255, 0.08)';
+  ctx.strokeStyle = '#E2E8F0';
   ctx.lineWidth = 1;
   ctx.stroke();
 
   // Footer Branding
-  ctx.font = '800 17px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
-  ctx.fillStyle = '#FFFFFF';
+  ctx.font = '850 17px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
+  ctx.fillStyle = '#0F172A';
   ctx.fillText('newsland.in', 64, 1136);
 
   ctx.font = '500 13px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
@@ -1848,7 +1835,7 @@ function drawShareCard(canvas, pm, stories) {
 
   ctx.textAlign = 'right';
   ctx.font = '600 12px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
-  ctx.fillStyle = '#475569';
+  ctx.fillStyle = '#64748B';
   ctx.fillText('Curated for Serious Traders & Investors', W - 64, 1136);
 }
 

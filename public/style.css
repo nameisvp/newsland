@@ -4473,7 +4473,7 @@ html[data-size="lg"] .deck-card .card-snippet { font-size: 16.5px; }
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #06090e;
+  background: var(--bg-subtle);
   border-radius: 8px;
   padding: 12px;
   border: 1px solid var(--border-light);
@@ -4484,7 +4484,8 @@ html[data-size="lg"] .deck-card .card-snippet { font-size: 16.5px; }
   height: auto;
   aspect-ratio: 1 / 1;
   border-radius: 6px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid var(--border-light);
 }
 
 .share-textarea {
