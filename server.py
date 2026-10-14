@@ -435,12 +435,13 @@ def normalize_title(title):
     return t
 
 def extract_primary_subject(title):
-    t = str(title or '').lower()
+    t_raw = str(title or '').strip()
+    t_low = t_raw.lower()
     companies = [
         ('senco gold', r'senco\s*gold'),
         ('fino payments', r'fino(\s*payments)?(\s*bank)?'),
         ('pc jeweller', r'pc\s*jeweller'),
-        ('tcs', r'\btcs\b'),
+        ('tcs', r'\b(tcs|tata\s+consultancy)\b'),
         ('infosys', r'\b(infosys|infy)\b'),
         ('hcl tech', r'hcl\s*tech'),
         ('tech mahindra', r'tech\s*mahindra'),
@@ -460,13 +461,69 @@ def extract_primary_subject(title):
         ('samsung', r'\bsamsung\b'),
         ('nvidia', r'\bnvidia\b'),
         ('apple', r'\bapple\b'),
+        ('tesla', r'\btesla\b'),
+        ('microsoft', r'\bmicrosoft\b'),
+        ('google', r'\b(google|alphabet)\b'),
+        ('meta', r'\bmeta\b'),
+        ('amazon', r'\bamazon\b'),
+        ('zoho', r'\bzoho\b'),
+        ('swiggy', r'\bswiggy\b'),
+        ('zomato', r'\bzomato\b'),
+        ('paytm', r'\bpaytm\b'),
+        ('liquidia', r'\bliquidia\b'),
+        ('everpure', r'\beverpure\b'),
         ('accenture', r'\baccenture\b'),
         ('ifci', r'\bifci\b'),
         ('gm breweries', r'gm\s*breweries'),
     ]
     for name, pat in companies:
-        if re.search(pat, t):
+        if re.search(pat, t_low):
             return name
+
+    # Dynamic extraction: Ticker in parentheses e.g. Liquidia (NASDAQ:LQDA)
+    m = re.search(r'\b([A-Z][a-zA-Z0-9\.\s&\'\-]+?)\s*\((?:NASDAQ|NYSE|BSE|NSE|OTCMKTS|LON|TSE):\s*([A-Za-z0-9\.\-]+)\)', t_raw, re.I)
+    if m:
+        name = m.group(1).strip().lower()
+        name = re.sub(r'\b(corp|corporation|inc|incorporated|ltd|limited|co)\b', '', name).strip()
+        if len(name) >= 3:
+            return name
+
+    # Dynamic extraction: Executive / Insider transaction headline: Company + Officer + sells/buys
+    officer_pat = r'\b(?:cmo|cco|clo|ceo|cfo|coo|cto|cro|chief\s+[a-z]+\s+officer|director|general\s+counsel|president|chairman|vp|evp|svp)\b'
+    m2 = re.search(rf'^([A-Z][a-zA-Z0-9&\'\-]+(?:\s+[A-Z][a-zA-Z0-9&\'\-]+){{0,2}})\s+(?:{officer_pat}|corp|inc|ltd)\b', t_raw, re.I)
+    if m2:
+        name = m2.group(1).strip().lower()
+        name = re.sub(r'\b(corp|corporation|inc|incorporated|ltd|limited|co)\b', '', name).strip()
+        if len(name) >= 3 and name not in ('the', 'why', 'what', 'how', 'when', 'today', 'live'):
+            return name
+
+    # Dynamic extraction: Corporate designations
+    m3 = re.search(r'\b([A-Z][a-zA-Z0-9&\'\-]+(?:\s+[A-Z][a-zA-Z0-9&\'\-]+){0,2})\s+(?:Corp|Corporation|Inc|Incorporated|Ltd|Limited|Holdings|Technologies|Therapeutics|Pharma|Enterprises|Industries)\b', t_raw)
+    if m3:
+        name = m3.group(1).strip().lower()
+        if len(name) >= 3 and name not in ('the', 'why', 'what', 'how', 'when'):
+            return name
+
+    # Dynamic extraction: Leading possessive corporate subject e.g. Zoho’s pay freeze
+    m4 = re.search(r'^([A-Z][a-zA-Z0-9&\'\-]+(?:\s+[A-Z][a-zA-Z0-9&\'\-]+){0,1})[\'’]s\b', t_raw)
+    if m4:
+        name = m4.group(1).strip().lower()
+        if len(name) >= 3 and name not in ('the', 'today', 'india', 'world', 'here'):
+            return name
+
+    return None
+
+def get_corporate_event_type(title):
+    """Categorize corporate headline into structural event archetypes."""
+    t = str(title or '').lower()
+    if re.search(r'\b(sells?|sold|disposes?|disposition|buys?|bought|purchased?|acquires?|offloads?)\b.*?\b(stock|shares?|stake|equity)\b|\b(?:cmo|cco|clo|ceo|cfo|coo|director|officer|general counsel)\b.*?\b(sells?|sold|disposes?|disposition|buys?|bought)\b', t):
+        return 'insider_trade'
+    if re.search(r'\b(q[1-4]|quarterly|earnings|net profit|revenue|pat|ebitda|financial results?)\b', t):
+        return 'earnings'
+    if re.search(r'\b(sc\b|supreme court|high court|sebi|ed\b|cbi|probe|investigation|penalty|fine|directs|orders|litigation|lawsuit)', t):
+        return 'legal_regulatory'
+    if re.search(r'\b(secures|bags|wins?|order|contract|pact|deal|mou|acquisition|merger|partners?)\b', t):
+        return 'deal_contract'
     return None
 
 def substantive_tokens(title):
@@ -478,7 +535,7 @@ def sig_words(title):
     return substantive_tokens(title)
 
 def should_cluster(s1, s2):
-    """Intelligently check if two stories from different outlets report the same market event."""
+    """Intelligently check if two stories report the same market event, company action, or wire filing."""
     t1 = s1.get('published') or 0
     t2 = s2.get('published') or 0
     if abs(t1 - t2) > 48 * 3600:
@@ -499,19 +556,28 @@ def should_cluster(s1, s2):
     if (subj1 is not None) != (subj2 is not None):
         return False
 
+    evt1 = get_corporate_event_type(s1.get('title', ''))
+    evt2 = get_corporate_event_type(s2.get('title', ''))
+
     w1 = substantive_tokens(s1.get('title', ''))
     w2 = substantive_tokens(s2.get('title', ''))
-    if not w1 or not w2:
-        return False
-
     inter = w1 & w2
-    min_len = min(len(w1), len(w2))
-    jaccard = len(inter) / len(w1 | w2)
+    min_len = min(len(w1), len(w2)) if w1 and w2 else 0
+    jaccard = (len(inter) / len(w1 | w2)) if (w1 or w2) else 0
 
     # 1. Same named company/corporate entity
     if subj1 and subj2 and subj1 == subj2:
-        if len(inter) >= 2 or jaccard >= 0.25:
+        # If both describe the same corporate event type (e.g. routine insider trades, earnings reports, legal orders)
+        if evt1 and evt2 and evt1 == evt2:
             return True
+        # If either is an insider trade and both mention stock/share/stake movement
+        if (evt1 == 'insider_trade' or evt2 == 'insider_trade') and re.search(r'\b(sells?|buys?|shares?|stock|stake|dispos\w*)\b', (s1.get('title', '') + ' ' + s2.get('title', '')).lower()):
+            return True
+        if len(inter) >= 1 or jaccard >= 0.15:
+            return True
+        return False
+
+    if not w1 or not w2:
         return False
 
     # 2. Key Macro / Benchmark Event Domains
@@ -553,7 +619,7 @@ def should_cluster(s1, s2):
         return True
 
     # 3. General Cross-Outlet Wire Deduplication
-    if jaccard >= 0.38 or (min_len >= 4 and len(inter) / min_len >= 0.60):
+    if jaccard >= 0.32 or (min_len >= 3 and len(inter) / min_len >= 0.50):
         return True
 
     return False

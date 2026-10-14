@@ -1121,6 +1121,137 @@ async function safeFetch(primaryUrl, fallbackUrl) {
   return fetch(first, fetchOpt);
 }
 
+// Client-side story deduplication & multi-source clustering safeguard
+function extractStorySubject(title) {
+  const t = String(title || '').trim();
+  const tLow = t.toLowerCase();
+
+  const known = [
+    'senco gold', 'fino payments', 'pc jeweller', 'tcs', 'infosys', 'hcl tech', 'tech mahindra',
+    'wipro', 'hdfc bank', 'icici bank', 'sbi', 'axis bank', 'kotak bank', 'adani', 'reliance',
+    'tata motors', 'maruti', 'l&t', 'vedanta', 'tsmc', 'samsung', 'nvidia', 'apple', 'tesla',
+    'microsoft', 'google', 'meta', 'amazon', 'zoho', 'swiggy', 'zomato', 'paytm', 'liquidia',
+    'everpure', 'accenture', 'ifci', 'gm breweries'
+  ];
+  for (const k of known) {
+    if (new RegExp(`\\b${k}\\b`, 'i').test(tLow)) return k;
+  }
+
+  // Ticker pattern e.g. Liquidia (NASDAQ:LQDA)
+  const m1 = t.match(/\b([A-Z][a-zA-Z0-9\.\s&'\-]+?)\s*\((?:NASDAQ|NYSE|BSE|NSE|OTCMKTS|LON|TSE):\s*([A-Za-z0-9\.\-]+)\)/i);
+  if (m1) {
+    const clean = m1[1].toLowerCase().replace(/\b(corp|corporation|inc|incorporated|ltd|limited|co)\b/g, '').trim();
+    if (clean.length >= 3) return clean;
+  }
+
+  // Executive insider pattern e.g. Liquidia CCO Scott Moomaw sells...
+  const m2 = t.match(/^([A-Z][a-zA-Z0-9&'\-]+(?:\s+[A-Z][a-zA-Z0-9&'\-]+){0,2})\s+(?:cmo|cco|clo|ceo|cfo|coo|cto|cro|chief\s+[a-z]+\s+officer|director|general\s+counsel|president|chairman|corp|inc|ltd)\b/i);
+  if (m2) {
+    const clean = m2[1].toLowerCase().replace(/\b(corp|corporation|inc|incorporated|ltd|limited|co)\b/g, '').trim();
+    if (clean.length >= 3 && !['the', 'why', 'what', 'how', 'when', 'today', 'live'].includes(clean)) return clean;
+  }
+
+  // Corporate designation e.g. Liquidia Corp general counsel...
+  const m3 = t.match(/\b([A-Z][a-zA-Z0-9&'\-]+(?:\s+[A-Z][a-zA-Z0-9&'\-]+){0,2})\s+(?:Corp|Corporation|Inc|Incorporated|Ltd|Limited|Holdings|Technologies|Therapeutics|Pharma|Enterprises|Industries)\b/);
+  if (m3) {
+    const clean = m3[1].toLowerCase();
+    if (clean.length >= 3 && !['the', 'why', 'what', 'how', 'when'].includes(clean)) return clean;
+  }
+
+  // Possessive entity e.g. Zoho’s pay freeze
+  const m4 = t.match(/^([A-Z][a-zA-Z0-9&'\-]+(?:\s+[A-Z][a-zA-Z0-9&'\-]+){0,1})['’]s\b/);
+  if (m4) {
+    const clean = m4[1].toLowerCase();
+    if (clean.length >= 3 && !['the', 'today', 'india', 'world', 'here'].includes(clean)) return clean;
+  }
+
+  return null;
+}
+
+function getStoryEventType(title) {
+  const t = String(title || '').toLowerCase();
+  if (/\b(sells?|sold|disposes?|disposition|buys?|bought|purchased?|acquires?|offloads?)\b.*?\b(stock|shares?|stake|equity)\b|\b(?:cmo|cco|clo|ceo|cfo|coo|director|officer|general counsel)\b.*?\b(sells?|sold|disposes?|disposition|buys?|bought)\b/.test(t)) {
+    return 'insider_trade';
+  }
+  if (/\b(q[1-4]|quarterly|earnings|net profit|revenue|pat|ebitda|financial results?)\b/.test(t)) {
+    return 'earnings';
+  }
+  if (/\b(sc\b|supreme court|high court|sebi|ed\b|cbi|probe|investigation|penalty|fine|directs|orders|litigation|lawsuit)/.test(t)) {
+    return 'legal_regulatory';
+  }
+  if (/\b(secures|bags|wins?|order|contract|pact|deal|mou|acquisition|merger|partners?)\b/.test(t)) {
+    return 'deal_contract';
+  }
+  return null;
+}
+
+function deduplicateStories(stories) {
+  if (!Array.isArray(stories) || stories.length === 0) return stories;
+  const clusters = [];
+
+  for (const story of stories) {
+    const sTitle = story.title || '';
+    const sSubj = extractStorySubject(sTitle);
+    const sEvt = getStoryEventType(sTitle);
+
+    let matched = null;
+    for (const c of clusters) {
+      const cTitle = c.title || '';
+      const cSubj = extractStorySubject(cTitle);
+      const cEvt = getStoryEventType(cTitle);
+
+      // Same named company + same action archetype (e.g. routine insider sales)
+      if (sSubj && cSubj && sSubj === cSubj) {
+        if (sEvt && cEvt && sEvt === cEvt) {
+          matched = c;
+          break;
+        }
+        if ((sEvt === 'insider_trade' || cEvt === 'insider_trade') && /\b(sells?|buys?|shares?|stock|stake|dispos\w*)\b/i.test(sTitle + ' ' + cTitle)) {
+          matched = c;
+          break;
+        }
+      }
+
+      // High token similarity overlap
+      const wordsA = new Set(sTitle.toLowerCase().replace(/[^\w\s]/g, ' ').split(/\s+/).filter(w => w.length > 3));
+      const wordsB = new Set(cTitle.toLowerCase().replace(/[^\w\s]/g, ' ').split(/\s+/).filter(w => w.length > 3));
+      let inter = 0;
+      wordsA.forEach(w => { if (wordsB.has(w)) inter++; });
+      const union = new Set([...wordsA, ...wordsB]).size;
+      const jaccard = union > 0 ? inter / union : 0;
+      if (jaccard >= 0.40) {
+        matched = c;
+        break;
+      }
+    }
+
+    if (matched) {
+      // Merge sources without duplicating names
+      const existingSources = new Set((matched.sources || []).map(src => src.name));
+      (story.sources || []).forEach(src => {
+        if (!existingSources.has(src.name)) {
+          matched.sources = matched.sources || [];
+          matched.sources.push(src);
+          existingSources.add(src.name);
+        }
+      });
+      // Attach related angle if not already present
+      matched.related = matched.related || [];
+      if (story.title !== matched.title && !matched.related.some(r => r.title === story.title)) {
+        matched.related.push({
+          title: story.title,
+          url: story.url || (story.sources?.[0]?.url) || '#',
+          source: story.sources?.[0]?.name || ''
+        });
+      }
+    } else {
+      clusters.push(Object.assign({}, story));
+    }
+  }
+
+  return clusters;
+}
+
 // Load feeds from server or static data
 async function load() {
   try {
@@ -1131,6 +1262,9 @@ async function load() {
     if (results.some(r => !r.ok)) throw new Error('Fetch failed');
     briefing = await results[0].json();
     events = await results[1].json();
+    if (briefing && briefing.stories) {
+      briefing.stories = deduplicateStories(briefing.stories);
+    }
     if (briefing.premarket) {
       premarketData = briefing.premarket;
       renderPremarket(premarketData);
