@@ -137,6 +137,10 @@
               <span></span><span></span><span></span><span></span>
             </span>
           </button>
+          <button id="signal-digest-btn" class="signal-digest-btn" title="View Executive Smart Signal Digest">
+            <span class="digest-icon">⚡</span>
+            <span class="digest-label">Signal Digest</span>
+          </button>
           <button id="share-card-btn" class="share-card-btn" title="Export & Share Pre-Market Card">
             <span class="share-icon">📤</span>
             <span class="share-label">Share Card</span>
@@ -723,6 +727,49 @@
           </div>
           <p id="text-copy-status" class="share-status-msg" hidden></p>
         </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Smart Signal Digest Modal -->
+  <div id="digest-modal" class="share-modal-layer" hidden>
+    <div id="digest-backdrop" class="share-backdrop"></div>
+    <div class="share-modal-dialog digest-modal-dialog">
+      <div class="share-modal-header">
+        <div class="share-title-block">
+          <span class="share-modal-tag">EXECUTIVE INTELLIGENCE</span>
+          <h2 class="share-modal-title">Smart Signal Digest</h2>
+        </div>
+        <button id="close-digest-modal" class="share-close-btn" aria-label="Close digest modal">✕</button>
+      </div>
+
+      <div class="share-modal-body">
+        <!-- Audio Player Strip Inside Digest -->
+        <div class="digest-audio-bar">
+          <button id="digest-play-btn" class="digest-play-btn" title="Listen to synthesized audio brief">
+            <span id="digest-play-icon">▶</span>
+            <span id="digest-play-label">Listen to 60s Brief</span>
+          </button>
+          <span class="digest-audio-sub">Hands-free voice briefing synthesized from live desk telemetry</span>
+        </div>
+
+        <!-- 4 Intelligence Cards Grid -->
+        <div id="digest-cards-list" class="digest-cards-grid">
+          <!-- Populated dynamically -->
+        </div>
+
+        <div class="share-actions-row">
+          <button id="copy-digest-memo-btn" class="share-action-btn primary">
+            <span class="btn-icon">📋</span> Copy Executive Memo
+          </button>
+          <button id="share-digest-wa-btn" class="share-action-btn social-wa">
+            <span class="btn-icon">💬</span> WhatsApp
+          </button>
+          <button id="share-digest-x-btn" class="share-action-btn social-x">
+            <span class="btn-icon">🐦</span> Share on X
+          </button>
+        </div>
+        <p id="digest-copy-status" class="share-status-msg" hidden></p>
       </div>
     </div>
   </div>

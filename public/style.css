@@ -977,7 +977,8 @@ html[data-theme="night"] .ticker-ruler-band {
 }
 
 .share-card-btn,
-.copy-memo-btn {
+.copy-memo-btn,
+.signal-digest-btn {
   display: inline-flex;
   align-items: center;
   gap: 5px;
@@ -995,13 +996,15 @@ html[data-theme="night"] .ticker-ruler-band {
 }
 
 .share-card-btn:hover,
-.copy-memo-btn:hover {
+.copy-memo-btn:hover,
+.signal-digest-btn:hover {
   background: var(--ink);
   color: var(--card-bg);
   border-color: var(--ink);
 }
 
-.share-card-btn .share-icon {
+.share-card-btn .share-icon,
+.signal-digest-btn .digest-icon {
   font-size: 9.5px;
   line-height: 1;
 }
@@ -4530,5 +4533,152 @@ html[data-size="lg"] .deck-card .card-snippet { font-size: 16.5px; }
   margin: 0;
   text-align: center;
 }
+
+/* Smart Signal Digest Modal Styles */
+.digest-modal-dialog {
+  width: min(640px, 95vw);
+}
+
+.digest-audio-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  background: var(--bg-subtle);
+  border: 1px solid var(--border-light);
+  padding: 10px 14px;
+  border-radius: 8px;
+  margin-bottom: 14px;
+}
+
+.digest-play-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: var(--accent-red);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 7px 14px;
+  font-family: var(--font-sans);
+  font-size: 11.5px;
+  font-weight: 750;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  white-space: nowrap;
+}
+
+.digest-play-btn:hover {
+  opacity: 0.92;
+  transform: translateY(-0.5px);
+}
+
+.digest-play-btn.playing {
+  background: var(--ink);
+  color: var(--card-bg);
+}
+
+.digest-audio-sub {
+  font-size: 11px;
+  color: var(--ink-muted);
+  line-height: 1.35;
+  flex: 1;
+}
+
+.digest-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+@media (max-width: 600px) {
+  .digest-cards-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.digest-card {
+  background: var(--bg-subtle);
+  border: 1px solid var(--border-light);
+  border-radius: 8px;
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transition: border-color 0.15s ease;
+}
+
+.digest-card:hover {
+  border-color: var(--ink-muted);
+}
+
+.digest-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.digest-card-title {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--ink);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.digest-card-badge {
+  font-size: 9.5px;
+  font-weight: 750;
+  padding: 2px 6px;
+  border-radius: 4px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.digest-card-badge.bullish {
+  background: rgba(34, 197, 94, 0.15);
+  color: #16a34a;
+}
+
+.digest-card-badge.bearish {
+  background: rgba(239, 68, 68, 0.15);
+  color: #dc2626;
+}
+
+.digest-card-badge.neutral {
+  background: rgba(148, 163, 184, 0.2);
+  color: var(--ink-muted);
+}
+
+.digest-card-badge.caution {
+  background: rgba(234, 179, 8, 0.15);
+  color: #ca8a04;
+}
+
+.digest-card-content {
+  font-size: 11.5px;
+  line-height: 1.45;
+  color: var(--ink);
+  font-family: var(--font-sans);
+}
+
+.digest-card-content strong {
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.digest-card-meta {
+  font-size: 10px;
+  color: var(--ink-muted);
+  margin-top: auto;
+  font-family: var(--font-mono, monospace);
+  letter-spacing: -0.01em;
+}
+
 
 

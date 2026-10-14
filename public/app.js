@@ -3426,7 +3426,7 @@ if ($('short-useful-btn')) {
   });
 })();
 
-// 60-Second Audio Morning Desk Brief (Web Speech API)
+// 60-Second Audio Morning/Evening Desk Brief (Web Speech API)
 let isAudioPlaying = false;
 
 function stopAudioBrief() {
@@ -3444,6 +3444,15 @@ function stopAudioBrief() {
     if (icon) icon.textContent = '▶';
   }
   if (wave) wave.hidden = true;
+
+  const digestPlayBtn = $('digest-play-btn');
+  if (digestPlayBtn) {
+    digestPlayBtn.classList.remove('playing');
+    const dLabel = $('digest-play-label');
+    const dIcon = $('digest-play-icon');
+    if (dLabel) dLabel.textContent = 'Listen to 60s Brief';
+    if (dIcon) dIcon.textContent = '▶';
+  }
 }
 
 function playAudioBrief() {
@@ -3454,8 +3463,14 @@ function playAudioBrief() {
   window.speechSynthesis.cancel();
 
   const parts = [];
-  const session = typeof getISTSession === 'function' ? getISTSession() : { tag: 'Market Briefing' };
-  parts.push(`Good day. Here is your Newsland 60-second financial desk brief for the ${session.tag}.`);
+  const session = typeof getISTSession === 'function' ? getISTSession() : { tag: 'Market Briefing', isPostMarket: false };
+  const isPost = session.isPostMarket || session.phase === 'postmarket' || session.phase === 'overnight';
+
+  if (isPost) {
+    parts.push(`Good evening. Here is your Newsland post-market commodities, corporate earnings, and global macro wrap for the ${session.tag}.`);
+  } else {
+    parts.push(`Good day. Here is your Newsland 60-second financial desk brief for the ${session.tag}.`);
+  }
 
   if (premarketData) {
     if (premarketData.live_nifty_price && premarketData.live_nifty_price !== '--') {
@@ -3463,7 +3478,11 @@ function playAudioBrief() {
       const dir = (pts != null && pts >= 0) ? 'up' : 'down';
       const ptsAbs = pts != null ? Math.abs(pts) : '';
       const pct = premarketData.live_pct ? Math.abs(premarketData.live_pct) : '';
-      parts.push(`Benchmark Nifty is trading at ${premarketData.live_nifty_price}, ${dir} ${ptsAbs} points or ${pct} percent.`);
+      if (isPost) {
+        parts.push(`Benchmark Nifty closed at ${premarketData.live_nifty_price}, ${dir} ${ptsAbs} points or ${pct} percent.`);
+      } else {
+        parts.push(`Benchmark Nifty is trading at ${premarketData.live_nifty_price}, ${dir} ${ptsAbs} points or ${pct} percent.`);
+      }
     }
 
     if (premarketData.vix) {
@@ -3479,23 +3498,51 @@ function playAudioBrief() {
       const netAct = net >= 0 ? `net buying of ${net} crores` : `net selling of ${Math.abs(net)} crores`;
       parts.push(`In institutional flows, Foreign institutional investors ${fiiAct}, while Domestic institutions ${diiAct}, closing with ${netAct}.`);
     }
+
+    // Commodities & Earnings in Post-market
+    if (isPost) {
+      const comms = premarketData.postmarket_pillars?.commodities || {};
+      const brentPrice = comms.brent?.price || premarketData.brent?.price;
+      const wtiPrice = comms.wti?.price;
+      const natgasPrice = comms.natgas?.price;
+      if (brentPrice || natgasPrice) {
+        let commScript = 'In commodities action: ';
+        if (brentPrice) commScript += `Brent crude is trading at ${brentPrice} dollars per barrel. `;
+        if (wtiPrice) commScript += `WTI crude is at ${wtiPrice} dollars. `;
+        if (natgasPrice) commScript += `Natural Gas is at ${natgasPrice} dollars. `;
+        parts.push(commScript.trim());
+      }
+
+      const earnings = premarketData.postmarket_pillars?.earnings || [];
+      if (earnings.length) {
+        const topEarn = earnings.slice(0, 2).map(e => e.title.replace(/[\(\)\[\]"]/g, '').trim()).join('. And ');
+        parts.push(`On corporate earnings: ${topEarn}.`);
+      }
+    }
   }
 
-  // Top catalysts
-  const topStories = (briefing?.stories || [])
-    .slice()
-    .sort((a, b) => (b.score || 0) - (a.score || 0))
-    .slice(0, 2);
+  // Pre-market catalysts
+  if (!isPost) {
+    const topStories = (briefing?.stories || [])
+      .slice()
+      .sort((a, b) => (b.score || 0) - (a.score || 0))
+      .slice(0, 2);
 
-  if (topStories.length) {
-    parts.push("Top catalysts driving today's session include:");
-    topStories.forEach((s, idx) => {
-      const cleanTitle = s.title.replace(/[\(\)\[\]"]/g, '').trim();
-      parts.push(`Catalyst ${idx + 1}: ${cleanTitle}.`);
-    });
+    if (topStories.length) {
+      parts.push("Top catalysts driving today's session include:");
+      topStories.forEach((s, idx) => {
+        const cleanTitle = s.title.replace(/[\(\)\[\]"]/g, '').trim();
+        parts.push(`Catalyst ${idx + 1}: ${cleanTitle}.`);
+      });
+    }
   }
 
-  parts.push('Trade your plan, manage risk strictly, and have a profitable session.');
+  // Key Floor Pivots
+  if (premarketData?.pivots?.nifty?.pivot) {
+    parts.push(`Nifty key floor pivot sits at ${premarketData.pivots.nifty.pivot}, with support one at ${premarketData.pivots.nifty.s1} and resistance one at ${premarketData.pivots.nifty.r1}.`);
+  }
+
+  parts.push(isPost ? 'Stay informed, analyze risk, and have a restful evening.' : 'Trade your plan, manage risk strictly, and have a profitable session.');
 
   const speechText = parts.join(' ');
   const utterance = new SpeechSynthesisUtterance(speechText);
@@ -3523,6 +3570,15 @@ function playAudioBrief() {
       if (icon) icon.textContent = '⏹';
     }
     if (wave) wave.hidden = false;
+
+    const digestPlayBtn = $('digest-play-btn');
+    if (digestPlayBtn) {
+      digestPlayBtn.classList.add('playing');
+      const dLabel = $('digest-play-label');
+      const dIcon = $('digest-play-icon');
+      if (dLabel) dLabel.textContent = 'Stop Brief';
+      if (dIcon) dIcon.textContent = '⏹';
+    }
   };
 
   utterance.onend = () => {
@@ -3552,6 +3608,329 @@ function initAudioBrief() {
   }
 }
 
+// ==========================================
+// Phase 4: Smart Signal Digest Engine
+// ==========================================
+
+function getSignalDigestData(data, stories) {
+  const d = data || {};
+  const sList = stories || [];
+  const session = typeof getISTSession === 'function' ? getISTSession() : { tag: 'Market Briefing', isPostMarket: false };
+  const isPost = session.isPostMarket || session.phase === 'postmarket' || session.phase === 'overnight';
+
+  // Pillar 1: Benchmark Stance & Regime
+  const niftyPrice = d.live_nifty_price || '--';
+  const pts = d.live_pts;
+  const ptsFmt = pts != null ? (pts >= 0 ? `+${pts}` : `${pts}`) : '';
+  const pctFmt = d.live_pct != null ? (d.live_pct >= 0 ? `+${d.live_pct}%` : `${d.live_pct}%`) : '';
+  const posture = d.posture || {};
+  const vix = d.vix || {};
+  
+  const p1Badge = pts >= 0 ? 'bullish' : 'caution';
+  const p1BadgeText = pts >= 0 ? 'BULLISH BIAS' : (posture.regime || 'CORRECTIVE TREND');
+
+  // Pillar 2: Institutional Transmission
+  const fiiDii = d.fii_dii || {};
+  const fiiCr = fiiDii.fii_net_cr != null ? Math.round(fiiDii.fii_net_cr) : 0;
+  const diiCr = fiiDii.dii_net_cr != null ? Math.round(fiiDii.dii_net_cr) : 0;
+  const netCr = fiiDii.net_cr != null ? Math.round(fiiDii.net_cr) : (fiiCr + diiCr);
+  const p2Badge = netCr >= 0 ? 'bullish' : 'caution';
+  const p2BadgeText = netCr >= 0 ? 'NET BUYING' : 'NET OUTFLOW';
+
+  // Pillar 3: Commodities & Macro Pulse
+  const comms = d.postmarket_pillars?.commodities || {};
+  const brent = comms.brent || d.brent || {};
+  const wti = comms.wti || {};
+  const natgas = comms.natgas || {};
+  const gold = comms.gold || {};
+  const silver = comms.silver || {};
+  const over = d.overnight || {};
+  const sp500 = over.SP500 || {};
+  const us10y = over.US10Y || {};
+
+  // Pillar 4: Tactical Setup & Catalysts
+  const pivots = d.pivots || {};
+  const niftyPiv = pivots.nifty || {};
+  const bnPiv = pivots.banknifty || {};
+  
+  let topCat = null;
+  if (isPost && d.postmarket_pillars?.earnings?.length) {
+    topCat = d.postmarket_pillars.earnings[0];
+  } else if (sList.length) {
+    topCat = sList.slice().sort((a, b) => (b.score || 0) - (a.score || 0))[0];
+  }
+
+  return {
+    isPost,
+    session,
+    pillar1: {
+      title: 'Benchmark Stance & Regime',
+      badgeClass: p1Badge,
+      badgeText: p1BadgeText,
+      niftyPrice,
+      ptsFmt,
+      pctFmt,
+      regime: posture.regime || 'Consolidation',
+      dma50Pct: posture.pct_dma50 != null ? `${posture.pct_dma50}%` : '--',
+      dma50Fmt: posture.dma50_fmt || '--',
+      dma200Pct: posture.pct_dma200 != null ? `${posture.pct_dma200}%` : '--',
+      dma200Fmt: posture.dma200_fmt || '--',
+      vixPrice: vix.price || '--',
+      vixRegime: vix.regime || 'Normal Volatility',
+      range52: posture.low52_fmt && posture.high52_fmt ? `${posture.low52_fmt} – ${posture.high52_fmt}` : 'Broad Trading Range'
+    },
+    pillar2: {
+      title: 'Institutional Transmission',
+      badgeClass: p2Badge,
+      badgeText: p2BadgeText,
+      fiiCr,
+      diiCr,
+      netCr,
+      trend: fiiDii.trend || (netCr >= 0 ? 'Domestic Absorption' : 'Foreign Profit Booking'),
+      date: fiiDii.date || 'Latest Session'
+    },
+    pillar3: {
+      title: isPost ? 'MCX Commodities & Global Macro' : 'Global Macro & Cross-Asset',
+      badgeClass: 'neutral',
+      badgeText: isPost ? 'ENERGY & METALS' : 'CROSS-ASSET PULSE',
+      brentPrice: brent.price || '--',
+      brentPct: brent.change_pct != null ? `${brent.change_pct}%` : '',
+      wtiPrice: wti.price || '--',
+      wtiPct: wti.change_pct != null ? `${wti.change_pct}%` : '',
+      natgasPrice: natgas.price || '--',
+      natgasPct: natgas.change_pct != null ? `${natgas.change_pct}%` : '',
+      goldPrice: gold.price || '--',
+      silverPrice: silver.price || '--',
+      sp500Val: sp500.val || '--',
+      sp500Pct: sp500.pct != null ? `${sp500.pct}%` : '',
+      us10yVal: us10y.val || '--',
+      usdinr: d.usdinr?.price || '83.95'
+    },
+    pillar4: {
+      title: 'Tactical Setup & Catalysts',
+      badgeClass: 'caution',
+      badgeText: 'KEY PIVOTS',
+      niftyPivot: niftyPiv.pivot || '--',
+      niftyS1: niftyPiv.s1 || '--',
+      niftyR1: niftyPiv.r1 || '--',
+      bnPivot: bnPiv.pivot || '--',
+      bnS1: bnPiv.s1 || '--',
+      bnR1: bnPiv.r1 || '--',
+      catalystTitle: topCat ? topCat.title : 'Focus on institutional liquidity dynamics and risk boundaries.',
+      catalystMatters: topCat?.why_it_matters || 'Determines near-term volatility and positioning conviction.'
+    }
+  };
+}
+
+function generateSignalDigestMemo(digest) {
+  const d = digest;
+  const dateStr = new Date().toLocaleDateString('en-IN', { timeZone: 'Asia/Kolkata', day: 'numeric', month: 'short', year: 'numeric' });
+  const timeStr = new Date().toLocaleTimeString('en-IN', { timeZone: 'Asia/Kolkata', hour: '2-digit', minute: '2-digit', hour12: true });
+
+  const lines = [
+    `⚡ NEWSLAND EXECUTIVE SIGNAL DIGEST`,
+    `${dateStr} • ${timeStr} IST • ${d.session.tag}`,
+    `----------------------------------------`,
+    `🧭 BENCHMARK STANCE & REGIME`,
+    `• Nifty 50: ${d.pillar1.niftyPrice} (${d.pillar1.ptsFmt} pts, ${d.pillar1.pctFmt})`,
+    `• Posture: ${d.pillar1.regime} (${d.pillar1.dma50Pct} vs 50 DMA, ${d.pillar1.dma200Pct} vs 200 DMA)`,
+    `• India VIX: ${d.pillar1.vixPrice} (${d.pillar1.vixRegime})`,
+    ``,
+    `🏛️ INSTITUTIONAL TRANSMISSION`,
+    `• FII Net: ${d.pillar2.fiiCr >= 0 ? '+' : ''}${d.pillar2.fiiCr} Cr | DII Net: ${d.pillar2.diiCr >= 0 ? '+' : ''}${d.pillar2.diiCr} Cr`,
+    `• Net Institutional: ${d.pillar2.netCr >= 0 ? '+' : ''}${d.pillar2.netCr} Cr`,
+    `• Trend: ${d.pillar2.trend}`,
+    ``,
+    `🛢️ COMMODITIES & CROSS-ASSET`,
+    `• Brent: $${d.pillar3.brentPrice} (${d.pillar3.brentPct}) | WTI: $${d.pillar3.wtiPrice}`,
+    `• Natural Gas: $${d.pillar3.natgasPrice} | Gold: $${d.pillar3.goldPrice} | Silver: $${d.pillar3.silverPrice}`,
+    `• US 10Y Yield: ${d.pillar3.us10yVal} | S&P 500: ${d.pillar3.sp500Val} (${d.pillar3.sp500Pct})`,
+    `• USDINR: ${d.pillar3.usdinr}`,
+    ``,
+    `🎯 TACTICAL LEVELS & CATALYSTS`,
+    `• Nifty Pivots: S1 ${d.pillar4.niftyS1} < Pivot ${d.pillar4.niftyPivot} < R1 ${d.pillar4.niftyR1}`,
+    `• BankNifty: S1 ${d.pillar4.bnS1} < Pivot ${d.pillar4.bnPivot} < R1 ${d.pillar4.bnR1}`,
+    `• Key Catalyst: ${d.pillar4.catalystTitle}`,
+    `----------------------------------------`,
+    `Synthesized by Newsland Financial Intelligence Desk • newsland.pages.dev`
+  ];
+
+  return lines.join('\n');
+}
+
+function renderSignalDigest() {
+  const container = $('digest-cards-list');
+  if (!container) return;
+  const d = getSignalDigestData(premarketData, briefing?.stories || []);
+
+  container.innerHTML = `
+    <!-- Card 1: Benchmark Stance -->
+    <div class="digest-card">
+      <div class="digest-card-header">
+        <span class="digest-card-title">🧭 ${escapeHtml(d.pillar1.title)}</span>
+        <span class="digest-card-badge ${d.pillar1.badgeClass}">${escapeHtml(d.pillar1.badgeText)}</span>
+      </div>
+      <div class="digest-card-content">
+        <div><strong>Nifty 50:</strong> ${escapeHtml(d.pillar1.niftyPrice)} <span style="font-weight:600; color:${d.pillar1.ptsFmt.startsWith('+') ? 'var(--green-ticker)' : 'var(--red-ticker)'};">(${escapeHtml(d.pillar1.ptsFmt)} pts, ${escapeHtml(d.pillar1.pctFmt)})</span></div>
+        <div><strong>Posture:</strong> ${escapeHtml(d.pillar1.regime)} (${escapeHtml(d.pillar1.dma50Pct)} vs 50 DMA)</div>
+        <div><strong>India VIX:</strong> ${escapeHtml(d.pillar1.vixPrice)} (${escapeHtml(d.pillar1.vixRegime)})</div>
+      </div>
+      <div class="digest-card-meta">52W Bounds: ${escapeHtml(d.pillar1.range52)}</div>
+    </div>
+
+    <!-- Card 2: Institutional Flows -->
+    <div class="digest-card">
+      <div class="digest-card-header">
+        <span class="digest-card-title">🏛️ ${escapeHtml(d.pillar2.title)}</span>
+        <span class="digest-card-badge ${d.pillar2.badgeClass}">${escapeHtml(d.pillar2.badgeText)}</span>
+      </div>
+      <div class="digest-card-content">
+        <div><strong>FII Net:</strong> ₹${d.pillar2.fiiCr} Cr | <strong>DII Net:</strong> ₹${d.pillar2.diiCr} Cr</div>
+        <div><strong>Net Cumulative:</strong> ₹${d.pillar2.netCr} Cr</div>
+        <div style="color:var(--ink-muted); font-size:11px;">${escapeHtml(d.pillar2.trend)}</div>
+      </div>
+      <div class="digest-card-meta">As of ${escapeHtml(d.pillar2.date)}</div>
+    </div>
+
+    <!-- Card 3: Commodities & Macro -->
+    <div class="digest-card">
+      <div class="digest-card-header">
+        <span class="digest-card-title">🛢️ ${escapeHtml(d.pillar3.title)}</span>
+        <span class="digest-card-badge ${d.pillar3.badgeClass}">${escapeHtml(d.pillar3.badgeText)}</span>
+      </div>
+      <div class="digest-card-content">
+        <div><strong>Brent:</strong> $${escapeHtml(d.pillar3.brentPrice)} <span style="font-size:10.5px;color:var(--ink-muted);">(${escapeHtml(d.pillar3.brentPct)})</span> | <strong>WTI:</strong> $${escapeHtml(d.pillar3.wtiPrice)}</div>
+        <div><strong>NatGas:</strong> $${escapeHtml(d.pillar3.natgasPrice)} | <strong>Gold:</strong> $${escapeHtml(d.pillar3.goldPrice)} | <strong>Silver:</strong> $${escapeHtml(d.pillar3.silverPrice)}</div>
+        <div><strong>US 10Y:</strong> ${escapeHtml(d.pillar3.us10yVal)} | <strong>S&P 500:</strong> ${escapeHtml(d.pillar3.sp500Val)} (${escapeHtml(d.pillar3.sp500Pct)})</div>
+      </div>
+      <div class="digest-card-meta">USDINR: ${escapeHtml(d.pillar3.usdinr)} • Active Futures Pulse</div>
+    </div>
+
+    <!-- Card 4: Tactical Setup & Catalysts -->
+    <div class="digest-card">
+      <div class="digest-card-header">
+        <span class="digest-card-title">🎯 ${escapeHtml(d.pillar4.title)}</span>
+        <span class="digest-card-badge ${d.pillar4.badgeClass}">${escapeHtml(d.pillar4.badgeText)}</span>
+      </div>
+      <div class="digest-card-content">
+        <div><strong>Nifty Pivots:</strong> S1 ${escapeHtml(String(d.pillar4.niftyS1))} &lt; <strong style="color:var(--accent-red);">P ${escapeHtml(String(d.pillar4.niftyPivot))}</strong> &lt; R1 ${escapeHtml(String(d.pillar4.niftyR1))}</div>
+        <div><strong>BankNifty:</strong> S1 ${escapeHtml(String(d.pillar4.bnS1))} &lt; <strong style="color:var(--accent-red);">P ${escapeHtml(String(d.pillar4.bnPivot))}</strong> &lt; R1 ${escapeHtml(String(d.pillar4.bnR1))}</div>
+        <div style="font-size:11px; margin-top:2px;"><strong>Catalyst:</strong> ${escapeHtml(d.pillar4.catalystTitle)}</div>
+      </div>
+      <div class="digest-card-meta">Session Risk Boundaries & Support/Resistance</div>
+    </div>
+  `;
+}
+
+function openSignalDigestModal() {
+  const modal = $('digest-modal');
+  if (!modal) return;
+  renderSignalDigest();
+  modal.hidden = false;
+  document.body.style.overflow = 'hidden';
+}
+
+function closeSignalDigestModal() {
+  const modal = $('digest-modal');
+  if (!modal) return;
+  modal.hidden = true;
+  document.body.style.overflow = '';
+}
+
+function initSignalDigest() {
+  const triggerBtn = $('signal-digest-btn');
+  if (triggerBtn) {
+    triggerBtn.addEventListener('click', openSignalDigestModal);
+  }
+
+  const closeBtn = $('close-digest-modal');
+  if (closeBtn) {
+    closeBtn.addEventListener('click', closeSignalDigestModal);
+  }
+
+  const backdrop = $('digest-backdrop');
+  if (backdrop) {
+    backdrop.addEventListener('click', closeSignalDigestModal);
+  }
+
+  // Digest Audio Play Button
+  const digestPlayBtn = $('digest-play-btn');
+  if (digestPlayBtn) {
+    digestPlayBtn.addEventListener('click', () => {
+      if (isAudioPlaying) {
+        stopAudioBrief();
+      } else {
+        playAudioBrief();
+      }
+    });
+  }
+
+  // Copy Executive Memo Button
+  const copyBtn = $('copy-digest-memo-btn');
+  const statusEl = $('digest-copy-status');
+  if (copyBtn) {
+    copyBtn.addEventListener('click', async () => {
+      const digest = getSignalDigestData(premarketData, briefing?.stories || []);
+      const memo = generateSignalDigestMemo(digest);
+      const showStatus = (msg, isErr) => {
+        if (!statusEl) return;
+        statusEl.textContent = msg;
+        statusEl.style.color = isErr ? 'var(--red-ticker)' : 'var(--green-ticker)';
+        statusEl.hidden = false;
+        setTimeout(() => { statusEl.hidden = true; }, 3500);
+      };
+
+      try {
+        await navigator.clipboard.writeText(memo);
+        showStatus('✓ Executive Signal Memo copied to clipboard!');
+      } catch (err) {
+        try {
+          const ta = document.createElement('textarea');
+          ta.value = memo;
+          document.body.appendChild(ta);
+          ta.select();
+          document.execCommand('copy');
+          document.body.removeChild(ta);
+          showStatus('✓ Executive Signal Memo copied!');
+        } catch (e) {
+          showStatus('Failed to copy memo', true);
+        }
+      }
+    });
+  }
+
+  // Share to WhatsApp
+  const waBtn = $('share-digest-wa-btn');
+  if (waBtn) {
+    waBtn.addEventListener('click', () => {
+      const digest = getSignalDigestData(premarketData, briefing?.stories || []);
+      const memo = generateSignalDigestMemo(digest);
+      const url = `https://api.whatsapp.com/send?text=${encodeURIComponent(memo)}`;
+      window.open(url, '_blank', 'noopener,noreferrer');
+    });
+  }
+
+  // Share to X
+  const xBtn = $('share-digest-x-btn');
+  if (xBtn) {
+    xBtn.addEventListener('click', () => {
+      const digest = getSignalDigestData(premarketData, briefing?.stories || []);
+      const dateStr = new Date().toLocaleDateString('en-IN', { ...ist, day: 'numeric', month: 'short' });
+      const tweet = `⚡ Newsland Executive Signal Digest (${dateStr}):\n• Nifty: ${digest.pillar1.niftyPrice} (${digest.pillar1.ptsFmt} pts)\n• FII/DII Net: ₹${digest.pillar2.netCr} Cr (${digest.pillar2.trend})\n• VIX: ${digest.pillar1.vixPrice} | Brent: $${digest.pillar3.brentPrice}\n• Pivot: ${digest.pillar4.niftyPivot}\n\nInstitutional clarity. Zero noise 👇\n`;
+      const url = `https://twitter.com/intent/tweet?text=${encodeURIComponent(tweet)}&url=${encodeURIComponent('https://newsland.in')}`;
+      window.open(url, '_blank', 'noopener,noreferrer');
+    });
+  }
+
+  // Escape Key Handler
+  window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      const modal = $('digest-modal');
+      if (modal && !modal.hidden) closeSignalDigestModal();
+    }
+  });
+}
+
 // Initial boot
 renderWatch();
 load();
@@ -3559,6 +3938,8 @@ loadMarket();
 initAudioBrief();
 initShareModal();
 initInstantTickerSearch();
+initSignalDigest();
 setInterval(load, 30000);
 setInterval(loadMarket, 60000);
+
 
