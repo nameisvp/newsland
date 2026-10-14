@@ -32,8 +32,9 @@
         <a class="wordmark" href="/" aria-label="Newsland home">newsland<span class="ink-dot">.</span></a>
       </div>
 
-      <div class="search-pill-wrap">
-        <input id="search-input" type="search" placeholder="Search news, stocks, sectors..." autocomplete="off" aria-label="Search news">
+      <div class="search-pill-wrap" id="search-wrap">
+        <input id="search-input" type="search" placeholder="Search stocks (e.g. RELIANCE, TCS) or news..." autocomplete="off" aria-label="Search news and stock tickers">
+        <span id="search-kbd-hint" class="search-kbd-hint" title="Press ⌘K or / to search">⌘K</span>
         <svg class="search-pill-ico" viewBox="0 0 16 16" aria-hidden="true">
           <circle cx="7" cy="7" r="4.5" fill="none" stroke="currentColor" stroke-width="1.6"/>
           <path d="m10.5 10.5 3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
@@ -43,6 +44,8 @@
             <path d="M4 4l8 8M12 4L4 12"/>
           </svg>
         </button>
+        <!-- Instant Ticker Quick-Search Dropdown -->
+        <div id="search-dropdown" class="search-dropdown" hidden></div>
       </div>
 
       <div class="header-right">
@@ -524,7 +527,10 @@
               <span id="xray-sector" class="xray-sector">IT Services</span>
             </div>
           </div>
-          <button id="close-company-drawer" class="company-close" aria-label="Close company brief">✕</button>
+          <div class="company-head-actions">
+            <button id="copy-xray-memo-btn" class="xray-action-btn" title="Copy Company Snapshot Memo">📋 Copy Memo</button>
+            <button id="close-company-drawer" class="company-close" aria-label="Close company brief">✕</button>
+          </div>
         </div>
         <div class="company-price-strip">
           <div class="xray-price-block">

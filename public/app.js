@@ -2170,26 +2170,269 @@ document.addEventListener('click', e => {
   render();
 });
 
-// Search input
-$('search-input').addEventListener('input', e => {
-  searchQuery = e.target.value;
-  $('search-clear').hidden = !searchQuery;
-  render();
-});
-$('search-input').addEventListener('search', () => {
-  if (!$('search-input').value) {
-    searchQuery = '';
-    $('search-clear').hidden = true;
-    render();
+// ============================================================================
+// Phase 3: Instant Ticker Quick-Search & Command Menu
+// ============================================================================
+
+let currentXRayData = null;
+
+const KNOWN_COMPANIES = [
+  { symbol: 'RELIANCE.NS', name: 'Reliance Industries', ticker: 'RELIANCE', sector: 'Oil & Conglomerate' },
+  { symbol: 'TCS.NS', name: 'Tata Consultancy Services', ticker: 'TCS', sector: 'IT Services' },
+  { symbol: 'HDFCBANK.NS', name: 'HDFC Bank', ticker: 'HDFCBANK', sector: 'Private Banking' },
+  { symbol: 'ICICIBANK.NS', name: 'ICICI Bank', ticker: 'ICICIBANK', sector: 'Private Banking' },
+  { symbol: 'INFY.NS', name: 'Infosys', ticker: 'INFY', sector: 'IT Services' },
+  { symbol: 'SBIN.NS', name: 'State Bank of India', ticker: 'SBIN', sector: 'Public Banking' },
+  { symbol: 'BHARTIARTL.NS', name: 'Bharti Airtel', ticker: 'BHARTIARTL', sector: 'Telecom' },
+  { symbol: 'ITC.NS', name: 'ITC Limited', ticker: 'ITC', sector: 'FMCG' },
+  { symbol: 'LT.NS', name: 'Larsen & Toubro', ticker: 'LT', sector: 'Infrastructure' },
+  { symbol: 'TATAMOTORS.NS', name: 'Tata Motors', ticker: 'TATAMOTORS', sector: 'Automobile' },
+  { symbol: 'BAJFINANCE.NS', name: 'Bajaj Finance', ticker: 'BAJFINANCE', sector: 'NBFC / Lending' },
+  { symbol: 'MARUTI.NS', name: 'Maruti Suzuki', ticker: 'MARUTI', sector: 'Automobile' },
+  { symbol: 'SUNPHARMA.NS', name: 'Sun Pharma', ticker: 'SUNPHARMA', sector: 'Pharmaceuticals' },
+  { symbol: 'TITAN.NS', name: 'Titan Company', ticker: 'TITAN', sector: 'Consumer & Jewellery' },
+  { symbol: 'TATASTEEL.NS', name: 'Tata Steel', ticker: 'TATASTEEL', sector: 'Metals & Mining' },
+  { symbol: 'JSWSTEEL.NS', name: 'JSW Steel', ticker: 'JSWSTEEL', sector: 'Metals & Mining' },
+  { symbol: 'HINDALCO.NS', name: 'Hindalco Industries', ticker: 'HINDALCO', sector: 'Metals & Aluminium' },
+  { symbol: 'VEDL.NS', name: 'Vedanta Limited', ticker: 'VEDL', sector: 'Natural Resources' },
+  { symbol: 'ONGC.NS', name: 'Oil & Natural Gas Corp', ticker: 'ONGC', sector: 'Oil & Gas' },
+  { symbol: 'BPCL.NS', name: 'Bharat Petroleum', ticker: 'BPCL', sector: 'Oil Marketing' },
+  { symbol: 'NTPC.NS', name: 'NTPC Limited', ticker: 'NTPC', sector: 'Power Generation' },
+  { symbol: 'ADANIENT.NS', name: 'Adani Enterprises', ticker: 'ADANIENT', sector: 'Infrastructure' },
+  { symbol: 'WIPRO.NS', name: 'Wipro Limited', ticker: 'WIPRO', sector: 'IT Services' },
+  { symbol: 'HCLTECH.NS', name: 'HCL Technologies', ticker: 'HCLTECH', sector: 'IT Services' },
+  { symbol: 'TECHM.NS', name: 'Tech Mahindra', ticker: 'TECHM', sector: 'IT Services' },
+  { symbol: 'INDIGO.NS', name: 'InterGlobe Aviation', ticker: 'INDIGO', sector: 'Aviation' },
+  { symbol: 'DLF.NS', name: 'DLF Limited', ticker: 'DLF', sector: 'Real Estate' },
+  { symbol: 'GODREJPROP.NS', name: 'Godrej Properties', ticker: 'GODREJPROP', sector: 'Real Estate' },
+  { symbol: 'HAL.NS', name: 'Hindustan Aeronautics', ticker: 'HAL', sector: 'Aerospace & Defence' },
+  { symbol: 'BEL.NS', name: 'Bharat Electronics', ticker: 'BEL', sector: 'Defence Electronics' },
+  { symbol: 'MAZDOCK.NS', name: 'Mazagon Dock', ticker: 'MAZDOCK', sector: 'Defence Shipbuilding' },
+  { symbol: 'DIXON.NS', name: 'Dixon Technologies', ticker: 'DIXON', sector: 'Electronics' },
+  { symbol: 'VOLTAS.NS', name: 'Voltas Limited', ticker: 'VOLTAS', sector: 'Consumer Durables' },
+  { symbol: 'MUTHOOTFIN.NS', name: 'Muthoot Finance', ticker: 'MUTHOOTFIN', sector: 'Gold Finance' },
+  { symbol: 'KALYANKJIL.NS', name: 'Kalyan Jewellers', ticker: 'KALYANKJIL', sector: 'Gems & Jewellery' },
+  { symbol: 'ASIANPAINT.NS', name: 'Asian Paints', ticker: 'ASIANPAINT', sector: 'Paints & Coatings' },
+  { symbol: 'CIPLA.NS', name: 'Cipla Limited', ticker: 'CIPLA', sector: 'Pharmaceuticals' },
+  { symbol: 'MRF.NS', name: 'MRF Tyres', ticker: 'MRF', sector: 'Automobile Components' },
+  { symbol: 'APOLLOTYRE.NS', name: 'Apollo Tyres', ticker: 'APOLLOTYRE', sector: 'Automobile Components' },
+  { symbol: 'TSM', name: 'TSMC', ticker: 'TSM', sector: 'Semiconductors' },
+  { symbol: 'NVDA', name: 'NVIDIA Corp', ticker: 'NVDA', sector: 'AI Semiconductors' },
+  { symbol: 'AAPL', name: 'Apple Inc', ticker: 'AAPL', sector: 'Consumer Tech' }
+];
+
+function renderSearchDropdown(query) {
+  const drop = $('search-dropdown');
+  if (!drop) return;
+  const q = (query || '').trim().toLowerCase();
+
+  if (!q) {
+    drop.innerHTML = `
+      <div class="search-drop-section">
+        <span class="search-drop-title">POPULAR &amp; WATCHLIST TICKERS</span>
+        <div class="search-quick-tickers">
+          <button class="quick-ticker-pill" data-sym="RELIANCE.NS">RELIANCE</button>
+          <button class="quick-ticker-pill" data-sym="TCS.NS">TCS</button>
+          <button class="quick-ticker-pill" data-sym="HDFCBANK.NS">HDFC BANK</button>
+          <button class="quick-ticker-pill" data-sym="INFY.NS">INFOSYS</button>
+          <button class="quick-ticker-pill" data-sym="ICICIBANK.NS">ICICI BANK</button>
+          <button class="quick-ticker-pill" data-sym="TATAMOTORS.NS">TATA MOTORS</button>
+          <button class="quick-ticker-pill" data-sym="BAJFINANCE.NS">BAJAJ FINANCE</button>
+          <button class="quick-ticker-pill" data-sym="BRENT">BRENT CRUDE</button>
+          <button class="quick-ticker-pill" data-sym="GOLD">GOLD</button>
+        </div>
+      </div>
+      <div class="search-drop-footer">
+        <span>Press ⌘K or / to search anytime</span>
+        <span>Esc to close</span>
+      </div>
+    `;
+    drop.hidden = false;
+    return;
   }
-});
-$('search-clear').addEventListener('click', () => {
-  $('search-input').value = '';
-  searchQuery = '';
-  $('search-clear').hidden = true;
-  $('search-input').focus();
-  render();
-});
+
+  // Filter matching companies
+  const matchedTickers = KNOWN_COMPANIES.filter(c =>
+    c.ticker.toLowerCase().includes(q) ||
+    c.name.toLowerCase().includes(q) ||
+    c.sector.toLowerCase().includes(q) ||
+    c.symbol.toLowerCase().includes(q)
+  ).slice(0, 5);
+
+  // Filter matching stories from current briefing
+  const matchedStories = (briefing?.stories || []).filter(s =>
+    s.title.toLowerCase().includes(q) ||
+    (s.category && s.category.toLowerCase().includes(q))
+  ).slice(0, 3);
+
+  let html = '';
+
+  if (matchedTickers.length) {
+    html += `
+      <div class="search-drop-section">
+        <span class="search-drop-title">COMPANY TICKERS · INSTANT X-RAY</span>
+        ${matchedTickers.map(t => `
+          <div class="search-ticker-item" data-sym="${esc(t.symbol)}">
+            <div class="search-ticker-left">
+              <span class="search-ticker-badge">${esc(t.ticker)}</span>
+              <div class="search-ticker-meta">
+                <span class="search-ticker-name">${esc(t.name)}</span>
+                <span class="search-ticker-sector">${esc(t.sector)}</span>
+              </div>
+            </div>
+            <button class="search-xray-cta">Open X-Ray ↗</button>
+          </div>
+        `).join('')}
+      </div>
+    `;
+  }
+
+  if (matchedStories.length) {
+    html += `
+      <div class="search-drop-section">
+        <span class="search-drop-title">HEADLINE CATALYSTS</span>
+        ${matchedStories.map(s => `
+          <div class="search-story-item" data-id="${esc(s.id)}" data-url="${safeUrl(s.url)}">
+            <span class="search-story-title">${esc(s.title)}</span>
+            <span class="search-story-meta">${esc(s.sources?.[0]?.name || s.source || 'Wire')} · ${timeAgo(s.published)}</span>
+          </div>
+        `).join('')}
+      </div>
+    `;
+  }
+
+  if (!matchedTickers.length && !matchedStories.length) {
+    html += `
+      <div class="search-drop-section">
+        <span class="search-drop-title">NO DIRECT MATCHES</span>
+        <div style="font-size:11px; color:var(--ink-muted); padding: 4px 0;">
+          Press Enter to run broadsheet search for "${esc(q)}"
+        </div>
+      </div>
+    `;
+  }
+
+  html += `
+    <div class="search-drop-footer">
+      <span>Press Enter to filter full broadsheet</span>
+      <span>Esc to close</span>
+    </div>
+  `;
+
+  drop.innerHTML = html;
+  drop.hidden = false;
+}
+
+function initInstantTickerSearch() {
+  const input = $('search-input');
+  const drop = $('search-dropdown');
+  const wrap = $('search-wrap');
+  const clearBtn = $('search-clear');
+  if (!input || !drop) return;
+
+  input.addEventListener('focus', () => {
+    renderSearchDropdown(input.value);
+  });
+
+  input.addEventListener('input', e => {
+    searchQuery = e.target.value;
+    if (clearBtn) clearBtn.hidden = !searchQuery;
+    if (wrap) wrap.classList.toggle('has-value', Boolean(searchQuery));
+    renderSearchDropdown(searchQuery);
+    render();
+  });
+
+  input.addEventListener('search', () => {
+    if (!input.value) {
+      searchQuery = '';
+      if (clearBtn) clearBtn.hidden = true;
+      if (wrap) wrap.classList.remove('has-value');
+      render();
+      drop.hidden = true;
+    }
+  });
+
+  if (clearBtn) {
+    clearBtn.addEventListener('click', () => {
+      input.value = '';
+      searchQuery = '';
+      clearBtn.hidden = true;
+      if (wrap) wrap.classList.remove('has-value');
+      input.focus();
+      render();
+      renderSearchDropdown('');
+    });
+  }
+
+  // Handle clicks inside search dropdown
+  drop.addEventListener('click', e => {
+    const tickerItem = e.target.closest('.search-ticker-item');
+    if (tickerItem) {
+      const sym = tickerItem.dataset.sym;
+      if (sym) {
+        drop.hidden = true;
+        openCompanyXRay(sym);
+      }
+      return;
+    }
+
+    const quickPill = e.target.closest('.quick-ticker-pill');
+    if (quickPill) {
+      const sym = quickPill.dataset.sym;
+      if (sym) {
+        drop.hidden = true;
+        openCompanyXRay(sym);
+      }
+      return;
+    }
+
+    const storyItem = e.target.closest('.search-story-item');
+    if (storyItem) {
+      const url = storyItem.dataset.url;
+      if (url && url !== '#') {
+        window.open(url, '_blank', 'noopener,noreferrer');
+      }
+      return;
+    }
+  });
+
+  // Close dropdown on outside click
+  document.addEventListener('click', e => {
+    if (!e.target.closest('.search-pill-wrap')) {
+      if (drop && !drop.hidden) drop.hidden = true;
+    }
+  });
+
+  // Keyboard navigation & global shortcuts
+  document.addEventListener('keydown', e => {
+    if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
+      e.preventDefault();
+      input.focus();
+      input.select();
+      renderSearchDropdown(input.value);
+      return;
+    }
+
+    if (e.key === '/' && document.activeElement !== input && document.activeElement !== $('watch-input') && document.activeElement?.tagName !== 'INPUT' && document.activeElement?.tagName !== 'TEXTAREA') {
+      e.preventDefault();
+      input.focus();
+      input.select();
+      renderSearchDropdown(input.value);
+      return;
+    }
+
+    if (e.key === 'Escape') {
+      if (!drop.hidden) {
+        drop.hidden = true;
+        return;
+      }
+    }
+
+    if (e.key === 'Enter' && document.activeElement === input) {
+      drop.hidden = true;
+    }
+  });
+}
 
 // Off-Canvas Drawer (Hamburger)
 $('menu-btn').addEventListener('click', () => $('drawer-modal').hidden = false);
@@ -2337,6 +2580,7 @@ async function openCompanyXRay(symbolOrName) {
     const res = await safeFetch(`/api/company?q=${encodeURIComponent(symbolOrName)}`, `/data/companies/${cleanSym}.json`);
     if (!res.ok) throw new Error('Failed to retrieve company data');
     const data = await res.json();
+    currentXRayData = data;
 
     $('xray-name').textContent = data.name || symbolOrName;
     $('xray-symbol').textContent = data.symbol || symbolOrName;
@@ -2405,6 +2649,34 @@ if ($('close-company-drawer')) {
 if ($('company-backdrop')) {
   $('company-backdrop').addEventListener('click', () => {
     if ($('company-modal')) $('company-modal').hidden = true;
+  });
+}
+
+// Copy Company X-Ray Snapshot Memo
+if ($('copy-xray-memo-btn')) {
+  $('copy-xray-memo-btn').addEventListener('click', async () => {
+    if (!currentXRayData) return;
+    const d = currentXRayData;
+    const sign = (d.change_pct || 0) >= 0 ? '+' : '';
+    let memo = `📊 *${d.name} (${d.symbol})* | Financial & Catalyst X-Ray\n`;
+    memo += `• Live Quote: ${d.price} (${sign}${d.change} · ${sign}${d.change_pct}%)\n`;
+    memo += `• 52W Envelope: Low ${d.low_52w} – High ${d.high_52w}\n`;
+    memo += `• Valuation: Market Cap ${d.market_cap_cr} | P/E: ${d.pe_ratio ? d.pe_ratio + 'x' : 'N/A'}\n`;
+    memo += `• Sector: ${d.sector}\n`;
+    if (d.stories && d.stories.length) {
+      memo += `• Active Catalysts:\n`;
+      d.stories.slice(0, 3).forEach((s, idx) => {
+        memo += `  ${idx + 1}. ${s.title}\n`;
+      });
+    }
+    memo += `\nTrack institutional catalysts zero noise: https://newsland.in`;
+    try {
+      await navigator.clipboard.writeText(memo);
+      const btn = $('copy-xray-memo-btn');
+      const orig = btn.textContent;
+      btn.textContent = 'Copied ✓';
+      setTimeout(() => { btn.textContent = orig; }, 2000);
+    } catch (_) {}
   });
 }
 
@@ -3286,5 +3558,7 @@ load();
 loadMarket();
 initAudioBrief();
 initShareModal();
+initInstantTickerSearch();
 setInterval(load, 30000);
 setInterval(loadMarket, 60000);
+
