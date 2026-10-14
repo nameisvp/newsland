@@ -1,8 +1,8 @@
 {
-  "updated": "2026-10-13T21:07:21.990208+00:00",
+  "updated": "2026-10-14T01:02:35.803172+00:00",
   "schema_version": 2,
   "is_live": false,
-  "quote_updated": "2026-10-13T21:07:21.989676+00:00",
+  "quote_updated": "2026-10-14T01:02:35.802809+00:00",
   "quote_date": "2026-10-12",
   "quote_source": "yfinance",
   "live_bias_label": "LATEST AVAILABLE QUOTE",
@@ -45,12 +45,12 @@
     "key": "BRENT",
     "quote_date": "2026-10-13",
     "label": "Brent Crude",
-    "price": "106.37",
-    "price_raw": 106.37,
+    "price": "106.62",
+    "price_raw": 106.62,
     "prev_close": 105.44,
     "prev_close_fmt": "105.44",
-    "change": 0.93,
-    "change_pct": 0.88,
+    "change": 1.18,
+    "change_pct": 1.12,
     "direction": "up",
     "unit": "USD/bbl",
     "range_52w": {
@@ -58,8 +58,8 @@
       "high": 126.1,
       "low_fmt": "58.72",
       "high_fmt": "126.10",
-      "pos_pct": 70.7,
-      "pct_from_high": -15.65
+      "pos_pct": 71.1,
+      "pct_from_high": -15.45
     }
   },
   "usdinr": {
@@ -154,7 +154,7 @@
       "num": "02",
       "title": "Crude and input costs",
       "bias": "Context",
-      "desc": "Latest Brent quote: 106.37 USD/bbl (+0.88%). Higher crude can raise import and input costs; lower crude can ease them. This quote alone does not establish the cause of the move."
+      "desc": "Latest Brent quote: 106.62 USD/bbl (+1.12%). Higher crude can raise import and input costs; lower crude can ease them. This quote alone does not establish the cause of the move."
     },
     {
       "num": "03",
