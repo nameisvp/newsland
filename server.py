@@ -43,13 +43,19 @@ CALENDAR_URL = 'https://www.bea.gov/news/schedule/ics/online-calendar-subscripti
 CALENDAR = {'checked': None, 'status': 'pending', 'events': []}
 RULES = [
  ('Monetary policy', r'\b(rbi|federal reserve|fed|fomc|repo|rate cut|rate hike|interest rates?|ecb|bank of japan|monetary policy)\b', 5, 'Rates and liquidity can influence valuations, borrowing costs and banks.'),
- ('Economic data', r'\b(cpi|inflation|payrolls?|jobs report|jobs data|employment situation|unemployment|gdp|pmi|producer price|job openings|nonfarm|economic indicators?)\b', 4, 'Compare the release with expectations; the surprise can affect rates and risk appetite.'),
+ ('Economic data', r'\b(cpi|inflation|payrolls?|jobs report|jobs data|employment situation|unemployment|gdp|pmi|producer price|job openings|nonfarm|economic indicators?|exports?|imports?|trade balance|trade data|current account|forex reserves?|fiscal deficit)\b', 4, 'Compare the release with expectations; the surprise can affect rates and risk appetite.'),
  ('Regulation', r'\b(sebi|circular|derivatives|futures|margin rules|regulat\w*|tariffs?|sanctions?|exchange rules?|trade talks?|trade deals?|trade agreements?|trade negotiations?)\b', 4, 'Check who is covered, whether it is proposed or final, and its effective date.'),
- ('Earnings', r'\b(earnings|quarterly results|guidance|profit|revenue|q[1-4])\b', 3, 'Compare results and guidance with expectations for the company and its sector.'),
+ ('Earnings', r'\b(earnings|quarterly results|guidance|profit|revenue|q[1-4]|pat|ebitda)\b', 3, 'Compare results and guidance with expectations for the company and its sector.'),
  ('Energy & geopolitics', r'\b(crude|oil|opec|war|missile|ceasefire|invasion|strait|shipping|geopolit\w*|hostilities)\b', 4, 'Energy costs and disruption can affect Indian inflation, import costs and exposed sectors.'),
- ('Market flows', r'\b(fii|fpi|dii|treasury|bond yields?|rupee|dollar|foreign investors|nifty|sensex|hang seng|nikkei|kospi|shanghai|msci|equity flows?|market indices|stock market)\b', 2, 'Flows, currency and yields provide context for Indian equity risk appetite.')
+ ('Market flows', r'\b(fii|fpi|dii|treasury|bond yields?|rupee|dollar|foreign investors|nifty|sensex|hang seng|nikkei|kospi|shanghai|msci|equity flows?|market indices|stock market|asian stocks|european stocks|us stocks|chipmakers?|wall street)\b', 3, 'Flows, currency and yields provide context for Indian equity risk appetite.')
 ]
-NOISE = re.compile(r'\b(stocks to buy|buy or sell|multibagger|target price|horoscope|stock recommendations|technical picks|box office|movie review|celebrity|sports betting|iphone deals?)\b', re.I)
+NOISE = re.compile(
+    r'\b(stocks to buy|buy or sell|multibagger|target price|horoscope|stock recommendations|technical picks|box office|movie review|celebrity|sports betting|iphone deals?|gmp today|grey market premium)\b|'
+    r'recovery certificate|remittance order|release order|settlement order|verification system|notice of demand|notice of attachment|appeal no\.|summons|case status|decree holder|'
+    r'searched (?:his|her|their) home|feud explained|campaigns in [a-z]+|banning \d+ media|judge indefinitely blocks|'
+    r'\b(?:cmo|cco|clo|director|officer|general counsel|chief [a-z]+ officer)\b.*?\b(?:sells?|disposes?|buys?)\b.*?\$\d{1,3},\d{3}\b',
+    re.I
+)
 MARKET_ACTION = re.compile(r'\b(cuts?|hikes?|holds?|keeps?|raises?|lowers?|beats?|misses?|surges?|jumps?|plunges?|falls?|drops?|rises?|dips?|slumps?|declin\w*|retreat\w*|weak\w*|strengthen\w*|weaken\w*|sell.?offs?|approves?|bans?|releases?|announces?|orders?|suspends?|delays?|tightens?|eases?)\b', re.I)
 INDIA_LINK = re.compile(r'\b(india|indian|rbi|sebi|rupee|nifty|sensex|nse|bse|mumbai|new delhi)\b', re.I)
 LOW_SIGNAL = re.compile(r'\b(opinion|explainer|what to know|what it means|top stocks|best stocks|should you|price target|analyst pick|reshaped markets|look back|year in review|retrospective|charts indicate|technical indicators|dead cat bounce)\b', re.I)
@@ -70,6 +76,8 @@ def assess_story(title, region='Global', official=False):
         matches.append(('Company move', r'', 3, 'A named company or share-price move may affect that stock and its peers.'))
     if region == 'India' and not matches and INDIA_MATERIAL_ORDER.search(title) and LARGE_VALUE.search(title):
         matches.append(('Company move', r'', 3, 'A large contract or order may affect the company and its sector; check execution and guidance.'))
+    if not matches and re.search(r'\b(commits?|invests?|investment|expansion|orders?|contracts?)\b.*?\b(?:₹|rs\.?|\$|€)\s*\d+.*?\b(?:billion|crore|cr|million)\b', title, re.I):
+        matches.append(('Corporate development', r'', 3, 'A large investment, contract or capital commitment directly impacts forward guidance.'))
     if region == 'India' and not matches and AVIATION_COST.search(title):
         matches.append(('Sector & corporate news', r'', 3, 'Airfares, fuel charges and aviation costs can affect airline demand and margins.'))
     if region == 'India' and not matches and GLOBAL_EARNINGS_FOCUS.search(title) and re.search(r'\b(growth beat|results?|guidance|revenue|profit|outlook)\b', title, re.I):
@@ -686,7 +694,17 @@ def group(stories):
         if not c.get('reason') or 'No strong market-driver' in c['reason'] or 'Rates and liquidity can influence' in c['reason']:
             c['reason'] = c['why_it_matters']
 
-    # Final sort: composite score + confirmation boost + session freshness
+    # Filter out uncorroborated zero-signal noise from the active desk briefing
+    curated_clusters = []
+    for c in clusters:
+        t = c.get('title', '')
+        if NOISE.search(t):
+            continue
+        # Drop stories with 0 score that have only 1 uncorroborated source and no recognized entity
+        if (c.get('score', 0) or 0) <= 0 and c.get('cluster_count', 1) <= 1:
+            continue
+        curated_clusters.append(c)
+
     def _cluster_rank(s):
         score = float(s.get('score', 0) or 0)
         pub = s.get('published') or 0
@@ -700,7 +718,7 @@ def group(stories):
         else: rec = -8.0
         return score + rec
 
-    return sorted(clusters, key=lambda s: (_cluster_rank(s), s.get('published', 0) or 0), reverse=True)
+    return sorted(curated_clusters, key=lambda s: (_cluster_rank(s), s.get('published', 0) or 0), reverse=True)
 
 def refresh():
     global CACHE

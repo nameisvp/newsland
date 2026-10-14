@@ -490,18 +490,20 @@ function cardHTML(s) {
 
 function viewScore(story) {
   let score = Number(story.score) || 0;
+  // If story has no market signal at all and is from a single source, do not artificially boost it into a false catalyst
+  if (score <= 0 && (!story.sources || story.sources.length <= 1)) return 0;
+
   const ageHours = story.published ? (Date.now() / 1000 - story.published) / 3600 : 999;
 
-  // Intraday freshness velocity curve: boost breaking news within today's session
+  // Intraday freshness velocity curve: boost breaking high-signal news within today's session
   if (horizon === 'today') {
-    if (ageHours < 1) score += 6;        // Breaking in last hour
-    else if (ageHours < 2) score += 4.5; // Fresh catalyst
-    else if (ageHours < 4) score += 3.0; // Recent session catalyst
-    else if (ageHours < 6) score += 1.0; // Midday session
-    else if (ageHours < 10) score -= 2.0;// Past session wrap
-    else if (ageHours < 16) score -= 4.0;// Older overnight news
-    else if (ageHours < 24) score -= 6.0;// Previous session
-    else score -= 9;                     // Multi-day old
+    if (ageHours < 1) score += 4.0;       // Breaking in last hour
+    else if (ageHours < 2) score += 2.5;  // Fresh catalyst
+    else if (ageHours < 4) score += 1.0;  // Recent session catalyst
+    else if (ageHours < 8) score += 0.0;  // Earlier today
+    else if (ageHours < 16) score -= 3.0; // Older overnight news
+    else if (ageHours < 24) score -= 5.0; // Previous session
+    else score -= 8.0;                    // Multi-day old
   } else if (horizon === 'week') {
     if (ageHours > 72) score -= 1;
   }
@@ -583,20 +585,6 @@ function render() {
     });
   }
 
-  // Sort: Latest First if toggled, otherwise Top Impact Score
-  if (activeLatestFirst) {
-    base.sort((a, b) => {
-      const timeA = Number(a.published) || 0;
-      const timeB = Number(b.published) || 0;
-      if (timeB !== timeA) return timeB - timeA;
-      return (viewScore(b) - viewScore(a));
-    });
-  } else {
-    base.sort((a, b) => {
-      return (viewScore(b) - viewScore(a)) || ((b.published || 0) - (a.published || 0));
-    });
-  }
-
   let filtered = base;
   if (region === 'Global') filtered = base.filter(s => s.region === 'Global');
   else if (region === 'India') filtered = base.filter(s => s.region === 'India');
@@ -604,26 +592,34 @@ function render() {
   // Render trending keywords list
   renderTrendingKeywords(filtered);
 
-  const narrowed = Boolean(searchQuery.trim() || activeTrendingWord || activeMarketMoversOnly || activeLatestFirst || (activeSector !== 'all') || $('watch-only').checked || $('new-only').checked);
-  const ranked = filtered.map(story => ({ story, tier: viewTier(story) }));
-
   const FRONT_PAGE_LIMIT = 18; // 6 balanced rows of 3 columns
   let primaryStories = [];
   let lowerStories = [];
   let fallbackUsed = false;
 
-  if (narrowed) {
-    primaryStories = filtered;
-    lowerStories = [];
-  } else {
-    const priorityCandidates = ranked.filter(item => item.tier !== 'More').map(item => item.story);
-    const pool = priorityCandidates.length ? priorityCandidates : filtered;
+  // Strict Curation: prioritize actionable market movers and exclude 0-signal filler
+  const highSignalCandidates = filtered.filter(s => viewTier(s) !== 'More');
+  const pool = highSignalCandidates.length >= 6 ? [...highSignalCandidates] : [...filtered];
 
-    primaryStories = pool.slice(0, FRONT_PAGE_LIMIT);
-    const primaryIds = new Set(primaryStories.map(s => s.id));
-    lowerStories = filtered.filter(s => !primaryIds.has(s.id));
-    if (!priorityCandidates.length) fallbackUsed = true;
+  // Sort pool: Latest First if toggled, otherwise Top Impact Score
+  if (activeLatestFirst) {
+    pool.sort((a, b) => {
+      const timeA = Number(a.published) || 0;
+      const timeB = Number(b.published) || 0;
+      if (timeB !== timeA) return timeB - timeA;
+      return (viewScore(b) - viewScore(a));
+    });
+  } else {
+    pool.sort((a, b) => {
+      return (viewScore(b) - viewScore(a)) || ((b.published || 0) - (a.published || 0));
+    });
   }
+
+  // Primary front-page grid is strictly capped at FRONT_PAGE_LIMIT
+  primaryStories = pool.slice(0, FRONT_PAGE_LIMIT);
+  const primaryIds = new Set(primaryStories.map(s => s.id));
+  lowerStories = pool.slice(FRONT_PAGE_LIMIT);
+  if (!highSignalCandidates.length) fallbackUsed = true;
 
   // Hero Carousel: Prioritize breaking, high-impact market drivers
   function heroRank(s) {
@@ -667,6 +663,8 @@ function render() {
   $('more-details').hidden = lowerStories.length === 0;
   $('more-label').textContent = `More headlines · ${lowerStories.length}`;
 
+  const hasFilter = Boolean(searchQuery.trim() || activeTrendingWord || activeMarketMoversOnly || (activeSector !== 'all') || $('watch-only').checked || $('new-only').checked);
+
   if (activeSector !== 'all') {
     $('ranking-note').hidden = false;
     $('ranking-note').textContent = `Sector: ${activeSector.toUpperCase()} (${filtered.length} headlines matched)`;
@@ -674,10 +672,10 @@ function render() {
     $('ranking-note').hidden = false;
     $('ranking-note').textContent = `⚡ High-conviction market movers (${filtered.length} headlines matched)`;
   } else {
-    $('ranking-note').hidden = narrowed || filtered.length === 0;
+    $('ranking-note').hidden = hasFilter || filtered.length === 0;
     $('ranking-note').textContent = fallbackUsed
-      ? `No clear market drivers matched · showing ${primaryStories.length} recent headlines for review.`
-      : `${primaryStories.length} higher-signal headlines · ${lowerStories.length} other headlines in More`;
+      ? `Showing ${primaryStories.length} curated headlines for today's session.`
+      : `${primaryStories.length} market-moving catalysts · ${lowerStories.length} additional headlines in More`;
   }
 
   $('empty-feed').hidden = primaryStories.length > 0 || lowerStories.length > 0;
