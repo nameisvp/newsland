@@ -1,8 +1,8 @@
 {
-  "updated": "2026-10-14T13:05:28.181936+00:00",
+  "updated": "2026-10-14T13:07:31.391998+00:00",
   "schema_version": 2,
   "is_live": false,
-  "quote_updated": "2026-10-14T13:05:28.181240+00:00",
+  "quote_updated": "2026-10-14T13:07:31.391329+00:00",
   "quote_date": "2026-10-14",
   "quote_source": "yfinance",
   "live_bias_label": "LATEST AVAILABLE QUOTE",
@@ -37,7 +37,7 @@
     },
     "US10Y": {
       "val": "5.30%",
-      "pct": 1.67,
+      "pct": 1.59,
       "date": "2026-10-14"
     }
   },
@@ -45,12 +45,12 @@
     "key": "BRENT",
     "quote_date": "2026-10-14",
     "label": "Brent Crude",
-    "price": "105.76",
-    "price_raw": 105.76,
+    "price": "105.81",
+    "price_raw": 105.81,
     "prev_close": 106.38,
     "prev_close_fmt": "106.38",
-    "change": -0.62,
-    "change_pct": -0.58,
+    "change": -0.57,
+    "change_pct": -0.54,
     "direction": "down",
     "unit": "USD/bbl",
     "range_52w": {
@@ -58,8 +58,8 @@
       "high": 126.1,
       "low_fmt": "58.72",
       "high_fmt": "126.10",
-      "pos_pct": 69.8,
-      "pct_from_high": -16.13
+      "pos_pct": 69.9,
+      "pct_from_high": -16.09
     }
   },
   "usdinr": {
@@ -154,7 +154,7 @@
       "num": "02",
       "title": "Crude and input costs",
       "bias": "Context",
-      "desc": "Latest Brent quote: 105.76 USD/bbl (-0.58%). Higher crude can raise import and input costs; lower crude can ease them. This quote alone does not establish the cause of the move."
+      "desc": "Latest Brent quote: 105.81 USD/bbl (-0.54%). Higher crude can raise import and input costs; lower crude can ease them. This quote alone does not establish the cause of the move."
     },
     {
       "num": "03",
@@ -170,12 +170,12 @@
         "key": "BRENT",
         "quote_date": "2026-10-14",
         "label": "Brent Crude",
-        "price": "105.76",
-        "price_raw": 105.76,
+        "price": "105.81",
+        "price_raw": 105.81,
         "prev_close": 106.38,
         "prev_close_fmt": "106.38",
-        "change": -0.62,
-        "change_pct": -0.58,
+        "change": -0.57,
+        "change_pct": -0.54,
         "direction": "down",
         "unit": "USD/bbl",
         "range_52w": {
@@ -183,20 +183,20 @@
           "high": 126.1,
           "low_fmt": "58.72",
           "high_fmt": "126.10",
-          "pos_pct": 69.8,
-          "pct_from_high": -16.13
+          "pos_pct": 69.9,
+          "pct_from_high": -16.09
         }
       },
       "wti": {
         "key": "WTI",
         "quote_date": "2026-10-14",
         "label": "WTI Crude",
-        "price": "95.62",
-        "price_raw": 95.62,
+        "price": "95.65",
+        "price_raw": 95.65,
         "prev_close": 94.79,
         "prev_close_fmt": "94.79",
-        "change": 0.83,
-        "change_pct": 0.88,
+        "change": 0.86,
+        "change_pct": 0.91,
         "direction": "up",
         "unit": "USD/bbl",
         "range_52w": {
@@ -204,8 +204,8 @@
           "high": 119.48,
           "low_fmt": "54.98",
           "high_fmt": "119.48",
-          "pos_pct": 63.0,
-          "pct_from_high": -19.97
+          "pos_pct": 63.1,
+          "pct_from_high": -19.94
         }
       },
       "natgas": {
@@ -233,12 +233,12 @@
         "key": "GOLD",
         "quote_date": "2026-10-14",
         "label": "Gold",
-        "price": "4,126.80",
-        "price_raw": 4126.7998,
+        "price": "4,118.40",
+        "price_raw": 4118.3999,
         "prev_close": 4185.3999,
         "prev_close_fmt": "4,185.40",
-        "change": -58.6001,
-        "change_pct": -1.4,
+        "change": -67.0,
+        "change_pct": -1.6,
         "direction": "down",
         "unit": "USD/oz",
         "range_52w": {
@@ -246,20 +246,20 @@
           "high": 5586.2,
           "low_fmt": "3,901.30",
           "high_fmt": "5,586.20",
-          "pos_pct": 13.4,
-          "pct_from_high": -26.13
+          "pos_pct": 12.9,
+          "pct_from_high": -26.28
         }
       },
       "silver": {
         "key": "SILVER",
         "quote_date": "2026-10-14",
         "label": "Silver",
-        "price": "57.85",
-        "price_raw": 57.855,
+        "price": "57.69",
+        "price_raw": 57.685,
         "prev_close": 59.43,
         "prev_close_fmt": "59.43",
-        "change": -1.575,
-        "change_pct": -2.65,
+        "change": -1.745,
+        "change_pct": -2.94,
         "direction": "down",
         "unit": "USD/oz",
         "range_52w": {
@@ -267,8 +267,8 @@
           "high": 121.3,
           "low_fmt": "45.85",
           "high_fmt": "121.30",
-          "pos_pct": 15.9,
-          "pct_from_high": -52.3
+          "pos_pct": 15.7,
+          "pct_from_high": -52.44
         }
       },
       "catalyst": {
@@ -315,7 +315,7 @@
         },
         "US10Y": {
           "val": "5.30%",
-          "pct": 1.67,
+          "pct": 1.59,
           "date": "2026-10-14"
         }
       },
