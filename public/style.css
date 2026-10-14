@@ -208,7 +208,7 @@ button {
 
 .search-pill-wrap input {
   width: 100%;
-  padding: 7px 36px 7px 18px;
+  padding: 7px 52px 7px 18px;
   font-family: var(--font-sans);
   font-size: 12.5px;
   color: var(--ink);
@@ -216,6 +216,23 @@ button {
   border: 1px solid var(--border);
   border-radius: 20px;
   transition: border-color 0.12s ease, background-color 0.12s ease;
+}
+
+/* Hide native browser search cancel button in WebKit/Blink and MS Edge */
+.search-pill-wrap input::-webkit-search-decoration,
+.search-pill-wrap input::-webkit-search-cancel-button,
+.search-pill-wrap input::-webkit-search-results-button,
+.search-pill-wrap input::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+  appearance: none;
+  display: none;
+}
+
+.search-pill-wrap input::-ms-clear,
+.search-pill-wrap input::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
 }
 
 .search-pill-wrap input:focus {
@@ -243,8 +260,29 @@ button {
   right: 32px;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  padding: 0;
+  border: none;
+  background: transparent;
   color: var(--ink-muted);
+  cursor: pointer;
+  border-radius: 50%;
+  transition: color 0.15s ease, background-color 0.15s ease;
+}
+
+.search-clear:hover {
+  color: var(--ink);
+  background: rgba(0, 0, 0, 0.06);
+}
+
+.search-clear svg {
+  width: 11px;
+  height: 11px;
+  display: block;
 }
 
 /* Header Right: Date & Hamburger */

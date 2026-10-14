@@ -2176,6 +2176,13 @@ $('search-input').addEventListener('input', e => {
   $('search-clear').hidden = !searchQuery;
   render();
 });
+$('search-input').addEventListener('search', () => {
+  if (!$('search-input').value) {
+    searchQuery = '';
+    $('search-clear').hidden = true;
+    render();
+  }
+});
 $('search-clear').addEventListener('click', () => {
   $('search-input').value = '';
   searchQuery = '';
@@ -2429,6 +2436,16 @@ document.addEventListener('keydown', e => {
     $('search-input').focus();
   }
   if (e.key === 'Escape') {
+    if (document.activeElement === $('search-input')) {
+      if ($('search-input').value) {
+        $('search-input').value = '';
+        searchQuery = '';
+        $('search-clear').hidden = true;
+        render();
+      }
+      $('search-input').blur();
+      return;
+    }
     if (isShortsOpen) {
       closeShorts();
       return;
