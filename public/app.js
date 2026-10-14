@@ -915,16 +915,19 @@ function renderPostMarketPillars(data) {
   // Pillar 2: Corporate Earnings & Board Filings
   const earningsContainer = $('pm-earnings-list');
   if (earningsContainer) {
-    const earnings = pillars?.earnings || [];
+    const earnings = (pillars?.earnings || []).slice(0, 3);
     if (earnings.length) {
       earningsContainer.innerHTML = earnings.map(e => {
-        const comp = (e.companies && e.companies[0]) || 'RESULTS';
+        let comp = (e.companies && e.companies[0]) || '';
+        if (!comp) {
+          const m = e.title.match(/\b(TCS|INFY|RELIANCE|HDFCBANK|CANARA BANK|BAJAJ|TATA|ITC|WIPRO|ICICIBANK|SBIN|LTIM|TECHM)\b/i);
+          comp = m ? m[1].toUpperCase() : 'RESULTS';
+        }
         return `<div class="pm-earnings-card">
           <div class="pm-earnings-top">
             <span class="pm-earnings-ticker">${esc(comp)}</span>
             <a href="${e.url && e.url !== '#' ? safeUrl(e.url) : '#'}" class="pm-earnings-title" target="_blank" rel="noopener">${esc(e.title)}</a>
           </div>
-          <span class="pm-earnings-sub">${esc(e.why_it_matters || '')}</span>
         </div>`;
       }).join('');
     } else {
@@ -935,31 +938,35 @@ function renderPostMarketPillars(data) {
   }
 
   // Pillar 3: Global Markets & Overnight Matrix
-  const ov = pillars?.global_macro?.overnight || data?.overnight;
-  if (ov) {
-    if ($('pm-pm-sp-val') && ov.SP500) {
-      const sp = ov.SP500;
-      const isUp = (sp.pct || 0) >= 0;
-      $('pm-pm-sp-val').textContent = `${sp.val} (${isUp ? '+' : ''}${sp.pct}%)`;
-      $('pm-pm-sp-val').className = `cue-v ${isUp ? 'up' : 'down'}`;
-    }
-    if ($('pm-pm-nasdaq-val') && ov.NASDAQ) {
-      const nq = ov.NASDAQ;
-      const isUp = (nq.pct || 0) >= 0;
-      $('pm-pm-nasdaq-val').textContent = `${nq.val} (${isUp ? '+' : ''}${nq.pct}%)`;
-      $('pm-pm-nasdaq-val').className = `cue-v ${isUp ? 'up' : 'down'}`;
-    }
-    if ($('pm-pm-us10y-val') && ov.US10Y) {
-      const u = ov.US10Y;
-      const isUp = (u.pct || 0) >= 0;
-      $('pm-pm-us10y-val').textContent = `${u.val} (${isUp ? '+' : ''}${u.pct}%)`;
-      $('pm-pm-us10y-val').className = `cue-v ${isUp ? 'up' : 'down'}`;
-    }
+  const globalContainer = $('pm-global-grid');
+  if (globalContainer) {
+    const ov = pillars?.global_macro?.overnight || data?.overnight || {};
+    const sp = ov.SP500 || { val: '--', pct: 0 };
+    const nq = ov.NASDAQ || { val: '--', pct: 0 };
+    const u10 = ov.US10Y || { val: '--', pct: 0 };
+    const usd = data?.usdinr || { price: '83.95', change_pct: 0 };
+
+    const items = [
+      { name: 'S&P 500', val: sp.val, pct: sp.pct },
+      { name: 'Nasdaq', val: nq.val, pct: nq.pct },
+      { name: 'US 10Y Yield', val: u10.val, pct: u10.pct },
+      { name: 'USD / INR', val: `₹${usd.price}`, pct: usd.change_pct }
+    ];
+
+    globalContainer.innerHTML = items.map(item => {
+      const isUp = (item.pct || 0) >= 0;
+      const sign = isUp ? '+' : '';
+      const pctStr = item.pct != null ? `${sign}${item.pct}%` : '';
+      return `<div class="pm-comm-item">
+        <span class="pm-comm-name">${esc(item.name)}</span>
+        <div class="pm-comm-val-group">
+          <span class="pm-comm-price">${esc(String(item.val))}</span>
+          ${pctStr ? `<span class="pm-comm-chg ${isUp ? 'up' : 'down'}">${pctStr}</span>` : ''}
+        </div>
+      </div>`;
+    }).join('');
   }
-  if ($('pm-pm-usdinr-val')) {
-    const usd = data?.usdinr;
-    $('pm-pm-usdinr-val').textContent = usd ? `₹${usd.price} (${usd.change_pct >= 0 ? '+' : ''}${usd.change_pct}%)` : '₹95.14';
-  }
+
   if ($('pm-global-vix-pill') && data?.vix) {
     $('pm-global-vix-pill').textContent = `VIX: ${data.vix.price}`;
     $('pm-global-vix-pill').className = `pm-vix-badge ${data.vix.price < 17 ? 'vix-normal' : 'vix-elevated'}`;
@@ -1215,7 +1222,11 @@ function renderPremarket(data) {
 
   // Desk Takeaway
   if (data.trader_take && $('pm-takeaway-text')) {
-    $('pm-takeaway-text').textContent = data.trader_take;
+    let cleanTake = data.trader_take
+      .replace(/Pivots are calculated references, not confirmed support or resistance\.\s*/gi, '')
+      .replace(/Latest available Nifty quote:\s*[\d,.]+\s*\([^)]*\)\.\s*/gi, '')
+      .trim();
+    $('pm-takeaway-text').textContent = cleanTake || data.trader_take;
   }
 }
 
