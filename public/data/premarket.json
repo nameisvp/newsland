@@ -1,8 +1,8 @@
 {
-  "updated": "2026-10-16T20:49:10.135497+00:00",
+  "updated": "2026-10-16T23:23:44.315996+00:00",
   "schema_version": 2,
   "is_live": false,
-  "quote_updated": "2026-10-16T20:49:10.051767+00:00",
+  "quote_updated": "2026-10-16T23:23:44.315520+00:00",
   "quote_date": "2026-10-15",
   "quote_source": "yfinance",
   "live_bias_label": "LATEST AVAILABLE QUOTE",
@@ -45,12 +45,12 @@
     "key": "BRENT",
     "quote_date": "2026-10-16",
     "label": "Brent Crude",
-    "price": "109.70",
-    "price_raw": 109.7,
+    "price": "109.69",
+    "price_raw": 109.69,
     "prev_close": 105.16,
     "prev_close_fmt": "105.16",
-    "change": 4.54,
-    "change_pct": 4.32,
+    "change": 4.53,
+    "change_pct": 4.31,
     "direction": "up",
     "unit": "USD/bbl",
     "range_52w": {
@@ -58,13 +58,13 @@
       "high": 126.1,
       "low_fmt": "58.72",
       "high_fmt": "126.10",
-      "pos_pct": 75.7,
+      "pos_pct": 75.6,
       "pct_from_high": -13.01
     }
   },
   "usdinr": {
     "key": "USDINR",
-    "quote_date": "2026-10-16",
+    "quote_date": "2026-10-17",
     "label": "INR / USD",
     "price": "94.95",
     "price_raw": 94.95,
@@ -154,7 +154,7 @@
       "num": "02",
       "title": "Crude and input costs",
       "bias": "Context",
-      "desc": "Latest Brent quote: 109.70 USD/bbl (+4.32%). Higher crude can raise import and input costs; lower crude can ease them. This quote alone does not establish the cause of the move."
+      "desc": "Latest Brent quote: 109.69 USD/bbl (+4.31%). Higher crude can raise import and input costs; lower crude can ease them. This quote alone does not establish the cause of the move."
     },
     {
       "num": "03",
@@ -170,12 +170,12 @@
         "key": "BRENT",
         "quote_date": "2026-10-16",
         "label": "Brent Crude",
-        "price": "109.70",
-        "price_raw": 109.7,
+        "price": "109.69",
+        "price_raw": 109.69,
         "prev_close": 105.16,
         "prev_close_fmt": "105.16",
-        "change": 4.54,
-        "change_pct": 4.32,
+        "change": 4.53,
+        "change_pct": 4.31,
         "direction": "up",
         "unit": "USD/bbl",
         "range_52w": {
@@ -183,7 +183,7 @@
           "high": 126.1,
           "low_fmt": "58.72",
           "high_fmt": "126.10",
-          "pos_pct": 75.7,
+          "pos_pct": 75.6,
           "pct_from_high": -13.01
         }
       },
@@ -191,12 +191,12 @@
         "key": "WTI",
         "quote_date": "2026-10-16",
         "label": "WTI Crude",
-        "price": "98.92",
-        "price_raw": 98.92,
+        "price": "99.04",
+        "price_raw": 99.04,
         "prev_close": 95.67,
         "prev_close_fmt": "95.67",
-        "change": 3.25,
-        "change_pct": 3.4,
+        "change": 3.37,
+        "change_pct": 3.52,
         "direction": "up",
         "unit": "USD/bbl",
         "range_52w": {
@@ -204,20 +204,20 @@
           "high": 119.48,
           "low_fmt": "54.98",
           "high_fmt": "119.48",
-          "pos_pct": 68.1,
-          "pct_from_high": -17.21
+          "pos_pct": 68.3,
+          "pct_from_high": -17.11
         }
       },
       "natgas": {
         "key": "NATGAS",
         "quote_date": "2026-10-16",
         "label": "Natural Gas",
-        "price": "3.13",
-        "price_raw": 3.129,
+        "price": "3.12",
+        "price_raw": 3.117,
         "prev_close": 3.221,
         "prev_close_fmt": "3.22",
-        "change": -0.092,
-        "change_pct": -2.86,
+        "change": -0.104,
+        "change_pct": -3.23,
         "direction": "down",
         "unit": "USD/MMBtu",
         "range_52w": {
@@ -225,20 +225,20 @@
           "high": 7.83,
           "low_fmt": "2.48",
           "high_fmt": "7.83",
-          "pos_pct": 12.1,
-          "pct_from_high": -60.02
+          "pos_pct": 11.9,
+          "pct_from_high": -60.18
         }
       },
       "gold": {
         "key": "GOLD",
         "quote_date": "2026-10-16",
         "label": "Gold",
-        "price": "4,189.60",
-        "price_raw": 4189.6001,
+        "price": "4,186.70",
+        "price_raw": 4186.7002,
         "prev_close": 4204.3999,
         "prev_close_fmt": "4,204.40",
-        "change": -14.7998,
-        "change_pct": -0.35,
+        "change": -17.6997,
+        "change_pct": -0.42,
         "direction": "down",
         "unit": "USD/oz",
         "range_52w": {
@@ -246,20 +246,20 @@
           "high": 5586.2,
           "low_fmt": "3,901.30",
           "high_fmt": "5,586.20",
-          "pos_pct": 17.1,
-          "pct_from_high": -25.0
+          "pos_pct": 16.9,
+          "pct_from_high": -25.05
         }
       },
       "silver": {
         "key": "SILVER",
         "quote_date": "2026-10-16",
         "label": "Silver",
-        "price": "57.15",
-        "price_raw": 57.155,
+        "price": "57.13",
+        "price_raw": 57.135,
         "prev_close": 58.065,
         "prev_close_fmt": "58.06",
-        "change": -0.91,
-        "change_pct": -1.57,
+        "change": -0.93,
+        "change_pct": -1.6,
         "direction": "down",
         "unit": "USD/oz",
         "range_52w": {
@@ -268,7 +268,7 @@
           "low_fmt": "45.85",
           "high_fmt": "121.30",
           "pos_pct": 15.0,
-          "pct_from_high": -52.88
+          "pct_from_high": -52.9
         }
       },
       "catalyst": {
@@ -292,24 +292,15 @@
         "source": ""
       },
       {
-        "title": "HDFC, ICICI Bank Q2 earnings preview: deposit surge, margin pressure in focus",
-        "url": "https://www.livemint.com/companies/company-results/earnings-preview-deposit-surge-margin-pressure-in-focus-for-hdfc-icici-bank-11792148167976.html",
-        "companies": [
-          {
-            "name": "ICICI Bank",
-            "symbol": "icici bank"
-          },
-          {
-            "name": "HDFC Bank",
-            "symbol": "hdfc"
-          }
-        ],
+        "title": "Q2 Results Highlights: LTIMindtree Profit Falls 5%, Urban Company Net Loss Triples, PNB Profit NII Jumps 11%",
+        "url": "https://www.ndtvprofit.com/markets/q2-fy27-results-live-updates-dlf-punjab-national-bank-bajaj-housing-finance-federal-bank-ltm-oberoi-realty-to-announce-earnings-12193208#publisher=newsstand",
+        "companies": [],
         "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
         "source": ""
       },
       {
-        "title": "Q2 Results Highlights: LTIMindtree Profit Falls 5%, Urban Company Net Loss Triples, PNB Profit NII Jumps 11%",
-        "url": "https://www.ndtvprofit.com/markets/q2-fy27-results-live-updates-dlf-punjab-national-bank-bajaj-housing-finance-federal-bank-ltm-oberoi-realty-to-announce-earnings-12193208#publisher=newsstand",
+        "title": "Federal Bank net profit surges 45% to record ₹1,386 crore on higher NII",
+        "url": "https://www.business-standard.com/companies/quarterly-results/federal-bank-s-q2fy27-results-net-profit-rises-45-to-1-386-crore-126101600945_1.html",
         "companies": [],
         "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
         "source": ""

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-16T20:48:59.795969+00:00",
+  "updated": "2026-10-16T23:23:35.836052+00:00",
   "stories": [
     {
       "id": "11be95b6a2ff0673",
@@ -42,6 +42,102 @@
       "why_it_matters": "Crude affects India’s import bill and energy-sensitive sectors; the headline does not establish a clear price direction.",
       "impact_chain": null,
       "companies": []
+    },
+    {
+      "id": "ff2ddfd2ed98c9e8",
+      "title": "Crude Oil Heads For Weekly Gain: Brent Rises 2% To Hit $108/Barrel As Ship Attacks Disrupt Flows",
+      "url": "https://www.ndtvprofit.com/markets/crude-oil-heads-for-weekly-gain-brent-rises-2-to-hit-108-barrel-as-ship-attacks-disrupt-flows-12196851#publisher=newsstand",
+      "published": 1792171877.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "Zerodha Pulse",
+          "url": "https://www.ndtvprofit.com/markets/crude-oil-heads-for-weekly-gain-brent-rises-2-to-hit-108-barrel-as-ship-attacks-disrupt-flows-12196851#publisher=newsstand"
+        },
+        {
+          "name": "CNBC World",
+          "url": "https://www.cnbc.com/2026/10/16/oil-price-today-iran-strait-hormuz-ukraine-russia.html"
+        }
+      ],
+      "score": 7,
+      "summary": "Brent crude has gained 1.2% this week as attacks around the Strait of Hormuz heighten supply concerns, while falling US crude inventories lend support to oil prices.",
+      "category": "Energy & geopolitics",
+      "reason": "Energy costs and disruption can affect Indian inflation, import costs and exposed sectors.",
+      "matched": [
+        "Energy & geopolitics"
+      ],
+      "tier": "Must know",
+      "related": [
+        {
+          "title": "Brent oil touches $110 as Iran escalates Hormuz attacks, Ukraine vows to hit Russian refineries",
+          "url": "https://www.cnbc.com/2026/10/16/oil-price-today-iran-strait-hormuz-ukraine-russia.html",
+          "source": "CNBC World",
+          "published": 1792180941.0
+        },
+        {
+          "title": "US Crude Oil Tops $100 As Iran Escalates Hormuz Attacks, WTI Up 9% This Week",
+          "url": "https://www.ndtvprofit.com/markets/us-crude-oil-tops-100-as-iran-escalates-hormuz-attacks-wti-up-9-this-week-12196970#publisher=newsstand",
+          "source": "Zerodha Pulse",
+          "published": 1792174004.0
+        }
+      ],
+      "cluster_count": 2,
+      "impact_assets": [
+        "Commodities"
+      ],
+      "why_it_matters": "Rising crude can increase India’s import bill and input costs, while supporting upstream oil realizations.",
+      "impact_chain": {
+        "rule": "CRUDE_SURGE",
+        "catalyst": "Rising crude · potential sector effects",
+        "tailwinds": [
+          "ONGC",
+          "Oil India"
+        ],
+        "headwinds": [
+          "Asian Paints",
+          "IndiGo",
+          "BPCL",
+          "MRF"
+        ],
+        "rationale": "Crude >$100 boosts upstream realizations but inflates airline ATF and paint solvent raw material costs."
+      },
+      "companies": []
+    },
+    {
+      "id": "027e049e1bc0da69",
+      "title": "ITC sets board meeting date to declare Q2 results 2026; net profit may decline due to cigarette taxation — share outlook",
+      "url": "https://www.livemint.com/market/stock-market-news/itc-sets-board-meeting-date-to-declare-q2-results-2026-net-profit-may-decline-due-to-cigarette-taxation-share-outlook-11792178741965.html",
+      "published": 1792182590.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "Mint Markets",
+          "url": "https://www.livemint.com/market/stock-market-news/itc-sets-board-meeting-date-to-declare-q2-results-2026-net-profit-may-decline-due-to-cigarette-taxation-share-outlook-11792178741965.html"
+        }
+      ],
+      "score": 4,
+      "summary": "Q2 results 2026: ITC informed about the board meeting date to declare Q2FY27 earnings in an exchange filing on Friday",
+      "category": "Earnings",
+      "reason": "Compare results and guidance with expectations for the company and its sector.",
+      "matched": [
+        "Earnings"
+      ],
+      "tier": "Watch",
+      "related": [],
+      "cluster_count": 1,
+      "impact_assets": [
+        "Equities"
+      ],
+      "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
+      "impact_chain": null,
+      "companies": [
+        {
+          "name": "ITC",
+          "symbol": "itc"
+        }
+      ]
     },
     {
       "id": "a997bc172ecd458b",
@@ -125,209 +221,6 @@
       "companies": []
     },
     {
-      "id": "027e049e1bc0da69",
-      "title": "ITC sets board meeting date to declare Q2 results 2026; net profit may decline due to cigarette taxation — share outlook",
-      "url": "https://www.livemint.com/market/stock-market-news/itc-sets-board-meeting-date-to-declare-q2-results-2026-net-profit-may-decline-due-to-cigarette-taxation-share-outlook-11792178741965.html",
-      "published": 1792182590.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "Mint Markets",
-          "url": "https://www.livemint.com/market/stock-market-news/itc-sets-board-meeting-date-to-declare-q2-results-2026-net-profit-may-decline-due-to-cigarette-taxation-share-outlook-11792178741965.html"
-        }
-      ],
-      "score": 4,
-      "summary": "Q2 results 2026: ITC informed about the board meeting date to declare Q2FY27 earnings in an exchange filing on Friday",
-      "category": "Earnings",
-      "reason": "Compare results and guidance with expectations for the company and its sector.",
-      "matched": [
-        "Earnings"
-      ],
-      "tier": "Watch",
-      "related": [],
-      "cluster_count": 1,
-      "impact_assets": [
-        "Equities"
-      ],
-      "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
-      "impact_chain": null,
-      "companies": [
-        {
-          "name": "ITC",
-          "symbol": "itc"
-        }
-      ]
-    },
-    {
-      "id": "9b329326e4cee77c",
-      "title": "HDFC, ICICI Bank Q2 earnings preview: deposit surge, margin pressure in focus",
-      "url": "https://www.livemint.com/companies/company-results/earnings-preview-deposit-surge-margin-pressure-in-focus-for-hdfc-icici-bank-11792148167976.html",
-      "published": 1792153599.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "Mint Companies",
-          "url": "https://www.livemint.com/companies/company-results/earnings-preview-deposit-surge-margin-pressure-in-focus-for-hdfc-icici-bank-11792148167976.html"
-        },
-        {
-          "name": "ET Markets",
-          "url": "https://economictimes.indiatimes.com/markets/stocks/earnings/hdfc-bank-q2-results-preview-pat-nii-may-rise-up-to-9-yoy-deposit-growth-in-focus/articleshow/134982802.cms"
-        },
-        {
-          "name": "Mint Markets",
-          "url": "https://www.livemint.com/market/stock-market-news/q2-preview-icici-axis-yes-hdfc-bank-4-banking-stocks-to-declare-results-2026-on-oct-17-expectations-by-experts-11792137099601.html"
-        },
-        {
-          "name": "Business Standard",
-          "url": "https://www.business-standard.com/markets/news/hdfc-bank-q2-preview-single-digit-pat-growth-likely-margin-pressure-seen-126101600449_1.html"
-        }
-      ],
-      "score": 9,
-      "summary": "When HDFC Bank and ICICI Bank report their Q2 earnings on Saturday, investors will closely track their net interest margins, credit costs and management commentary on growth.",
-      "category": "Earnings",
-      "reason": "Compare results and guidance with expectations for the company and its sector.",
-      "matched": [
-        "Earnings"
-      ],
-      "tier": "Must know",
-      "related": [
-        {
-          "title": "HDFC Bank Q2 results preview: PAT, NII may rise up to 9% YoY; deposit growth in focus",
-          "url": "https://economictimes.indiatimes.com/markets/stocks/earnings/hdfc-bank-q2-results-preview-pat-nii-may-rise-up-to-9-yoy-deposit-growth-in-focus/articleshow/134982802.cms",
-          "source": "ET Markets",
-          "published": 1792126380.0
-        },
-        {
-          "title": "Q2 Preview: ICICI, Axis, YES, HDFC Bank - 4 banking stocks to declare results 2026 on Oct 17 - Expectations by experts",
-          "url": "https://www.livemint.com/market/stock-market-news/q2-preview-icici-axis-yes-hdfc-bank-4-banking-stocks-to-declare-results-2026-on-oct-17-expectations-by-experts-11792137099601.html",
-          "source": "Mint Markets",
-          "published": 1792138443.0
-        },
-        {
-          "title": "HDFC Bank Q2 preview: Single-digit PAT growth likely; margin pressure seen",
-          "url": "https://www.business-standard.com/markets/news/hdfc-bank-q2-preview-single-digit-pat-growth-likely-margin-pressure-seen-126101600449_1.html",
-          "source": "Business Standard",
-          "published": 1792134905.0
-        },
-        {
-          "title": "HDFC Life Insurance sheds 3% post Q2 results; brokerages remain upbeat",
-          "url": "https://www.business-standard.com/markets/news/hdfc-life-insurance-share-price-shed-3-post-q2-results-brokerages-remain-upbeat-126101600306_1.html",
-          "source": "Business Standard",
-          "published": 1792127565.0
-        }
-      ],
-      "cluster_count": 4,
-      "impact_assets": [
-        "Equities"
-      ],
-      "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
-      "impact_chain": null,
-      "companies": [
-        {
-          "name": "ICICI Bank",
-          "symbol": "icici bank"
-        },
-        {
-          "name": "HDFC Bank",
-          "symbol": "hdfc"
-        }
-      ]
-    },
-    {
-      "id": "15ed4913872dd3f2",
-      "title": "Funding Markets Diverge as T-Bills Cheapen, Overnight Repo Calm",
-      "url": "https://www.livemint.com/market/funding-markets-diverge-as-t-bills-cheapen-overnight-repo-calm-11792179755736.html",
-      "published": 1792179755.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "Mint Markets",
-          "url": "https://www.livemint.com/market/funding-markets-diverge-as-t-bills-cheapen-overnight-repo-calm-11792179755736.html"
-        }
-      ],
-      "score": 5,
-      "summary": "Treasury-bill yields have risen sharply as a wave of new issuance tests investor demand, posing a threat to the stability of overnight funding markets.",
-      "category": "Monetary policy",
-      "reason": "Directly shifts commercial bank cost of funds, repo borrowing rates, and rate-sensitive equity multiples (banks, real estate, auto).",
-      "matched": [
-        "Monetary policy"
-      ],
-      "tier": "Watch",
-      "related": [],
-      "cluster_count": 1,
-      "impact_assets": [
-        "Rates",
-        "Equities"
-      ],
-      "why_it_matters": "Directly shifts commercial bank cost of funds, repo borrowing rates, and rate-sensitive equity multiples (banks, real estate, auto).",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "ff2ddfd2ed98c9e8",
-      "title": "Crude Oil Heads For Weekly Gain: Brent Rises 2% To Hit $108/Barrel As Ship Attacks Disrupt Flows",
-      "url": "https://www.ndtvprofit.com/markets/crude-oil-heads-for-weekly-gain-brent-rises-2-to-hit-108-barrel-as-ship-attacks-disrupt-flows-12196851#publisher=newsstand",
-      "published": 1792171877.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "Zerodha Pulse",
-          "url": "https://www.ndtvprofit.com/markets/crude-oil-heads-for-weekly-gain-brent-rises-2-to-hit-108-barrel-as-ship-attacks-disrupt-flows-12196851#publisher=newsstand"
-        },
-        {
-          "name": "CNBC World",
-          "url": "https://www.cnbc.com/2026/10/16/oil-price-today-iran-strait-hormuz-ukraine-russia.html"
-        }
-      ],
-      "score": 7,
-      "summary": "Brent crude has gained 1.2% this week as attacks around the Strait of Hormuz heighten supply concerns, while falling US crude inventories lend support to oil prices.",
-      "category": "Energy & geopolitics",
-      "reason": "Energy costs and disruption can affect Indian inflation, import costs and exposed sectors.",
-      "matched": [
-        "Energy & geopolitics"
-      ],
-      "tier": "Must know",
-      "related": [
-        {
-          "title": "Brent oil touches $110 as Iran escalates Hormuz attacks, Ukraine vows to hit Russian refineries",
-          "url": "https://www.cnbc.com/2026/10/16/oil-price-today-iran-strait-hormuz-ukraine-russia.html",
-          "source": "CNBC World",
-          "published": 1792180941.0
-        },
-        {
-          "title": "US Crude Oil Tops $100 As Iran Escalates Hormuz Attacks, WTI Up 9% This Week",
-          "url": "https://www.ndtvprofit.com/markets/us-crude-oil-tops-100-as-iran-escalates-hormuz-attacks-wti-up-9-this-week-12196970#publisher=newsstand",
-          "source": "Zerodha Pulse",
-          "published": 1792174004.0
-        }
-      ],
-      "cluster_count": 2,
-      "impact_assets": [
-        "Commodities"
-      ],
-      "why_it_matters": "Rising crude can increase India’s import bill and input costs, while supporting upstream oil realizations.",
-      "impact_chain": {
-        "rule": "CRUDE_SURGE",
-        "catalyst": "Rising crude · potential sector effects",
-        "tailwinds": [
-          "ONGC",
-          "Oil India"
-        ],
-        "headwinds": [
-          "Asian Paints",
-          "IndiGo",
-          "BPCL",
-          "MRF"
-        ],
-        "rationale": "Crude >$100 boosts upstream realizations but inflates airline ATF and paint solvent raw material costs."
-      },
-      "companies": []
-    },
-    {
       "id": "eade60a2b3b8a573",
       "title": "Q2 Results Highlights: LTIMindtree Profit Falls 5%, Urban Company Net Loss Triples, PNB Profit NII Jumps 11%",
       "url": "https://www.ndtvprofit.com/markets/q2-fy27-results-live-updates-dlf-punjab-national-bank-bajaj-housing-finance-federal-bank-ltm-oberoi-realty-to-announce-earnings-12193208#publisher=newsstand",
@@ -371,6 +264,76 @@
         "Equities"
       ],
       "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
+      "id": "8dd451c3ccdb2923",
+      "title": "Global hedge funds hammered by AI selloff this week, Asia managers lead losses",
+      "url": "https://www.investing.com/news/economy-news/ai-selloff-hammers-hedge-funds-this-week-asia-managers-lead-losses-4952963",
+      "published": 1792190577.0,
+      "region": "Global",
+      "official": false,
+      "sources": [
+        {
+          "name": "Investing.com",
+          "url": "https://www.investing.com/news/economy-news/ai-selloff-hammers-hedge-funds-this-week-asia-managers-lead-losses-4952963"
+        },
+        {
+          "name": "ET Markets",
+          "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/global-hedge-funds-suffer-steep-losses-as-ai-trade-unwinds-asia-funds-hit-hardest/articleshow/134982825.cms"
+        }
+      ],
+      "score": 2,
+      "summary": "",
+      "category": "Other news",
+      "reason": "Key market catalyst driving market liquidity and session volatility.",
+      "matched": [],
+      "tier": "More",
+      "related": [
+        {
+          "title": "Global hedge funds suffer steep losses as AI trade unwinds, Asia funds hit hardest",
+          "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/global-hedge-funds-suffer-steep-losses-as-ai-trade-unwinds-asia-funds-hit-hardest/articleshow/134982825.cms",
+          "source": "ET Markets",
+          "published": 1792126929.0
+        }
+      ],
+      "cluster_count": 2,
+      "impact_assets": [
+        "Equities"
+      ],
+      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
+      "id": "15ed4913872dd3f2",
+      "title": "Funding Markets Diverge as T-Bills Cheapen, Overnight Repo Calm",
+      "url": "https://www.livemint.com/market/funding-markets-diverge-as-t-bills-cheapen-overnight-repo-calm-11792179755736.html",
+      "published": 1792179755.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "Mint Markets",
+          "url": "https://www.livemint.com/market/funding-markets-diverge-as-t-bills-cheapen-overnight-repo-calm-11792179755736.html"
+        }
+      ],
+      "score": 5,
+      "summary": "Treasury-bill yields have risen sharply as a wave of new issuance tests investor demand, posing a threat to the stability of overnight funding markets.",
+      "category": "Monetary policy",
+      "reason": "Directly shifts commercial bank cost of funds, repo borrowing rates, and rate-sensitive equity multiples (banks, real estate, auto).",
+      "matched": [
+        "Monetary policy"
+      ],
+      "tier": "Watch",
+      "related": [],
+      "cluster_count": 1,
+      "impact_assets": [
+        "Rates",
+        "Equities"
+      ],
+      "why_it_matters": "Directly shifts commercial bank cost of funds, repo borrowing rates, and rate-sensitive equity multiples (banks, real estate, auto).",
       "impact_chain": null,
       "companies": []
     },
@@ -495,43 +458,208 @@
       "companies": []
     },
     {
-      "id": "110215890f6771c3",
-      "title": "India's forex reserves drop by $8.58 billion to $726.03 billion in week ended October 9: RBI",
-      "url": "https://economictimes.indiatimes.com/news/economy/indicators/indias-forex-reserves-fall-by-usd-8-58-billion-to-usd-726-03-billion-in-week-ended-october-9-rbi/articleshow/134993652.cms",
-      "published": 1792151251.0,
+      "id": "9b329326e4cee77c",
+      "title": "HDFC, ICICI Bank Q2 earnings preview: deposit surge, margin pressure in focus",
+      "url": "https://www.livemint.com/companies/company-results/earnings-preview-deposit-surge-margin-pressure-in-focus-for-hdfc-icici-bank-11792148167976.html",
+      "published": 1792153599.0,
       "region": "India",
       "official": false,
       "sources": [
         {
-          "name": "ET Economy",
-          "url": "https://economictimes.indiatimes.com/news/economy/indicators/indias-forex-reserves-fall-by-usd-8-58-billion-to-usd-726-03-billion-in-week-ended-october-9-rbi/articleshow/134993652.cms"
+          "name": "Mint Companies",
+          "url": "https://www.livemint.com/companies/company-results/earnings-preview-deposit-surge-margin-pressure-in-focus-for-hdfc-icici-bank-11792148167976.html"
+        },
+        {
+          "name": "ET Markets",
+          "url": "https://economictimes.indiatimes.com/markets/stocks/earnings/hdfc-bank-q2-results-preview-pat-nii-may-rise-up-to-9-yoy-deposit-growth-in-focus/articleshow/134982802.cms"
+        },
+        {
+          "name": "Mint Markets",
+          "url": "https://www.livemint.com/market/stock-market-news/q2-preview-icici-axis-yes-hdfc-bank-4-banking-stocks-to-declare-results-2026-on-oct-17-expectations-by-experts-11792137099601.html"
+        },
+        {
+          "name": "Business Standard",
+          "url": "https://www.business-standard.com/markets/news/hdfc-bank-q2-preview-single-digit-pat-growth-likely-margin-pressure-seen-126101600449_1.html"
         }
       ],
-      "score": 7,
-      "summary": "India’s foreign exchange reserves fell by $8.578 billion to $726.027 billion in the week ended October 9, according to data released by the Reserve Bank of India (RBI). The decline followed a $12.952 billion drop in the previous week. Foreign currency assets and gold reserves recorded significant declines, while special drawing rights and India’s r",
-      "category": "Monetary policy",
-      "reason": "This RBI action concerns currency-market liquidity or dollar demand; it is not a repo-rate decision.",
+      "score": 9,
+      "summary": "When HDFC Bank and ICICI Bank report their Q2 earnings on Saturday, investors will closely track their net interest margins, credit costs and management commentary on growth.",
+      "category": "Earnings",
+      "reason": "Compare results and guidance with expectations for the company and its sector.",
       "matched": [
-        "Monetary policy",
-        "Economic data"
+        "Earnings"
       ],
       "tier": "Must know",
       "related": [
         {
-          "title": "India's forex reserves shed $60 billion in six weeks as RBI steps in to support rupee, one of Asia's worst-performing currencies this year",
-          "url": "https://economictimes.indiatimes.com/news/economy/indicators/indias-forex-reserves-shed-60-billion-in-six-weeks-as-rbi-steps-in-to-support-rupee-one-of-asias-worst-performing-currencies-this-year/articleshow/134994757.cms",
-          "source": "ET Economy",
-          "published": 1792153053.0
+          "title": "HDFC Bank Q2 results preview: PAT, NII may rise up to 9% YoY; deposit growth in focus",
+          "url": "https://economictimes.indiatimes.com/markets/stocks/earnings/hdfc-bank-q2-results-preview-pat-nii-may-rise-up-to-9-yoy-deposit-growth-in-focus/articleshow/134982802.cms",
+          "source": "ET Markets",
+          "published": 1792126380.0
+        },
+        {
+          "title": "Q2 Preview: ICICI, Axis, YES, HDFC Bank - 4 banking stocks to declare results 2026 on Oct 17 - Expectations by experts",
+          "url": "https://www.livemint.com/market/stock-market-news/q2-preview-icici-axis-yes-hdfc-bank-4-banking-stocks-to-declare-results-2026-on-oct-17-expectations-by-experts-11792137099601.html",
+          "source": "Mint Markets",
+          "published": 1792138443.0
+        },
+        {
+          "title": "HDFC Bank Q2 preview: Single-digit PAT growth likely; margin pressure seen",
+          "url": "https://www.business-standard.com/markets/news/hdfc-bank-q2-preview-single-digit-pat-growth-likely-margin-pressure-seen-126101600449_1.html",
+          "source": "Business Standard",
+          "published": 1792134905.0
+        },
+        {
+          "title": "HDFC Life Insurance sheds 3% post Q2 results; brokerages remain upbeat",
+          "url": "https://www.business-standard.com/markets/news/hdfc-life-insurance-share-price-shed-3-post-q2-results-brokerages-remain-upbeat-126101600306_1.html",
+          "source": "Business Standard",
+          "published": 1792127565.0
         }
       ],
-      "cluster_count": 1,
+      "cluster_count": 4,
       "impact_assets": [
-        "Rates",
         "Equities"
       ],
-      "why_it_matters": "This RBI action concerns currency-market liquidity or dollar demand; it is not a repo-rate decision.",
+      "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
       "impact_chain": null,
+      "companies": [
+        {
+          "name": "ICICI Bank",
+          "symbol": "icici bank"
+        },
+        {
+          "name": "HDFC Bank",
+          "symbol": "hdfc"
+        }
+      ]
+    },
+    {
+      "id": "9522a9fbbd3baa2c",
+      "title": "US Fed rate hike: US inflation heats up — experts decode impact on Indian stock market, gold rates; recommend 10 stocks",
+      "url": "https://www.livemint.com/market/stock-market-news/us-fed-rate-hike-buzz-american-inflation-highest-since-covid-what-does-it-mean-for-nifty-sensex-gold-rates-decoded-11792135225649.html",
+      "published": 1792139928.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "Mint Markets",
+          "url": "https://www.livemint.com/market/stock-market-news/us-fed-rate-hike-buzz-american-inflation-highest-since-covid-what-does-it-mean-for-nifty-sensex-gold-rates-decoded-11792135225649.html"
+        },
+        {
+          "name": "Business Standard",
+          "url": "https://www.business-standard.com/markets/news/gold-sell-on-rallies-as-rate-hike-concerns-weigh-on-metal-says-analyst-126101600411_1.html"
+        }
+      ],
+      "score": 9,
+      "summary": "Indian stock market has already discounted the US Fed rate hike for up to December US Fed meetings, say experts",
+      "category": "Monetary policy",
+      "reason": "Guides global liquidity dynamics, US Dollar Index (DXY) trajectory, and foreign institutional (FII) capital allocations.",
+      "matched": [
+        "Monetary policy",
+        "Economic data",
+        "Market flows"
+      ],
+      "tier": "Must know",
+      "related": [
+        {
+          "title": "Sell gold on rallies as rate hike concerns weigh: Mirae Asset Sharekhan",
+          "url": "https://www.business-standard.com/markets/news/gold-sell-on-rallies-as-rate-hike-concerns-weigh-on-metal-says-analyst-126101600411_1.html",
+          "source": "Business Standard",
+          "published": 1792132469.0
+        }
+      ],
+      "cluster_count": 2,
+      "impact_assets": [
+        "Rates",
+        "Equities",
+        "Commodities"
+      ],
+      "why_it_matters": "Guides global liquidity dynamics, US Dollar Index (DXY) trajectory, and foreign institutional (FII) capital allocations.",
+      "impact_chain": {
+        "rule": "RATE_HIKE",
+        "catalyst": "Hawkish Central Bank / Rate Hike",
+        "tailwinds": [
+          "SBI",
+          "ICICI Bank",
+          "HDFC Bank"
+        ],
+        "headwinds": [
+          "DLF",
+          "Godrej Properties",
+          "Tata Motors",
+          "Bajaj Finance"
+        ],
+        "rationale": "Rate hikes lift net interest margins for large CASA lenders but dampen rate-sensitive housing and auto demand."
+      },
       "companies": []
+    },
+    {
+      "id": "944f5775587814c4",
+      "title": "ICICI Bank Q2 Results Preview: PAT, NII may rise up to 21% YoY; margins, deposit growth in focus",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/earnings/icici-bank-q2-results-preview-pat-nii-may-rise-up-to-21-yoy-margins-deposit-growth-in-focus/articleshow/134988975.cms",
+      "published": 1792141671.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "ET Markets",
+          "url": "https://economictimes.indiatimes.com/markets/stocks/earnings/icici-bank-q2-results-preview-pat-nii-may-rise-up-to-21-yoy-margins-deposit-growth-in-focus/articleshow/134988975.cms"
+        },
+        {
+          "name": "Business Standard",
+          "url": "https://www.business-standard.com/markets/news/icici-bank-q2-preview-profit-may-rise-8-14-yoy-nim-likely-to-contract-126101600468_1.html"
+        },
+        {
+          "name": "Mint Markets",
+          "url": "https://www.livemint.com/market/stock-market-news/rs-30-dividend-icici-prudential-amc-dividend-record-date-ahead-check-yield-payout-history-stock-performance-other-d-11792168215358.html"
+        }
+      ],
+      "score": 8,
+      "summary": "ICICI Bank is expected to report 15.8-18% year-on-year growth in net interest income and 15-21% growth in profit after tax in Q2FY27, according to brokerage estimates. Investors will track net interest margins, loan and deposit growth, operating profitability and asset quality, with margin pressure and provisioning trends remaining key monitorables",
+      "category": "Earnings",
+      "reason": "Compare results and guidance with expectations for the company and its sector.",
+      "matched": [
+        "Earnings"
+      ],
+      "tier": "Must know",
+      "related": [
+        {
+          "title": "ICICI Bank Q2 Preview: Profit may rise 8-14% YoY, NIM likely to contract",
+          "url": "https://www.business-standard.com/markets/news/icici-bank-q2-preview-profit-may-rise-8-14-yoy-nim-likely-to-contract-126101600468_1.html",
+          "source": "Business Standard",
+          "published": 1792135534.0
+        },
+        {
+          "title": "₹30 dividend: ICICI Prudential AMC dividend record date ahead! Check yield, payout history, stock performance",
+          "url": "https://www.livemint.com/market/stock-market-news/rs-30-dividend-icici-prudential-amc-dividend-record-date-ahead-check-yield-payout-history-stock-performance-other-d-11792168215358.html",
+          "source": "Mint Markets",
+          "published": 1792168491.0
+        },
+        {
+          "title": "Already up 86% in 6 months, ICICI Direct still sees another 39% upside in this small-cap stock - Check target, rationale",
+          "url": "https://www.livemint.com/market/stock-market-news/already-up-86-in-6-months-icici-direct-still-sees-another-39-upside-in-this-small-cap-stock-check-target-rationale-11792142941201.html",
+          "source": "Mint Markets",
+          "published": 1792148005.0
+        },
+        {
+          "title": "31% rally in 2 weeks: Orient Electric share price surges post Q2 results - ICICI Sec sees 22% upside | Target price",
+          "url": "https://www.livemint.com/market/stock-market-news/31-rally-in-2-weeks-orient-electric-share-price-surges-post-q2-results-icici-sec-sees-22-upside-target-price-11792137011730.html",
+          "source": "Mint Markets",
+          "published": 1792140838.0
+        }
+      ],
+      "cluster_count": 3,
+      "impact_assets": [
+        "Equities"
+      ],
+      "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
+      "impact_chain": null,
+      "companies": [
+        {
+          "name": "ICICI Bank",
+          "symbol": "icici bank"
+        }
+      ]
     },
     {
       "id": "e7058b7cf19732e0",
@@ -626,39 +754,87 @@
       "companies": []
     },
     {
-      "id": "d788621e2466ed4a",
-      "title": "Tesla shares jump 4% in pre-market trade after unveiling redesigned flying Roadster with SpaceX tech",
-      "url": "https://www.livemint.com/market/stock-market-news/tesla-shares-jump-4-in-pre-market-trade-after-unveiling-redesigned-roadster-with-spacex-11792152389374.html",
-      "published": 1792154991.0,
-      "region": "India",
+      "id": "765756d4445f66b6",
+      "title": "India's rupee forecast to weaken toward 100-per-dollar level even as RBI pushes back",
+      "url": "https://www.cnbc.com/2026/10/16/india-rupee-rbi-dollar-iran-war.html",
+      "published": 1792112065.0,
+      "region": "Global",
       "official": false,
       "sources": [
         {
-          "name": "Mint Markets",
-          "url": "https://www.livemint.com/market/stock-market-news/tesla-shares-jump-4-in-pre-market-trade-after-unveiling-redesigned-roadster-with-spacex-11792152389374.html"
+          "name": "CNBC World",
+          "url": "https://www.cnbc.com/2026/10/16/india-rupee-rbi-dollar-iran-war.html"
         },
         {
-          "name": "CNBC World",
-          "url": "https://www.cnbc.com/2026/10/15/tesla-roadster-reveal-what-to-know-about-the-delayed-ev.html"
+          "name": "ET Markets",
+          "url": "https://economictimes.indiatimes.com/markets/forex/forex-news/rupee-rises-1-9-in-a-week-closes-below-95-per-dollar/articleshow/134996292.cms"
         }
       ],
-      "score": 6,
-      "summary": "Tesla shares rose 4% after the company unveiled a redesigned Roadster featuring SpaceX-developed thrusters. A livestreamed demonstration showed the driverless car perform a mid-air barrel roll.",
-      "category": "Company move",
-      "reason": "A named company or share-price move may affect that stock and its peers.",
+      "score": 10,
+      "summary": "The RBI's latest moves have helped the rupee recover from 96.79 rupees per dollar to the 95-level over recent days.",
+      "category": "Monetary policy",
+      "reason": "This RBI action concerns currency-market liquidity or dollar demand; it is not a repo-rate decision.",
       "matched": [
-        "Company move"
+        "Monetary policy",
+        "Market flows"
       ],
       "tier": "Must know",
       "related": [
         {
-          "title": "Tesla unveils long-delayed Roadster developed with SpaceX, fueling merger speculation",
-          "url": "https://www.cnbc.com/2026/10/15/tesla-roadster-reveal-what-to-know-about-the-delayed-ev.html",
-          "source": "CNBC World",
-          "published": 1792165961.0
+          "title": "Rupee rises 1.9% in a week, closes below 95 per dollar",
+          "url": "https://economictimes.indiatimes.com/markets/forex/forex-news/rupee-rises-1-9-in-a-week-closes-below-95-per-dollar/articleshow/134996292.cms",
+          "source": "ET Markets",
+          "published": 1792156456.0
         }
       ],
       "cluster_count": 2,
+      "impact_assets": [
+        "Rates",
+        "Equities",
+        "FX"
+      ],
+      "why_it_matters": "This RBI action concerns currency-market liquidity or dollar demand; it is not a repo-rate decision.",
+      "impact_chain": {
+        "rule": "INR_WEAK",
+        "catalyst": "Rupee Depreciation (USD/INR Rise)",
+        "tailwinds": [
+          "TCS",
+          "Infosys",
+          "Sun Pharma",
+          "Cipla"
+        ],
+        "headwinds": [
+          "Voltas",
+          "Dixon Tech",
+          "InterGlobe Aviation"
+        ],
+        "rationale": "Exporters billed in USD gain translation windfalls, while electronics importers face input cost spikes."
+      },
+      "companies": []
+    },
+    {
+      "id": "35bbdccdf072c097",
+      "title": "World Bank ups India's GDP growth projection to 7.1% for FY27",
+      "url": "https://www.thehindu.com/business/Economy/world-bank-ups-indias-gdp-growth-projection-to-71-for-fy27/article71552011.ece",
+      "published": 1792170614.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "Zerodha Pulse",
+          "url": "https://www.thehindu.com/business/Economy/world-bank-ups-indias-gdp-growth-projection-to-71-for-fy27/article71552011.ece"
+        }
+      ],
+      "score": 4,
+      "summary": "“India's exports have performed better than expected and are likely to provide the main upside to the FY27 growth outlook relative to the April forecasts,” World Bank said in a report",
+      "category": "Economic data",
+      "reason": "Compare the release with expectations; the surprise can affect rates and risk appetite.",
+      "matched": [
+        "Economic data"
+      ],
+      "tier": "Watch",
+      "related": [],
+      "cluster_count": 1,
       "impact_assets": [
         "Equities"
       ],
@@ -667,147 +843,168 @@
       "companies": []
     },
     {
-      "id": "9522a9fbbd3baa2c",
-      "title": "US Fed rate hike: US inflation heats up — experts decode impact on Indian stock market, gold rates; recommend 10 stocks",
-      "url": "https://www.livemint.com/market/stock-market-news/us-fed-rate-hike-buzz-american-inflation-highest-since-covid-what-does-it-mean-for-nifty-sensex-gold-rates-decoded-11792135225649.html",
-      "published": 1792139928.0,
+      "id": "22e9e07f84be649a",
+      "title": "Bondada bags ₹1,153.93 cr. EPC order for 270 MWp solar project in Maharashtra",
+      "url": "https://www.thehindu.com/business/bondada-bags-115393-cr-epc-order-for-270-mwp-solar-project-in-maharashtra/article71552233.ece",
+      "published": 1792169320.0,
       "region": "India",
       "official": false,
       "sources": [
         {
-          "name": "Mint Markets",
-          "url": "https://www.livemint.com/market/stock-market-news/us-fed-rate-hike-buzz-american-inflation-highest-since-covid-what-does-it-mean-for-nifty-sensex-gold-rates-decoded-11792135225649.html"
-        },
-        {
-          "name": "Business Standard",
-          "url": "https://www.business-standard.com/markets/news/gold-sell-on-rallies-as-rate-hike-concerns-weigh-on-metal-says-analyst-126101600411_1.html"
+          "name": "Zerodha Pulse",
+          "url": "https://www.thehindu.com/business/bondada-bags-115393-cr-epc-order-for-270-mwp-solar-project-in-maharashtra/article71552233.ece"
         }
       ],
-      "score": 9,
-      "summary": "Indian stock market has already discounted the US Fed rate hike for up to December US Fed meetings, say experts",
-      "category": "Monetary policy",
-      "reason": "Guides global liquidity dynamics, US Dollar Index (DXY) trajectory, and foreign institutional (FII) capital allocations.",
+      "score": 4,
+      "summary": "",
+      "category": "Company move",
+      "reason": "A large contract or order may affect the company and its sector; check execution and guidance.",
       "matched": [
-        "Monetary policy",
-        "Economic data",
-        "Market flows"
+        "Company move"
       ],
-      "tier": "Must know",
-      "related": [
-        {
-          "title": "Sell gold on rallies as rate hike concerns weigh: Mirae Asset Sharekhan",
-          "url": "https://www.business-standard.com/markets/news/gold-sell-on-rallies-as-rate-hike-concerns-weigh-on-metal-says-analyst-126101600411_1.html",
-          "source": "Business Standard",
-          "published": 1792132469.0
-        }
-      ],
-      "cluster_count": 2,
+      "tier": "Watch",
+      "related": [],
+      "cluster_count": 1,
       "impact_assets": [
-        "Rates",
-        "Equities",
-        "Commodities"
+        "Equities"
       ],
-      "why_it_matters": "Guides global liquidity dynamics, US Dollar Index (DXY) trajectory, and foreign institutional (FII) capital allocations.",
-      "impact_chain": {
-        "rule": "RATE_HIKE",
-        "catalyst": "Hawkish Central Bank / Rate Hike",
-        "tailwinds": [
-          "SBI",
-          "ICICI Bank",
-          "HDFC Bank"
-        ],
-        "headwinds": [
-          "DLF",
-          "Godrej Properties",
-          "Tata Motors",
-          "Bajaj Finance"
-        ],
-        "rationale": "Rate hikes lift net interest margins for large CASA lenders but dampen rate-sensitive housing and auto demand."
-      },
+      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
+      "impact_chain": null,
       "companies": []
     },
     {
-      "id": "d375f15396813b58",
-      "title": "Jio Financial shares drop 2.5% as Q2 PAT halves; MOFSL cuts FY27 estimates",
-      "url": "https://www.business-standard.com/markets/news/jio-financial-stock-drop-2-5-as-q2-pat-halves-mofsl-cuts-fy27-estimates-126101600346_1.html",
-      "published": 1792130743.0,
+      "id": "ede2ca91f2b641db",
+      "title": "Crompton Greaves Consumer Electricals Ltd Q2 Results: Profit surges 65% to Rs 124 crore",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/earnings/crompton-greaves-q2-results-profit-surges-65-to-rs-124-crore/articleshow/134998426.cms",
+      "published": 1792164781.0,
       "region": "India",
       "official": false,
       "sources": [
         {
-          "name": "Business Standard",
-          "url": "https://www.business-standard.com/markets/news/jio-financial-stock-drop-2-5-as-q2-pat-halves-mofsl-cuts-fy27-estimates-126101600346_1.html"
-        },
-        {
-          "name": "Mint Markets",
-          "url": "https://www.livemint.com/market/stock-market-news/hfcl-shares-jump-277-in-2026-ahead-of-reliance-jio-ipo-nuvama-says-buy-rating-check-target-price-and-jio-connection-11792172068819.html"
-        },
-        {
           "name": "ET Markets",
-          "url": "https://economictimes.indiatimes.com/markets/stocks/news/mukesh-ambani-taps-massive-reliance-workforce-to-boost-jios-record-ipo/articleshow/134988928.cms"
-        },
-        {
-          "name": "Mint Companies",
-          "url": "https://www.livemint.com/companies/news/jio-parent-reliance-industries-breaks-silence-on-starlink-row-we-have-never-feared-competition-11792118824211.html"
+          "url": "https://economictimes.indiatimes.com/markets/stocks/earnings/crompton-greaves-q2-results-profit-surges-65-to-rs-124-crore/articleshow/134998426.cms"
         }
       ],
-      "score": 9,
-      "summary": "Jio Financial share: Analysts at Motilal Oswal Financial Services said healthy execution continued to drive growth, but higher provisions prompted earnings estimates cut for FY27.",
+      "score": 4,
+      "summary": "Crompton Greaves Consumer Electricals reported a 65 percent increase in consolidated net profit for the September quarter. The company's revenue from operations also jumped by 18.15 percent compared to the previous year. Significant revenue growth was achieved in the electric consumer durable segment, especially in fans and appliances. Overall, the",
       "category": "Earnings",
       "reason": "Compare results and guidance with expectations for the company and its sector.",
       "matched": [
         "Earnings"
       ],
-      "tier": "Must know",
-      "related": [
-        {
-          "title": "HFCL shares jump 277% in 2026 ahead of Reliance Jio IPO; Nuvama says buy rating. Check target price and Jio connection",
-          "url": "https://www.livemint.com/market/stock-market-news/hfcl-shares-jump-277-in-2026-ahead-of-reliance-jio-ipo-nuvama-says-buy-rating-check-target-price-and-jio-connection-11792172068819.html",
-          "source": "Mint Markets",
-          "published": 1792174495.0
-        },
-        {
-          "title": "Reliance-backed Jio Platforms IPO: ₹1 lakh crore gains for Meta, Google in ₹30,213 cr issue by Mukesh Ambani firm?",
-          "url": "https://www.livemint.com/market/stock-market-news/reliancebacked-jio-platforms-ipo-rs-1-lakh-crore-gains-for-meta-google-in-rs-30-213-cr-issue-by-mukesh-ambani-firm-11792168344160.html",
-          "source": "Mint Markets",
-          "published": 1792170452.0
-        },
-        {
-          "title": "Ambani taps Reliance's 420,000 employees to boost Jio IPO participation",
-          "url": "https://www.business-standard.com/companies/news/ambani-taps-reliance-s-420-000-employees-to-boost-jio-ipo-participation-126101600630_1.html",
-          "source": "Business Standard",
-          "published": 1792142333.0
-        },
-        {
-          "title": "Mukesh Ambani taps massive Reliance Industries workforce to boost record Jio IPO",
-          "url": "https://www.livemint.com/market/ipo/jio-platforms-ipo-shares-for-reliance-industries-employees-11792141480138.html",
-          "source": "Mint Markets",
-          "published": 1792141943.0
-        },
-        {
-          "title": "Mukesh Ambani taps massive Reliance workforce to boost Jio’s record IPO",
-          "url": "https://economictimes.indiatimes.com/markets/stocks/news/mukesh-ambani-taps-massive-reliance-workforce-to-boost-jios-record-ipo/articleshow/134988928.cms",
-          "source": "ET Markets",
-          "published": 1792141429.0
-        },
-        {
-          "title": "Jio IPO GMP at 20%: Grey market signals Rs 220 premium as brokerages say subscribe",
-          "url": "https://economictimes.indiatimes.com/markets/stocks/news/jio-ipo-gmp-at-20-grey-market-signals-rs-220-premium-as-brokerages-say-subscribe/articleshow/134985658.cms",
-          "source": "ET Markets",
-          "published": 1792134195.0
-        },
-        {
-          "title": "Jio parent Reliance Industries breaks silence on Starlink row: 'We have never feared competition’",
-          "url": "https://www.livemint.com/companies/news/jio-parent-reliance-industries-breaks-silence-on-starlink-row-we-have-never-feared-competition-11792118824211.html",
-          "source": "Mint Companies",
-          "published": 1792119407.0
-        }
-      ],
-      "cluster_count": 4,
+      "tier": "Watch",
+      "related": [],
+      "cluster_count": 1,
       "impact_assets": [
         "Equities"
       ],
       "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
+      "id": "6e1da8572424fc78",
+      "title": "DLF Q2 profit rises to Rs 1,301 crore as luxury project sells out",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/earnings/dlf-q2-profit-rises-to-rs-1301-crore-as-luxury-project-sells-out/articleshow/134996827.cms",
+      "published": 1792158003.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "ET Markets",
+          "url": "https://economictimes.indiatimes.com/markets/stocks/earnings/dlf-q2-profit-rises-to-rs-1301-crore-as-luxury-project-sells-out/articleshow/134996827.cms"
+        }
+      ],
+      "score": 4,
+      "summary": "DLF reported a 11% year-on-year increase in July-September net profit to Rs 1,301 crore, with sales bookings reaching Rs 3,800 crore. Its Aureva luxury retirement project in Gurugram sold out, while the company maintained a strong net cash position.",
+      "category": "Earnings",
+      "reason": "Compare results and guidance with expectations for the company and its sector.",
+      "matched": [
+        "Earnings"
+      ],
+      "tier": "Watch",
+      "related": [],
+      "cluster_count": 1,
+      "impact_assets": [
+        "Equities"
+      ],
+      "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
+      "impact_chain": null,
+      "companies": [
+        {
+          "name": "DLF",
+          "symbol": "dlf"
+        }
+      ]
+    },
+    {
+      "id": "110215890f6771c3",
+      "title": "India's forex reserves drop by $8.58 billion to $726.03 billion in week ended October 9: RBI",
+      "url": "https://economictimes.indiatimes.com/news/economy/indicators/indias-forex-reserves-fall-by-usd-8-58-billion-to-usd-726-03-billion-in-week-ended-october-9-rbi/articleshow/134993652.cms",
+      "published": 1792151251.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "ET Economy",
+          "url": "https://economictimes.indiatimes.com/news/economy/indicators/indias-forex-reserves-fall-by-usd-8-58-billion-to-usd-726-03-billion-in-week-ended-october-9-rbi/articleshow/134993652.cms"
+        }
+      ],
+      "score": 7,
+      "summary": "India’s foreign exchange reserves fell by $8.578 billion to $726.027 billion in the week ended October 9, according to data released by the Reserve Bank of India (RBI). The decline followed a $12.952 billion drop in the previous week. Foreign currency assets and gold reserves recorded significant declines, while special drawing rights and India’s r",
+      "category": "Monetary policy",
+      "reason": "This RBI action concerns currency-market liquidity or dollar demand; it is not a repo-rate decision.",
+      "matched": [
+        "Monetary policy",
+        "Economic data"
+      ],
+      "tier": "Must know",
+      "related": [
+        {
+          "title": "India's forex reserves shed $60 billion in six weeks as RBI steps in to support rupee, one of Asia's worst-performing currencies this year",
+          "url": "https://economictimes.indiatimes.com/news/economy/indicators/indias-forex-reserves-shed-60-billion-in-six-weeks-as-rbi-steps-in-to-support-rupee-one-of-asias-worst-performing-currencies-this-year/articleshow/134994757.cms",
+          "source": "ET Economy",
+          "published": 1792153053.0
+        }
+      ],
+      "cluster_count": 1,
+      "impact_assets": [
+        "Rates",
+        "Equities"
+      ],
+      "why_it_matters": "This RBI action concerns currency-market liquidity or dollar demand; it is not a repo-rate decision.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
+      "id": "38cd6132a1f73245",
+      "title": "CNBC Daily Open: Warsh holds cards close on Fed policy, but inflation numbers may tip his hand",
+      "url": "https://www.cnbc.com/2026/10/16/cnbc-daily-open-warsh-holds-cards-close-on-fed-policy-but-inflation-numbers-may-tip-his-hand.html",
+      "published": 1792139515.0,
+      "region": "Global",
+      "official": false,
+      "sources": [
+        {
+          "name": "CNBC World",
+          "url": "https://www.cnbc.com/2026/10/16/cnbc-daily-open-warsh-holds-cards-close-on-fed-policy-but-inflation-numbers-may-tip-his-hand.html"
+        }
+      ],
+      "score": 7,
+      "summary": "Kevin Warsh offered markets few clues in his final public appearance before the central bank's October meeting.",
+      "category": "Monetary policy",
+      "reason": "Guides global liquidity dynamics, US Dollar Index (DXY) trajectory, and foreign institutional (FII) capital allocations.",
+      "matched": [
+        "Monetary policy",
+        "Economic data"
+      ],
+      "tier": "Must know",
+      "related": [],
+      "cluster_count": 1,
+      "impact_assets": [
+        "Rates",
+        "Equities"
+      ],
+      "why_it_matters": "Guides global liquidity dynamics, US Dollar Index (DXY) trajectory, and foreign institutional (FII) capital allocations.",
       "impact_chain": null,
       "companies": []
     },
@@ -961,28 +1158,37 @@
       "companies": []
     },
     {
-      "id": "35bbdccdf072c097",
-      "title": "World Bank ups India's GDP growth projection to 7.1% for FY27",
-      "url": "https://www.thehindu.com/business/Economy/world-bank-ups-indias-gdp-growth-projection-to-71-for-fy27/article71552011.ece",
-      "published": 1792170614.0,
+      "id": "b7588e19f7b58fb4",
+      "title": "China Says Ready To Address Each Other's Concerns After Sitharaman Flags Trade Barriers",
+      "url": "https://www.ndtvprofit.com/economy/china-says-ready-to-address-each-others-concerns-after-sitharaman-flags-trade-barriers-12196871#publisher=newsstand",
+      "published": 1792172124.0,
       "region": "India",
       "official": false,
       "sources": [
         {
           "name": "Zerodha Pulse",
-          "url": "https://www.thehindu.com/business/Economy/world-bank-ups-indias-gdp-growth-projection-to-71-for-fy27/article71552011.ece"
+          "url": "https://www.ndtvprofit.com/economy/china-says-ready-to-address-each-others-concerns-after-sitharaman-flags-trade-barriers-12196871#publisher=newsstand"
+        },
+        {
+          "name": "ET Economy",
+          "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/china-says-ready-to-address-each-others-concerns-after-sitharaman-flags-trade-barriers/articleshow/134997260.cms"
         }
       ],
-      "score": 4,
-      "summary": "“India's exports have performed better than expected and are likely to provide the main upside to the FY27 growth outlook relative to the April forecasts,” World Bank said in a report",
-      "category": "Economic data",
-      "reason": "Compare the release with expectations; the surprise can affect rates and risk appetite.",
-      "matched": [
-        "Economic data"
+      "score": 2,
+      "summary": "Sitharaman on Friday said the growing trade imbalance and persistent restrictions on market access for Indian products remained major concerns, despite years of engagement with Beijing.",
+      "category": "Other news",
+      "reason": "Key market catalyst driving market liquidity and session volatility.",
+      "matched": [],
+      "tier": "More",
+      "related": [
+        {
+          "title": "China says ready to address each other's concerns after Sitharaman flags trade barriers",
+          "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/china-says-ready-to-address-each-others-concerns-after-sitharaman-flags-trade-barriers/articleshow/134997260.cms",
+          "source": "ET Economy",
+          "published": 1792160539.0
+        }
       ],
-      "tier": "Watch",
-      "related": [],
-      "cluster_count": 1,
+      "cluster_count": 2,
       "impact_assets": [
         "Equities"
       ],
@@ -991,50 +1197,143 @@
       "companies": []
     },
     {
-      "id": "22e9e07f84be649a",
-      "title": "Bondada bags ₹1,153.93 cr. EPC order for 270 MWp solar project in Maharashtra",
-      "url": "https://www.thehindu.com/business/bondada-bags-115393-cr-epc-order-for-270-mwp-solar-project-in-maharashtra/article71552233.ece",
-      "published": 1792169320.0,
+      "id": "d375f15396813b58",
+      "title": "Jio Financial shares drop 2.5% as Q2 PAT halves; MOFSL cuts FY27 estimates",
+      "url": "https://www.business-standard.com/markets/news/jio-financial-stock-drop-2-5-as-q2-pat-halves-mofsl-cuts-fy27-estimates-126101600346_1.html",
+      "published": 1792130743.0,
       "region": "India",
       "official": false,
       "sources": [
         {
-          "name": "Zerodha Pulse",
-          "url": "https://www.thehindu.com/business/bondada-bags-115393-cr-epc-order-for-270-mwp-solar-project-in-maharashtra/article71552233.ece"
-        }
-      ],
-      "score": 4,
-      "summary": "",
-      "category": "Company move",
-      "reason": "A large contract or order may affect the company and its sector; check execution and guidance.",
-      "matched": [
-        "Company move"
-      ],
-      "tier": "Watch",
-      "related": [],
-      "cluster_count": 1,
-      "impact_assets": [
-        "Equities"
-      ],
-      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "ede2ca91f2b641db",
-      "title": "Crompton Greaves Consumer Electricals Ltd Q2 Results: Profit surges 65% to Rs 124 crore",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/earnings/crompton-greaves-q2-results-profit-surges-65-to-rs-124-crore/articleshow/134998426.cms",
-      "published": 1792164781.0,
-      "region": "India",
-      "official": false,
-      "sources": [
+          "name": "Business Standard",
+          "url": "https://www.business-standard.com/markets/news/jio-financial-stock-drop-2-5-as-q2-pat-halves-mofsl-cuts-fy27-estimates-126101600346_1.html"
+        },
+        {
+          "name": "Mint Markets",
+          "url": "https://www.livemint.com/market/stock-market-news/hfcl-shares-jump-277-in-2026-ahead-of-reliance-jio-ipo-nuvama-says-buy-rating-check-target-price-and-jio-connection-11792172068819.html"
+        },
         {
           "name": "ET Markets",
-          "url": "https://economictimes.indiatimes.com/markets/stocks/earnings/crompton-greaves-q2-results-profit-surges-65-to-rs-124-crore/articleshow/134998426.cms"
+          "url": "https://economictimes.indiatimes.com/markets/stocks/news/mukesh-ambani-taps-massive-reliance-workforce-to-boost-jios-record-ipo/articleshow/134988928.cms"
+        },
+        {
+          "name": "Mint Companies",
+          "url": "https://www.livemint.com/companies/news/jio-parent-reliance-industries-breaks-silence-on-starlink-row-we-have-never-feared-competition-11792118824211.html"
         }
       ],
-      "score": 4,
-      "summary": "Crompton Greaves Consumer Electricals reported a 65 percent increase in consolidated net profit for the September quarter. The company's revenue from operations also jumped by 18.15 percent compared to the previous year. Significant revenue growth was achieved in the electric consumer durable segment, especially in fans and appliances. Overall, the",
+      "score": 9,
+      "summary": "Jio Financial share: Analysts at Motilal Oswal Financial Services said healthy execution continued to drive growth, but higher provisions prompted earnings estimates cut for FY27.",
+      "category": "Earnings",
+      "reason": "Compare results and guidance with expectations for the company and its sector.",
+      "matched": [
+        "Earnings"
+      ],
+      "tier": "Must know",
+      "related": [
+        {
+          "title": "HFCL shares jump 277% in 2026 ahead of Reliance Jio IPO; Nuvama says buy rating. Check target price and Jio connection",
+          "url": "https://www.livemint.com/market/stock-market-news/hfcl-shares-jump-277-in-2026-ahead-of-reliance-jio-ipo-nuvama-says-buy-rating-check-target-price-and-jio-connection-11792172068819.html",
+          "source": "Mint Markets",
+          "published": 1792174495.0
+        },
+        {
+          "title": "Reliance-backed Jio Platforms IPO: ₹1 lakh crore gains for Meta, Google in ₹30,213 cr issue by Mukesh Ambani firm?",
+          "url": "https://www.livemint.com/market/stock-market-news/reliancebacked-jio-platforms-ipo-rs-1-lakh-crore-gains-for-meta-google-in-rs-30-213-cr-issue-by-mukesh-ambani-firm-11792168344160.html",
+          "source": "Mint Markets",
+          "published": 1792170452.0
+        },
+        {
+          "title": "Ambani taps Reliance's 420,000 employees to boost Jio IPO participation",
+          "url": "https://www.business-standard.com/companies/news/ambani-taps-reliance-s-420-000-employees-to-boost-jio-ipo-participation-126101600630_1.html",
+          "source": "Business Standard",
+          "published": 1792142333.0
+        },
+        {
+          "title": "Mukesh Ambani taps massive Reliance Industries workforce to boost record Jio IPO",
+          "url": "https://www.livemint.com/market/ipo/jio-platforms-ipo-shares-for-reliance-industries-employees-11792141480138.html",
+          "source": "Mint Markets",
+          "published": 1792141943.0
+        },
+        {
+          "title": "Mukesh Ambani taps massive Reliance workforce to boost Jio’s record IPO",
+          "url": "https://economictimes.indiatimes.com/markets/stocks/news/mukesh-ambani-taps-massive-reliance-workforce-to-boost-jios-record-ipo/articleshow/134988928.cms",
+          "source": "ET Markets",
+          "published": 1792141429.0
+        },
+        {
+          "title": "Jio IPO GMP at 20%: Grey market signals Rs 220 premium as brokerages say subscribe",
+          "url": "https://economictimes.indiatimes.com/markets/stocks/news/jio-ipo-gmp-at-20-grey-market-signals-rs-220-premium-as-brokerages-say-subscribe/articleshow/134985658.cms",
+          "source": "ET Markets",
+          "published": 1792134195.0
+        },
+        {
+          "title": "Jio parent Reliance Industries breaks silence on Starlink row: 'We have never feared competition’",
+          "url": "https://www.livemint.com/companies/news/jio-parent-reliance-industries-breaks-silence-on-starlink-row-we-have-never-feared-competition-11792118824211.html",
+          "source": "Mint Companies",
+          "published": 1792119407.0
+        }
+      ],
+      "cluster_count": 4,
+      "impact_assets": [
+        "Equities"
+      ],
+      "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
+      "id": "79909298e89d99e1",
+      "title": "Oberoi Realty Q2 results, dividend 2026: Check amount, record date, yield, history, stock returns",
+      "url": "https://www.livemint.com/market/stock-market-news/rs-2-per-share-dividend-stock-do-you-own-this-real-estate-stock-check-record-date-to-qualify-for-cash-reward-11792158360275.html",
+      "published": 1792159892.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "Mint Markets",
+          "url": "https://www.livemint.com/market/stock-market-news/rs-2-per-share-dividend-stock-do-you-own-this-real-estate-stock-check-record-date-to-qualify-for-cash-reward-11792158360275.html"
+        }
+      ],
+      "score": 3,
+      "summary": "Oberoi Realty declared a second interim dividend of ₹2 per share for FY27, with October 23, 2026, set as the record date and payments beginning October 30. Q2 consolidated net profit edged up to ₹761.65 crore, while total income fell 6% year on year.",
+      "category": "Earnings",
+      "reason": "Compare results and guidance with expectations for the company and its sector.",
+      "matched": [
+        "Earnings"
+      ],
+      "tier": "Watch",
+      "related": [
+        {
+          "title": "Angel One Dividend 2026: Check amount, record date, yield, history, Q2 results of broking stock",
+          "url": "https://www.livemint.com/market/stock-market-news/angel-one-dividend-2026-check-amount-record-date-yield-history-returns-of-broking-stock-11792131987175.html",
+          "source": "Mint Markets",
+          "published": 1792138666.0
+        }
+      ],
+      "cluster_count": 1,
+      "impact_assets": [
+        "Rates",
+        "Equities"
+      ],
+      "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
+      "id": "4cce36ccb2c52cbb",
+      "title": "LTM dividend, Q2 results 2026 alert: ₹25 per share payout, net profit slips 5% QoQ; check record date",
+      "url": "https://www.livemint.com/companies/company-results/ltm-dividend-q2-results-2026-alert-rs-25-per-share-payout-net-profit-slips-5-qoq-check-record-date-11792159143506.html",
+      "published": 1792159288.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "Mint Companies",
+          "url": "https://www.livemint.com/companies/company-results/ltm-dividend-q2-results-2026-alert-rs-25-per-share-payout-net-profit-slips-5-qoq-check-record-date-11792159143506.html"
+        }
+      ],
+      "score": 3,
+      "summary": "LTM reported Q2 FY27 net profit of ₹1,397.9 crore, down 4.6% quarter-on-quarter, while revenue rose 13.6% year-on-year to ₹11,807.6 crore. The company declared an interim dividend of ₹25 per share, with October 23, 2026, set as the record date.",
       "category": "Earnings",
       "reason": "Compare results and guidance with expectations for the company and its sector.",
       "matched": [
@@ -1049,6 +1348,179 @@
       "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
       "impact_chain": null,
       "companies": []
+    },
+    {
+      "id": "d4f2e45d292200e2",
+      "title": "US stocks: S&P 500 muted as AI concerns hit chip stocks; bank gains lift Dow",
+      "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/us-stocks-wall-st-opens-muted-as-tech-jitters-linger-tesla-gains/articleshow/134996865.cms",
+      "published": 1792158327.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "ET Markets",
+          "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/us-stocks-wall-st-opens-muted-as-tech-jitters-linger-tesla-gains/articleshow/134996865.cms"
+        }
+      ],
+      "score": 3,
+      "summary": "The S&P 500 showed little movement as semiconductor stocks decreased due to AI-related concerns and market pressures. Gains in banking stocks such as Goldman Sachs and JPMorgan Chase helped offset broader losses on the index. Concerns about debts of companies like CoreWeave intensified following steep declines in AI stocks. Additionally, inflation ",
+      "category": "Market flows",
+      "reason": "Flows, currency and yields provide context for Indian equity risk appetite.",
+      "matched": [
+        "Market flows"
+      ],
+      "tier": "Watch",
+      "related": [],
+      "cluster_count": 1,
+      "impact_assets": [
+        "Equities"
+      ],
+      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
+      "id": "d788621e2466ed4a",
+      "title": "Tesla shares jump 4% in pre-market trade after unveiling redesigned flying Roadster with SpaceX tech",
+      "url": "https://www.livemint.com/market/stock-market-news/tesla-shares-jump-4-in-pre-market-trade-after-unveiling-redesigned-roadster-with-spacex-11792152389374.html",
+      "published": 1792154991.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "Mint Markets",
+          "url": "https://www.livemint.com/market/stock-market-news/tesla-shares-jump-4-in-pre-market-trade-after-unveiling-redesigned-roadster-with-spacex-11792152389374.html"
+        },
+        {
+          "name": "CNBC World",
+          "url": "https://www.cnbc.com/2026/10/15/tesla-roadster-reveal-what-to-know-about-the-delayed-ev.html"
+        }
+      ],
+      "score": 6,
+      "summary": "Tesla shares rose 4% after the company unveiled a redesigned Roadster featuring SpaceX-developed thrusters. A livestreamed demonstration showed the driverless car perform a mid-air barrel roll.",
+      "category": "Company move",
+      "reason": "A named company or share-price move may affect that stock and its peers.",
+      "matched": [
+        "Company move"
+      ],
+      "tier": "Must know",
+      "related": [
+        {
+          "title": "Tesla unveils long-delayed Roadster developed with SpaceX, fueling merger speculation",
+          "url": "https://www.cnbc.com/2026/10/15/tesla-roadster-reveal-what-to-know-about-the-delayed-ev.html",
+          "source": "CNBC World",
+          "published": 1792165961.0
+        }
+      ],
+      "cluster_count": 2,
+      "impact_assets": [
+        "Equities"
+      ],
+      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
+      "id": "21a6d083b64640a6",
+      "title": "Beyond the sell-off: What an MSCI downgrade threat could mean for Indonesia",
+      "url": "https://www.business-standard.com/markets/news/beyond-the-sell-off-what-an-msci-downgrade-threat-could-mean-for-indonesia-126101600530_1.html",
+      "published": 1792138293.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "Business Standard",
+          "url": "https://www.business-standard.com/markets/news/beyond-the-sell-off-what-an-msci-downgrade-threat-could-mean-for-indonesia-126101600530_1.html"
+        },
+        {
+          "name": "ET Markets",
+          "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/indonesia-stocks-rupiah-tumble-as-msci-weighs-market-downgrade/articleshow/134990424.cms"
+        }
+      ],
+      "score": 6,
+      "summary": "Indonesian stocks suffered a massive 11 per cent decline on Friday after MSCI threatened its \"emerging market status\", which could prompt massive foreign selloff from the Southeast Asian economy.",
+      "category": "Market flows",
+      "reason": "Flows, currency and yields provide context for Indian equity risk appetite.",
+      "matched": [
+        "Market flows"
+      ],
+      "tier": "Must know",
+      "related": [
+        {
+          "title": "Indonesia stocks, rupiah tumble as MSCI weighs market downgrade",
+          "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/indonesia-stocks-rupiah-tumble-as-msci-weighs-market-downgrade/articleshow/134990424.cms",
+          "source": "ET Markets",
+          "published": 1792144549.0
+        }
+      ],
+      "cluster_count": 2,
+      "impact_assets": [
+        "Equities"
+      ],
+      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
+      "id": "32a39cebd028d7e4",
+      "title": "Nifty IT soars 14% in 6 days on Q2 earnings boost; TechM, Wipro, TCS shine",
+      "url": "https://www.business-standard.com/markets/news/nifty-it-soars-14-in-6-days-on-q2-earnings-boost-techm-wipro-tcs-shine-126101600315_1.html",
+      "published": 1792129118.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "Business Standard",
+          "url": "https://www.business-standard.com/markets/news/nifty-it-soars-14-in-6-days-on-q2-earnings-boost-techm-wipro-tcs-shine-126101600315_1.html"
+        },
+        {
+          "name": "Mint Markets",
+          "url": "https://www.livemint.com/market/stock-market-news/worst-over-for-it-stocks-experts-analyse-q2-results-of-tcs-hcl-tech-mahindra-and-others-suggest-top-picks-11792149864702.html"
+        },
+        {
+          "name": "ET Markets",
+          "url": "https://economictimes.indiatimes.com/markets/stocks/news/market-wrap-tech-mahindra-tcs-interglobe-bse-top-gainers-and-losers-on-nifty-and-sensex-on-friday/articleshow/134992216.cms"
+        }
+      ],
+      "score": 8,
+      "summary": "At 10:12 AM on Friday, the Nifty IT index was the top sectoral gainer, up 2.8%. Tech Mahindra, Wipro, Infosys and TCS surged up to 7% amid Q2 earnings cheer.",
+      "category": "Earnings",
+      "reason": "Compare results and guidance with expectations for the company and its sector.",
+      "matched": [
+        "Earnings",
+        "Market flows"
+      ],
+      "tier": "Must know",
+      "related": [
+        {
+          "title": "Worst over for IT stocks? Experts analyse Q2 results of TCS, HCL, Tech Mahindra and others, suggest top picks",
+          "url": "https://www.livemint.com/market/stock-market-news/worst-over-for-it-stocks-experts-analyse-q2-results-of-tcs-hcl-tech-mahindra-and-others-suggest-top-picks-11792149864702.html",
+          "source": "Mint Markets",
+          "published": 1792151155.0
+        },
+        {
+          "title": "Market wrap: Tech Mahindra, TCS, InterGlobe, BSE top gainers and losers on Nifty and Sensex on Friday",
+          "url": "https://economictimes.indiatimes.com/markets/stocks/news/market-wrap-tech-mahindra-tcs-interglobe-bse-top-gainers-and-losers-on-nifty-and-sensex-on-friday/articleshow/134992216.cms",
+          "source": "ET Markets",
+          "published": 1792148663.0
+        }
+      ],
+      "cluster_count": 3,
+      "impact_assets": [
+        "Equities"
+      ],
+      "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
+      "impact_chain": null,
+      "companies": [
+        {
+          "name": "Wipro",
+          "symbol": "wipro"
+        },
+        {
+          "name": "TCS",
+          "symbol": "tcs"
+        }
+      ]
     },
     {
       "id": "7051a2189468dff9",
@@ -1141,229 +1613,6 @@
       "why_it_matters": "Directly shifts commercial bank cost of funds, repo borrowing rates, and rate-sensitive equity multiples (banks, real estate, auto).",
       "impact_chain": null,
       "companies": []
-    },
-    {
-      "id": "944f5775587814c4",
-      "title": "ICICI Bank Q2 Results Preview: PAT, NII may rise up to 21% YoY; margins, deposit growth in focus",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/earnings/icici-bank-q2-results-preview-pat-nii-may-rise-up-to-21-yoy-margins-deposit-growth-in-focus/articleshow/134988975.cms",
-      "published": 1792141671.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "ET Markets",
-          "url": "https://economictimes.indiatimes.com/markets/stocks/earnings/icici-bank-q2-results-preview-pat-nii-may-rise-up-to-21-yoy-margins-deposit-growth-in-focus/articleshow/134988975.cms"
-        },
-        {
-          "name": "Business Standard",
-          "url": "https://www.business-standard.com/markets/news/icici-bank-q2-preview-profit-may-rise-8-14-yoy-nim-likely-to-contract-126101600468_1.html"
-        },
-        {
-          "name": "Mint Markets",
-          "url": "https://www.livemint.com/market/stock-market-news/rs-30-dividend-icici-prudential-amc-dividend-record-date-ahead-check-yield-payout-history-stock-performance-other-d-11792168215358.html"
-        }
-      ],
-      "score": 8,
-      "summary": "ICICI Bank is expected to report 15.8-18% year-on-year growth in net interest income and 15-21% growth in profit after tax in Q2FY27, according to brokerage estimates. Investors will track net interest margins, loan and deposit growth, operating profitability and asset quality, with margin pressure and provisioning trends remaining key monitorables",
-      "category": "Earnings",
-      "reason": "Compare results and guidance with expectations for the company and its sector.",
-      "matched": [
-        "Earnings"
-      ],
-      "tier": "Must know",
-      "related": [
-        {
-          "title": "ICICI Bank Q2 Preview: Profit may rise 8-14% YoY, NIM likely to contract",
-          "url": "https://www.business-standard.com/markets/news/icici-bank-q2-preview-profit-may-rise-8-14-yoy-nim-likely-to-contract-126101600468_1.html",
-          "source": "Business Standard",
-          "published": 1792135534.0
-        },
-        {
-          "title": "₹30 dividend: ICICI Prudential AMC dividend record date ahead! Check yield, payout history, stock performance",
-          "url": "https://www.livemint.com/market/stock-market-news/rs-30-dividend-icici-prudential-amc-dividend-record-date-ahead-check-yield-payout-history-stock-performance-other-d-11792168215358.html",
-          "source": "Mint Markets",
-          "published": 1792168491.0
-        },
-        {
-          "title": "Already up 86% in 6 months, ICICI Direct still sees another 39% upside in this small-cap stock - Check target, rationale",
-          "url": "https://www.livemint.com/market/stock-market-news/already-up-86-in-6-months-icici-direct-still-sees-another-39-upside-in-this-small-cap-stock-check-target-rationale-11792142941201.html",
-          "source": "Mint Markets",
-          "published": 1792148005.0
-        },
-        {
-          "title": "31% rally in 2 weeks: Orient Electric share price surges post Q2 results - ICICI Sec sees 22% upside | Target price",
-          "url": "https://www.livemint.com/market/stock-market-news/31-rally-in-2-weeks-orient-electric-share-price-surges-post-q2-results-icici-sec-sees-22-upside-target-price-11792137011730.html",
-          "source": "Mint Markets",
-          "published": 1792140838.0
-        }
-      ],
-      "cluster_count": 3,
-      "impact_assets": [
-        "Equities"
-      ],
-      "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
-      "impact_chain": null,
-      "companies": [
-        {
-          "name": "ICICI Bank",
-          "symbol": "icici bank"
-        }
-      ]
-    },
-    {
-      "id": "32a39cebd028d7e4",
-      "title": "Nifty IT soars 14% in 6 days on Q2 earnings boost; TechM, Wipro, TCS shine",
-      "url": "https://www.business-standard.com/markets/news/nifty-it-soars-14-in-6-days-on-q2-earnings-boost-techm-wipro-tcs-shine-126101600315_1.html",
-      "published": 1792129118.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "Business Standard",
-          "url": "https://www.business-standard.com/markets/news/nifty-it-soars-14-in-6-days-on-q2-earnings-boost-techm-wipro-tcs-shine-126101600315_1.html"
-        },
-        {
-          "name": "Mint Markets",
-          "url": "https://www.livemint.com/market/stock-market-news/worst-over-for-it-stocks-experts-analyse-q2-results-of-tcs-hcl-tech-mahindra-and-others-suggest-top-picks-11792149864702.html"
-        },
-        {
-          "name": "ET Markets",
-          "url": "https://economictimes.indiatimes.com/markets/stocks/news/market-wrap-tech-mahindra-tcs-interglobe-bse-top-gainers-and-losers-on-nifty-and-sensex-on-friday/articleshow/134992216.cms"
-        }
-      ],
-      "score": 8,
-      "summary": "At 10:12 AM on Friday, the Nifty IT index was the top sectoral gainer, up 2.8%. Tech Mahindra, Wipro, Infosys and TCS surged up to 7% amid Q2 earnings cheer.",
-      "category": "Earnings",
-      "reason": "Compare results and guidance with expectations for the company and its sector.",
-      "matched": [
-        "Earnings",
-        "Market flows"
-      ],
-      "tier": "Must know",
-      "related": [
-        {
-          "title": "Worst over for IT stocks? Experts analyse Q2 results of TCS, HCL, Tech Mahindra and others, suggest top picks",
-          "url": "https://www.livemint.com/market/stock-market-news/worst-over-for-it-stocks-experts-analyse-q2-results-of-tcs-hcl-tech-mahindra-and-others-suggest-top-picks-11792149864702.html",
-          "source": "Mint Markets",
-          "published": 1792151155.0
-        },
-        {
-          "title": "Market wrap: Tech Mahindra, TCS, InterGlobe, BSE top gainers and losers on Nifty and Sensex on Friday",
-          "url": "https://economictimes.indiatimes.com/markets/stocks/news/market-wrap-tech-mahindra-tcs-interglobe-bse-top-gainers-and-losers-on-nifty-and-sensex-on-friday/articleshow/134992216.cms",
-          "source": "ET Markets",
-          "published": 1792148663.0
-        }
-      ],
-      "cluster_count": 3,
-      "impact_assets": [
-        "Equities"
-      ],
-      "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
-      "impact_chain": null,
-      "companies": [
-        {
-          "name": "Wipro",
-          "symbol": "wipro"
-        },
-        {
-          "name": "TCS",
-          "symbol": "tcs"
-        }
-      ]
-    },
-    {
-      "id": "765756d4445f66b6",
-      "title": "India's rupee forecast to weaken toward 100-per-dollar level even as RBI pushes back",
-      "url": "https://www.cnbc.com/2026/10/16/india-rupee-rbi-dollar-iran-war.html",
-      "published": 1792112065.0,
-      "region": "Global",
-      "official": false,
-      "sources": [
-        {
-          "name": "CNBC World",
-          "url": "https://www.cnbc.com/2026/10/16/india-rupee-rbi-dollar-iran-war.html"
-        },
-        {
-          "name": "ET Markets",
-          "url": "https://economictimes.indiatimes.com/markets/forex/forex-news/rupee-rises-1-9-in-a-week-closes-below-95-per-dollar/articleshow/134996292.cms"
-        }
-      ],
-      "score": 10,
-      "summary": "The RBI's latest moves have helped the rupee recover from 96.79 rupees per dollar to the 95-level over recent days.",
-      "category": "Monetary policy",
-      "reason": "This RBI action concerns currency-market liquidity or dollar demand; it is not a repo-rate decision.",
-      "matched": [
-        "Monetary policy",
-        "Market flows"
-      ],
-      "tier": "Must know",
-      "related": [
-        {
-          "title": "Rupee rises 1.9% in a week, closes below 95 per dollar",
-          "url": "https://economictimes.indiatimes.com/markets/forex/forex-news/rupee-rises-1-9-in-a-week-closes-below-95-per-dollar/articleshow/134996292.cms",
-          "source": "ET Markets",
-          "published": 1792156456.0
-        }
-      ],
-      "cluster_count": 2,
-      "impact_assets": [
-        "Rates",
-        "Equities",
-        "FX"
-      ],
-      "why_it_matters": "This RBI action concerns currency-market liquidity or dollar demand; it is not a repo-rate decision.",
-      "impact_chain": {
-        "rule": "INR_WEAK",
-        "catalyst": "Rupee Depreciation (USD/INR Rise)",
-        "tailwinds": [
-          "TCS",
-          "Infosys",
-          "Sun Pharma",
-          "Cipla"
-        ],
-        "headwinds": [
-          "Voltas",
-          "Dixon Tech",
-          "InterGlobe Aviation"
-        ],
-        "rationale": "Exporters billed in USD gain translation windfalls, while electronics importers face input cost spikes."
-      },
-      "companies": []
-    },
-    {
-      "id": "6e1da8572424fc78",
-      "title": "DLF Q2 profit rises to Rs 1,301 crore as luxury project sells out",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/earnings/dlf-q2-profit-rises-to-rs-1301-crore-as-luxury-project-sells-out/articleshow/134996827.cms",
-      "published": 1792158003.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "ET Markets",
-          "url": "https://economictimes.indiatimes.com/markets/stocks/earnings/dlf-q2-profit-rises-to-rs-1301-crore-as-luxury-project-sells-out/articleshow/134996827.cms"
-        }
-      ],
-      "score": 4,
-      "summary": "DLF reported a 11% year-on-year increase in July-September net profit to Rs 1,301 crore, with sales bookings reaching Rs 3,800 crore. Its Aureva luxury retirement project in Gurugram sold out, while the company maintained a strong net cash position.",
-      "category": "Earnings",
-      "reason": "Compare results and guidance with expectations for the company and its sector.",
-      "matched": [
-        "Earnings"
-      ],
-      "tier": "Watch",
-      "related": [],
-      "cluster_count": 1,
-      "impact_assets": [
-        "Equities"
-      ],
-      "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
-      "impact_chain": null,
-      "companies": [
-        {
-          "name": "DLF",
-          "symbol": "dlf"
-        }
-      ]
     },
     {
       "id": "bebf3e401cadab61",
@@ -1487,402 +1736,6 @@
       "companies": []
     },
     {
-      "id": "38cd6132a1f73245",
-      "title": "CNBC Daily Open: Warsh holds cards close on Fed policy, but inflation numbers may tip his hand",
-      "url": "https://www.cnbc.com/2026/10/16/cnbc-daily-open-warsh-holds-cards-close-on-fed-policy-but-inflation-numbers-may-tip-his-hand.html",
-      "published": 1792139515.0,
-      "region": "Global",
-      "official": false,
-      "sources": [
-        {
-          "name": "CNBC World",
-          "url": "https://www.cnbc.com/2026/10/16/cnbc-daily-open-warsh-holds-cards-close-on-fed-policy-but-inflation-numbers-may-tip-his-hand.html"
-        }
-      ],
-      "score": 7,
-      "summary": "Kevin Warsh offered markets few clues in his final public appearance before the central bank's October meeting.",
-      "category": "Monetary policy",
-      "reason": "Guides global liquidity dynamics, US Dollar Index (DXY) trajectory, and foreign institutional (FII) capital allocations.",
-      "matched": [
-        "Monetary policy",
-        "Economic data"
-      ],
-      "tier": "Must know",
-      "related": [],
-      "cluster_count": 1,
-      "impact_assets": [
-        "Rates",
-        "Equities"
-      ],
-      "why_it_matters": "Guides global liquidity dynamics, US Dollar Index (DXY) trajectory, and foreign institutional (FII) capital allocations.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "b7588e19f7b58fb4",
-      "title": "China Says Ready To Address Each Other's Concerns After Sitharaman Flags Trade Barriers",
-      "url": "https://www.ndtvprofit.com/economy/china-says-ready-to-address-each-others-concerns-after-sitharaman-flags-trade-barriers-12196871#publisher=newsstand",
-      "published": 1792172124.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "Zerodha Pulse",
-          "url": "https://www.ndtvprofit.com/economy/china-says-ready-to-address-each-others-concerns-after-sitharaman-flags-trade-barriers-12196871#publisher=newsstand"
-        },
-        {
-          "name": "ET Economy",
-          "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/china-says-ready-to-address-each-others-concerns-after-sitharaman-flags-trade-barriers/articleshow/134997260.cms"
-        }
-      ],
-      "score": 2,
-      "summary": "Sitharaman on Friday said the growing trade imbalance and persistent restrictions on market access for Indian products remained major concerns, despite years of engagement with Beijing.",
-      "category": "Other news",
-      "reason": "Key market catalyst driving market liquidity and session volatility.",
-      "matched": [],
-      "tier": "More",
-      "related": [
-        {
-          "title": "China says ready to address each other's concerns after Sitharaman flags trade barriers",
-          "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/china-says-ready-to-address-each-others-concerns-after-sitharaman-flags-trade-barriers/articleshow/134997260.cms",
-          "source": "ET Economy",
-          "published": 1792160539.0
-        }
-      ],
-      "cluster_count": 2,
-      "impact_assets": [
-        "Equities"
-      ],
-      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "79909298e89d99e1",
-      "title": "Oberoi Realty Q2 results, dividend 2026: Check amount, record date, yield, history, stock returns",
-      "url": "https://www.livemint.com/market/stock-market-news/rs-2-per-share-dividend-stock-do-you-own-this-real-estate-stock-check-record-date-to-qualify-for-cash-reward-11792158360275.html",
-      "published": 1792159892.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "Mint Markets",
-          "url": "https://www.livemint.com/market/stock-market-news/rs-2-per-share-dividend-stock-do-you-own-this-real-estate-stock-check-record-date-to-qualify-for-cash-reward-11792158360275.html"
-        }
-      ],
-      "score": 3,
-      "summary": "Oberoi Realty declared a second interim dividend of ₹2 per share for FY27, with October 23, 2026, set as the record date and payments beginning October 30. Q2 consolidated net profit edged up to ₹761.65 crore, while total income fell 6% year on year.",
-      "category": "Earnings",
-      "reason": "Compare results and guidance with expectations for the company and its sector.",
-      "matched": [
-        "Earnings"
-      ],
-      "tier": "Watch",
-      "related": [
-        {
-          "title": "Angel One Dividend 2026: Check amount, record date, yield, history, Q2 results of broking stock",
-          "url": "https://www.livemint.com/market/stock-market-news/angel-one-dividend-2026-check-amount-record-date-yield-history-returns-of-broking-stock-11792131987175.html",
-          "source": "Mint Markets",
-          "published": 1792138666.0
-        }
-      ],
-      "cluster_count": 1,
-      "impact_assets": [
-        "Rates",
-        "Equities"
-      ],
-      "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "4cce36ccb2c52cbb",
-      "title": "LTM dividend, Q2 results 2026 alert: ₹25 per share payout, net profit slips 5% QoQ; check record date",
-      "url": "https://www.livemint.com/companies/company-results/ltm-dividend-q2-results-2026-alert-rs-25-per-share-payout-net-profit-slips-5-qoq-check-record-date-11792159143506.html",
-      "published": 1792159288.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "Mint Companies",
-          "url": "https://www.livemint.com/companies/company-results/ltm-dividend-q2-results-2026-alert-rs-25-per-share-payout-net-profit-slips-5-qoq-check-record-date-11792159143506.html"
-        }
-      ],
-      "score": 3,
-      "summary": "LTM reported Q2 FY27 net profit of ₹1,397.9 crore, down 4.6% quarter-on-quarter, while revenue rose 13.6% year-on-year to ₹11,807.6 crore. The company declared an interim dividend of ₹25 per share, with October 23, 2026, set as the record date.",
-      "category": "Earnings",
-      "reason": "Compare results and guidance with expectations for the company and its sector.",
-      "matched": [
-        "Earnings"
-      ],
-      "tier": "Watch",
-      "related": [],
-      "cluster_count": 1,
-      "impact_assets": [
-        "Equities"
-      ],
-      "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "d4f2e45d292200e2",
-      "title": "US stocks: S&P 500 muted as AI concerns hit chip stocks; bank gains lift Dow",
-      "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/us-stocks-wall-st-opens-muted-as-tech-jitters-linger-tesla-gains/articleshow/134996865.cms",
-      "published": 1792158327.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "ET Markets",
-          "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/us-stocks-wall-st-opens-muted-as-tech-jitters-linger-tesla-gains/articleshow/134996865.cms"
-        }
-      ],
-      "score": 3,
-      "summary": "The S&P 500 showed little movement as semiconductor stocks decreased due to AI-related concerns and market pressures. Gains in banking stocks such as Goldman Sachs and JPMorgan Chase helped offset broader losses on the index. Concerns about debts of companies like CoreWeave intensified following steep declines in AI stocks. Additionally, inflation ",
-      "category": "Market flows",
-      "reason": "Flows, currency and yields provide context for Indian equity risk appetite.",
-      "matched": [
-        "Market flows"
-      ],
-      "tier": "Watch",
-      "related": [],
-      "cluster_count": 1,
-      "impact_assets": [
-        "Equities"
-      ],
-      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "ff04d63d7d3e28a9",
-      "title": "Pulse of the Street: Best week since April market puts recovery to the earnings test",
-      "url": "https://www.livemint.com/market/stock-market-news/pulse-of-the-street-best-week-since-april-puts-recovery-to-the-earnings-test-11792149779690.html",
-      "published": 1792153923.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "Mint Markets",
-          "url": "https://www.livemint.com/market/stock-market-news/pulse-of-the-street-best-week-since-april-puts-recovery-to-the-earnings-test-11792149779690.html"
-        }
-      ],
-      "score": 3,
-      "summary": "&nbsp;IT stocks and a firmer rupee powered the rebound, but smaller stocks lagged. Earnings trajectory, broader buying and any relief from expensive oil will determine whether the gains hold.",
-      "category": "Earnings",
-      "reason": "Compare results and guidance with expectations for the company and its sector.",
-      "matched": [
-        "Earnings"
-      ],
-      "tier": "Watch",
-      "related": [],
-      "cluster_count": 1,
-      "impact_assets": [
-        "Equities"
-      ],
-      "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "ef878e4080febb30",
-      "title": "India to reach 100 billion dollar of bilateral trade with Russia by 2030: Ambassador Vinay Kumar",
-      "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/india-to-reach-100-billion-dollar-of-bilateral-trade-with-russia-by-2030-ambassador-vinay-kumar/articleshow/134994562.cms",
-      "published": 1792152549.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "ET Economy",
-          "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/india-to-reach-100-billion-dollar-of-bilateral-trade-with-russia-by-2030-ambassador-vinay-kumar/articleshow/134994562.cms"
-        }
-      ],
-      "score": 3,
-      "summary": "India is pursuing negotiations for a Free Trade Agreement with the Eurasian Economic Union to increase exports. Indian Ambassador to Russia Vinay Kumar stated that bilateral trade is projected to reach USD 100 billion by 2030. The current trade turnover is reported at USD 38 billion for the first half of this year. Efforts are underway to diversify",
-      "category": "Market flows",
-      "reason": "Flows, currency and yields provide context for Indian equity risk appetite.",
-      "matched": [
-        "Market flows"
-      ],
-      "tier": "Watch",
-      "related": [],
-      "cluster_count": 1,
-      "impact_assets": [
-        "Equities",
-        "FX"
-      ],
-      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "54d717949cb6922f",
-      "title": "Nifty, Sensex investors alert! US bond yields remain above 5% - 5 ways this could impact your investments, portfolio",
-      "url": "https://www.livemint.com/market/stock-market-news/nifty-sensex-investors-alert-us-bond-yields-remain-above-5-5-ways-this-could-impact-your-investments-portfolio-11792147018152.html",
-      "published": 1792151492.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "Mint Markets",
-          "url": "https://www.livemint.com/market/stock-market-news/nifty-sensex-investors-alert-us-bond-yields-remain-above-5-5-ways-this-could-impact-your-investments-portfolio-11792147018152.html"
-        }
-      ],
-      "score": 3,
-      "summary": "US Treasury yields eased to 5.086% after reaching 5.33%, but analysts warned the decline may be temporary amid persistent inflation concerns. Prolonged high yields could pressure Indian stocks, bonds, and rupee, making diversification and regular portfolio reviews important.",
-      "category": "Market flows",
-      "reason": "Flows, currency and yields provide context for Indian equity risk appetite.",
-      "matched": [
-        "Market flows"
-      ],
-      "tier": "Watch",
-      "related": [],
-      "cluster_count": 1,
-      "impact_assets": [
-        "Rates",
-        "Equities"
-      ],
-      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "21a6d083b64640a6",
-      "title": "Beyond the sell-off: What an MSCI downgrade threat could mean for Indonesia",
-      "url": "https://www.business-standard.com/markets/news/beyond-the-sell-off-what-an-msci-downgrade-threat-could-mean-for-indonesia-126101600530_1.html",
-      "published": 1792138293.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "Business Standard",
-          "url": "https://www.business-standard.com/markets/news/beyond-the-sell-off-what-an-msci-downgrade-threat-could-mean-for-indonesia-126101600530_1.html"
-        },
-        {
-          "name": "ET Markets",
-          "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/indonesia-stocks-rupiah-tumble-as-msci-weighs-market-downgrade/articleshow/134990424.cms"
-        }
-      ],
-      "score": 6,
-      "summary": "Indonesian stocks suffered a massive 11 per cent decline on Friday after MSCI threatened its \"emerging market status\", which could prompt massive foreign selloff from the Southeast Asian economy.",
-      "category": "Market flows",
-      "reason": "Flows, currency and yields provide context for Indian equity risk appetite.",
-      "matched": [
-        "Market flows"
-      ],
-      "tier": "Must know",
-      "related": [
-        {
-          "title": "Indonesia stocks, rupiah tumble as MSCI weighs market downgrade",
-          "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/indonesia-stocks-rupiah-tumble-as-msci-weighs-market-downgrade/articleshow/134990424.cms",
-          "source": "ET Markets",
-          "published": 1792144549.0
-        }
-      ],
-      "cluster_count": 2,
-      "impact_assets": [
-        "Equities"
-      ],
-      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "177d1bf620d05e5f",
-      "title": "US Market: Fed's Goolsbee says latest US inflation data is discouraging",
-      "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/us-market-feds-goolsbee-says-latest-us-inflation-data-is-discouraging/articleshow/134985186.cms",
-      "published": 1792133385.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "ET Markets",
-          "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/us-market-feds-goolsbee-says-latest-us-inflation-data-is-discouraging/articleshow/134985186.cms"
-        }
-      ],
-      "score": 6,
-      "summary": "Federal Reserve Bank of Chicago President Austan Goolsbee called the latest US consumer and producer inflation data discouraging, raising concerns about persistent price pressures. While temporary factors such as tariffs and geopolitical conflicts could ease, he warned that demand driven by the rapid expansion of AI data centres could require a pol",
-      "category": "Monetary policy",
-      "reason": "Guides global liquidity dynamics, US Dollar Index (DXY) trajectory, and foreign institutional (FII) capital allocations.",
-      "matched": [
-        "Monetary policy",
-        "Economic data"
-      ],
-      "tier": "Must know",
-      "related": [],
-      "cluster_count": 1,
-      "impact_assets": [
-        "Rates",
-        "Equities"
-      ],
-      "why_it_matters": "Guides global liquidity dynamics, US Dollar Index (DXY) trajectory, and foreign institutional (FII) capital allocations.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "2b833946a47a4ee6",
-      "title": "US Market: Fed Chair Warsh offers no signal on October interest-rate decision",
-      "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/us-market-fed-chair-warsh-offers-no-signal-on-october-interest-rate-decision/articleshow/134984000.cms",
-      "published": 1792130081.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "ET Markets",
-          "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/us-market-fed-chair-warsh-offers-no-signal-on-october-interest-rate-decision/articleshow/134984000.cms"
-        }
-      ],
-      "score": 5,
-      "summary": "Federal Reserve Chair Kevin Warsh gave no signal on whether the US central bank would change interest rates at its October 27-28 meeting, reiterating its commitment to price stability. Markets await further clues from economic data and policymakers on the rate outlook.",
-      "category": "Monetary policy",
-      "reason": "Guides global liquidity dynamics, US Dollar Index (DXY) trajectory, and foreign institutional (FII) capital allocations.",
-      "matched": [
-        "Monetary policy"
-      ],
-      "tier": "Watch",
-      "related": [],
-      "cluster_count": 1,
-      "impact_assets": [
-        "Rates",
-        "Equities"
-      ],
-      "why_it_matters": "Guides global liquidity dynamics, US Dollar Index (DXY) trajectory, and foreign institutional (FII) capital allocations.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "e3758c3239407729",
-      "title": "New CAS rules decoded: What Sebi’s revised framework means for stock market traders",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/new-cas-rules-decoded-what-sebis-revised-framework-means-for-stock-market-traders/articleshow/134983183.cms",
-      "published": 1792127781.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "ET Markets",
-          "url": "https://economictimes.indiatimes.com/markets/stocks/news/new-cas-rules-decoded-what-sebis-revised-framework-means-for-stock-market-traders/articleshow/134983183.cms"
-        }
-      ],
-      "score": 5,
-      "summary": "Sebi has revised the Closing Auction Session (CAS) framework after receiving more than 20,000 comments from stakeholders. The updated rules introduce a 10-minute closing auction, restore the VWAP method for F&O expiry settlement prices and clarify order transfers. Most changes will take effect on December 7, 2026.",
-      "category": "Regulation",
-      "reason": "Check who is covered, whether it is proposed or final, and its effective date.",
-      "matched": [
-        "Regulation",
-        "Market flows"
-      ],
-      "tier": "Watch",
-      "related": [],
-      "cluster_count": 1,
-      "impact_assets": [
-        "Equities"
-      ],
-      "why_it_matters": "Alters market structure, compliance mandates, capital allocation rules, and retail derivative trading liquidity.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
       "id": "466eeee06540a25c",
       "title": "Stock to buy after SEBI CAS new rule: Experts bullish on Groww brand parent Billionbrains Garage Ventures shares; target",
       "url": "https://www.livemint.com/market/stock-market-news/stock-to-buy-after-sebi-cas-new-rule-experts-bullish-on-groww-brand-parent-billionbrains-garage-ventures-shares-target-11792143458424.html",
@@ -2000,6 +1853,659 @@
       ],
       "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
       "impact_chain": null,
+      "companies": []
+    },
+    {
+      "id": "177d1bf620d05e5f",
+      "title": "US Market: Fed's Goolsbee says latest US inflation data is discouraging",
+      "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/us-market-feds-goolsbee-says-latest-us-inflation-data-is-discouraging/articleshow/134985186.cms",
+      "published": 1792133385.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "ET Markets",
+          "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/us-market-feds-goolsbee-says-latest-us-inflation-data-is-discouraging/articleshow/134985186.cms"
+        }
+      ],
+      "score": 6,
+      "summary": "Federal Reserve Bank of Chicago President Austan Goolsbee called the latest US consumer and producer inflation data discouraging, raising concerns about persistent price pressures. While temporary factors such as tariffs and geopolitical conflicts could ease, he warned that demand driven by the rapid expansion of AI data centres could require a pol",
+      "category": "Monetary policy",
+      "reason": "Guides global liquidity dynamics, US Dollar Index (DXY) trajectory, and foreign institutional (FII) capital allocations.",
+      "matched": [
+        "Monetary policy",
+        "Economic data"
+      ],
+      "tier": "Must know",
+      "related": [],
+      "cluster_count": 1,
+      "impact_assets": [
+        "Rates",
+        "Equities"
+      ],
+      "why_it_matters": "Guides global liquidity dynamics, US Dollar Index (DXY) trajectory, and foreign institutional (FII) capital allocations.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
+      "id": "ff04d63d7d3e28a9",
+      "title": "Pulse of the Street: Best week since April market puts recovery to the earnings test",
+      "url": "https://www.livemint.com/market/stock-market-news/pulse-of-the-street-best-week-since-april-puts-recovery-to-the-earnings-test-11792149779690.html",
+      "published": 1792153923.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "Mint Markets",
+          "url": "https://www.livemint.com/market/stock-market-news/pulse-of-the-street-best-week-since-april-puts-recovery-to-the-earnings-test-11792149779690.html"
+        }
+      ],
+      "score": 3,
+      "summary": "&nbsp;IT stocks and a firmer rupee powered the rebound, but smaller stocks lagged. Earnings trajectory, broader buying and any relief from expensive oil will determine whether the gains hold.",
+      "category": "Earnings",
+      "reason": "Compare results and guidance with expectations for the company and its sector.",
+      "matched": [
+        "Earnings"
+      ],
+      "tier": "Watch",
+      "related": [],
+      "cluster_count": 1,
+      "impact_assets": [
+        "Equities"
+      ],
+      "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
+      "id": "ef878e4080febb30",
+      "title": "India to reach 100 billion dollar of bilateral trade with Russia by 2030: Ambassador Vinay Kumar",
+      "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/india-to-reach-100-billion-dollar-of-bilateral-trade-with-russia-by-2030-ambassador-vinay-kumar/articleshow/134994562.cms",
+      "published": 1792152549.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "ET Economy",
+          "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/india-to-reach-100-billion-dollar-of-bilateral-trade-with-russia-by-2030-ambassador-vinay-kumar/articleshow/134994562.cms"
+        }
+      ],
+      "score": 3,
+      "summary": "India is pursuing negotiations for a Free Trade Agreement with the Eurasian Economic Union to increase exports. Indian Ambassador to Russia Vinay Kumar stated that bilateral trade is projected to reach USD 100 billion by 2030. The current trade turnover is reported at USD 38 billion for the first half of this year. Efforts are underway to diversify",
+      "category": "Market flows",
+      "reason": "Flows, currency and yields provide context for Indian equity risk appetite.",
+      "matched": [
+        "Market flows"
+      ],
+      "tier": "Watch",
+      "related": [],
+      "cluster_count": 1,
+      "impact_assets": [
+        "Equities",
+        "FX"
+      ],
+      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
+      "id": "54d717949cb6922f",
+      "title": "Nifty, Sensex investors alert! US bond yields remain above 5% - 5 ways this could impact your investments, portfolio",
+      "url": "https://www.livemint.com/market/stock-market-news/nifty-sensex-investors-alert-us-bond-yields-remain-above-5-5-ways-this-could-impact-your-investments-portfolio-11792147018152.html",
+      "published": 1792151492.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "Mint Markets",
+          "url": "https://www.livemint.com/market/stock-market-news/nifty-sensex-investors-alert-us-bond-yields-remain-above-5-5-ways-this-could-impact-your-investments-portfolio-11792147018152.html"
+        }
+      ],
+      "score": 3,
+      "summary": "US Treasury yields eased to 5.086% after reaching 5.33%, but analysts warned the decline may be temporary amid persistent inflation concerns. Prolonged high yields could pressure Indian stocks, bonds, and rupee, making diversification and regular portfolio reviews important.",
+      "category": "Market flows",
+      "reason": "Flows, currency and yields provide context for Indian equity risk appetite.",
+      "matched": [
+        "Market flows"
+      ],
+      "tier": "Watch",
+      "related": [],
+      "cluster_count": 1,
+      "impact_assets": [
+        "Rates",
+        "Equities"
+      ],
+      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
+      "id": "e63c3f5fe487b052",
+      "title": "Rupee posts best week in seven months, fundamentals key for lasting turnaround",
+      "url": "https://economictimes.indiatimes.com/markets/forex/rupee-posts-best-week-in-seven-months-fundamentals-key-for-lasting-turnaround/articleshow/134991672.cms",
+      "published": 1792146891.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "ET Markets",
+          "url": "https://economictimes.indiatimes.com/markets/forex/rupee-posts-best-week-in-seven-months-fundamentals-key-for-lasting-turnaround/articleshow/134991672.cms"
+        }
+      ],
+      "score": 3,
+      "summary": "This week, the Indian rupee saw an impressive 2% increase, attributed to effective policy measures designed to alleviate short-term depreciation pressures. Despite the positive movement, analysts caution that a lasting recovery is contingent upon significant improvements in the overall economic landscape. Additionally, India's merchandise trade def",
+      "category": "Market flows",
+      "reason": "Flows, currency and yields provide context for Indian equity risk appetite.",
+      "matched": [
+        "Market flows"
+      ],
+      "tier": "Watch",
+      "related": [],
+      "cluster_count": 1,
+      "impact_assets": [
+        "Equities",
+        "FX"
+      ],
+      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
+      "id": "8eb5ec5b0dfb2861",
+      "title": "Yes Bank Q2 preview: Will strong profit, NII growth offer relief for investors amid AT-1 bond saga?",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/earnings/yes-bank-q2-preview-will-strong-profit-nii-growth-offer-relief-for-investors-amid-at-1-bond-saga/articleshow/134990515.cms",
+      "published": 1792144739.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "ET Markets",
+          "url": "https://economictimes.indiatimes.com/markets/stocks/earnings/yes-bank-q2-preview-will-strong-profit-nii-growth-offer-relief-for-investors-amid-at-1-bond-saga/articleshow/134990515.cms"
+        }
+      ],
+      "score": 3,
+      "summary": "Yes Bank is expected to post a 48% YoY jump in Q2 net profit to Rs 969 crore, driven by robust loan growth and higher NII. However, investor focus remains on the Supreme Court ruling invalidating its Rs 8,415 crore AT-1 bond write-off, which has pressured the stock.",
+      "category": "Earnings",
+      "reason": "Compare results and guidance with expectations for the company and its sector.",
+      "matched": [
+        "Earnings"
+      ],
+      "tier": "Watch",
+      "related": [],
+      "cluster_count": 1,
+      "impact_assets": [
+        "Rates",
+        "Equities"
+      ],
+      "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
+      "id": "7a0f74942145702d",
+      "title": "Global Market: European shares set for biggest weekly gain since August on earnings optimism",
+      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/global-market-european-shares-set-for-biggest-weekly-gain-since-august-on-earnings-optimism/articleshow/134990268.cms",
+      "published": 1792144180.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "ET Markets",
+          "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/global-market-european-shares-set-for-biggest-weekly-gain-since-august-on-earnings-optimism/articleshow/134990268.cms"
+        }
+      ],
+      "score": 3,
+      "summary": "European shares climbed on Friday, with the STOXX 600 heading for its strongest weekly gain since August, supported by robust corporate earnings and stabilising technology stocks. Industrial stocks led advances, while investors monitored eurozone inflation data, elevated oil prices and artificial intelligence spending concerns for clues on monetary",
+      "category": "Earnings",
+      "reason": "Compare results and guidance with expectations for the company and its sector.",
+      "matched": [
+        "Earnings"
+      ],
+      "tier": "Watch",
+      "related": [],
+      "cluster_count": 1,
+      "impact_assets": [
+        "Equities"
+      ],
+      "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
+      "id": "01c52e639e6d12ca",
+      "title": "TIPS Music zooms 10% to hit 52-wk high after Q2 nos, ₹6.50/share dividend",
+      "url": "https://www.business-standard.com/markets/news/tips-music-zooms-10-to-hit-52-wk-high-after-q2-nos-6-50-share-dividend-126101600665_1.html",
+      "published": 1792143196.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "Business Standard",
+          "url": "https://www.business-standard.com/markets/news/tips-music-zooms-10-to-hit-52-wk-high-after-q2-nos-6-50-share-dividend-126101600665_1.html"
+        }
+      ],
+      "score": 3,
+      "summary": "For the July-September quarter, TIPS Music reported a 23 per cent Y-o-Y increase in the profit after tax (PAT) at ₹65.5 crore.",
+      "category": "Earnings",
+      "reason": "Compare results and guidance with expectations for the company and its sector.",
+      "matched": [
+        "Earnings"
+      ],
+      "tier": "Watch",
+      "related": [],
+      "cluster_count": 1,
+      "impact_assets": [
+        "Equities"
+      ],
+      "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
+      "id": "4b0b3fd8ee7cbbcf",
+      "title": "Solara Active Pharma share price zooms 16% on Q2 turnaround; H1 net up 103x",
+      "url": "https://www.business-standard.com/markets/news/solara-active-pharma-share-price-zooms-16-on-q2-turnaround-h1-net-up-103x-126101600592_1.html",
+      "published": 1792140901.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "Business Standard",
+          "url": "https://www.business-standard.com/markets/news/solara-active-pharma-share-price-zooms-16-on-q2-turnaround-h1-net-up-103x-126101600592_1.html"
+        }
+      ],
+      "score": 3,
+      "summary": "Solara Active Pharma Sciences reported a consolidated net profit of ₹28.59 crore in Q2FY27 and ₹44.70 crore in H1FY27. It posted a loss of ₹9.29 crore in Q2FY26 and profit of ₹0.42 crore in H1FY26.",
+      "category": "Earnings",
+      "reason": "Compare results and guidance with expectations for the company and its sector.",
+      "matched": [
+        "Earnings"
+      ],
+      "tier": "Watch",
+      "related": [],
+      "cluster_count": 1,
+      "impact_assets": [
+        "Equities"
+      ],
+      "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
+      "id": "dc04f2049ab0276a",
+      "title": "India wants to promote rupee trade settlement to help partner facing hard currency shortage: FM Nirmala Sitharaman",
+      "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/india-wants-to-promote-rupee-trade-settlement-to-help-partner-facing-hard-currency-shortage-fm-nirmala-sitharaman/articleshow/134988388.cms",
+      "published": 1792140285.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "ET Economy",
+          "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/india-wants-to-promote-rupee-trade-settlement-to-help-partner-facing-hard-currency-shortage-fm-nirmala-sitharaman/articleshow/134988388.cms"
+        }
+      ],
+      "score": 3,
+      "summary": "Finance Minister Nirmala Sitharaman said India is promoting rupee and local-currency trade settlements to help countries facing hard-currency shortages continue importing essential goods. She said geopolitical tensions and economic downturns have pushed several nations into debt and balance-of-payments crises.",
+      "category": "Market flows",
+      "reason": "Flows, currency and yields provide context for Indian equity risk appetite.",
+      "matched": [
+        "Market flows"
+      ],
+      "tier": "Watch",
+      "related": [],
+      "cluster_count": 1,
+      "impact_assets": [
+        "Equities",
+        "FX"
+      ],
+      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
+      "id": "e6f6d295c9d36eae",
+      "title": "India's edible oil imports dip 7 pc to 15.44 lakh ton in Sep: SEA",
+      "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/indias-edible-oil-imports-dip-7-pc-to-15-44-lakh-ton-in-sep-sea/articleshow/134969298.cms",
+      "published": 1792071302.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "ET Economy",
+          "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/indias-edible-oil-imports-dip-7-pc-to-15-44-lakh-ton-in-sep-sea/articleshow/134969298.cms"
+        },
+        {
+          "name": "Business Standard",
+          "url": "https://www.business-standard.com/world-news/oil-edges-down-as-investors-weigh-possible-us-sanctions-on-shadow-fleet-126101600073_1.html"
+        }
+      ],
+      "score": 8,
+      "summary": "India's edible oil imports fell by 7 percent in September, totaling 15.44 lakh tonnes. The decline was attributed to a sharp decrease in crude sunflower oil shipments, which dropped significantly. However, total edible oil imports increased by 3 percent for the first eleven months of the oil year. Refined oil imports saw a notable decline, while cr",
+      "category": "Economic data",
+      "reason": "Compare the release with expectations; the surprise can affect rates and risk appetite.",
+      "matched": [
+        "Economic data",
+        "Energy & geopolitics"
+      ],
+      "tier": "Must know",
+      "related": [
+        {
+          "title": "Oil prices dip but head for weekly gains amid West Asia supply concerns",
+          "url": "https://www.business-standard.com/world-news/oil-edges-down-as-investors-weigh-possible-us-sanctions-on-shadow-fleet-126101600073_1.html",
+          "source": "Business Standard",
+          "published": 1792117403.0
+        }
+      ],
+      "cluster_count": 2,
+      "impact_assets": [
+        "Commodities"
+      ],
+      "why_it_matters": "Crude affects India’s import bill and energy-sensitive sectors; the headline does not establish a clear price direction.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
+      "id": "2b833946a47a4ee6",
+      "title": "US Market: Fed Chair Warsh offers no signal on October interest-rate decision",
+      "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/us-market-fed-chair-warsh-offers-no-signal-on-october-interest-rate-decision/articleshow/134984000.cms",
+      "published": 1792130081.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "ET Markets",
+          "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/us-market-fed-chair-warsh-offers-no-signal-on-october-interest-rate-decision/articleshow/134984000.cms"
+        }
+      ],
+      "score": 5,
+      "summary": "Federal Reserve Chair Kevin Warsh gave no signal on whether the US central bank would change interest rates at its October 27-28 meeting, reiterating its commitment to price stability. Markets await further clues from economic data and policymakers on the rate outlook.",
+      "category": "Monetary policy",
+      "reason": "Guides global liquidity dynamics, US Dollar Index (DXY) trajectory, and foreign institutional (FII) capital allocations.",
+      "matched": [
+        "Monetary policy"
+      ],
+      "tier": "Watch",
+      "related": [],
+      "cluster_count": 1,
+      "impact_assets": [
+        "Rates",
+        "Equities"
+      ],
+      "why_it_matters": "Guides global liquidity dynamics, US Dollar Index (DXY) trajectory, and foreign institutional (FII) capital allocations.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
+      "id": "e3758c3239407729",
+      "title": "New CAS rules decoded: What Sebi’s revised framework means for stock market traders",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/new-cas-rules-decoded-what-sebis-revised-framework-means-for-stock-market-traders/articleshow/134983183.cms",
+      "published": 1792127781.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "ET Markets",
+          "url": "https://economictimes.indiatimes.com/markets/stocks/news/new-cas-rules-decoded-what-sebis-revised-framework-means-for-stock-market-traders/articleshow/134983183.cms"
+        }
+      ],
+      "score": 5,
+      "summary": "Sebi has revised the Closing Auction Session (CAS) framework after receiving more than 20,000 comments from stakeholders. The updated rules introduce a 10-minute closing auction, restore the VWAP method for F&O expiry settlement prices and clarify order transfers. Most changes will take effect on December 7, 2026.",
+      "category": "Regulation",
+      "reason": "Check who is covered, whether it is proposed or final, and its effective date.",
+      "matched": [
+        "Regulation",
+        "Market flows"
+      ],
+      "tier": "Watch",
+      "related": [],
+      "cluster_count": 1,
+      "impact_assets": [
+        "Equities"
+      ],
+      "why_it_matters": "Alters market structure, compliance mandates, capital allocation rules, and retail derivative trading liquidity.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
+      "id": "b03bc5874316b3b2",
+      "title": "Nestle India shares tank 9% in 2 days as firm flags inflation risks in Q2",
+      "url": "https://www.business-standard.com/markets/news/nestle-india-shares-tank-9-in-2-days-as-firm-flags-inflation-risks-in-q2-126101600257_1.html",
+      "published": 1792126133.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "Business Standard",
+          "url": "https://www.business-standard.com/markets/news/nestle-india-shares-tank-9-in-2-days-as-firm-flags-inflation-risks-in-q2-126101600257_1.html"
+        }
+      ],
+      "score": 5,
+      "summary": "Analysts said that Nestle India's sales growth is expected to be optically lower in H2FY27 vs H1FY27, which is more due to the base effect and not led by any deterioration in the fundamentals.",
+      "category": "Economic data",
+      "reason": "Compare the release with expectations; the surprise can affect rates and risk appetite.",
+      "matched": [
+        "Economic data",
+        "Earnings"
+      ],
+      "tier": "Watch",
+      "related": [],
+      "cluster_count": 1,
+      "impact_assets": [
+        "Equities"
+      ],
+      "why_it_matters": "Key determinant of central bank interest rate paths; elevated prints restrict policy easing and compress real yields.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
+      "id": "3529523e257c008b",
+      "title": "Indian rice export prices hit over 1 year high on stronger rupee, crop supply concerns",
+      "url": "https://economictimes.indiatimes.com/news/economy/agriculture/indian-prices-hit-more-than-one-year-high-on-stronger-rupee-and-crop-supply-concerns/articleshow/134979972.cms",
+      "published": 1792116494.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "ET Economy",
+          "url": "https://economictimes.indiatimes.com/news/economy/agriculture/indian-prices-hit-more-than-one-year-high-on-stronger-rupee-and-crop-supply-concerns/articleshow/134979972.cms"
+        }
+      ],
+      "score": 5,
+      "summary": "Asian rice export prices have risen as Indian rates reach a one-year high amid supply concerns. Vietnamese prices are also increasing, expected to meet strong demand from the Philippines in November. Thailand's rice prices are climbing due to flooding delays and heightened purchasing activities before the season ends. In Bangladesh, rising paddy pr",
+      "category": "Economic data",
+      "reason": "Compare the release with expectations; the surprise can affect rates and risk appetite.",
+      "matched": [
+        "Economic data",
+        "Market flows"
+      ],
+      "tier": "Watch",
+      "related": [],
+      "cluster_count": 1,
+      "impact_assets": [
+        "FX"
+      ],
+      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
+      "id": "0625dfd1454527c7",
+      "title": "Gold vs silver vs platinum: Which metal saw biggest rally since last Dussehra? Experts explain outlook",
+      "url": "https://www.livemint.com/market/commodities/gold-vs-silver-vs-platinum-which-metal-saw-biggest-rally-since-last-dussehra-experts-explain-outlook-11792142307625.html",
+      "published": 1792147227.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "Mint Markets",
+          "url": "https://www.livemint.com/market/commodities/gold-vs-silver-vs-platinum-which-metal-saw-biggest-rally-since-last-dussehra-experts-explain-outlook-11792142307625.html"
+        },
+        {
+          "name": "Business Standard",
+          "url": "https://www.business-standard.com/markets/news/silver-outlook-bearish-may-fall-to-48-if-54-50-support-breaks-analyst-126101600371_1.html"
+        }
+      ],
+      "score": 2,
+      "summary": "Silver outperformed gold and platinum over the year to October 2026, gaining about 47% in rupee terms, compared with gold’s 26% and platinum’s 10.5%.&nbsp;",
+      "category": "Other news",
+      "reason": "Key market catalyst driving market liquidity and session volatility.",
+      "matched": [],
+      "tier": "More",
+      "related": [
+        {
+          "title": "Silver outlook bearish; may fall to $48 if $54.50 support breaks: Analyst",
+          "url": "https://www.business-standard.com/markets/news/silver-outlook-bearish-may-fall-to-48-if-54-50-support-breaks-analyst-126101600371_1.html",
+          "source": "Business Standard",
+          "published": 1792130889.0
+        }
+      ],
+      "cluster_count": 2,
+      "impact_assets": [
+        "Commodities"
+      ],
+      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
+      "impact_chain": {
+        "rule": "GOLD_RALLY",
+        "catalyst": "Gold / Bullion Surge",
+        "tailwinds": [
+          "Titan",
+          "Kalyan Jewellers",
+          "Senco Gold",
+          "Muthoot Finance"
+        ],
+        "headwinds": [],
+        "rationale": "Elevated bullion expands inventory valuation spreads and increases collateral value for gold loan lenders."
+      },
+      "companies": []
+    },
+    {
+      "id": "2f314f2a523a7538",
+      "title": "China's central bank to boost support for global investors in financial markets",
+      "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/chinas-central-bank-to-boost-support-for-global-investors-in-financial-markets/articleshow/134989432.cms",
+      "published": 1792142505.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "ET Markets",
+          "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/chinas-central-bank-to-boost-support-for-global-investors-in-financial-markets/articleshow/134989432.cms"
+        },
+        {
+          "name": "ET Economy",
+          "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/chinas-trade-barriers-biggest-hurdle-in-bilateral-ties-says-nirmala-sitharaman-flags-100-billion-trade-gap/articleshow/134982053.cms"
+        }
+      ],
+      "score": 2,
+      "summary": "China's central bank plans to improve access for global investors and issuers to its financial markets by strengthening cross-border financial connectivity, developing the offshore yuan market and promoting yuan-denominated bonds as globally recognised collateral.",
+      "category": "Other news",
+      "reason": "Key market catalyst driving market liquidity and session volatility.",
+      "matched": [],
+      "tier": "More",
+      "related": [
+        {
+          "title": "China's trade barriers biggest hurdle in bilateral ties, says Nirmala Sitharaman; flags $100 billion deficit",
+          "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/chinas-trade-barriers-biggest-hurdle-in-bilateral-ties-says-nirmala-sitharaman-flags-100-billion-trade-gap/articleshow/134982053.cms",
+          "source": "ET Economy",
+          "published": 1792123656.0
+        }
+      ],
+      "cluster_count": 2,
+      "impact_assets": [
+        "Equities"
+      ],
+      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
+      "id": "cb087440a0c082af",
+      "title": "Tech Mahindra dividend, bonus share 2026: Double delight for investors this Diwali | Should you buy ahead of record date",
+      "url": "https://www.livemint.com/market/stock-market-news/tech-mahindra-dividend-bonus-share-2026-double-delight-for-investors-this-diwali-should-you-buy-ahead-of-record-date-11792139485359.html",
+      "published": 1792141592.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "Mint Markets",
+          "url": "https://www.livemint.com/market/stock-market-news/tech-mahindra-dividend-bonus-share-2026-double-delight-for-investors-this-diwali-should-you-buy-ahead-of-record-date-11792139485359.html"
+        },
+        {
+          "name": "Mint Companies",
+          "url": "https://www.livemint.com/companies/company-results/wipro-tech-mahindra-quarterly-results-11792069655235.html"
+        }
+      ],
+      "score": 2,
+      "summary": "Tech Mahindra dividend, bonus share 2026: Tech Mahindra share price rallied as much as 8% , touching an intraday high of ₹1,979 per share on Friday after the announcement.",
+      "category": "Other news",
+      "reason": "Key market catalyst driving market liquidity and session volatility.",
+      "matched": [],
+      "tier": "More",
+      "related": [
+        {
+          "title": "Tech Mahindra maintains edge over Wipro in September quarter",
+          "url": "https://www.livemint.com/companies/company-results/wipro-tech-mahindra-quarterly-results-11792069655235.html",
+          "source": "Mint Companies",
+          "published": 1792079171.0
+        }
+      ],
+      "cluster_count": 2,
+      "impact_assets": [
+        "Equities"
+      ],
+      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
+      "impact_chain": null,
+      "companies": [
+        {
+          "name": "Tech Mahindra",
+          "symbol": "tech mahindra"
+        }
+      ]
+    },
+    {
+      "id": "5e90b6c083a9e235",
+      "title": "Rupee strengthens to 95.05 a dollar while forward premiums hit four-year high amid RBI measures",
+      "url": "https://economictimes.indiatimes.com/news/economy/indicators/rupee-strengthens-to-95-05-a-dollar-as-forward-premiums-hit-four-year-high-amid-rbi-measures/articleshow/134968902.cms",
+      "published": 1792069700.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "ET Economy",
+          "url": "https://economictimes.indiatimes.com/news/economy/indicators/rupee-strengthens-to-95-05-a-dollar-as-forward-premiums-hit-four-year-high-amid-rbi-measures/articleshow/134968902.cms"
+        }
+      ],
+      "score": 7,
+      "summary": "The rupee concluded the day on Thursday with a gain of 10 paise, reaching 95.05 against the dollar. This strengthening occurred as forward premiums climbed to levels not seen in more than four years, creating a climate of uncertainty. The Reserve Bank of India took actions that impacted substantial forex derivatives, elevating hedging expenses.",
+      "category": "Monetary policy",
+      "reason": "This RBI action concerns currency-market liquidity or dollar demand; it is not a repo-rate decision.",
+      "matched": [
+        "Monetary policy",
+        "Market flows"
+      ],
+      "tier": "Must know",
+      "related": [],
+      "cluster_count": 1,
+      "impact_assets": [
+        "Rates",
+        "Equities",
+        "FX"
+      ],
+      "why_it_matters": "This RBI action concerns currency-market liquidity or dollar demand; it is not a repo-rate decision.",
+      "impact_chain": {
+        "rule": "INR_STRONG",
+        "catalyst": "Rupee Appreciation",
+        "tailwinds": [
+          "Voltas",
+          "Havells",
+          "Dixon Tech"
+        ],
+        "headwinds": [
+          "TCS",
+          "Infosys",
+          "Wipro"
+        ],
+        "rationale": "Stronger INR lowers landed cost of imported components and electronics assemblies."
+      },
       "companies": []
     },
     {
@@ -2263,20 +2769,50 @@
       "companies": []
     },
     {
-      "id": "e63c3f5fe487b052",
-      "title": "Rupee posts best week in seven months, fundamentals key for lasting turnaround",
-      "url": "https://economictimes.indiatimes.com/markets/forex/rupee-posts-best-week-in-seven-months-fundamentals-key-for-lasting-turnaround/articleshow/134991672.cms",
-      "published": 1792146891.0,
+      "id": "919888cf8487b8b9",
+      "title": "Q2 impact: TechM shares gain 8% as analysts raise earnings estimate, target",
+      "url": "https://www.business-standard.com/markets/news/q2-impact-techm-shares-gain-5-as-analysts-raise-earnings-estimate-target-126101600185_1.html",
+      "published": 1792124123.0,
       "region": "India",
       "official": false,
       "sources": [
         {
-          "name": "ET Markets",
-          "url": "https://economictimes.indiatimes.com/markets/forex/rupee-posts-best-week-in-seven-months-fundamentals-key-for-lasting-turnaround/articleshow/134991672.cms"
+          "name": "Business Standard",
+          "url": "https://www.business-standard.com/markets/news/q2-impact-techm-shares-gain-5-as-analysts-raise-earnings-estimate-target-126101600185_1.html"
         }
       ],
-      "score": 3,
-      "summary": "This week, the Indian rupee saw an impressive 2% increase, attributed to effective policy measures designed to alleviate short-term depreciation pressures. Despite the positive movement, analysts caution that a lasting recovery is contingent upon significant improvements in the overall economic landscape. Additionally, India's merchandise trade def",
+      "score": 4,
+      "summary": "Tech Mahindra shares jumped 5 per cent and emerged as the top Sensex gainer after the Q2 results. SBI Securities said that it expects Tech Mahindra stock to outperform the broader IT sector and peers.",
+      "category": "Earnings",
+      "reason": "Compare results and guidance with expectations for the company and its sector.",
+      "matched": [
+        "Earnings"
+      ],
+      "tier": "Watch",
+      "related": [],
+      "cluster_count": 1,
+      "impact_assets": [
+        "Equities"
+      ],
+      "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
+      "id": "14152ab0910d8b00",
+      "title": "Asian stocks rebound after tech sell-off; Indonesia market plunges 11%",
+      "url": "https://www.business-standard.com/markets/news/asian-stocks-rebound-after-tech-sell-off-indonesia-market-plunges-11-126101600100_1.html",
+      "published": 1792121661.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "Business Standard",
+          "url": "https://www.business-standard.com/markets/news/asian-stocks-rebound-after-tech-sell-off-indonesia-market-plunges-11-126101600100_1.html"
+        }
+      ],
+      "score": 4,
+      "summary": "Japan's Nikkei and South Korea's KOSPI recover after steep losses as concerns over AI financing weigh on sentiment, while MSCI's move to downgrade Indonesia's market status triggers a sharp sell-off",
       "category": "Market flows",
       "reason": "Flows, currency and yields provide context for Indian equity risk appetite.",
       "matched": [
@@ -2286,149 +2822,27 @@
       "related": [],
       "cluster_count": 1,
       "impact_assets": [
-        "Equities",
-        "FX"
+        "Equities"
       ],
       "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
       "impact_chain": null,
       "companies": []
     },
     {
-      "id": "8eb5ec5b0dfb2861",
-      "title": "Yes Bank Q2 preview: Will strong profit, NII growth offer relief for investors amid AT-1 bond saga?",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/earnings/yes-bank-q2-preview-will-strong-profit-nii-growth-offer-relief-for-investors-amid-at-1-bond-saga/articleshow/134990515.cms",
-      "published": 1792144739.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "ET Markets",
-          "url": "https://economictimes.indiatimes.com/markets/stocks/earnings/yes-bank-q2-preview-will-strong-profit-nii-growth-offer-relief-for-investors-amid-at-1-bond-saga/articleshow/134990515.cms"
-        }
-      ],
-      "score": 3,
-      "summary": "Yes Bank is expected to post a 48% YoY jump in Q2 net profit to Rs 969 crore, driven by robust loan growth and higher NII. However, investor focus remains on the Supreme Court ruling invalidating its Rs 8,415 crore AT-1 bond write-off, which has pressured the stock.",
-      "category": "Earnings",
-      "reason": "Compare results and guidance with expectations for the company and its sector.",
-      "matched": [
-        "Earnings"
-      ],
-      "tier": "Watch",
-      "related": [],
-      "cluster_count": 1,
-      "impact_assets": [
-        "Rates",
-        "Equities"
-      ],
-      "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "7a0f74942145702d",
-      "title": "Global Market: European shares set for biggest weekly gain since August on earnings optimism",
-      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/global-market-european-shares-set-for-biggest-weekly-gain-since-august-on-earnings-optimism/articleshow/134990268.cms",
-      "published": 1792144180.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "ET Markets",
-          "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/global-market-european-shares-set-for-biggest-weekly-gain-since-august-on-earnings-optimism/articleshow/134990268.cms"
-        }
-      ],
-      "score": 3,
-      "summary": "European shares climbed on Friday, with the STOXX 600 heading for its strongest weekly gain since August, supported by robust corporate earnings and stabilising technology stocks. Industrial stocks led advances, while investors monitored eurozone inflation data, elevated oil prices and artificial intelligence spending concerns for clues on monetary",
-      "category": "Earnings",
-      "reason": "Compare results and guidance with expectations for the company and its sector.",
-      "matched": [
-        "Earnings"
-      ],
-      "tier": "Watch",
-      "related": [],
-      "cluster_count": 1,
-      "impact_assets": [
-        "Equities"
-      ],
-      "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "01c52e639e6d12ca",
-      "title": "TIPS Music zooms 10% to hit 52-wk high after Q2 nos, ₹6.50/share dividend",
-      "url": "https://www.business-standard.com/markets/news/tips-music-zooms-10-to-hit-52-wk-high-after-q2-nos-6-50-share-dividend-126101600665_1.html",
-      "published": 1792143196.0,
+      "id": "3524d8e386bc735e",
+      "title": "Stock Market Close: Sensex gains for 2nd day, rises 414 pts, Nifty at 23,146; IT index zooms 4%",
+      "url": "https://www.business-standard.com/markets/news/stock-market-live-october-16-nse-bse-sensex-today-nifty50-gift-nifty-crude-oil-prices-q2-results-ipo-today-126101600083_1.html",
+      "published": 1792117485.0,
       "region": "India",
       "official": false,
       "sources": [
         {
           "name": "Business Standard",
-          "url": "https://www.business-standard.com/markets/news/tips-music-zooms-10-to-hit-52-wk-high-after-q2-nos-6-50-share-dividend-126101600665_1.html"
+          "url": "https://www.business-standard.com/markets/news/stock-market-live-october-16-nse-bse-sensex-today-nifty50-gift-nifty-crude-oil-prices-q2-results-ipo-today-126101600083_1.html"
         }
       ],
-      "score": 3,
-      "summary": "For the July-September quarter, TIPS Music reported a 23 per cent Y-o-Y increase in the profit after tax (PAT) at ₹65.5 crore.",
-      "category": "Earnings",
-      "reason": "Compare results and guidance with expectations for the company and its sector.",
-      "matched": [
-        "Earnings"
-      ],
-      "tier": "Watch",
-      "related": [],
-      "cluster_count": 1,
-      "impact_assets": [
-        "Equities"
-      ],
-      "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "4b0b3fd8ee7cbbcf",
-      "title": "Solara Active Pharma share price zooms 16% on Q2 turnaround; H1 net up 103x",
-      "url": "https://www.business-standard.com/markets/news/solara-active-pharma-share-price-zooms-16-on-q2-turnaround-h1-net-up-103x-126101600592_1.html",
-      "published": 1792140901.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "Business Standard",
-          "url": "https://www.business-standard.com/markets/news/solara-active-pharma-share-price-zooms-16-on-q2-turnaround-h1-net-up-103x-126101600592_1.html"
-        }
-      ],
-      "score": 3,
-      "summary": "Solara Active Pharma Sciences reported a consolidated net profit of ₹28.59 crore in Q2FY27 and ₹44.70 crore in H1FY27. It posted a loss of ₹9.29 crore in Q2FY26 and profit of ₹0.42 crore in H1FY26.",
-      "category": "Earnings",
-      "reason": "Compare results and guidance with expectations for the company and its sector.",
-      "matched": [
-        "Earnings"
-      ],
-      "tier": "Watch",
-      "related": [],
-      "cluster_count": 1,
-      "impact_assets": [
-        "Equities"
-      ],
-      "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "dc04f2049ab0276a",
-      "title": "India wants to promote rupee trade settlement to help partner facing hard currency shortage: FM Nirmala Sitharaman",
-      "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/india-wants-to-promote-rupee-trade-settlement-to-help-partner-facing-hard-currency-shortage-fm-nirmala-sitharaman/articleshow/134988388.cms",
-      "published": 1792140285.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "ET Economy",
-          "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/india-wants-to-promote-rupee-trade-settlement-to-help-partner-facing-hard-currency-shortage-fm-nirmala-sitharaman/articleshow/134988388.cms"
-        }
-      ],
-      "score": 3,
-      "summary": "Finance Minister Nirmala Sitharaman said India is promoting rupee and local-currency trade settlements to help countries facing hard-currency shortages continue importing essential goods. She said geopolitical tensions and economic downturns have pushed several nations into debt and balance-of-payments crises.",
+      "score": 4,
+      "summary": "Sensex Today | Stock Market Highlights, Friday: In the broader markets, the Nifty MidCap and the Nifty SmallCap fell 0.11 per cent and 0.01 per cent, respectively",
       "category": "Market flows",
       "reason": "Flows, currency and yields provide context for Indian equity risk appetite.",
       "matched": [
@@ -2438,40 +2852,39 @@
       "related": [],
       "cluster_count": 1,
       "impact_assets": [
-        "Equities",
-        "FX"
+        "Equities"
       ],
       "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
       "impact_chain": null,
       "companies": []
     },
     {
-      "id": "7939d68854c47392",
-      "title": "Polycab India’s Q2 is robust even as competition heats up",
-      "url": "https://www.livemint.com/market/mark-to-market/polycab-q2-result-polycab-share-price-polycab-vs-ultratech-ultravolt-wires-11792135242997.html",
-      "published": 1792137650.0,
+      "id": "aee8fce16654c147",
+      "title": "Confirmatory order in the matter of Rajesh Exports Limited",
+      "url": "https://www.sebi.gov.in/enforcement/orders/oct-2026/confirmatory-order-in-the-matter-of-rajesh-exports-limited_105261.html",
+      "published": null,
       "region": "India",
-      "official": false,
+      "official": true,
       "sources": [
         {
-          "name": "Mint Markets",
-          "url": "https://www.livemint.com/market/mark-to-market/polycab-q2-result-polycab-share-price-polycab-vs-ultratech-ultravolt-wires-11792135242997.html"
+          "name": "SEBI",
+          "url": "https://www.sebi.gov.in/enforcement/orders/oct-2026/confirmatory-order-in-the-matter-of-rajesh-exports-limited_105261.html"
         }
       ],
-      "score": 3,
-      "summary": "Polycab's brand and scale provide competitive advantages, but pricing behaviour, capacity additions, and the pace of market share gains should be monitored closely",
-      "category": "Earnings",
-      "reason": "Compare results and guidance with expectations for the company and its sector.",
+      "score": 6,
+      "summary": "Confirmatory order in the matter of Rajesh Exports Limited",
+      "category": "Economic data",
+      "reason": "Compare the release with expectations; the surprise can affect rates and risk appetite.",
       "matched": [
-        "Earnings"
+        "Economic data"
       ],
-      "tier": "Watch",
+      "tier": "Must know",
       "related": [],
       "cluster_count": 1,
       "impact_assets": [
         "Equities"
       ],
-      "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
+      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
       "impact_chain": null,
       "companies": []
     },
@@ -2608,449 +3021,6 @@
         "Equities"
       ],
       "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "e6f6d295c9d36eae",
-      "title": "India's edible oil imports dip 7 pc to 15.44 lakh ton in Sep: SEA",
-      "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/indias-edible-oil-imports-dip-7-pc-to-15-44-lakh-ton-in-sep-sea/articleshow/134969298.cms",
-      "published": 1792071302.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "ET Economy",
-          "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/indias-edible-oil-imports-dip-7-pc-to-15-44-lakh-ton-in-sep-sea/articleshow/134969298.cms"
-        },
-        {
-          "name": "Business Standard",
-          "url": "https://www.business-standard.com/world-news/oil-edges-down-as-investors-weigh-possible-us-sanctions-on-shadow-fleet-126101600073_1.html"
-        }
-      ],
-      "score": 8,
-      "summary": "India's edible oil imports fell by 7 percent in September, totaling 15.44 lakh tonnes. The decline was attributed to a sharp decrease in crude sunflower oil shipments, which dropped significantly. However, total edible oil imports increased by 3 percent for the first eleven months of the oil year. Refined oil imports saw a notable decline, while cr",
-      "category": "Economic data",
-      "reason": "Compare the release with expectations; the surprise can affect rates and risk appetite.",
-      "matched": [
-        "Economic data",
-        "Energy & geopolitics"
-      ],
-      "tier": "Must know",
-      "related": [
-        {
-          "title": "Oil prices dip but head for weekly gains amid West Asia supply concerns",
-          "url": "https://www.business-standard.com/world-news/oil-edges-down-as-investors-weigh-possible-us-sanctions-on-shadow-fleet-126101600073_1.html",
-          "source": "Business Standard",
-          "published": 1792117403.0
-        }
-      ],
-      "cluster_count": 2,
-      "impact_assets": [
-        "Commodities"
-      ],
-      "why_it_matters": "Crude affects India’s import bill and energy-sensitive sectors; the headline does not establish a clear price direction.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "b03bc5874316b3b2",
-      "title": "Nestle India shares tank 9% in 2 days as firm flags inflation risks in Q2",
-      "url": "https://www.business-standard.com/markets/news/nestle-india-shares-tank-9-in-2-days-as-firm-flags-inflation-risks-in-q2-126101600257_1.html",
-      "published": 1792126133.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "Business Standard",
-          "url": "https://www.business-standard.com/markets/news/nestle-india-shares-tank-9-in-2-days-as-firm-flags-inflation-risks-in-q2-126101600257_1.html"
-        }
-      ],
-      "score": 5,
-      "summary": "Analysts said that Nestle India's sales growth is expected to be optically lower in H2FY27 vs H1FY27, which is more due to the base effect and not led by any deterioration in the fundamentals.",
-      "category": "Economic data",
-      "reason": "Compare the release with expectations; the surprise can affect rates and risk appetite.",
-      "matched": [
-        "Economic data",
-        "Earnings"
-      ],
-      "tier": "Watch",
-      "related": [],
-      "cluster_count": 1,
-      "impact_assets": [
-        "Equities"
-      ],
-      "why_it_matters": "Key determinant of central bank interest rate paths; elevated prints restrict policy easing and compress real yields.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "3529523e257c008b",
-      "title": "Indian rice export prices hit over 1 year high on stronger rupee, crop supply concerns",
-      "url": "https://economictimes.indiatimes.com/news/economy/agriculture/indian-prices-hit-more-than-one-year-high-on-stronger-rupee-and-crop-supply-concerns/articleshow/134979972.cms",
-      "published": 1792116494.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "ET Economy",
-          "url": "https://economictimes.indiatimes.com/news/economy/agriculture/indian-prices-hit-more-than-one-year-high-on-stronger-rupee-and-crop-supply-concerns/articleshow/134979972.cms"
-        }
-      ],
-      "score": 5,
-      "summary": "Asian rice export prices have risen as Indian rates reach a one-year high amid supply concerns. Vietnamese prices are also increasing, expected to meet strong demand from the Philippines in November. Thailand's rice prices are climbing due to flooding delays and heightened purchasing activities before the season ends. In Bangladesh, rising paddy pr",
-      "category": "Economic data",
-      "reason": "Compare the release with expectations; the surprise can affect rates and risk appetite.",
-      "matched": [
-        "Economic data",
-        "Market flows"
-      ],
-      "tier": "Watch",
-      "related": [],
-      "cluster_count": 1,
-      "impact_assets": [
-        "FX"
-      ],
-      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "0625dfd1454527c7",
-      "title": "Gold vs silver vs platinum: Which metal saw biggest rally since last Dussehra? Experts explain outlook",
-      "url": "https://www.livemint.com/market/commodities/gold-vs-silver-vs-platinum-which-metal-saw-biggest-rally-since-last-dussehra-experts-explain-outlook-11792142307625.html",
-      "published": 1792147227.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "Mint Markets",
-          "url": "https://www.livemint.com/market/commodities/gold-vs-silver-vs-platinum-which-metal-saw-biggest-rally-since-last-dussehra-experts-explain-outlook-11792142307625.html"
-        },
-        {
-          "name": "Business Standard",
-          "url": "https://www.business-standard.com/markets/news/silver-outlook-bearish-may-fall-to-48-if-54-50-support-breaks-analyst-126101600371_1.html"
-        }
-      ],
-      "score": 2,
-      "summary": "Silver outperformed gold and platinum over the year to October 2026, gaining about 47% in rupee terms, compared with gold’s 26% and platinum’s 10.5%.&nbsp;",
-      "category": "Other news",
-      "reason": "Key market catalyst driving market liquidity and session volatility.",
-      "matched": [],
-      "tier": "More",
-      "related": [
-        {
-          "title": "Silver outlook bearish; may fall to $48 if $54.50 support breaks: Analyst",
-          "url": "https://www.business-standard.com/markets/news/silver-outlook-bearish-may-fall-to-48-if-54-50-support-breaks-analyst-126101600371_1.html",
-          "source": "Business Standard",
-          "published": 1792130889.0
-        }
-      ],
-      "cluster_count": 2,
-      "impact_assets": [
-        "Commodities"
-      ],
-      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
-      "impact_chain": {
-        "rule": "GOLD_RALLY",
-        "catalyst": "Gold / Bullion Surge",
-        "tailwinds": [
-          "Titan",
-          "Kalyan Jewellers",
-          "Senco Gold",
-          "Muthoot Finance"
-        ],
-        "headwinds": [],
-        "rationale": "Elevated bullion expands inventory valuation spreads and increases collateral value for gold loan lenders."
-      },
-      "companies": []
-    },
-    {
-      "id": "2f314f2a523a7538",
-      "title": "China's central bank to boost support for global investors in financial markets",
-      "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/chinas-central-bank-to-boost-support-for-global-investors-in-financial-markets/articleshow/134989432.cms",
-      "published": 1792142505.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "ET Markets",
-          "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/chinas-central-bank-to-boost-support-for-global-investors-in-financial-markets/articleshow/134989432.cms"
-        },
-        {
-          "name": "ET Economy",
-          "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/chinas-trade-barriers-biggest-hurdle-in-bilateral-ties-says-nirmala-sitharaman-flags-100-billion-trade-gap/articleshow/134982053.cms"
-        }
-      ],
-      "score": 2,
-      "summary": "China's central bank plans to improve access for global investors and issuers to its financial markets by strengthening cross-border financial connectivity, developing the offshore yuan market and promoting yuan-denominated bonds as globally recognised collateral.",
-      "category": "Other news",
-      "reason": "Key market catalyst driving market liquidity and session volatility.",
-      "matched": [],
-      "tier": "More",
-      "related": [
-        {
-          "title": "China's trade barriers biggest hurdle in bilateral ties, says Nirmala Sitharaman; flags $100 billion deficit",
-          "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/chinas-trade-barriers-biggest-hurdle-in-bilateral-ties-says-nirmala-sitharaman-flags-100-billion-trade-gap/articleshow/134982053.cms",
-          "source": "ET Economy",
-          "published": 1792123656.0
-        }
-      ],
-      "cluster_count": 2,
-      "impact_assets": [
-        "Equities"
-      ],
-      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "cb087440a0c082af",
-      "title": "Tech Mahindra dividend, bonus share 2026: Double delight for investors this Diwali | Should you buy ahead of record date",
-      "url": "https://www.livemint.com/market/stock-market-news/tech-mahindra-dividend-bonus-share-2026-double-delight-for-investors-this-diwali-should-you-buy-ahead-of-record-date-11792139485359.html",
-      "published": 1792141592.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "Mint Markets",
-          "url": "https://www.livemint.com/market/stock-market-news/tech-mahindra-dividend-bonus-share-2026-double-delight-for-investors-this-diwali-should-you-buy-ahead-of-record-date-11792139485359.html"
-        },
-        {
-          "name": "Mint Companies",
-          "url": "https://www.livemint.com/companies/company-results/wipro-tech-mahindra-quarterly-results-11792069655235.html"
-        }
-      ],
-      "score": 2,
-      "summary": "Tech Mahindra dividend, bonus share 2026: Tech Mahindra share price rallied as much as 8% , touching an intraday high of ₹1,979 per share on Friday after the announcement.",
-      "category": "Other news",
-      "reason": "Key market catalyst driving market liquidity and session volatility.",
-      "matched": [],
-      "tier": "More",
-      "related": [
-        {
-          "title": "Tech Mahindra maintains edge over Wipro in September quarter",
-          "url": "https://www.livemint.com/companies/company-results/wipro-tech-mahindra-quarterly-results-11792069655235.html",
-          "source": "Mint Companies",
-          "published": 1792079171.0
-        }
-      ],
-      "cluster_count": 2,
-      "impact_assets": [
-        "Equities"
-      ],
-      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
-      "impact_chain": null,
-      "companies": [
-        {
-          "name": "Tech Mahindra",
-          "symbol": "tech mahindra"
-        }
-      ]
-    },
-    {
-      "id": "a82eafee20bddbf2",
-      "title": "Senco, PC Jeweller zoom up to 17%; why are gold-related stocks dazzling?",
-      "url": "https://www.business-standard.com/markets/news/senco-pc-jeweller-shares-surge-up-to-17-why-are-gold-stocks-rallying-on-friday-126101600417_1.html",
-      "published": 1792134553.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "Business Standard",
-          "url": "https://www.business-standard.com/markets/news/senco-pc-jeweller-shares-surge-up-to-17-why-are-gold-stocks-rallying-on-friday-126101600417_1.html"
-        },
-        {
-          "name": "ET Markets",
-          "url": "https://economictimes.indiatimes.com/markets/stocks/news/shanti-gold-pc-jeweller-other-jewellery-stocks-rally-up-to-10-as-gold-etf-fof-subscriptions-face-curbs/articleshow/134983846.cms"
-        }
-      ],
-      "score": 2,
-      "summary": "In Q2FY27, demand remained healthy despite the elevated gold price (up 28% YoY) supported by festive demand, premiumisation and continued market share gains by organised players, analysts said.",
-      "category": "Other news",
-      "reason": "Key market catalyst driving market liquidity and session volatility.",
-      "matched": [],
-      "tier": "More",
-      "related": [
-        {
-          "title": "PC Jeweller, Shanti Gold & other jewellery stocks rally up to 10%. Here's why",
-          "url": "https://economictimes.indiatimes.com/markets/stocks/news/shanti-gold-pc-jeweller-other-jewellery-stocks-rally-up-to-10-as-gold-etf-fof-subscriptions-face-curbs/articleshow/134983846.cms",
-          "source": "ET Markets",
-          "published": 1792129797.0
-        }
-      ],
-      "cluster_count": 2,
-      "impact_assets": [
-        "Commodities"
-      ],
-      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "5e90b6c083a9e235",
-      "title": "Rupee strengthens to 95.05 a dollar while forward premiums hit four-year high amid RBI measures",
-      "url": "https://economictimes.indiatimes.com/news/economy/indicators/rupee-strengthens-to-95-05-a-dollar-as-forward-premiums-hit-four-year-high-amid-rbi-measures/articleshow/134968902.cms",
-      "published": 1792069700.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "ET Economy",
-          "url": "https://economictimes.indiatimes.com/news/economy/indicators/rupee-strengthens-to-95-05-a-dollar-as-forward-premiums-hit-four-year-high-amid-rbi-measures/articleshow/134968902.cms"
-        }
-      ],
-      "score": 7,
-      "summary": "The rupee concluded the day on Thursday with a gain of 10 paise, reaching 95.05 against the dollar. This strengthening occurred as forward premiums climbed to levels not seen in more than four years, creating a climate of uncertainty. The Reserve Bank of India took actions that impacted substantial forex derivatives, elevating hedging expenses.",
-      "category": "Monetary policy",
-      "reason": "This RBI action concerns currency-market liquidity or dollar demand; it is not a repo-rate decision.",
-      "matched": [
-        "Monetary policy",
-        "Market flows"
-      ],
-      "tier": "Must know",
-      "related": [],
-      "cluster_count": 1,
-      "impact_assets": [
-        "Rates",
-        "Equities",
-        "FX"
-      ],
-      "why_it_matters": "This RBI action concerns currency-market liquidity or dollar demand; it is not a repo-rate decision.",
-      "impact_chain": {
-        "rule": "INR_STRONG",
-        "catalyst": "Rupee Appreciation",
-        "tailwinds": [
-          "Voltas",
-          "Havells",
-          "Dixon Tech"
-        ],
-        "headwinds": [
-          "TCS",
-          "Infosys",
-          "Wipro"
-        ],
-        "rationale": "Stronger INR lowers landed cost of imported components and electronics assemblies."
-      },
-      "companies": []
-    },
-    {
-      "id": "919888cf8487b8b9",
-      "title": "Q2 impact: TechM shares gain 8% as analysts raise earnings estimate, target",
-      "url": "https://www.business-standard.com/markets/news/q2-impact-techm-shares-gain-5-as-analysts-raise-earnings-estimate-target-126101600185_1.html",
-      "published": 1792124123.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "Business Standard",
-          "url": "https://www.business-standard.com/markets/news/q2-impact-techm-shares-gain-5-as-analysts-raise-earnings-estimate-target-126101600185_1.html"
-        }
-      ],
-      "score": 4,
-      "summary": "Tech Mahindra shares jumped 5 per cent and emerged as the top Sensex gainer after the Q2 results. SBI Securities said that it expects Tech Mahindra stock to outperform the broader IT sector and peers.",
-      "category": "Earnings",
-      "reason": "Compare results and guidance with expectations for the company and its sector.",
-      "matched": [
-        "Earnings"
-      ],
-      "tier": "Watch",
-      "related": [],
-      "cluster_count": 1,
-      "impact_assets": [
-        "Equities"
-      ],
-      "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "14152ab0910d8b00",
-      "title": "Asian stocks rebound after tech sell-off; Indonesia market plunges 11%",
-      "url": "https://www.business-standard.com/markets/news/asian-stocks-rebound-after-tech-sell-off-indonesia-market-plunges-11-126101600100_1.html",
-      "published": 1792121661.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "Business Standard",
-          "url": "https://www.business-standard.com/markets/news/asian-stocks-rebound-after-tech-sell-off-indonesia-market-plunges-11-126101600100_1.html"
-        }
-      ],
-      "score": 4,
-      "summary": "Japan's Nikkei and South Korea's KOSPI recover after steep losses as concerns over AI financing weigh on sentiment, while MSCI's move to downgrade Indonesia's market status triggers a sharp sell-off",
-      "category": "Market flows",
-      "reason": "Flows, currency and yields provide context for Indian equity risk appetite.",
-      "matched": [
-        "Market flows"
-      ],
-      "tier": "Watch",
-      "related": [],
-      "cluster_count": 1,
-      "impact_assets": [
-        "Equities"
-      ],
-      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "3524d8e386bc735e",
-      "title": "Stock Market Close: Sensex gains for 2nd day, rises 414 pts, Nifty at 23,146; IT index zooms 4%",
-      "url": "https://www.business-standard.com/markets/news/stock-market-live-october-16-nse-bse-sensex-today-nifty50-gift-nifty-crude-oil-prices-q2-results-ipo-today-126101600083_1.html",
-      "published": 1792117485.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "Business Standard",
-          "url": "https://www.business-standard.com/markets/news/stock-market-live-october-16-nse-bse-sensex-today-nifty50-gift-nifty-crude-oil-prices-q2-results-ipo-today-126101600083_1.html"
-        }
-      ],
-      "score": 4,
-      "summary": "Sensex Today | Stock Market Highlights, Friday: In the broader markets, the Nifty MidCap and the Nifty SmallCap fell 0.11 per cent and 0.01 per cent, respectively",
-      "category": "Market flows",
-      "reason": "Flows, currency and yields provide context for Indian equity risk appetite.",
-      "matched": [
-        "Market flows"
-      ],
-      "tier": "Watch",
-      "related": [],
-      "cluster_count": 1,
-      "impact_assets": [
-        "Equities"
-      ],
-      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "aee8fce16654c147",
-      "title": "Confirmatory order in the matter of Rajesh Exports Limited",
-      "url": "https://www.sebi.gov.in/enforcement/orders/oct-2026/confirmatory-order-in-the-matter-of-rajesh-exports-limited_105261.html",
-      "published": null,
-      "region": "India",
-      "official": true,
-      "sources": [
-        {
-          "name": "SEBI",
-          "url": "https://www.sebi.gov.in/enforcement/orders/oct-2026/confirmatory-order-in-the-matter-of-rajesh-exports-limited_105261.html"
-        }
-      ],
-      "score": 6,
-      "summary": "Confirmatory order in the matter of Rajesh Exports Limited",
-      "category": "Economic data",
-      "reason": "Compare the release with expectations; the surprise can affect rates and risk appetite.",
-      "matched": [
-        "Economic data"
-      ],
-      "tier": "Must know",
-      "related": [],
-      "cluster_count": 1,
-      "impact_assets": [
-        "Equities"
-      ],
-      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
       "impact_chain": null,
       "companies": []
     },
@@ -3316,6 +3286,45 @@
       "companies": []
     },
     {
+      "id": "a82eafee20bddbf2",
+      "title": "Senco, PC Jeweller zoom up to 17%; why are gold-related stocks dazzling?",
+      "url": "https://www.business-standard.com/markets/news/senco-pc-jeweller-shares-surge-up-to-17-why-are-gold-stocks-rallying-on-friday-126101600417_1.html",
+      "published": 1792134553.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "Business Standard",
+          "url": "https://www.business-standard.com/markets/news/senco-pc-jeweller-shares-surge-up-to-17-why-are-gold-stocks-rallying-on-friday-126101600417_1.html"
+        },
+        {
+          "name": "ET Markets",
+          "url": "https://economictimes.indiatimes.com/markets/stocks/news/shanti-gold-pc-jeweller-other-jewellery-stocks-rally-up-to-10-as-gold-etf-fof-subscriptions-face-curbs/articleshow/134983846.cms"
+        }
+      ],
+      "score": 2,
+      "summary": "In Q2FY27, demand remained healthy despite the elevated gold price (up 28% YoY) supported by festive demand, premiumisation and continued market share gains by organised players, analysts said.",
+      "category": "Other news",
+      "reason": "Key market catalyst driving market liquidity and session volatility.",
+      "matched": [],
+      "tier": "More",
+      "related": [
+        {
+          "title": "PC Jeweller, Shanti Gold & other jewellery stocks rally up to 10%. Here's why",
+          "url": "https://economictimes.indiatimes.com/markets/stocks/news/shanti-gold-pc-jeweller-other-jewellery-stocks-rally-up-to-10-as-gold-etf-fof-subscriptions-face-curbs/articleshow/134983846.cms",
+          "source": "ET Markets",
+          "published": 1792129797.0
+        }
+      ],
+      "cluster_count": 2,
+      "impact_assets": [
+        "Commodities"
+      ],
+      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
       "id": "9a63c1b16c1b6adf",
       "title": "Hybe shares jump 10% as K-pop sensation BTS' tour lifts earnings hopes",
       "url": "https://www.cnbc.com/2026/10/16/bts-concerts-hybe-katseye-cortis.html",
@@ -3502,7 +3511,7 @@
       "url": "https://www.livemint.com/rss/markets",
       "region": "India",
       "official": false,
-      "checked": "2026-10-16T20:48:56.254160+00:00",
+      "checked": "2026-10-16T23:23:34.717083+00:00",
       "status": "ok",
       "count": 35
     },
@@ -3511,7 +3520,7 @@
       "url": "https://www.livemint.com/rss/companies",
       "region": "India",
       "official": false,
-      "checked": "2026-10-16T20:48:56.254361+00:00",
+      "checked": "2026-10-16T23:23:34.717361+00:00",
       "status": "ok",
       "count": 35
     },
@@ -3520,7 +3529,7 @@
       "url": "https://www.sebi.gov.in/sebirss.xml",
       "region": "India",
       "official": true,
-      "checked": "2026-10-16T20:48:56.254569+00:00",
+      "checked": "2026-10-16T23:23:34.717606+00:00",
       "status": "ok",
       "count": 30
     },
@@ -3529,7 +3538,7 @@
       "url": "https://www.federalreserve.gov/feeds/press_monetary.xml",
       "region": "Global",
       "official": true,
-      "checked": "2026-10-16T20:48:56.255340+00:00",
+      "checked": "2026-10-16T23:23:34.717962+00:00",
       "status": "ok",
       "count": 1
     },
@@ -3538,7 +3547,7 @@
       "url": "https://www.bls.gov/feed/bls_latest.rss",
       "region": "Global",
       "official": true,
-      "checked": "2026-10-16T20:48:56.255489+00:00",
+      "checked": "2026-10-16T23:23:34.719164+00:00",
       "status": "ok",
       "count": 1
     },
@@ -3547,7 +3556,7 @@
       "url": "https://www.investing.com/rss/news.rss",
       "region": "Global",
       "official": false,
-      "checked": "2026-10-16T20:48:56.441423+00:00",
+      "checked": "2026-10-16T23:23:35.016691+00:00",
       "status": "ok",
       "count": 10
     },
@@ -3556,7 +3565,7 @@
       "url": "https://www.cnbc.com/id/100727362/device/rss/rss.html",
       "region": "Global",
       "official": false,
-      "checked": "2026-10-16T20:48:56.521726+00:00",
+      "checked": "2026-10-16T23:23:35.018825+00:00",
       "status": "ok",
       "count": 30
     },
@@ -3565,7 +3574,7 @@
       "url": "https://pulse.zerodha.com/feed.php",
       "region": "India",
       "official": false,
-      "checked": "2026-10-16T20:48:56.549509+00:00",
+      "checked": "2026-10-16T23:23:35.082652+00:00",
       "status": "ok",
       "count": 25
     },
@@ -3574,7 +3583,7 @@
       "url": "https://economictimes.indiatimes.com/markets/rssfeeds/1977021501.cms",
       "region": "India",
       "official": false,
-      "checked": "2026-10-16T20:48:56.560010+00:00",
+      "checked": "2026-10-16T23:23:35.132000+00:00",
       "status": "ok",
       "count": 50
     },
@@ -3583,7 +3592,7 @@
       "url": "https://economictimes.indiatimes.com/news/economy/rssfeeds/1373380680.cms",
       "region": "India",
       "official": false,
-      "checked": "2026-10-16T20:48:56.599707+00:00",
+      "checked": "2026-10-16T23:23:35.237003+00:00",
       "status": "ok",
       "count": 50
     },
@@ -3592,21 +3601,21 @@
       "url": "https://www.business-standard.com/rss/markets-106.rss",
       "region": "India",
       "official": false,
-      "checked": "2026-10-16T20:48:56.671617+00:00",
+      "checked": "2026-10-16T23:23:35.255281+00:00",
       "status": "ok",
       "count": 35
     }
   ],
   "refreshing": false,
   "calendar": {
-    "checked": 1792183744.1839333,
+    "checked": 1792193021.0109081,
     "status": "ok"
   },
   "premarket": {
-    "updated": "2026-10-16T20:49:10.135497+00:00",
+    "updated": "2026-10-16T23:23:44.315996+00:00",
     "schema_version": 2,
     "is_live": false,
-    "quote_updated": "2026-10-16T20:49:10.051767+00:00",
+    "quote_updated": "2026-10-16T23:23:44.315520+00:00",
     "quote_date": "2026-10-15",
     "quote_source": "yfinance",
     "live_bias_label": "LATEST AVAILABLE QUOTE",
@@ -3649,12 +3658,12 @@
       "key": "BRENT",
       "quote_date": "2026-10-16",
       "label": "Brent Crude",
-      "price": "109.70",
-      "price_raw": 109.7,
+      "price": "109.69",
+      "price_raw": 109.69,
       "prev_close": 105.16,
       "prev_close_fmt": "105.16",
-      "change": 4.54,
-      "change_pct": 4.32,
+      "change": 4.53,
+      "change_pct": 4.31,
       "direction": "up",
       "unit": "USD/bbl",
       "range_52w": {
@@ -3662,13 +3671,13 @@
         "high": 126.1,
         "low_fmt": "58.72",
         "high_fmt": "126.10",
-        "pos_pct": 75.7,
+        "pos_pct": 75.6,
         "pct_from_high": -13.01
       }
     },
     "usdinr": {
       "key": "USDINR",
-      "quote_date": "2026-10-16",
+      "quote_date": "2026-10-17",
       "label": "INR / USD",
       "price": "94.95",
       "price_raw": 94.95,
@@ -3758,7 +3767,7 @@
         "num": "02",
         "title": "Crude and input costs",
         "bias": "Context",
-        "desc": "Latest Brent quote: 109.70 USD/bbl (+4.32%). Higher crude can raise import and input costs; lower crude can ease them. This quote alone does not establish the cause of the move."
+        "desc": "Latest Brent quote: 109.69 USD/bbl (+4.31%). Higher crude can raise import and input costs; lower crude can ease them. This quote alone does not establish the cause of the move."
       },
       {
         "num": "03",
@@ -3774,12 +3783,12 @@
           "key": "BRENT",
           "quote_date": "2026-10-16",
           "label": "Brent Crude",
-          "price": "109.70",
-          "price_raw": 109.7,
+          "price": "109.69",
+          "price_raw": 109.69,
           "prev_close": 105.16,
           "prev_close_fmt": "105.16",
-          "change": 4.54,
-          "change_pct": 4.32,
+          "change": 4.53,
+          "change_pct": 4.31,
           "direction": "up",
           "unit": "USD/bbl",
           "range_52w": {
@@ -3787,7 +3796,7 @@
             "high": 126.1,
             "low_fmt": "58.72",
             "high_fmt": "126.10",
-            "pos_pct": 75.7,
+            "pos_pct": 75.6,
             "pct_from_high": -13.01
           }
         },
@@ -3795,12 +3804,12 @@
           "key": "WTI",
           "quote_date": "2026-10-16",
           "label": "WTI Crude",
-          "price": "98.92",
-          "price_raw": 98.92,
+          "price": "99.04",
+          "price_raw": 99.04,
           "prev_close": 95.67,
           "prev_close_fmt": "95.67",
-          "change": 3.25,
-          "change_pct": 3.4,
+          "change": 3.37,
+          "change_pct": 3.52,
           "direction": "up",
           "unit": "USD/bbl",
           "range_52w": {
@@ -3808,20 +3817,20 @@
             "high": 119.48,
             "low_fmt": "54.98",
             "high_fmt": "119.48",
-            "pos_pct": 68.1,
-            "pct_from_high": -17.21
+            "pos_pct": 68.3,
+            "pct_from_high": -17.11
           }
         },
         "natgas": {
           "key": "NATGAS",
           "quote_date": "2026-10-16",
           "label": "Natural Gas",
-          "price": "3.13",
-          "price_raw": 3.129,
+          "price": "3.12",
+          "price_raw": 3.117,
           "prev_close": 3.221,
           "prev_close_fmt": "3.22",
-          "change": -0.092,
-          "change_pct": -2.86,
+          "change": -0.104,
+          "change_pct": -3.23,
           "direction": "down",
           "unit": "USD/MMBtu",
           "range_52w": {
@@ -3829,20 +3838,20 @@
             "high": 7.83,
             "low_fmt": "2.48",
             "high_fmt": "7.83",
-            "pos_pct": 12.1,
-            "pct_from_high": -60.02
+            "pos_pct": 11.9,
+            "pct_from_high": -60.18
           }
         },
         "gold": {
           "key": "GOLD",
           "quote_date": "2026-10-16",
           "label": "Gold",
-          "price": "4,189.60",
-          "price_raw": 4189.6001,
+          "price": "4,186.70",
+          "price_raw": 4186.7002,
           "prev_close": 4204.3999,
           "prev_close_fmt": "4,204.40",
-          "change": -14.7998,
-          "change_pct": -0.35,
+          "change": -17.6997,
+          "change_pct": -0.42,
           "direction": "down",
           "unit": "USD/oz",
           "range_52w": {
@@ -3850,20 +3859,20 @@
             "high": 5586.2,
             "low_fmt": "3,901.30",
             "high_fmt": "5,586.20",
-            "pos_pct": 17.1,
-            "pct_from_high": -25.0
+            "pos_pct": 16.9,
+            "pct_from_high": -25.05
           }
         },
         "silver": {
           "key": "SILVER",
           "quote_date": "2026-10-16",
           "label": "Silver",
-          "price": "57.15",
-          "price_raw": 57.155,
+          "price": "57.13",
+          "price_raw": 57.135,
           "prev_close": 58.065,
           "prev_close_fmt": "58.06",
-          "change": -0.91,
-          "change_pct": -1.57,
+          "change": -0.93,
+          "change_pct": -1.6,
           "direction": "down",
           "unit": "USD/oz",
           "range_52w": {
@@ -3872,7 +3881,7 @@
             "low_fmt": "45.85",
             "high_fmt": "121.30",
             "pos_pct": 15.0,
-            "pct_from_high": -52.88
+            "pct_from_high": -52.9
           }
         },
         "catalyst": {
@@ -3896,24 +3905,15 @@
           "source": ""
         },
         {
-          "title": "HDFC, ICICI Bank Q2 earnings preview: deposit surge, margin pressure in focus",
-          "url": "https://www.livemint.com/companies/company-results/earnings-preview-deposit-surge-margin-pressure-in-focus-for-hdfc-icici-bank-11792148167976.html",
-          "companies": [
-            {
-              "name": "ICICI Bank",
-              "symbol": "icici bank"
-            },
-            {
-              "name": "HDFC Bank",
-              "symbol": "hdfc"
-            }
-          ],
+          "title": "Q2 Results Highlights: LTIMindtree Profit Falls 5%, Urban Company Net Loss Triples, PNB Profit NII Jumps 11%",
+          "url": "https://www.ndtvprofit.com/markets/q2-fy27-results-live-updates-dlf-punjab-national-bank-bajaj-housing-finance-federal-bank-ltm-oberoi-realty-to-announce-earnings-12193208#publisher=newsstand",
+          "companies": [],
           "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
           "source": ""
         },
         {
-          "title": "Q2 Results Highlights: LTIMindtree Profit Falls 5%, Urban Company Net Loss Triples, PNB Profit NII Jumps 11%",
-          "url": "https://www.ndtvprofit.com/markets/q2-fy27-results-live-updates-dlf-punjab-national-bank-bajaj-housing-finance-federal-bank-ltm-oberoi-realty-to-announce-earnings-12193208#publisher=newsstand",
+          "title": "Federal Bank net profit surges 45% to record ₹1,386 crore on higher NII",
+          "url": "https://www.business-standard.com/companies/quarterly-results/federal-bank-s-q2fy27-results-net-profit-rises-45-to-1-386-crore-126101600945_1.html",
           "companies": [],
           "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
           "source": ""
