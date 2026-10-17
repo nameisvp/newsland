@@ -1,15 +1,15 @@
 {
-  "updated": "2026-10-16T23:23:44.315520+00:00",
+  "updated": "2026-10-17T03:54:55.561516+00:00",
   "tickers": [
     {
       "key": "SENSEX",
-      "quote_date": "2026-10-15",
+      "quote_date": "2026-10-16",
       "label": "Sensex",
       "price": "74,729",
-      "price_raw": 74729.27,
+      "price_raw": 74729.2734,
       "prev_close": 74315.6094,
       "prev_close_fmt": "74,316",
-      "change": 413.6606,
+      "change": 413.6641,
       "change_pct": 0.56,
       "direction": "up",
       "unit": "",
@@ -24,13 +24,13 @@
     },
     {
       "key": "NIFTY",
-      "quote_date": "2026-10-15",
+      "quote_date": "2026-10-16",
       "label": "Nifty 50",
       "price": "23,146",
-      "price_raw": 23146.15,
+      "price_raw": 23146.1504,
       "prev_close": 22997.3496,
       "prev_close_fmt": "22,997",
-      "change": 148.8004,
+      "change": 148.8008,
       "change_pct": 0.65,
       "direction": "up",
       "unit": "",
@@ -45,23 +45,23 @@
     },
     {
       "key": "INDIAVIX",
-      "quote_date": "2026-10-15",
+      "quote_date": "2026-10-16",
       "label": "India VIX",
-      "price": "14.03",
-      "price_raw": 14.025,
+      "price": "14.06",
+      "price_raw": 14.06,
       "prev_close": 14.0475,
       "prev_close_fmt": "14.05",
-      "change": -0.0225,
-      "change_pct": -0.16,
-      "direction": "down",
+      "change": 0.0125,
+      "change_pct": 0.09,
+      "direction": "up",
       "unit": "",
       "range_52w": {
         "low": 8.86,
         "high": 28.91,
         "low_fmt": "8.86",
         "high_fmt": "28.91",
-        "pos_pct": 25.8,
-        "pct_from_high": -51.49
+        "pos_pct": 25.9,
+        "pct_from_high": -51.37
       }
     },
     {
@@ -173,12 +173,12 @@
       "key": "USDINR",
       "quote_date": "2026-10-17",
       "label": "INR / USD",
-      "price": "94.95",
-      "price_raw": 94.95,
+      "price": "94.96",
+      "price_raw": 94.96,
       "prev_close": 95.045,
       "prev_close_fmt": "95.04",
-      "change": -0.095,
-      "change_pct": -0.1,
+      "change": -0.085,
+      "change_pct": -0.09,
       "direction": "down",
       "unit": "",
       "range_52w": {
@@ -186,8 +186,8 @@
         "high": 97.05,
         "low_fmt": "85.86",
         "high_fmt": "97.05",
-        "pos_pct": 81.2,
-        "pct_from_high": -2.17
+        "pos_pct": 81.3,
+        "pct_from_high": -2.16
       }
     }
   ],
