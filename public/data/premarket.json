@@ -1,8 +1,8 @@
 {
-  "updated": "2026-10-17T22:06:30.763148+00:00",
+  "updated": "2026-10-18T00:47:08.185803+00:00",
   "schema_version": 2,
   "is_live": false,
-  "quote_updated": "2026-10-17T22:06:30.762049+00:00",
+  "quote_updated": "2026-10-18T00:47:08.185275+00:00",
   "quote_date": "2026-10-16",
   "quote_source": "yfinance",
   "live_bias_label": "LATEST AVAILABLE QUOTE",
@@ -280,6 +280,22 @@
     },
     "earnings": [
       {
+        "title": "Dividend Stocks This Week: ICICI Prudential AMC, LTM, Tech Mahindra, Angel One Among 15 Companies in Focus",
+        "url": "https://www.ndtvprofit.com/markets/dividend-stocks-this-week-icici-prudential-amc-ltm-tech-mahindra-angel-one-among-15-companies-in-focus-12200487#publisher=newsstand",
+        "companies": [
+          {
+            "name": "Tech Mahindra",
+            "symbol": "tech mahindra"
+          },
+          {
+            "name": "ICICI Bank",
+            "symbol": "icici"
+          }
+        ],
+        "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
+        "source": ""
+      },
+      {
         "title": "Wall Street Week Ahead - Earnings expectations: All eyes on Meta, Tesla, Netflix, and SpaceX; this survey also in focus",
         "url": "https://www.livemint.com/market/stock-market-news/wall-street-week-ahead-earnings-expectations-all-eyes-on-meta-tesla-netflix-and-spacex-this-survey-also-in-focus-11792254700438.html",
         "companies": [],
@@ -295,13 +311,6 @@
             "symbol": "icici bank"
           }
         ],
-        "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
-        "source": ""
-      },
-      {
-        "title": "Axis Bank Q2 Results: Net profit jumps 38% YoY- Check asset quality, stock trend, and other key highlights",
-        "url": "https://www.livemint.com/market/commodities/axis-bank-q2-results-net-profit-jumps-38-yoy-check-asset-quality-stock-trend-and-other-key-highlights-11792223868805.html",
-        "companies": [],
         "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
         "source": ""
       }
@@ -325,9 +334,9 @@
         }
       },
       "catalyst": {
-        "title": "Stock markets close lower amid elevated crude oil, rising inflation",
-        "url": "https://www.thehindu.com/business/Economy/stock-markets-close-lower-amid-elevated-crude-oil-rising-inflation/article71583631.ece",
-        "why_it_matters": "Key determinant of central bank interest rate paths; elevated prints restrict policy easing and compress real yields.",
+        "title": "Christmas cheer, but caution remains: Exporters welcome US tariff relief, keep diversification plans",
+        "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/christmas-cheer-but-caution-remains-exporters-welcome-us-tariff-relief-keep-diversification-plans/articleshow/135019234.cms",
+        "why_it_matters": "Alters market structure, compliance mandates, capital allocation rules, and retail derivative trading liquidity.",
         "source": ""
       }
     }
