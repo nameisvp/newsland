@@ -1,8 +1,8 @@
 {
-  "updated": "2026-10-18T10:45:32.833252+00:00",
+  "updated": "2026-10-18T14:25:38.929480+00:00",
   "schema_version": 2,
   "is_live": false,
-  "quote_updated": "2026-10-18T10:45:32.832718+00:00",
+  "quote_updated": "2026-10-18T14:25:38.929128+00:00",
   "quote_date": "2026-10-16",
   "quote_source": "yfinance",
   "live_bias_label": "LATEST AVAILABLE QUOTE",
@@ -66,12 +66,12 @@
     "key": "USDINR",
     "quote_date": "2026-10-18",
     "label": "INR / USD",
-    "price": "94.96",
-    "price_raw": 94.96,
+    "price": "94.95",
+    "price_raw": 94.95,
     "prev_close": 95.045,
     "prev_close_fmt": "95.04",
-    "change": -0.085,
-    "change_pct": -0.09,
+    "change": -0.095,
+    "change_pct": -0.1,
     "direction": "down",
     "unit": "",
     "range_52w": {
@@ -79,8 +79,8 @@
       "high": 97.05,
       "low_fmt": "85.86",
       "high_fmt": "97.05",
-      "pos_pct": 81.3,
-      "pct_from_high": -2.16
+      "pos_pct": 81.2,
+      "pct_from_high": -2.17
     }
   },
   "pivots": {
@@ -214,10 +214,10 @@
         "label": "Natural Gas",
         "price": "3.12",
         "price_raw": 3.116,
-        "prev_close": 3.221,
-        "prev_close_fmt": "3.22",
-        "change": -0.105,
-        "change_pct": -3.26,
+        "prev_close": 3.265,
+        "prev_close_fmt": "3.27",
+        "change": -0.149,
+        "change_pct": -4.56,
         "direction": "down",
         "unit": "USD/MMBtu",
         "range_52w": {
@@ -272,29 +272,22 @@
         }
       },
       "catalyst": {
-        "title": "Earnings, crude oil, Jio IPO key monitorables for investors next week",
-        "url": "https://www.business-standard.com/markets/news/earnings-crude-oil-jio-ipo-key-monitorables-for-investors-next-week-126101800241_1.html",
+        "title": "Stock market this week with top 7 factors for Sensex, Nifty: Reliance Jio IPO, crude volatility, FII selling, Q2 results",
+        "url": "https://www.livemint.com/market/stock-market-news/stock-market-this-week-jio-ipo-crude-oil-price-volatility-fii-selling-q2-results-among-7-factors-to-watch-check-ni-11792326615470.html",
         "why_it_matters": "Crude affects India’s import bill and energy-sensitive sectors; the headline does not establish a clear price direction.",
         "source": ""
       }
     },
     "earnings": [
       {
-        "title": "Bajaj Finance Q2 preview: Profit may jump 29%, NII 24% as strong loan growth lifts earnings",
-        "url": "https://economictimes.indiatimes.com/markets/stocks/earnings/bajaj-finance-q2-preview-profit-may-jump-29-nii-24-as-strong-loan-growth-lifts-earnings/articleshow/135026829.cms",
+        "title": "Stock market this week with top 7 factors for Sensex, Nifty: Reliance Jio IPO, crude volatility, FII selling, Q2 results",
+        "url": "https://www.livemint.com/market/stock-market-news/stock-market-this-week-jio-ipo-crude-oil-price-volatility-fii-selling-q2-results-among-7-factors-to-watch-check-ni-11792326615470.html",
         "companies": [
           {
-            "name": "Bajaj Finance",
-            "symbol": "bajaj finance"
+            "name": "Reliance",
+            "symbol": "reliance"
           }
         ],
-        "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
-        "source": ""
-      },
-      {
-        "title": "Earnings, crude oil, Jio IPO key monitorables for investors next week",
-        "url": "https://www.business-standard.com/markets/news/earnings-crude-oil-jio-ipo-key-monitorables-for-investors-next-week-126101800241_1.html",
-        "companies": [],
         "why_it_matters": "Crude affects India’s import bill and energy-sensitive sectors; the headline does not establish a clear price direction.",
         "source": ""
       },
@@ -307,6 +300,13 @@
             "symbol": "adani"
           }
         ],
+        "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
+        "source": ""
+      },
+      {
+        "title": "PNB CEO Ashok Chandra sees profit momentum continuing after strong Q2, eyes ₹6,000 crore quarterly profit milestone",
+        "url": "https://www.livemint.com/companies/news/pnb-ceo-ashok-chandra-sees-profit-momentum-continuing-after-strong-q2-eyes-6-000-crore-quarterly-profit-milestone-11792328382796.html",
+        "companies": [],
         "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
         "source": ""
       }
@@ -330,9 +330,9 @@
         }
       },
       "catalyst": {
-        "title": "China proposes export curbs on 12 key solar manufacturing technologies",
-        "url": "https://www.investing.com/news/economy-news/china-proposes-export-curbs-on-12-key-solar-manufacturing-technologies-4955825",
-        "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
+        "title": "Christmas cheer, but caution remains: Exporters welcome US tariff relief, keep diversification plans",
+        "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/christmas-cheer-but-caution-remains-exporters-welcome-us-tariff-relief-keep-diversification-plans/articleshow/135019234.cms",
+        "why_it_matters": "Alters market structure, compliance mandates, capital allocation rules, and retail derivative trading liquidity.",
         "source": ""
       }
     }
