@@ -1,9 +1,9 @@
 {
-  "updated": "2026-10-19T14:42:19.117831+00:00",
+  "updated": "2026-10-19T20:15:50.315775+00:00",
   "schema_version": 2,
   "is_live": false,
-  "quote_updated": "2026-10-19T14:42:19.117483+00:00",
-  "quote_date": "2026-10-19",
+  "quote_updated": "2026-10-19T20:15:50.315264+00:00",
+  "quote_date": "2026-10-16",
   "quote_source": "yfinance",
   "live_bias_label": "LATEST AVAILABLE QUOTE",
   "bias_label": "LATEST AVAILABLE QUOTE",
@@ -26,18 +26,18 @@
   },
   "overnight": {
     "SP500": {
-      "val": "7,704",
-      "pct": 0.58,
+      "val": "7,691",
+      "pct": 0.41,
       "date": "2026-10-19"
     },
     "NASDAQ": {
-      "val": "26,487",
-      "pct": 1.33,
+      "val": "26,431",
+      "pct": 1.11,
       "date": "2026-10-19"
     },
     "US10Y": {
-      "val": "5.11%",
-      "pct": 0.24,
+      "val": "5.14%",
+      "pct": 0.75,
       "date": "2026-10-19"
     }
   },
@@ -45,12 +45,12 @@
     "key": "BRENT",
     "quote_date": "2026-10-19",
     "label": "Brent Crude",
-    "price": "108.37",
-    "price_raw": 108.37,
+    "price": "109.38",
+    "price_raw": 109.38,
     "prev_close": 107.72,
     "prev_close_fmt": "107.72",
-    "change": 0.65,
-    "change_pct": 0.6,
+    "change": 1.66,
+    "change_pct": 1.54,
     "direction": "up",
     "unit": "USD/bbl",
     "range_52w": {
@@ -58,8 +58,8 @@
       "high": 126.1,
       "low_fmt": "58.72",
       "high_fmt": "126.10",
-      "pos_pct": 73.7,
-      "pct_from_high": -14.06
+      "pos_pct": 75.2,
+      "pct_from_high": -13.26
     }
   },
   "usdinr": {
@@ -85,35 +85,35 @@
   },
   "pivots": {
     "nifty": {
-      "pivot": 22970,
-      "s1": 22764,
-      "r1": 23094,
-      "s2": 22639,
-      "r2": 23300,
-      "date": "2026-10-19"
+      "pivot": 23070,
+      "s1": 22990,
+      "r1": 23226,
+      "s2": 22834,
+      "r2": 23306,
+      "date": "2026-10-16"
     },
     "banknifty": {
-      "pivot": 55568,
-      "s1": 55252,
-      "r1": 55804,
-      "s2": 55015,
-      "r2": 56120,
-      "date": "2026-10-19"
+      "pivot": 55787,
+      "s1": 55584,
+      "r1": 56047,
+      "s2": 55323,
+      "r2": 56250,
+      "date": "2026-10-16"
     }
   },
   "posture": {
-    "dma50": 23514,
-    "dma50_fmt": "23,514",
-    "pct_dma50": -2.66,
-    "dma200": 24174,
-    "dma200_fmt": "24,174",
-    "pct_dma200": -5.32,
+    "dma50": 23549,
+    "dma50_fmt": "23,549",
+    "pct_dma50": -1.71,
+    "dma200": 24191,
+    "dma200_fmt": "24,191",
+    "pct_dma200": -4.32,
     "high52": 26373,
     "high52_fmt": "26,373",
     "low52": 22180,
     "low52_fmt": "22,180",
-    "pct_from_high52": -13.21,
-    "pos_52w": 16.9,
+    "pct_from_high52": -12.24,
+    "pos_52w": 23.0,
     "regime": "CORRECTIVE TREND"
   },
   "sector_breadth": {
@@ -154,28 +154,28 @@
       "num": "02",
       "title": "Crude and input costs",
       "bias": "Context",
-      "desc": "Latest Brent quote: 108.37 USD/bbl (+0.60%). Higher crude can raise import and input costs; lower crude can ease them. This quote alone does not establish the cause of the move."
+      "desc": "Latest Brent quote: 109.38 USD/bbl (+1.54%). Higher crude can raise import and input costs; lower crude can ease them. This quote alone does not establish the cause of the move."
     },
     {
       "num": "03",
       "title": "Market posture & breadth",
       "bias": "Context",
-      "desc": "Nifty is 13.2% below 52W high (26,373), trading 5.3% below 200-DMA (24,174). Sector participation: 0/5 sectors in green (Top: Metal -0.54%)."
+      "desc": "Nifty is 12.2% below 52W high (26,373), trading 4.3% below 200-DMA (24,191). Sector participation: 0/5 sectors in green (Top: Metal -0.54%)."
     }
   ],
-  "trader_take": "Latest available Nifty quote: 22,889 (-1.11% versus previous close). Latest Nifty reading is below the 22,970 pivot. Next calculated resistance above this reading: 23,094. Pivots are calculated references, not confirmed support or resistance. Market regime: CORRECTIVE TREND (-13.2% from 52W peak, -5.3% vs 200-DMA). Sector breadth: 0/5 sectors in green.",
+  "trader_take": "Latest available Nifty quote: 22,889 (-1.11% versus previous close). Latest Nifty reading is below the 23,070 pivot. Next calculated resistance above this reading: 23,226. Pivots are calculated references, not confirmed support or resistance. Market regime: CORRECTIVE TREND (-12.2% from 52W peak, -4.3% vs 200-DMA). Sector breadth: 0/5 sectors in green.",
   "postmarket_pillars": {
     "commodities": {
       "brent": {
         "key": "BRENT",
         "quote_date": "2026-10-19",
         "label": "Brent Crude",
-        "price": "108.37",
-        "price_raw": 108.37,
+        "price": "109.38",
+        "price_raw": 109.38,
         "prev_close": 107.72,
         "prev_close_fmt": "107.72",
-        "change": 0.65,
-        "change_pct": 0.6,
+        "change": 1.66,
+        "change_pct": 1.54,
         "direction": "up",
         "unit": "USD/bbl",
         "range_52w": {
@@ -183,20 +183,20 @@
           "high": 126.1,
           "low_fmt": "58.72",
           "high_fmt": "126.10",
-          "pos_pct": 73.7,
-          "pct_from_high": -14.06
+          "pos_pct": 75.2,
+          "pct_from_high": -13.26
         }
       },
       "wti": {
         "key": "WTI",
         "quote_date": "2026-10-19",
         "label": "WTI Crude",
-        "price": "97.82",
-        "price_raw": 97.82,
+        "price": "98.41",
+        "price_raw": 98.41,
         "prev_close": 97.36,
         "prev_close_fmt": "97.36",
-        "change": 0.46,
-        "change_pct": 0.47,
+        "change": 1.05,
+        "change_pct": 1.08,
         "direction": "up",
         "unit": "USD/bbl",
         "range_52w": {
@@ -204,20 +204,20 @@
           "high": 119.48,
           "low_fmt": "54.98",
           "high_fmt": "119.48",
-          "pos_pct": 66.4,
-          "pct_from_high": -18.13
+          "pos_pct": 67.3,
+          "pct_from_high": -17.63
         }
       },
       "natgas": {
         "key": "NATGAS",
         "quote_date": "2026-10-19",
         "label": "Natural Gas",
-        "price": "3.07",
-        "price_raw": 3.073,
+        "price": "3.04",
+        "price_raw": 3.04,
         "prev_close": 3.075,
         "prev_close_fmt": "3.08",
-        "change": -0.002,
-        "change_pct": -0.07,
+        "change": -0.035,
+        "change_pct": -1.14,
         "direction": "down",
         "unit": "USD/MMBtu",
         "range_52w": {
@@ -225,20 +225,20 @@
           "high": 7.83,
           "low_fmt": "2.48",
           "high_fmt": "7.83",
-          "pos_pct": 11.0,
-          "pct_from_high": -60.74
+          "pos_pct": 10.4,
+          "pct_from_high": -61.16
         }
       },
       "gold": {
         "key": "GOLD",
         "quote_date": "2026-10-19",
         "label": "Gold",
-        "price": "4,168.90",
-        "price_raw": 4168.8999,
+        "price": "4,159.80",
+        "price_raw": 4159.7998,
         "prev_close": 4201.1001,
         "prev_close_fmt": "4,201.10",
-        "change": -32.2002,
-        "change_pct": -0.77,
+        "change": -41.3003,
+        "change_pct": -0.98,
         "direction": "down",
         "unit": "USD/oz",
         "range_52w": {
@@ -246,20 +246,20 @@
           "high": 5586.2,
           "low_fmt": "3,901.30",
           "high_fmt": "5,586.20",
-          "pos_pct": 15.9,
-          "pct_from_high": -25.37
+          "pos_pct": 15.3,
+          "pct_from_high": -25.53
         }
       },
       "silver": {
         "key": "SILVER",
         "quote_date": "2026-10-19",
         "label": "Silver",
-        "price": "57.33",
-        "price_raw": 57.33,
+        "price": "57.21",
+        "price_raw": 57.21,
         "prev_close": 57.905,
         "prev_close_fmt": "57.90",
-        "change": -0.575,
-        "change_pct": -0.99,
+        "change": -0.695,
+        "change_pct": -1.2,
         "direction": "down",
         "unit": "USD/oz",
         "range_52w": {
@@ -267,35 +267,21 @@
           "high": 121.3,
           "low_fmt": "45.85",
           "high_fmt": "121.30",
-          "pos_pct": 15.2,
-          "pct_from_high": -52.74
+          "pos_pct": 15.1,
+          "pct_from_high": -52.84
         }
       },
       "catalyst": {
-        "title": "India bonds give up day's gains as oil price spike adds to rate hike fears",
-        "url": "https://economictimes.indiatimes.com/markets/bonds/india-bonds-india-bonds-give-up-days-gains-as-oil-price-spike-adds-to-rate-hike-fears/articleshow/135048949.cms",
+        "title": "Oil prices pare losses after more Houthi attacks on Saudi energy infrastructure",
+        "url": "https://www.investing.com/news/commodities-news/oil-prices-slide-as-trump-waives-russia-sanctions-4956158",
         "why_it_matters": "Crude affects India’s import bill and energy-sensitive sectors; the headline does not establish a clear price direction.",
         "source": ""
       }
     },
     "earnings": [
       {
-        "title": "Dow Jones| Nasdaq | S&P 500 | US Stock Market Today |Live Updates: S&P 500, Nasdaq futures rise as AI stocks rebound ahead of key earnings",
-        "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/dow-jones-stock-us-market-live-updates-nasdaq-sp-500-iran-israel-war-hormuz-deal-brent-crude-oil-fed-rate-inflation-treasury-yields-earnings-forecast-coreweave-broadcom-micron-stock-price-news-19th-october-2026/liveblog/1350485",
-        "companies": [],
-        "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
-        "source": ""
-      },
-      {
-        "title": "UltraTech Cement Q2 net profit rises 21.3% to ₹1,501 crore",
-        "url": "https://www.thehindu.com/business/ultratech-cement-q2-net-profit-rises-213-to-1501-crore/article71602713.ece",
-        "companies": [],
-        "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
-        "source": ""
-      },
-      {
-        "title": "Bajaj Finance Q2 Results: Net Profit Rises 29%; AUM Surges To Rs 5.85 Lakh Crore",
-        "url": "https://www.ndtvprofit.com/markets/bajaj-finance-q2-results-net-profit-rises-29-aum-surges-to-rs-5-85-lakh-crore-12206687#publisher=newsstand",
+        "title": "Q2 Results Update: Ireda Profit Flat At Rs 549 Crore; Waaree Renewable Profit Dips 37%, Bajaj Finance NII Rises 24%",
+        "url": "https://www.ndtvprofit.com/markets/q2-results-live-updates-bajaj-finance-hfcl-hindustan-zinc-ultratech-cement-union-bank-35-companies-to-announce-earnings-today-12204899#publisher=newsstand",
         "companies": [
           {
             "name": "Bajaj Finance",
@@ -304,23 +290,37 @@
         ],
         "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
         "source": ""
+      },
+      {
+        "title": "Piramal Finance Q2FY27 results: Net profit zooms 67% to ₹545 crore",
+        "url": "https://www.business-standard.com/companies/news/piramal-finance-q2fy27-results-net-profit-zooms-67-to-545-crore-126101901131_1.html",
+        "companies": [],
+        "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
+        "source": ""
+      },
+      {
+        "title": "Punjab & Sind Bank Q2 net profit surges 40% to ₹412 cr on improved income",
+        "url": "https://www.business-standard.com/companies/news/punjab-sind-bank-q2-net-profit-surges-40-pc-to-rs-412-cr-on-improved-income-126101700865_1.html",
+        "companies": [],
+        "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
+        "source": ""
       }
     ],
     "global_macro": {
       "overnight": {
         "SP500": {
-          "val": "7,704",
-          "pct": 0.58,
+          "val": "7,691",
+          "pct": 0.41,
           "date": "2026-10-19"
         },
         "NASDAQ": {
-          "val": "26,487",
-          "pct": 1.33,
+          "val": "26,431",
+          "pct": 1.11,
           "date": "2026-10-19"
         },
         "US10Y": {
-          "val": "5.11%",
-          "pct": 0.24,
+          "val": "5.14%",
+          "pct": 0.75,
           "date": "2026-10-19"
         }
       },
