@@ -2,8 +2,8 @@ name: Newsland Autopilot - News & Market Collector
 
 on:
   schedule:
-    # Run hourly around the clock so evening and overnight global news updates continuously
-    - cron: '0 * * * *'
+    # Run every 20 minutes with off-peak minute offsets to avoid GitHub Actions :00 queue delays
+    - cron: '15,35,55 * * * *'
   workflow_dispatch: # Allows manual 1-click "Run workflow" in GitHub Actions tab anytime
   push:
     branches:
