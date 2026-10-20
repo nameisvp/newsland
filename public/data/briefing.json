@@ -1,79 +1,74 @@
 {
-  "updated": "2026-10-20T13:33:22.721886+00:00",
+  "updated": "2026-10-20T18:06:07.854575+00:00",
   "stories": [
     {
-      "id": "ebe80b3cd1f03079",
-      "title": "Dow Jones| Nasdaq | S&P 500 | US Stock Market Today |Live Updates: Nasdaq futures slip as oil rises, AI stocks weaken ahead of earnings",
-      "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/dow-jones-stock-market-live-updates-nasdaq-sp-500-us-iran-israel-war-hormuz-deal-brent-crude-oil-fed-rate-treasury-yields-earnings-forecast-nvidia-macys-gamestop-stock-price-news-20th-september-2026/liveblog/135069926.cms",
-      "published": 1792497682.0,
-      "region": "India",
+      "id": "b4619394bd673048",
+      "title": "Housing is flashing warning signs just as the Fed weighs more interest rate hikes",
+      "url": "https://www.cnbc.com/2026/10/20/housing-mortgage-rates-real-estate-federal-reserve.html",
+      "published": 1792519437.0,
+      "region": "Global",
       "official": false,
       "sources": [
         {
-          "name": "Zerodha Pulse",
-          "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/dow-jones-stock-market-live-updates-nasdaq-sp-500-us-iran-israel-war-hormuz-deal-brent-crude-oil-fed-rate-treasury-yields-earnings-forecast-nvidia-macys-gamestop-stock-price-news-20th-september-2026/liveblog/135069926.cms"
+          "name": "CNBC World",
+          "url": "https://www.cnbc.com/2026/10/20/housing-mortgage-rates-real-estate-federal-reserve.html"
         },
         {
-          "name": "ET Markets",
-          "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/dow-jones-stock-market-live-updates-nasdaq-sp-500-us-iran-israel-war-hormuz-deal-brent-crude-oil-fed-rate-treasury-yields-earnings-forecast-nvidia-macys-gamestop-stock-price-news-20th-september-2026/liveblog/135069926.cms"
-        },
-        {
-          "name": "Mint Markets",
-          "url": "https://www.livemint.com/market/stock-market-news/crash-kospi-in-free-fall-south-korea-stock-market-down-another-5-tanks-40-from-record-high-what-s-driving-ai-rout-11792483921193.html"
+          "name": "Business Standard",
+          "url": "https://www.business-standard.com/markets/commodities/gold-silver-prices-rise-as-traders-pare-bets-on-october-fed-rate-hike-126101900270_1.html"
         }
       ],
-      "score": 10,
-      "summary": "",
-      "category": "Regulation",
-      "reason": "Check who is covered, whether it is proposed or final, and its effective date.",
+      "score": 8,
+      "summary": "Housing data deteriorated further in September, according to separate reports Tuesday.",
+      "category": "Monetary policy",
+      "reason": "Guides global liquidity dynamics, US Dollar Index (DXY) trajectory, and foreign institutional (FII) capital allocations.",
       "matched": [
-        "Regulation",
-        "Earnings",
-        "Energy & geopolitics",
-        "Market flows"
+        "Monetary policy"
       ],
       "tier": "Must know",
       "related": [
         {
-          "title": "Crash! KOSPI in free fall? South Korea stock market down another 5%, tanks 40% from record high- What’s driving AI rout?",
-          "url": "https://www.livemint.com/market/stock-market-news/crash-kospi-in-free-fall-south-korea-stock-market-down-another-5-tanks-40-from-record-high-what-s-driving-ai-rout-11792483921193.html",
-          "source": "Mint Markets",
-          "published": 1792488191.0
+          "title": "Gold, silver prices rise as traders pare bets on October Fed rate hike",
+          "url": "https://www.business-standard.com/markets/commodities/gold-silver-prices-rise-as-traders-pare-bets-on-october-fed-rate-hike-126101900270_1.html",
+          "source": "Business Standard",
+          "published": 1792388769.0
         }
       ],
-      "cluster_count": 3,
+      "cluster_count": 2,
       "impact_assets": [
-        "Commodities"
+        "Rates",
+        "Equities"
       ],
-      "why_it_matters": "Rising crude can increase India’s import bill and input costs, while supporting upstream oil realizations.",
+      "why_it_matters": "Guides global liquidity dynamics, US Dollar Index (DXY) trajectory, and foreign institutional (FII) capital allocations.",
       "impact_chain": {
-        "rule": "CRUDE_SURGE",
-        "catalyst": "Rising crude · potential sector effects",
+        "rule": "RATE_HIKE",
+        "catalyst": "Hawkish Central Bank / Rate Hike",
         "tailwinds": [
-          "ONGC",
-          "Oil India"
+          "SBI",
+          "ICICI Bank",
+          "HDFC Bank"
         ],
         "headwinds": [
-          "Asian Paints",
-          "IndiGo",
-          "BPCL",
-          "MRF"
+          "DLF",
+          "Godrej Properties",
+          "Tata Motors",
+          "Bajaj Finance"
         ],
-        "rationale": "Crude >$100 boosts upstream realizations but inflates airline ATF and paint solvent raw material costs."
+        "rationale": "Rate hikes lift net interest margins for large CASA lenders but dampen rate-sensitive housing and auto demand."
       },
       "companies": []
     },
     {
-      "id": "524c5c29b4e473aa",
-      "title": "Rubio says U.S. to discuss refining Venezuelan crude with Reliance, adds India made ‘substantial progress’ in diversifying energy supplies",
-      "url": "https://www.thehindu.com/business/Economy/marco-rubio-oil-purchases-india-mumbai-october-20-2026/article71604269.ece",
-      "published": 1792495630.0,
+      "id": "0f1831133f361c56",
+      "title": "US Eyes India's Reliance To Refine Venezuelan Oil",
+      "url": "https://www.ndtvprofit.com/markets/us-eyes-indias-reliance-to-refine-venezuelan-oil-12212083#publisher=newsstand",
+      "published": 1792513884.0,
       "region": "India",
       "official": false,
       "sources": [
         {
           "name": "Zerodha Pulse",
-          "url": "https://www.thehindu.com/business/Economy/marco-rubio-oil-purchases-india-mumbai-october-20-2026/article71604269.ece"
+          "url": "https://www.ndtvprofit.com/markets/us-eyes-indias-reliance-to-refine-venezuelan-oil-12212083#publisher=newsstand"
         },
         {
           "name": "Mint Markets",
@@ -85,7 +80,7 @@
         }
       ],
       "score": 8,
-      "summary": "The ​U.S. ‌Secretary of ​State also said that India and U.S. are ‘very very close’ to finalising the trade deal",
+      "summary": "Describing India as \"a refining superpower\", Rubio said the country has the capacity to handle Venezuelan crude, which is heavy and waxy and difficult to process.",
       "category": "Energy & geopolitics",
       "reason": "Energy costs and disruption can affect Indian inflation, import costs and exposed sectors.",
       "matched": [
@@ -98,6 +93,12 @@
           "url": "https://www.livemint.com/market/stock-market-news/bajaj-finance-vs-ireda-vs-reliances-jio-financial-top-financial-stock-to-buy-after-q2-results-2026-for-best-returns-11792493516210.html",
           "source": "Mint Markets",
           "published": 1792498806.0
+        },
+        {
+          "title": "Big-ticket IPOs have struggled to deliver bumper listing gains. Can Mukesh Ambani backed Reliance Jio buck the trend?",
+          "url": "https://www.livemint.com/market/stock-market-news/bigticket-ipos-have-struggled-to-deliver-bumper-listing-gains-can-mukesh-ambani-backed-reliance-jio-buck-the-trend-11792505293980.html",
+          "source": "Mint Markets",
+          "published": 1792506476.0
         },
         {
           "title": "Reliance Jio IPO: Massive bids top $25 bn amount for anchor book! How Mukesh Ambani firm attracted top-notch investors",
@@ -145,29 +146,164 @@
       ]
     },
     {
-      "id": "e5276f070f7060f3",
-      "title": "US Stocks: 3M lifts annual profit forecast on cost controls, price hikes",
-      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/us-stocks-3m-lifts-annual-profit-forecast-on-cost-controls-price-hikes/articleshow/135068806.cms",
-      "published": 1792495329.0,
+      "id": "b22d94f7acea26a3",
+      "title": "Meta Shares Plunge Up To 3.5% Ahead Of Results. What Traders Are Looking At",
+      "url": "https://www.ndtvprofit.com/markets/meta-shares-plunge-up-to-3-5-ahead-of-results-what-traders-are-looking-at-12211982#publisher=newsstand",
+      "published": 1792512103.0,
       "region": "India",
       "official": false,
       "sources": [
         {
           "name": "Zerodha Pulse",
-          "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/us-stocks-3m-lifts-annual-profit-forecast-on-cost-controls-price-hikes/articleshow/135068806.cms"
+          "url": "https://www.ndtvprofit.com/markets/meta-shares-plunge-up-to-3-5-ahead-of-results-what-traders-are-looking-at-12211982#publisher=newsstand"
+        },
+        {
+          "name": "Investing.com",
+          "url": "https://www.investing.com/news/stock-market-news/metas-global-affairs-officer-joel-kaplan-to-leave-company-after-15-years-4960807"
         },
         {
           "name": "ET Markets",
-          "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/us-stocks-3m-lifts-annual-profit-forecast-on-cost-controls-price-hikes/articleshow/135068806.cms"
+          "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/metas-ai-spending-muse-assistant-adoption-in-focus-for-quarterly-results/articleshow/135068976.cms"
         }
       ],
-      "score": 7,
-      "summary": "3M has revised its profit outlook for the year, expecting a boost in adjusted earnings per share. Their quarterly revenue reflects growth thanks to the safety and industrial segment. Strong industrial demand and sales increases in targeted markets are contributing factors. Despite hurdles in some consumer areas, 3M is successfully unveiling innovat",
+      "score": 8,
+      "summary": "Meta shares have fallen for four straight sessions ahead of Q3 results, with investors weighing strong advertising growth against rising AI spending, margin pressures and the outlook for 2027 capital expenditure.",
+      "category": "Company move",
+      "reason": "A named company or share-price move may affect that stock and its peers.",
+      "matched": [
+        "Company move"
+      ],
+      "tier": "Must know",
+      "related": [
+        {
+          "title": "Meta’s global affairs officer Joel Kaplan to leave company after 15 years",
+          "url": "https://www.investing.com/news/stock-market-news/metas-global-affairs-officer-joel-kaplan-to-leave-company-after-15-years-4960807",
+          "source": "Investing.com",
+          "published": 1792518537.0
+        },
+        {
+          "title": "Meta’s AI spending and Muse adoption set to test Zuckerberg’s strategy",
+          "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/metas-ai-spending-muse-assistant-adoption-in-focus-for-quarterly-results/articleshow/135068976.cms",
+          "source": "ET Markets",
+          "published": 1792495931.0
+        }
+      ],
+      "cluster_count": 3,
+      "impact_assets": [
+        "Equities"
+      ],
+      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
+      "id": "943570e1a23c7f78",
+      "title": "Braze stock surges over 50% after Salesforce announces $5.66 billion acquisition",
+      "url": "https://www.livemint.com/market/stock-market-news/braze-stock-surges-over-50-after-salesforce-announces-5-66-billion-acquisition-11792516251172.html",
+      "published": 1792516861.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "Mint Markets",
+          "url": "https://www.livemint.com/market/stock-market-news/braze-stock-surges-over-50-after-salesforce-announces-5-66-billion-acquisition-11792516251172.html"
+        },
+        {
+          "name": "CNBC World",
+          "url": "https://www.cnbc.com/2026/10/20/salesforce-braze-acquisition-deal.html"
+        }
+      ],
+      "score": 6,
+      "summary": "Salesforce agreed to acquire Braze for about $5.66 billion, offering $47.50 per share—a 58.1% premium. Braze shares surged 52% to $45.59. The all-cash deal, expected to close in fiscal 2028 pending approvals, would expand Salesforce’s AI-powered marketing and customer engagement capabilities.",
+      "category": "Company move",
+      "reason": "A named company or share-price move may affect that stock and its peers.",
+      "matched": [
+        "Company move"
+      ],
+      "tier": "Must know",
+      "related": [
+        {
+          "title": "Salesforce announces $5.66 billion deal for Braze, sending BRZE stock soaring 50%",
+          "url": "https://www.cnbc.com/2026/10/20/salesforce-braze-acquisition-deal.html",
+          "source": "CNBC World",
+          "published": 1792505356.0
+        }
+      ],
+      "cluster_count": 2,
+      "impact_assets": [
+        "Equities"
+      ],
+      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
+      "id": "5b291ade169ad58b",
+      "title": "Global stocks fall as AI spending concerns resurface, oil prices surge",
+      "url": "https://www.business-standard.com/markets/news/global-stocks-fall-as-ai-spending-concerns-resurface-oil-prices-surge-126102000915_1.html",
+      "published": 1792518252.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "Business Standard",
+          "url": "https://www.business-standard.com/markets/news/global-stocks-fall-as-ai-spending-concerns-resurface-oil-prices-surge-126102000915_1.html"
+        }
+      ],
+      "score": 5,
+      "summary": "Global equities declined as concerns over AI infrastructure spending resurfaced after a weak South Korean IPO, while Brent crude topped $111 amid renewed geopolitical risks",
+      "category": "Energy & geopolitics",
+      "reason": "Energy costs and disruption can affect Indian inflation, import costs and exposed sectors.",
+      "matched": [
+        "Energy & geopolitics"
+      ],
+      "tier": "Watch",
+      "related": [],
+      "cluster_count": 1,
+      "impact_assets": [
+        "Commodities"
+      ],
+      "why_it_matters": "Rising crude can increase India’s import bill and input costs, while supporting upstream oil realizations.",
+      "impact_chain": {
+        "rule": "CRUDE_SURGE",
+        "catalyst": "Rising crude · potential sector effects",
+        "tailwinds": [
+          "ONGC",
+          "Oil India"
+        ],
+        "headwinds": [
+          "Asian Paints",
+          "IndiGo",
+          "BPCL",
+          "MRF"
+        ],
+        "rationale": "Crude >$100 boosts upstream realizations but inflates airline ATF and paint solvent raw material costs."
+      },
+      "companies": []
+    },
+    {
+      "id": "1d72a409a79cbfa2",
+      "title": "Aerospace and military contractors raise 2026 profit forecasts",
+      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/aerospace-and-military-contractors-raise-2026-profit-forecasts/articleshow/135072414.cms",
+      "published": 1792508962.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "Zerodha Pulse",
+          "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/aerospace-and-military-contractors-raise-2026-profit-forecasts/articleshow/135072414.cms"
+        },
+        {
+          "name": "ET Markets",
+          "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/aerospace-and-military-contractors-raise-2026-profit-forecasts/articleshow/135072414.cms"
+        }
+      ],
+      "score": 6,
+      "summary": "Northrop Grumman and RTX have raised their annual profit forecasts due to strong military demand. The companies reported record backlogs of $109.6 billion and $340 billion respectively. Sustained commercial aerospace services demand has also contributed to their growth. GE Aerospace, while performing well, has warned about potential declines in dem",
       "category": "Earnings",
       "reason": "Compare results and guidance with expectations for the company and its sector.",
       "matched": [
-        "Earnings",
-        "Market flows"
+        "Earnings"
       ],
       "tier": "Must know",
       "related": [],
@@ -180,33 +316,337 @@
       "companies": []
     },
     {
-      "id": "be45a9cbf27cc72e",
-      "title": "US Stocks: GE Aerospace raises 2026 profit forecast as services strength drives growth",
-      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/us-stocks-ge-aerospace-raises-2026-profit-forecast-as-services-strength-drives-growth/articleshow/135068763.cms",
-      "published": 1792495175.0,
+      "id": "192694e9bab048f7",
+      "title": "AI Chip Stocks Lead Wall Street Recovery After Oil Retreat; Intel, AMD, CoreWeave Among Top Gainers",
+      "url": "https://www.ndtvprofit.com/markets/ai-chip-stocks-lead-wall-street-recovery-after-oil-retreat-intel-amd-coreweave-among-top-gainers-12211731#publisher=newsstand",
+      "published": 1792508250.0,
       "region": "India",
       "official": false,
       "sources": [
         {
           "name": "Zerodha Pulse",
-          "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/us-stocks-ge-aerospace-raises-2026-profit-forecast-as-services-strength-drives-growth/articleshow/135068763.cms"
+          "url": "https://www.ndtvprofit.com/markets/ai-chip-stocks-lead-wall-street-recovery-after-oil-retreat-intel-amd-coreweave-among-top-gainers-12211731#publisher=newsstand"
         },
         {
-          "name": "ET Markets",
-          "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/us-stocks-ge-aerospace-raises-2026-profit-forecast-as-services-strength-drives-growth/articleshow/135068763.cms"
+          "name": "Mint Markets",
+          "url": "https://www.livemint.com/market/stock-market-news/wall-street-rebounds-from-lows-as-upbeat-earnings-falling-oil-prices-lift-sentiment-micron-intel-up-2-11792507459852.html"
         }
       ],
-      "score": 7,
-      "summary": "GE Aerospace has increased its 2026 adjusted earnings forecast due to continued demand for engine maintenance. The demand for spare parts remains high, which supports their financial outlook. Airlines are facing rising fuel costs due to disruptions in oil supply and are adjusting their capacity accordingly. Despite potential pressures on flight sch",
+      "score": 8,
+      "summary": "Micron Technology rose 1.17% to $915.50, while Intel gained 0.44% to $92.40.",
+      "category": "Energy & geopolitics",
+      "reason": "Energy costs and disruption can affect Indian inflation, import costs and exposed sectors.",
+      "matched": [
+        "Energy & geopolitics",
+        "Market flows"
+      ],
+      "tier": "Must know",
+      "related": [
+        {
+          "title": "Wall Street rebounds from lows as upbeat earnings, falling oil prices lift sentiment; Micron, Intel up 2%",
+          "url": "https://www.livemint.com/market/stock-market-news/wall-street-rebounds-from-lows-as-upbeat-earnings-falling-oil-prices-lift-sentiment-micron-intel-up-2-11792507459852.html",
+          "source": "Mint Markets",
+          "published": 1792509679.0
+        }
+      ],
+      "cluster_count": 2,
+      "impact_assets": [
+        "Commodities"
+      ],
+      "why_it_matters": "Falling crude can ease India’s import bill and input costs for airlines and paints, while reducing upstream oil realizations.",
+      "impact_chain": {
+        "rule": "CRUDE_DROP",
+        "catalyst": "Falling crude · potential sector effects",
+        "tailwinds": [
+          "Asian Paints",
+          "IndiGo",
+          "BPCL",
+          "Apollo Tyres"
+        ],
+        "headwinds": [
+          "ONGC",
+          "Oil India"
+        ],
+        "rationale": "Softening crude reduces airline fuel bills and OMC procurement costs while softening paint raw materials."
+      },
+      "companies": []
+    },
+    {
+      "id": "80618e48e4b09ea3",
+      "title": "Trump sued over 50% tariffs on Canada in latest trade challenge",
+      "url": "https://www.cnbc.com/2026/10/20/trump-tariffs-canada-section-338-lawsuit.html",
+      "published": 1792518578.0,
+      "region": "Global",
+      "official": false,
+      "sources": [
+        {
+          "name": "CNBC World",
+          "url": "https://www.cnbc.com/2026/10/20/trump-tariffs-canada-section-338-lawsuit.html"
+        }
+      ],
+      "score": 4,
+      "summary": "A new lawsuit challenges President Donald Trump's tariffs on a range of Canadian goods using Section 338 of the Tariff Act of 1930.",
+      "category": "Regulation",
+      "reason": "Check who is covered, whether it is proposed or final, and its effective date.",
+      "matched": [
+        "Regulation"
+      ],
+      "tier": "Watch",
+      "related": [],
+      "cluster_count": 1,
+      "impact_assets": [
+        "Equities"
+      ],
+      "why_it_matters": "Alters market structure, compliance mandates, capital allocation rules, and retail derivative trading liquidity.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
+      "id": "168907e20f780f68",
+      "title": "U.S. stocks rise as tech fluctuations offset by earnings moves, fall in oil prices",
+      "url": "https://www.investing.com/news/stock-market-news/us-stock-futures-steady-after-wall-street-rebounds-on-tech-recovery-4958596",
+      "published": 1792518572.0,
+      "region": "Global",
+      "official": false,
+      "sources": [
+        {
+          "name": "Investing.com",
+          "url": "https://www.investing.com/news/stock-market-news/us-stock-futures-steady-after-wall-street-rebounds-on-tech-recovery-4958596"
+        }
+      ],
+      "score": 4,
+      "summary": "",
       "category": "Earnings",
       "reason": "Compare results and guidance with expectations for the company and its sector.",
       "matched": [
         "Earnings",
+        "Energy & geopolitics"
+      ],
+      "tier": "Watch",
+      "related": [],
+      "cluster_count": 1,
+      "impact_assets": [
+        "Equities",
+        "Commodities"
+      ],
+      "why_it_matters": "Falling crude can ease India’s import bill and input costs for airlines and paints, while reducing upstream oil realizations.",
+      "impact_chain": {
+        "rule": "CRUDE_DROP",
+        "catalyst": "Falling crude · potential sector effects",
+        "tailwinds": [
+          "Asian Paints",
+          "IndiGo",
+          "BPCL",
+          "Apollo Tyres"
+        ],
+        "headwinds": [
+          "ONGC",
+          "Oil India"
+        ],
+        "rationale": "Softening crude reduces airline fuel bills and OMC procurement costs while softening paint raw materials."
+      },
+      "companies": []
+    },
+    {
+      "id": "a3a938522967d2f3",
+      "title": "Food importer files new lawsuit to block Trump’s Canada tariffs",
+      "url": "https://www.investing.com/news/stock-market-news/small-businesses-file-new-lawsuit-to-block-trumps-canada-tariffs-4960660",
+      "published": 1792518142.0,
+      "region": "Global",
+      "official": false,
+      "sources": [
+        {
+          "name": "Investing.com",
+          "url": "https://www.investing.com/news/stock-market-news/small-businesses-file-new-lawsuit-to-block-trumps-canada-tariffs-4960660"
+        }
+      ],
+      "score": 4,
+      "summary": "",
+      "category": "Regulation",
+      "reason": "Check who is covered, whether it is proposed or final, and its effective date.",
+      "matched": [
+        "Regulation"
+      ],
+      "tier": "Watch",
+      "related": [],
+      "cluster_count": 1,
+      "impact_assets": [
+        "Equities"
+      ],
+      "why_it_matters": "Alters market structure, compliance mandates, capital allocation rules, and retail derivative trading liquidity.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
+      "id": "6ce7b2b54a71b8d5",
+      "title": "Ahead of Market: 10 things that will decide stock market action on Wednesday",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/ahead-of-market-10-things-that-will-decide-stock-market-action-on-wednesday/articleshow/135072460.cms",
+      "published": 1792509131.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "Zerodha Pulse",
+          "url": "https://economictimes.indiatimes.com/markets/stocks/news/ahead-of-market-10-things-that-will-decide-stock-market-action-on-wednesday/articleshow/135072460.cms"
+        },
+        {
+          "name": "ET Markets",
+          "url": "https://economictimes.indiatimes.com/markets/stocks/news/ahead-of-market-10-things-that-will-decide-stock-market-action-on-wednesday/articleshow/135072460.cms"
+        }
+      ],
+      "score": 5,
+      "summary": "Indian markets plunged on Monday as the Sensex fell nearly 900 points and the Nifty dropped below 22,900, wiping out nearly Rs 5 lakh crore in market value. Private bank selling, weak global cues and earnings uncertainty weighed on sentiment.",
+      "category": "Market flows",
+      "reason": "Flows, currency and yields provide context for Indian equity risk appetite.",
+      "matched": [
+        "Market flows"
+      ],
+      "tier": "Watch",
+      "related": [],
+      "cluster_count": 2,
+      "impact_assets": [
+        "Equities"
+      ],
+      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
+      "id": "a95cd954a7844381",
+      "title": "10-year Treasury yield moves lower after weak housing data",
+      "url": "https://www.cnbc.com/2026/10/20/us-treasury-yields-investors-economy.html",
+      "published": 1792512536.0,
+      "region": "Global",
+      "official": false,
+      "sources": [
+        {
+          "name": "CNBC World",
+          "url": "https://www.cnbc.com/2026/10/20/us-treasury-yields-investors-economy.html"
+        }
+      ],
+      "score": 4,
+      "summary": "Investors digested more economic data and continued to assess the inflationary backdrop ahead of the Federal Reserve's interest rate decision next week.",
+      "category": "Market flows",
+      "reason": "Flows, currency and yields provide context for Indian equity risk appetite.",
+      "matched": [
+        "Market flows"
+      ],
+      "tier": "Watch",
+      "related": [],
+      "cluster_count": 1,
+      "impact_assets": [
+        "Rates",
+        "Equities"
+      ],
+      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
+      "id": "8752d2bfe9f7c162",
+      "title": "OpenAI Upgrades ChatGPT Slides With Live Teamwork, Comments And PowerPoint Export",
+      "url": "https://www.ndtvprofit.com/technology/openai-upgrades-chatgpt-slides-with-live-teamwork-comments-and-powerpoint-export-12211708#publisher=newsstand",
+      "published": 1792510806.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "Zerodha Pulse",
+          "url": "https://www.ndtvprofit.com/technology/openai-upgrades-chatgpt-slides-with-live-teamwork-comments-and-powerpoint-export-12211708#publisher=newsstand"
+        }
+      ],
+      "score": 4,
+      "summary": "OpenAI has upgraded ChatGPT Slides with real-time collaboration, comments and direct on-slide editing. Teams can now tag ChatGPT, or their Dots agent, to turn feedback into changes, then export decks to PowerPoint or Google Slides.",
+      "category": "Economic data",
+      "reason": "Compare the release with expectations; the surprise can affect rates and risk appetite.",
+      "matched": [
+        "Economic data"
+      ],
+      "tier": "Watch",
+      "related": [],
+      "cluster_count": 1,
+      "impact_assets": [
+        "Equities"
+      ],
+      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
+      "id": "c6986898c5ea9bb3",
+      "title": "US stocks today: US stocks gain as healthcare stocks hit record high, oil prices fall",
+      "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/us-stocks-today-us-stocks-open-lower-as-ai-stocks-decline-oil-prices-rise/articleshow/135071224.cms",
+      "published": 1792503570.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "ET Markets",
+          "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/us-stocks-today-us-stocks-open-lower-as-ai-stocks-decline-oil-prices-rise/articleshow/135071224.cms"
+        }
+      ],
+      "score": 6,
+      "summary": "Wall Street's main indexes saw increases driven by a rally in healthcare stocks that reached record highs. Easing oil prices contributed to a recovery from the previous week's technology led selloff. Major companies like General Motors and Steel Dynamics reported disappointing earnings forecasts, while 3M and Equifax exceeded expectations. Investor",
+      "category": "Energy & geopolitics",
+      "reason": "Energy costs and disruption can affect Indian inflation, import costs and exposed sectors.",
+      "matched": [
+        "Energy & geopolitics",
         "Market flows"
       ],
       "tier": "Must know",
+      "related": [
+        {
+          "title": "Dow Jones| Nasdaq | S&P 500 | US Stock Market Today |Live Updates: S&P 500 Healthcare hits record high, Dow soars over 500 points",
+          "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/dow-jones-stock-market-live-updates-nasdaq-sp-500-us-iran-israel-war-hormuz-deal-brent-crude-oil-fed-rate-treasury-yields-earnings-forecast-nvidia-macys-gamestop-stock-price-news-20th-september-2026/liveblog/135069926.cms",
+          "source": "ET Markets",
+          "published": 1792497682.0
+        }
+      ],
+      "cluster_count": 1,
+      "impact_assets": [
+        "Commodities"
+      ],
+      "why_it_matters": "Falling crude can ease India’s import bill and input costs for airlines and paints, while reducing upstream oil realizations.",
+      "impact_chain": {
+        "rule": "CRUDE_DROP",
+        "catalyst": "Falling crude · potential sector effects",
+        "tailwinds": [
+          "Asian Paints",
+          "IndiGo",
+          "BPCL",
+          "Apollo Tyres"
+        ],
+        "headwinds": [
+          "ONGC",
+          "Oil India"
+        ],
+        "rationale": "Softening crude reduces airline fuel bills and OMC procurement costs while softening paint raw materials."
+      },
+      "companies": []
+    },
+    {
+      "id": "831fcb784a8b9732",
+      "title": "Carrefour Q3 2026 slides: solid sales growth, guidance cut on France unrest",
+      "url": "https://www.investing.com/news/company-news/carrefour-q3-2026-slides-solid-sales-growth-guidance-cut-on-france-unrest-93CH-4960820",
+      "published": 1792518095.0,
+      "region": "Global",
+      "official": false,
+      "sources": [
+        {
+          "name": "Investing.com",
+          "url": "https://www.investing.com/news/company-news/carrefour-q3-2026-slides-solid-sales-growth-guidance-cut-on-france-unrest-93CH-4960820"
+        }
+      ],
+      "score": 2,
+      "summary": "",
+      "category": "Earnings",
+      "reason": "Compare results and guidance with expectations for the company and its sector.",
+      "matched": [
+        "Earnings"
+      ],
+      "tier": "More",
       "related": [],
-      "cluster_count": 2,
+      "cluster_count": 1,
       "impact_assets": [
         "Equities"
       ],
@@ -215,33 +655,231 @@
       "companies": []
     },
     {
-      "id": "e2d9294270c54ce6",
-      "title": "US Stocks: GM's core profit rises 22% on strength of pickup-truck business",
-      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/us-stocks-gms-core-profit-rises-22-on-strength-of-pickup-truck-business/articleshow/135068643.cms",
-      "published": 1792495052.0,
+      "id": "aba2fe8efbb14dce",
+      "title": "Trade Setup For Oct 21: Nifty Breaking Below 22,800 Support Can Trigger Another Bear Attack, Analysts Warn",
+      "url": "https://www.ndtvprofit.com/markets/trade-setup-for-oct-21-nifty-breaking-below-22-800-support-can-trigger-another-bear-attack-analysts-warn-12212011#publisher=newsstand",
+      "published": 1792512513.0,
       "region": "India",
       "official": false,
       "sources": [
         {
           "name": "Zerodha Pulse",
-          "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/us-stocks-gms-core-profit-rises-22-on-strength-of-pickup-truck-business/articleshow/135068643.cms"
-        },
-        {
-          "name": "ET Markets",
-          "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/us-stocks-gms-core-profit-rises-22-on-strength-of-pickup-truck-business/articleshow/135068643.cms"
+          "url": "https://www.ndtvprofit.com/markets/trade-setup-for-oct-21-nifty-breaking-below-22-800-support-can-trigger-another-bear-attack-analysts-warn-12212011#publisher=newsstand"
         }
       ],
-      "score": 7,
-      "summary": "General Motors exceeded analyst expectations in third-quarter earnings, driven by robust demand for their pickups and SUVs. The company reported an adjusted EBIT of $4.1 billion, marking a 22% year-over-year increase. Despite facing inflationary challenges, GM forecasts an adjusted EBIT of $14.5 billion to $15.5 billion by 2026. Additionally, a $20",
+      "score": 3,
+      "summary": "Against this backdrop, traders are likely to monitor global cues alongside the Nifty's ability to defend its immediate support and reclaim key resistance levels.",
+      "category": "Market flows",
+      "reason": "Flows, currency and yields provide context for Indian equity risk appetite.",
+      "matched": [
+        "Market flows"
+      ],
+      "tier": "Watch",
+      "related": [],
+      "cluster_count": 1,
+      "impact_assets": [
+        "Equities"
+      ],
+      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
+      "id": "b44830b1e199fe42",
+      "title": "General Motors beats Wall Street's Q3 earnings expectations, narrows full-year guidance",
+      "url": "https://www.cnbc.com/2026/10/20/general-motors-gm-earnings-q3-2026.html",
+      "published": 1792511024.0,
+      "region": "Global",
+      "official": false,
+      "sources": [
+        {
+          "name": "CNBC World",
+          "url": "https://www.cnbc.com/2026/10/20/general-motors-gm-earnings-q3-2026.html"
+        }
+      ],
+      "score": 3,
+      "summary": "GM narrowed its 2026 earnings guidance and raised its adjusted automotive free cash flow outlook after beating Wall Street’s third-quarter estimates.",
       "category": "Earnings",
       "reason": "Compare results and guidance with expectations for the company and its sector.",
       "matched": [
         "Earnings",
         "Market flows"
       ],
-      "tier": "Must know",
+      "tier": "Watch",
       "related": [],
-      "cluster_count": 2,
+      "cluster_count": 1,
+      "impact_assets": [
+        "Equities"
+      ],
+      "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
+      "id": "42a555c90e3be1ee",
+      "title": "Major Economic Indicators Latest Numbers",
+      "url": "https://www.bls.gov/bls/",
+      "published": 1792504955.0,
+      "region": "Global",
+      "official": true,
+      "sources": [
+        {
+          "name": "US BLS",
+          "url": "https://www.bls.gov/bls/"
+        }
+      ],
+      "score": 5,
+      "summary": "Consumer Price Index (CPI): +0.6% in Sep 2026 News Release Historical Data Unemployment Rate: 4.2% in Sep 2026 News Release Historical Data Payroll Employment: +29,000(p) in Sep 2026 News Release Historical Data Average Hourly Earnings: +$0.05(p) in Sep 2026 News Release Historical Data Producer Price Index - Final Demand: +1.3%(p) in Sep 2026 News",
+      "category": "Economic data",
+      "reason": "Compare the release with expectations; the surprise can affect rates and risk appetite.",
+      "matched": [
+        "Economic data"
+      ],
+      "tier": "Watch",
+      "related": [],
+      "cluster_count": 1,
+      "impact_assets": [
+        "Equities"
+      ],
+      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
+      "id": "23dd40a6e116b92a",
+      "title": "Akash Ambani: from building Jio to selling its story",
+      "url": "https://www.livemint.com/companies/akash-ambani-from-building-jio-to-selling-its-story-11792500314399.html",
+      "published": 1792504608.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "Mint Companies",
+          "url": "https://www.livemint.com/companies/akash-ambani-from-building-jio-to-selling-its-story-11792500314399.html"
+        },
+        {
+          "name": "Mint Markets",
+          "url": "https://www.livemint.com/market/india-jio-ipo-lenders-brokerages-push-retail-participation-with-loans-marketing-11792473742375.html"
+        },
+        {
+          "name": "ET Markets",
+          "url": "https://economictimes.indiatimes.com/markets/stocks/news/jio-ipo-opens-tomorrow-how-can-investors-maximise-allotment-chances-under-rs-2500-crore-ril-shareholders-quota/articleshow/135064168.cms"
+        },
+        {
+          "name": "CNBC World",
+          "url": "https://www.cnbc.com/2026/10/20/jio-ipo-gic-blackrock-.html"
+        },
+        {
+          "name": "Business Standard",
+          "url": "https://www.business-standard.com/markets/ipo/jio-ipo-anchor-book-sees-over-30x-demand-draws-record-bids-worth-2-5-trn-126101901316_1.html"
+        }
+      ],
+      "score": 5,
+      "summary": "As Jio prepares for India's biggest IPO, chairman Akash Ambani must convince investors that he can do more than carry forward his father’s legacy—that he can turn Jio’s extraordinary scale into enduring value for millions of shareholders.",
+      "category": "Other news",
+      "reason": "Key market catalyst driving market liquidity and session volatility.",
+      "matched": [],
+      "tier": "Watch",
+      "related": [
+        {
+          "title": "Jio IPO has lenders, brokerages pushing retail participation with loans, marketing reach out",
+          "url": "https://www.livemint.com/market/india-jio-ipo-lenders-brokerages-push-retail-participation-with-loans-marketing-11792473742375.html",
+          "source": "Mint Markets",
+          "published": 1792504133.0
+        },
+        {
+          "title": "Jio IPO opens tomorrow: How can investors maximise allotment chances under Rs 2,500 crore RIL shareholders quota",
+          "url": "https://economictimes.indiatimes.com/markets/stocks/news/jio-ipo-opens-tomorrow-how-can-investors-maximise-allotment-chances-under-rs-2500-crore-ril-shareholders-quota/articleshow/135064168.cms",
+          "source": "ET Markets",
+          "published": 1792481756.0
+        },
+        {
+          "title": "Jio IPO vs Airtel shares: Which telecom giant offers greater valuation comfort to investors?",
+          "url": "https://economictimes.indiatimes.com/markets/ipos/fpos/jio-ipo-vs-airtel-shares-which-telecom-giant-offers-greater-valuation-comfort-to-investors/articleshow/135053174.cms",
+          "source": "ET Markets",
+          "published": 1792468800.0
+        },
+        {
+          "title": "BlackRock, GIC among investors chasing Indian telecom major Jio's IPO as anchor bids top $26 billion",
+          "url": "https://www.cnbc.com/2026/10/20/jio-ipo-gic-blackrock-.html",
+          "source": "CNBC World",
+          "published": 1792464275.0
+        },
+        {
+          "title": "Jio IPO anchor book sees over 30x demand, draws record bids worth ₹2.5 trn",
+          "url": "https://www.business-standard.com/markets/ipo/jio-ipo-anchor-book-sees-over-30x-demand-draws-record-bids-worth-2-5-trn-126101901316_1.html",
+          "source": "Business Standard",
+          "published": 1792434276.0
+        },
+        {
+          "title": "Jio Platforms' anchor book draws record ₹2.5 trillion in bids ahead of IPO",
+          "url": "https://www.business-standard.com/companies/news/jio-platforms-ipo-anchor-investor-quota-nearly-30-times-oversubscribed-126101900538_1.html",
+          "source": "Business Standard",
+          "published": 1792404022.0
+        }
+      ],
+      "cluster_count": 5,
+      "impact_assets": [
+        "Equities"
+      ],
+      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
+      "id": "ff9d960355d83975",
+      "title": "Fed sneezes, but emerging markets aren't catching a cold yet: McGeever",
+      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/fed-sneezes-but-emerging-markets-arent-catching-a-cold-yet-mcgeever/articleshow/135071362.cms",
+      "published": 1792504057.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "ET Markets",
+          "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/fed-sneezes-but-emerging-markets-arent-catching-a-cold-yet-mcgeever/articleshow/135071362.cms"
+        }
+      ],
+      "score": 5,
+      "summary": "Emerging markets are displaying surprising economic resilience in light of the Federal Reserve's tightening measures. Stronger fiscal fundamentals and high bond yields provide emerging market central banks with greater flexibility. Some countries are even considering rate cuts, which may not have been possible in the past. Investor sentiment is shi",
+      "category": "Monetary policy",
+      "reason": "Guides global liquidity dynamics, US Dollar Index (DXY) trajectory, and foreign institutional (FII) capital allocations.",
+      "matched": [
+        "Monetary policy"
+      ],
+      "tier": "Watch",
+      "related": [],
+      "cluster_count": 1,
+      "impact_assets": [
+        "Rates",
+        "Equities"
+      ],
+      "why_it_matters": "Guides global liquidity dynamics, US Dollar Index (DXY) trajectory, and foreign institutional (FII) capital allocations.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
+      "id": "85775fd23a0dac83",
+      "title": "Michelin Q3 2026 slides: organic growth returns despite volume headwinds",
+      "url": "https://www.investing.com/news/company-news/michelin-q3-2026-slides-organic-growth-returns-despite-volume-headwinds-93CH-4960823",
+      "published": 1792518319.0,
+      "region": "Global",
+      "official": false,
+      "sources": [
+        {
+          "name": "Investing.com",
+          "url": "https://www.investing.com/news/company-news/michelin-q3-2026-slides-organic-growth-returns-despite-volume-headwinds-93CH-4960823"
+        }
+      ],
+      "score": 1,
+      "summary": "",
+      "category": "Earnings",
+      "reason": "Compare results and guidance with expectations for the company and its sector.",
+      "matched": [
+        "Earnings"
+      ],
+      "tier": "More",
+      "related": [],
+      "cluster_count": 1,
       "impact_assets": [
         "Equities"
       ],
@@ -268,13 +906,9 @@
         {
           "name": "Mint Markets",
           "url": "https://www.livemint.com/market/stock-market-news/top-banking-share-to-buy-after-q2-results-2026-hdfc-bank-vs-axis-bank-vs-icici-bank-vs-yes-bank-vs-idbi-bank-details-11792465348383.html"
-        },
-        {
-          "name": "ET Markets",
-          "url": "https://economictimes.indiatimes.com/markets/stocks/news/brokerages-back-icici-bank-on-strong-q2-earnings-see-hdfc-bank-recovery-ahead/articleshow/135059089.cms"
         }
       ],
-      "score": 10,
+      "score": 9,
       "summary": "HDFC Bank’s board has approved Lily Vadera’s reappointment as an independent director for three years, from November 2026 to November 2029, subject to shareholder approval.&nbsp;",
       "category": "Monetary policy",
       "reason": "Directly shifts commercial bank cost of funds, repo borrowing rates, and rate-sensitive equity multiples (banks, real estate, auto).",
@@ -296,12 +930,6 @@
           "published": 1792467519.0
         },
         {
-          "title": "Brokerages back ICICI Bank on strong Q2 earnings, see HDFC Bank recovery ahead",
-          "url": "https://economictimes.indiatimes.com/markets/stocks/news/brokerages-back-icici-bank-on-strong-q2-earnings-see-hdfc-bank-recovery-ahead/articleshow/135059089.cms",
-          "source": "ET Markets",
-          "published": 1792456497.0
-        },
-        {
           "title": "HDFC Bank vs ICICI Bank share price targets: Check upside potential, returns, valuations — which stock should you buy?",
           "url": "https://www.livemint.com/market/stock-market-news/hdfc-bank-vs-icici-bank-share-price-targets-check-upside-potential-returns-valuations-which-stock-should-you-buy-11792470098217.html",
           "source": "Mint Markets",
@@ -314,7 +942,7 @@
           "published": 1792377421.0
         }
       ],
-      "cluster_count": 4,
+      "cluster_count": 3,
       "impact_assets": [
         "Rates",
         "Equities"
@@ -329,90 +957,48 @@
       ]
     },
     {
-      "id": "efdcb7c676967415",
-      "title": "Amazon to hire over 300,000 holiday workers, up 20% from last year",
-      "url": "https://www.investing.com/news/stock-market-news/amazon-to-hire-over-300000-holiday-workers-up-20-from-last-year-4960284",
-      "published": 1792502540.0,
-      "region": "Global",
+      "id": "ac8aa16862efd6eb",
+      "title": "Amazon targets Nvidia’s software edge with new AI tool",
+      "url": "https://www.thehindu.com/business/amazon-targets-nvidias-software-edge-with-new-ai-tool/article71604712.ece",
+      "published": 1792509535.0,
+      "region": "India",
       "official": false,
       "sources": [
         {
-          "name": "Investing.com",
-          "url": "https://www.investing.com/news/stock-market-news/amazon-to-hire-over-300000-holiday-workers-up-20-from-last-year-4960284"
-        },
-        {
           "name": "Zerodha Pulse",
-          "url": "https://www.ndtvprofit.com/technology/galaxy-s25-edge-amazon-deal-price-exchange-offer-bank-discount-12210320#publisher=newsstand"
+          "url": "https://www.thehindu.com/business/amazon-targets-nvidias-software-edge-with-new-ai-tool/article71604712.ece"
         },
         {
-          "name": "Mint Companies",
-          "url": "https://www.livemint.com/companies/why-is-amazon-threatening-to-axe-5-000-delivery-jobs-over-zohran-mamdani-s-labour-law-in-new-york-what-govt-can-do-11792425972957.html"
+          "name": "CNBC World",
+          "url": "https://www.cnbc.com/2026/10/20/german-chancellor-urges-businesses-to-embrace-ai.html"
         }
       ],
-      "score": 4,
-      "summary": "",
+      "score": 2,
+      "summary": "Open-source TorchNeuron aims to make it easier for developers to shift AI workloads to Amazon’s Trainium chips without rewriting code",
       "category": "Other news",
       "reason": "Key market catalyst driving market liquidity and session volatility.",
       "matched": [],
-      "tier": "Watch",
+      "tier": "More",
       "related": [
         {
-          "title": "Why is Amazon stock volatile today?",
-          "url": "https://www.investing.com/news/stock-market-news/why-is-amazon-stock-volatile-today-93CH-4960276",
-          "source": "Investing.com",
-          "published": 1792502449.0
-        },
-        {
-          "title": "Galaxy S25 Edge Amazon Deal: Price, Exchange Offer, Bank Discount",
-          "url": "https://www.ndtvprofit.com/technology/galaxy-s25-edge-amazon-deal-price-exchange-offer-bank-discount-12210320#publisher=newsstand",
-          "source": "Zerodha Pulse",
-          "published": 1792496970.0
-        },
-        {
-          "title": "Why is Amazon threatening to axe 5,000 delivery jobs over Zohran Mamdani’s labour law in New York? What govt can do",
-          "url": "https://www.livemint.com/companies/why-is-amazon-threatening-to-axe-5-000-delivery-jobs-over-zohran-mamdani-s-labour-law-in-new-york-what-govt-can-do-11792425972957.html",
-          "source": "Mint Companies",
-          "published": 1792435309.0
+          "title": "‘Open your doors for AI’: German chancellor urges businesses to embrace AI as Nvidia announces new investments",
+          "url": "https://www.cnbc.com/2026/10/20/german-chancellor-urges-businesses-to-embrace-ai.html",
+          "source": "CNBC World",
+          "published": 1792462585.0
         }
       ],
-      "cluster_count": 3,
+      "cluster_count": 2,
       "impact_assets": [
         "Equities"
       ],
       "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
       "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "a95cd954a7844381",
-      "title": "U.S. Treasury yields move lower after weak housing data",
-      "url": "https://www.cnbc.com/2026/10/20/us-treasury-yields-investors-economy.html",
-      "published": 1792502025.0,
-      "region": "Global",
-      "official": false,
-      "sources": [
+      "companies": [
         {
-          "name": "CNBC World",
-          "url": "https://www.cnbc.com/2026/10/20/us-treasury-yields-investors-economy.html"
+          "name": "Nvidia",
+          "symbol": "nvidia"
         }
-      ],
-      "score": 4,
-      "summary": "Investors digested more economic data and continued to weigh the inflationary backdrop ahead of the Federal Reserve's interest rate decision next week.",
-      "category": "Market flows",
-      "reason": "Flows, currency and yields provide context for Indian equity risk appetite.",
-      "matched": [
-        "Market flows"
-      ],
-      "tier": "Watch",
-      "related": [],
-      "cluster_count": 1,
-      "impact_assets": [
-        "Rates",
-        "Equities"
-      ],
-      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
-      "impact_chain": null,
-      "companies": []
+      ]
     },
     {
       "id": "5d3fb23a1dc543f4",
@@ -445,89 +1031,20 @@
       "companies": []
     },
     {
-      "id": "2812d766a442eaad",
-      "title": "Meta's AI spending, Muse assistant adoption in focus for quarterly results",
-      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/metas-ai-spending-muse-assistant-adoption-in-focus-for-quarterly-results/articleshow/135068976.cms",
-      "published": 1792495931.0,
+      "id": "e5276f070f7060f3",
+      "title": "US Stocks: 3M lifts annual profit forecast on cost controls, price hikes",
+      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/us-stocks-3m-lifts-annual-profit-forecast-on-cost-controls-price-hikes/articleshow/135068806.cms",
+      "published": 1792495329.0,
       "region": "India",
       "official": false,
       "sources": [
         {
-          "name": "Zerodha Pulse",
-          "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/metas-ai-spending-muse-assistant-adoption-in-focus-for-quarterly-results/articleshow/135068976.cms"
-        },
-        {
           "name": "ET Markets",
-          "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/metas-ai-spending-muse-assistant-adoption-in-focus-for-quarterly-results/articleshow/135068976.cms"
+          "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/us-stocks-3m-lifts-annual-profit-forecast-on-cost-controls-price-hikes/articleshow/135068806.cms"
         }
       ],
       "score": 5,
-      "summary": "Meta's upcoming third-quarter results will reflect its significant investments in artificial intelligence technologies and products. The company's revenue is expected to grow by 23.8%, despite intense competition from rival firms. Analysts predict a decline in net income, estimating it at $15.44 billion for the quarter. Investor confidence has incr",
-      "category": "Earnings",
-      "reason": "Compare results and guidance with expectations for the company and its sector.",
-      "matched": [
-        "Earnings"
-      ],
-      "tier": "Watch",
-      "related": [],
-      "cluster_count": 2,
-      "impact_assets": [
-        "Equities"
-      ],
-      "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "f87cbd2192308d29",
-      "title": "French bond yields near 24-year high as new protests loom",
-      "url": "https://economictimes.indiatimes.com/markets/bonds/french-bond-yields-near-24-year-high-as-new-protests-loom/articleshow/135068905.cms",
-      "published": 1792495677.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "Zerodha Pulse",
-          "url": "https://economictimes.indiatimes.com/markets/bonds/french-bond-yields-near-24-year-high-as-new-protests-loom/articleshow/135068905.cms"
-        },
-        {
-          "name": "ET Markets",
-          "url": "https://economictimes.indiatimes.com/markets/bonds/french-bond-yields-near-24-year-high-as-new-protests-loom/articleshow/135068905.cms"
-        }
-      ],
-      "score": 5,
-      "summary": "As ongoing protests grip France, the yields on government securities, known as OAT, have surged to a peak not seen in over 24 years. Both Marine Le Pen and Jean-Luc Melenchon lead polling efforts, presenting hurdles for any potential fiscal reforms. Such public demonstrations illustrate the persistent opposition any administration encounters while ",
-      "category": "Market flows",
-      "reason": "Flows, currency and yields provide context for Indian equity risk appetite.",
-      "matched": [
-        "Market flows"
-      ],
-      "tier": "Watch",
-      "related": [],
-      "cluster_count": 2,
-      "impact_assets": [
-        "Rates",
-        "Equities"
-      ],
-      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "b44830b1e199fe42",
-      "title": "General Motors beats Wall Street's Q3 earnings expectations, narrows full-year guidance",
-      "url": "https://www.cnbc.com/2026/10/20/general-motors-gm-earnings-q3-2026.html",
-      "published": 1792502595.0,
-      "region": "Global",
-      "official": false,
-      "sources": [
-        {
-          "name": "CNBC World",
-          "url": "https://www.cnbc.com/2026/10/20/general-motors-gm-earnings-q3-2026.html"
-        }
-      ],
-      "score": 3,
-      "summary": "GM narrowed its 2026 earnings guidance and raised its adjusted automotive free cash flow outlook after beating Wall Street’s third-quarter estimates.",
+      "summary": "3M has revised its profit outlook for the year, expecting a boost in adjusted earnings per share. Their quarterly revenue reflects growth thanks to the safety and industrial segment. Strong industrial demand and sales increases in targeted markets are contributing factors. Despite hurdles in some consumer areas, 3M is successfully unveiling innovat",
       "category": "Earnings",
       "reason": "Compare results and guidance with expectations for the company and its sector.",
       "matched": [
@@ -545,285 +1062,24 @@
       "companies": []
     },
     {
-      "id": "cb1b63194cbd90b4",
-      "title": "China's CATL third-quarter profit growth slowest in nearly two years as competition intensifies",
-      "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/chinas-catl-third-quarter-profit-growth-slowest-in-nearly-two-years-as-competition-intensifies/articleshow/135070675.cms",
-      "published": 1792501697.0,
+      "id": "be45a9cbf27cc72e",
+      "title": "US Stocks: GE Aerospace raises 2026 profit forecast as services strength drives growth",
+      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/us-stocks-ge-aerospace-raises-2026-profit-forecast-as-services-strength-drives-growth/articleshow/135068763.cms",
+      "published": 1792495175.0,
       "region": "India",
       "official": false,
       "sources": [
         {
           "name": "ET Markets",
-          "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/chinas-catl-third-quarter-profit-growth-slowest-in-nearly-two-years-as-competition-intensifies/articleshow/135070675.cms"
+          "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/us-stocks-ge-aerospace-raises-2026-profit-forecast-as-services-strength-drives-growth/articleshow/135068763.cms"
         }
       ],
-      "score": 3,
-      "summary": "CATL reports slower third-quarter profit growth as intense competition in China’s EV battery market weighs on earnings. Net profit rises 14.5% to 21.2 billion yuan, below estimates, while revenue grows 58.6%. CATL also unveils new heavy-duty truck batteries and plans to expand its battery-swapping network.",
+      "score": 5,
+      "summary": "GE Aerospace has increased its 2026 adjusted earnings forecast due to continued demand for engine maintenance. The demand for spare parts remains high, which supports their financial outlook. Airlines are facing rising fuel costs due to disruptions in oil supply and are adjusting their capacity accordingly. Despite potential pressures on flight sch",
       "category": "Earnings",
       "reason": "Compare results and guidance with expectations for the company and its sector.",
       "matched": [
-        "Earnings"
-      ],
-      "tier": "Watch",
-      "related": [],
-      "cluster_count": 1,
-      "impact_assets": [
-        "Equities"
-      ],
-      "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "63c6e833ab58b10a",
-      "title": "Eternal share: What to expect from Zomato parent’s Q2 results 2026 as Blinkit growth stays strong",
-      "url": "https://www.livemint.com/market/stock-market-news/eternal-share-what-to-expect-from-zomato-parent-s-q2-results-2026-as-blinkit-growth-stays-strong-11792497152335.html",
-      "published": 1792500683.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "Mint Markets",
-          "url": "https://www.livemint.com/market/stock-market-news/eternal-share-what-to-expect-from-zomato-parent-s-q2-results-2026-as-blinkit-growth-stays-strong-11792497152335.html"
-        }
-      ],
-      "score": 3,
-      "summary": "Brokerages expect Eternal, parent of Zomato and Blinkit, to report strong September-quarter growth, with improved margins, market-share gains and rapid Blinkit expansion.",
-      "category": "Earnings",
-      "reason": "Compare results and guidance with expectations for the company and its sector.",
-      "matched": [
-        "Earnings"
-      ],
-      "tier": "Watch",
-      "related": [],
-      "cluster_count": 1,
-      "impact_assets": [
-        "Equities"
-      ],
-      "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "aac91e0b0e2ead1d",
-      "title": "India is a refining superpower, can process Venezuelan oil: Marco Rubio",
-      "url": "https://www.business-standard.com/economy/news/india-is-a-refining-superpower-can-process-venezuelan-oil-marco-rubio-126102000549_1.html",
-      "published": 1792497658.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "Zerodha Pulse",
-          "url": "https://www.business-standard.com/economy/news/india-is-a-refining-superpower-can-process-venezuelan-oil-marco-rubio-126102000549_1.html"
-        }
-      ],
-      "score": 4,
-      "summary": "Rubio said US delegation \"will discuss with Reliance about producing oil in Venezuela\", claiming that \"India made 'substantial progress' in diversifying oil purchases\", which is a \"smart thing to do\"",
-      "category": "Energy & geopolitics",
-      "reason": "Energy costs and disruption can affect Indian inflation, import costs and exposed sectors.",
-      "matched": [
-        "Energy & geopolitics"
-      ],
-      "tier": "Watch",
-      "related": [],
-      "cluster_count": 1,
-      "impact_assets": [
-        "Commodities"
-      ],
-      "why_it_matters": "Crude affects India’s import bill and energy-sensitive sectors; the headline does not establish a clear price direction.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "ba47127a3e849d65",
-      "title": "Rubio says India-US trade deal is ‘very, very close’ after Jaishankar meeting",
-      "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/rubio-says-india-us-trade-deal-is-very-very-close-after-jaishankar-meeting/articleshow/135068984.cms",
-      "published": 1792496990.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "ET Economy",
-          "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/rubio-says-india-us-trade-deal-is-very-very-close-after-jaishankar-meeting/articleshow/135068984.cms"
-        }
-      ],
-      "score": 4,
-      "summary": "US Secretary of State Marco Rubio stated that negotiations for a trade deal with India are approaching completion. He highlighted discussions with Indian Foreign Minister Subrahmanyam Jaishankar about energy security and defense cooperation. While tensions over tariffs and energy continue to challenge negotiations, both countries aim to deepen thei",
-      "category": "Regulation",
-      "reason": "Check who is covered, whether it is proposed or final, and its effective date.",
-      "matched": [
-        "Regulation"
-      ],
-      "tier": "Watch",
-      "related": [
-        {
-          "title": "Marco Rubio lands in Mumbai as New Delhi, Washington push to close trade deal",
-          "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/marco-rubio-lands-in-mumbai-as-new-delhi-washington-push-to-close-trade-deal/articleshow/135066599.cms",
-          "source": "ET Economy",
-          "published": 1792488408.0
-        },
-        {
-          "title": "America very close to finalising trade deal with India: Marco Rubio",
-          "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/america-very-close-to-finalising-trade-deal-with-india-marco-rubio/videoshow/135041177.cms",
-          "source": "ET Economy",
-          "published": 1792389231.0
-        },
-        {
-          "title": "US very close to finalising trade deal with India, says Marco Rubio",
-          "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/us-very-close-to-finalising-trade-deal-with-india-says-marco-rubio/articleshow/135040499.cms",
-          "source": "ET Economy",
-          "published": 1792387141.0
-        }
-      ],
-      "cluster_count": 1,
-      "impact_assets": [
-        "Equities"
-      ],
-      "why_it_matters": "Alters market structure, compliance mandates, capital allocation rules, and retail derivative trading liquidity.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "bd09f897b78bae4b",
-      "title": "General Motors Stock Crashes 5% Pre-Market After Earnings Release. What Spooked Investors",
-      "url": "https://www.ndtvprofit.com/markets/general-motors-stock-crashes-5-pre-market-after-earnings-release-what-spooked-investors-12210797#publisher=newsstand",
-      "published": 1792496335.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "Zerodha Pulse",
-          "url": "https://www.ndtvprofit.com/markets/general-motors-stock-crashes-5-pre-market-after-earnings-release-what-spooked-investors-12210797#publisher=newsstand"
-        }
-      ],
-      "score": 4,
-      "summary": "General Motors beat Wall Street's third-quarter earnings and revenue estimates, raised its free cash flow outlook and announced a $20 billion buyback, but tighter 2026 guidance and rising costs weighed on investor sentiment.",
-      "category": "Earnings",
-      "reason": "Compare results and guidance with expectations for the company and its sector.",
-      "matched": [
-        "Earnings"
-      ],
-      "tier": "Watch",
-      "related": [],
-      "cluster_count": 1,
-      "impact_assets": [
-        "Equities"
-      ],
-      "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "5c2da82c63faad31",
-      "title": "Earnings call transcript: Dime Community beats Q3 2026 estimates, shares fall premarket",
-      "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-dime-community-beats-q3-2026-estimates-shares-fall-premarket-93CH-4960269",
-      "published": 1792502419.0,
-      "region": "Global",
-      "official": false,
-      "sources": [
-        {
-          "name": "Investing.com",
-          "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-dime-community-beats-q3-2026-estimates-shares-fall-premarket-93CH-4960269"
-        }
-      ],
-      "score": 2,
-      "summary": "",
-      "category": "Earnings",
-      "reason": "Compare results and guidance with expectations for the company and its sector.",
-      "matched": [
-        "Earnings"
-      ],
-      "tier": "More",
-      "related": [],
-      "cluster_count": 1,
-      "impact_assets": [
-        "Equities"
-      ],
-      "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "a69c3c814fa0d5c8",
-      "title": "Synchrony Q3 2026 slides: volume surges, credit improves amid cost pressures",
-      "url": "https://www.investing.com/news/company-news/synchrony-q3-2026-slides-volume-surges-credit-improves-amid-cost-pressures-93CH-4960267",
-      "published": 1792502364.0,
-      "region": "Global",
-      "official": false,
-      "sources": [
-        {
-          "name": "Investing.com",
-          "url": "https://www.investing.com/news/company-news/synchrony-q3-2026-slides-volume-surges-credit-improves-amid-cost-pressures-93CH-4960267"
-        }
-      ],
-      "score": 2,
-      "summary": "",
-      "category": "Earnings",
-      "reason": "Compare results and guidance with expectations for the company and its sector.",
-      "matched": [
-        "Earnings"
-      ],
-      "tier": "More",
-      "related": [],
-      "cluster_count": 1,
-      "impact_assets": [
-        "Equities"
-      ],
-      "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "ede76177223fd3e0",
-      "title": "Bank of Japan may raise inflation forecast, stand pat on rates, sources say",
-      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/bank-of-japan-may-raise-inflation-forecast-stand-pat-on-rates-sources-say/articleshow/135063146.cms",
-      "published": 1792479146.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "ET Markets",
-          "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/bank-of-japan-may-raise-inflation-forecast-stand-pat-on-rates-sources-say/articleshow/135063146.cms"
-        }
-      ],
-      "score": 7,
-      "summary": "The Bank of Japan plans to slightly upgrade its fiscal year 2027 inflation forecasts this month. Interest rates are expected to remain stable at 1.25% during the upcoming policy meeting in late October. While inflation risks are present, there is no immediate urgency for further rate hikes. Recent data indicates that inflationary pressures are not ",
-      "category": "Monetary policy",
-      "reason": "Key determinant of central bank interest rate paths; elevated prints restrict policy easing and compress real yields.",
-      "matched": [
-        "Monetary policy",
-        "Economic data",
-        "Earnings"
-      ],
-      "tier": "Must know",
-      "related": [],
-      "cluster_count": 1,
-      "impact_assets": [
-        "Rates",
-        "Equities"
-      ],
-      "why_it_matters": "Key determinant of central bank interest rate paths; elevated prints restrict policy easing and compress real yields.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "254888c96d3f76aa",
-      "title": "AI rally fades away from Wall Street as a tiny IPO makes big waves",
-      "url": "https://www.cnbc.com/2026/10/20/ai-rally-fades-elice-ipo-dives.html",
-      "published": 1792496043.0,
-      "region": "Global",
-      "official": false,
-      "sources": [
-        {
-          "name": "CNBC World",
-          "url": "https://www.cnbc.com/2026/10/20/ai-rally-fades-elice-ipo-dives.html"
-        }
-      ],
-      "score": 3,
-      "summary": "Here are the key things investors need to know to start the trading day.",
-      "category": "Market flows",
-      "reason": "Flows, currency and yields provide context for Indian equity risk appetite.",
-      "matched": [
+        "Earnings",
         "Market flows"
       ],
       "tier": "Watch",
@@ -832,28 +1088,29 @@
       "impact_assets": [
         "Equities"
       ],
-      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
+      "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
       "impact_chain": null,
       "companies": []
     },
     {
-      "id": "ff6254e917084198",
-      "title": "$20 Billion Buyback: General Motors Bets Big On Itself, But Wall Street Isn't Buying It",
-      "url": "https://www.ndtvprofit.com/markets/20-billion-buyback-general-motors-bets-big-on-itself-but-wall-street-isnt-buying-it-12210744#publisher=newsstand",
-      "published": 1792495551.0,
+      "id": "e2d9294270c54ce6",
+      "title": "US Stocks: GM's core profit rises 22% on strength of pickup-truck business",
+      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/us-stocks-gms-core-profit-rises-22-on-strength-of-pickup-truck-business/articleshow/135068643.cms",
+      "published": 1792495052.0,
       "region": "India",
       "official": false,
       "sources": [
         {
-          "name": "Zerodha Pulse",
-          "url": "https://www.ndtvprofit.com/markets/20-billion-buyback-general-motors-bets-big-on-itself-but-wall-street-isnt-buying-it-12210744#publisher=newsstand"
+          "name": "ET Markets",
+          "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/us-stocks-gms-core-profit-rises-22-on-strength-of-pickup-truck-business/articleshow/135068643.cms"
         }
       ],
-      "score": 3,
-      "summary": "GM shares fell as much as 6% in premarket trading after the earnings announcement.",
-      "category": "Market flows",
-      "reason": "Flows, currency and yields provide context for Indian equity risk appetite.",
+      "score": 5,
+      "summary": "General Motors exceeded analyst expectations in third-quarter earnings, driven by robust demand for their pickups and SUVs. The company reported an adjusted EBIT of $4.1 billion, marking a 22% year-over-year increase. Despite facing inflationary challenges, GM forecasts an adjusted EBIT of $14.5 billion to $15.5 billion by 2026. Additionally, a $20",
+      "category": "Earnings",
+      "reason": "Compare results and guidance with expectations for the company and its sector.",
       "matched": [
+        "Earnings",
         "Market flows"
       ],
       "tier": "Watch",
@@ -862,7 +1119,7 @@
       "impact_assets": [
         "Equities"
       ],
-      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
+      "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
       "impact_chain": null,
       "companies": []
     },
@@ -920,108 +1177,94 @@
       "companies": []
     },
     {
-      "id": "3af66b2626ed35b9",
-      "title": "Jio IPO opens tomorrow: How can investors maximise allotment chances under Rs 2,500 crore RIL shareholders quota",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/jio-ipo-opens-tomorrow-how-can-investors-maximise-allotment-chances-under-rs-2500-crore-ril-shareholders-quota/articleshow/135064168.cms",
-      "published": 1792481756.0,
-      "region": "India",
+      "id": "ca5cdf6c70a1ab95",
+      "title": "What options traders expect from SpaceX earnings after the bell",
+      "url": "https://www.cnbc.com/2026/10/20/spacex-reports-after-the-bell-heres-what-options-traders-expect-.html",
+      "published": 1792514076.0,
+      "region": "Global",
       "official": false,
       "sources": [
-        {
-          "name": "ET Markets",
-          "url": "https://economictimes.indiatimes.com/markets/stocks/news/jio-ipo-opens-tomorrow-how-can-investors-maximise-allotment-chances-under-rs-2500-crore-ril-shareholders-quota/articleshow/135064168.cms"
-        },
         {
           "name": "CNBC World",
-          "url": "https://www.cnbc.com/2026/10/20/jio-ipo-gic-blackrock-.html"
-        },
-        {
-          "name": "Mint Markets",
-          "url": "https://www.livemint.com/market/ipo/jio-platforms-ipo-preview-analysis-11792390573415.html"
-        },
-        {
-          "name": "Business Standard",
-          "url": "https://www.business-standard.com/markets/ipo/jio-ipo-anchor-book-sees-over-30x-demand-draws-record-bids-worth-2-5-trn-126101901316_1.html"
+          "url": "https://www.cnbc.com/2026/10/20/spacex-reports-after-the-bell-heres-what-options-traders-expect-.html"
         }
       ],
-      "score": 5,
-      "summary": "The much-anticipated Reliance Jio Platforms IPO is launching for public subscription starting October 21, 2023. Shareholders of Reliance Industries can benefit from a Rs 2,500 crore reservation aimed at maximizing their investment opportunities. Those eligible are encouraged to apply in both the shareholder and retail categories. Shares are priced ",
-      "category": "Other news",
-      "reason": "Key market catalyst driving market liquidity and session volatility.",
-      "matched": [],
-      "tier": "Watch",
-      "related": [
-        {
-          "title": "Jio IPO vs Airtel shares: Which telecom giant offers greater valuation comfort to investors?",
-          "url": "https://economictimes.indiatimes.com/markets/ipos/fpos/jio-ipo-vs-airtel-shares-which-telecom-giant-offers-greater-valuation-comfort-to-investors/articleshow/135053174.cms",
-          "source": "ET Markets",
-          "published": 1792468800.0
-        },
-        {
-          "title": "BlackRock, GIC among investors chasing Indian telecom major Jio's IPO as anchor bids top $26 billion",
-          "url": "https://www.cnbc.com/2026/10/20/jio-ipo-gic-blackrock-.html",
-          "source": "CNBC World",
-          "published": 1792464275.0
-        },
-        {
-          "title": "Jio Platforms' IPO draws Rs 2.5 lakh crore in anchor bids",
-          "url": "https://economictimes.indiatimes.com/markets/ipos/fpos/jio-platforms-ipo-draws-rs-2-5-lakh-crore-in-anchor-bids/articleshow/135059075.cms",
-          "source": "ET Markets",
-          "published": 1792455977.0
-        },
-        {
-          "title": "Can Jio’s massive scale convert into superior returns?",
-          "url": "https://www.livemint.com/market/ipo/jio-platforms-ipo-preview-analysis-11792390573415.html",
-          "source": "Mint Markets",
-          "published": 1792454436.0
-        },
-        {
-          "title": "Jio IPO anchor book sees over 30x demand, draws record bids worth ₹2.5 trn",
-          "url": "https://www.business-standard.com/markets/ipo/jio-ipo-anchor-book-sees-over-30x-demand-draws-record-bids-worth-2-5-trn-126101901316_1.html",
-          "source": "Business Standard",
-          "published": 1792434276.0
-        },
-        {
-          "title": "Jio Platforms' anchor book draws record ₹2.5 trillion in bids ahead of IPO",
-          "url": "https://www.business-standard.com/companies/news/jio-platforms-ipo-anchor-investor-quota-nearly-30-times-oversubscribed-126101900538_1.html",
-          "source": "Business Standard",
-          "published": 1792404022.0
-        }
-      ],
-      "cluster_count": 4,
-      "impact_assets": [
-        "Equities"
-      ],
-      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
-      "impact_chain": null,
-      "companies": [
-        {
-          "name": "Reliance",
-          "symbol": "ril"
-        }
-      ]
-    },
-    {
-      "id": "a7f678e63f0208c9",
-      "title": "Titan Q2 results 2026 date: Check Rekha Jhujhunwala portfolio stock returns, target, support - Should you buy?",
-      "url": "https://www.livemint.com/market/stock-market-news/titan-q2-results-2026-date-check-rekha-jhujhunwala-portfolio-stock-returns-target-support-should-you-buy-11792495713454.html",
-      "published": 1792497615.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "Mint Markets",
-          "url": "https://www.livemint.com/market/stock-market-news/titan-q2-results-2026-date-check-rekha-jhujhunwala-portfolio-stock-returns-target-support-should-you-buy-11792495713454.html"
-        }
-      ],
-      "score": 2,
-      "summary": "Titan Company will review and approve its unaudited Q2 and first-half FY27 results at a November 5 board meeting. No dividend consideration has been announced. Investors will focus on jewellery margins, demand, and performance across watches and eyewear.",
+      "score": 1,
+      "summary": "It's been a busy three months for SpaceX. Traders think that means more gains for the stock after it reports earnings after the bell today.",
       "category": "Earnings",
       "reason": "Compare results and guidance with expectations for the company and its sector.",
       "matched": [
         "Earnings"
       ],
       "tier": "More",
+      "related": [
+        {
+          "title": "Here's what to expect when Netflix reports earnings after the bell",
+          "url": "https://www.cnbc.com/2026/10/20/netflix-nflx-earnings-q3-2026.html",
+          "source": "CNBC World",
+          "published": 1792512001.0
+        }
+      ],
+      "cluster_count": 1,
+      "impact_assets": [
+        "Equities"
+      ],
+      "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
+      "id": "56cb89137d785dc0",
+      "title": "Anthropic in talks with neocloud Nscale over second multibillion-dollar deal, source tells CNBC",
+      "url": "https://www.cnbc.com/2026/10/20/anthropic-nscale-data-center-deal.html",
+      "published": 1792505558.0,
+      "region": "Global",
+      "official": false,
+      "sources": [
+        {
+          "name": "CNBC World",
+          "url": "https://www.cnbc.com/2026/10/20/anthropic-nscale-data-center-deal.html"
+        }
+      ],
+      "score": 3,
+      "summary": "Anthropic and Nscale previously inked a similar deal for a data center on the same site in the U.S.",
+      "category": "Market flows",
+      "reason": "Flows, currency and yields provide context for Indian equity risk appetite.",
+      "matched": [
+        "Market flows"
+      ],
+      "tier": "Watch",
+      "related": [],
+      "cluster_count": 1,
+      "impact_assets": [
+        "Equities",
+        "FX"
+      ],
+      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
+      "id": "d8a13b216f22a79a",
+      "title": "China's CATL third-quarter profit growth slowest in nearly two years as competition intensifies",
+      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/chinas-catl-third-quarter-profit-growth-slowest-in-nearly-two-years-as-competition-intensifies/articleshow/135070675.cms",
+      "published": 1792501697.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "ET Markets",
+          "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/chinas-catl-third-quarter-profit-growth-slowest-in-nearly-two-years-as-competition-intensifies/articleshow/135070675.cms"
+        }
+      ],
+      "score": 3,
+      "summary": "CATL reports slower third-quarter profit growth as intense competition in China’s EV battery market weighs on earnings. Net profit rises 14.5% to 21.2 billion yuan, below estimates, while revenue grows 58.6%. CATL also unveils new heavy-duty truck batteries and plans to expand its battery-swapping network.",
+      "category": "Earnings",
+      "reason": "Compare results and guidance with expectations for the company and its sector.",
+      "matched": [
+        "Earnings"
+      ],
+      "tier": "Watch",
       "related": [],
       "cluster_count": 1,
       "impact_assets": [
@@ -1029,116 +1272,110 @@
       ],
       "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
       "impact_chain": null,
-      "companies": [
-        {
-          "name": "Titan",
-          "symbol": "titan"
-        }
-      ]
+      "companies": []
     },
     {
-      "id": "40dd479e7e14d404",
-      "title": "Govt to review 2019 mineral policy amid new sector priorities",
-      "url": "https://www.business-standard.com/industry/news/govt-to-review-2019-mineral-policy-amid-new-sector-priorities-126102000533_1.html",
-      "published": 1792496317.0,
+      "id": "63c6e833ab58b10a",
+      "title": "Eternal share: What to expect from Zomato parent’s Q2 results 2026 as Blinkit growth stays strong",
+      "url": "https://www.livemint.com/market/stock-market-news/eternal-share-what-to-expect-from-zomato-parent-s-q2-results-2026-as-blinkit-growth-stays-strong-11792497152335.html",
+      "published": 1792500683.0,
       "region": "India",
       "official": false,
       "sources": [
         {
-          "name": "Zerodha Pulse",
-          "url": "https://www.business-standard.com/industry/news/govt-to-review-2019-mineral-policy-amid-new-sector-priorities-126102000533_1.html"
-        },
+          "name": "Mint Markets",
+          "url": "https://www.livemint.com/market/stock-market-news/eternal-share-what-to-expect-from-zomato-parent-s-q2-results-2026-as-blinkit-growth-stays-strong-11792497152335.html"
+        }
+      ],
+      "score": 3,
+      "summary": "Brokerages expect Eternal, parent of Zomato and Blinkit, to report strong September-quarter growth, with improved margins, market-share gains and rapid Blinkit expansion.",
+      "category": "Earnings",
+      "reason": "Compare results and guidance with expectations for the company and its sector.",
+      "matched": [
+        "Earnings"
+      ],
+      "tier": "Watch",
+      "related": [],
+      "cluster_count": 1,
+      "impact_assets": [
+        "Equities"
+      ],
+      "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
+      "id": "ba47127a3e849d65",
+      "title": "Rubio says India-US trade deal is ‘very, very close’ after Jaishankar meeting",
+      "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/rubio-says-india-us-trade-deal-is-very-very-close-after-jaishankar-meeting/articleshow/135068984.cms",
+      "published": 1792496990.0,
+      "region": "India",
+      "official": false,
+      "sources": [
         {
           "name": "ET Economy",
-          "url": "https://economictimes.indiatimes.com/news/economy/policy/government-to-review-2019-mineral-policy-amid-new-sector-priorities/articleshow/135068220.cms"
+          "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/rubio-says-india-us-trade-deal-is-very-very-close-after-jaishankar-meeting/articleshow/135068984.cms"
         }
       ],
-      "score": 2,
-      "summary": "Centre to review 2019 National Mineral Policy amid focus on critical minerals, recycling and deep-sea resources",
-      "category": "Other news",
-      "reason": "Key market catalyst driving market liquidity and session volatility.",
-      "matched": [],
-      "tier": "More",
+      "score": 4,
+      "summary": "US Secretary of State Marco Rubio stated that negotiations for a trade deal with India are approaching completion. He highlighted discussions with Indian Foreign Minister Subrahmanyam Jaishankar about energy security and defense cooperation. While tensions over tariffs and energy continue to challenge negotiations, both countries aim to deepen thei",
+      "category": "Regulation",
+      "reason": "Check who is covered, whether it is proposed or final, and its effective date.",
+      "matched": [
+        "Regulation"
+      ],
+      "tier": "Watch",
       "related": [
         {
-          "title": "Government to review 2019 mineral policy amid new sector priorities",
-          "url": "https://economictimes.indiatimes.com/news/economy/policy/government-to-review-2019-mineral-policy-amid-new-sector-priorities/articleshow/135068220.cms",
+          "title": "Marco Rubio lands in Mumbai as New Delhi, Washington push to close trade deal",
+          "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/marco-rubio-lands-in-mumbai-as-new-delhi-washington-push-to-close-trade-deal/articleshow/135066599.cms",
           "source": "ET Economy",
-          "published": 1792493702.0
+          "published": 1792488408.0
+        },
+        {
+          "title": "America very close to finalising trade deal with India: Marco Rubio",
+          "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/america-very-close-to-finalising-trade-deal-with-india-marco-rubio/videoshow/135041177.cms",
+          "source": "ET Economy",
+          "published": 1792389231.0
+        },
+        {
+          "title": "US very close to finalising trade deal with India, says Marco Rubio",
+          "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/us-very-close-to-finalising-trade-deal-with-india-says-marco-rubio/articleshow/135040499.cms",
+          "source": "ET Economy",
+          "published": 1792387141.0
         }
       ],
-      "cluster_count": 2,
+      "cluster_count": 1,
       "impact_assets": [
         "Equities"
       ],
-      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
+      "why_it_matters": "Alters market structure, compliance mandates, capital allocation rules, and retail derivative trading liquidity.",
       "impact_chain": null,
       "companies": []
     },
     {
-      "id": "a361a44cc5a6bf64",
-      "title": "OYO-parent PRISM to nearly halve IPO fresh issue size to up to Rs 3,350 cr: Sources",
-      "url": "https://economictimes.indiatimes.com/markets/ipos/fpos/oyo-parent-prism-to-nearly-halve-ipo-fresh-issue-size-to-up-to-rs-3350-cr-sources/articleshow/135068962.cms",
-      "published": 1792495810.0,
+      "id": "d24fee6db84e94ed",
+      "title": "Crash! KOSPI in free fall? South Korea stock market down another 5%, tanks 40% from record high- What’s driving AI rout?",
+      "url": "https://www.livemint.com/market/stock-market-news/crash-kospi-in-free-fall-south-korea-stock-market-down-another-5-tanks-40-from-record-high-what-s-driving-ai-rout-11792483921193.html",
+      "published": 1792488191.0,
       "region": "India",
       "official": false,
       "sources": [
         {
-          "name": "Zerodha Pulse",
-          "url": "https://economictimes.indiatimes.com/markets/ipos/fpos/oyo-parent-prism-to-nearly-halve-ipo-fresh-issue-size-to-up-to-rs-3350-cr-sources/articleshow/135068962.cms"
-        },
-        {
-          "name": "ET Markets",
-          "url": "https://economictimes.indiatimes.com/markets/ipos/fpos/oyo-parent-prism-to-nearly-halve-ipo-fresh-issue-size-to-up-to-rs-3350-cr-sources/articleshow/135068962.cms"
+          "name": "Mint Markets",
+          "url": "https://www.livemint.com/market/stock-market-news/crash-kospi-in-free-fall-south-korea-stock-market-down-another-5-tanks-40-from-record-high-what-s-driving-ai-rout-11792483921193.html"
         }
       ],
-      "score": 2,
-      "summary": "PRISM is set to scale back its initial public offering from Rs 6,650 crore to Rs 3,350 crore in light of its robust cash flow and enhanced balance sheet. The majority of the newly structured funds will focus on repaying or prepaying debts. Moody's Ratings has adjusted PRISM's outlook to positive, anticipating growth in EBITDA. Notably, OYO's founde",
-      "category": "Other news",
-      "reason": "Key market catalyst driving market liquidity and session volatility.",
-      "matched": [],
-      "tier": "More",
-      "related": [
-        {
-          "title": "Oyo parent PRISM to cut IPO fresh issue nearly 50% to Rs 3,350 crore: Sources",
-          "url": "https://economictimes.indiatimes.com/markets/ipos/fpos/oyo-parent-prism-to-nearly-halve-ipo-fresh-issue-size-to-up-to-rs-3350-cr-sources/articleshow/135068962.cms",
-          "source": "ET Markets",
-          "published": 1792495810.0
-        }
+      "score": 4,
+      "summary": "South Korea’s KOSPI extended its decline as doubts about AI investment returns, semiconductor valuations and financing risks rattled technology stocks. Heavy reliance on Samsung Electronics and SK Hynix has amplified losses.",
+      "category": "Market flows",
+      "reason": "Flows, currency and yields provide context for Indian equity risk appetite.",
+      "matched": [
+        "Market flows"
       ],
-      "cluster_count": 2,
-      "impact_assets": [
-        "Equities"
-      ],
-      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "c62b9289b9fc828b",
-      "title": "Number of branded housing projects in India set to jump over 2-fold in 6 years: Savills",
-      "url": "https://economictimes.indiatimes.com/markets/digital-real-estate/realty-news/number-of-branded-housing-projects-in-india-set-to-jump-over-2-fold-in-6-years-savills/articleshow/135068870.cms",
-      "published": 1792495457.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "Zerodha Pulse",
-          "url": "https://economictimes.indiatimes.com/markets/digital-real-estate/realty-news/number-of-branded-housing-projects-in-india-set-to-jump-over-2-fold-in-6-years-savills/articleshow/135068870.cms"
-        },
-        {
-          "name": "ET Markets",
-          "url": "https://economictimes.indiatimes.com/markets/digital-real-estate/realty-news/number-of-branded-housing-projects-in-india-set-to-jump-over-2-fold-in-6-years-savills/articleshow/135068870.cms"
-        }
-      ],
-      "score": 2,
-      "summary": "Real estate firms in India are anticipating a significant increase in branded residences by 2032. A report suggests nearly 25 ultra-luxury housing projects will be completed in this period. Major developers have partnered with renowned brands to cater to the super-rich market. The demand for these residences is driven by rapidly increasing wealth a",
-      "category": "Other news",
-      "reason": "Key market catalyst driving market liquidity and session volatility.",
-      "matched": [],
-      "tier": "More",
+      "tier": "Watch",
       "related": [],
-      "cluster_count": 2,
+      "cluster_count": 1,
       "impact_assets": [
         "Equities"
       ],
@@ -1147,89 +1384,62 @@
       "companies": []
     },
     {
-      "id": "dcf75903cd8da718",
-      "title": "Artha Bharat to shift two GIFT City funds to Abu Dhabi over tax hurdles",
-      "url": "https://www.business-standard.com/markets/news/artha-bharat-to-shift-two-gift-city-funds-to-abu-dhabi-over-tax-hurdles-126102000508_1.html",
-      "published": 1792494437.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "Zerodha Pulse",
-          "url": "https://www.business-standard.com/markets/news/artha-bharat-to-shift-two-gift-city-funds-to-abu-dhabi-over-tax-hurdles-126102000508_1.html"
-        },
-        {
-          "name": "Business Standard",
-          "url": "https://www.business-standard.com/markets/news/artha-bharat-to-shift-two-gift-city-funds-to-abu-dhabi-over-tax-hurdles-126102000508_1.html"
-        }
-      ],
-      "score": 2,
-      "summary": "he fund manager cites uncertainty over tax deductions, compliance requirements and investor restrictions as reasons for relocating two funds to Abu Dhabi Global Market",
-      "category": "Other news",
-      "reason": "Key market catalyst driving market liquidity and session volatility.",
-      "matched": [],
-      "tier": "More",
-      "related": [],
-      "cluster_count": 2,
-      "impact_assets": [
-        "Equities"
-      ],
-      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "fa713a19f2077ece",
-      "title": "Apple India in sweet spot as FY26 revenue crosses Rs 1 lakh crore, profit soars",
-      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/apple-india-in-sweet-spot-as-fy26-revenue-crosses-rs-1-lakh-crore-profit-soars/articleshow/135058877.cms",
-      "published": 1792454400.0,
+      "id": "ede76177223fd3e0",
+      "title": "Bank of Japan may raise inflation forecast, stand pat on rates, sources say",
+      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/bank-of-japan-may-raise-inflation-forecast-stand-pat-on-rates-sources-say/articleshow/135063146.cms",
+      "published": 1792479146.0,
       "region": "India",
       "official": false,
       "sources": [
         {
           "name": "ET Markets",
-          "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/apple-india-in-sweet-spot-as-fy26-revenue-crosses-rs-1-lakh-crore-profit-soars/articleshow/135058877.cms"
-        },
+          "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/bank-of-japan-may-raise-inflation-forecast-stand-pat-on-rates-sources-say/articleshow/135063146.cms"
+        }
+      ],
+      "score": 7,
+      "summary": "The Bank of Japan plans to slightly upgrade its fiscal year 2027 inflation forecasts this month. Interest rates are expected to remain stable at 1.25% during the upcoming policy meeting in late October. While inflation risks are present, there is no immediate urgency for further rate hikes. Recent data indicates that inflationary pressures are not ",
+      "category": "Monetary policy",
+      "reason": "Key determinant of central bank interest rate paths; elevated prints restrict policy easing and compress real yields.",
+      "matched": [
+        "Monetary policy",
+        "Economic data",
+        "Earnings"
+      ],
+      "tier": "Must know",
+      "related": [],
+      "cluster_count": 1,
+      "impact_assets": [
+        "Rates",
+        "Equities"
+      ],
+      "why_it_matters": "Key determinant of central bank interest rate paths; elevated prints restrict policy easing and compress real yields.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
+      "id": "072f3f65eddc332a",
+      "title": "Apple adds U.S. titanium supplier for iPhone Duo as supply stays tight",
+      "url": "https://www.cnbc.com/2026/10/20/apple-adds-us-titanium-supplier-for-iphone-duo.html",
+      "published": 1792499366.0,
+      "region": "Global",
+      "official": false,
+      "sources": [
         {
           "name": "CNBC World",
           "url": "https://www.cnbc.com/2026/10/20/apple-adds-us-titanium-supplier-for-iphone-duo.html"
-        },
-        {
-          "name": "Zerodha Pulse",
-          "url": "https://www.ndtvprofit.com/technology/apple-s-india-business-hits-rs-1-lakh-crore-milestone-as-iphone-demand-grows-12210545#publisher=newsstand"
         },
         {
           "name": "Mint Companies",
           "url": "https://www.livemint.com/companies/people/time-best-inventions-2026-why-did-new-apple-ceo-john-ternus-land-cover-alongside-iphone-duo-11792394314782.html"
         }
       ],
-      "score": 8,
-      "summary": "Apple India's revenue reached ₹1 lakh crore in FY26, reflecting a strong growth trend in smartphone sales. Revenue growth was noted at 31%, exceeding that of its competitor Samsung, which faced a decline. Net profit increased by 66% from the previous fiscal year, highlighting Apple's robust performance. The premium smartphone market saw significant",
-      "category": "Earnings",
-      "reason": "Compare results and guidance with expectations for the company and its sector.",
-      "matched": [
-        "Earnings"
-      ],
-      "tier": "Must know",
+      "score": 2,
+      "summary": "Apple is adding a U.S. titanium supplier for its new iPhone Duo and expanding domestic production of camera components for the iPhone 18 Pro.",
+      "category": "Other news",
+      "reason": "Key market catalyst driving market liquidity and session volatility.",
+      "matched": [],
+      "tier": "More",
       "related": [
-        {
-          "title": "Apple adds U.S. titanium supplier for iPhone Duo as supply stays tight",
-          "url": "https://www.cnbc.com/2026/10/20/apple-adds-us-titanium-supplier-for-iphone-duo.html",
-          "source": "CNBC World",
-          "published": 1792499366.0
-        },
-        {
-          "title": "Apple’s India Business Hits Rs 1 Lakh Crore Milestone As iPhone Demand Grows",
-          "url": "https://www.ndtvprofit.com/technology/apple-s-india-business-hits-rs-1-lakh-crore-milestone-as-iphone-demand-grows-12210545#publisher=newsstand",
-          "source": "Zerodha Pulse",
-          "published": 1792495763.0
-        },
-        {
-          "title": "Apple announces product launch event for Oct. 28. Analysts expect touchscreen laptop",
-          "url": "https://www.cnbc.com/2026/10/19/apple-product-launch-event-oct-28-analysts-expect-touchscreen-laptop.html",
-          "source": "CNBC World",
-          "published": 1792439167.0
-        },
         {
           "title": "TIME Best Inventions 2026: Why did new Apple CEO John Ternus land cover alongside iPhone Duo?",
           "url": "https://www.livemint.com/companies/people/time-best-inventions-2026-why-did-new-apple-ceo-john-ternus-land-cover-alongside-iphone-duo-11792394314782.html",
@@ -1237,11 +1447,11 @@
           "published": 1792397890.0
         }
       ],
-      "cluster_count": 4,
+      "cluster_count": 2,
       "impact_assets": [
         "Equities"
       ],
-      "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
+      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
       "impact_chain": null,
       "companies": [
         {
@@ -1249,6 +1459,120 @@
           "symbol": "apple"
         }
       ]
+    },
+    {
+      "id": "e99f476e5593c7eb",
+      "title": "Gold slips as investors weigh Fed rate outlook",
+      "url": "https://economictimes.indiatimes.com/markets/commodities/news/gold-slips-as-investors-weigh-fed-rate-outlook/articleshow/135059635.cms",
+      "published": 1792461602.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "ET Markets",
+          "url": "https://economictimes.indiatimes.com/markets/commodities/news/gold-slips-as-investors-weigh-fed-rate-outlook/articleshow/135059635.cms"
+        },
+        {
+          "name": "Mint Markets",
+          "url": "https://www.livemint.com/market/commodities/gold-price-outlook-yellow-metal-prices-cool-26-from-record-high-what-indian-buyers-are-doing-this-dussehra-diwali-11792472642371.html"
+        },
+        {
+          "name": "CNBC World",
+          "url": "https://www.cnbc.com/2026/10/20/copper-prices-ai-spending-demand.html"
+        }
+      ],
+      "score": 9,
+      "summary": "Gold slipped in early Asian trade on Tuesday as investors awaited the US Federal Reserve policy decision next week for signals on interest rates and the broader outlook for monetary policy.",
+      "category": "Monetary policy",
+      "reason": "Guides global liquidity dynamics, US Dollar Index (DXY) trajectory, and foreign institutional (FII) capital allocations.",
+      "matched": [
+        "Monetary policy"
+      ],
+      "tier": "Must know",
+      "related": [
+        {
+          "title": "Gold price outlook: Yellow metal prices cool 26% from record high: What are Indians buying this Dussehra, Diwali?",
+          "url": "https://www.livemint.com/market/commodities/gold-price-outlook-yellow-metal-prices-cool-26-from-record-high-what-indian-buyers-are-doing-this-dussehra-diwali-11792472642371.html",
+          "source": "Mint Markets",
+          "published": 1792475864.0
+        },
+        {
+          "title": "Copper is outshining gold this year. Investors say the rally can survive an AI correction",
+          "url": "https://www.cnbc.com/2026/10/20/copper-prices-ai-spending-demand.html",
+          "source": "CNBC World",
+          "published": 1792475854.0
+        }
+      ],
+      "cluster_count": 3,
+      "impact_assets": [
+        "Rates",
+        "Equities",
+        "Commodities"
+      ],
+      "why_it_matters": "Guides global liquidity dynamics, US Dollar Index (DXY) trajectory, and foreign institutional (FII) capital allocations.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
+      "id": "254888c96d3f76aa",
+      "title": "AI rally fades away from Wall Street as a tiny IPO makes big waves",
+      "url": "https://www.cnbc.com/2026/10/20/ai-rally-fades-elice-ipo-dives.html",
+      "published": 1792496043.0,
+      "region": "Global",
+      "official": false,
+      "sources": [
+        {
+          "name": "CNBC World",
+          "url": "https://www.cnbc.com/2026/10/20/ai-rally-fades-elice-ipo-dives.html"
+        }
+      ],
+      "score": 3,
+      "summary": "Here are the key things investors need to know to start the trading day.",
+      "category": "Market flows",
+      "reason": "Flows, currency and yields provide context for Indian equity risk appetite.",
+      "matched": [
+        "Market flows"
+      ],
+      "tier": "Watch",
+      "related": [],
+      "cluster_count": 1,
+      "impact_assets": [
+        "Equities"
+      ],
+      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
+      "id": "f87cbd2192308d29",
+      "title": "French bond yields near 24-year high as new protests loom",
+      "url": "https://economictimes.indiatimes.com/markets/bonds/french-bond-yields-near-24-year-high-as-new-protests-loom/articleshow/135068905.cms",
+      "published": 1792495677.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "ET Markets",
+          "url": "https://economictimes.indiatimes.com/markets/bonds/french-bond-yields-near-24-year-high-as-new-protests-loom/articleshow/135068905.cms"
+        }
+      ],
+      "score": 3,
+      "summary": "As ongoing protests grip France, the yields on government securities, known as OAT, have surged to a peak not seen in over 24 years. Both Marine Le Pen and Jean-Luc Melenchon lead polling efforts, presenting hurdles for any potential fiscal reforms. Such public demonstrations illustrate the persistent opposition any administration encounters while ",
+      "category": "Market flows",
+      "reason": "Flows, currency and yields provide context for Indian equity risk appetite.",
+      "matched": [
+        "Market flows"
+      ],
+      "tier": "Watch",
+      "related": [],
+      "cluster_count": 1,
+      "impact_assets": [
+        "Rates",
+        "Equities"
+      ],
+      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
+      "impact_chain": null,
+      "companies": []
     },
     {
       "id": "2ec03de91c419752",
@@ -1308,6 +1632,173 @@
         "Equities"
       ],
       "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
+      "id": "2cb9d5ddbbfa7fed",
+      "title": "Global Market: Japan's Nikkei falls as higher yields, inflation fears weigh",
+      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/global-market-japans-nikkei-falls-as-higher-yields-inflation-fears-weigh/articleshow/135060522.cms",
+      "published": 1792466423.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "ET Markets",
+          "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/global-market-japans-nikkei-falls-as-higher-yields-inflation-fears-weigh/articleshow/135060522.cms"
+        }
+      ],
+      "score": 6,
+      "summary": "Japan's Nikkei share average fell on Tuesday, dragged lower by technology stocks as investors weighed rising bond yields and persistent inflation concerns",
+      "category": "Economic data",
+      "reason": "Compare the release with expectations; the surprise can affect rates and risk appetite.",
+      "matched": [
+        "Economic data",
+        "Market flows"
+      ],
+      "tier": "Must know",
+      "related": [],
+      "cluster_count": 1,
+      "impact_assets": [
+        "Rates"
+      ],
+      "why_it_matters": "Key determinant of central bank interest rate paths; elevated prints restrict policy easing and compress real yields.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
+      "id": "a7f678e63f0208c9",
+      "title": "Titan Q2 results 2026 date: Check Rekha Jhujhunwala portfolio stock returns, target, support - Should you buy?",
+      "url": "https://www.livemint.com/market/stock-market-news/titan-q2-results-2026-date-check-rekha-jhujhunwala-portfolio-stock-returns-target-support-should-you-buy-11792495713454.html",
+      "published": 1792497615.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "Mint Markets",
+          "url": "https://www.livemint.com/market/stock-market-news/titan-q2-results-2026-date-check-rekha-jhujhunwala-portfolio-stock-returns-target-support-should-you-buy-11792495713454.html"
+        }
+      ],
+      "score": 2,
+      "summary": "Titan Company will review and approve its unaudited Q2 and first-half FY27 results at a November 5 board meeting. No dividend consideration has been announced. Investors will focus on jewellery margins, demand, and performance across watches and eyewear.",
+      "category": "Earnings",
+      "reason": "Compare results and guidance with expectations for the company and its sector.",
+      "matched": [
+        "Earnings"
+      ],
+      "tier": "More",
+      "related": [],
+      "cluster_count": 1,
+      "impact_assets": [
+        "Equities"
+      ],
+      "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
+      "impact_chain": null,
+      "companies": [
+        {
+          "name": "Titan",
+          "symbol": "titan"
+        }
+      ]
+    },
+    {
+      "id": "7c5e947313450479",
+      "title": "Oil Price Today (October 20): Crude oil nears $110 again as fresh attacks outweigh easing Russian sanctions. What are experts saying?",
+      "url": "https://economictimes.indiatimes.com/markets/commodities/news/oil-price-today-october-20-crude-oil-nears-110-again-as-fresh-attacks-outweigh-easing-russian-sanctions-what-are-experts-saying/articleshow/135059918.cms",
+      "published": 1792462853.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "ET Markets",
+          "url": "https://economictimes.indiatimes.com/markets/commodities/news/oil-price-today-october-20-crude-oil-nears-110-again-as-fresh-attacks-outweigh-easing-russian-sanctions-what-are-experts-saying/articleshow/135059918.cms"
+        }
+      ],
+      "score": 5,
+      "summary": "Brent crude futures gained 21 cents, or 0.20, to $109.76 a barrel, while US West Texas Intermediate (WTI) crude futures for November delivery, which expire on Tuesday, rose 0.11% to $104 a barrel. Brent had climbed to $110.70 a barrel in the previous session, its highest level since May 20.",
+      "category": "Regulation",
+      "reason": "Check who is covered, whether it is proposed or final, and its effective date.",
+      "matched": [
+        "Regulation",
+        "Energy & geopolitics"
+      ],
+      "tier": "Watch",
+      "related": [
+        {
+          "title": "Oil eases as markets assess potential waiver on Russian energy, Middle East supply risks",
+          "url": "https://economictimes.indiatimes.com/markets/commodities/news/oil-eases-as-markets-assess-potential-waiver-on-russian-energy-middle-east-supply-risks/articleshow/135059323.cms",
+          "source": "ET Markets",
+          "published": 1792459593.0
+        }
+      ],
+      "cluster_count": 1,
+      "impact_assets": [
+        "Commodities"
+      ],
+      "why_it_matters": "Crude affects India’s import bill and energy-sensitive sectors; the headline does not establish a clear price direction.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
+      "id": "e1bff9a00a7c606e",
+      "title": "Brent crude holds near 5-month high as W Asia tensions stoke supply fears",
+      "url": "https://www.business-standard.com/markets/commodities/oil-prices-ease-as-russia-sanctions-relief-offsets-gulf-supply-risks-126102000063_1.html",
+      "published": 1792462764.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "Business Standard",
+          "url": "https://www.business-standard.com/markets/commodities/oil-prices-ease-as-russia-sanctions-relief-offsets-gulf-supply-risks-126102000063_1.html"
+        }
+      ],
+      "score": 5,
+      "summary": "Brent crude futures rose to $111.05 a barrel, the highest since May, and as of 0810 GMT were trading at $110.80, up $1.25 or 1.1%",
+      "category": "Energy & geopolitics",
+      "reason": "Energy costs and disruption can affect Indian inflation, import costs and exposed sectors.",
+      "matched": [
+        "Energy & geopolitics"
+      ],
+      "tier": "Watch",
+      "related": [],
+      "cluster_count": 1,
+      "impact_assets": [
+        "Commodities"
+      ],
+      "why_it_matters": "Crude affects India’s import bill and energy-sensitive sectors; the headline does not establish a clear price direction.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
+      "id": "b298336596e751c3",
+      "title": "RBI tightens scrutiny of $1 billion-plus overseas investments amid rupee pressure",
+      "url": "https://economictimes.indiatimes.com/news/economy/policy/rbi-tightens-scrutiny-of-1-billion-plus-overseas-investments-amid-rupee-pressure/articleshow/135055728.cms",
+      "published": 1792437994.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "ET Economy",
+          "url": "https://economictimes.indiatimes.com/news/economy/policy/rbi-tightens-scrutiny-of-1-billion-plus-overseas-investments-amid-rupee-pressure/articleshow/135055728.cms"
+        }
+      ],
+      "score": 7,
+      "summary": "The Reserve Bank of India is implementing stricter scrutiny on large overseas direct investments by Indian companies. Banks must now collect and present detailed information regarding these investments to the RBI. This initiative aims to prevent potential losses for both the companies and the Indian economy. The RBI's checklist requires banks to co",
+      "category": "Monetary policy",
+      "reason": "This RBI action concerns currency-market liquidity or dollar demand; it is not a repo-rate decision.",
+      "matched": [
+        "Monetary policy",
+        "Market flows"
+      ],
+      "tier": "Must know",
+      "related": [],
+      "cluster_count": 1,
+      "impact_assets": [
+        "Rates",
+        "Equities",
+        "FX"
+      ],
+      "why_it_matters": "This RBI action concerns currency-market liquidity or dollar demand; it is not a repo-rate decision.",
       "impact_chain": null,
       "companies": []
     },
@@ -1373,43 +1864,63 @@
       "companies": []
     },
     {
-      "id": "e1bff9a00a7c606e",
-      "title": "Brent crude holds near 5-month high as W Asia tensions stoke supply fears",
-      "url": "https://www.business-standard.com/markets/commodities/oil-prices-ease-as-russia-sanctions-relief-offsets-gulf-supply-risks-126102000063_1.html",
-      "published": 1792462764.0,
+      "id": "4106b9cda99de3d4",
+      "title": "Global Market: South Korea's Elice shares plunge 28% in market debut as data centre stocks shunned",
+      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/global-market-south-koreas-elice-shares-plunge-28-in-market-debut-as-data-centre-stocks-shunned/articleshow/135060541.cms",
+      "published": 1792466622.0,
       "region": "India",
       "official": false,
       "sources": [
         {
-          "name": "Business Standard",
-          "url": "https://www.business-standard.com/markets/commodities/oil-prices-ease-as-russia-sanctions-relief-offsets-gulf-supply-risks-126102000063_1.html"
-        },
-        {
-          "name": "Investing.com",
-          "url": "https://www.investing.com/news/stock-market-news/ftse-100-today-stocks-slip-as-french-unrest-iran-tensions-weigh-4959010"
+          "name": "ET Markets",
+          "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/global-market-south-koreas-elice-shares-plunge-28-in-market-debut-as-data-centre-stocks-shunned/articleshow/135060541.cms"
         }
       ],
-      "score": 7,
-      "summary": "Brent crude futures rose to $111.05 a barrel, the highest since May, and as of 0810 GMT were trading at $110.80, up $1.25 or 1.1%",
-      "category": "Energy & geopolitics",
-      "reason": "Energy costs and disruption can affect Indian inflation, import costs and exposed sectors.",
+      "score": 4,
+      "summary": "Elice, which raised 201.1 billion won ($150 million) in its IPO, provides AI cloud services as well as AI-based education and business software and plans to spend most of its IPO proceeds on launching portable modular data centres and related infrastructure.",
+      "category": "Company move",
+      "reason": "A named company or share-price move may affect that stock and its peers.",
       "matched": [
-        "Energy & geopolitics"
+        "Company move"
+      ],
+      "tier": "Watch",
+      "related": [],
+      "cluster_count": 1,
+      "impact_assets": [
+        "Equities"
+      ],
+      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
+      "id": "929bfecb47e3ed03",
+      "title": "RBI injects Rs 1 lakh crore as liquidity tightens before festive season",
+      "url": "https://economictimes.indiatimes.com/news/economy/finance/rbi-injects-rs-1-lakh-crore-as-liquidity-tightens-before-festive-season/articleshow/135055953.cms",
+      "published": 1792439243.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "ET Economy",
+          "url": "https://economictimes.indiatimes.com/news/economy/finance/rbi-injects-rs-1-lakh-crore-as-liquidity-tightens-before-festive-season/articleshow/135055953.cms"
+        }
+      ],
+      "score": 6,
+      "summary": "On Monday, the RBI announced a Rs 1-lakh-crore variable rate repo (VRR) auction for the first time since late July after the weighted average call rate (WACR) at 5.67% on Monday, or 17 basis points higher than the repo rate of 5.50%. The central bank will conduct another VRR for Rs 50,000 crore on Wednesday.",
+      "category": "Monetary policy",
+      "reason": "Directly shifts commercial bank cost of funds, repo borrowing rates, and rate-sensitive equity multiples (banks, real estate, auto).",
+      "matched": [
+        "Monetary policy"
       ],
       "tier": "Must know",
-      "related": [
-        {
-          "title": "FTSE 100 today: Stocks extend losses as oil hits 5-month high on Hormuz risk",
-          "url": "https://www.investing.com/news/stock-market-news/ftse-100-today-stocks-slip-as-french-unrest-iran-tensions-weigh-4959010",
-          "source": "Investing.com",
-          "published": 1792502649.0
-        }
-      ],
-      "cluster_count": 2,
+      "related": [],
+      "cluster_count": 1,
       "impact_assets": [
-        "Commodities"
+        "Rates",
+        "Equities"
       ],
-      "why_it_matters": "Crude affects India’s import bill and energy-sensitive sectors; the headline does not establish a clear price direction.",
+      "why_it_matters": "Directly shifts commercial bank cost of funds, repo borrowing rates, and rate-sensitive equity multiples (banks, real estate, auto).",
       "impact_chain": null,
       "companies": []
     },
@@ -1534,71 +2045,64 @@
       "companies": []
     },
     {
-      "id": "2cb9d5ddbbfa7fed",
-      "title": "Global Market: Japan's Nikkei falls as higher yields, inflation fears weigh",
-      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/global-market-japans-nikkei-falls-as-higher-yields-inflation-fears-weigh/articleshow/135060522.cms",
-      "published": 1792466423.0,
+      "id": "8de87974cc08f10f",
+      "title": "Stock Market Holiday 2026: Is stock market closed today for Dussehra? Check remaining holidays for the year",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/stock-market-holiday-2026-is-stock-market-closed-today-for-dussehra-check-remaining-holidays-for-the-year/articleshow/135059981.cms",
+      "published": 1792463399.0,
       "region": "India",
       "official": false,
       "sources": [
         {
           "name": "ET Markets",
-          "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/global-market-japans-nikkei-falls-as-higher-yields-inflation-fears-weigh/articleshow/135060522.cms"
+          "url": "https://economictimes.indiatimes.com/markets/stocks/news/stock-market-holiday-2026-is-stock-market-closed-today-for-dussehra-check-remaining-holidays-for-the-year/articleshow/135059981.cms"
         }
       ],
-      "score": 6,
-      "summary": "Japan's Nikkei share average fell on Tuesday, dragged lower by technology stocks as investors weighed rising bond yields and persistent inflation concerns",
-      "category": "Economic data",
-      "reason": "Compare the release with expectations; the surprise can affect rates and risk appetite.",
+      "score": 3,
+      "summary": "A total of 16 stock market holidays have been scheduled for 2026, out of which twelve have already passed. After the Dussehra holiday, trading will remain suspended on three more occasions over the remaining two months of the year.",
+      "category": "Market flows",
+      "reason": "Flows, currency and yields provide context for Indian equity risk appetite.",
       "matched": [
-        "Economic data",
         "Market flows"
       ],
-      "tier": "Must know",
+      "tier": "Watch",
       "related": [],
       "cluster_count": 1,
       "impact_assets": [
-        "Rates"
+        "Equities"
       ],
-      "why_it_matters": "Key determinant of central bank interest rate paths; elevated prints restrict policy easing and compress real yields.",
+      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
       "impact_chain": null,
       "companies": []
     },
     {
-      "id": "7c5e947313450479",
-      "title": "Oil Price Today (October 20): Crude oil nears $110 again as fresh attacks outweigh easing Russian sanctions. What are experts saying?",
-      "url": "https://economictimes.indiatimes.com/markets/commodities/news/oil-price-today-october-20-crude-oil-nears-110-again-as-fresh-attacks-outweigh-easing-russian-sanctions-what-are-experts-saying/articleshow/135059918.cms",
-      "published": 1792462853.0,
+      "id": "aff7b7b0825841bc",
+      "title": "Expert view: A relief rally toward 23,800–24,200 possible; FPIs may return if dollar, bond yields peak, says Rahul Ghose",
+      "url": "https://www.livemint.com/market/stock-market-news/expert-view-a-relief-rally-toward-23-800-24-200-possible-fpis-may-return-if-dollar-bond-yields-peak-says-rahul-ghose-11792461311690.html",
+      "published": 1792462227.0,
       "region": "India",
       "official": false,
       "sources": [
         {
-          "name": "ET Markets",
-          "url": "https://economictimes.indiatimes.com/markets/commodities/news/oil-price-today-october-20-crude-oil-nears-110-again-as-fresh-attacks-outweigh-easing-russian-sanctions-what-are-experts-saying/articleshow/135059918.cms"
+          "name": "Mint Markets",
+          "url": "https://www.livemint.com/market/stock-market-news/expert-view-a-relief-rally-toward-23-800-24-200-possible-fpis-may-return-if-dollar-bond-yields-peak-says-rahul-ghose-11792461311690.html"
         }
       ],
-      "score": 5,
-      "summary": "Brent crude futures gained 21 cents, or 0.20, to $109.76 a barrel, while US West Texas Intermediate (WTI) crude futures for November delivery, which expire on Tuesday, rose 0.11% to $104 a barrel. Brent had climbed to $110.70 a barrel in the previous session, its highest level since May 20.",
-      "category": "Regulation",
-      "reason": "Check who is covered, whether it is proposed or final, and its effective date.",
+      "score": 3,
+      "summary": "Octanom Tech CEO Rahul Ghose expects the Nifty to end the year lower, though oversold conditions could fuel a relief rally to 23,800–24,200. He says foreign investors are unlikely to return until US yields and the dollar peak, while high oil prices may limit broader market gains.",
+      "category": "Market flows",
+      "reason": "Flows, currency and yields provide context for Indian equity risk appetite.",
       "matched": [
-        "Regulation",
-        "Energy & geopolitics"
+        "Market flows"
       ],
       "tier": "Watch",
-      "related": [
-        {
-          "title": "Oil eases as markets assess potential waiver on Russian energy, Middle East supply risks",
-          "url": "https://economictimes.indiatimes.com/markets/commodities/news/oil-eases-as-markets-assess-potential-waiver-on-russian-energy-middle-east-supply-risks/articleshow/135059323.cms",
-          "source": "ET Markets",
-          "published": 1792459593.0
-        }
-      ],
+      "related": [],
       "cluster_count": 1,
       "impact_assets": [
-        "Commodities"
+        "Rates",
+        "Equities",
+        "FX"
       ],
-      "why_it_matters": "Crude affects India’s import bill and energy-sensitive sectors; the headline does not establish a clear price direction.",
+      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
       "impact_chain": null,
       "companies": []
     },
@@ -1667,152 +2171,6 @@
           "published": 1792434751.0
         }
       ],
-      "cluster_count": 1,
-      "impact_assets": [
-        "Equities"
-      ],
-      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "d5a0e272f8a81718",
-      "title": "Banking stocks, high oil prices drag Indian markets lower",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/banking-stocks-high-oil-prices-drag-indian-markets-lower/articleshow/135058914.cms",
-      "published": 1792454748.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "ET Markets",
-          "url": "https://economictimes.indiatimes.com/markets/stocks/news/banking-stocks-high-oil-prices-drag-indian-markets-lower/articleshow/135058914.cms"
-        }
-      ],
-      "score": 5,
-      "summary": "Across Asia, markets were mixed, with South Korea rebounding 1.8% from last week's losses amid simmering concerns over excessive investments in artificial intelligence (AI). Taiwan fell 0.6%, while Indonesia tumbled 3.6% following a warning from index provider MSCI that it would downgrade the country from the emerging market basket.",
-      "category": "Energy & geopolitics",
-      "reason": "Energy costs and disruption can affect Indian inflation, import costs and exposed sectors.",
-      "matched": [
-        "Energy & geopolitics"
-      ],
-      "tier": "Watch",
-      "related": [],
-      "cluster_count": 1,
-      "impact_assets": [
-        "Commodities"
-      ],
-      "why_it_matters": "Crude affects India’s import bill and energy-sensitive sectors; the headline does not establish a clear price direction.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "b27af42c072aa9ff",
-      "title": "Gold, silver prices rise as traders pare bets on October Fed rate hike",
-      "url": "https://www.business-standard.com/markets/commodities/gold-silver-prices-rise-as-traders-pare-bets-on-october-fed-rate-hike-126101900270_1.html",
-      "published": 1792388769.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "Business Standard",
-          "url": "https://www.business-standard.com/markets/commodities/gold-silver-prices-rise-as-traders-pare-bets-on-october-fed-rate-hike-126101900270_1.html"
-        },
-        {
-          "name": "ET Markets",
-          "url": "https://economictimes.indiatimes.com/markets/commodities/news/gold-slips-as-investors-weigh-fed-rate-outlook/articleshow/135059635.cms"
-        },
-        {
-          "name": "Mint Markets",
-          "url": "https://www.livemint.com/market/gold-holds-decline-as-energy-led-inflation-weighs-on-rate-path-11792456762808.html"
-        }
-      ],
-      "score": 10,
-      "summary": "In the global market, gold futures on Comex were trading near $4,200 per ounce, while silver was trading near $57.60 per ounce",
-      "category": "Monetary policy",
-      "reason": "Guides global liquidity dynamics, US Dollar Index (DXY) trajectory, and foreign institutional (FII) capital allocations.",
-      "matched": [
-        "Monetary policy"
-      ],
-      "tier": "Must know",
-      "related": [
-        {
-          "title": "Gold slips as investors weigh Fed rate outlook",
-          "url": "https://economictimes.indiatimes.com/markets/commodities/news/gold-slips-as-investors-weigh-fed-rate-outlook/articleshow/135059635.cms",
-          "source": "ET Markets",
-          "published": 1792461602.0
-        },
-        {
-          "title": "Gold Holds Decline as Energy-Led Inflation Weighs on Rate Path",
-          "url": "https://www.livemint.com/market/gold-holds-decline-as-energy-led-inflation-weighs-on-rate-path-11792456762808.html",
-          "source": "Mint Markets",
-          "published": 1792456762.0
-        }
-      ],
-      "cluster_count": 3,
-      "impact_assets": [
-        "Rates",
-        "Equities",
-        "Commodities"
-      ],
-      "why_it_matters": "Guides global liquidity dynamics, US Dollar Index (DXY) trajectory, and foreign institutional (FII) capital allocations.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "b298336596e751c3",
-      "title": "RBI tightens scrutiny of $1 billion-plus overseas investments amid rupee pressure",
-      "url": "https://economictimes.indiatimes.com/news/economy/policy/rbi-tightens-scrutiny-of-1-billion-plus-overseas-investments-amid-rupee-pressure/articleshow/135055728.cms",
-      "published": 1792437994.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "ET Economy",
-          "url": "https://economictimes.indiatimes.com/news/economy/policy/rbi-tightens-scrutiny-of-1-billion-plus-overseas-investments-amid-rupee-pressure/articleshow/135055728.cms"
-        }
-      ],
-      "score": 7,
-      "summary": "The Reserve Bank of India is implementing stricter scrutiny on large overseas direct investments by Indian companies. Banks must now collect and present detailed information regarding these investments to the RBI. This initiative aims to prevent potential losses for both the companies and the Indian economy. The RBI's checklist requires banks to co",
-      "category": "Monetary policy",
-      "reason": "This RBI action concerns currency-market liquidity or dollar demand; it is not a repo-rate decision.",
-      "matched": [
-        "Monetary policy",
-        "Market flows"
-      ],
-      "tier": "Must know",
-      "related": [],
-      "cluster_count": 1,
-      "impact_assets": [
-        "Rates",
-        "Equities",
-        "FX"
-      ],
-      "why_it_matters": "This RBI action concerns currency-market liquidity or dollar demand; it is not a repo-rate decision.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "4106b9cda99de3d4",
-      "title": "Global Market: South Korea's Elice shares plunge 28% in market debut as data centre stocks shunned",
-      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/global-market-south-koreas-elice-shares-plunge-28-in-market-debut-as-data-centre-stocks-shunned/articleshow/135060541.cms",
-      "published": 1792466622.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "ET Markets",
-          "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/global-market-south-koreas-elice-shares-plunge-28-in-market-debut-as-data-centre-stocks-shunned/articleshow/135060541.cms"
-        }
-      ],
-      "score": 4,
-      "summary": "Elice, which raised 201.1 billion won ($150 million) in its IPO, provides AI cloud services as well as AI-based education and business software and plans to spend most of its IPO proceeds on launching portable modular data centres and related infrastructure.",
-      "category": "Company move",
-      "reason": "A named company or share-price move may affect that stock and its peers.",
-      "matched": [
-        "Company move"
-      ],
-      "tier": "Watch",
-      "related": [],
       "cluster_count": 1,
       "impact_assets": [
         "Equities"
@@ -1912,93 +2270,60 @@
       "companies": []
     },
     {
-      "id": "929bfecb47e3ed03",
-      "title": "RBI injects Rs 1 lakh crore as liquidity tightens before festive season",
-      "url": "https://economictimes.indiatimes.com/news/economy/finance/rbi-injects-rs-1-lakh-crore-as-liquidity-tightens-before-festive-season/articleshow/135055953.cms",
-      "published": 1792439243.0,
+      "id": "6f27197d7a9872f8",
+      "title": "Tariff quota notified for New Zealand fruits, honey",
+      "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/tariff-quota-notified-for-new-zealand-fruits-honey/articleshow/135054549.cms",
+      "published": 1792433238.0,
       "region": "India",
       "official": false,
       "sources": [
         {
           "name": "ET Economy",
-          "url": "https://economictimes.indiatimes.com/news/economy/finance/rbi-injects-rs-1-lakh-crore-as-liquidity-tightens-before-festive-season/articleshow/135055953.cms"
+          "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/tariff-quota-notified-for-new-zealand-fruits-honey/articleshow/135054549.cms"
+        }
+      ],
+      "score": 4,
+      "summary": "Kiwifruit imports will qualify for zero customs duty under the tariff rate quota (TRQ), subject to a minimum CIF value of $1.80 per kg while 40 tonnes of New Zealand-certified Manuka honey under the quota have been permitted for 2026. The annual limit will increase to 200 tonnes from 2027.",
+      "category": "Regulation",
+      "reason": "Check who is covered, whether it is proposed or final, and its effective date.",
+      "matched": [
+        "Regulation"
+      ],
+      "tier": "Watch",
+      "related": [],
+      "cluster_count": 1,
+      "impact_assets": [
+        "Equities"
+      ],
+      "why_it_matters": "Alters market structure, compliance mandates, capital allocation rules, and retail derivative trading liquidity.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
+      "id": "aee8fce16654c147",
+      "title": "Confirmatory order in the matter of Rajesh Exports Limited",
+      "url": "https://www.sebi.gov.in/enforcement/orders/oct-2026/confirmatory-order-in-the-matter-of-rajesh-exports-limited_105261.html",
+      "published": null,
+      "region": "India",
+      "official": true,
+      "sources": [
+        {
+          "name": "SEBI",
+          "url": "https://www.sebi.gov.in/enforcement/orders/oct-2026/confirmatory-order-in-the-matter-of-rajesh-exports-limited_105261.html"
         }
       ],
       "score": 6,
-      "summary": "On Monday, the RBI announced a Rs 1-lakh-crore variable rate repo (VRR) auction for the first time since late July after the weighted average call rate (WACR) at 5.67% on Monday, or 17 basis points higher than the repo rate of 5.50%. The central bank will conduct another VRR for Rs 50,000 crore on Wednesday.",
-      "category": "Monetary policy",
-      "reason": "Directly shifts commercial bank cost of funds, repo borrowing rates, and rate-sensitive equity multiples (banks, real estate, auto).",
+      "summary": "Confirmatory order in the matter of Rajesh Exports Limited",
+      "category": "Economic data",
+      "reason": "Compare the release with expectations; the surprise can affect rates and risk appetite.",
       "matched": [
-        "Monetary policy"
+        "Economic data"
       ],
       "tier": "Must know",
       "related": [],
       "cluster_count": 1,
       "impact_assets": [
-        "Rates",
         "Equities"
-      ],
-      "why_it_matters": "Directly shifts commercial bank cost of funds, repo borrowing rates, and rate-sensitive equity multiples (banks, real estate, auto).",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "8de87974cc08f10f",
-      "title": "Stock Market Holiday 2026: Is stock market closed today for Dussehra? Check remaining holidays for the year",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/stock-market-holiday-2026-is-stock-market-closed-today-for-dussehra-check-remaining-holidays-for-the-year/articleshow/135059981.cms",
-      "published": 1792463399.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "ET Markets",
-          "url": "https://economictimes.indiatimes.com/markets/stocks/news/stock-market-holiday-2026-is-stock-market-closed-today-for-dussehra-check-remaining-holidays-for-the-year/articleshow/135059981.cms"
-        }
-      ],
-      "score": 3,
-      "summary": "A total of 16 stock market holidays have been scheduled for 2026, out of which twelve have already passed. After the Dussehra holiday, trading will remain suspended on three more occasions over the remaining two months of the year.",
-      "category": "Market flows",
-      "reason": "Flows, currency and yields provide context for Indian equity risk appetite.",
-      "matched": [
-        "Market flows"
-      ],
-      "tier": "Watch",
-      "related": [],
-      "cluster_count": 1,
-      "impact_assets": [
-        "Equities"
-      ],
-      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "aff7b7b0825841bc",
-      "title": "Expert view: A relief rally toward 23,800–24,200 possible; FPIs may return if dollar, bond yields peak, says Rahul Ghose",
-      "url": "https://www.livemint.com/market/stock-market-news/expert-view-a-relief-rally-toward-23-800-24-200-possible-fpis-may-return-if-dollar-bond-yields-peak-says-rahul-ghose-11792461311690.html",
-      "published": 1792462227.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "Mint Markets",
-          "url": "https://www.livemint.com/market/stock-market-news/expert-view-a-relief-rally-toward-23-800-24-200-possible-fpis-may-return-if-dollar-bond-yields-peak-says-rahul-ghose-11792461311690.html"
-        }
-      ],
-      "score": 3,
-      "summary": "Octanom Tech CEO Rahul Ghose expects the Nifty to end the year lower, though oversold conditions could fuel a relief rally to 23,800–24,200. He says foreign investors are unlikely to return until US yields and the dollar peak, while high oil prices may limit broader market gains.",
-      "category": "Market flows",
-      "reason": "Flows, currency and yields provide context for Indian equity risk appetite.",
-      "matched": [
-        "Market flows"
-      ],
-      "tier": "Watch",
-      "related": [],
-      "cluster_count": 1,
-      "impact_assets": [
-        "Rates",
-        "Equities",
-        "FX"
       ],
       "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
       "impact_chain": null,
@@ -2095,163 +2420,6 @@
       "companies": []
     },
     {
-      "id": "42a555c90e3be1ee",
-      "title": "Major Economic Indicators Latest Numbers",
-      "url": "https://www.bls.gov/bls/",
-      "published": 1792419430.0,
-      "region": "Global",
-      "official": true,
-      "sources": [
-        {
-          "name": "US BLS",
-          "url": "https://www.bls.gov/bls/"
-        }
-      ],
-      "score": 5,
-      "summary": "Consumer Price Index (CPI): +0.6% in Sep 2026 News Release Historical Data Unemployment Rate: 4.2% in Sep 2026 News Release Historical Data Payroll Employment: +29,000(p) in Sep 2026 News Release Historical Data Average Hourly Earnings: +$0.05(p) in Sep 2026 News Release Historical Data Producer Price Index - Final Demand: +1.3%(p) in Sep 2026 News",
-      "category": "Economic data",
-      "reason": "Compare the release with expectations; the surprise can affect rates and risk appetite.",
-      "matched": [
-        "Economic data"
-      ],
-      "tier": "Watch",
-      "related": [],
-      "cluster_count": 1,
-      "impact_assets": [
-        "Equities"
-      ],
-      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "6f27197d7a9872f8",
-      "title": "Tariff quota notified for New Zealand fruits, honey",
-      "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/tariff-quota-notified-for-new-zealand-fruits-honey/articleshow/135054549.cms",
-      "published": 1792433238.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "ET Economy",
-          "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/tariff-quota-notified-for-new-zealand-fruits-honey/articleshow/135054549.cms"
-        }
-      ],
-      "score": 4,
-      "summary": "Kiwifruit imports will qualify for zero customs duty under the tariff rate quota (TRQ), subject to a minimum CIF value of $1.80 per kg while 40 tonnes of New Zealand-certified Manuka honey under the quota have been permitted for 2026. The annual limit will increase to 200 tonnes from 2027.",
-      "category": "Regulation",
-      "reason": "Check who is covered, whether it is proposed or final, and its effective date.",
-      "matched": [
-        "Regulation"
-      ],
-      "tier": "Watch",
-      "related": [],
-      "cluster_count": 1,
-      "impact_assets": [
-        "Equities"
-      ],
-      "why_it_matters": "Alters market structure, compliance mandates, capital allocation rules, and retail derivative trading liquidity.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "b44ddb60a1146b95",
-      "title": "India probing Pernod, Diageo Scotch imports under India-UK trade pact, sources say",
-      "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/india-probing-pernod-diageo-scotch-imports-under-india-uk-trade-pact-sources-say/articleshow/135050418.cms",
-      "published": 1792418030.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "ET Economy",
-          "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/india-probing-pernod-diageo-scotch-imports-under-india-uk-trade-pact-sources-say/articleshow/135050418.cms"
-        }
-      ],
-      "score": 4,
-      "summary": "Indian tax officials are investigating Pernod Ricard and Diageo for how they classified bulk Scotch imports. These companies may have improperly benefitted from reduced tariffs under a recent trade agreement. Tax inspectors made surprising visits to both companies' offices to gather information about their practices. The investigations are part of ",
-      "category": "Economic data",
-      "reason": "Compare the release with expectations; the surprise can affect rates and risk appetite.",
-      "matched": [
-        "Economic data"
-      ],
-      "tier": "Watch",
-      "related": [
-        {
-          "title": "What is holding up the US-India trade deal?",
-          "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/what-is-holding-up-the-us-india-trade-deal/articleshow/135023925.cms",
-          "source": "ET Economy",
-          "published": 1792298975.0
-        }
-      ],
-      "cluster_count": 1,
-      "impact_assets": [
-        "Equities"
-      ],
-      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "aee8fce16654c147",
-      "title": "Confirmatory order in the matter of Rajesh Exports Limited",
-      "url": "https://www.sebi.gov.in/enforcement/orders/oct-2026/confirmatory-order-in-the-matter-of-rajesh-exports-limited_105261.html",
-      "published": null,
-      "region": "India",
-      "official": true,
-      "sources": [
-        {
-          "name": "SEBI",
-          "url": "https://www.sebi.gov.in/enforcement/orders/oct-2026/confirmatory-order-in-the-matter-of-rajesh-exports-limited_105261.html"
-        }
-      ],
-      "score": 6,
-      "summary": "Confirmatory order in the matter of Rajesh Exports Limited",
-      "category": "Economic data",
-      "reason": "Compare the release with expectations; the surprise can affect rates and risk appetite.",
-      "matched": [
-        "Economic data"
-      ],
-      "tier": "Must know",
-      "related": [],
-      "cluster_count": 1,
-      "impact_assets": [
-        "Equities"
-      ],
-      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "0f6da22562d1f9bf",
-      "title": "US stocks today: Nasdaq leads Wall Street gains as chip, AI stocks rebound",
-      "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/us-stocks-today-nasdaq-leads-wall-street-gains-as-chip-ai-stocks-rebound/articleshow/135056194.cms",
-      "published": 1792441115.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "ET Markets",
-          "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/us-stocks-today-nasdaq-leads-wall-street-gains-as-chip-ai-stocks-rebound/articleshow/135056194.cms"
-        }
-      ],
-      "score": 3,
-      "summary": "US stocks ended mixed on Monday, with the Nasdaq leading gains as chip and AI-linked stocks bounced back after last week’s sharp selloff. Investors also tracked corporate earnings and fresh stock-specific moves, while concerns over AI spending and financing remained in focus.",
-      "category": "Market flows",
-      "reason": "Flows, currency and yields provide context for Indian equity risk appetite.",
-      "matched": [
-        "Market flows"
-      ],
-      "tier": "Watch",
-      "related": [],
-      "cluster_count": 1,
-      "impact_assets": [
-        "Equities"
-      ],
-      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
       "id": "7de5991f5b49ee78",
       "title": "Walmart seeks $2.5 billion from US bond sale, weighs first Canadian-dollar offering",
       "url": "https://www.livemint.com/companies/news/walmart-seeks-2-5-billion-from-us-bond-sale-weighs-first-canadian-dollar-offering-11792433481821.html",
@@ -2276,37 +2444,6 @@
       "cluster_count": 1,
       "impact_assets": [
         "Rates",
-        "Equities",
-        "FX"
-      ],
-      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "7ba63a7bb59c43ea",
-      "title": "CBDT exempts interest payments on rupee-denominated bonds issued by New Development Bank from TDS",
-      "url": "https://economictimes.indiatimes.com/news/economy/policy/cbdt-exempts-interest-payments-on-rupee-denominated-bonds-issued-by-new-development-bank-from-tds/articleshow/135052435.cms",
-      "published": 1792427543.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "ET Economy",
-          "url": "https://economictimes.indiatimes.com/news/economy/policy/cbdt-exempts-interest-payments-on-rupee-denominated-bonds-issued-by-new-development-bank-from-tds/articleshow/135052435.cms"
-        }
-      ],
-      "score": 3,
-      "summary": "The exemption applies to holders of Maharajah INR Bonds who are Indian residents or foreign institutional investors, for the 2026-27 tax year and subsequent tax years.",
-      "category": "Market flows",
-      "reason": "Flows, currency and yields provide context for Indian equity risk appetite.",
-      "matched": [
-        "Market flows"
-      ],
-      "tier": "Watch",
-      "related": [],
-      "cluster_count": 1,
-      "impact_assets": [
         "Equities",
         "FX"
       ],
@@ -2713,6 +2850,43 @@
       "companies": []
     },
     {
+      "id": "b44ddb60a1146b95",
+      "title": "India probing Pernod, Diageo Scotch imports under India-UK trade pact, sources say",
+      "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/india-probing-pernod-diageo-scotch-imports-under-india-uk-trade-pact-sources-say/articleshow/135050418.cms",
+      "published": 1792418030.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "ET Economy",
+          "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/india-probing-pernod-diageo-scotch-imports-under-india-uk-trade-pact-sources-say/articleshow/135050418.cms"
+        }
+      ],
+      "score": 4,
+      "summary": "Indian tax officials are investigating Pernod Ricard and Diageo for how they classified bulk Scotch imports. These companies may have improperly benefitted from reduced tariffs under a recent trade agreement. Tax inspectors made surprising visits to both companies' offices to gather information about their practices. The investigations are part of ",
+      "category": "Economic data",
+      "reason": "Compare the release with expectations; the surprise can affect rates and risk appetite.",
+      "matched": [
+        "Economic data"
+      ],
+      "tier": "Watch",
+      "related": [
+        {
+          "title": "What is holding up the US-India trade deal?",
+          "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/what-is-holding-up-the-us-india-trade-deal/articleshow/135023925.cms",
+          "source": "ET Economy",
+          "published": 1792298975.0
+        }
+      ],
+      "cluster_count": 1,
+      "impact_assets": [
+        "Equities"
+      ],
+      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
       "id": "c3c78dc0bbfe3a4c",
       "title": "Trump waives Russia sanctions, easing India’s energy concerns as US trade deal nears",
       "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/trump-waives-russia-sanctions-easing-indias-energy-concerns-as-us-trade-deal-nears/articleshow/135048374.cms",
@@ -3110,6 +3284,37 @@
       "companies": []
     },
     {
+      "id": "7ba63a7bb59c43ea",
+      "title": "CBDT exempts interest payments on rupee-denominated bonds issued by New Development Bank from TDS",
+      "url": "https://economictimes.indiatimes.com/news/economy/policy/cbdt-exempts-interest-payments-on-rupee-denominated-bonds-issued-by-new-development-bank-from-tds/articleshow/135052435.cms",
+      "published": 1792427543.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "ET Economy",
+          "url": "https://economictimes.indiatimes.com/news/economy/policy/cbdt-exempts-interest-payments-on-rupee-denominated-bonds-issued-by-new-development-bank-from-tds/articleshow/135052435.cms"
+        }
+      ],
+      "score": 3,
+      "summary": "The exemption applies to holders of Maharajah INR Bonds who are Indian residents or foreign institutional investors, for the 2026-27 tax year and subsequent tax years.",
+      "category": "Market flows",
+      "reason": "Flows, currency and yields provide context for Indian equity risk appetite.",
+      "matched": [
+        "Market flows"
+      ],
+      "tier": "Watch",
+      "related": [],
+      "cluster_count": 1,
+      "impact_assets": [
+        "Equities",
+        "FX"
+      ],
+      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
       "id": "cbf39f406715085f",
       "title": "UltraTech Cement tanks 5% from day's high post Q2 results; key details",
       "url": "https://www.business-standard.com/markets/news/ultratech-cement-tanks-5-from-day-s-high-post-q2-results-key-details-126101900517_1.html",
@@ -3334,7 +3539,7 @@
       "url": "https://www.livemint.com/rss/markets",
       "region": "India",
       "official": false,
-      "checked": "2026-10-20T13:33:21.542052+00:00",
+      "checked": "2026-10-20T18:06:05.100269+00:00",
       "status": "ok",
       "count": 35
     },
@@ -3343,7 +3548,7 @@
       "url": "https://www.livemint.com/rss/companies",
       "region": "India",
       "official": false,
-      "checked": "2026-10-20T13:33:21.542269+00:00",
+      "checked": "2026-10-20T18:06:05.100476+00:00",
       "status": "ok",
       "count": 35
     },
@@ -3352,7 +3557,7 @@
       "url": "https://www.sebi.gov.in/sebirss.xml",
       "region": "India",
       "official": true,
-      "checked": "2026-10-20T13:33:21.542412+00:00",
+      "checked": "2026-10-20T18:06:05.100692+00:00",
       "status": "ok",
       "count": 30
     },
@@ -3361,16 +3566,16 @@
       "url": "https://www.federalreserve.gov/feeds/press_monetary.xml",
       "region": "Global",
       "official": true,
-      "checked": "2026-10-20T13:33:21.542559+00:00",
+      "checked": "2026-10-20T18:06:05.100902+00:00",
       "status": "ok",
-      "count": 1
+      "count": 0
     },
     {
       "name": "US BLS",
       "url": "https://www.bls.gov/feed/bls_latest.rss",
       "region": "Global",
       "official": true,
-      "checked": "2026-10-20T13:33:21.542863+00:00",
+      "checked": "2026-10-20T18:06:05.101537+00:00",
       "status": "ok",
       "count": 1
     },
@@ -3379,7 +3584,7 @@
       "url": "https://www.investing.com/rss/news.rss",
       "region": "Global",
       "official": false,
-      "checked": "2026-10-20T13:33:21.687254+00:00",
+      "checked": "2026-10-20T18:06:05.291605+00:00",
       "status": "ok",
       "count": 10
     },
@@ -3388,7 +3593,7 @@
       "url": "https://www.cnbc.com/id/100727362/device/rss/rss.html",
       "region": "Global",
       "official": false,
-      "checked": "2026-10-20T13:33:21.741285+00:00",
+      "checked": "2026-10-20T18:06:05.366068+00:00",
       "status": "ok",
       "count": 30
     },
@@ -3397,7 +3602,7 @@
       "url": "https://pulse.zerodha.com/feed.php",
       "region": "India",
       "official": false,
-      "checked": "2026-10-20T13:33:21.757779+00:00",
+      "checked": "2026-10-20T18:06:05.401942+00:00",
       "status": "ok",
       "count": 25
     },
@@ -3406,7 +3611,7 @@
       "url": "https://economictimes.indiatimes.com/markets/rssfeeds/1977021501.cms",
       "region": "India",
       "official": false,
-      "checked": "2026-10-20T13:33:21.758490+00:00",
+      "checked": "2026-10-20T18:06:05.436833+00:00",
       "status": "ok",
       "count": 50
     },
@@ -3415,7 +3620,7 @@
       "url": "https://economictimes.indiatimes.com/news/economy/rssfeeds/1373380680.cms",
       "region": "India",
       "official": false,
-      "checked": "2026-10-20T13:33:21.778550+00:00",
+      "checked": "2026-10-20T18:06:05.500881+00:00",
       "status": "ok",
       "count": 50
     },
@@ -3424,21 +3629,21 @@
       "url": "https://www.business-standard.com/rss/markets-106.rss",
       "region": "India",
       "official": false,
-      "checked": "2026-10-20T13:33:21.880909+00:00",
+      "checked": "2026-10-20T18:06:05.562024+00:00",
       "status": "ok",
       "count": 35
     }
   ],
   "refreshing": false,
   "calendar": {
-    "checked": 1792503206.919344,
+    "checked": 1792519570.91666,
     "status": "ok"
   },
   "premarket": {
-    "updated": "2026-10-20T13:33:31.889473+00:00",
+    "updated": "2026-10-20T18:06:15.290994+00:00",
     "schema_version": 2,
     "is_live": false,
-    "quote_updated": "2026-10-20T13:33:31.880510+00:00",
+    "quote_updated": "2026-10-20T18:06:15.290635+00:00",
     "quote_date": "2026-10-19",
     "quote_source": "yfinance",
     "live_bias_label": "LATEST AVAILABLE QUOTE",
@@ -3462,18 +3667,18 @@
     },
     "overnight": {
       "SP500": {
-        "val": "7,679",
-        "pct": -0.15,
+        "val": "7,720",
+        "pct": 0.38,
         "date": "2026-10-20"
       },
       "NASDAQ": {
-        "val": "26,279",
-        "pct": -0.58,
+        "val": "26,477",
+        "pct": 0.17,
         "date": "2026-10-20"
       },
       "US10Y": {
-        "val": "5.11%",
-        "pct": -0.58,
+        "val": "5.12%",
+        "pct": -0.33,
         "date": "2026-10-20"
       }
     },
@@ -3481,21 +3686,21 @@
       "key": "BRENT",
       "quote_date": "2026-10-20",
       "label": "Brent Crude",
-      "price": "110.74",
-      "price_raw": 110.74,
+      "price": "108.76",
+      "price_raw": 108.76,
       "prev_close": 109.74,
       "prev_close_fmt": "109.74",
-      "change": 1.0,
-      "change_pct": 0.91,
-      "direction": "up",
+      "change": -0.98,
+      "change_pct": -0.89,
+      "direction": "down",
       "unit": "USD/bbl",
       "range_52w": {
         "low": 58.72,
         "high": 126.1,
         "low_fmt": "58.72",
         "high_fmt": "126.10",
-        "pos_pct": 77.2,
-        "pct_from_high": -12.18
+        "pos_pct": 74.3,
+        "pct_from_high": -13.75
       }
     },
     "usdinr": {
@@ -3590,7 +3795,7 @@
         "num": "02",
         "title": "Crude and input costs",
         "bias": "Context",
-        "desc": "Latest Brent quote: 110.74 USD/bbl (+0.91%). Higher crude can raise import and input costs; lower crude can ease them. This quote alone does not establish the cause of the move."
+        "desc": "Latest Brent quote: 108.76 USD/bbl (-0.89%). Higher crude can raise import and input costs; lower crude can ease them. This quote alone does not establish the cause of the move."
       },
       {
         "num": "03",
@@ -3606,54 +3811,54 @@
           "key": "BRENT",
           "quote_date": "2026-10-20",
           "label": "Brent Crude",
-          "price": "110.74",
-          "price_raw": 110.74,
+          "price": "108.76",
+          "price_raw": 108.76,
           "prev_close": 109.74,
           "prev_close_fmt": "109.74",
-          "change": 1.0,
-          "change_pct": 0.91,
-          "direction": "up",
+          "change": -0.98,
+          "change_pct": -0.89,
+          "direction": "down",
           "unit": "USD/bbl",
           "range_52w": {
             "low": 58.72,
             "high": 126.1,
             "low_fmt": "58.72",
             "high_fmt": "126.10",
-            "pos_pct": 77.2,
-            "pct_from_high": -12.18
+            "pos_pct": 74.3,
+            "pct_from_high": -13.75
           }
         },
         "wti": {
           "key": "WTI",
           "quote_date": "2026-10-20",
           "label": "WTI Crude",
-          "price": "100.00",
-          "price_raw": 100.0,
+          "price": "97.91",
+          "price_raw": 97.91,
           "prev_close": 98.59,
           "prev_close_fmt": "98.59",
-          "change": 1.41,
-          "change_pct": 1.43,
-          "direction": "up",
+          "change": -0.68,
+          "change_pct": -0.69,
+          "direction": "down",
           "unit": "USD/bbl",
           "range_52w": {
             "low": 54.98,
             "high": 119.48,
             "low_fmt": "54.98",
             "high_fmt": "119.48",
-            "pos_pct": 69.8,
-            "pct_from_high": -16.3
+            "pos_pct": 66.6,
+            "pct_from_high": -18.05
           }
         },
         "natgas": {
           "key": "NATGAS",
           "quote_date": "2026-10-20",
           "label": "Natural Gas",
-          "price": "2.99",
-          "price_raw": 2.992,
+          "price": "2.97",
+          "price_raw": 2.972,
           "prev_close": 3.032,
           "prev_close_fmt": "3.03",
-          "change": -0.04,
-          "change_pct": -1.32,
+          "change": -0.06,
+          "change_pct": -1.98,
           "direction": "down",
           "unit": "USD/MMBtu",
           "range_52w": {
@@ -3661,20 +3866,20 @@
             "high": 7.83,
             "low_fmt": "2.48",
             "high_fmt": "7.83",
-            "pos_pct": 9.5,
-            "pct_from_high": -61.77
+            "pos_pct": 9.2,
+            "pct_from_high": -62.03
           }
         },
         "gold": {
           "key": "GOLD",
           "quote_date": "2026-10-20",
           "label": "Gold",
-          "price": "4,138.80",
-          "price_raw": 4138.7998,
+          "price": "4,141.10",
+          "price_raw": 4141.1001,
           "prev_close": 4165.2998,
           "prev_close_fmt": "4,165.30",
-          "change": -26.5,
-          "change_pct": -0.64,
+          "change": -24.1997,
+          "change_pct": -0.58,
           "direction": "down",
           "unit": "USD/oz",
           "range_52w": {
@@ -3682,49 +3887,49 @@
             "high": 5586.2,
             "low_fmt": "3,901.30",
             "high_fmt": "5,586.20",
-            "pos_pct": 14.1,
-            "pct_from_high": -25.91
+            "pos_pct": 14.2,
+            "pct_from_high": -25.87
           }
         },
         "silver": {
           "key": "SILVER",
           "quote_date": "2026-10-20",
           "label": "Silver",
-          "price": "57.38",
-          "price_raw": 57.375,
+          "price": "58.01",
+          "price_raw": 58.01,
           "prev_close": 57.62,
           "prev_close_fmt": "57.62",
-          "change": -0.245,
-          "change_pct": -0.43,
-          "direction": "down",
+          "change": 0.39,
+          "change_pct": 0.68,
+          "direction": "up",
           "unit": "USD/oz",
           "range_52w": {
             "low": 45.85,
             "high": 121.3,
             "low_fmt": "45.85",
             "high_fmt": "121.30",
-            "pos_pct": 15.3,
-            "pct_from_high": -52.7
+            "pos_pct": 16.1,
+            "pct_from_high": -52.18
           }
         },
         "catalyst": {
-          "title": "Dow Jones| Nasdaq | S&P 500 | US Stock Market Today |Live Updates: Nasdaq futures slip as oil rises, AI stocks weaken ahead of earnings",
-          "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/dow-jones-stock-market-live-updates-nasdaq-sp-500-us-iran-israel-war-hormuz-deal-brent-crude-oil-fed-rate-treasury-yields-earnings-forecast-nvidia-macys-gamestop-stock-price-news-20th-september-2026/liveblog/135069926.cms",
-          "why_it_matters": "Rising crude can increase India’s import bill and input costs, while supporting upstream oil realizations.",
+          "title": "US Eyes India's Reliance To Refine Venezuelan Oil",
+          "url": "https://www.ndtvprofit.com/markets/us-eyes-indias-reliance-to-refine-venezuelan-oil-12212083#publisher=newsstand",
+          "why_it_matters": "Crude affects India’s import bill and energy-sensitive sectors; the headline does not establish a clear price direction.",
           "source": ""
         }
       },
       "earnings": [
         {
-          "title": "Dow Jones| Nasdaq | S&P 500 | US Stock Market Today |Live Updates: Nasdaq futures slip as oil rises, AI stocks weaken ahead of earnings",
-          "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/dow-jones-stock-market-live-updates-nasdaq-sp-500-us-iran-israel-war-hormuz-deal-brent-crude-oil-fed-rate-treasury-yields-earnings-forecast-nvidia-macys-gamestop-stock-price-news-20th-september-2026/liveblog/135069926.cms",
+          "title": "U.S. stocks rise as tech fluctuations offset by earnings moves, fall in oil prices",
+          "url": "https://www.investing.com/news/stock-market-news/us-stock-futures-steady-after-wall-street-rebounds-on-tech-recovery-4958596",
           "companies": [],
-          "why_it_matters": "Rising crude can increase India’s import bill and input costs, while supporting upstream oil realizations.",
+          "why_it_matters": "Falling crude can ease India’s import bill and input costs for airlines and paints, while reducing upstream oil realizations.",
           "source": ""
         },
         {
-          "title": "Meta's AI spending, Muse assistant adoption in focus for quarterly results",
-          "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/metas-ai-spending-muse-assistant-adoption-in-focus-for-quarterly-results/articleshow/135068976.cms",
+          "title": "Carrefour Q3 2026 slides: solid sales growth, guidance cut on France unrest",
+          "url": "https://www.investing.com/news/company-news/carrefour-q3-2026-slides-solid-sales-growth-guidance-cut-on-france-unrest-93CH-4960820",
           "companies": [],
           "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
           "source": ""
@@ -3740,25 +3945,25 @@
       "global_macro": {
         "overnight": {
           "SP500": {
-            "val": "7,679",
-            "pct": -0.15,
+            "val": "7,720",
+            "pct": 0.38,
             "date": "2026-10-20"
           },
           "NASDAQ": {
-            "val": "26,279",
-            "pct": -0.58,
+            "val": "26,477",
+            "pct": 0.17,
             "date": "2026-10-20"
           },
           "US10Y": {
-            "val": "5.11%",
-            "pct": -0.58,
+            "val": "5.12%",
+            "pct": -0.33,
             "date": "2026-10-20"
           }
         },
         "catalyst": {
-          "title": "Dow Jones| Nasdaq | S&P 500 | US Stock Market Today |Live Updates: Nasdaq futures slip as oil rises, AI stocks weaken ahead of earnings",
-          "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/dow-jones-stock-market-live-updates-nasdaq-sp-500-us-iran-israel-war-hormuz-deal-brent-crude-oil-fed-rate-treasury-yields-earnings-forecast-nvidia-macys-gamestop-stock-price-news-20th-september-2026/liveblog/135069926.cms",
-          "why_it_matters": "Rising crude can increase India’s import bill and input costs, while supporting upstream oil realizations.",
+          "title": "Housing is flashing warning signs just as the Fed weighs more interest rate hikes",
+          "url": "https://www.cnbc.com/2026/10/20/housing-mortgage-rates-real-estate-federal-reserve.html",
+          "why_it_matters": "Guides global liquidity dynamics, US Dollar Index (DXY) trajectory, and foreign institutional (FII) capital allocations.",
           "source": ""
         }
       }
