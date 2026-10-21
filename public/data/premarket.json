@@ -1,8 +1,8 @@
 {
-  "updated": "2026-10-20T21:36:12.057506+00:00",
+  "updated": "2026-10-21T00:12:01.293508+00:00",
   "schema_version": 2,
   "is_live": false,
-  "quote_updated": "2026-10-20T21:36:12.056991+00:00",
+  "quote_updated": "2026-10-21T00:12:01.293145+00:00",
   "quote_date": "2026-10-19",
   "quote_source": "yfinance",
   "live_bias_label": "LATEST AVAILABLE QUOTE",
@@ -45,12 +45,12 @@
     "key": "BRENT",
     "quote_date": "2026-10-20",
     "label": "Brent Crude",
-    "price": "109.12",
-    "price_raw": 109.12,
+    "price": "109.41",
+    "price_raw": 109.41,
     "prev_close": 109.74,
     "prev_close_fmt": "109.74",
-    "change": -0.62,
-    "change_pct": -0.56,
+    "change": -0.33,
+    "change_pct": -0.3,
     "direction": "down",
     "unit": "USD/bbl",
     "range_52w": {
@@ -58,8 +58,8 @@
       "high": 126.1,
       "low_fmt": "58.72",
       "high_fmt": "126.10",
-      "pos_pct": 74.8,
-      "pct_from_high": -13.47
+      "pos_pct": 75.2,
+      "pct_from_high": -13.24
     }
   },
   "usdinr": {
@@ -154,7 +154,7 @@
       "num": "02",
       "title": "Crude and input costs",
       "bias": "Context",
-      "desc": "Latest Brent quote: 109.12 USD/bbl (-0.56%). Higher crude can raise import and input costs; lower crude can ease them. This quote alone does not establish the cause of the move."
+      "desc": "Latest Brent quote: 109.41 USD/bbl (-0.30%). Higher crude can raise import and input costs; lower crude can ease them. This quote alone does not establish the cause of the move."
     },
     {
       "num": "03",
@@ -170,12 +170,12 @@
         "key": "BRENT",
         "quote_date": "2026-10-20",
         "label": "Brent Crude",
-        "price": "109.12",
-        "price_raw": 109.12,
+        "price": "109.41",
+        "price_raw": 109.41,
         "prev_close": 109.74,
         "prev_close_fmt": "109.74",
-        "change": -0.62,
-        "change_pct": -0.56,
+        "change": -0.33,
+        "change_pct": -0.3,
         "direction": "down",
         "unit": "USD/bbl",
         "range_52w": {
@@ -183,20 +183,20 @@
           "high": 126.1,
           "low_fmt": "58.72",
           "high_fmt": "126.10",
-          "pos_pct": 74.8,
-          "pct_from_high": -13.47
+          "pos_pct": 75.2,
+          "pct_from_high": -13.24
         }
       },
       "wti": {
         "key": "WTI",
         "quote_date": "2026-10-20",
         "label": "WTI Crude",
-        "price": "98.18",
-        "price_raw": 98.18,
+        "price": "98.44",
+        "price_raw": 98.44,
         "prev_close": 98.59,
         "prev_close_fmt": "98.59",
-        "change": -0.41,
-        "change_pct": -0.42,
+        "change": -0.15,
+        "change_pct": -0.15,
         "direction": "down",
         "unit": "USD/bbl",
         "range_52w": {
@@ -204,8 +204,8 @@
           "high": 119.48,
           "low_fmt": "54.98",
           "high_fmt": "119.48",
-          "pos_pct": 67.0,
-          "pct_from_high": -17.83
+          "pos_pct": 67.4,
+          "pct_from_high": -17.61
         }
       },
       "natgas": {
@@ -213,11 +213,11 @@
         "quote_date": "2026-10-20",
         "label": "Natural Gas",
         "price": "2.99",
-        "price_raw": 2.993,
+        "price_raw": 2.986,
         "prev_close": 3.032,
         "prev_close_fmt": "3.03",
-        "change": -0.039,
-        "change_pct": -1.29,
+        "change": -0.046,
+        "change_pct": -1.52,
         "direction": "down",
         "unit": "USD/MMBtu",
         "range_52w": {
@@ -225,20 +225,20 @@
           "high": 7.83,
           "low_fmt": "2.48",
           "high_fmt": "7.83",
-          "pos_pct": 9.5,
-          "pct_from_high": -61.76
+          "pos_pct": 9.4,
+          "pct_from_high": -61.85
         }
       },
       "gold": {
         "key": "GOLD",
         "quote_date": "2026-10-20",
         "label": "Gold",
-        "price": "4,142.50",
-        "price_raw": 4142.5,
+        "price": "4,131.60",
+        "price_raw": 4131.6001,
         "prev_close": 4165.2998,
         "prev_close_fmt": "4,165.30",
-        "change": -22.7998,
-        "change_pct": -0.55,
+        "change": -33.6997,
+        "change_pct": -0.81,
         "direction": "down",
         "unit": "USD/oz",
         "range_52w": {
@@ -246,20 +246,20 @@
           "high": 5586.2,
           "low_fmt": "3,901.30",
           "high_fmt": "5,586.20",
-          "pos_pct": 14.3,
-          "pct_from_high": -25.84
+          "pos_pct": 13.7,
+          "pct_from_high": -26.04
         }
       },
       "silver": {
         "key": "SILVER",
         "quote_date": "2026-10-20",
         "label": "Silver",
-        "price": "58.14",
-        "price_raw": 58.14,
+        "price": "57.92",
+        "price_raw": 57.915,
         "prev_close": 57.62,
         "prev_close_fmt": "57.62",
-        "change": 0.52,
-        "change_pct": 0.9,
+        "change": 0.295,
+        "change_pct": 0.51,
         "direction": "up",
         "unit": "USD/oz",
         "range_52w": {
@@ -267,14 +267,14 @@
           "high": 121.3,
           "low_fmt": "45.85",
           "high_fmt": "121.30",
-          "pos_pct": 16.3,
-          "pct_from_high": -52.07
+          "pos_pct": 16.0,
+          "pct_from_high": -52.25
         }
       },
       "catalyst": {
-        "title": "Oil prices fall as traders hope for diplomatic progress in Middle East",
-        "url": "https://www.cnbc.com/2026/10/20/oil-price-wti-brent-crude.html",
-        "why_it_matters": "Falling crude can ease India’s import bill and input costs for airlines and paints, while reducing upstream oil realizations.",
+        "title": "Gold Wavers as Traders Weigh US-Iran Talks, Fed Rate Path",
+        "url": "https://www.livemint.com/market/gold-wavers-as-traders-weigh-us-iran-talks-fed-rate-path-11792539436169.html",
+        "why_it_matters": "Guides global liquidity dynamics, US Dollar Index (DXY) trajectory, and foreign institutional (FII) capital allocations.",
         "source": ""
       }
     },
@@ -294,10 +294,10 @@
         "source": ""
       },
       {
-        "title": "Goldman Sachs raises MSCI stock price target on strong quarterly results",
-        "url": "https://www.investing.com/news/analyst-ratings/goldman-sachs-raises-msci-stock-price-target-on-strong-quarterly-results-93CH-4961185",
+        "title": "Wall Street rebounds from lows as upbeat earnings, falling oil prices lift sentiment; Micron, Intel up 2%",
+        "url": "https://www.livemint.com/market/stock-market-news/wall-street-rebounds-from-lows-as-upbeat-earnings-falling-oil-prices-lift-sentiment-micron-intel-up-2-11792507459852.html",
         "companies": [],
-        "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
+        "why_it_matters": "Crude affects India’s import bill and energy-sensitive sectors; the headline does not establish a clear price direction.",
         "source": ""
       }
     ],
@@ -320,8 +320,8 @@
         }
       },
       "catalyst": {
-        "title": "Housing is flashing warning signs just as the Fed weighs more interest rate hikes",
-        "url": "https://www.cnbc.com/2026/10/20/housing-mortgage-rates-real-estate-federal-reserve.html",
+        "title": "Gold Wavers as Traders Weigh US-Iran Talks, Fed Rate Path",
+        "url": "https://www.livemint.com/market/gold-wavers-as-traders-weigh-us-iran-talks-fed-rate-path-11792539436169.html",
         "why_it_matters": "Guides global liquidity dynamics, US Dollar Index (DXY) trajectory, and foreign institutional (FII) capital allocations.",
         "source": ""
       }
