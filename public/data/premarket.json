@@ -1,8 +1,8 @@
 {
-  "updated": "2026-10-21T19:00:09.660719+00:00",
+  "updated": "2026-10-21T22:19:43.039248+00:00",
   "schema_version": 2,
   "is_live": false,
-  "quote_updated": "2026-10-21T19:00:09.660461+00:00",
+  "quote_updated": "2026-10-21T22:19:43.038703+00:00",
   "quote_date": "2026-10-19",
   "quote_source": "yfinance",
   "live_bias_label": "LATEST AVAILABLE QUOTE",
@@ -26,18 +26,18 @@
   },
   "overnight": {
     "SP500": {
-      "val": "7,746",
-      "pct": 0.43,
+      "val": "7,757",
+      "pct": 0.58,
       "date": "2026-10-21"
     },
     "NASDAQ": {
-      "val": "26,662",
-      "pct": 0.9,
+      "val": "26,703",
+      "pct": 1.05,
       "date": "2026-10-21"
     },
     "US10Y": {
-      "val": "5.11%",
-      "pct": -0.08,
+      "val": "5.15%",
+      "pct": 0.57,
       "date": "2026-10-21"
     }
   },
@@ -45,12 +45,12 @@
     "key": "BRENT",
     "quote_date": "2026-10-21",
     "label": "Brent Crude",
-    "price": "109.34",
-    "price_raw": 109.34,
+    "price": "109.77",
+    "price_raw": 109.77,
     "prev_close": 110.49,
     "prev_close_fmt": "110.49",
-    "change": -1.15,
-    "change_pct": -1.04,
+    "change": -0.72,
+    "change_pct": -0.65,
     "direction": "down",
     "unit": "USD/bbl",
     "range_52w": {
@@ -58,8 +58,8 @@
       "high": 126.1,
       "low_fmt": "58.72",
       "high_fmt": "126.10",
-      "pos_pct": 75.1,
-      "pct_from_high": -13.29
+      "pos_pct": 75.8,
+      "pct_from_high": -12.95
     }
   },
   "usdinr": {
@@ -154,7 +154,7 @@
       "num": "02",
       "title": "Crude and input costs",
       "bias": "Context",
-      "desc": "Latest Brent quote: 109.34 USD/bbl (-1.04%). Higher crude can raise import and input costs; lower crude can ease them. This quote alone does not establish the cause of the move."
+      "desc": "Latest Brent quote: 109.77 USD/bbl (-0.65%). Higher crude can raise import and input costs; lower crude can ease them. This quote alone does not establish the cause of the move."
     },
     {
       "num": "03",
@@ -170,12 +170,12 @@
         "key": "BRENT",
         "quote_date": "2026-10-21",
         "label": "Brent Crude",
-        "price": "109.34",
-        "price_raw": 109.34,
+        "price": "109.77",
+        "price_raw": 109.77,
         "prev_close": 110.49,
         "prev_close_fmt": "110.49",
-        "change": -1.15,
-        "change_pct": -1.04,
+        "change": -0.72,
+        "change_pct": -0.65,
         "direction": "down",
         "unit": "USD/bbl",
         "range_52w": {
@@ -183,20 +183,20 @@
           "high": 126.1,
           "low_fmt": "58.72",
           "high_fmt": "126.10",
-          "pos_pct": 75.1,
-          "pct_from_high": -13.29
+          "pos_pct": 75.8,
+          "pct_from_high": -12.95
         }
       },
       "wti": {
         "key": "WTI",
         "quote_date": "2026-10-21",
         "label": "WTI Crude",
-        "price": "97.67",
-        "price_raw": 97.67,
+        "price": "97.81",
+        "price_raw": 97.81,
         "prev_close": 99.25,
         "prev_close_fmt": "99.25",
-        "change": -1.58,
-        "change_pct": -1.59,
+        "change": -1.44,
+        "change_pct": -1.45,
         "direction": "down",
         "unit": "USD/bbl",
         "range_52w": {
@@ -204,20 +204,20 @@
           "high": 119.48,
           "low_fmt": "54.98",
           "high_fmt": "119.48",
-          "pos_pct": 66.2,
-          "pct_from_high": -18.25
+          "pos_pct": 66.4,
+          "pct_from_high": -18.14
         }
       },
       "natgas": {
         "key": "NATGAS",
         "quote_date": "2026-10-21",
         "label": "Natural Gas",
-        "price": "2.79",
-        "price_raw": 2.787,
+        "price": "2.78",
+        "price_raw": 2.778,
         "prev_close": 2.966,
         "prev_close_fmt": "2.97",
-        "change": -0.179,
-        "change_pct": -6.04,
+        "change": -0.188,
+        "change_pct": -6.34,
         "direction": "down",
         "unit": "USD/MMBtu",
         "range_52w": {
@@ -225,20 +225,20 @@
           "high": 7.83,
           "low_fmt": "2.48",
           "high_fmt": "7.83",
-          "pos_pct": 5.7,
-          "pct_from_high": -64.39
+          "pos_pct": 5.5,
+          "pct_from_high": -64.51
         }
       },
       "gold": {
         "key": "GOLD",
         "quote_date": "2026-10-21",
         "label": "Gold",
-        "price": "4,146.40",
-        "price_raw": 4146.3999,
+        "price": "4,155.10",
+        "price_raw": 4155.1001,
         "prev_close": 4135.8999,
         "prev_close_fmt": "4,135.90",
-        "change": 10.5,
-        "change_pct": 0.25,
+        "change": 19.2002,
+        "change_pct": 0.46,
         "direction": "up",
         "unit": "USD/oz",
         "range_52w": {
@@ -246,20 +246,20 @@
           "high": 5586.2,
           "low_fmt": "3,901.30",
           "high_fmt": "5,586.20",
-          "pos_pct": 14.5,
-          "pct_from_high": -25.77
+          "pos_pct": 15.1,
+          "pct_from_high": -25.62
         }
       },
       "silver": {
         "key": "SILVER",
         "quote_date": "2026-10-21",
         "label": "Silver",
-        "price": "57.65",
-        "price_raw": 57.655,
+        "price": "57.97",
+        "price_raw": 57.97,
         "prev_close": 57.465,
         "prev_close_fmt": "57.47",
-        "change": 0.19,
-        "change_pct": 0.33,
+        "change": 0.505,
+        "change_pct": 0.88,
         "direction": "up",
         "unit": "USD/oz",
         "range_52w": {
@@ -267,21 +267,28 @@
           "high": 121.3,
           "low_fmt": "45.85",
           "high_fmt": "121.30",
-          "pos_pct": 15.7,
-          "pct_from_high": -52.47
+          "pos_pct": 16.1,
+          "pct_from_high": -52.21
         }
       },
       "catalyst": {
-        "title": "Jio Platforms' IPO-linked inflows boost rupee; elevated oil prices spur caution",
-        "url": "https://economictimes.indiatimes.com/markets/forex/forex-news/jio-platforms-ipo-linked-inflows-boost-rupee-elevated-oil-prices-spur-caution/articleshow/135089592.cms",
-        "why_it_matters": "Crude affects India’s import bill and energy-sensitive sectors; the headline does not establish a clear price direction.",
+        "title": "Treasuries Slide After Middle East Strife Report Spurs Oil Gains",
+        "url": "https://www.livemint.com/market/treasuries-slide-after-middle-east-strife-report-spurs-oil-gains-11792613769755.html",
+        "why_it_matters": "Rising crude can increase India’s import bill and input costs, while supporting upstream oil realizations.",
         "source": ""
       }
     },
     "earnings": [
       {
-        "title": "SpaceX stock jumps 10% after earnings beat and Musk hints at Tesla tie-up",
-        "url": "https://www.cnbc.com/2026/10/21/spacex-spcx-stock-musk-merger-tesla.html",
+        "title": "Tesla beats on earnings and sales even as auto revenue declines",
+        "url": "https://www.cnbc.com/2026/10/21/tesla-tsla-q3-2026-earnings-report.html",
+        "companies": [],
+        "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
+        "source": ""
+      },
+      {
+        "title": "Meta raises AI spending forecast to $145 billion, plans new share issue; Q3 revenue beats estimates",
+        "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/meta-raises-ai-spending-forecast-to-145-billion-plans-new-share-issue-q3-revenue-beats-estimates/articleshow/135100437.cms",
         "companies": [],
         "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
         "source": ""
@@ -297,37 +304,30 @@
         ],
         "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
         "source": ""
-      },
-      {
-        "title": "PC Jeweller share price to be in focus as Q2 net profit jumps 58%; can the stock extend its 482% rally in 3 years?",
-        "url": "https://www.livemint.com/market/stock-market-news/pc-jeweller-share-price-to-be-in-focus-as-q2-net-profit-jumps-58-can-the-stock-extend-its-482-rally-in-3-years-11792597628059.html",
-        "companies": [],
-        "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
-        "source": ""
       }
     ],
     "global_macro": {
       "overnight": {
         "SP500": {
-          "val": "7,746",
-          "pct": 0.43,
+          "val": "7,757",
+          "pct": 0.58,
           "date": "2026-10-21"
         },
         "NASDAQ": {
-          "val": "26,662",
-          "pct": 0.9,
+          "val": "26,703",
+          "pct": 1.05,
           "date": "2026-10-21"
         },
         "US10Y": {
-          "val": "5.11%",
-          "pct": -0.08,
+          "val": "5.15%",
+          "pct": 0.57,
           "date": "2026-10-21"
         }
       },
       "catalyst": {
-        "title": "Canadian dollar holds near four-week high as investors stick to rate hike bets",
-        "url": "https://www.livemint.com/market/canadian-dollar-holds-near-four-week-high-as-investors-stick-to-rate-hike-bets-11792608162613.html",
-        "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
+        "title": "RBI flags widening inflation risks, puts rate cuts on ice",
+        "url": "https://economictimes.indiatimes.com/news/economy/indicators/rbi-flags-widening-inflation-risks-puts-rate-cuts-on-ice/articleshow/135100146.cms",
+        "why_it_matters": "Directly shifts commercial bank cost of funds, repo borrowing rates, and rate-sensitive equity multiples (banks, real estate, auto).",
         "source": ""
       }
     }
