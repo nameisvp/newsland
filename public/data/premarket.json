@@ -1,8 +1,8 @@
 {
-  "updated": "2026-10-21T22:19:43.039248+00:00",
+  "updated": "2026-10-22T00:51:05.399637+00:00",
   "schema_version": 2,
   "is_live": false,
-  "quote_updated": "2026-10-21T22:19:43.038703+00:00",
+  "quote_updated": "2026-10-22T00:51:05.345098+00:00",
   "quote_date": "2026-10-19",
   "quote_source": "yfinance",
   "live_bias_label": "LATEST AVAILABLE QUOTE",
@@ -45,12 +45,12 @@
     "key": "BRENT",
     "quote_date": "2026-10-21",
     "label": "Brent Crude",
-    "price": "109.77",
-    "price_raw": 109.77,
+    "price": "110.02",
+    "price_raw": 110.02,
     "prev_close": 110.49,
     "prev_close_fmt": "110.49",
-    "change": -0.72,
-    "change_pct": -0.65,
+    "change": -0.47,
+    "change_pct": -0.43,
     "direction": "down",
     "unit": "USD/bbl",
     "range_52w": {
@@ -58,21 +58,21 @@
       "high": 126.1,
       "low_fmt": "58.72",
       "high_fmt": "126.10",
-      "pos_pct": 75.8,
-      "pct_from_high": -12.95
+      "pos_pct": 76.1,
+      "pct_from_high": -12.75
     }
   },
   "usdinr": {
     "key": "USDINR",
-    "quote_date": "2026-10-21",
+    "quote_date": "2026-10-22",
     "label": "INR / USD",
     "price": "94.45",
     "price_raw": 94.45,
-    "prev_close": 94.77,
-    "prev_close_fmt": "94.77",
-    "change": -0.32,
-    "change_pct": -0.34,
-    "direction": "down",
+    "prev_close": 94.45,
+    "prev_close_fmt": "94.45",
+    "change": 0.0,
+    "change_pct": 0.0,
+    "direction": "up",
     "unit": "",
     "range_52w": {
       "low": 85.86,
@@ -154,7 +154,7 @@
       "num": "02",
       "title": "Crude and input costs",
       "bias": "Context",
-      "desc": "Latest Brent quote: 109.77 USD/bbl (-0.65%). Higher crude can raise import and input costs; lower crude can ease them. This quote alone does not establish the cause of the move."
+      "desc": "Latest Brent quote: 110.02 USD/bbl (-0.43%). Higher crude can raise import and input costs; lower crude can ease them. This quote alone does not establish the cause of the move."
     },
     {
       "num": "03",
@@ -170,12 +170,12 @@
         "key": "BRENT",
         "quote_date": "2026-10-21",
         "label": "Brent Crude",
-        "price": "109.77",
-        "price_raw": 109.77,
+        "price": "110.02",
+        "price_raw": 110.02,
         "prev_close": 110.49,
         "prev_close_fmt": "110.49",
-        "change": -0.72,
-        "change_pct": -0.65,
+        "change": -0.47,
+        "change_pct": -0.43,
         "direction": "down",
         "unit": "USD/bbl",
         "range_52w": {
@@ -183,20 +183,20 @@
           "high": 126.1,
           "low_fmt": "58.72",
           "high_fmt": "126.10",
-          "pos_pct": 75.8,
-          "pct_from_high": -12.95
+          "pos_pct": 76.1,
+          "pct_from_high": -12.75
         }
       },
       "wti": {
         "key": "WTI",
         "quote_date": "2026-10-21",
         "label": "WTI Crude",
-        "price": "97.81",
-        "price_raw": 97.81,
+        "price": "98.02",
+        "price_raw": 98.02,
         "prev_close": 99.25,
         "prev_close_fmt": "99.25",
-        "change": -1.44,
-        "change_pct": -1.45,
+        "change": -1.23,
+        "change_pct": -1.24,
         "direction": "down",
         "unit": "USD/bbl",
         "range_52w": {
@@ -204,8 +204,8 @@
           "high": 119.48,
           "low_fmt": "54.98",
           "high_fmt": "119.48",
-          "pos_pct": 66.4,
-          "pct_from_high": -18.14
+          "pos_pct": 66.7,
+          "pct_from_high": -17.96
         }
       },
       "natgas": {
@@ -213,11 +213,11 @@
         "quote_date": "2026-10-21",
         "label": "Natural Gas",
         "price": "2.78",
-        "price_raw": 2.778,
+        "price_raw": 2.776,
         "prev_close": 2.966,
         "prev_close_fmt": "2.97",
-        "change": -0.188,
-        "change_pct": -6.34,
+        "change": -0.19,
+        "change_pct": -6.41,
         "direction": "down",
         "unit": "USD/MMBtu",
         "range_52w": {
@@ -226,40 +226,40 @@
           "low_fmt": "2.48",
           "high_fmt": "7.83",
           "pos_pct": 5.5,
-          "pct_from_high": -64.51
+          "pct_from_high": -64.53
         }
       },
       "gold": {
         "key": "GOLD",
         "quote_date": "2026-10-21",
         "label": "Gold",
-        "price": "4,155.10",
-        "price_raw": 4155.1001,
+        "price": "4,132.40",
+        "price_raw": 4132.3999,
         "prev_close": 4135.8999,
         "prev_close_fmt": "4,135.90",
-        "change": 19.2002,
-        "change_pct": 0.46,
-        "direction": "up",
+        "change": -3.5,
+        "change_pct": -0.08,
+        "direction": "down",
         "unit": "USD/oz",
         "range_52w": {
           "low": 3901.3,
           "high": 5586.2,
           "low_fmt": "3,901.30",
           "high_fmt": "5,586.20",
-          "pos_pct": 15.1,
-          "pct_from_high": -25.62
+          "pos_pct": 13.7,
+          "pct_from_high": -26.02
         }
       },
       "silver": {
         "key": "SILVER",
         "quote_date": "2026-10-21",
         "label": "Silver",
-        "price": "57.97",
-        "price_raw": 57.97,
+        "price": "57.47",
+        "price_raw": 57.465,
         "prev_close": 57.465,
         "prev_close_fmt": "57.47",
-        "change": 0.505,
-        "change_pct": 0.88,
+        "change": 0.0,
+        "change_pct": 0.0,
         "direction": "up",
         "unit": "USD/oz",
         "range_52w": {
@@ -267,14 +267,14 @@
           "high": 121.3,
           "low_fmt": "45.85",
           "high_fmt": "121.30",
-          "pos_pct": 16.1,
-          "pct_from_high": -52.21
+          "pos_pct": 15.4,
+          "pct_from_high": -52.63
         }
       },
       "catalyst": {
-        "title": "Treasuries Slide After Middle East Strife Report Spurs Oil Gains",
-        "url": "https://www.livemint.com/market/treasuries-slide-after-middle-east-strife-report-spurs-oil-gains-11792613769755.html",
-        "why_it_matters": "Rising crude can increase India’s import bill and input costs, while supporting upstream oil realizations.",
+        "title": "Bond yield rises to 7.44% on higher oil prices, global cues",
+        "url": "https://economictimes.indiatimes.com/markets/bonds/bond-yield-rises-to-7-44-on-higher-oil-prices-global-cues/articleshow/135103005.cms",
+        "why_it_matters": "Crude affects India’s import bill and energy-sensitive sectors; the headline does not establish a clear price direction.",
         "source": ""
       }
     },
@@ -294,14 +294,9 @@
         "source": ""
       },
       {
-        "title": "Chip Stocks Lift Nasdaq As Nvidia, AMD Jump 3%; Meta Defies $25B Penalty Ahead Of Earnings",
-        "url": "https://www.ndtvprofit.com/markets/chip-rally-fuels-nasdaq-as-nvidia-amd-micron-jump-3-meta-buzzes-ahead-of-earnings-despite-25b-penalty-12217245#publisher=newsstand",
-        "companies": [
-          {
-            "name": "Nvidia",
-            "symbol": "nvidia"
-          }
-        ],
+        "title": "CVB Financial earnings beat by $0.03, revenue topped estimates",
+        "url": "https://www.investing.com/news/earnings/cvb-financial-earnings-beat-by-003-revenue-topped-estimates-4964450",
+        "companies": [],
         "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
         "source": ""
       }
@@ -325,9 +320,9 @@
         }
       },
       "catalyst": {
-        "title": "RBI flags widening inflation risks, puts rate cuts on ice",
-        "url": "https://economictimes.indiatimes.com/news/economy/indicators/rbi-flags-widening-inflation-risks-puts-rate-cuts-on-ice/articleshow/135100146.cms",
-        "why_it_matters": "Directly shifts commercial bank cost of funds, repo borrowing rates, and rate-sensitive equity multiples (banks, real estate, auto).",
+        "title": "Bond yield rises to 7.44% on higher oil prices, global cues",
+        "url": "https://economictimes.indiatimes.com/markets/bonds/bond-yield-rises-to-7-44-on-higher-oil-prices-global-cues/articleshow/135103005.cms",
+        "why_it_matters": "Crude affects India’s import bill and energy-sensitive sectors; the headline does not establish a clear price direction.",
         "source": ""
       }
     }
