@@ -1,8 +1,8 @@
 {
-  "updated": "2026-10-22T19:26:50.652067+00:00",
+  "updated": "2026-10-22T22:40:19.764603+00:00",
   "schema_version": 2,
   "is_live": false,
-  "quote_updated": "2026-10-22T19:26:50.651547+00:00",
+  "quote_updated": "2026-10-22T22:40:19.764210+00:00",
   "quote_date": "2026-10-21",
   "quote_source": "yfinance",
   "live_bias_label": "LATEST AVAILABLE QUOTE",
@@ -26,13 +26,13 @@
   },
   "overnight": {
     "SP500": {
-      "val": "7,650",
-      "pct": -1.38,
+      "val": "7,663",
+      "pct": -1.21,
       "date": "2026-10-22"
     },
     "NASDAQ": {
-      "val": "25,977",
-      "pct": -2.72,
+      "val": "26,009",
+      "pct": -2.6,
       "date": "2026-10-22"
     },
     "US10Y": {
@@ -45,12 +45,12 @@
     "key": "BRENT",
     "quote_date": "2026-10-22",
     "label": "Brent Crude",
-    "price": "113.36",
-    "price_raw": 113.36,
+    "price": "112.98",
+    "price_raw": 112.98,
     "prev_close": 110.67,
     "prev_close_fmt": "110.67",
-    "change": 2.69,
-    "change_pct": 2.43,
+    "change": 2.31,
+    "change_pct": 2.09,
     "direction": "up",
     "unit": "USD/bbl",
     "range_52w": {
@@ -58,8 +58,8 @@
       "high": 126.1,
       "low_fmt": "58.72",
       "high_fmt": "126.10",
-      "pos_pct": 81.1,
-      "pct_from_high": -10.1
+      "pos_pct": 80.5,
+      "pct_from_high": -10.4
     }
   },
   "usdinr": {
@@ -154,7 +154,7 @@
       "num": "02",
       "title": "Crude and input costs",
       "bias": "Context",
-      "desc": "Latest Brent quote: 113.36 USD/bbl (+2.43%). Higher crude can raise import and input costs; lower crude can ease them. This quote alone does not establish the cause of the move."
+      "desc": "Latest Brent quote: 112.98 USD/bbl (+2.09%). Higher crude can raise import and input costs; lower crude can ease them. This quote alone does not establish the cause of the move."
     },
     {
       "num": "03",
@@ -170,12 +170,12 @@
         "key": "BRENT",
         "quote_date": "2026-10-22",
         "label": "Brent Crude",
-        "price": "113.36",
-        "price_raw": 113.36,
+        "price": "112.98",
+        "price_raw": 112.98,
         "prev_close": 110.67,
         "prev_close_fmt": "110.67",
-        "change": 2.69,
-        "change_pct": 2.43,
+        "change": 2.31,
+        "change_pct": 2.09,
         "direction": "up",
         "unit": "USD/bbl",
         "range_52w": {
@@ -183,20 +183,20 @@
           "high": 126.1,
           "low_fmt": "58.72",
           "high_fmt": "126.10",
-          "pos_pct": 81.1,
-          "pct_from_high": -10.1
+          "pos_pct": 80.5,
+          "pct_from_high": -10.4
         }
       },
       "wti": {
         "key": "WTI",
         "quote_date": "2026-10-22",
         "label": "WTI Crude",
-        "price": "99.47",
-        "price_raw": 99.47,
+        "price": "99.03",
+        "price_raw": 99.03,
         "prev_close": 98.52,
         "prev_close_fmt": "98.52",
-        "change": 0.95,
-        "change_pct": 0.96,
+        "change": 0.51,
+        "change_pct": 0.52,
         "direction": "up",
         "unit": "USD/bbl",
         "range_52w": {
@@ -204,8 +204,8 @@
           "high": 119.48,
           "low_fmt": "54.98",
           "high_fmt": "119.48",
-          "pos_pct": 69.0,
-          "pct_from_high": -16.75
+          "pos_pct": 68.3,
+          "pct_from_high": -17.12
         }
       },
       "natgas": {
@@ -213,11 +213,11 @@
         "quote_date": "2026-10-22",
         "label": "Natural Gas",
         "price": "2.78",
-        "price_raw": 2.779,
+        "price_raw": 2.781,
         "prev_close": 2.765,
         "prev_close_fmt": "2.77",
-        "change": 0.014,
-        "change_pct": 0.51,
+        "change": 0.016,
+        "change_pct": 0.58,
         "direction": "up",
         "unit": "USD/MMBtu",
         "range_52w": {
@@ -225,20 +225,20 @@
           "high": 7.83,
           "low_fmt": "2.48",
           "high_fmt": "7.83",
-          "pos_pct": 5.5,
-          "pct_from_high": -64.49
+          "pos_pct": 5.6,
+          "pct_from_high": -64.47
         }
       },
       "gold": {
         "key": "GOLD",
         "quote_date": "2026-10-22",
         "label": "Gold",
-        "price": "4,043.00",
-        "price_raw": 4043.0,
+        "price": "4,045.00",
+        "price_raw": 4045.0,
         "prev_close": 4107.2998,
         "prev_close_fmt": "4,107.30",
-        "change": -64.2998,
-        "change_pct": -1.57,
+        "change": -62.2998,
+        "change_pct": -1.52,
         "direction": "down",
         "unit": "USD/oz",
         "range_52w": {
@@ -246,20 +246,20 @@
           "high": 5586.2,
           "low_fmt": "3,901.30",
           "high_fmt": "5,586.20",
-          "pos_pct": 8.4,
-          "pct_from_high": -27.63
+          "pos_pct": 8.5,
+          "pct_from_high": -27.59
         }
       },
       "silver": {
         "key": "SILVER",
         "quote_date": "2026-10-22",
         "label": "Silver",
-        "price": "54.65",
-        "price_raw": 54.645,
+        "price": "54.68",
+        "price_raw": 54.68,
         "prev_close": 56.385,
         "prev_close_fmt": "56.38",
-        "change": -1.74,
-        "change_pct": -3.09,
+        "change": -1.705,
+        "change_pct": -3.02,
         "direction": "down",
         "unit": "USD/oz",
         "range_52w": {
@@ -268,13 +268,13 @@
           "low_fmt": "45.85",
           "high_fmt": "121.30",
           "pos_pct": 11.7,
-          "pct_from_high": -54.95
+          "pct_from_high": -54.92
         }
       },
       "catalyst": {
-        "title": "Indian bonds tumble on oil surge, RBI rate hike fears",
-        "url": "https://economictimes.indiatimes.com/markets/bonds/indian-bonds-tumble-on-oil-surge-rbi-rate-hike-fears/articleshow/135118875.cms",
-        "why_it_matters": "Directly shifts commercial bank cost of funds, repo borrowing rates, and rate-sensitive equity multiples (banks, real estate, auto).",
+        "title": "Trade Setup For Oct 23: Nifty Finds Support At 22,600 As US Markets Trade Lower, Oil Prices Jump To Five-Month High",
+        "url": "https://www.ndtvprofit.com/markets/trade-setup-for-oct-23-nifty-finds-support-at-22-600-as-us-markets-trade-lower-oil-prices-jump-to-five-month-high-12222437#publisher=newsstand",
+        "why_it_matters": "Rising crude can increase India’s import bill and input costs, while supporting upstream oil realizations.",
         "source": ""
       }
     },
@@ -287,20 +287,15 @@
         "source": ""
       },
       {
-        "title": "IndiGo Q2 Results: Date, Time, Dividend News, Earnings Call Schedule And More",
-        "url": "https://www.ndtvprofit.com/markets/indigo-q2-results-date-time-dividend-news-earnings-call-schedule-and-more-12221931#publisher=newsstand",
-        "companies": [
-          {
-            "name": "IndiGo",
-            "symbol": "indigo"
-          }
-        ],
+        "title": "Barclays to cut 5,000 jobs in AI-led cost drive as Q3 profit rises 12%",
+        "url": "https://www.business-standard.com/companies/news/barclays-to-cut-5-000-jobs-in-ai-led-cost-drive-as-q3-profit-rises-12-126102201741_1.html",
+        "companies": [],
         "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
         "source": ""
       },
       {
-        "title": "Swiggy's Q2 loss narrows on food delivery gains, misses estimates",
-        "url": "https://www.livemint.com/companies/company-results/swiggy-q2-results-food-delivery-11792669199170.html",
+        "title": "Earnings call transcript: BeFra posts huge Q3 2026 beat as Tupperware lifts growth",
+        "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-befra-posts-huge-q3-2026-beat-as-tupperware-lifts-growth-93CH-4967755",
         "companies": [],
         "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
         "source": ""
@@ -309,13 +304,13 @@
     "global_macro": {
       "overnight": {
         "SP500": {
-          "val": "7,650",
-          "pct": -1.38,
+          "val": "7,663",
+          "pct": -1.21,
           "date": "2026-10-22"
         },
         "NASDAQ": {
-          "val": "25,977",
-          "pct": -2.72,
+          "val": "26,009",
+          "pct": -2.6,
           "date": "2026-10-22"
         },
         "US10Y": {
@@ -325,9 +320,9 @@
         }
       },
       "catalyst": {
-        "title": "Indian bonds tumble on oil surge, RBI rate hike fears",
-        "url": "https://economictimes.indiatimes.com/markets/bonds/indian-bonds-tumble-on-oil-surge-rbi-rate-hike-fears/articleshow/135118875.cms",
-        "why_it_matters": "Directly shifts commercial bank cost of funds, repo borrowing rates, and rate-sensitive equity multiples (banks, real estate, auto).",
+        "title": "US stocks today: Nasdaq slumps 2.5%, S&P 1% as revived AI doubts ignite tech selloff",
+        "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/us-stocks-today-nasdaq-slumps-2-5-sp-1-as-revived-ai-doubts-ignite-tech-selloff/articleshow/135127224.cms",
+        "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
         "source": ""
       }
     }
