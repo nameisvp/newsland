@@ -1,8 +1,8 @@
 {
-  "updated": "2026-10-22T22:40:19.764603+00:00",
+  "updated": "2026-10-23T01:03:14.861833+00:00",
   "schema_version": 2,
   "is_live": false,
-  "quote_updated": "2026-10-22T22:40:19.764210+00:00",
+  "quote_updated": "2026-10-23T01:03:14.861312+00:00",
   "quote_date": "2026-10-21",
   "quote_source": "yfinance",
   "live_bias_label": "LATEST AVAILABLE QUOTE",
@@ -45,12 +45,12 @@
     "key": "BRENT",
     "quote_date": "2026-10-22",
     "label": "Brent Crude",
-    "price": "112.98",
-    "price_raw": 112.98,
+    "price": "112.86",
+    "price_raw": 112.86,
     "prev_close": 110.67,
     "prev_close_fmt": "110.67",
-    "change": 2.31,
-    "change_pct": 2.09,
+    "change": 2.19,
+    "change_pct": 1.98,
     "direction": "up",
     "unit": "USD/bbl",
     "range_52w": {
@@ -58,20 +58,20 @@
       "high": 126.1,
       "low_fmt": "58.72",
       "high_fmt": "126.10",
-      "pos_pct": 80.5,
-      "pct_from_high": -10.4
+      "pos_pct": 80.4,
+      "pct_from_high": -10.5
     }
   },
   "usdinr": {
     "key": "USDINR",
-    "quote_date": "2026-10-22",
+    "quote_date": "2026-10-23",
     "label": "INR / USD",
     "price": "94.81",
     "price_raw": 94.808,
-    "prev_close": 94.45,
-    "prev_close_fmt": "94.45",
-    "change": 0.358,
-    "change_pct": 0.38,
+    "prev_close": 94.808,
+    "prev_close_fmt": "94.81",
+    "change": 0.0,
+    "change_pct": 0.0,
     "direction": "up",
     "unit": "",
     "range_52w": {
@@ -154,7 +154,7 @@
       "num": "02",
       "title": "Crude and input costs",
       "bias": "Context",
-      "desc": "Latest Brent quote: 112.98 USD/bbl (+2.09%). Higher crude can raise import and input costs; lower crude can ease them. This quote alone does not establish the cause of the move."
+      "desc": "Latest Brent quote: 112.86 USD/bbl (+1.98%). Higher crude can raise import and input costs; lower crude can ease them. This quote alone does not establish the cause of the move."
     },
     {
       "num": "03",
@@ -170,12 +170,12 @@
         "key": "BRENT",
         "quote_date": "2026-10-22",
         "label": "Brent Crude",
-        "price": "112.98",
-        "price_raw": 112.98,
+        "price": "112.86",
+        "price_raw": 112.86,
         "prev_close": 110.67,
         "prev_close_fmt": "110.67",
-        "change": 2.31,
-        "change_pct": 2.09,
+        "change": 2.19,
+        "change_pct": 1.98,
         "direction": "up",
         "unit": "USD/bbl",
         "range_52w": {
@@ -183,20 +183,20 @@
           "high": 126.1,
           "low_fmt": "58.72",
           "high_fmt": "126.10",
-          "pos_pct": 80.5,
-          "pct_from_high": -10.4
+          "pos_pct": 80.4,
+          "pct_from_high": -10.5
         }
       },
       "wti": {
         "key": "WTI",
         "quote_date": "2026-10-22",
         "label": "WTI Crude",
-        "price": "99.03",
-        "price_raw": 99.03,
+        "price": "99.18",
+        "price_raw": 99.18,
         "prev_close": 98.52,
         "prev_close_fmt": "98.52",
-        "change": 0.51,
-        "change_pct": 0.52,
+        "change": 0.66,
+        "change_pct": 0.67,
         "direction": "up",
         "unit": "USD/bbl",
         "range_52w": {
@@ -204,20 +204,20 @@
           "high": 119.48,
           "low_fmt": "54.98",
           "high_fmt": "119.48",
-          "pos_pct": 68.3,
-          "pct_from_high": -17.12
+          "pos_pct": 68.5,
+          "pct_from_high": -16.99
         }
       },
       "natgas": {
         "key": "NATGAS",
         "quote_date": "2026-10-22",
         "label": "Natural Gas",
-        "price": "2.78",
-        "price_raw": 2.781,
+        "price": "2.77",
+        "price_raw": 2.766,
         "prev_close": 2.765,
         "prev_close_fmt": "2.77",
-        "change": 0.016,
-        "change_pct": 0.58,
+        "change": 0.001,
+        "change_pct": 0.04,
         "direction": "up",
         "unit": "USD/MMBtu",
         "range_52w": {
@@ -225,20 +225,20 @@
           "high": 7.83,
           "low_fmt": "2.48",
           "high_fmt": "7.83",
-          "pos_pct": 5.6,
-          "pct_from_high": -64.47
+          "pos_pct": 5.3,
+          "pct_from_high": -64.66
         }
       },
       "gold": {
         "key": "GOLD",
         "quote_date": "2026-10-22",
         "label": "Gold",
-        "price": "4,045.00",
-        "price_raw": 4045.0,
+        "price": "4,042.90",
+        "price_raw": 4042.8999,
         "prev_close": 4107.2998,
         "prev_close_fmt": "4,107.30",
-        "change": -62.2998,
-        "change_pct": -1.52,
+        "change": -64.3999,
+        "change_pct": -1.57,
         "direction": "down",
         "unit": "USD/oz",
         "range_52w": {
@@ -246,20 +246,20 @@
           "high": 5586.2,
           "low_fmt": "3,901.30",
           "high_fmt": "5,586.20",
-          "pos_pct": 8.5,
-          "pct_from_high": -27.59
+          "pos_pct": 8.4,
+          "pct_from_high": -27.63
         }
       },
       "silver": {
         "key": "SILVER",
         "quote_date": "2026-10-22",
         "label": "Silver",
-        "price": "54.68",
-        "price_raw": 54.68,
+        "price": "54.67",
+        "price_raw": 54.67,
         "prev_close": 56.385,
         "prev_close_fmt": "56.38",
-        "change": -1.705,
-        "change_pct": -3.02,
+        "change": -1.715,
+        "change_pct": -3.04,
         "direction": "down",
         "unit": "USD/oz",
         "range_52w": {
@@ -268,12 +268,12 @@
           "low_fmt": "45.85",
           "high_fmt": "121.30",
           "pos_pct": 11.7,
-          "pct_from_high": -54.92
+          "pct_from_high": -54.93
         }
       },
       "catalyst": {
-        "title": "Trade Setup For Oct 23: Nifty Finds Support At 22,600 As US Markets Trade Lower, Oil Prices Jump To Five-Month High",
-        "url": "https://www.ndtvprofit.com/markets/trade-setup-for-oct-23-nifty-finds-support-at-22-600-as-us-markets-trade-lower-oil-prices-jump-to-five-month-high-12222437#publisher=newsstand",
+        "title": "Rupee declines first time in eight sessions as Brent oil prices rise above $112",
+        "url": "https://economictimes.indiatimes.com/markets/forex/rupee-declines-first-time-in-eight-sessions-as-brent-oil-prices-rise-above-112/articleshow/135130676.cms",
         "why_it_matters": "Rising crude can increase India’s import bill and input costs, while supporting upstream oil realizations.",
         "source": ""
       }
@@ -287,15 +287,15 @@
         "source": ""
       },
       {
-        "title": "Barclays to cut 5,000 jobs in AI-led cost drive as Q3 profit rises 12%",
-        "url": "https://www.business-standard.com/companies/news/barclays-to-cut-5-000-jobs-in-ai-led-cost-drive-as-q3-profit-rises-12-126102201741_1.html",
+        "title": "1st Source earnings beat by $0.20, revenue topped estimates",
+        "url": "https://www.investing.com/news/earnings/1st-source-earnings-beat-by-020-revenue-topped-estimates-4967862",
         "companies": [],
         "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
         "source": ""
       },
       {
-        "title": "Earnings call transcript: BeFra posts huge Q3 2026 beat as Tupperware lifts growth",
-        "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-befra-posts-huge-q3-2026-beat-as-tupperware-lifts-growth-93CH-4967755",
+        "title": "Earnings call transcript: ikeGPS Group flags stronger second half in Q2 2026",
+        "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-ikegps-group-flags-stronger-second-half-in-q2-2026-93CH-4967879",
         "companies": [],
         "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
         "source": ""
@@ -320,9 +320,9 @@
         }
       },
       "catalyst": {
-        "title": "US stocks today: Nasdaq slumps 2.5%, S&P 1% as revived AI doubts ignite tech selloff",
-        "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/us-stocks-today-nasdaq-slumps-2-5-sp-1-as-revived-ai-doubts-ignite-tech-selloff/articleshow/135127224.cms",
-        "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
+        "title": "Japan core inflation in September surges to its highest this year at 2.1%",
+        "url": "https://www.cnbc.com/2026/10/23/japan-inflation-september-highest-in-2026.html",
+        "why_it_matters": "Key determinant of central bank interest rate paths; elevated prints restrict policy easing and compress real yields.",
         "source": ""
       }
     }
