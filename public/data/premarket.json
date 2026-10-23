@@ -1,8 +1,8 @@
 {
-  "updated": "2026-10-23T11:35:51.854187+00:00",
+  "updated": "2026-10-23T15:57:20.243694+00:00",
   "schema_version": 2,
   "is_live": false,
-  "quote_updated": "2026-10-23T11:35:51.853656+00:00",
+  "quote_updated": "2026-10-23T15:57:20.243315+00:00",
   "quote_date": "2026-10-23",
   "quote_source": "yfinance",
   "live_bias_label": "LATEST AVAILABLE QUOTE",
@@ -26,31 +26,31 @@
   },
   "overnight": {
     "SP500": {
-      "val": "7,663",
-      "pct": -1.21,
-      "date": "2026-10-22"
+      "val": "7,654",
+      "pct": -0.13,
+      "date": "2026-10-23"
     },
     "NASDAQ": {
-      "val": "26,009",
-      "pct": -2.6,
-      "date": "2026-10-22"
+      "val": "26,072",
+      "pct": 0.24,
+      "date": "2026-10-23"
     },
     "US10Y": {
-      "val": "4.95%",
-      "pct": -3.75,
-      "date": "2026-10-22"
+      "val": "5.00%",
+      "pct": 0.93,
+      "date": "2026-10-23"
     }
   },
   "brent": {
     "key": "BRENT",
     "quote_date": "2026-10-23",
     "label": "Brent Crude",
-    "price": "109.99",
-    "price_raw": 109.99,
+    "price": "112.19",
+    "price_raw": 112.19,
     "prev_close": 113.58,
     "prev_close_fmt": "113.58",
-    "change": -3.59,
-    "change_pct": -3.16,
+    "change": -1.39,
+    "change_pct": -1.22,
     "direction": "down",
     "unit": "USD/bbl",
     "range_52w": {
@@ -58,20 +58,20 @@
       "high": 126.1,
       "low_fmt": "58.72",
       "high_fmt": "126.10",
-      "pos_pct": 76.1,
-      "pct_from_high": -12.78
+      "pos_pct": 79.4,
+      "pct_from_high": -11.03
     }
   },
   "usdinr": {
     "key": "USDINR",
     "quote_date": "2026-10-23",
     "label": "INR / USD",
-    "price": "94.94",
-    "price_raw": 94.94,
+    "price": "94.93",
+    "price_raw": 94.93,
     "prev_close": 94.808,
     "prev_close_fmt": "94.81",
-    "change": 0.132,
-    "change_pct": 0.14,
+    "change": 0.122,
+    "change_pct": 0.13,
     "direction": "up",
     "unit": "",
     "range_52w": {
@@ -79,8 +79,8 @@
       "high": 97.05,
       "low_fmt": "85.86",
       "high_fmt": "97.05",
-      "pos_pct": 81.1,
-      "pct_from_high": -2.18
+      "pos_pct": 81.0,
+      "pct_from_high": -2.19
     }
   },
   "pivots": {
@@ -154,7 +154,7 @@
       "num": "02",
       "title": "Crude and input costs",
       "bias": "Context",
-      "desc": "Latest Brent quote: 109.99 USD/bbl (-3.16%). Higher crude can raise import and input costs; lower crude can ease them. This quote alone does not establish the cause of the move."
+      "desc": "Latest Brent quote: 112.19 USD/bbl (-1.22%). Higher crude can raise import and input costs; lower crude can ease them. This quote alone does not establish the cause of the move."
     },
     {
       "num": "03",
@@ -170,12 +170,12 @@
         "key": "BRENT",
         "quote_date": "2026-10-23",
         "label": "Brent Crude",
-        "price": "109.99",
-        "price_raw": 109.99,
+        "price": "112.19",
+        "price_raw": 112.19,
         "prev_close": 113.58,
         "prev_close_fmt": "113.58",
-        "change": -3.59,
-        "change_pct": -3.16,
+        "change": -1.39,
+        "change_pct": -1.22,
         "direction": "down",
         "unit": "USD/bbl",
         "range_52w": {
@@ -183,20 +183,20 @@
           "high": 126.1,
           "low_fmt": "58.72",
           "high_fmt": "126.10",
-          "pos_pct": 76.1,
-          "pct_from_high": -12.78
+          "pos_pct": 79.4,
+          "pct_from_high": -11.03
         }
       },
       "wti": {
         "key": "WTI",
         "quote_date": "2026-10-23",
         "label": "WTI Crude",
-        "price": "100.96",
-        "price_raw": 100.96,
+        "price": "103.01",
+        "price_raw": 103.01,
         "prev_close": 99.99,
         "prev_close_fmt": "99.99",
-        "change": 0.97,
-        "change_pct": 0.97,
+        "change": 3.02,
+        "change_pct": 3.02,
         "direction": "up",
         "unit": "USD/bbl",
         "range_52w": {
@@ -204,20 +204,20 @@
           "high": 119.48,
           "low_fmt": "54.98",
           "high_fmt": "119.48",
-          "pos_pct": 71.3,
-          "pct_from_high": -15.5
+          "pos_pct": 74.5,
+          "pct_from_high": -13.78
         }
       },
       "natgas": {
         "key": "NATGAS",
         "quote_date": "2026-10-23",
         "label": "Natural Gas",
-        "price": "3.09",
-        "price_raw": 3.086,
+        "price": "3.04",
+        "price_raw": 3.035,
         "prev_close": 2.736,
         "prev_close_fmt": "2.74",
-        "change": 0.35,
-        "change_pct": 12.79,
+        "change": 0.299,
+        "change_pct": 10.93,
         "direction": "up",
         "unit": "USD/MMBtu",
         "range_52w": {
@@ -225,41 +225,41 @@
           "high": 7.83,
           "low_fmt": "2.48",
           "high_fmt": "7.83",
-          "pos_pct": 11.3,
-          "pct_from_high": -60.57
+          "pos_pct": 10.3,
+          "pct_from_high": -61.22
         }
       },
       "gold": {
         "key": "GOLD",
         "quote_date": "2026-10-23",
         "label": "Gold",
-        "price": "4,044.70",
-        "price_raw": 4044.7,
+        "price": "4,013.30",
+        "price_raw": 4013.3,
         "prev_close": 4030.1001,
         "prev_close_fmt": "4,030.10",
-        "change": 14.5999,
-        "change_pct": 0.36,
-        "direction": "up",
+        "change": -16.8,
+        "change_pct": -0.42,
+        "direction": "down",
         "unit": "USD/oz",
         "range_52w": {
           "low": 3901.3,
           "high": 5586.2,
           "low_fmt": "3,901.30",
           "high_fmt": "5,586.20",
-          "pos_pct": 8.5,
-          "pct_from_high": -27.59
+          "pos_pct": 6.6,
+          "pct_from_high": -28.16
         }
       },
       "silver": {
         "key": "SILVER",
         "quote_date": "2026-10-23",
         "label": "Silver",
-        "price": "54.15",
-        "price_raw": 54.15,
+        "price": "54.19",
+        "price_raw": 54.19,
         "prev_close": 53.96,
         "prev_close_fmt": "53.96",
-        "change": 0.19,
-        "change_pct": 0.35,
+        "change": 0.23,
+        "change_pct": 0.43,
         "direction": "up",
         "unit": "USD/oz",
         "range_52w": {
@@ -267,8 +267,8 @@
           "high": 121.3,
           "low_fmt": "45.85",
           "high_fmt": "121.30",
-          "pos_pct": 11.0,
-          "pct_from_high": -55.36
+          "pos_pct": 11.1,
+          "pct_from_high": -55.33
         }
       },
       "catalyst": {
@@ -280,8 +280,8 @@
     },
     "earnings": [
       {
-        "title": "Infosys beats Q2 estimates, lowers annual revenue forecast",
-        "url": "https://www.livemint.com/companies/company-results/infosys-q2-results-revenue-growth-forecast-11792753857538.html",
+        "title": "Infosys Q2 Attrition Falls To 12.7%: Headcount Rises To 3.33 Lakh On 8,000 New Fresher Hires",
+        "url": "https://www.ndtvprofit.com/business/infosys-q2-attrition-falls-to-12-7-headcount-rises-to-3-33-lakh-on-8-000-new-fresher-hires-12226183#publisher=newsstand",
         "companies": [
           {
             "name": "Infosys",
@@ -292,26 +292,21 @@
         "source": ""
       },
       {
-        "title": "Tata Motors CV Q2 Results: Co swings to black with Rs 1,254 crore profit; revenue jumps 37% YoY",
-        "url": "https://economictimes.indiatimes.com/markets/stocks/earnings/tata-motors-cv-q2-results-automaker-swings-to-black-with-rs-1254-crore-profit-revenue-jumps-37-yoy/articleshow/135142700.cms",
+        "title": "BPCL Q2 Results: Net profit declines 21% YoY to Rs 4,863 crore, revenue grows 29%",
+        "url": "https://economictimes.indiatimes.com/markets/stocks/earnings/bpcl-q2-results-net-profit-declines-21-yoy-to-rs-4863-crore-revenue-grows-29/articleshow/135149653.cms",
         "companies": [
           {
-            "name": "Tata Motors",
-            "symbol": "tata motors"
+            "name": "BPCL",
+            "symbol": "bpcl"
           }
         ],
         "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
         "source": ""
       },
       {
-        "title": "JSW Steel Q2FY27 result: Net profit rises 14.1% to ₹5,359 crore",
-        "url": "https://www.business-standard.com/companies/quarterly-results/jsw-steel-q2fy27-result-net-profit-rises-14-1-to-5-359-crore-126102300833_1.html",
-        "companies": [
-          {
-            "name": "JSW Steel",
-            "symbol": "jsw steel"
-          }
-        ],
+        "title": "IndusInd Bank posts ₹1,242 crore Q2 profit as provisions decline sharply",
+        "url": "https://www.business-standard.com/companies/quarterly-results/indusind-bank-posts-1-242-crore-q2-profit-as-provisions-decline-sharply-126102301265_1.html",
+        "companies": [],
         "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
         "source": ""
       }
@@ -319,25 +314,25 @@
     "global_macro": {
       "overnight": {
         "SP500": {
-          "val": "7,663",
-          "pct": -1.21,
-          "date": "2026-10-22"
+          "val": "7,654",
+          "pct": -0.13,
+          "date": "2026-10-23"
         },
         "NASDAQ": {
-          "val": "26,009",
-          "pct": -2.6,
-          "date": "2026-10-22"
+          "val": "26,072",
+          "pct": 0.24,
+          "date": "2026-10-23"
         },
         "US10Y": {
-          "val": "4.95%",
-          "pct": -3.75,
-          "date": "2026-10-22"
+          "val": "5.00%",
+          "pct": 0.93,
+          "date": "2026-10-23"
         }
       },
       "catalyst": {
-        "title": "Gold price falls Rs 1,500/10g; silver plunges Rs 7,000/kg as soaring oil fuels rate hike bets. Time to sell?",
-        "url": "https://economictimes.indiatimes.com/markets/commodities/news/gold-price-falls-rs-1500/10g-silver-plunges-rs-7000/kg-as-soaring-oil-fuels-rate-hike-bets-time-to-sell/articleshow/135135987.cms",
-        "why_it_matters": "Crude affects India’s import bill and energy-sensitive sectors; the headline does not establish a clear price direction.",
+        "title": "US Stock Market Today: Dow Slips 1% As Oil Prices Climb; Nasdaq Falls As AI Pressure Persists",
+        "url": "https://www.ndtvprofit.com/markets/us-stock-market-today-dow-slips-1-as-oil-prices-climb-nasdaq-falls-as-ai-pressure-persists-12226322#publisher=newsstand",
+        "why_it_matters": "Rising crude can increase India’s import bill and input costs, while supporting upstream oil realizations.",
         "source": ""
       }
     }
