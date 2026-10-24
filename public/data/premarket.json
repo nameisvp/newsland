@@ -1,8 +1,8 @@
 {
-  "updated": "2026-10-24T14:47:33.573452+00:00",
+  "updated": "2026-10-24T17:40:57.505542+00:00",
   "schema_version": 2,
   "is_live": false,
-  "quote_updated": "2026-10-24T14:47:33.572920+00:00",
+  "quote_updated": "2026-10-24T17:40:57.504995+00:00",
   "quote_date": "2026-10-23",
   "quote_source": "yfinance",
   "live_bias_label": "LATEST AVAILABLE QUOTE",
@@ -256,10 +256,10 @@
         "label": "Silver",
         "price": "53.71",
         "price_raw": 53.711,
-        "prev_close": 53.96,
+        "prev_close": 53.955,
         "prev_close_fmt": "53.96",
-        "change": -0.249,
-        "change_pct": -0.46,
+        "change": -0.244,
+        "change_pct": -0.45,
         "direction": "down",
         "unit": "USD/oz",
         "range_52w": {
@@ -272,13 +272,20 @@
         }
       },
       "catalyst": {
-        "title": "As winter nears, heating oil emerges as hurdle for Republicans in US Senate races",
-        "url": "https://www.investing.com/news/economic-indicators/as-winter-nears-heating-oil-emerges-as-hurdle-for-republicans-in-us-senate-races-4970790",
-        "why_it_matters": "Crude affects India’s import bill and energy-sensitive sectors; the headline does not establish a clear price direction.",
+        "title": "Utssav CZ Gold Jewels approves 1:1 bonus issue, to double equity capital",
+        "url": "https://www.business-standard.com/markets/news/utssav-cz-gold-jewels-approves-1-1-bonus-issue-to-double-equity-capital-126102400806_1.html",
+        "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
         "source": ""
       }
     },
     "earnings": [
+      {
+        "title": "IDFC First Bank Q2 PAT rises 197% to ₹1,045 crore on lower provisions",
+        "url": "https://www.thehindu.com/business/idfc-first-bank-q2-pat-rises-197-to-1045-crore-on-lower-provisions/article71620674.ece",
+        "companies": [],
+        "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
+        "source": ""
+      },
       {
         "title": "AU Small Finance Bank Q2 profit jumps 53% to Rs 858 crore",
         "url": "https://economictimes.indiatimes.com/markets/stocks/earnings/au-small-finance-bank-q2-profit-jumps-53-to-rs-858-crore/articleshow/135169847.cms",
@@ -287,21 +294,9 @@
         "source": ""
       },
       {
-        "title": "IDFC First Bank Q2 Results: Net Profit Jumps Multifold To Rs 1,045 Crore, NII Up 21%",
-        "url": "https://www.ndtvprofit.com/markets/idfc-first-bank-q2-results-net-profit-jumps-multifold-to-rs-1-045-crore-nii-up-21-12230067#publisher=newsstand",
+        "title": "IDFC First Bank Q2 FY27 slides: profit crosses Rs. 1,000 Cr milestone",
+        "url": "https://www.investing.com/news/company-news/idfc-first-bank-q2-fy27-slides-profit-crosses-rs-1000-cr-milestone-93CH-4970851",
         "companies": [],
-        "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
-        "source": ""
-      },
-      {
-        "title": "Tata Motors Has A 20% Revenue Cushion Against CV Downturns. Can It Grow It?",
-        "url": "https://www.ndtvprofit.com/markets/tata-motors-has-a-20-revenue-cushion-against-cv-downturns-can-it-grow-it-12229200#publisher=newsstand",
-        "companies": [
-          {
-            "name": "Tata Motors",
-            "symbol": "tata motors"
-          }
-        ],
         "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
         "source": ""
       }
