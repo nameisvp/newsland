@@ -1,8 +1,8 @@
 {
-  "updated": "2026-10-24T01:34:49.495547+00:00",
+  "updated": "2026-10-24T06:25:13.463023+00:00",
   "schema_version": 2,
   "is_live": false,
-  "quote_updated": "2026-10-24T01:34:49.495072+00:00",
+  "quote_updated": "2026-10-24T06:25:13.462688+00:00",
   "quote_date": "2026-10-23",
   "quote_source": "yfinance",
   "live_bias_label": "LATEST AVAILABLE QUOTE",
@@ -45,33 +45,33 @@
     "key": "BRENT",
     "quote_date": "2026-10-23",
     "label": "Brent Crude",
-    "price": "111.66",
-    "price_raw": 111.66,
+    "price": "116.72",
+    "price_raw": 116.72,
     "prev_close": 113.58,
     "prev_close_fmt": "113.58",
-    "change": -1.92,
-    "change_pct": -1.69,
-    "direction": "down",
+    "change": 3.14,
+    "change_pct": 2.76,
+    "direction": "up",
     "unit": "USD/bbl",
     "range_52w": {
       "low": 58.72,
       "high": 126.1,
       "low_fmt": "58.72",
       "high_fmt": "126.10",
-      "pos_pct": 78.6,
-      "pct_from_high": -11.45
+      "pos_pct": 86.1,
+      "pct_from_high": -7.44
     }
   },
   "usdinr": {
     "key": "USDINR",
-    "quote_date": "2026-10-23",
+    "quote_date": "2026-10-24",
     "label": "INR / USD",
-    "price": "94.93",
-    "price_raw": 94.93,
+    "price": "94.94",
+    "price_raw": 94.94,
     "prev_close": 94.808,
     "prev_close_fmt": "94.81",
-    "change": 0.122,
-    "change_pct": 0.13,
+    "change": 0.132,
+    "change_pct": 0.14,
     "direction": "up",
     "unit": "",
     "range_52w": {
@@ -79,8 +79,8 @@
       "high": 97.05,
       "low_fmt": "85.86",
       "high_fmt": "97.05",
-      "pos_pct": 81.0,
-      "pct_from_high": -2.19
+      "pos_pct": 81.1,
+      "pct_from_high": -2.18
     }
   },
   "pivots": {
@@ -154,7 +154,7 @@
       "num": "02",
       "title": "Crude and input costs",
       "bias": "Context",
-      "desc": "Latest Brent quote: 111.66 USD/bbl (-1.69%). Higher crude can raise import and input costs; lower crude can ease them. This quote alone does not establish the cause of the move."
+      "desc": "Latest Brent quote: 116.72 USD/bbl (+2.76%). Higher crude can raise import and input costs; lower crude can ease them. This quote alone does not establish the cause of the move."
     },
     {
       "num": "03",
@@ -170,33 +170,33 @@
         "key": "BRENT",
         "quote_date": "2026-10-23",
         "label": "Brent Crude",
-        "price": "111.66",
-        "price_raw": 111.66,
+        "price": "116.72",
+        "price_raw": 116.72,
         "prev_close": 113.58,
         "prev_close_fmt": "113.58",
-        "change": -1.92,
-        "change_pct": -1.69,
-        "direction": "down",
+        "change": 3.14,
+        "change_pct": 2.76,
+        "direction": "up",
         "unit": "USD/bbl",
         "range_52w": {
           "low": 58.72,
           "high": 126.1,
           "low_fmt": "58.72",
           "high_fmt": "126.10",
-          "pos_pct": 78.6,
-          "pct_from_high": -11.45
+          "pos_pct": 86.1,
+          "pct_from_high": -7.44
         }
       },
       "wti": {
         "key": "WTI",
         "quote_date": "2026-10-23",
         "label": "WTI Crude",
-        "price": "103.44",
-        "price_raw": 103.44,
+        "price": "103.27",
+        "price_raw": 103.27,
         "prev_close": 99.99,
         "prev_close_fmt": "99.99",
-        "change": 3.45,
-        "change_pct": 3.45,
+        "change": 3.28,
+        "change_pct": 3.28,
         "direction": "up",
         "unit": "USD/bbl",
         "range_52w": {
@@ -204,41 +204,41 @@
           "high": 119.48,
           "low_fmt": "54.98",
           "high_fmt": "119.48",
-          "pos_pct": 75.1,
-          "pct_from_high": -13.42
+          "pos_pct": 74.9,
+          "pct_from_high": -13.57
         }
       },
       "natgas": {
         "key": "NATGAS",
         "quote_date": "2026-10-23",
         "label": "Natural Gas",
-        "price": "3.05",
-        "price_raw": 3.047,
+        "price": "2.64",
+        "price_raw": 2.64,
         "prev_close": 2.736,
         "prev_close_fmt": "2.74",
-        "change": 0.311,
-        "change_pct": 11.37,
-        "direction": "up",
+        "change": -0.096,
+        "change_pct": -3.51,
+        "direction": "down",
         "unit": "USD/MMBtu",
         "range_52w": {
           "low": 2.48,
           "high": 7.83,
           "low_fmt": "2.48",
           "high_fmt": "7.83",
-          "pos_pct": 10.6,
-          "pct_from_high": -61.07
+          "pos_pct": 2.9,
+          "pct_from_high": -66.27
         }
       },
       "gold": {
         "key": "GOLD",
         "quote_date": "2026-10-23",
         "label": "Gold",
-        "price": "4,010.00",
-        "price_raw": 4010.0,
+        "price": "4,007.90",
+        "price_raw": 4007.8999,
         "prev_close": 4030.1001,
         "prev_close_fmt": "4,030.10",
-        "change": -20.1001,
-        "change_pct": -0.5,
+        "change": -22.2002,
+        "change_pct": -0.55,
         "direction": "down",
         "unit": "USD/oz",
         "range_52w": {
@@ -246,29 +246,29 @@
           "high": 5586.2,
           "low_fmt": "3,901.30",
           "high_fmt": "5,586.20",
-          "pos_pct": 6.5,
-          "pct_from_high": -28.22
+          "pos_pct": 6.3,
+          "pct_from_high": -28.25
         }
       },
       "silver": {
         "key": "SILVER",
         "quote_date": "2026-10-23",
         "label": "Silver",
-        "price": "53.96",
-        "price_raw": 53.96,
+        "price": "53.71",
+        "price_raw": 53.711,
         "prev_close": 53.96,
         "prev_close_fmt": "53.96",
-        "change": 0.0,
-        "change_pct": 0.0,
-        "direction": "up",
+        "change": -0.249,
+        "change_pct": -0.46,
+        "direction": "down",
         "unit": "USD/oz",
         "range_52w": {
           "low": 45.85,
           "high": 121.3,
           "low_fmt": "45.85",
           "high_fmt": "121.30",
-          "pos_pct": 10.8,
-          "pct_from_high": -55.52
+          "pos_pct": 10.4,
+          "pct_from_high": -55.72
         }
       },
       "catalyst": {
@@ -280,38 +280,28 @@
     },
     "earnings": [
       {
-        "title": "Infosys cuts FY27 guidance; Q2 net profit rises 6.2% to ₹7,828 crore",
-        "url": "https://www.business-standard.com/companies/quarterly-results/infosys-q2-results-net-profit-rises-6-2-to-7-823-cr-revenue-up-10-2-126102300941_1.html",
+        "title": "Wall Street Week Ahead: Earnings flood, Fed meeting will test rickety AI market rally",
+        "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/wall-st-week-ahead-earnings-flood-fed-meeting-will-test-rickety-ai-market-rally/articleshow/135161141.cms",
+        "companies": [],
+        "why_it_matters": "Guides global liquidity dynamics, US Dollar Index (DXY) trajectory, and foreign institutional (FII) capital allocations.",
+        "source": ""
+      },
+      {
+        "title": "BPCL reports 21.45% drop in Q2 FY27 net profit, attributes losses to fuel pricing issues",
+        "url": "https://economictimes.indiatimes.com/markets/stocks/earnings/bpcl-reports-21-45-drop-in-q2-fy27-net-profit-attributes-losses-to-fuel-pricing-issues/articleshow/135161389.cms",
         "companies": [
           {
-            "name": "Infosys",
-            "symbol": "infosys"
+            "name": "BPCL",
+            "symbol": "bpcl"
           }
         ],
         "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
         "source": ""
       },
       {
-        "title": "Tata Motors CV Q2 Results: Co swings to black with Rs 1,254 crore profit; revenue jumps 37% YoY",
-        "url": "https://economictimes.indiatimes.com/markets/stocks/earnings/tata-motors-cv-q2-results-automaker-swings-to-black-with-rs-1254-crore-profit-revenue-jumps-37-yoy/articleshow/135142700.cms",
-        "companies": [
-          {
-            "name": "Tata Motors",
-            "symbol": "tata motors"
-          }
-        ],
-        "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
-        "source": ""
-      },
-      {
-        "title": "Apple India revenue grows 32% to cross ₹1 trillion mark in FY26: Tofler",
-        "url": "https://www.business-standard.com/companies/news/apple-india-revenue-grows-32-to-cross-1-trillion-mark-in-fy26-tofler-126102301658_1.html",
-        "companies": [
-          {
-            "name": "Apple",
-            "symbol": "apple"
-          }
-        ],
+        "title": "DRL says cap on trade margins a positive, posts 36% dip in Q2 PAT",
+        "url": "https://economictimes.indiatimes.com/markets/stocks/earnings/drl-says-cap-on-trade-margins-a-positive-posts-36-dip-in-q2-pat/articleshow/135161325.cms",
+        "companies": [],
         "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
         "source": ""
       }
@@ -335,9 +325,9 @@
         }
       },
       "catalyst": {
-        "title": "Trump ends tariffs on some Canadian products, as Senator Collins faces close race",
-        "url": "https://www.investing.com/news/economy-news/us-to-remove-50-tariffs-on-some-canadian-goods-to-help-republicans-in-midterms-wsj-reports-4970225",
-        "why_it_matters": "Alters market structure, compliance mandates, capital allocation rules, and retail derivative trading liquidity.",
+        "title": "Wall Street Week Ahead: Earnings flood, Fed meeting will test rickety AI market rally",
+        "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/wall-st-week-ahead-earnings-flood-fed-meeting-will-test-rickety-ai-market-rally/articleshow/135161141.cms",
+        "why_it_matters": "Guides global liquidity dynamics, US Dollar Index (DXY) trajectory, and foreign institutional (FII) capital allocations.",
         "source": ""
       }
     }
