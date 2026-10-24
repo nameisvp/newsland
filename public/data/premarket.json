@@ -1,9 +1,9 @@
 {
-  "updated": "2026-10-23T23:08:03.769376+00:00",
+  "updated": "2026-10-24T01:34:49.495547+00:00",
   "schema_version": 2,
   "is_live": false,
-  "quote_updated": "2026-10-23T23:08:03.768896+00:00",
-  "quote_date": "2026-10-22",
+  "quote_updated": "2026-10-24T01:34:49.495072+00:00",
+  "quote_date": "2026-10-23",
   "quote_source": "yfinance",
   "live_bias_label": "LATEST AVAILABLE QUOTE",
   "bias_label": "LATEST AVAILABLE QUOTE",
@@ -85,35 +85,35 @@
   },
   "pivots": {
     "nifty": {
-      "pivot": 22676,
-      "s1": 22567,
-      "r1": 22797,
-      "s2": 22446,
-      "r2": 22906,
-      "date": "2026-10-22"
+      "pivot": 22586,
+      "s1": 22386,
+      "r1": 22801,
+      "s2": 22171,
+      "r2": 23002,
+      "date": "2026-10-23"
     },
     "banknifty": {
-      "pivot": 54840,
-      "s1": 54545,
-      "r1": 55220,
-      "s2": 54165,
-      "r2": 55515,
-      "date": "2026-10-22"
+      "pivot": 54407,
+      "s1": 53823,
+      "r1": 54871,
+      "s2": 53359,
+      "r2": 55455,
+      "date": "2026-10-23"
     }
   },
   "posture": {
-    "dma50": 23441,
-    "dma50_fmt": "23,441",
-    "pct_dma50": -3.21,
-    "dma200": 24142,
-    "dma200_fmt": "24,142",
-    "pct_dma200": -6.02,
+    "dma50": 23404,
+    "dma50_fmt": "23,404",
+    "pct_dma50": -3.43,
+    "dma200": 24125,
+    "dma200_fmt": "24,125",
+    "pct_dma200": -6.32,
     "high52": 26373,
     "high52_fmt": "26,373",
     "low52": 22180,
     "low52_fmt": "22,180",
-    "pct_from_high52": -13.97,
-    "pos_52w": 12.1,
+    "pct_from_high52": -14.31,
+    "pos_52w": 10.0,
     "regime": "CORRECTIVE TREND"
   },
   "sector_breadth": {
@@ -160,10 +160,10 @@
       "num": "03",
       "title": "Market posture & breadth",
       "bias": "Context",
-      "desc": "Nifty is 14.0% below 52W high (26,373), trading 6.0% below 200-DMA (24,142). Sector participation: 0/5 sectors in green (Top: IT -0.27%)."
+      "desc": "Nifty is 14.3% below 52W high (26,373), trading 6.3% below 200-DMA (24,125). Sector participation: 0/5 sectors in green (Top: IT -0.27%)."
     }
   ],
-  "trader_take": "Latest available Nifty quote: 22,600 (-0.39% versus previous close). Latest Nifty reading is below the 22,676 pivot. Next calculated resistance above this reading: 22,797. Pivots are calculated references, not confirmed support or resistance. Market regime: CORRECTIVE TREND (-14.0% from 52W peak, -6.0% vs 200-DMA). Sector breadth: 0/5 sectors in green.",
+  "trader_take": "Latest available Nifty quote: 22,600 (-0.39% versus previous close). Latest Nifty reading is above the 22,586 pivot. Next calculated resistance above this reading: 22,801. Pivots are calculated references, not confirmed support or resistance. Market regime: CORRECTIVE TREND (-14.3% from 52W peak, -6.3% vs 200-DMA). Sector breadth: 0/5 sectors in green.",
   "postmarket_pillars": {
     "commodities": {
       "brent": {
@@ -272,9 +272,9 @@
         }
       },
       "catalyst": {
-        "title": "Qatar deal to buy U.S. natural gas shows how Iran war has redrawn global energy markets",
-        "url": "https://www.cnbc.com/2026/10/23/cheniere-qatar-energy-lng-natural-gas-iran-war-strait-hormuz.html",
-        "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
+        "title": "Trinidad and Tobago in talks with ONGC Videsh, Oil India to refine Venezuelan crude",
+        "url": "https://www.livemint.com/companies/news/trinidad-and-tobago-in-talks-with-ongc-videsh-oil-india-to-refine-venezuelan-crude-11792749605379.html",
+        "why_it_matters": "Crude affects India’s import bill and energy-sensitive sectors; the headline does not establish a clear price direction.",
         "source": ""
       }
     },
@@ -292,24 +292,24 @@
         "source": ""
       },
       {
-        "title": "Apple India revenue grows 32% to cross ₹1 trillion mark in FY26: Tofler",
-        "url": "https://www.business-standard.com/companies/news/apple-india-revenue-grows-32-to-cross-1-trillion-mark-in-fy26-tofler-126102301658_1.html",
-        "companies": [
-          {
-            "name": "Apple",
-            "symbol": "apple"
-          }
-        ],
-        "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
-        "source": ""
-      },
-      {
         "title": "Tata Motors CV Q2 Results: Co swings to black with Rs 1,254 crore profit; revenue jumps 37% YoY",
         "url": "https://economictimes.indiatimes.com/markets/stocks/earnings/tata-motors-cv-q2-results-automaker-swings-to-black-with-rs-1254-crore-profit-revenue-jumps-37-yoy/articleshow/135142700.cms",
         "companies": [
           {
             "name": "Tata Motors",
             "symbol": "tata motors"
+          }
+        ],
+        "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
+        "source": ""
+      },
+      {
+        "title": "Apple India revenue grows 32% to cross ₹1 trillion mark in FY26: Tofler",
+        "url": "https://www.business-standard.com/companies/news/apple-india-revenue-grows-32-to-cross-1-trillion-mark-in-fy26-tofler-126102301658_1.html",
+        "companies": [
+          {
+            "name": "Apple",
+            "symbol": "apple"
           }
         ],
         "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
@@ -335,8 +335,8 @@
         }
       },
       "catalyst": {
-        "title": "Trump dropping some Canada tariffs but 'replacing' them with other products",
-        "url": "https://www.cnbc.com/2026/10/23/trump-tariffs-canada-susan-collins.html",
+        "title": "Trump ends tariffs on some Canadian products, as Senator Collins faces close race",
+        "url": "https://www.investing.com/news/economy-news/us-to-remove-50-tariffs-on-some-canadian-goods-to-help-republicans-in-midterms-wsj-reports-4970225",
         "why_it_matters": "Alters market structure, compliance mandates, capital allocation rules, and retail derivative trading liquidity.",
         "source": ""
       }
