@@ -1,6 +1,47 @@
 {
-  "updated": "2026-10-25T13:58:42.459247+00:00",
+  "updated": "2026-10-25T17:38:49.406210+00:00",
   "stories": [
+    {
+      "id": "d69e03d70e382d68",
+      "title": "Audi defends plans for a $4 billion Georgia plant amid VW restructuring, tariffs",
+      "url": "https://www.cnbc.com/2026/10/25/audi-georgia-us-plant-tariffs-volkswagen.html",
+      "published": 1792946562.0,
+      "region": "Global",
+      "official": false,
+      "sources": [
+        {
+          "name": "CNBC World",
+          "url": "https://www.cnbc.com/2026/10/25/audi-georgia-us-plant-tariffs-volkswagen.html"
+        },
+        {
+          "name": "Investing.com",
+          "url": "https://www.investing.com/news/stock-market-news/trump-set-to-announce-plan-by-audi-to-build-us-factory-in-georgia-source-says-4970975"
+        }
+      ],
+      "score": 6,
+      "summary": "Audi's CEO defended the company's plans for a $4 billion plant in Georgia, calling it a business decision to grow sales and reduce exposure to U.S. tariffs.",
+      "category": "Regulation",
+      "reason": "Check who is covered, whether it is proposed or final, and its effective date.",
+      "matched": [
+        "Regulation"
+      ],
+      "tier": "Must know",
+      "related": [
+        {
+          "title": "Audi defends decision to stand by Trump on $4 billion US factory in Georgia",
+          "url": "https://www.investing.com/news/stock-market-news/trump-set-to-announce-plan-by-audi-to-build-us-factory-in-georgia-source-says-4970975",
+          "source": "Investing.com",
+          "published": 1792943663.0
+        }
+      ],
+      "cluster_count": 2,
+      "impact_assets": [
+        "Equities"
+      ],
+      "why_it_matters": "Alters market structure, compliance mandates, capital allocation rules, and retail derivative trading liquidity.",
+      "impact_chain": null,
+      "companies": []
+    },
     {
       "id": "c839bdd060f732f8",
       "title": "Gold, silver face fresh test as oil surge puts Fed policy decision in focus",
@@ -38,7 +79,7 @@
           "title": "Q2 results, US Fed decision, crude oil may drive stock markets this week",
           "url": "https://www.business-standard.com/markets/news/q2-results-us-fed-decision-crude-oil-may-drive-stock-markets-this-week-126102500192_1.html",
           "source": "Business Standard",
-          "published": 1792911040.0
+          "published": 1792911028.0
         }
       ],
       "cluster_count": 2,
@@ -66,53 +107,266 @@
       "companies": []
     },
     {
-      "id": "a57ec7168c360b75",
-      "title": "FPIs withdraw Rs 48,056 cr from equities in Oct so far amid elevated crude oil prices",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/fpis-withdraw-rs-48056-cr-from-equities-in-oct-so-far-amid-elevated-crude-oil-prices/articleshow/135185267.cms",
-      "published": 1792909990.0,
+      "id": "b83deaab1c15a8bb",
+      "title": "Tier-4 Security, Zero Third-Party Cloud: RBI Chief Explains How New Hub Fortifies India's Banking",
+      "url": "https://www.ndtvprofit.com/technology/beyond-banking-how-rbi-s-odisha-institute-will-train-the-sector-against-ai-cyber-risks-12234208#publisher=newsstand",
+      "published": 1792941085.0,
       "region": "India",
       "official": false,
       "sources": [
         {
-          "name": "ET Markets",
-          "url": "https://economictimes.indiatimes.com/markets/stocks/news/fpis-withdraw-rs-48056-cr-from-equities-in-oct-so-far-amid-elevated-crude-oil-prices/articleshow/135185267.cms"
+          "name": "Zerodha Pulse",
+          "url": "https://www.ndtvprofit.com/technology/beyond-banking-how-rbi-s-odisha-institute-will-train-the-sector-against-ai-cyber-risks-12234208#publisher=newsstand"
+        }
+      ],
+      "score": 5,
+      "summary": "RBI Governor Sanjay Malhotra says the central bank’s new Bhubaneswar institute will train bank employees and financial sector professionals in cybersecurity as AI, quantum computing and other emerging technologies reshape digital risks.",
+      "category": "Monetary policy",
+      "reason": "Directly shifts commercial bank cost of funds, repo borrowing rates, and rate-sensitive equity multiples (banks, real estate, auto).",
+      "matched": [
+        "Monetary policy"
+      ],
+      "tier": "Watch",
+      "related": [],
+      "cluster_count": 1,
+      "impact_assets": [
+        "Rates",
+        "Equities"
+      ],
+      "why_it_matters": "Directly shifts commercial bank cost of funds, repo borrowing rates, and rate-sensitive equity multiples (banks, real estate, auto).",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
+      "id": "21a4d1f773016758",
+      "title": "Bitcoin steadies near $80,400 after weekend selloff, Fed decision looms",
+      "url": "https://www.investing.com/news/cryptocurrency-news/bitcoin-price-today-btc-recovers-to-80800-ahead-of-fed-meeting-4971035",
+      "published": 1792938733.0,
+      "region": "Global",
+      "official": false,
+      "sources": [
+        {
+          "name": "Investing.com",
+          "url": "https://www.investing.com/news/cryptocurrency-news/bitcoin-price-today-btc-recovers-to-80800-ahead-of-fed-meeting-4971035"
+        }
+      ],
+      "score": 6,
+      "summary": "",
+      "category": "Monetary policy",
+      "reason": "Guides global liquidity dynamics, US Dollar Index (DXY) trajectory, and foreign institutional (FII) capital allocations.",
+      "matched": [
+        "Monetary policy"
+      ],
+      "tier": "Must know",
+      "related": [],
+      "cluster_count": 1,
+      "impact_assets": [
+        "Rates",
+        "Equities"
+      ],
+      "why_it_matters": "Guides global liquidity dynamics, US Dollar Index (DXY) trajectory, and foreign institutional (FII) capital allocations.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
+      "id": "e64e389aa8092986",
+      "title": "'Wars Not Just Fought With Weapons': PM Modi Warns Of Economic Warfare At RBI's Date Centre Launch",
+      "url": "https://www.ndtvprofit.com/business/wars-not-just-fought-with-weapons-pm-modi-warns-of-economic-warfare-at-rbis-date-centre-launch-12234103#publisher=newsstand",
+      "published": 1792938896.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "Zerodha Pulse",
+          "url": "https://www.ndtvprofit.com/business/wars-not-just-fought-with-weapons-pm-modi-warns-of-economic-warfare-at-rbis-date-centre-launch-12234103#publisher=newsstand"
+        }
+      ],
+      "score": 5,
+      "summary": "The facility in Odisha will host critical payment and settlement systems, while a dedicated cybersecurity institute will focus on training, research and technology capabilities.",
+      "category": "Monetary policy",
+      "reason": "Directly shifts commercial bank cost of funds, repo borrowing rates, and rate-sensitive equity multiples (banks, real estate, auto).",
+      "matched": [
+        "Monetary policy"
+      ],
+      "tier": "Watch",
+      "related": [],
+      "cluster_count": 1,
+      "impact_assets": [
+        "Rates",
+        "Equities"
+      ],
+      "why_it_matters": "Directly shifts commercial bank cost of funds, repo borrowing rates, and rate-sensitive equity multiples (banks, real estate, auto).",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
+      "id": "5beb26555f8a4180",
+      "title": "Reliance’s Jio Platforms IPO allotment on Mon, Oct 26: What happens to your money if you get none, one or many lots?",
+      "url": "https://www.livemint.com/market/ipo/reliances-jio-platforms-ipo-allotment-on-wed-oct-26-what-happens-to-your-money-if-you-get-none-one-or-many-lots-11792937452744.html",
+      "published": 1792937686.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "Mint Markets",
+          "url": "https://www.livemint.com/market/ipo/reliances-jio-platforms-ipo-allotment-on-wed-oct-26-what-happens-to-your-money-if-you-get-none-one-or-many-lots-11792937452744.html"
         },
         {
-          "name": "Business Standard",
-          "url": "https://www.business-standard.com/markets/news/fpis-withdraw-48-056-crore-from-equities-in-oct-amid-elevated-oil-prices-126102500122_1.html"
+          "name": "ET Markets",
+          "url": "https://economictimes.indiatimes.com/markets/ipos/fpos/jioipogmptoday-alleyes-on-telecom-majors-megalisting-this-week-what-is-greymarketsignalling/articleshow/135183339.cms"
         },
         {
           "name": "Mint Companies",
-          "url": "https://www.livemint.com/companies/news/trinidad-and-tobago-in-talks-with-ongc-videsh-oil-india-to-refine-venezuelan-crude-11792749605379.html"
-        }
-      ],
-      "score": 8,
-      "summary": "Foreign investors withdrew significant funds from Indian equities in October amid concerns over inflation and crude oil prices. Despite this, there were signs of moderation in selling with two days of net buying. The overall FPI outflows from equities in 2026 have reached notable levels compared to previous years. Market participants are closely mo",
-      "category": "Energy & geopolitics",
-      "reason": "Energy costs and disruption can affect Indian inflation, import costs and exposed sectors.",
-      "matched": [
-        "Energy & geopolitics"
-      ],
-      "tier": "Must know",
-      "related": [
-        {
-          "title": "FPIs withdraw ₹48,056 crore from equities in Oct amid elevated oil prices",
-          "url": "https://www.business-standard.com/markets/news/fpis-withdraw-48-056-crore-from-equities-in-oct-amid-elevated-oil-prices-126102500122_1.html",
-          "source": "Business Standard",
-          "published": 1792909502.0
+          "url": "https://www.livemint.com/companies/people/reliance-jio-ipo-who-is-arjun-vaidya-bizman-shares-why-his-friend-akash-ambani-returned-to-india-from-us-video-11792851277334.html"
         },
         {
-          "title": "Trinidad and Tobago in talks with ONGC Videsh, Oil India to refine Venezuelan crude",
-          "url": "https://www.livemint.com/companies/news/trinidad-and-tobago-in-talks-with-ongc-videsh-oil-india-to-refine-venezuelan-crude-11792749605379.html",
-          "source": "Mint Companies",
-          "published": 1792800309.0
+          "name": "Business Standard",
+          "url": "https://www.business-standard.com/markets/news/jio-platforms-ipo-rides-institutional-demand-to-22-19-times-subscription-126102301595_1.html"
         }
       ],
-      "cluster_count": 3,
-      "impact_assets": [
-        "Commodities"
+      "score": 5,
+      "summary": "Jio Platforms’ IPO was subscribed more than 22 times, making allotment uncertain, especially for investors seeking multiple lots. Applicants allotted no shares will have their blocked funds released; those allotted one 12-share lot will be charged ₹13,428 at the upper price band.",
+      "category": "Other news",
+      "reason": "Key market catalyst driving market liquidity and session volatility.",
+      "matched": [],
+      "tier": "Watch",
+      "related": [
+        {
+          "title": "IPO GMP, subscription race: Reliance Jio Platforms vs Paras Healthcare - Grey market premium, QIB, NII, Retail details",
+          "url": "https://www.livemint.com/market/ipo/ipo-gmp-subscription-race-reliance-jio-platforms-vs-paras-healthcare-grey-market-premium-qib-nii-retail-details-11792926098381.html",
+          "source": "Mint Markets",
+          "published": 1792929360.0
+        },
+        {
+          "title": "Jio Platforms IPO listing date and time, share price prediction, expected money gains basis GMP, expected m-cap; Details",
+          "url": "https://www.livemint.com/market/stock-market-news/jio-platforms-ipo-listing-date-and-time-share-price-prediction-expected-money-gains-basis-gmp-expected-m-cap-details-11792924052178.html",
+          "source": "Mint Markets",
+          "published": 1792925034.0
+        },
+        {
+          "title": "Jio Platforms IPO allotment status check online by PAN number guide for KFin Tech Registrar Portal on ris.kfintech.com",
+          "url": "https://www.livemint.com/market/ipo/jio-platforms-ipo-allotment-status-check-online-by-pan-number-guide-for-kfin-tech-registrar-portal-on-riskfintechcom-11792919833250.html",
+          "source": "Mint Markets",
+          "published": 1792920208.0
+        },
+        {
+          "title": "Jio IPO GMP today: All eyes on telecom major’s mega listing this week. What is grey market signalling?",
+          "url": "https://economictimes.indiatimes.com/markets/ipos/fpos/jioipogmptoday-alleyes-on-telecom-majors-megalisting-this-week-what-is-greymarketsignalling/articleshow/135183339.cms",
+          "source": "ET Markets",
+          "published": 1792903204.0
+        },
+        {
+          "title": "Reliance-backed Jio Platforms IPO: GMP hints 22% listing gains; all eyes on allotment; status check online guide by PAN",
+          "url": "https://www.livemint.com/market/ipo/reliancebacked-jio-platforms-ipo-focus-shifts-to-allotment-date-gmp-hints-22-listing-pop-step-by-step-guide-to-check-11792897616327.html",
+          "source": "Mint Markets",
+          "published": 1792902076.0
+        },
+        {
+          "title": "Post Jio boost: 5 IPOs to raise Rs 2,581 crore next week alongside India's biggest listing",
+          "url": "https://economictimes.indiatimes.com/markets/ipos/fpos/post-jio-boost-5-ipos-to-raise-rs-2581-crore-next-week-alongside-indias-biggest-listing/articleshow/135182846.cms",
+          "source": "ET Markets",
+          "published": 1792900817.0
+        },
+        {
+          "title": "Reliance Jio IPO listing on Oct 28: Will Mukesh Ambani's firm be in top 5 m-cap? RIL to hold top spot",
+          "url": "https://www.livemint.com/market/stock-market-news/reliance-jio-ipo-listing-on-oct-28-will-mukesh-ambanis-firm-be-in-top-5-m-cap-ril-to-hold-top-spot-11792854254054.html",
+          "source": "Mint Markets",
+          "published": 1792856955.0
+        },
+        {
+          "title": "Reliance Jio IPO: Who is Arjun Vaidya? Bizman shares why his friend Akash Ambani returned to India from US | Video",
+          "url": "https://www.livemint.com/companies/people/reliance-jio-ipo-who-is-arjun-vaidya-bizman-shares-why-his-friend-akash-ambani-returned-to-india-from-us-video-11792851277334.html",
+          "source": "Mint Companies",
+          "published": 1792855319.0
+        },
+        {
+          "title": "Reliance Jio Platforms IPO GMP, listing date and time, share price prediction for NSE, BSE debut - Details",
+          "url": "https://www.livemint.com/market/ipo/reliance-jio-platforms-ipo-gmp-listing-date-and-time-share-price-prediction-for-nse-bse-debut-details-11792848439962.html",
+          "source": "Mint Markets",
+          "published": 1792848685.0
+        },
+        {
+          "title": "Jio IPO GMP today: Grey market signals over 22% listing gains; check allotment, listing date",
+          "url": "https://economictimes.indiatimes.com/markets/stocks/news/jio-ipo-gmp-today-grey-market-signals-over-22-listing-gains-check-allotment-listing-date/articleshow/135163795.cms",
+          "source": "ET Markets",
+          "published": 1792822361.0
+        },
+        {
+          "title": "Jio IPO breaks multiple records: From fundraising to investor demand, how the mega issue rewrote India’s IPO history",
+          "url": "https://economictimes.indiatimes.com/markets/stocks/news/jio-ipo-breaks-multiple-records-from-fundraising-to-investor-demand-how-the-mega-issue-rewrote-indias-ipo-history/articleshow/135163295.cms",
+          "source": "ET Markets",
+          "published": 1792821010.0
+        },
+        {
+          "title": "Friday blockbuster for Jio IPO: Rs 7.4 lakh crore bids, 22x subscription",
+          "url": "https://economictimes.indiatimes.com/markets/ipos/fpos/friday-blockbuster-for-jio-ipo-rs-7-4-lakh-crore-bids-22x-subscription/articleshow/135160249.cms",
+          "source": "ET Markets",
+          "published": 1792809968.0
+        },
+        {
+          "title": "Jio Platforms IPO rides institutional demand to 22.19 times subscription",
+          "url": "https://www.business-standard.com/markets/news/jio-platforms-ipo-rides-institutional-demand-to-22-19-times-subscription-126102301595_1.html",
+          "source": "Business Standard",
+          "published": 1792776357.0
+        }
       ],
-      "why_it_matters": "Crude affects India’s import bill and energy-sensitive sectors; the headline does not establish a clear price direction.",
+      "cluster_count": 4,
+      "impact_assets": [
+        "Equities"
+      ],
+      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
+      "impact_chain": null,
+      "companies": [
+        {
+          "name": "Reliance",
+          "symbol": "reliance"
+        }
+      ]
+    },
+    {
+      "id": "81b49f6b6fe32431",
+      "title": "Navi Mumbai airport flights news: These two airlines set to shift flights from Mumbai airport starting December",
+      "url": "https://www.livemint.com/companies/indigo-air-india-express-to-shift-flights-to-navi-mumbai-airport-from-december-all-you-need-to-know-csmia-nmia-11792932355701.html",
+      "published": 1792934430.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "Mint Companies",
+          "url": "https://www.livemint.com/companies/indigo-air-india-express-to-shift-flights-to-navi-mumbai-airport-from-december-all-you-need-to-know-csmia-nmia-11792932355701.html"
+        },
+        {
+          "name": "Zerodha Pulse",
+          "url": "https://www.thehindu.com/business/Industry/indigo-to-shift-12-daily-international-departures-from-mumbais-csmia-to-navi-mumbai-airport-from-february/article71623062.ece"
+        }
+      ],
+      "score": 5,
+      "summary": "The coordinated approach between IndiGo, Air India Express and AAHL reflects ongoing efforts to balance growth at both airports while preparing CSMIA for long-term upgrades.",
+      "category": "Sector & corporate news",
+      "reason": "Airfares, fuel charges and aviation costs can affect airline demand and margins.",
+      "matched": [
+        "Sector & corporate news"
+      ],
+      "tier": "Watch",
+      "related": [
+        {
+          "title": "IndiGo, Air India to shift flights to Navi Mumbai as Mumbai airport prepares Terminal 1 redevelopment",
+          "url": "https://www.thehindu.com/business/Industry/indigo-to-shift-12-daily-international-departures-from-mumbais-csmia-to-navi-mumbai-airport-from-february/article71623062.ece",
+          "source": "Zerodha Pulse",
+          "published": 1792936347.0
+        },
+        {
+          "title": "IndiGo, Air India to shift flights to Navi Mumbai ahead of T1 revamp",
+          "url": "https://www.business-standard.com/industry/aviation/indigo-to-move-12-international-flights-to-navi-mumbai-airport-from-feb-126102500391_1.html",
+          "source": "Zerodha Pulse",
+          "published": 1792930357.0
+        }
+      ],
+      "cluster_count": 2,
+      "impact_assets": [
+        "Equities"
+      ],
+      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
       "impact_chain": null,
       "companies": []
     },
@@ -148,90 +402,48 @@
       "companies": []
     },
     {
-      "id": "2a3e1f31228e708d",
-      "title": "Stock market prediction for Monday Oct 26: Sensex, Nifty levels, top stocks to watch - Will bulls dance again?",
-      "url": "https://www.livemint.com/market/stock-market-news/stock-market-prediction-for-monday-oct-26-sensex-nifty-levels-top-stocks-to-watch-will-bulls-dance-again-11792934825551.html",
-      "published": 1792935125.0,
+      "id": "eea940e1ff0253df",
+      "title": "Nifty bears tighten grip as crude, geopolitical risks, FII outflows mount: 5 factors to decide D-Street’s fate next week",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/nifty-bears-tighten-grip-as-crude-geopolitical-risks-fii-outflows-mount-5-factors-to-decide-d-streets-fate-next-week/articleshow/135182716.cms",
+      "published": 1792900119.0,
       "region": "India",
       "official": false,
       "sources": [
         {
-          "name": "Mint Markets",
-          "url": "https://www.livemint.com/market/stock-market-news/stock-market-prediction-for-monday-oct-26-sensex-nifty-levels-top-stocks-to-watch-will-bulls-dance-again-11792934825551.html"
-        }
-      ],
-      "score": 2,
-      "summary": "The Nifty 50 fell nearly 2% last week as geopolitical tensions and crude oil volatility weighed on markets, taking year-to-date losses to 13.56%. Analysts see support near 22,300 and resistance at 22,850–22,900. Infosys, Kotak Mahindra Bank and Reliance Industries will be among stocks in focus.",
-      "category": "Market flows",
-      "reason": "Flows, currency and yields provide context for Indian equity risk appetite.",
-      "matched": [
-        "Market flows"
-      ],
-      "tier": "More",
-      "related": [],
-      "cluster_count": 1,
-      "impact_assets": [
-        "Equities"
-      ],
-      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "81b49f6b6fe32431",
-      "title": "IndiGo, Air India Express to shift flights to Navi Mumbai airport from December; all you need to know",
-      "url": "https://www.livemint.com/companies/indigo-air-india-express-to-shift-flights-to-navi-mumbai-airport-from-december-all-you-need-to-know-csmia-nmia-11792932355701.html",
-      "published": 1792934430.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "Mint Companies",
-          "url": "https://www.livemint.com/companies/indigo-air-india-express-to-shift-flights-to-navi-mumbai-airport-from-december-all-you-need-to-know-csmia-nmia-11792932355701.html"
+          "name": "ET Markets",
+          "url": "https://economictimes.indiatimes.com/markets/stocks/news/nifty-bears-tighten-grip-as-crude-geopolitical-risks-fii-outflows-mount-5-factors-to-decide-d-streets-fate-next-week/articleshow/135182716.cms"
         },
         {
           "name": "Zerodha Pulse",
-          "url": "https://www.business-standard.com/industry/aviation/indigo-to-move-12-international-flights-to-navi-mumbai-airport-from-feb-126102500391_1.html"
+          "url": "https://www.ndtvprofit.com/markets/trade-setup-for-oct-26-nifty-support-slips-to-22-500-as-brent-crude-spike-prevents-upside-key-levels-12234077#publisher=newsstand"
         }
       ],
-      "score": 2,
-      "summary": "The coordinated approach between IndiGo, Air India Express and AAHL reflects ongoing efforts to balance growth at both airports while preparing CSMIA for long-term upgrades.",
-      "category": "Other news",
-      "reason": "Key market catalyst driving market liquidity and session volatility.",
-      "matched": [],
-      "tier": "More",
+      "score": 8,
+      "summary": "Indian stock markets faced a setback as crude oil prices soared, triggered by increasing geopolitical tensions in the Middle East. Despite some defensive buying from domestic institutions, foreign investors pulled back. The forthcoming US Federal Reserve meeting is poised to impact global market moods. Investors will be keenly watching industrial p",
+      "category": "Energy & geopolitics",
+      "reason": "Energy costs and disruption can affect Indian inflation, import costs and exposed sectors.",
+      "matched": [
+        "Energy & geopolitics",
+        "Market flows"
+      ],
+      "tier": "Must know",
       "related": [
         {
-          "title": "IndiGo, Air India to shift flights to Navi Mumbai ahead of T1 revamp",
-          "url": "https://www.business-standard.com/industry/aviation/indigo-to-move-12-international-flights-to-navi-mumbai-airport-from-feb-126102500391_1.html",
+          "title": "Trade Setup For Oct. 26: Nifty Support Slips To 22,500 As Brent Crude Spike Prevents Upside — Key Levels",
+          "url": "https://www.ndtvprofit.com/markets/trade-setup-for-oct-26-nifty-support-slips-to-22-500-as-brent-crude-spike-prevents-upside-key-levels-12234077#publisher=newsstand",
           "source": "Zerodha Pulse",
-          "published": 1792930357.0
-        },
-        {
-          "title": "IndiGo to move 12 international flights to Navi Mumbai airport from Feb",
-          "url": "https://www.business-standard.com/industry/aviation/indigo-to-move-12-international-flights-to-navi-mumbai-airport-from-feb-126102500391_1.html",
-          "source": "Zerodha Pulse",
-          "published": 1792926536.0
-        },
-        {
-          "title": "IndiGo to shift 12 daily international departures from Mumbai’s CSMIA to Navi Mumbai airport from February",
-          "url": "https://www.thehindu.com/business/Industry/indigo-to-shift-12-daily-international-departures-from-mumbais-csmia-to-navi-mumbai-airport-from-february/article71623062.ece",
-          "source": "Zerodha Pulse",
-          "published": 1792925789.0
+          "published": 1792938675.0
         }
       ],
       "cluster_count": 2,
       "impact_assets": [
-        "Equities"
+        "Equities",
+        "Commodities",
+        "FX"
       ],
-      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
+      "why_it_matters": "Crude affects India’s import bill and energy-sensitive sectors; the headline does not establish a clear price direction.",
       "impact_chain": null,
-      "companies": [
-        {
-          "name": "IndiGo",
-          "symbol": "indigo"
-        }
-      ]
+      "companies": []
     },
     {
       "id": "0c85c2281e74a9c7",
@@ -262,84 +474,6 @@
       "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
       "impact_chain": null,
       "companies": []
-    },
-    {
-      "id": "93f28e6892601ac6",
-      "title": "Ahead of Market: 10 things that will decide stock market action on Monday",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/ahead-of-market-10-things-that-will-decide-stock-market-action-on-monday/articleshow/135189090.cms",
-      "published": 1792925501.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "Zerodha Pulse",
-          "url": "https://economictimes.indiatimes.com/markets/stocks/news/ahead-of-market-10-things-that-will-decide-stock-market-action-on-monday/articleshow/135189090.cms"
-        },
-        {
-          "name": "ET Markets",
-          "url": "https://economictimes.indiatimes.com/markets/stocks/news/ahead-of-market-10-things-that-will-decide-stock-market-action-on-monday/articleshow/135189090.cms"
-        }
-      ],
-      "score": 5,
-      "summary": "Indian equities fell over 2% last week as rising crude oil prices, FII outflows and geopolitical tensions weighed on sentiment. Broader markets underperformed, while global indices also declined and market breadth strongly favoured bears.",
-      "category": "Market flows",
-      "reason": "Flows, currency and yields provide context for Indian equity risk appetite.",
-      "matched": [
-        "Market flows"
-      ],
-      "tier": "Watch",
-      "related": [],
-      "cluster_count": 2,
-      "impact_assets": [
-        "Equities"
-      ],
-      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "87d7b0474e53b0d8",
-      "title": "Corporate Actions This Week: Hexaware Technologies, L&T Technology Services, Cyient And CRISIL",
-      "url": "https://www.ndtvprofit.com/markets/corporate-actions-this-week-hexaware-technologies-l-t-technology-services-cyient-and-crisil-12233553#publisher=newsstand",
-      "published": 1792929612.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "Zerodha Pulse",
-          "url": "https://www.ndtvprofit.com/markets/corporate-actions-this-week-hexaware-technologies-l-t-technology-services-cyient-and-crisil-12233553#publisher=newsstand"
-        },
-        {
-          "name": "ET Markets",
-          "url": "https://economictimes.indiatimes.com/markets/stocks/news/dividends-stock-splits-lt-tech-shriram-finance-among-24-stocks-turning-ex-record-date-this-week-do-you-own/articleshow/135183913.cms"
-        }
-      ],
-      "score": 2,
-      "summary": "Companies in focus will be Hexaware Technologies, L&T Technology Services, Cyient And CRISIL.",
-      "category": "Other news",
-      "reason": "Key market catalyst driving market liquidity and session volatility.",
-      "matched": [],
-      "tier": "More",
-      "related": [
-        {
-          "title": "Dividends & stock splits: L&T Tech, Shriram Finance among 24 stocks turning ex-record date this week. Do you own?",
-          "url": "https://economictimes.indiatimes.com/markets/stocks/news/dividends-stock-splits-lt-tech-shriram-finance-among-24-stocks-turning-ex-record-date-this-week-do-you-own/articleshow/135183913.cms",
-          "source": "ET Markets",
-          "published": 1792905498.0
-        }
-      ],
-      "cluster_count": 2,
-      "impact_assets": [
-        "Equities"
-      ],
-      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
-      "impact_chain": null,
-      "companies": [
-        {
-          "name": "L&T",
-          "symbol": "l&t"
-        }
-      ]
     },
     {
       "id": "f603a50802ee9363",
@@ -373,66 +507,6 @@
       "companies": []
     },
     {
-      "id": "678aa69f4d475c10",
-      "title": "Bharat Coking Coal Q2 Results: PSU Coal India Arm Swings To Profit, Revenue Jumps 40% YoY",
-      "url": "https://www.ndtvprofit.com/markets/bharat-coking-coal-q2-results-psu-coal-india-arm-swings-to-profit-revenue-jumps-40-yoy-12233199#publisher=newsstand",
-      "published": 1792923056.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "Zerodha Pulse",
-          "url": "https://www.ndtvprofit.com/markets/bharat-coking-coal-q2-results-psu-coal-india-arm-swings-to-profit-revenue-jumps-40-yoy-12233199#publisher=newsstand"
-        }
-      ],
-      "score": 4,
-      "summary": "Bharat Coking Coal's revenue went up 39% year-on-year to Rs 4,413 crore from Rs 3,173 crore in the preceding fiscal.",
-      "category": "Earnings",
-      "reason": "Compare results and guidance with expectations for the company and its sector.",
-      "matched": [
-        "Earnings"
-      ],
-      "tier": "Watch",
-      "related": [],
-      "cluster_count": 1,
-      "impact_assets": [
-        "Equities"
-      ],
-      "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "ceafa4ebaf344dc8",
-      "title": "RailTel Q2 Results: Profit Drops 10% On One-Time Exceptional Loss, Revenue Up 20% YoY",
-      "url": "https://www.ndtvprofit.com/markets/railtel-q2-results-profit-drops-10-on-one-time-exceptional-loss-revenue-up-20-yoy-12233174#publisher=newsstand",
-      "published": 1792923033.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "Zerodha Pulse",
-          "url": "https://www.ndtvprofit.com/markets/railtel-q2-results-profit-drops-10-on-one-time-exceptional-loss-revenue-up-20-yoy-12233174#publisher=newsstand"
-        }
-      ],
-      "score": 4,
-      "summary": "RailTel Corporation of India reported a 20.5% year-on-year rise in Q2 revenue to Rs 1,146 crore, while net profit fell 9.9% to Rs 68.6 crore. EBITDA grew 13.9%, but the margin narrowed to 15.4%.",
-      "category": "Earnings",
-      "reason": "Compare results and guidance with expectations for the company and its sector.",
-      "matched": [
-        "Earnings"
-      ],
-      "tier": "Watch",
-      "related": [],
-      "cluster_count": 1,
-      "impact_assets": [
-        "Equities"
-      ],
-      "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
       "id": "1554eda6984c2b76",
       "title": "F&O Talk: Nifty plunged 2% this week. Are charts indicating a deeper sell-off?",
       "url": "https://economictimes.indiatimes.com/markets/stocks/news/fo-talk-nifty-plunged-2-this-week-do-charts-indicate-a-bearish-picture-for-coming-week/articleshow/135186474.cms",
@@ -447,6 +521,66 @@
       ],
       "score": 4,
       "summary": "SBI Securities’ Sudeep Shah expects continued weakness in Indian equities as FII positioning, rising volatility and technical indicators point to further pressure. He identifies key Nifty support and resistance levels and flags IT as a relatively stronger sector.",
+      "category": "Market flows",
+      "reason": "Flows, currency and yields provide context for Indian equity risk appetite.",
+      "matched": [
+        "Market flows"
+      ],
+      "tier": "Watch",
+      "related": [],
+      "cluster_count": 1,
+      "impact_assets": [
+        "Equities"
+      ],
+      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
+      "id": "2a3e1f31228e708d",
+      "title": "Stock market prediction for Monday Oct 26: Sensex, Nifty levels, top stocks to watch - Will bulls dance again?",
+      "url": "https://www.livemint.com/market/stock-market-news/stock-market-prediction-for-monday-oct-26-sensex-nifty-levels-top-stocks-to-watch-will-bulls-dance-again-11792934825551.html",
+      "published": 1792935125.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "Mint Markets",
+          "url": "https://www.livemint.com/market/stock-market-news/stock-market-prediction-for-monday-oct-26-sensex-nifty-levels-top-stocks-to-watch-will-bulls-dance-again-11792934825551.html"
+        }
+      ],
+      "score": 2,
+      "summary": "The Nifty 50 fell nearly 2% last week as geopolitical tensions and crude oil volatility weighed on markets, taking year-to-date losses to 13.56%. Analysts see support near 22,300 and resistance at 22,850–22,900. Infosys, Kotak Mahindra Bank and Reliance Industries will be among stocks in focus.",
+      "category": "Market flows",
+      "reason": "Flows, currency and yields provide context for Indian equity risk appetite.",
+      "matched": [
+        "Market flows"
+      ],
+      "tier": "More",
+      "related": [],
+      "cluster_count": 1,
+      "impact_assets": [
+        "Equities"
+      ],
+      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
+      "id": "93f28e6892601ac6",
+      "title": "Ahead of Market: 10 things that will decide stock market action on Monday",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/ahead-of-market-10-things-that-will-decide-stock-market-action-on-monday/articleshow/135189090.cms",
+      "published": 1792925501.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "ET Markets",
+          "url": "https://economictimes.indiatimes.com/markets/stocks/news/ahead-of-market-10-things-that-will-decide-stock-market-action-on-monday/articleshow/135189090.cms"
+        }
+      ],
+      "score": 3,
+      "summary": "Indian equities fell over 2% last week as rising crude oil prices, FII outflows and geopolitical tensions weighed on sentiment. Broader markets underperformed, while global indices also declined and market breadth strongly favoured bears.",
       "category": "Market flows",
       "reason": "Flows, currency and yields provide context for Indian equity risk appetite.",
       "matched": [
@@ -493,32 +627,84 @@
       "companies": []
     },
     {
-      "id": "c9c4b8e062bee674",
-      "title": "KEC International shares in focus on Monday Oct 26 after ₹2872 cr PGCIL order win; YTD orders mark crosses ₹13.5k cr",
-      "url": "https://www.livemint.com/market/stock-market-news/kec-international-shares-in-focus-on-monday-oct-28-after-rs-2872-cr-pgcil-order-win-ytd-orders-mark-crosses-rs-13-5k-cr-11792904618194.html",
-      "published": 1792907250.0,
+      "id": "a57ec7168c360b75",
+      "title": "FPIs withdraw Rs 48,056 cr from equities in Oct so far amid elevated crude oil prices",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/fpis-withdraw-rs-48056-cr-from-equities-in-oct-so-far-amid-elevated-crude-oil-prices/articleshow/135185267.cms",
+      "published": 1792909990.0,
       "region": "India",
       "official": false,
       "sources": [
         {
-          "name": "Mint Markets",
-          "url": "https://www.livemint.com/market/stock-market-news/kec-international-shares-in-focus-on-monday-oct-28-after-rs-2872-cr-pgcil-order-win-ytd-orders-mark-crosses-rs-13-5k-cr-11792904618194.html"
+          "name": "ET Markets",
+          "url": "https://economictimes.indiatimes.com/markets/stocks/news/fpis-withdraw-rs-48056-cr-from-equities-in-oct-so-far-amid-elevated-crude-oil-prices/articleshow/135185267.cms"
+        },
+        {
+          "name": "Business Standard",
+          "url": "https://www.business-standard.com/markets/news/fpis-withdraw-48-056-crore-from-equities-in-oct-amid-elevated-oil-prices-126102500122_1.html"
         }
       ],
-      "score": 4,
-      "summary": "KEC International secured ₹2,872 crore in turnkey orders from Power Grid Corporation for 765 kV transmission lines linked to evacuating 8.5 GW of renewable energy in Gujarat. The wins mark a record for its domestic T&amp;D business and take year-to-date order intake above ₹13,500 crore.",
-      "category": "Company move",
-      "reason": "A large contract or order may affect the company and its sector; check execution and guidance.",
+      "score": 6,
+      "summary": "Foreign investors withdrew significant funds from Indian equities in October amid concerns over inflation and crude oil prices. Despite this, there were signs of moderation in selling with two days of net buying. The overall FPI outflows from equities in 2026 have reached notable levels compared to previous years. Market participants are closely mo",
+      "category": "Energy & geopolitics",
+      "reason": "Energy costs and disruption can affect Indian inflation, import costs and exposed sectors.",
       "matched": [
-        "Company move"
+        "Energy & geopolitics"
       ],
-      "tier": "Watch",
-      "related": [],
-      "cluster_count": 1,
+      "tier": "Must know",
+      "related": [
+        {
+          "title": "FPIs withdraw ₹48,056 crore from equities in Oct amid elevated oil prices",
+          "url": "https://www.business-standard.com/markets/news/fpis-withdraw-48-056-crore-from-equities-in-oct-amid-elevated-oil-prices-126102500122_1.html",
+          "source": "Business Standard",
+          "published": 1792909502.0
+        }
+      ],
+      "cluster_count": 2,
+      "impact_assets": [
+        "Commodities"
+      ],
+      "why_it_matters": "Crude affects India’s import bill and energy-sensitive sectors; the headline does not establish a clear price direction.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
+      "id": "1170aba9a3440bca",
+      "title": "Sebi to revamp short-selling, securities lending rules",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/sebi-to-revamp-short-selling-securities-lending-rules/articleshow/135182788.cms",
+      "published": 1792900703.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "ET Markets",
+          "url": "https://economictimes.indiatimes.com/markets/stocks/news/sebi-to-revamp-short-selling-securities-lending-rules/articleshow/135182788.cms"
+        },
+        {
+          "name": "Business Standard",
+          "url": "https://www.business-standard.com/markets/news/sebi-short-selling-slb-ai-sandbox-market-making-tuhin-kanta-pandey-126102400650_1.html"
+        }
+      ],
+      "score": 6,
+      "summary": "Sebi is reviewing short-selling and securities lending rules to improve liquidity and price discovery. The regulator is also planning reforms in clearing, broker compliance, custodial services and corporate bond market-making to deepen capital markets and reduce compliance costs.",
+      "category": "Regulation",
+      "reason": "Check who is covered, whether it is proposed or final, and its effective date.",
+      "matched": [
+        "Regulation"
+      ],
+      "tier": "Must know",
+      "related": [
+        {
+          "title": "Sebi reviews short selling, SLB rules; plans AI sandbox, bond market-making",
+          "url": "https://www.business-standard.com/markets/news/sebi-short-selling-slb-ai-sandbox-market-making-tuhin-kanta-pandey-126102400650_1.html",
+          "source": "Business Standard",
+          "published": 1792833681.0
+        }
+      ],
+      "cluster_count": 2,
       "impact_assets": [
         "Equities"
       ],
-      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
+      "why_it_matters": "Alters market structure, compliance mandates, capital allocation rules, and retail derivative trading liquidity.",
       "impact_chain": null,
       "companies": []
     },
@@ -571,6 +757,131 @@
       ]
     },
     {
+      "id": "c9c4b8e062bee674",
+      "title": "KEC International shares in focus on Monday Oct 26 after ₹2872 cr PGCIL order win; YTD orders mark crosses ₹13.5k cr",
+      "url": "https://www.livemint.com/market/stock-market-news/kec-international-shares-in-focus-on-monday-oct-28-after-rs-2872-cr-pgcil-order-win-ytd-orders-mark-crosses-rs-13-5k-cr-11792904618194.html",
+      "published": 1792907250.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "Mint Markets",
+          "url": "https://www.livemint.com/market/stock-market-news/kec-international-shares-in-focus-on-monday-oct-28-after-rs-2872-cr-pgcil-order-win-ytd-orders-mark-crosses-rs-13-5k-cr-11792904618194.html"
+        }
+      ],
+      "score": 4,
+      "summary": "KEC International secured ₹2,872 crore in turnkey orders from Power Grid Corporation for 765 kV transmission lines linked to evacuating 8.5 GW of renewable energy in Gujarat. The wins mark a record for its domestic T&amp;D business and take year-to-date order intake above ₹13,500 crore.",
+      "category": "Company move",
+      "reason": "A large contract or order may affect the company and its sector; check execution and guidance.",
+      "matched": [
+        "Company move"
+      ],
+      "tier": "Watch",
+      "related": [],
+      "cluster_count": 1,
+      "impact_assets": [
+        "Equities"
+      ],
+      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
+      "id": "9565cd8b55d5634a",
+      "title": "Sebi orders Avadhut Sathe, academy to refund Rs 546 crore",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/sebi-orders-avadhut-sathe-academy-to-refund-rs-546-crore/articleshow/135162877.cms",
+      "published": 1792819873.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "ET Markets",
+          "url": "https://economictimes.indiatimes.com/markets/stocks/news/sebi-orders-avadhut-sathe-academy-to-refund-rs-546-crore/articleshow/135162877.cms"
+        },
+        {
+          "name": "Business Standard",
+          "url": "https://www.business-standard.com/markets/news/sebi-orders-avadhut-sathe-trading-academy-and-its-founder-to-refund-546-cr-126102301645_1.html"
+        },
+        {
+          "name": "Mint Markets",
+          "url": "https://www.livemint.com/market/stock-market-news/big-action-who-is-avadhut-sathe-why-sebi-ordered-avadhut-sathe-trading-academy-to-refund-rs-546-cr-what-he-did-11792848745624.html"
+        }
+      ],
+      "score": 9,
+      "summary": "The Securities and Exchange Board of India has directed Avadhut Sathe Trading Academy to refund ₹546.18 crore to investors. Avadhut Sathe and his academy provided unregistered investment advisory services under the pretext of education. The regulator found that misleading testimonials were circulated while concealing overall trading losses. A penal",
+      "category": "Regulation",
+      "reason": "Check who is covered, whether it is proposed or final, and its effective date.",
+      "matched": [
+        "Regulation"
+      ],
+      "tier": "Must know",
+      "related": [
+        {
+          "title": "Sebi orders Avadhut Sathe Trading Academy and its founder to refund ₹546 cr",
+          "url": "https://www.business-standard.com/markets/news/sebi-orders-avadhut-sathe-trading-academy-and-its-founder-to-refund-546-cr-126102301645_1.html",
+          "source": "Business Standard",
+          "published": 1792778785.0
+        },
+        {
+          "title": "Big action! Who is Avadhut Sathe? Why SEBI ordered Avadhut Sathe Trading Academy to refund ₹546 cr - What he did?",
+          "url": "https://www.livemint.com/market/stock-market-news/big-action-who-is-avadhut-sathe-why-sebi-ordered-avadhut-sathe-trading-academy-to-refund-rs-546-cr-what-he-did-11792848745624.html",
+          "source": "Mint Markets",
+          "published": 1792852867.0
+        }
+      ],
+      "cluster_count": 3,
+      "impact_assets": [
+        "Equities"
+      ],
+      "why_it_matters": "Alters market structure, compliance mandates, capital allocation rules, and retail derivative trading liquidity.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
+      "id": "a05ac18c35be3dfe",
+      "title": "RBI’s forward dollar sales surge to record $200 billion in August",
+      "url": "https://economictimes.indiatimes.com/markets/forex/forex-news/rbi-net-forex-buys-hit-a-record-43-billion-in-august-balances-it-with-swaps/articleshow/135159794.cms",
+      "published": 1792808415.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "ET Markets",
+          "url": "https://economictimes.indiatimes.com/markets/forex/forex-news/rbi-net-forex-buys-hit-a-record-43-billion-in-august-balances-it-with-swaps/articleshow/135159794.cms"
+        },
+        {
+          "name": "Zerodha Pulse",
+          "url": "https://www.business-standard.com/industry/banking/rbi-s-bhubaneswar-data-centre-to-reduce-downtime-of-critical-services-126102500603_1.html"
+        }
+      ],
+      "score": 9,
+      "summary": "The Reserve Bank of India recorded a net purchase of $43.26 billion in August's foreign exchange market. This was done to manage significant dollar inflows from the FCNR(B) scheme and overseas borrowings. Despite the net purchase, foreign exchange reserves did not increase due to large forex sell/buy swaps. By August 31, measures attracted over $12",
+      "category": "Monetary policy",
+      "reason": "This RBI action concerns currency-market liquidity or dollar demand; it is not a repo-rate decision.",
+      "matched": [
+        "Monetary policy",
+        "Market flows"
+      ],
+      "tier": "Must know",
+      "related": [
+        {
+          "title": "RBI's Bhubaneswar data centre to reduce downtime of critical services",
+          "url": "https://www.business-standard.com/industry/banking/rbi-s-bhubaneswar-data-centre-to-reduce-downtime-of-critical-services-126102500603_1.html",
+          "source": "Zerodha Pulse",
+          "published": 1792939534.0
+        }
+      ],
+      "cluster_count": 2,
+      "impact_assets": [
+        "Rates",
+        "Equities",
+        "FX"
+      ],
+      "why_it_matters": "This RBI action concerns currency-market liquidity or dollar demand; it is not a repo-rate decision.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
       "id": "67a1263f54baefc0",
       "title": "Trump hints at an Iran attack or deal! Impact on India stock market, Sensex, Nifty, gold decoded; top 10 stocks to watch",
       "url": "https://www.livemint.com/market/stock-market-news/trump-hints-at-an-iran-attack-or-deal-impact-on-india-stock-market-sensex-nifty-gold-decoded-top-10-stocks-to-watch-11792906667676.html",
@@ -597,12 +908,6 @@
           "url": "https://www.livemint.com/market/stock-market-news/gold-price-crashes-over-rs-38-600-from-record-high-whatll-happen-amid-diwali-2026-fervour-right-time-to-buy-decoded-11792910366849.html",
           "source": "Mint Markets",
           "published": 1792914538.0
-        },
-        {
-          "title": "Gold rates in Chennai city crash this week: Can yellow metal rebound ahead of Diwali - Key levels to watch in future?",
-          "url": "https://www.livemint.com/market/commodities/gold-rates-in-chennai-city-crash-this-week-can-yellow-metal-rebound-ahead-of-diwali-key-levels-to-watch-in-future-11792820547953.html",
-          "source": "Mint Markets",
-          "published": 1792823875.0
         }
       ],
       "cluster_count": 1,
@@ -705,131 +1010,6 @@
       "companies": []
     },
     {
-      "id": "1170aba9a3440bca",
-      "title": "Sebi to revamp short-selling, securities lending rules",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/sebi-to-revamp-short-selling-securities-lending-rules/articleshow/135182788.cms",
-      "published": 1792900703.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "ET Markets",
-          "url": "https://economictimes.indiatimes.com/markets/stocks/news/sebi-to-revamp-short-selling-securities-lending-rules/articleshow/135182788.cms"
-        },
-        {
-          "name": "Business Standard",
-          "url": "https://www.business-standard.com/markets/news/sebi-short-selling-slb-ai-sandbox-market-making-tuhin-kanta-pandey-126102400650_1.html"
-        }
-      ],
-      "score": 6,
-      "summary": "Sebi is reviewing short-selling and securities lending rules to improve liquidity and price discovery. The regulator is also planning reforms in clearing, broker compliance, custodial services and corporate bond market-making to deepen capital markets and reduce compliance costs.",
-      "category": "Regulation",
-      "reason": "Check who is covered, whether it is proposed or final, and its effective date.",
-      "matched": [
-        "Regulation"
-      ],
-      "tier": "Must know",
-      "related": [
-        {
-          "title": "Sebi reviews short selling, SLB rules; plans AI sandbox, bond market-making",
-          "url": "https://www.business-standard.com/markets/news/sebi-short-selling-slb-ai-sandbox-market-making-tuhin-kanta-pandey-126102400650_1.html",
-          "source": "Business Standard",
-          "published": 1792833681.0
-        }
-      ],
-      "cluster_count": 2,
-      "impact_assets": [
-        "Equities"
-      ],
-      "why_it_matters": "Alters market structure, compliance mandates, capital allocation rules, and retail derivative trading liquidity.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "eea940e1ff0253df",
-      "title": "Nifty bears tighten grip as crude, geopolitical risks, FII outflows mount: 5 factors to decide D-Street’s fate next week",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/nifty-bears-tighten-grip-as-crude-geopolitical-risks-fii-outflows-mount-5-factors-to-decide-d-streets-fate-next-week/articleshow/135182716.cms",
-      "published": 1792900119.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "ET Markets",
-          "url": "https://economictimes.indiatimes.com/markets/stocks/news/nifty-bears-tighten-grip-as-crude-geopolitical-risks-fii-outflows-mount-5-factors-to-decide-d-streets-fate-next-week/articleshow/135182716.cms"
-        }
-      ],
-      "score": 6,
-      "summary": "Indian stock markets faced a setback as crude oil prices soared, triggered by increasing geopolitical tensions in the Middle East. Despite some defensive buying from domestic institutions, foreign investors pulled back. The forthcoming US Federal Reserve meeting is poised to impact global market moods. Investors will be keenly watching industrial p",
-      "category": "Energy & geopolitics",
-      "reason": "Energy costs and disruption can affect Indian inflation, import costs and exposed sectors.",
-      "matched": [
-        "Energy & geopolitics",
-        "Market flows"
-      ],
-      "tier": "Must know",
-      "related": [],
-      "cluster_count": 1,
-      "impact_assets": [
-        "Equities",
-        "Commodities",
-        "FX"
-      ],
-      "why_it_matters": "Crude affects India’s import bill and energy-sensitive sectors; the headline does not establish a clear price direction.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "9565cd8b55d5634a",
-      "title": "Sebi orders Avadhut Sathe, academy to refund Rs 546 crore",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/sebi-orders-avadhut-sathe-academy-to-refund-rs-546-crore/articleshow/135162877.cms",
-      "published": 1792819873.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "ET Markets",
-          "url": "https://economictimes.indiatimes.com/markets/stocks/news/sebi-orders-avadhut-sathe-academy-to-refund-rs-546-crore/articleshow/135162877.cms"
-        },
-        {
-          "name": "Business Standard",
-          "url": "https://www.business-standard.com/markets/news/sebi-orders-avadhut-sathe-trading-academy-and-its-founder-to-refund-546-cr-126102301645_1.html"
-        },
-        {
-          "name": "Mint Markets",
-          "url": "https://www.livemint.com/market/stock-market-news/big-action-who-is-avadhut-sathe-why-sebi-ordered-avadhut-sathe-trading-academy-to-refund-rs-546-cr-what-he-did-11792848745624.html"
-        }
-      ],
-      "score": 9,
-      "summary": "The Securities and Exchange Board of India has directed Avadhut Sathe Trading Academy to refund ₹546.18 crore to investors. Avadhut Sathe and his academy provided unregistered investment advisory services under the pretext of education. The regulator found that misleading testimonials were circulated while concealing overall trading losses. A penal",
-      "category": "Regulation",
-      "reason": "Check who is covered, whether it is proposed or final, and its effective date.",
-      "matched": [
-        "Regulation"
-      ],
-      "tier": "Must know",
-      "related": [
-        {
-          "title": "Sebi orders Avadhut Sathe Trading Academy and its founder to refund ₹546 cr",
-          "url": "https://www.business-standard.com/markets/news/sebi-orders-avadhut-sathe-trading-academy-and-its-founder-to-refund-546-cr-126102301645_1.html",
-          "source": "Business Standard",
-          "published": 1792778785.0
-        },
-        {
-          "title": "Big action! Who is Avadhut Sathe? Why SEBI ordered Avadhut Sathe Trading Academy to refund ₹546 cr - What he did?",
-          "url": "https://www.livemint.com/market/stock-market-news/big-action-who-is-avadhut-sathe-why-sebi-ordered-avadhut-sathe-trading-academy-to-refund-rs-546-cr-what-he-did-11792848745624.html",
-          "source": "Mint Markets",
-          "published": 1792852867.0
-        }
-      ],
-      "cluster_count": 3,
-      "impact_assets": [
-        "Equities"
-      ],
-      "why_it_matters": "Alters market structure, compliance mandates, capital allocation rules, and retail derivative trading liquidity.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
       "id": "0cbcd33b2d9a3ff9",
       "title": "Wall Street Week Ahead: Earnings flood, Fed meeting will test rickety AI market rally",
       "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/wall-st-week-ahead-earnings-flood-fed-meeting-will-test-rickety-ai-market-rally/articleshow/135161141.cms",
@@ -918,39 +1098,6 @@
         "Equities"
       ],
       "why_it_matters": "Directly shifts commercial bank cost of funds, repo borrowing rates, and rate-sensitive equity multiples (banks, real estate, auto).",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "a05ac18c35be3dfe",
-      "title": "RBI’s forward dollar sales surge to record $200 billion in August",
-      "url": "https://economictimes.indiatimes.com/markets/forex/forex-news/rbi-net-forex-buys-hit-a-record-43-billion-in-august-balances-it-with-swaps/articleshow/135159794.cms",
-      "published": 1792808415.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "ET Markets",
-          "url": "https://economictimes.indiatimes.com/markets/forex/forex-news/rbi-net-forex-buys-hit-a-record-43-billion-in-august-balances-it-with-swaps/articleshow/135159794.cms"
-        }
-      ],
-      "score": 7,
-      "summary": "The Reserve Bank of India recorded a net purchase of $43.26 billion in August's foreign exchange market. This was done to manage significant dollar inflows from the FCNR(B) scheme and overseas borrowings. Despite the net purchase, foreign exchange reserves did not increase due to large forex sell/buy swaps. By August 31, measures attracted over $12",
-      "category": "Monetary policy",
-      "reason": "This RBI action concerns currency-market liquidity or dollar demand; it is not a repo-rate decision.",
-      "matched": [
-        "Monetary policy",
-        "Market flows"
-      ],
-      "tier": "Must know",
-      "related": [],
-      "cluster_count": 1,
-      "impact_assets": [
-        "Rates",
-        "Equities",
-        "FX"
-      ],
-      "why_it_matters": "This RBI action concerns currency-market liquidity or dollar demand; it is not a repo-rate decision.",
       "impact_chain": null,
       "companies": []
     },
@@ -1114,62 +1261,6 @@
       "companies": []
     },
     {
-      "id": "c6f1d71c6089e942",
-      "title": "Infosys shares: Should you buy the IT stock after Q2 results, dividend 2026 announcement? Expert view on what to do",
-      "url": "https://www.livemint.com/market/stock-market-news/infosys-shares-should-you-buy-the-it-stock-after-q2-results-dividend-2026-announcement-experts-views-on-what-to-do-11792825142690.html",
-      "published": 1792827436.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "Mint Markets",
-          "url": "https://www.livemint.com/market/stock-market-news/infosys-shares-should-you-buy-the-it-stock-after-q2-results-dividend-2026-announcement-experts-views-on-what-to-do-11792825142690.html"
-        },
-        {
-          "name": "Mint Companies",
-          "url": "https://www.livemint.com/companies/news/infosys-headcount-rises-by-4-480-in-q2fy27-freshers-hiring-crosses-8-000-check-details-11792856755379.html"
-        },
-        {
-          "name": "ET Markets",
-          "url": "https://economictimes.indiatimes.com/markets/stocks/earnings/infosys-guidance-shock-may-hit-stock-despite-numbers-bounce/articleshow/135160426.cms"
-        }
-      ],
-      "score": 6,
-      "summary": "Infosys posted higher September-quarter profit and revenue, with AI-related sales contributing 10.5% of total revenue. However, it lowered its FY27 growth guidance amid intense competition, cautious client spending and pricing pressure.&nbsp;",
-      "category": "Earnings",
-      "reason": "Compare results and guidance with expectations for the company and its sector.",
-      "matched": [
-        "Earnings"
-      ],
-      "tier": "Must know",
-      "related": [
-        {
-          "title": "Infosys headcount rises by 4,480 in Q2FY27, freshers hiring crosses 8,000; check details",
-          "url": "https://www.livemint.com/companies/news/infosys-headcount-rises-by-4-480-in-q2fy27-freshers-hiring-crosses-8-000-check-details-11792856755379.html",
-          "source": "Mint Companies",
-          "published": 1792859353.0
-        },
-        {
-          "title": "Infosys upbeat on deals, cautious on growth as competition intensifies",
-          "url": "https://economictimes.indiatimes.com/markets/stocks/earnings/infosys-guidance-shock-may-hit-stock-despite-numbers-bounce/articleshow/135160426.cms",
-          "source": "ET Markets",
-          "published": 1792810446.0
-        }
-      ],
-      "cluster_count": 3,
-      "impact_assets": [
-        "Equities"
-      ],
-      "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
-      "impact_chain": null,
-      "companies": [
-        {
-          "name": "Infosys",
-          "symbol": "infosys"
-        }
-      ]
-    },
-    {
       "id": "f3718283350b7685",
       "title": "Adani Power profit surges 142% on strong demand amid weak rains",
       "url": "https://economictimes.indiatimes.com/markets/stocks/earnings/adani-power-profit-surges-142-on-strong-demand-amid-weak-rains/articleshow/135161231.cms",
@@ -1200,12 +1291,6 @@
           "url": "https://www.ndtvprofit.com/india/adani-airports-air-india-announce-phased-transition-of-flights-from-mumbai-to-navi-mumbai-airport-12233613#publisher=newsstand",
           "source": "Zerodha Pulse",
           "published": 1792930134.0
-        },
-        {
-          "title": "Adani Airports, IndiGo Announce Phased Expansion Of International Flights",
-          "url": "https://www.ndtvprofit.com/business/adani-airports-indigo-announce-phased-expansion-of-international-flights-12233527#publisher=newsstand",
-          "source": "Zerodha Pulse",
-          "published": 1792929005.0
         }
       ],
       "cluster_count": 2,
@@ -2675,43 +2760,48 @@
       "companies": []
     },
     {
-      "id": "f3d399911c2ff457",
-      "title": "Ukraine seeks Starlink alternative after Musk's satellite disruptions: What Nokia and ICEYE are building?",
-      "url": "https://www.livemint.com/companies/news/ukraine-seeks-starlink-alternative-after-musks-satellite-disruptions-what-nokia-and-iceye-are-building-11792817354127.html",
-      "published": 1792817851.0,
+      "id": "3ffd6686ce7df1d7",
+      "title": "Infosys headcount rises by 4,480 in Q2FY27, freshers hiring crosses 8,000; check details",
+      "url": "https://www.livemint.com/companies/news/infosys-headcount-rises-by-4-480-in-q2fy27-freshers-hiring-crosses-8-000-check-details-11792856755379.html",
+      "published": 1792859353.0,
       "region": "India",
       "official": false,
       "sources": [
         {
           "name": "Mint Companies",
-          "url": "https://www.livemint.com/companies/news/ukraine-seeks-starlink-alternative-after-musks-satellite-disruptions-what-nokia-and-iceye-are-building-11792817354127.html"
+          "url": "https://www.livemint.com/companies/news/infosys-headcount-rises-by-4-480-in-q2fy27-freshers-hiring-crosses-8-000-check-details-11792856755379.html"
         },
         {
-          "name": "CNBC World",
-          "url": "https://www.cnbc.com/2026/10/23/ukraine-partners-with-nokia-and-iceye-for-starlink-alternative.html"
+          "name": "ET Markets",
+          "url": "https://economictimes.indiatimes.com/markets/stocks/earnings/infosys-guidance-shock-may-hit-stock-despite-numbers-bounce/articleshow/135160426.cms"
         }
       ],
       "score": 2,
-      "summary": "Ukraine is exploring satellite communications with Nokia and ICEYE after SpaceX service restrictions disrupted drone connections. The proposed systems would give Kyiv greater control over connectivity, while European telecom firms are also considering services to compete with Starlink.",
+      "summary": "Voluntary attrition at Infosys moderated to 12.7 percent on a last-twelve-month basis, down from 13 percent in the previous quarter. The improvement suggests better employee retention as the industry navigates a phase of selective hiring and skill-specific demand.",
       "category": "Other news",
-      "reason": "Key market catalyst driving market liquidity and session volatility.",
+      "reason": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
       "matched": [],
       "tier": "More",
       "related": [
         {
-          "title": "In hunt for Starlink alternative, Ukraine partners with Nokia and satellite maker ICEYE",
-          "url": "https://www.cnbc.com/2026/10/23/ukraine-partners-with-nokia-and-iceye-for-starlink-alternative.html",
-          "source": "CNBC World",
-          "published": 1792788743.0
+          "title": "Infosys upbeat on deals, cautious on growth as competition intensifies",
+          "url": "https://economictimes.indiatimes.com/markets/stocks/earnings/infosys-guidance-shock-may-hit-stock-despite-numbers-bounce/articleshow/135160426.cms",
+          "source": "ET Markets",
+          "published": 1792810446.0
         }
       ],
       "cluster_count": 2,
       "impact_assets": [
         "Equities"
       ],
-      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
+      "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
       "impact_chain": null,
-      "companies": []
+      "companies": [
+        {
+          "name": "Infosys",
+          "symbol": "infosys"
+        }
+      ]
     },
     {
       "id": "c1fbc962231e0740",
@@ -2782,7 +2872,7 @@
       "url": "https://www.livemint.com/rss/markets",
       "region": "India",
       "official": false,
-      "checked": "2026-10-25T13:58:41.412904+00:00",
+      "checked": "2026-10-25T17:38:48.353693+00:00",
       "status": "ok",
       "count": 35
     },
@@ -2791,7 +2881,7 @@
       "url": "https://www.livemint.com/rss/companies",
       "region": "India",
       "official": false,
-      "checked": "2026-10-25T13:58:41.413229+00:00",
+      "checked": "2026-10-25T17:38:48.353902+00:00",
       "status": "ok",
       "count": 35
     },
@@ -2800,7 +2890,7 @@
       "url": "https://www.sebi.gov.in/sebirss.xml",
       "region": "India",
       "official": true,
-      "checked": "2026-10-25T13:58:41.413545+00:00",
+      "checked": "2026-10-25T17:38:48.354044+00:00",
       "status": "ok",
       "count": 30
     },
@@ -2809,7 +2899,7 @@
       "url": "https://www.federalreserve.gov/feeds/press_monetary.xml",
       "region": "Global",
       "official": true,
-      "checked": "2026-10-25T13:58:41.414463+00:00",
+      "checked": "2026-10-25T17:38:48.354293+00:00",
       "status": "ok",
       "count": 0
     },
@@ -2818,7 +2908,7 @@
       "url": "https://www.bls.gov/feed/bls_latest.rss",
       "region": "Global",
       "official": true,
-      "checked": "2026-10-25T13:58:41.414810+00:00",
+      "checked": "2026-10-25T17:38:48.355017+00:00",
       "status": "ok",
       "count": 1
     },
@@ -2827,7 +2917,7 @@
       "url": "https://www.investing.com/rss/news.rss",
       "region": "Global",
       "official": false,
-      "checked": "2026-10-25T13:58:41.604864+00:00",
+      "checked": "2026-10-25T17:38:48.470971+00:00",
       "status": "ok",
       "count": 10
     },
@@ -2836,7 +2926,7 @@
       "url": "https://www.cnbc.com/id/100727362/device/rss/rss.html",
       "region": "Global",
       "official": false,
-      "checked": "2026-10-25T13:58:41.630145+00:00",
+      "checked": "2026-10-25T17:38:48.497680+00:00",
       "status": "ok",
       "count": 30
     },
@@ -2845,7 +2935,7 @@
       "url": "https://pulse.zerodha.com/feed.php",
       "region": "India",
       "official": false,
-      "checked": "2026-10-25T13:58:41.642391+00:00",
+      "checked": "2026-10-25T17:38:48.515535+00:00",
       "status": "ok",
       "count": 25
     },
@@ -2854,7 +2944,7 @@
       "url": "https://economictimes.indiatimes.com/markets/rssfeeds/1977021501.cms",
       "region": "India",
       "official": false,
-      "checked": "2026-10-25T13:58:41.652233+00:00",
+      "checked": "2026-10-25T17:38:48.654775+00:00",
       "status": "ok",
       "count": 50
     },
@@ -2863,7 +2953,7 @@
       "url": "https://economictimes.indiatimes.com/news/economy/rssfeeds/1373380680.cms",
       "region": "India",
       "official": false,
-      "checked": "2026-10-25T13:58:41.714173+00:00",
+      "checked": "2026-10-25T17:38:48.696358+00:00",
       "status": "ok",
       "count": 50
     },
@@ -2872,21 +2962,21 @@
       "url": "https://www.business-standard.com/rss/markets-106.rss",
       "region": "India",
       "official": false,
-      "checked": "2026-10-25T13:58:41.766232+00:00",
+      "checked": "2026-10-25T17:38:48.716362+00:00",
       "status": "ok",
       "count": 35
     }
   ],
   "refreshing": false,
   "calendar": {
-    "checked": 1792936727.9548907,
+    "checked": 1792949933.66969,
     "status": "ok"
   },
   "premarket": {
-    "updated": "2026-10-25T13:58:51.298720+00:00",
+    "updated": "2026-10-25T17:38:59.221532+00:00",
     "schema_version": 2,
     "is_live": false,
-    "quote_updated": "2026-10-25T13:58:51.298156+00:00",
+    "quote_updated": "2026-10-25T17:38:59.220985+00:00",
     "quote_date": "2026-10-23",
     "quote_source": "yfinance",
     "live_bias_label": "LATEST AVAILABLE QUOTE",
@@ -3140,10 +3230,10 @@
           "label": "Silver",
           "price": "53.95",
           "price_raw": 53.949,
-          "prev_close": 53.96,
+          "prev_close": 53.955,
           "prev_close_fmt": "53.96",
-          "change": -0.011,
-          "change_pct": -0.02,
+          "change": -0.006,
+          "change_pct": -0.01,
           "direction": "down",
           "unit": "USD/oz",
           "range_52w": {
@@ -3164,24 +3254,24 @@
       },
       "earnings": [
         {
-          "title": "Bharat Coking Coal Q2 Results: PSU Coal India Arm Swings To Profit, Revenue Jumps 40% YoY",
-          "url": "https://www.ndtvprofit.com/markets/bharat-coking-coal-q2-results-psu-coal-india-arm-swings-to-profit-revenue-jumps-40-yoy-12233199#publisher=newsstand",
-          "companies": [],
-          "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
-          "source": ""
-        },
-        {
-          "title": "RailTel Q2 Results: Profit Drops 10% On One-Time Exceptional Loss, Revenue Up 20% YoY",
-          "url": "https://www.ndtvprofit.com/markets/railtel-q2-results-profit-drops-10-on-one-time-exceptional-loss-revenue-up-20-yoy-12233174#publisher=newsstand",
-          "companies": [],
-          "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
-          "source": ""
-        },
-        {
           "title": "KEC International shares in focus on Monday Oct 26 after ₹2872 cr PGCIL order win; YTD orders mark crosses ₹13.5k cr",
           "url": "https://www.livemint.com/market/stock-market-news/kec-international-shares-in-focus-on-monday-oct-28-after-rs-2872-cr-pgcil-order-win-ytd-orders-mark-crosses-rs-13-5k-cr-11792904618194.html",
           "companies": [],
           "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
+          "source": ""
+        },
+        {
+          "title": "Stable fees, volatile earnings: What investors should know about EAAA IPO",
+          "url": "https://www.livemint.com/market/ipo/eaaa-india-alternatives-ipo-review-price-band-valuation-financials-11792899549025.html",
+          "companies": [],
+          "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
+          "source": ""
+        },
+        {
+          "title": "IDFC First Bank Q2 profit nearly triples to Rs 1,045 crore",
+          "url": "https://economictimes.indiatimes.com/markets/stocks/earnings/idfc-first-bank-q2-profit-nearly-triples-to-rs-1045-cr/articleshow/135182984.cms",
+          "companies": [],
+          "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
           "source": ""
         }
       ],
@@ -3204,9 +3294,9 @@
           }
         },
         "catalyst": {
-          "title": "Gold, silver face fresh test as oil surge puts Fed policy decision in focus",
-          "url": "https://www.business-standard.com/markets/news/gold-silver-face-fresh-test-as-oil-surge-puts-fed-policy-decision-in-focus-126102500493_1.html",
-          "why_it_matters": "Guides global liquidity dynamics, US Dollar Index (DXY) trajectory, and foreign institutional (FII) capital allocations.",
+          "title": "Audi defends plans for a $4 billion Georgia plant amid VW restructuring, tariffs",
+          "url": "https://www.cnbc.com/2026/10/25/audi-georgia-us-plant-tariffs-volkswagen.html",
+          "why_it_matters": "Alters market structure, compliance mandates, capital allocation rules, and retail derivative trading liquidity.",
           "source": ""
         }
       }
