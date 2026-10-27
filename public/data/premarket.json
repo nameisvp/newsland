@@ -1,8 +1,8 @@
 {
-  "updated": "2026-10-26T21:50:31.946139+00:00",
+  "updated": "2026-10-27T00:56:13.428419+00:00",
   "schema_version": 2,
   "is_live": false,
-  "quote_updated": "2026-10-26T21:50:31.945775+00:00",
+  "quote_updated": "2026-10-27T00:56:13.428012+00:00",
   "quote_date": "2026-10-23",
   "quote_source": "yfinance",
   "live_bias_label": "LATEST AVAILABLE QUOTE",
@@ -45,12 +45,12 @@
     "key": "BRENT",
     "quote_date": "2026-10-26",
     "label": "Brent Crude",
-    "price": "110.27",
-    "price_raw": 110.27,
+    "price": "110.10",
+    "price_raw": 110.1,
     "prev_close": 109.52,
     "prev_close_fmt": "109.52",
-    "change": 0.75,
-    "change_pct": 0.68,
+    "change": 0.58,
+    "change_pct": 0.53,
     "direction": "up",
     "unit": "USD/bbl",
     "range_52w": {
@@ -58,20 +58,20 @@
       "high": 126.1,
       "low_fmt": "58.72",
       "high_fmt": "126.10",
-      "pos_pct": 76.5,
-      "pct_from_high": -12.55
+      "pos_pct": 76.3,
+      "pct_from_high": -12.69
     }
   },
   "usdinr": {
     "key": "USDINR",
-    "quote_date": "2026-10-26",
+    "quote_date": "2026-10-27",
     "label": "INR / USD",
     "price": "95.18",
     "price_raw": 95.175,
-    "prev_close": 94.93,
-    "prev_close_fmt": "94.93",
-    "change": 0.245,
-    "change_pct": 0.26,
+    "prev_close": 95.175,
+    "prev_close_fmt": "95.18",
+    "change": 0.0,
+    "change_pct": 0.0,
     "direction": "up",
     "unit": "",
     "range_52w": {
@@ -154,7 +154,7 @@
       "num": "02",
       "title": "Crude and input costs",
       "bias": "Context",
-      "desc": "Latest Brent quote: 110.27 USD/bbl (+0.68%). Higher crude can raise import and input costs; lower crude can ease them. This quote alone does not establish the cause of the move."
+      "desc": "Latest Brent quote: 110.10 USD/bbl (+0.53%). Higher crude can raise import and input costs; lower crude can ease them. This quote alone does not establish the cause of the move."
     },
     {
       "num": "03",
@@ -170,12 +170,12 @@
         "key": "BRENT",
         "quote_date": "2026-10-26",
         "label": "Brent Crude",
-        "price": "110.27",
-        "price_raw": 110.27,
+        "price": "110.10",
+        "price_raw": 110.1,
         "prev_close": 109.52,
         "prev_close_fmt": "109.52",
-        "change": 0.75,
-        "change_pct": 0.68,
+        "change": 0.58,
+        "change_pct": 0.53,
         "direction": "up",
         "unit": "USD/bbl",
         "range_52w": {
@@ -183,20 +183,20 @@
           "high": 126.1,
           "low_fmt": "58.72",
           "high_fmt": "126.10",
-          "pos_pct": 76.5,
-          "pct_from_high": -12.55
+          "pos_pct": 76.3,
+          "pct_from_high": -12.69
         }
       },
       "wti": {
         "key": "WTI",
         "quote_date": "2026-10-26",
         "label": "WTI Crude",
-        "price": "101.25",
-        "price_raw": 101.25,
+        "price": "101.20",
+        "price_raw": 101.2,
         "prev_close": 100.96,
         "prev_close_fmt": "100.96",
-        "change": 0.29,
-        "change_pct": 0.29,
+        "change": 0.24,
+        "change_pct": 0.24,
         "direction": "up",
         "unit": "USD/bbl",
         "range_52w": {
@@ -205,7 +205,7 @@
           "low_fmt": "54.98",
           "high_fmt": "119.48",
           "pos_pct": 71.7,
-          "pct_from_high": -15.26
+          "pct_from_high": -15.3
         }
       },
       "natgas": {
@@ -213,11 +213,11 @@
         "quote_date": "2026-10-26",
         "label": "Natural Gas",
         "price": "3.04",
-        "price_raw": 3.039,
+        "price_raw": 3.044,
         "prev_close": 2.985,
         "prev_close_fmt": "2.98",
-        "change": 0.054,
-        "change_pct": 1.81,
+        "change": 0.059,
+        "change_pct": 1.98,
         "direction": "up",
         "unit": "USD/MMBtu",
         "range_52w": {
@@ -225,20 +225,20 @@
           "high": 7.83,
           "low_fmt": "2.48",
           "high_fmt": "7.83",
-          "pos_pct": 10.4,
-          "pct_from_high": -61.17
+          "pos_pct": 10.5,
+          "pct_from_high": -61.11
         }
       },
       "gold": {
         "key": "GOLD",
         "quote_date": "2026-10-26",
         "label": "Gold",
-        "price": "4,031.00",
-        "price_raw": 4031.0,
+        "price": "4,026.60",
+        "price_raw": 4026.6001,
         "prev_close": 4021.6001,
         "prev_close_fmt": "4,021.60",
-        "change": 9.3999,
-        "change_pct": 0.23,
+        "change": 5.0,
+        "change_pct": 0.12,
         "direction": "up",
         "unit": "USD/oz",
         "range_52w": {
@@ -246,20 +246,20 @@
           "high": 5586.2,
           "low_fmt": "3,901.30",
           "high_fmt": "5,586.20",
-          "pos_pct": 7.7,
-          "pct_from_high": -27.84
+          "pos_pct": 7.4,
+          "pct_from_high": -27.92
         }
       },
       "silver": {
         "key": "SILVER",
         "quote_date": "2026-10-26",
         "label": "Silver",
-        "price": "54.03",
-        "price_raw": 54.035,
+        "price": "54.06",
+        "price_raw": 54.06,
         "prev_close": 54.165,
         "prev_close_fmt": "54.17",
-        "change": -0.13,
-        "change_pct": -0.24,
+        "change": -0.105,
+        "change_pct": -0.19,
         "direction": "down",
         "unit": "USD/oz",
         "range_52w": {
@@ -268,17 +268,24 @@
           "low_fmt": "45.85",
           "high_fmt": "121.30",
           "pos_pct": 10.9,
-          "pct_from_high": -55.45
+          "pct_from_high": -55.43
         }
       },
       "catalyst": {
-        "title": "Oil falls from near six-month high as Iran mediation efforts ease supply worries",
-        "url": "https://www.investing.com/news/commodities-news/oil-falls-from-6mth-highs-saudi-attacks-keep-supply-risks-in-focus-4971338",
-        "why_it_matters": "Falling crude can ease India’s import bill and input costs for airlines and paints, while reducing upstream oil realizations.",
+        "title": "Indian markets rebound, but rising oil prices keep investors cautious",
+        "url": "https://economictimes.indiatimes.com/markets/stocks/news/d-st-makes-a-comeback-after-weeks-of-decline-yet-investors-remain-cautious-amid-ongoing-market-concerns/articleshow/135221724.cms",
+        "why_it_matters": "Crude affects India’s import bill and energy-sensitive sectors; the headline does not establish a clear price direction.",
         "source": ""
       }
     },
     "earnings": [
+      {
+        "title": "U.S. stock futures rise as Anthropic IPO buzz boosts tech; Fed, earnings on tap",
+        "url": "https://www.investing.com/news/economic-indicators/us-stock-futures-rise-as-anthropic-ipo-buzz-boosts-tech-fed-earnings-on-tap-4973986",
+        "companies": [],
+        "why_it_matters": "Guides global liquidity dynamics, US Dollar Index (DXY) trajectory, and foreign institutional (FII) capital allocations.",
+        "source": ""
+      },
       {
         "title": "Anthropic files for IPO as revenue jumps 14-fold to $16.3 billion in H1",
         "url": "https://www.thehindu.com/news/international/artificial-intelligence-giant-anthropic-files-papers-to-sell-shares-to-the-public-for-the-first-time/article71627679.ece",
@@ -287,15 +294,8 @@
         "source": ""
       },
       {
-        "title": "Microsoft's Five-Year Pivot: Revenue Doubles On Cloud's $100B Milestone, Headcount Shrinks",
-        "url": "https://www.ndtvprofit.com/business/microsofts-five-year-pivot-revenue-doubles-on-clouds-100b-milestone-headcount-shrinks-12239826#publisher=newsstand",
-        "companies": [],
-        "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
-        "source": ""
-      },
-      {
-        "title": "Sunteck Realty H1FY27 net profit rises 20%, pre-sales up 19%",
-        "url": "https://economictimes.indiatimes.com/markets/stocks/earnings/sunteck-realty-h1fy27-net-profit-rises-20-pre-sales-up-19/articleshow/135217893.cms",
+        "title": "Hartford earnings beat by $0.33, revenue fell short of estimates",
+        "url": "https://www.investing.com/news/earnings/hartford-earnings-beat-by-033-revenue-fell-short-of-estimates-4973996",
         "companies": [],
         "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
         "source": ""
@@ -320,9 +320,9 @@
         }
       },
       "catalyst": {
-        "title": "Benchmark bond yield nears 7.5% on rising crude oil prices, US cues",
-        "url": "https://www.business-standard.com/markets/news/govt-bond-yields-rise-to-four-year-high-as-crude-us-treasury-yields-weigh-126102601296_1.html",
-        "why_it_matters": "Crude affects India’s import bill and energy-sensitive sectors; the headline does not establish a clear price direction.",
+        "title": "U.S. stock futures rise as Anthropic IPO buzz boosts tech; Fed, earnings on tap",
+        "url": "https://www.investing.com/news/economic-indicators/us-stock-futures-rise-as-anthropic-ipo-buzz-boosts-tech-fed-earnings-on-tap-4973986",
+        "why_it_matters": "Guides global liquidity dynamics, US Dollar Index (DXY) trajectory, and foreign institutional (FII) capital allocations.",
         "source": ""
       }
     }
