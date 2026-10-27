@@ -1,8 +1,8 @@
 {
-  "updated": "2026-10-27T12:36:59.935317+00:00",
+  "updated": "2026-10-27T18:24:23.481026+00:00",
   "schema_version": 2,
   "is_live": false,
-  "quote_updated": "2026-10-27T12:36:59.934744+00:00",
+  "quote_updated": "2026-10-27T18:24:23.480024+00:00",
   "quote_date": "2026-10-27",
   "quote_source": "yfinance",
   "live_bias_label": "LATEST AVAILABLE QUOTE",
@@ -26,18 +26,18 @@
   },
   "overnight": {
     "SP500": {
-      "val": "7,677",
-      "pct": 0.7,
-      "date": "2026-10-26"
+      "val": "7,720",
+      "pct": 0.56,
+      "date": "2026-10-27"
     },
     "NASDAQ": {
-      "val": "26,169",
-      "pct": 0.82,
-      "date": "2026-10-26"
+      "val": "26,461",
+      "pct": 1.12,
+      "date": "2026-10-27"
     },
     "US10Y": {
-      "val": "4.98%",
-      "pct": -0.16,
+      "val": "4.99%",
+      "pct": 0.08,
       "date": "2026-10-27"
     }
   },
@@ -45,21 +45,21 @@
     "key": "BRENT",
     "quote_date": "2026-10-27",
     "label": "Brent Crude",
-    "price": "109.95",
-    "price_raw": 109.95,
+    "price": "109.55",
+    "price_raw": 109.55,
     "prev_close": 109.71,
     "prev_close_fmt": "109.71",
-    "change": 0.24,
-    "change_pct": 0.22,
-    "direction": "up",
+    "change": -0.16,
+    "change_pct": -0.15,
+    "direction": "down",
     "unit": "USD/bbl",
     "range_52w": {
       "low": 58.72,
       "high": 126.1,
       "low_fmt": "58.72",
       "high_fmt": "126.10",
-      "pos_pct": 76.0,
-      "pct_from_high": -12.81
+      "pos_pct": 75.4,
+      "pct_from_high": -13.12
     }
   },
   "usdinr": {
@@ -154,7 +154,7 @@
       "num": "02",
       "title": "Crude and input costs",
       "bias": "Context",
-      "desc": "Latest Brent quote: 109.95 USD/bbl (+0.22%). Higher crude can raise import and input costs; lower crude can ease them. This quote alone does not establish the cause of the move."
+      "desc": "Latest Brent quote: 109.55 USD/bbl (-0.15%). Higher crude can raise import and input costs; lower crude can ease them. This quote alone does not establish the cause of the move."
     },
     {
       "num": "03",
@@ -170,75 +170,75 @@
         "key": "BRENT",
         "quote_date": "2026-10-27",
         "label": "Brent Crude",
-        "price": "109.95",
-        "price_raw": 109.95,
+        "price": "109.55",
+        "price_raw": 109.55,
         "prev_close": 109.71,
         "prev_close_fmt": "109.71",
-        "change": 0.24,
-        "change_pct": 0.22,
-        "direction": "up",
+        "change": -0.16,
+        "change_pct": -0.15,
+        "direction": "down",
         "unit": "USD/bbl",
         "range_52w": {
           "low": 58.72,
           "high": 126.1,
           "low_fmt": "58.72",
           "high_fmt": "126.10",
-          "pos_pct": 76.0,
-          "pct_from_high": -12.81
+          "pos_pct": 75.4,
+          "pct_from_high": -13.12
         }
       },
       "wti": {
         "key": "WTI",
         "quote_date": "2026-10-27",
         "label": "WTI Crude",
-        "price": "100.82",
-        "price_raw": 100.82,
+        "price": "100.04",
+        "price_raw": 100.04,
         "prev_close": 100.79,
         "prev_close_fmt": "100.79",
-        "change": 0.03,
-        "change_pct": 0.03,
-        "direction": "up",
+        "change": -0.75,
+        "change_pct": -0.74,
+        "direction": "down",
         "unit": "USD/bbl",
         "range_52w": {
           "low": 54.98,
           "high": 119.48,
           "low_fmt": "54.98",
           "high_fmt": "119.48",
-          "pos_pct": 71.1,
-          "pct_from_high": -15.62
+          "pos_pct": 69.9,
+          "pct_from_high": -16.27
         }
       },
       "natgas": {
         "key": "NATGAS",
         "quote_date": "2026-10-27",
         "label": "Natural Gas",
-        "price": "3.04",
-        "price_raw": 3.037,
+        "price": "3.02",
+        "price_raw": 3.016,
         "prev_close": 3.037,
         "prev_close_fmt": "3.04",
-        "change": 0.0,
-        "change_pct": 0.0,
-        "direction": "up",
+        "change": -0.021,
+        "change_pct": -0.69,
+        "direction": "down",
         "unit": "USD/MMBtu",
         "range_52w": {
           "low": 2.48,
           "high": 7.83,
           "low_fmt": "2.48",
           "high_fmt": "7.83",
-          "pos_pct": 10.4,
-          "pct_from_high": -61.2
+          "pos_pct": 10.0,
+          "pct_from_high": -61.47
         }
       },
       "gold": {
         "key": "GOLD",
         "quote_date": "2026-10-27",
         "label": "Gold",
-        "price": "4,031.80",
-        "price_raw": 4031.8,
+        "price": "4,071.50",
+        "price_raw": 4071.5,
         "prev_close": 4029.8999,
         "prev_close_fmt": "4,029.90",
-        "change": 1.9001,
-        "change_pct": 0.05,
+        "change": 41.6001,
+        "change_pct": 1.03,
         "direction": "up",
         "unit": "USD/oz",
         "range_52w": {
@@ -246,66 +246,56 @@
           "high": 5586.2,
           "low_fmt": "3,901.30",
           "high_fmt": "5,586.20",
-          "pos_pct": 7.7,
-          "pct_from_high": -27.83
+          "pos_pct": 10.1,
+          "pct_from_high": -27.12
         }
       },
       "silver": {
         "key": "SILVER",
         "quote_date": "2026-10-27",
         "label": "Silver",
-        "price": "53.43",
-        "price_raw": 53.43,
+        "price": "54.39",
+        "price_raw": 54.39,
         "prev_close": 53.75,
         "prev_close_fmt": "53.75",
-        "change": -0.32,
-        "change_pct": -0.6,
-        "direction": "down",
+        "change": 0.64,
+        "change_pct": 1.19,
+        "direction": "up",
         "unit": "USD/oz",
         "range_52w": {
           "low": 46.33,
           "high": 121.3,
           "low_fmt": "46.33",
           "high_fmt": "121.30",
-          "pos_pct": 9.5,
-          "pct_from_high": -55.95
+          "pos_pct": 10.8,
+          "pct_from_high": -55.16
         }
       },
       "catalyst": {
-        "title": "US Stock Market Live Updates: US stock futures rise as oil falls ahead of Fed decision",
-        "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/stock-market-live-updates-dow-jones-nasdaq-sp-500-coca-cola-paypal-tesla-meta-earnings-federal-reserve-fed-rate-decision-us-stocks-oil-crude-oil-treasury-yields-ai-stocks-anthropic-ipo-27th-october-2026/liveblog/135233966.cms",
+        "title": "US stocks today: S&P 500, Nasdaq advance as oil eases ahead of Fed decision",
+        "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/us-stocks-today-sp-500-nasdaq-open-higher-as-oil-pulls-back-ahead-of-fed-decision/articleshow/135236366.cms",
         "why_it_matters": "Guides global liquidity dynamics, US Dollar Index (DXY) trajectory, and foreign institutional (FII) capital allocations.",
         "source": ""
       }
     },
     "earnings": [
       {
-        "title": "Maruti Q2FY27 results: Net profit declines 26.36% to ₹2,466.1 crore",
-        "url": "https://www.business-standard.com/companies/quarterly-results/maruti-q2fy27-results-net-profit-declines-26-36-to-2-466-1-crore-126102700965_1.html",
-        "companies": [
-          {
-            "name": "Maruti Suzuki",
-            "symbol": "maruti"
-          }
-        ],
+        "title": "United Breweries Q2 results: Profit jumps 190%, revenue rises 24% as premium beer volumes surge; Kingfisher sales up 44%",
+        "url": "https://www.livemint.com/market/stock-market-news/united-breweries-q2-results-profit-jumps-190-revenue-rises-24-as-premium-beer-volumes-surge-kingfisher-sales-up-44-11793120558435.html",
+        "companies": [],
         "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
         "source": ""
       },
       {
-        "title": "Vedanta Iron Q2 Results: Loss narrows to Rs 324 crore, revenue declines 2% YoY",
-        "url": "https://economictimes.indiatimes.com/markets/stocks/earnings/vedanta-iron-q2-results-loss-narrows-to-rs-324-crore-revenue-declines-2-yoy/articleshow/135233849.cms",
-        "companies": [
-          {
-            "name": "Vedanta",
-            "symbol": "vedanta"
-          }
-        ],
-        "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
+        "title": "US Stock Market Live Updates: US stocks rise as AI momentum holds heading into key earnings, Fed decision",
+        "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/stock-market-live-updates-dow-jones-nasdaq-sp-500-coca-cola-paypal-tesla-meta-earnings-federal-reserve-fed-rate-decision-us-stocks-oil-crude-oil-treasury-yields-ai-stocks-anthropic-ipo-27th-october-2026/liveblog/135233966.cms",
+        "companies": [],
+        "why_it_matters": "Guides global liquidity dynamics, US Dollar Index (DXY) trajectory, and foreign institutional (FII) capital allocations.",
         "source": ""
       },
       {
-        "title": "Larsen & Toubro Q2 Results: Profit surges 33% YoY to Rs 5,202 crore, revenue grows 16%",
-        "url": "https://economictimes.indiatimes.com/markets/stocks/earnings/larsen-toubro-q2-results-profit-surges-33-yoy-to-rs-5202-crore-revenue-grows-16/articleshow/135233297.cms",
+        "title": "United Breweries Q2 profit jumps nearly 3x to ₹134.81 cr on volume growth",
+        "url": "https://www.business-standard.com/companies/quarterly-results/united-breweries-q2-profit-jumps-nearly-3x-to-134-81-cr-on-volume-growth-126102701745_1.html",
         "companies": [],
         "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
         "source": ""
@@ -314,24 +304,24 @@
     "global_macro": {
       "overnight": {
         "SP500": {
-          "val": "7,677",
-          "pct": 0.7,
-          "date": "2026-10-26"
+          "val": "7,720",
+          "pct": 0.56,
+          "date": "2026-10-27"
         },
         "NASDAQ": {
-          "val": "26,169",
-          "pct": 0.82,
-          "date": "2026-10-26"
+          "val": "26,461",
+          "pct": 1.12,
+          "date": "2026-10-27"
         },
         "US10Y": {
-          "val": "4.98%",
-          "pct": -0.16,
+          "val": "4.99%",
+          "pct": 0.08,
           "date": "2026-10-27"
         }
       },
       "catalyst": {
-        "title": "US Stock Market Live Updates: US stock futures rise as oil falls ahead of Fed decision",
-        "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/stock-market-live-updates-dow-jones-nasdaq-sp-500-coca-cola-paypal-tesla-meta-earnings-federal-reserve-fed-rate-decision-us-stocks-oil-crude-oil-treasury-yields-ai-stocks-anthropic-ipo-27th-october-2026/liveblog/135233966.cms",
+        "title": "US stocks today: S&P 500, Nasdaq advance as oil eases ahead of Fed decision",
+        "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/us-stocks-today-sp-500-nasdaq-open-higher-as-oil-pulls-back-ahead-of-fed-decision/articleshow/135236366.cms",
         "why_it_matters": "Guides global liquidity dynamics, US Dollar Index (DXY) trajectory, and foreign institutional (FII) capital allocations.",
         "source": ""
       }
