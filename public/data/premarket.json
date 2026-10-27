@@ -1,9 +1,9 @@
 {
-  "updated": "2026-10-27T18:24:23.481026+00:00",
+  "updated": "2026-10-27T22:33:34.882750+00:00",
   "schema_version": 2,
   "is_live": false,
-  "quote_updated": "2026-10-27T18:24:23.480024+00:00",
-  "quote_date": "2026-10-27",
+  "quote_updated": "2026-10-27T22:33:34.882339+00:00",
+  "quote_date": "2026-10-26",
   "quote_source": "yfinance",
   "live_bias_label": "LATEST AVAILABLE QUOTE",
   "bias_label": "LATEST AVAILABLE QUOTE",
@@ -26,18 +26,18 @@
   },
   "overnight": {
     "SP500": {
-      "val": "7,720",
-      "pct": 0.56,
+      "val": "7,723",
+      "pct": 0.6,
       "date": "2026-10-27"
     },
     "NASDAQ": {
-      "val": "26,461",
-      "pct": 1.12,
+      "val": "26,478",
+      "pct": 1.18,
       "date": "2026-10-27"
     },
     "US10Y": {
       "val": "4.99%",
-      "pct": 0.08,
+      "pct": 0.14,
       "date": "2026-10-27"
     }
   },
@@ -45,12 +45,12 @@
     "key": "BRENT",
     "quote_date": "2026-10-27",
     "label": "Brent Crude",
-    "price": "109.55",
-    "price_raw": 109.55,
+    "price": "109.44",
+    "price_raw": 109.44,
     "prev_close": 109.71,
     "prev_close_fmt": "109.71",
-    "change": -0.16,
-    "change_pct": -0.15,
+    "change": -0.27,
+    "change_pct": -0.25,
     "direction": "down",
     "unit": "USD/bbl",
     "range_52w": {
@@ -58,8 +58,8 @@
       "high": 126.1,
       "low_fmt": "58.72",
       "high_fmt": "126.10",
-      "pos_pct": 75.4,
-      "pct_from_high": -13.12
+      "pos_pct": 75.3,
+      "pct_from_high": -13.21
     }
   },
   "usdinr": {
@@ -85,35 +85,35 @@
   },
   "pivots": {
     "nifty": {
-      "pivot": 22739,
-      "s1": 22648,
-      "r1": 22841,
-      "s2": 22546,
-      "r2": 22932,
-      "date": "2026-10-27"
+      "pivot": 22631,
+      "s1": 22509,
+      "r1": 22875,
+      "s2": 22265,
+      "r2": 22997,
+      "date": "2026-10-26"
     },
     "banknifty": {
-      "pivot": 54193,
-      "s1": 53733,
-      "r1": 54436,
-      "s2": 53491,
-      "r2": 54896,
-      "date": "2026-10-27"
+      "pivot": 54179,
+      "s1": 53965,
+      "r1": 54580,
+      "s2": 53564,
+      "r2": 54794,
+      "date": "2026-10-26"
     }
   },
   "posture": {
-    "dma50": 23337,
-    "dma50_fmt": "23,337",
-    "pct_dma50": -2.52,
-    "dma200": 24091,
-    "dma200_fmt": "24,091",
-    "pct_dma200": -5.57,
+    "dma50": 23370,
+    "dma50_fmt": "23,370",
+    "pct_dma50": -2.64,
+    "dma200": 24108,
+    "dma200_fmt": "24,108",
+    "pct_dma200": -5.62,
     "high52": 26373,
     "high52_fmt": "26,373",
     "low52": 22180,
     "low52_fmt": "22,180",
-    "pct_from_high52": -13.74,
-    "pos_52w": 13.6,
+    "pct_from_high52": -13.73,
+    "pos_52w": 13.7,
     "regime": "CORRECTIVE TREND"
   },
   "sector_breadth": {
@@ -154,28 +154,28 @@
       "num": "02",
       "title": "Crude and input costs",
       "bias": "Context",
-      "desc": "Latest Brent quote: 109.55 USD/bbl (-0.15%). Higher crude can raise import and input costs; lower crude can ease them. This quote alone does not establish the cause of the move."
+      "desc": "Latest Brent quote: 109.44 USD/bbl (-0.25%). Higher crude can raise import and input costs; lower crude can ease them. This quote alone does not establish the cause of the move."
     },
     {
       "num": "03",
       "title": "Market posture & breadth",
       "bias": "Context",
-      "desc": "Nifty is 13.7% below 52W high (26,373), trading 5.6% below 200-DMA (24,091). Sector participation: 3/5 sectors in green (Top: Auto +1.48%)."
+      "desc": "Nifty is 13.7% below 52W high (26,373), trading 5.6% below 200-DMA (24,108). Sector participation: 3/5 sectors in green (Top: Auto +1.48%)."
     }
   ],
-  "trader_take": "Latest available Nifty quote: 22,750 (-0.02% versus previous close). Latest Nifty reading is above the 22,739 pivot. Next calculated resistance above this reading: 22,841. Pivots are calculated references, not confirmed support or resistance. Market regime: CORRECTIVE TREND (-13.7% from 52W peak, -5.6% vs 200-DMA). Sector breadth: 3/5 sectors in green.",
+  "trader_take": "Latest available Nifty quote: 22,750 (-0.02% versus previous close). Latest Nifty reading is above the 22,631 pivot. Next calculated resistance above this reading: 22,875. Pivots are calculated references, not confirmed support or resistance. Market regime: CORRECTIVE TREND (-13.7% from 52W peak, -5.6% vs 200-DMA). Sector breadth: 3/5 sectors in green.",
   "postmarket_pillars": {
     "commodities": {
       "brent": {
         "key": "BRENT",
         "quote_date": "2026-10-27",
         "label": "Brent Crude",
-        "price": "109.55",
-        "price_raw": 109.55,
+        "price": "109.44",
+        "price_raw": 109.44,
         "prev_close": 109.71,
         "prev_close_fmt": "109.71",
-        "change": -0.16,
-        "change_pct": -0.15,
+        "change": -0.27,
+        "change_pct": -0.25,
         "direction": "down",
         "unit": "USD/bbl",
         "range_52w": {
@@ -183,20 +183,20 @@
           "high": 126.1,
           "low_fmt": "58.72",
           "high_fmt": "126.10",
-          "pos_pct": 75.4,
-          "pct_from_high": -13.12
+          "pos_pct": 75.3,
+          "pct_from_high": -13.21
         }
       },
       "wti": {
         "key": "WTI",
         "quote_date": "2026-10-27",
         "label": "WTI Crude",
-        "price": "100.04",
-        "price_raw": 100.04,
+        "price": "99.86",
+        "price_raw": 99.86,
         "prev_close": 100.79,
         "prev_close_fmt": "100.79",
-        "change": -0.75,
-        "change_pct": -0.74,
+        "change": -0.93,
+        "change_pct": -0.92,
         "direction": "down",
         "unit": "USD/bbl",
         "range_52w": {
@@ -204,41 +204,41 @@
           "high": 119.48,
           "low_fmt": "54.98",
           "high_fmt": "119.48",
-          "pos_pct": 69.9,
-          "pct_from_high": -16.27
+          "pos_pct": 69.6,
+          "pct_from_high": -16.42
         }
       },
       "natgas": {
         "key": "NATGAS",
         "quote_date": "2026-10-27",
         "label": "Natural Gas",
-        "price": "3.02",
-        "price_raw": 3.016,
+        "price": "3.05",
+        "price_raw": 3.054,
         "prev_close": 3.037,
         "prev_close_fmt": "3.04",
-        "change": -0.021,
-        "change_pct": -0.69,
-        "direction": "down",
+        "change": 0.017,
+        "change_pct": 0.56,
+        "direction": "up",
         "unit": "USD/MMBtu",
         "range_52w": {
           "low": 2.48,
           "high": 7.83,
           "low_fmt": "2.48",
           "high_fmt": "7.83",
-          "pos_pct": 10.0,
-          "pct_from_high": -61.47
+          "pos_pct": 10.7,
+          "pct_from_high": -60.98
         }
       },
       "gold": {
         "key": "GOLD",
         "quote_date": "2026-10-27",
         "label": "Gold",
-        "price": "4,071.50",
-        "price_raw": 4071.5,
+        "price": "4,076.00",
+        "price_raw": 4076.0,
         "prev_close": 4029.8999,
         "prev_close_fmt": "4,029.90",
-        "change": 41.6001,
-        "change_pct": 1.03,
+        "change": 46.1001,
+        "change_pct": 1.14,
         "direction": "up",
         "unit": "USD/oz",
         "range_52w": {
@@ -246,20 +246,20 @@
           "high": 5586.2,
           "low_fmt": "3,901.30",
           "high_fmt": "5,586.20",
-          "pos_pct": 10.1,
-          "pct_from_high": -27.12
+          "pos_pct": 10.4,
+          "pct_from_high": -27.03
         }
       },
       "silver": {
         "key": "SILVER",
         "quote_date": "2026-10-27",
         "label": "Silver",
-        "price": "54.39",
-        "price_raw": 54.39,
+        "price": "54.56",
+        "price_raw": 54.555,
         "prev_close": 53.75,
         "prev_close_fmt": "53.75",
-        "change": 0.64,
-        "change_pct": 1.19,
+        "change": 0.805,
+        "change_pct": 1.5,
         "direction": "up",
         "unit": "USD/oz",
         "range_52w": {
@@ -267,8 +267,8 @@
           "high": 121.3,
           "low_fmt": "46.33",
           "high_fmt": "121.30",
-          "pos_pct": 10.8,
-          "pct_from_high": -55.16
+          "pos_pct": 11.0,
+          "pct_from_high": -55.02
         }
       },
       "catalyst": {
@@ -287,15 +287,15 @@
         "source": ""
       },
       {
-        "title": "US Stock Market Live Updates: US stocks rise as AI momentum holds heading into key earnings, Fed decision",
-        "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/stock-market-live-updates-dow-jones-nasdaq-sp-500-coca-cola-paypal-tesla-meta-earnings-federal-reserve-fed-rate-decision-us-stocks-oil-crude-oil-treasury-yields-ai-stocks-anthropic-ipo-27th-october-2026/liveblog/135233966.cms",
+        "title": "Earnings call transcript: Cheesecake Factory beats Q3 2026 estimates, shares slip",
+        "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-cheesecake-factory-beats-q3-2026-estimates-shares-slip-93CH-4977152",
         "companies": [],
-        "why_it_matters": "Guides global liquidity dynamics, US Dollar Index (DXY) trajectory, and foreign institutional (FII) capital allocations.",
+        "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
         "source": ""
       },
       {
-        "title": "United Breweries Q2 profit jumps nearly 3x to ₹134.81 cr on volume growth",
-        "url": "https://www.business-standard.com/companies/quarterly-results/united-breweries-q2-profit-jumps-nearly-3x-to-134-81-cr-on-volume-growth-126102701745_1.html",
+        "title": "Earnings call transcript: Enphase Energy Q3 2026 profit miss sends shares lower",
+        "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-enphase-energy-q3-2026-profit-miss-sends-shares-lower-93CH-4977145",
         "companies": [],
         "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
         "source": ""
@@ -304,18 +304,18 @@
     "global_macro": {
       "overnight": {
         "SP500": {
-          "val": "7,720",
-          "pct": 0.56,
+          "val": "7,723",
+          "pct": 0.6,
           "date": "2026-10-27"
         },
         "NASDAQ": {
-          "val": "26,461",
-          "pct": 1.12,
+          "val": "26,478",
+          "pct": 1.18,
           "date": "2026-10-27"
         },
         "US10Y": {
           "val": "4.99%",
-          "pct": 0.08,
+          "pct": 0.14,
           "date": "2026-10-27"
         }
       },
