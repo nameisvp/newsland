@@ -1,15 +1,15 @@
 {
-  "updated": "2026-10-28T07:33:55.682159+00:00",
+  "updated": "2026-10-28T14:26:58.983648+00:00",
   "schema_version": 2,
   "is_live": false,
-  "quote_updated": "2026-10-28T07:33:55.681735+00:00",
+  "quote_updated": "2026-10-28T14:26:58.983289+00:00",
   "quote_date": "2026-10-28",
   "quote_source": "yfinance",
   "live_bias_label": "LATEST AVAILABLE QUOTE",
   "bias_label": "LATEST AVAILABLE QUOTE",
-  "live_nifty_price": "22,738",
-  "live_pts": -12,
-  "live_pct": -0.05,
+  "live_nifty_price": "22,699",
+  "live_pts": -51,
+  "live_pct": -0.22,
   "nifty_prev_close": "22,750",
   "fii_dii": {
     "date": "08 Oct 2026 (Prev Close)",
@@ -19,38 +19,38 @@
     "trend": "FII Selling / DII Absorbing"
   },
   "vix": {
-    "price": "16.26",
-    "change": "-0.10",
-    "change_pct": "-0.61%",
+    "price": "16.25",
+    "change": "-0.12",
+    "change_pct": "-0.70%",
     "regime": "Normal Volatility"
   },
   "overnight": {
     "SP500": {
-      "val": "7,723",
-      "pct": 0.6,
-      "date": "2026-10-27"
+      "val": "7,731",
+      "pct": 0.11,
+      "date": "2026-10-28"
     },
     "NASDAQ": {
-      "val": "26,478",
-      "pct": 1.18,
-      "date": "2026-10-27"
+      "val": "26,464",
+      "pct": -0.05,
+      "date": "2026-10-28"
     },
     "US10Y": {
-      "val": "4.99%",
-      "pct": 0.14,
-      "date": "2026-10-27"
+      "val": "5.01%",
+      "pct": 0.36,
+      "date": "2026-10-28"
     }
   },
   "brent": {
     "key": "BRENT",
     "quote_date": "2026-10-28",
     "label": "Brent Crude",
-    "price": "111.38",
-    "price_raw": 111.38,
-    "prev_close": 110.85,
-    "prev_close_fmt": "110.85",
-    "change": 0.53,
-    "change_pct": 0.48,
+    "price": "111.51",
+    "price_raw": 111.51,
+    "prev_close": 110.84,
+    "prev_close_fmt": "110.84",
+    "change": 0.67,
+    "change_pct": 0.6,
     "direction": "up",
     "unit": "USD/bbl",
     "range_52w": {
@@ -58,20 +58,20 @@
       "high": 126.1,
       "low_fmt": "58.72",
       "high_fmt": "126.10",
-      "pos_pct": 78.2,
-      "pct_from_high": -11.67
+      "pos_pct": 78.3,
+      "pct_from_high": -11.57
     }
   },
   "usdinr": {
     "key": "USDINR",
     "quote_date": "2026-10-28",
     "label": "INR / USD",
-    "price": "95.16",
-    "price_raw": 95.16,
+    "price": "95.21",
+    "price_raw": 95.21,
     "prev_close": 95.105,
     "prev_close_fmt": "95.11",
-    "change": 0.055,
-    "change_pct": 0.06,
+    "change": 0.105,
+    "change_pct": 0.11,
     "direction": "up",
     "unit": "",
     "range_52w": {
@@ -79,69 +79,69 @@
       "high": 97.05,
       "low_fmt": "85.86",
       "high_fmt": "97.05",
-      "pos_pct": 83.1,
-      "pct_from_high": -1.95
+      "pos_pct": 83.5,
+      "pct_from_high": -1.9
     }
   },
   "pivots": {
     "nifty": {
-      "pivot": 22739,
-      "s1": 22648,
-      "r1": 22841,
-      "s2": 22546,
-      "r2": 22932,
-      "date": "2026-10-27"
+      "pivot": 22658,
+      "s1": 22538,
+      "r1": 22819,
+      "s2": 22378,
+      "r2": 22939,
+      "date": "2026-10-28"
     },
     "banknifty": {
-      "pivot": 54193,
-      "s1": 53733,
-      "r1": 54436,
-      "s2": 53491,
-      "r2": 54896,
-      "date": "2026-10-27"
+      "pivot": 54111,
+      "s1": 53782,
+      "r1": 54596,
+      "s2": 53297,
+      "r2": 54925,
+      "date": "2026-10-28"
     }
   },
   "posture": {
-    "dma50": 23305,
-    "dma50_fmt": "23,305",
-    "pct_dma50": -2.43,
-    "dma200": 24074,
-    "dma200_fmt": "24,074",
-    "pct_dma200": -5.55,
+    "dma50": 23304,
+    "dma50_fmt": "23,304",
+    "pct_dma50": -2.6,
+    "dma200": 24073,
+    "dma200_fmt": "24,073",
+    "pct_dma200": -5.71,
     "high52": 26373,
     "high52_fmt": "26,373",
     "low52": 22180,
     "low52_fmt": "22,180",
-    "pct_from_high52": -13.78,
-    "pos_52w": 13.3,
+    "pct_from_high52": -13.93,
+    "pos_52w": 12.4,
     "regime": "CORRECTIVE TREND"
   },
   "sector_breadth": {
-    "advances": 3,
+    "advances": 2,
     "total": 5,
     "sectors": [
       {
         "name": "Auto",
-        "pct": 1.31
+        "pct": 1.45
       },
       {
         "name": "Bank",
-        "pct": 0.67
+        "pct": 0.54
       },
       {
         "name": "Metal",
-        "pct": 0.32
+        "pct": -0.31
       },
       {
         "name": "FMCG",
-        "pct": -1.01
+        "pct": -0.55
       },
       {
         "name": "IT",
-        "pct": -2.17
+        "pct": -1.98
       }
     ],
-    "summary": "3/5 sectors in green"
+    "summary": "2/5 sectors in green"
   },
   "session_drivers": [
     {
@@ -154,28 +154,28 @@
       "num": "02",
       "title": "Crude and input costs",
       "bias": "Context",
-      "desc": "Latest Brent quote: 111.38 USD/bbl (+0.48%). Higher crude can raise import and input costs; lower crude can ease them. This quote alone does not establish the cause of the move."
+      "desc": "Latest Brent quote: 111.51 USD/bbl (+0.60%). Higher crude can raise import and input costs; lower crude can ease them. This quote alone does not establish the cause of the move."
     },
     {
       "num": "03",
       "title": "Market posture & breadth",
       "bias": "Context",
-      "desc": "Nifty is 13.8% below 52W high (26,373), trading 5.5% below 200-DMA (24,074). Sector participation: 3/5 sectors in green (Top: Auto +1.31%)."
+      "desc": "Nifty is 13.9% below 52W high (26,373), trading 5.7% below 200-DMA (24,073). Sector participation: 2/5 sectors in green (Top: Auto +1.45%)."
     }
   ],
-  "trader_take": "Latest available Nifty quote: 22,738 (-0.05% versus previous close). Latest Nifty reading is below the 22,739 pivot. Next calculated resistance above this reading: 22,841. Pivots are calculated references, not confirmed support or resistance. Market regime: CORRECTIVE TREND (-13.8% from 52W peak, -5.5% vs 200-DMA). Sector breadth: 3/5 sectors in green.",
+  "trader_take": "Latest available Nifty quote: 22,699 (-0.22% versus previous close). Latest Nifty reading is above the 22,658 pivot. Next calculated resistance above this reading: 22,819. Pivots are calculated references, not confirmed support or resistance. Market regime: CORRECTIVE TREND (-13.9% from 52W peak, -5.7% vs 200-DMA). Sector breadth: 2/5 sectors in green.",
   "postmarket_pillars": {
     "commodities": {
       "brent": {
         "key": "BRENT",
         "quote_date": "2026-10-28",
         "label": "Brent Crude",
-        "price": "111.38",
-        "price_raw": 111.38,
-        "prev_close": 110.85,
-        "prev_close_fmt": "110.85",
-        "change": 0.53,
-        "change_pct": 0.48,
+        "price": "111.51",
+        "price_raw": 111.51,
+        "prev_close": 110.84,
+        "prev_close_fmt": "110.84",
+        "change": 0.67,
+        "change_pct": 0.6,
         "direction": "up",
         "unit": "USD/bbl",
         "range_52w": {
@@ -183,20 +183,20 @@
           "high": 126.1,
           "low_fmt": "58.72",
           "high_fmt": "126.10",
-          "pos_pct": 78.2,
-          "pct_from_high": -11.67
+          "pos_pct": 78.3,
+          "pct_from_high": -11.57
         }
       },
       "wti": {
         "key": "WTI",
         "quote_date": "2026-10-28",
         "label": "WTI Crude",
-        "price": "101.91",
-        "price_raw": 101.91,
+        "price": "102.16",
+        "price_raw": 102.16,
         "prev_close": 101.34,
         "prev_close_fmt": "101.34",
-        "change": 0.57,
-        "change_pct": 0.56,
+        "change": 0.82,
+        "change_pct": 0.81,
         "direction": "up",
         "unit": "USD/bbl",
         "range_52w": {
@@ -204,20 +204,20 @@
           "high": 119.48,
           "low_fmt": "54.98",
           "high_fmt": "119.48",
-          "pos_pct": 72.8,
-          "pct_from_high": -14.71
+          "pos_pct": 73.1,
+          "pct_from_high": -14.5
         }
       },
       "natgas": {
         "key": "NATGAS",
         "quote_date": "2026-10-28",
         "label": "Natural Gas",
-        "price": "3.07",
-        "price_raw": 3.065,
+        "price": "3.06",
+        "price_raw": 3.064,
         "prev_close": 3.064,
         "prev_close_fmt": "3.06",
-        "change": 0.001,
-        "change_pct": 0.03,
+        "change": 0.0,
+        "change_pct": 0.0,
         "direction": "up",
         "unit": "USD/MMBtu",
         "range_52w": {
@@ -226,40 +226,40 @@
           "low_fmt": "2.48",
           "high_fmt": "7.83",
           "pos_pct": 10.9,
-          "pct_from_high": -60.84
+          "pct_from_high": -60.85
         }
       },
       "gold": {
         "key": "GOLD",
         "quote_date": "2026-10-28",
         "label": "Gold",
-        "price": "4,047.40",
-        "price_raw": 4047.3999,
+        "price": "4,060.90",
+        "price_raw": 4060.8999,
         "prev_close": 4056.3,
         "prev_close_fmt": "4,056.30",
-        "change": -8.9001,
-        "change_pct": -0.22,
-        "direction": "down",
+        "change": 4.5999,
+        "change_pct": 0.11,
+        "direction": "up",
         "unit": "USD/oz",
         "range_52w": {
           "low": 3925.1,
           "high": 5586.2,
           "low_fmt": "3,925.10",
           "high_fmt": "5,586.20",
-          "pos_pct": 7.4,
-          "pct_from_high": -27.55
+          "pos_pct": 8.2,
+          "pct_from_high": -27.3
         }
       },
       "silver": {
         "key": "SILVER",
         "quote_date": "2026-10-28",
         "label": "Silver",
-        "price": "53.91",
-        "price_raw": 53.91,
+        "price": "53.87",
+        "price_raw": 53.865,
         "prev_close": 54.11,
         "prev_close_fmt": "54.11",
-        "change": -0.2,
-        "change_pct": -0.37,
+        "change": -0.245,
+        "change_pct": -0.45,
         "direction": "down",
         "unit": "USD/oz",
         "range_52w": {
@@ -268,20 +268,20 @@
           "low_fmt": "46.81",
           "high_fmt": "121.30",
           "pos_pct": 9.5,
-          "pct_from_high": -55.56
+          "pct_from_high": -55.59
         }
       },
       "catalyst": {
-        "title": "US Fed Meeting LIVE: Expectations, time, where to watch Kevin Warsh's speech? How rate decision may impact gold, markets",
-        "url": "https://www.livemint.com/market/stock-market-news/us-fed-meeting-live-expectations-time-where-to-watch-kevin-warshs-speech-how-rate-decision-may-impact-gold-markets-11793157523493.html",
-        "why_it_matters": "Guides global liquidity dynamics, US Dollar Index (DXY) trajectory, and foreign institutional (FII) capital allocations.",
+        "title": "Oil prices rise as U.S. reportedly tells Gulf countries to prepare for Iran strikes after midterm elections",
+        "url": "https://www.cnbc.com/2026/10/28/oil-price-today-wti-brent-hormuz.html",
+        "why_it_matters": "Rising crude can increase India’s import bill and input costs, while supporting upstream oil realizations.",
         "source": ""
       }
     },
     "earnings": [
       {
-        "title": "Adani Ports Q2 Results: Net profit jumps 17% YoY to Rs 3,622 crore; revenue up 24%",
-        "url": "https://economictimes.indiatimes.com/markets/stocks/earnings/adani-ports-q2-results-net-profit-jumps-17-yoy-to-rs-3622-crore-revenue-up-24/articleshow/135256370.cms",
+        "title": "Adani Ports Q2 profit rises 18% to ₹3,682 crore, raises FY27 guidance",
+        "url": "https://www.business-standard.com/companies/quarterly-results/adani-ports-q2-profit-rises-18-to-3-682-crore-raises-fy27-guidance-126102801519_1.html",
         "companies": [
           {
             "name": "Adani",
@@ -292,15 +292,20 @@
         "source": ""
       },
       {
-        "title": "BNP Paribas Q3 profit rises 14% to beat estimates; announces €1.3 billion buyback",
-        "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/bnp-paribas-q3-profit-rises-14-to-beat-estimates-announces-1-3-billion-buyback/articleshow/135255907.cms",
-        "companies": [],
+        "title": "Vedanta Aluminium Q2 Results: Profit doubles to Rs 6,187 crore, revenue jumps 41%",
+        "url": "https://economictimes.indiatimes.com/markets/stocks/earnings/vedanta-aluminium-q2-results-profit-doubles-to-rs-6187-crore-revenue-jumps-41/articleshow/135268184.cms",
+        "companies": [
+          {
+            "name": "Vedanta",
+            "symbol": "vedanta"
+          }
+        ],
         "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
         "source": ""
       },
       {
-        "title": "Tata Capital shares jump 5% post Q2 show; analysts say margin revival key",
-        "url": "https://www.business-standard.com/markets/news/tata-capital-share-price-jump-5-post-q2-show-analysts-say-margin-revival-key-126102800574_1.html",
+        "title": "Bandhan Bank Q2 profit jumps 5.6 times as asset quality improves",
+        "url": "https://economictimes.indiatimes.com/markets/stocks/earnings/bandhan-bank-q2-profit-jumps-5-6-times-as-asset-quality-improves/articleshow/135265654.cms",
         "companies": [],
         "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
         "source": ""
@@ -309,24 +314,24 @@
     "global_macro": {
       "overnight": {
         "SP500": {
-          "val": "7,723",
-          "pct": 0.6,
-          "date": "2026-10-27"
+          "val": "7,731",
+          "pct": 0.11,
+          "date": "2026-10-28"
         },
         "NASDAQ": {
-          "val": "26,478",
-          "pct": 1.18,
-          "date": "2026-10-27"
+          "val": "26,464",
+          "pct": -0.05,
+          "date": "2026-10-28"
         },
         "US10Y": {
-          "val": "4.99%",
-          "pct": 0.14,
-          "date": "2026-10-27"
+          "val": "5.01%",
+          "pct": 0.36,
+          "date": "2026-10-28"
         }
       },
       "catalyst": {
-        "title": "US Fed Meeting LIVE: Expectations, time, where to watch Kevin Warsh's speech? How rate decision may impact gold, markets",
-        "url": "https://www.livemint.com/market/stock-market-news/us-fed-meeting-live-expectations-time-where-to-watch-kevin-warshs-speech-how-rate-decision-may-impact-gold-markets-11793157523493.html",
+        "title": "FED Meeting Live | Dow Jones Futures | US Stock Market Live: Nasdaq futures rise as SK Hynix profit surge lifts chip stocks",
+        "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/fed-meeting-live-updates-dow-jones-nasdaq-sp-500-us-stock-market-today-kevin-warsh-fomc-meet-rate-cut-news-28th-oct/liveblog/135265171.cms",
         "why_it_matters": "Guides global liquidity dynamics, US Dollar Index (DXY) trajectory, and foreign institutional (FII) capital allocations.",
         "source": ""
       }
