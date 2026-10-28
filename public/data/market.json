@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-28T19:48:39.369823+00:00",
+  "updated": "2026-10-28T23:39:38.106075+00:00",
   "tickers": [
     {
       "key": "SENSEX",
@@ -68,12 +68,12 @@
       "key": "GOLD",
       "quote_date": "2026-10-28",
       "label": "Gold",
-      "price": "4,066.20",
-      "price_raw": 4066.2,
+      "price": "4,064.70",
+      "price_raw": 4064.7,
       "prev_close": 4056.3,
       "prev_close_fmt": "4,056.30",
-      "change": 9.8999,
-      "change_pct": 0.24,
+      "change": 8.3999,
+      "change_pct": 0.21,
       "direction": "up",
       "unit": "USD/oz",
       "range_52w": {
@@ -81,20 +81,20 @@
         "high": 5586.2,
         "low_fmt": "3,925.10",
         "high_fmt": "5,586.20",
-        "pos_pct": 8.5,
-        "pct_from_high": -27.21
+        "pos_pct": 8.4,
+        "pct_from_high": -27.24
       }
     },
     {
       "key": "SILVER",
       "quote_date": "2026-10-28",
       "label": "Silver",
-      "price": "53.76",
-      "price_raw": 53.755,
+      "price": "53.92",
+      "price_raw": 53.92,
       "prev_close": 54.11,
       "prev_close_fmt": "54.11",
-      "change": -0.355,
-      "change_pct": -0.66,
+      "change": -0.19,
+      "change_pct": -0.35,
       "direction": "down",
       "unit": "USD/oz",
       "range_52w": {
@@ -102,41 +102,41 @@
         "high": 121.3,
         "low_fmt": "46.81",
         "high_fmt": "121.30",
-        "pos_pct": 9.3,
-        "pct_from_high": -55.68
+        "pos_pct": 9.6,
+        "pct_from_high": -55.55
       }
     },
     {
       "key": "BRENT",
       "quote_date": "2026-10-28",
       "label": "Brent Crude",
-      "price": "111.70",
-      "price_raw": 111.7,
+      "price": "110.59",
+      "price_raw": 110.59,
       "prev_close": 110.84,
       "prev_close_fmt": "110.84",
-      "change": 0.86,
-      "change_pct": 0.78,
-      "direction": "up",
+      "change": -0.25,
+      "change_pct": -0.23,
+      "direction": "down",
       "unit": "USD/bbl",
       "range_52w": {
         "low": 58.72,
         "high": 126.1,
         "low_fmt": "58.72",
         "high_fmt": "126.10",
-        "pos_pct": 78.6,
-        "pct_from_high": -11.42
+        "pos_pct": 77.0,
+        "pct_from_high": -12.3
       }
     },
     {
       "key": "WTI",
       "quote_date": "2026-10-28",
       "label": "WTI Crude",
-      "price": "102.85",
-      "price_raw": 102.85,
+      "price": "101.97",
+      "price_raw": 101.97,
       "prev_close": 101.34,
       "prev_close_fmt": "101.34",
-      "change": 1.51,
-      "change_pct": 1.49,
+      "change": 0.63,
+      "change_pct": 0.62,
       "direction": "up",
       "unit": "USD/bbl",
       "range_52w": {
@@ -144,20 +144,20 @@
         "high": 119.48,
         "low_fmt": "54.98",
         "high_fmt": "119.48",
-        "pos_pct": 74.2,
-        "pct_from_high": -13.92
+        "pos_pct": 72.9,
+        "pct_from_high": -14.66
       }
     },
     {
       "key": "NATGAS",
       "quote_date": "2026-10-28",
       "label": "Natural Gas",
-      "price": "3.03",
-      "price_raw": 3.033,
+      "price": "3.01",
+      "price_raw": 3.009,
       "prev_close": 3.064,
       "prev_close_fmt": "3.06",
-      "change": -0.031,
-      "change_pct": -1.01,
+      "change": -0.055,
+      "change_pct": -1.8,
       "direction": "down",
       "unit": "USD/MMBtu",
       "range_52w": {
@@ -165,8 +165,8 @@
         "high": 7.83,
         "low_fmt": "2.48",
         "high_fmt": "7.83",
-        "pos_pct": 10.3,
-        "pct_from_high": -61.25
+        "pos_pct": 9.8,
+        "pct_from_high": -61.56
       }
     },
     {
