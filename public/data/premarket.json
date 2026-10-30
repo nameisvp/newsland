@@ -1,8 +1,8 @@
 {
-  "updated": "2026-10-29T21:49:22.002368+00:00",
+  "updated": "2026-10-30T01:23:18.339673+00:00",
   "schema_version": 2,
   "is_live": false,
-  "quote_updated": "2026-10-29T21:49:22.001935+00:00",
+  "quote_updated": "2026-10-30T01:23:18.339090+00:00",
   "quote_date": "2026-10-28",
   "quote_source": "yfinance",
   "live_bias_label": "LATEST AVAILABLE QUOTE",
@@ -45,12 +45,12 @@
     "key": "BRENT",
     "quote_date": "2026-10-29",
     "label": "Brent Crude",
-    "price": "111.54",
-    "price_raw": 111.54,
+    "price": "111.57",
+    "price_raw": 111.57,
     "prev_close": 110.21,
     "prev_close_fmt": "110.21",
-    "change": 1.33,
-    "change_pct": 1.21,
+    "change": 1.36,
+    "change_pct": 1.23,
     "direction": "up",
     "unit": "USD/bbl",
     "range_52w": {
@@ -59,12 +59,12 @@
       "low_fmt": "58.72",
       "high_fmt": "126.10",
       "pos_pct": 78.4,
-      "pct_from_high": -11.55
+      "pct_from_high": -11.52
     }
   },
   "usdinr": {
     "key": "USDINR",
-    "quote_date": "2026-10-29",
+    "quote_date": "2026-10-30",
     "label": "INR / USD",
     "price": "95.21",
     "price_raw": 95.21,
@@ -154,7 +154,7 @@
       "num": "02",
       "title": "Crude and input costs",
       "bias": "Context",
-      "desc": "Latest Brent quote: 111.54 USD/bbl (+1.21%). Higher crude can raise import and input costs; lower crude can ease them. This quote alone does not establish the cause of the move."
+      "desc": "Latest Brent quote: 111.57 USD/bbl (+1.23%). Higher crude can raise import and input costs; lower crude can ease them. This quote alone does not establish the cause of the move."
     },
     {
       "num": "03",
@@ -170,12 +170,12 @@
         "key": "BRENT",
         "quote_date": "2026-10-29",
         "label": "Brent Crude",
-        "price": "111.54",
-        "price_raw": 111.54,
+        "price": "111.57",
+        "price_raw": 111.57,
         "prev_close": 110.21,
         "prev_close_fmt": "110.21",
-        "change": 1.33,
-        "change_pct": 1.21,
+        "change": 1.36,
+        "change_pct": 1.23,
         "direction": "up",
         "unit": "USD/bbl",
         "range_52w": {
@@ -184,19 +184,19 @@
           "low_fmt": "58.72",
           "high_fmt": "126.10",
           "pos_pct": 78.4,
-          "pct_from_high": -11.55
+          "pct_from_high": -11.52
         }
       },
       "wti": {
         "key": "WTI",
         "quote_date": "2026-10-29",
         "label": "WTI Crude",
-        "price": "102.86",
-        "price_raw": 102.86,
+        "price": "102.83",
+        "price_raw": 102.83,
         "prev_close": 101.42,
         "prev_close_fmt": "101.42",
-        "change": 1.44,
-        "change_pct": 1.42,
+        "change": 1.41,
+        "change_pct": 1.39,
         "direction": "up",
         "unit": "USD/bbl",
         "range_52w": {
@@ -205,7 +205,7 @@
           "low_fmt": "54.98",
           "high_fmt": "119.48",
           "pos_pct": 74.2,
-          "pct_from_high": -13.91
+          "pct_from_high": -13.94
         }
       },
       "natgas": {
@@ -213,11 +213,11 @@
         "quote_date": "2026-10-29",
         "label": "Natural Gas",
         "price": "2.90",
-        "price_raw": 2.905,
+        "price_raw": 2.897,
         "prev_close": 3.028,
         "prev_close_fmt": "3.03",
-        "change": -0.123,
-        "change_pct": -4.06,
+        "change": -0.131,
+        "change_pct": -4.33,
         "direction": "down",
         "unit": "USD/MMBtu",
         "range_52w": {
@@ -225,20 +225,20 @@
           "high": 7.83,
           "low_fmt": "2.48",
           "high_fmt": "7.83",
-          "pos_pct": 7.9,
-          "pct_from_high": -62.88
+          "pos_pct": 7.7,
+          "pct_from_high": -62.99
         }
       },
       "gold": {
         "key": "GOLD",
         "quote_date": "2026-10-29",
         "label": "Gold",
-        "price": "4,033.30",
-        "price_raw": 4033.3,
+        "price": "4,009.90",
+        "price_raw": 4009.8999,
         "prev_close": 4051.1001,
         "prev_close_fmt": "4,051.10",
-        "change": -17.8,
-        "change_pct": -0.44,
+        "change": -41.2002,
+        "change_pct": -1.02,
         "direction": "down",
         "unit": "USD/oz",
         "range_52w": {
@@ -246,20 +246,20 @@
           "high": 5586.2,
           "low_fmt": "3,925.10",
           "high_fmt": "5,586.20",
-          "pos_pct": 6.5,
-          "pct_from_high": -27.8
+          "pos_pct": 5.1,
+          "pct_from_high": -28.22
         }
       },
       "silver": {
         "key": "SILVER",
         "quote_date": "2026-10-29",
         "label": "Silver",
-        "price": "52.22",
-        "price_raw": 52.22,
+        "price": "51.21",
+        "price_raw": 51.21,
         "prev_close": 53.28,
         "prev_close_fmt": "53.28",
-        "change": -1.06,
-        "change_pct": -1.99,
+        "change": -2.07,
+        "change_pct": -3.89,
         "direction": "down",
         "unit": "USD/oz",
         "range_52w": {
@@ -267,18 +267,25 @@
           "high": 121.3,
           "low_fmt": "46.81",
           "high_fmt": "121.30",
-          "pos_pct": 7.3,
-          "pct_from_high": -56.95
+          "pos_pct": 5.9,
+          "pct_from_high": -57.78
         }
       },
       "catalyst": {
-        "title": "Shanghai Exchange Halts Duty-Free Metal Delivery Against Futures",
-        "url": "https://www.livemint.com/market/shanghai-exchange-halts-duty-free-metal-delivery-against-futures-11793306332325.html",
-        "why_it_matters": "Alters market structure, compliance mandates, capital allocation rules, and retail derivative trading liquidity.",
+        "title": "Indian stocks see weakest market breadth in seven months as oil prices, bond yields weigh",
+        "url": "https://www.livemint.com/market/stock-market-news/bse-advance-decline-ratio-fii-outflows-sensex-11793256301440.html",
+        "why_it_matters": "Crude affects India’s import bill and energy-sensitive sectors; the headline does not establish a clear price direction.",
         "source": ""
       }
     },
     "earnings": [
+      {
+        "title": "Kotak Bank shares gain 30% since April as earnings outlook brightens",
+        "url": "https://economictimes.indiatimes.com/markets/stocks/news/kotak-mahindra-bank-shares-soar-to-record-high-amid-improving-growth-prospects-earnings-expectations/articleshow/135336078.cms",
+        "companies": [],
+        "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
+        "source": ""
+      },
       {
         "title": "US Markets Today: US stocks end lower as Alphabet revenue miss revives AI capex jitters",
         "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/us-markets-today-us-stocks-end-lower-as-alphabet-revenue-miss-revives-ai-capex-jitters/articleshow/135331051.cms",
@@ -287,21 +294,9 @@
         "source": ""
       },
       {
-        "title": "Milky Mist sees limited impact from inflation, El Niño as revenue grows 42%",
-        "url": "https://www.livemint.com/companies/milky-mist-sees-limited-impact-from-inflation-el-ni-o-as-revenue-grows-42-dairy-products-11793285052310.html",
+        "title": "Global Market Today: Asian stocks slide as tech earnings disappoint, AI fears mount",
+        "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/global-market-today/articleshow/135337523.cms",
         "companies": [],
-        "why_it_matters": "Key determinant of central bank interest rate paths; elevated prints restrict policy easing and compress real yields.",
-        "source": ""
-      },
-      {
-        "title": "Jio Platforms first Q2 results after bumper listing: check date; Reliance firm’s earnings in focus; key numbers to watch",
-        "url": "https://www.livemint.com/market/stock-market-news/jio-platforms-first-q2-results-after-bumper-listing-check-date-reliance-firm-s-earnings-in-focus-key-numbers-to-watch-11793290112398.html",
-        "companies": [
-          {
-            "name": "Reliance",
-            "symbol": "reliance"
-          }
-        ],
         "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
         "source": ""
       }
@@ -325,9 +320,9 @@
         }
       },
       "catalyst": {
-        "title": "Milky Mist sees limited impact from inflation, El Niño as revenue grows 42%",
-        "url": "https://www.livemint.com/companies/milky-mist-sees-limited-impact-from-inflation-el-ni-o-as-revenue-grows-42-dairy-products-11793285052310.html",
-        "why_it_matters": "Key determinant of central bank interest rate paths; elevated prints restrict policy easing and compress real yields.",
+        "title": "G-Sec 10-year yields come down 5 bps to 7.39% on Fed signals",
+        "url": "https://economictimes.indiatimes.com/markets/bonds/g-sec-10-year-yields-come-down-5-bps-to-7-39-on-fed-signals/articleshow/135335834.cms",
+        "why_it_matters": "Guides global liquidity dynamics, US Dollar Index (DXY) trajectory, and foreign institutional (FII) capital allocations.",
         "source": ""
       }
     }
