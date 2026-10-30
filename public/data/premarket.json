@@ -1,8 +1,8 @@
 {
-  "updated": "2026-10-30T19:45:17.467419+00:00",
+  "updated": "2026-10-30T23:18:47.245939+00:00",
   "schema_version": 2,
   "is_live": false,
-  "quote_updated": "2026-10-30T19:45:17.466988+00:00",
+  "quote_updated": "2026-10-30T23:18:47.245562+00:00",
   "quote_date": "2026-10-29",
   "quote_source": "yfinance",
   "live_bias_label": "LATEST AVAILABLE QUOTE",
@@ -26,18 +26,18 @@
   },
   "overnight": {
     "SP500": {
-      "val": "7,557",
-      "pct": -2.11,
+      "val": "7,580",
+      "pct": -1.82,
       "date": "2026-10-30"
     },
     "NASDAQ": {
-      "val": "25,348",
-      "pct": -3.2,
+      "val": "25,437",
+      "pct": -2.86,
       "date": "2026-10-30"
     },
     "US10Y": {
-      "val": "4.92%",
-      "pct": -1.36,
+      "val": "4.93%",
+      "pct": -1.2,
       "date": "2026-10-30"
     }
   },
@@ -45,12 +45,12 @@
     "key": "BRENT",
     "quote_date": "2026-10-30",
     "label": "Brent Crude",
-    "price": "112.94",
-    "price_raw": 112.94,
+    "price": "112.33",
+    "price_raw": 112.33,
     "prev_close": 112.07,
     "prev_close_fmt": "112.07",
-    "change": 0.87,
-    "change_pct": 0.78,
+    "change": 0.26,
+    "change_pct": 0.23,
     "direction": "up",
     "unit": "USD/bbl",
     "range_52w": {
@@ -58,8 +58,8 @@
       "high": 126.1,
       "low_fmt": "58.72",
       "high_fmt": "126.10",
-      "pos_pct": 80.5,
-      "pct_from_high": -10.44
+      "pos_pct": 79.6,
+      "pct_from_high": -10.92
     }
   },
   "usdinr": {
@@ -154,7 +154,7 @@
       "num": "02",
       "title": "Crude and input costs",
       "bias": "Context",
-      "desc": "Latest Brent quote: 112.94 USD/bbl (+0.78%). Higher crude can raise import and input costs; lower crude can ease them. This quote alone does not establish the cause of the move."
+      "desc": "Latest Brent quote: 112.33 USD/bbl (+0.23%). Higher crude can raise import and input costs; lower crude can ease them. This quote alone does not establish the cause of the move."
     },
     {
       "num": "03",
@@ -170,12 +170,12 @@
         "key": "BRENT",
         "quote_date": "2026-10-30",
         "label": "Brent Crude",
-        "price": "112.94",
-        "price_raw": 112.94,
+        "price": "112.33",
+        "price_raw": 112.33,
         "prev_close": 112.07,
         "prev_close_fmt": "112.07",
-        "change": 0.87,
-        "change_pct": 0.78,
+        "change": 0.26,
+        "change_pct": 0.23,
         "direction": "up",
         "unit": "USD/bbl",
         "range_52w": {
@@ -183,62 +183,62 @@
           "high": 126.1,
           "low_fmt": "58.72",
           "high_fmt": "126.10",
-          "pos_pct": 80.5,
-          "pct_from_high": -10.44
+          "pos_pct": 79.6,
+          "pct_from_high": -10.92
         }
       },
       "wti": {
         "key": "WTI",
         "quote_date": "2026-10-30",
         "label": "WTI Crude",
-        "price": "104.40",
-        "price_raw": 104.4,
+        "price": "102.95",
+        "price_raw": 102.95,
         "prev_close": 103.17,
         "prev_close_fmt": "103.17",
-        "change": 1.23,
-        "change_pct": 1.19,
-        "direction": "up",
+        "change": -0.22,
+        "change_pct": -0.21,
+        "direction": "down",
         "unit": "USD/bbl",
         "range_52w": {
           "low": 54.98,
           "high": 119.48,
           "low_fmt": "54.98",
           "high_fmt": "119.48",
-          "pos_pct": 76.6,
-          "pct_from_high": -12.62
+          "pos_pct": 74.4,
+          "pct_from_high": -13.83
         }
       },
       "natgas": {
         "key": "NATGAS",
         "quote_date": "2026-10-30",
         "label": "Natural Gas",
-        "price": "2.90",
-        "price_raw": 2.903,
+        "price": "2.88",
+        "price_raw": 2.883,
         "prev_close": 2.897,
         "prev_close_fmt": "2.90",
-        "change": 0.006,
-        "change_pct": 0.21,
-        "direction": "up",
+        "change": -0.014,
+        "change_pct": -0.48,
+        "direction": "down",
         "unit": "USD/MMBtu",
         "range_52w": {
           "low": 2.48,
           "high": 7.83,
           "low_fmt": "2.48",
           "high_fmt": "7.83",
-          "pos_pct": 7.9,
-          "pct_from_high": -62.91
+          "pos_pct": 7.5,
+          "pct_from_high": -63.17
         }
       },
       "gold": {
         "key": "GOLD",
         "quote_date": "2026-10-30",
         "label": "Gold",
-        "price": "3,888.70",
-        "price_raw": 3888.7,
+        "price": "3,884.90",
+        "price_raw": 3884.8999,
         "prev_close": 4004.0,
         "prev_close_fmt": "4,004.00",
-        "change": -115.3,
-        "change_pct": -2.88,
+        "change": -119.1001,
+        "change_pct": -2.97,
         "direction": "down",
         "unit": "USD/oz",
         "range_52w": {
@@ -247,19 +247,19 @@
           "low_fmt": "3,935.70",
           "high_fmt": "5,586.20",
           "pos_pct": 0.0,
-          "pct_from_high": -30.39
+          "pct_from_high": -30.46
         }
       },
       "silver": {
         "key": "SILVER",
         "quote_date": "2026-10-30",
         "label": "Silver",
-        "price": "49.00",
-        "price_raw": 49.0,
+        "price": "49.13",
+        "price_raw": 49.135,
         "prev_close": 51.335,
         "prev_close_fmt": "51.33",
-        "change": -2.335,
-        "change_pct": -4.55,
+        "change": -2.2,
+        "change_pct": -4.29,
         "direction": "down",
         "unit": "USD/oz",
         "range_52w": {
@@ -267,8 +267,8 @@
           "high": 121.3,
           "low_fmt": "46.81",
           "high_fmt": "121.30",
-          "pos_pct": 2.9,
-          "pct_from_high": -59.6
+          "pos_pct": 3.1,
+          "pct_from_high": -59.49
         }
       },
       "catalyst": {
@@ -287,9 +287,14 @@
         "source": ""
       },
       {
-        "title": "Reddit shares crash 29% after weak Q4 outlook, Google search traffic concerns; set for worst-ever 1-day fall",
-        "url": "https://www.livemint.com/market/stock-market-news/reddit-shares-crash-29-after-weak-q4-outlook-google-search-traffic-concerns-set-for-worst-ever-1-day-fall-11793378522940.html",
-        "companies": [],
+        "title": "Sun Pharma Q2 profit falls 36% as litigation costs hit earnings",
+        "url": "https://economictimes.indiatimes.com/markets/stocks/earnings/sun-pharma-q2-profit-falls-36-as-litigation-costs-hit-earnings/articleshow/135370217.cms",
+        "companies": [
+          {
+            "name": "Sun Pharma",
+            "symbol": "sun pharma"
+          }
+        ],
         "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
         "source": ""
       },
@@ -304,24 +309,24 @@
     "global_macro": {
       "overnight": {
         "SP500": {
-          "val": "7,557",
-          "pct": -2.11,
+          "val": "7,580",
+          "pct": -1.82,
           "date": "2026-10-30"
         },
         "NASDAQ": {
-          "val": "25,348",
-          "pct": -3.2,
+          "val": "25,437",
+          "pct": -2.86,
           "date": "2026-10-30"
         },
         "US10Y": {
-          "val": "4.92%",
-          "pct": -1.36,
+          "val": "4.93%",
+          "pct": -1.2,
           "date": "2026-10-30"
         }
       },
       "catalyst": {
-        "title": "Nvidia CEO Jensen Huang targeted by Chinese spy? How US-China AI chip war is turning into espionage battle | Explained",
-        "url": "https://www.livemint.com/companies/nvidia-ceo-jensen-huang-targeted-by-chinese-spy-how-us-china-ai-chip-war-is-turning-into-espionage-battle-explained-11793371756140.html",
+        "title": "US stocks today: Dow Jones crashes 500 pts, Nasdaq over 2.5% as AI cash burn fears spark tech selloff",
+        "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/us-stocks-today-dow-jones-crashes-500-pts-nasdaq-over-2-5-as-ai-cash-burn-fears-spark-tech-selloff/articleshow/135377269.cms",
         "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
         "source": ""
       }
