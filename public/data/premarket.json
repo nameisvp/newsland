@@ -1,8 +1,8 @@
 {
-  "updated": "2026-10-31T15:19:13.746280+00:00",
+  "updated": "2026-10-31T19:29:58.403418+00:00",
   "schema_version": 2,
   "is_live": false,
-  "quote_updated": "2026-10-31T15:19:13.745852+00:00",
+  "quote_updated": "2026-10-31T19:29:58.402175+00:00",
   "quote_date": "2026-10-30",
   "quote_source": "yfinance",
   "live_bias_label": "LATEST AVAILABLE QUOTE",
@@ -272,16 +272,16 @@
         }
       },
       "catalyst": {
-        "title": "US oil giants ExxonMobil, Chevron beat profit forecasts as wars in Iran, Ukraine spike domestic refining",
-        "url": "https://www.livemint.com/companies/news/us-oil-giants-exxonmobil-chevron-beat-profit-forecasts-as-wars-in-iran-ukraine-spike-domestic-refining-11793415842594.html",
-        "why_it_matters": "Crude affects India’s import bill and energy-sensitive sectors; the headline does not establish a clear price direction.",
+        "title": "Muthoot Finance Q2 profit rises 36% to ₹3,278 crore on gold loan growth",
+        "url": "https://www.business-standard.com/companies/quarterly-results/muthoot-finance-q2-profit-rises-36-to-3-278-crore-on-gold-loan-growth-126103101280_1.html",
+        "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
         "source": ""
       }
     },
     "earnings": [
       {
-        "title": "Muthoot Finance Q2 profit rises 27% to ₹2,977 crore, income up 37%",
-        "url": "https://www.business-standard.com/companies/quarterly-results/muthoot-finance-q2-profit-rises-27-to-2-977-crore-income-up-37-126103101162_1.html",
+        "title": "Muthoot Finance Q2 profit rises 36% to ₹3,278 crore on gold loan growth",
+        "url": "https://www.business-standard.com/companies/quarterly-results/muthoot-finance-q2-profit-rises-36-to-3-278-crore-on-gold-loan-growth-126103101280_1.html",
         "companies": [
           {
             "name": "Muthoot Fin",
@@ -292,17 +292,27 @@
         "source": ""
       },
       {
-        "title": "Uranium Stockpile Transfer, Strait Of Hormuz Reopening: What Iran's Reported Draft Deal With US Proposes",
-        "url": "https://www.ndtvprofit.com/world/uranium-stockpile-transfer-strait-of-hormuz-reopening-what-irans-reported-draft-deal-with-us-proposes-12264173#publisher=newsstand",
-        "companies": [],
-        "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
+        "title": "Wall Street week ahead: All eyes on US midterm elections, jobs data; earnings from Apple, AMD and Palantir also in focus",
+        "url": "https://www.livemint.com/market/stock-market-news/wall-street-week-ahead-all-eyes-on-us-midterm-elections-jobs-data-earnings-from-apple-amd-and-palantir-also-in-focus-11793462491155.html",
+        "companies": [
+          {
+            "name": "Apple",
+            "symbol": "apple"
+          }
+        ],
+        "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
         "source": ""
       },
       {
-        "title": "CDSL Q2 profit rises 24% to ₹173 cr as demat accounts grow by 7.5 million",
-        "url": "https://www.business-standard.com/companies/news/cdsl-q2-profit-rises-24-to-173-cr-as-demat-accounts-grow-by-7-5-million-126103101125_1.html",
-        "companies": [],
-        "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
+        "title": "IOC says crude Q2 price volatile as procurement swings between discounts and premiums",
+        "url": "https://www.thehindu.com/business/Economy/crude-oil-prices-very-volatile-in-q2-carried-both-discounts-premium-at-varying-intervals-iocl-official/article71650317.ece",
+        "companies": [
+          {
+            "name": "IOC",
+            "symbol": "ioc"
+          }
+        ],
+        "why_it_matters": "Crude affects India’s import bill and energy-sensitive sectors; the headline does not establish a clear price direction.",
         "source": ""
       }
     ],
@@ -325,9 +335,9 @@
         }
       },
       "catalyst": {
-        "title": "Inflation, Inequality and Debt: The Charts Scaring Wall Street",
-        "url": "https://www.livemint.com/market/inflation-inequality-and-debt-the-charts-scaring-wall-street-11793452322227.html",
-        "why_it_matters": "Key determinant of central bank interest rate paths; elevated prints restrict policy easing and compress real yields.",
+        "title": "Why did investors dump technology stocks this week? AI spending concerns trigger Wall Street sell-off",
+        "url": "https://www.livemint.com/market/stock-market-news/why-did-investors-dump-technology-stocks-this-week-ai-spending-concerns-trigger-wall-street-selloff-11793468909464.html",
+        "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
         "source": ""
       }
     }
