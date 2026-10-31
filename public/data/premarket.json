@@ -1,9 +1,9 @@
 {
-  "updated": "2026-10-30T23:18:47.245939+00:00",
+  "updated": "2026-10-31T02:40:27.374453+00:00",
   "schema_version": 2,
   "is_live": false,
-  "quote_updated": "2026-10-30T23:18:47.245562+00:00",
-  "quote_date": "2026-10-29",
+  "quote_updated": "2026-10-31T02:40:27.374161+00:00",
+  "quote_date": "2026-10-30",
   "quote_source": "yfinance",
   "live_bias_label": "LATEST AVAILABLE QUOTE",
   "bias_label": "LATEST AVAILABLE QUOTE",
@@ -21,7 +21,7 @@
   "vix": {
     "price": "15.30",
     "change": "+0.18",
-    "change_pct": "+1.19%",
+    "change_pct": "+1.17%",
     "regime": "Normal Volatility"
   },
   "overnight": {
@@ -66,12 +66,12 @@
     "key": "USDINR",
     "quote_date": "2026-10-30",
     "label": "INR / USD",
-    "price": "94.94",
-    "price_raw": 94.94,
+    "price": "95.15",
+    "price_raw": 95.1524,
     "prev_close": 95.21,
     "prev_close_fmt": "95.21",
-    "change": -0.27,
-    "change_pct": -0.28,
+    "change": -0.0576,
+    "change_pct": -0.06,
     "direction": "down",
     "unit": "",
     "range_52w": {
@@ -79,41 +79,41 @@
       "high": 97.05,
       "low_fmt": "85.86",
       "high_fmt": "97.05",
-      "pos_pct": 81.1,
-      "pct_from_high": -2.18
+      "pos_pct": 83.0,
+      "pct_from_high": -1.96
     }
   },
   "pivots": {
     "nifty": {
-      "pivot": 22852,
-      "s1": 22742,
-      "r1": 23047,
-      "s2": 22547,
-      "r2": 23157,
-      "date": "2026-10-29"
+      "pivot": 23025,
+      "s1": 22933,
+      "r1": 23146,
+      "s2": 22812,
+      "r2": 23238,
+      "date": "2026-10-30"
     },
     "banknifty": {
-      "pivot": 54646,
-      "s1": 54312,
-      "r1": 55244,
-      "s2": 53714,
-      "r2": 55578,
-      "date": "2026-10-29"
+      "pivot": 54779,
+      "s1": 54489,
+      "r1": 54977,
+      "s2": 54291,
+      "r2": 55266,
+      "date": "2026-10-30"
     }
   },
   "posture": {
-    "dma50": 23277,
-    "dma50_fmt": "23,277",
-    "pct_dma50": -1.46,
-    "dma200": 24057,
-    "dma200_fmt": "24,057",
-    "pct_dma200": -4.66,
+    "dma50": 23255,
+    "dma50_fmt": "23,255",
+    "pct_dma50": -0.87,
+    "dma200": 24041,
+    "dma200_fmt": "24,041",
+    "pct_dma200": -4.11,
     "high52": 26373,
     "high52_fmt": "26,373",
     "low52": 22180,
     "low52_fmt": "22,180",
-    "pct_from_high52": -13.03,
-    "pos_52w": 18.0,
+    "pct_from_high52": -12.59,
+    "pos_52w": 20.8,
     "regime": "CORRECTIVE TREND"
   },
   "sector_breadth": {
@@ -160,10 +160,10 @@
       "num": "03",
       "title": "Market posture & breadth",
       "bias": "Context",
-      "desc": "Nifty is 13.0% below 52W high (26,373), trading 4.7% below 200-DMA (24,057). Sector participation: 1/5 sectors in green (Top: IT +2.32%)."
+      "desc": "Nifty is 12.6% below 52W high (26,373), trading 4.1% below 200-DMA (24,041). Sector participation: 1/5 sectors in green (Top: IT +2.32%)."
     }
   ],
-  "trader_take": "Latest available Nifty quote: 23,053 (+0.51% versus previous close). Latest Nifty reading is above the 22,852 pivot. Next calculated resistance above this reading: 23,157. Pivots are calculated references, not confirmed support or resistance. Market regime: CORRECTIVE TREND (-13.0% from 52W peak, -4.7% vs 200-DMA). Sector breadth: 1/5 sectors in green.",
+  "trader_take": "Latest available Nifty quote: 23,053 (+0.51% versus previous close). Latest Nifty reading is above the 23,025 pivot. Next calculated resistance above this reading: 23,146. Pivots are calculated references, not confirmed support or resistance. Market regime: CORRECTIVE TREND (-12.6% from 52W peak, -4.1% vs 200-DMA). Sector breadth: 1/5 sectors in green.",
   "postmarket_pillars": {
     "commodities": {
       "brent": {
@@ -272,8 +272,8 @@
         }
       },
       "catalyst": {
-        "title": "Tankers defy sharp escalation of Iranian attacks to keep crude oil flowing through Strait of Hormuz",
-        "url": "https://www.cnbc.com/2026/10/30/tanker-attack-strait-hormuz-iran-war-oil.html",
+        "title": "Stocks fall on AI cash burn worries while bonds rally with oil",
+        "url": "https://www.investing.com/news/economy-news/stocks-slump-bonds-leap-as-ai-giants-spending-spooks-investors-4985741",
         "why_it_matters": "Crude affects India’s import bill and energy-sensitive sectors; the headline does not establish a clear price direction.",
         "source": ""
       }
@@ -287,6 +287,13 @@
         "source": ""
       },
       {
+        "title": "Dixon, Syrma clock revenue jump while chip costs rose",
+        "url": "https://www.livemint.com/companies/company-results/dixon-syrma-see-chip-costs-raise-expenses-amid-resilient-demand-11793371416232.html",
+        "companies": [],
+        "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
+        "source": ""
+      },
+      {
         "title": "Sun Pharma Q2 profit falls 36% as litigation costs hit earnings",
         "url": "https://economictimes.indiatimes.com/markets/stocks/earnings/sun-pharma-q2-profit-falls-36-as-litigation-costs-hit-earnings/articleshow/135370217.cms",
         "companies": [
@@ -295,13 +302,6 @@
             "symbol": "sun pharma"
           }
         ],
-        "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
-        "source": ""
-      },
-      {
-        "title": "Dixon, Syrma clock revenue jump while chip costs rose",
-        "url": "https://www.livemint.com/companies/company-results/dixon-syrma-see-chip-costs-raise-expenses-amid-resilient-demand-11793371416232.html",
-        "companies": [],
         "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
         "source": ""
       }
@@ -325,8 +325,8 @@
         }
       },
       "catalyst": {
-        "title": "US stocks today: Dow Jones crashes 500 pts, Nasdaq over 2.5% as AI cash burn fears spark tech selloff",
-        "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/us-stocks-today-dow-jones-crashes-500-pts-nasdaq-over-2-5-as-ai-cash-burn-fears-spark-tech-selloff/articleshow/135377269.cms",
+        "title": "Wall Street drops to its worst day since June after the sell-off for tech stocks deepens",
+        "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/wall-street-drops-to-its-worst-day-since-june-after-the-sell-off-for-tech-stocks-deepens/articleshow/135382776.cms",
         "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
         "source": ""
       }
