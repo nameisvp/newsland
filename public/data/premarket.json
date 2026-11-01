@@ -1,8 +1,8 @@
 {
-  "updated": "2026-11-01T01:32:35.125184+00:00",
+  "updated": "2026-11-01T08:04:07.381819+00:00",
   "schema_version": 2,
   "is_live": false,
-  "quote_updated": "2026-11-01T01:32:35.123873+00:00",
+  "quote_updated": "2026-11-01T08:04:07.381446+00:00",
   "quote_date": "2026-10-30",
   "quote_source": "yfinance",
   "live_bias_label": "LATEST AVAILABLE QUOTE",
@@ -45,12 +45,12 @@
     "key": "BRENT",
     "quote_date": "2026-10-30",
     "label": "Brent Crude",
-    "price": "117.64",
-    "price_raw": 117.64,
+    "price": "113.43",
+    "price_raw": 113.43,
     "prev_close": 112.07,
     "prev_close_fmt": "112.07",
-    "change": 5.57,
-    "change_pct": 4.97,
+    "change": 1.36,
+    "change_pct": 1.21,
     "direction": "up",
     "unit": "USD/bbl",
     "range_52w": {
@@ -58,13 +58,13 @@
       "high": 126.1,
       "low_fmt": "58.72",
       "high_fmt": "126.10",
-      "pos_pct": 87.4,
-      "pct_from_high": -6.71
+      "pos_pct": 81.2,
+      "pct_from_high": -10.05
     }
   },
   "usdinr": {
     "key": "USDINR",
-    "quote_date": "2026-10-31",
+    "quote_date": "2026-11-01",
     "label": "INR / USD",
     "price": "94.95",
     "price_raw": 94.95,
@@ -154,7 +154,7 @@
       "num": "02",
       "title": "Crude and input costs",
       "bias": "Context",
-      "desc": "Latest Brent quote: 117.64 USD/bbl (+4.97%). Higher crude can raise import and input costs; lower crude can ease them. This quote alone does not establish the cause of the move."
+      "desc": "Latest Brent quote: 113.43 USD/bbl (+1.21%). Higher crude can raise import and input costs; lower crude can ease them. This quote alone does not establish the cause of the move."
     },
     {
       "num": "03",
@@ -170,12 +170,12 @@
         "key": "BRENT",
         "quote_date": "2026-10-30",
         "label": "Brent Crude",
-        "price": "117.64",
-        "price_raw": 117.64,
+        "price": "113.43",
+        "price_raw": 113.43,
         "prev_close": 112.07,
         "prev_close_fmt": "112.07",
-        "change": 5.57,
-        "change_pct": 4.97,
+        "change": 1.36,
+        "change_pct": 1.21,
         "direction": "up",
         "unit": "USD/bbl",
         "range_52w": {
@@ -183,8 +183,8 @@
           "high": 126.1,
           "low_fmt": "58.72",
           "high_fmt": "126.10",
-          "pos_pct": 87.4,
-          "pct_from_high": -6.71
+          "pos_pct": 81.2,
+          "pct_from_high": -10.05
         }
       },
       "wti": {
@@ -254,12 +254,12 @@
         "key": "SILVER",
         "quote_date": "2026-10-30",
         "label": "Silver",
-        "price": "49.10",
-        "price_raw": 49.097,
+        "price": "49.28",
+        "price_raw": 49.276,
         "prev_close": 51.335,
         "prev_close_fmt": "51.33",
-        "change": -2.238,
-        "change_pct": -4.36,
+        "change": -2.059,
+        "change_pct": -4.01,
         "direction": "down",
         "unit": "USD/oz",
         "range_52w": {
@@ -267,52 +267,60 @@
           "high": 121.3,
           "low_fmt": "46.81",
           "high_fmt": "121.30",
-          "pos_pct": 3.1,
-          "pct_from_high": -59.52
+          "pos_pct": 3.3,
+          "pct_from_high": -59.38
         }
       },
       "catalyst": {
-        "title": "OPEC+ set to hold December oil output steady, Reuters reports",
-        "url": "https://www.investing.com/news/commodities-news/opec-set-to-hold-december-oil-output-steady-4989332",
-        "why_it_matters": "Crude affects India’s import bill and energy-sensitive sectors; the headline does not establish a clear price direction.",
+        "title": "Sebi bars EKI Energy, MD Dabkara, others from market; imposes penalty",
+        "url": "https://economictimes.indiatimes.com/markets/stocks/news/sebi-bars-eki-energy-md-dabkara-others-from-market-imposes-penalty/articleshow/135416947.cms",
+        "why_it_matters": "Alters market structure, compliance mandates, capital allocation rules, and retail derivative trading liquidity.",
         "source": ""
       }
     },
     "earnings": [
       {
-        "title": "Wall Street week ahead: All eyes on US midterm elections, jobs data; earnings from Apple, AMD and Palantir also in focus",
-        "url": "https://www.livemint.com/market/stock-market-news/wall-street-week-ahead-all-eyes-on-us-midterm-elections-jobs-data-earnings-from-apple-amd-and-palantir-also-in-focus-11793462491155.html",
+        "title": "ITC Q2 Results Preview: Profit seen falling nearly 30% YoY as cigarette tax hikes bite",
+        "url": "https://economictimes.indiatimes.com/markets/stocks/earnings/itc-q2-results-preview-profit-seen-falling-nearly-30-yoy-as-cigarette-tax-hikes-bite/articleshow/135419165.cms",
         "companies": [
           {
-            "name": "Apple",
-            "symbol": "apple"
+            "name": "ITC",
+            "symbol": "itc"
           }
         ],
         "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
         "source": ""
       },
       {
-        "title": "IOC says crude Q2 price volatile as procurement swings between discounts and premiums",
-        "url": "https://www.thehindu.com/business/Economy/crude-oil-prices-very-volatile-in-q2-carried-both-discounts-premium-at-varying-intervals-iocl-official/article71650317.ece",
+        "title": "IOC, BPCL, HPCL clock Rs 30,106 cr Q2 profit, nearly 39 pc of last year's annual earnings",
+        "url": "https://economictimes.indiatimes.com/markets/stocks/news/ioc-bpcl-hpcl-clock-rs-30106-cr-q2-profit-nearly-39-pc-of-last-years-annual-earnings/articleshow/135420177.cms",
         "companies": [
+          {
+            "name": "BPCL",
+            "symbol": "bpcl"
+          },
           {
             "name": "IOC",
             "symbol": "ioc"
           }
         ],
-        "why_it_matters": "Crude affects India’s import bill and energy-sensitive sectors; the headline does not establish a clear price direction.",
+        "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
         "source": ""
       },
       {
-        "title": "Muthoot Finance Q2 profit rises 36% to ₹3,278 crore on gold loan growth",
-        "url": "https://www.business-standard.com/companies/quarterly-results/muthoot-finance-q2-profit-rises-36-to-3-278-crore-on-gold-loan-growth-126103101280_1.html",
+        "title": "Dividend Watchlist: Key Ex-Dates For Infosys, Mazagon Dock, Coal India And More Next Week",
+        "url": "https://www.ndtvprofit.com/markets/dividend-watchlist-key-ex-dates-for-infosys-mazagon-dock-coal-india-and-more-next-week-12266088#publisher=newsstand",
         "companies": [
           {
-            "name": "Muthoot Fin",
-            "symbol": "muthoot finance"
+            "name": "Mazagon Dock",
+            "symbol": "mazagon dock"
+          },
+          {
+            "name": "Infosys",
+            "symbol": "infosys"
           }
         ],
-        "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
+        "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
         "source": ""
       }
     ],
@@ -335,9 +343,9 @@
         }
       },
       "catalyst": {
-        "title": "Judge ends Trump’s attempts to sue Wall Street Journal over Epstein reporting",
-        "url": "https://www.investing.com/news/stock-market-news/us-judge-dismisses-trumps-lawsuit-against-wall-street-journal-with-prejudice-4989324",
-        "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
+        "title": "Wall Street week ahead: All eyes on US midterm elections, jobs data; earnings from Apple, AMD and Palantir also in focus",
+        "url": "https://www.livemint.com/market/stock-market-news/wall-street-week-ahead-all-eyes-on-us-midterm-elections-jobs-data-earnings-from-apple-amd-and-palantir-also-in-focus-11793462491155.html",
+        "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
         "source": ""
       }
     }
