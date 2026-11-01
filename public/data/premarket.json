@@ -1,8 +1,8 @@
 {
-  "updated": "2026-11-01T08:04:07.381819+00:00",
+  "updated": "2026-11-01T15:05:42.795535+00:00",
   "schema_version": 2,
   "is_live": false,
-  "quote_updated": "2026-11-01T08:04:07.381446+00:00",
+  "quote_updated": "2026-11-01T15:05:42.795214+00:00",
   "quote_date": "2026-10-30",
   "quote_source": "yfinance",
   "live_bias_label": "LATEST AVAILABLE QUOTE",
@@ -66,12 +66,12 @@
     "key": "USDINR",
     "quote_date": "2026-11-01",
     "label": "INR / USD",
-    "price": "94.95",
-    "price_raw": 94.95,
+    "price": "94.94",
+    "price_raw": 94.94,
     "prev_close": 95.21,
     "prev_close_fmt": "95.21",
-    "change": -0.26,
-    "change_pct": -0.27,
+    "change": -0.27,
+    "change_pct": -0.28,
     "direction": "down",
     "unit": "",
     "range_52w": {
@@ -79,8 +79,8 @@
       "high": 97.05,
       "low_fmt": "85.86",
       "high_fmt": "97.05",
-      "pos_pct": 81.2,
-      "pct_from_high": -2.17
+      "pos_pct": 81.1,
+      "pct_from_high": -2.18
     }
   },
   "pivots": {
@@ -272,16 +272,30 @@
         }
       },
       "catalyst": {
-        "title": "Sebi bars EKI Energy, MD Dabkara, others from market; imposes penalty",
-        "url": "https://economictimes.indiatimes.com/markets/stocks/news/sebi-bars-eki-energy-md-dabkara-others-from-market-imposes-penalty/articleshow/135416947.cms",
-        "why_it_matters": "Alters market structure, compliance mandates, capital allocation rules, and retail derivative trading liquidity.",
+        "title": "Tax twist for OMC stocks: Indian Oil, BPCL, HPCL shares in 2 Nov focus after this decision by Govt on petrol, diesel",
+        "url": "https://www.livemint.com/market/stock-market-news/tax-twist-for-omc-stocks-indian-oil-bpcl-hpcl-shares-in-2-nov-focus-after-this-decision-by-govt-on-petrol-diesel-11793531837968.html",
+        "why_it_matters": "Crude affects India’s import bill and energy-sensitive sectors; the headline does not establish a clear price direction.",
         "source": ""
       }
     },
     "earnings": [
       {
-        "title": "ITC Q2 Results Preview: Profit seen falling nearly 30% YoY as cigarette tax hikes bite",
-        "url": "https://economictimes.indiatimes.com/markets/stocks/earnings/itc-q2-results-preview-profit-seen-falling-nearly-30-yoy-as-cigarette-tax-hikes-bite/articleshow/135419165.cms",
+        "title": "The Week Ahead: Q2 Earnings, PMI Data, US Jobs Report, IPO Listings In Focus",
+        "url": "https://www.ndtvprofit.com/markets/the-week-ahead-q2-earnings-pmi-data-us-jobs-report-ipo-listings-in-focus-12267353#publisher=newsstand",
+        "companies": [],
+        "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
+        "source": ""
+      },
+      {
+        "title": "Cash rewards coming? PFC, CONCOR, RITES, to Sonata- These firms to announce dividend with Q2 results 2026 this week",
+        "url": "https://www.livemint.com/market/stock-market-news/cash-rewards-coming-pfc-concor-rites-pfc-to-sonata-these-firms-to-announce-dividend-with-q2-results-2026-this-week-11793537407103.html",
+        "companies": [],
+        "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
+        "source": ""
+      },
+      {
+        "title": "ITC Q2 results 2026 preview: Will cigarette business drive growth? Profit, revenue expectations - share price target",
+        "url": "https://www.livemint.com/market/stock-market-news/itc-q2-results-2026-preview-will-cigarette-business-drive-growth-profit-revenue-expectations-share-price-target-11793540718182.html",
         "companies": [
           {
             "name": "ITC",
@@ -289,38 +303,6 @@
           }
         ],
         "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
-        "source": ""
-      },
-      {
-        "title": "IOC, BPCL, HPCL clock Rs 30,106 cr Q2 profit, nearly 39 pc of last year's annual earnings",
-        "url": "https://economictimes.indiatimes.com/markets/stocks/news/ioc-bpcl-hpcl-clock-rs-30106-cr-q2-profit-nearly-39-pc-of-last-years-annual-earnings/articleshow/135420177.cms",
-        "companies": [
-          {
-            "name": "BPCL",
-            "symbol": "bpcl"
-          },
-          {
-            "name": "IOC",
-            "symbol": "ioc"
-          }
-        ],
-        "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
-        "source": ""
-      },
-      {
-        "title": "Dividend Watchlist: Key Ex-Dates For Infosys, Mazagon Dock, Coal India And More Next Week",
-        "url": "https://www.ndtvprofit.com/markets/dividend-watchlist-key-ex-dates-for-infosys-mazagon-dock-coal-india-and-more-next-week-12266088#publisher=newsstand",
-        "companies": [
-          {
-            "name": "Mazagon Dock",
-            "symbol": "mazagon dock"
-          },
-          {
-            "name": "Infosys",
-            "symbol": "infosys"
-          }
-        ],
-        "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
         "source": ""
       }
     ],
@@ -343,9 +325,9 @@
         }
       },
       "catalyst": {
-        "title": "Wall Street week ahead: All eyes on US midterm elections, jobs data; earnings from Apple, AMD and Palantir also in focus",
-        "url": "https://www.livemint.com/market/stock-market-news/wall-street-week-ahead-all-eyes-on-us-midterm-elections-jobs-data-earnings-from-apple-amd-and-palantir-also-in-focus-11793462491155.html",
-        "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
+        "title": "India's 10-year bond yield may ease to 6.75-7% by March: SBI Research",
+        "url": "https://www.business-standard.com/markets/news/india-s-10-year-bond-yield-may-ease-to-6-75-7-by-march-sbi-research-126110100657_1.html",
+        "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
         "source": ""
       }
     }
