@@ -1,8 +1,8 @@
 {
-  "updated": "2026-11-01T23:09:23.968787+00:00",
+  "updated": "2026-11-02T02:29:25.422003+00:00",
   "schema_version": 2,
   "is_live": false,
-  "quote_updated": "2026-11-01T23:09:23.968274+00:00",
+  "quote_updated": "2026-11-02T02:29:25.421479+00:00",
   "quote_date": "2026-10-30",
   "quote_source": "yfinance",
   "live_bias_label": "LATEST AVAILABLE QUOTE",
@@ -43,23 +43,23 @@
   },
   "brent": {
     "key": "BRENT",
-    "quote_date": "2026-10-30",
+    "quote_date": "2026-11-01",
     "label": "Brent Crude",
-    "price": "113.43",
-    "price_raw": 113.43,
-    "prev_close": 112.07,
-    "prev_close_fmt": "112.07",
-    "change": 1.36,
-    "change_pct": 1.21,
-    "direction": "up",
+    "price": "110.73",
+    "price_raw": 110.73,
+    "prev_close": 113.43,
+    "prev_close_fmt": "113.43",
+    "change": -2.7,
+    "change_pct": -2.38,
+    "direction": "down",
     "unit": "USD/bbl",
     "range_52w": {
       "low": 58.72,
       "high": 126.1,
       "low_fmt": "58.72",
       "high_fmt": "126.10",
-      "pos_pct": 81.2,
-      "pct_from_high": -10.05
+      "pos_pct": 77.2,
+      "pct_from_high": -12.19
     }
   },
   "usdinr": {
@@ -154,7 +154,7 @@
       "num": "02",
       "title": "Crude and input costs",
       "bias": "Context",
-      "desc": "Latest Brent quote: 113.43 USD/bbl (+1.21%). Higher crude can raise import and input costs; lower crude can ease them. This quote alone does not establish the cause of the move."
+      "desc": "Latest Brent quote: 110.73 USD/bbl (-2.38%). Higher crude can raise import and input costs; lower crude can ease them. This quote alone does not establish the cause of the move."
     },
     {
       "num": "03",
@@ -168,56 +168,56 @@
     "commodities": {
       "brent": {
         "key": "BRENT",
-        "quote_date": "2026-10-30",
+        "quote_date": "2026-11-01",
         "label": "Brent Crude",
-        "price": "113.43",
-        "price_raw": 113.43,
-        "prev_close": 112.07,
-        "prev_close_fmt": "112.07",
-        "change": 1.36,
-        "change_pct": 1.21,
-        "direction": "up",
+        "price": "110.73",
+        "price_raw": 110.73,
+        "prev_close": 113.43,
+        "prev_close_fmt": "113.43",
+        "change": -2.7,
+        "change_pct": -2.38,
+        "direction": "down",
         "unit": "USD/bbl",
         "range_52w": {
           "low": 58.72,
           "high": 126.1,
           "low_fmt": "58.72",
           "high_fmt": "126.10",
-          "pos_pct": 81.2,
-          "pct_from_high": -10.05
+          "pos_pct": 77.2,
+          "pct_from_high": -12.19
         }
       },
       "wti": {
         "key": "WTI",
-        "quote_date": "2026-10-30",
+        "quote_date": "2026-11-01",
         "label": "WTI Crude",
-        "price": "104.12",
-        "price_raw": 104.12,
-        "prev_close": 103.17,
-        "prev_close_fmt": "103.17",
-        "change": 0.95,
-        "change_pct": 0.92,
-        "direction": "up",
+        "price": "101.32",
+        "price_raw": 101.32,
+        "prev_close": 104.12,
+        "prev_close_fmt": "104.12",
+        "change": -2.8,
+        "change_pct": -2.69,
+        "direction": "down",
         "unit": "USD/bbl",
         "range_52w": {
           "low": 54.98,
           "high": 119.48,
           "low_fmt": "54.98",
           "high_fmt": "119.48",
-          "pos_pct": 76.2,
-          "pct_from_high": -12.86
+          "pos_pct": 71.8,
+          "pct_from_high": -15.2
         }
       },
       "natgas": {
         "key": "NATGAS",
-        "quote_date": "2026-10-30",
+        "quote_date": "2026-11-01",
         "label": "Natural Gas",
-        "price": "2.90",
-        "price_raw": 2.898,
-        "prev_close": 2.897,
+        "price": "2.91",
+        "price_raw": 2.906,
+        "prev_close": 2.898,
         "prev_close_fmt": "2.90",
-        "change": 0.001,
-        "change_pct": 0.03,
+        "change": 0.008,
+        "change_pct": 0.28,
         "direction": "up",
         "unit": "USD/MMBtu",
         "range_52w": {
@@ -225,77 +225,77 @@
           "high": 7.83,
           "low_fmt": "2.48",
           "high_fmt": "7.83",
-          "pos_pct": 7.8,
-          "pct_from_high": -62.97
+          "pos_pct": 7.9,
+          "pct_from_high": -62.87
         }
       },
       "gold": {
         "key": "GOLD",
-        "quote_date": "2026-10-30",
+        "quote_date": "2026-11-01",
         "label": "Gold",
-        "price": "3,898.90",
-        "price_raw": 3898.8999,
-        "prev_close": 4004.0,
-        "prev_close_fmt": "4,004.00",
-        "change": -105.1001,
-        "change_pct": -2.62,
-        "direction": "down",
+        "price": "3,918.80",
+        "price_raw": 3918.8,
+        "prev_close": 3898.8999,
+        "prev_close_fmt": "3,898.90",
+        "change": 19.9001,
+        "change_pct": 0.51,
+        "direction": "up",
         "unit": "USD/oz",
         "range_52w": {
           "low": 3879.3,
           "high": 5586.2,
           "low_fmt": "3,879.30",
           "high_fmt": "5,586.20",
-          "pos_pct": 1.1,
-          "pct_from_high": -30.2
+          "pos_pct": 2.3,
+          "pct_from_high": -29.85
         }
       },
       "silver": {
         "key": "SILVER",
-        "quote_date": "2026-10-30",
+        "quote_date": "2026-11-01",
         "label": "Silver",
-        "price": "49.28",
-        "price_raw": 49.276,
-        "prev_close": 51.335,
-        "prev_close_fmt": "51.33",
-        "change": -2.059,
-        "change_pct": -4.01,
-        "direction": "down",
+        "price": "50.05",
+        "price_raw": 50.05,
+        "prev_close": 49.276,
+        "prev_close_fmt": "49.28",
+        "change": 0.774,
+        "change_pct": 1.57,
+        "direction": "up",
         "unit": "USD/oz",
         "range_52w": {
           "low": 46.81,
           "high": 121.3,
           "low_fmt": "46.81",
           "high_fmt": "121.30",
-          "pos_pct": 3.3,
-          "pct_from_high": -59.38
+          "pos_pct": 4.4,
+          "pct_from_high": -58.74
         }
       },
       "catalyst": {
-        "title": "Everything changed for the oil, AI and bond trades over the past month",
-        "url": "https://www.cnbc.com/2026/11/01/oil-bond-yields-ai-market.html",
-        "why_it_matters": "Crude affects India’s import bill and energy-sensitive sectors; the headline does not establish a clear price direction.",
+        "title": "Gold lingers near one-year low as Fed hike expectations firm",
+        "url": "https://economictimes.indiatimes.com/markets/commodities/news/gold-lingers-near-one-year-low-as-fed-hike-expectations-firm/articleshow/135442111.cms",
+        "why_it_matters": "Guides global liquidity dynamics, US Dollar Index (DXY) trajectory, and foreign institutional (FII) capital allocations.",
         "source": ""
       }
     },
     "earnings": [
       {
-        "title": "Q2 Results Today: Full List Of Companies Declaring Quarterly Results On Nov. 2",
-        "url": "https://www.ndtvprofit.com/markets/q2-results-today-full-list-of-companies-declaring-quarterly-results-on-nov-2-12267132#publisher=newsstand",
+        "title": "Indian stocks may recover on steady growth and earnings, Axis AMC says",
+        "url": "https://economictimes.indiatimes.com/markets/stocks/news/indian-stocks-may-recover-on-steady-growth-and-earnings-axis-amc-says/articleshow/135442150.cms",
         "companies": [],
         "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
         "source": ""
       },
       {
-        "title": "Cash rewards coming? PFC, CONCOR, RITES, to Sonata- These firms to announce dividend with Q2 results 2026 this week",
-        "url": "https://www.livemint.com/market/stock-market-news/cash-rewards-coming-pfc-concor-rites-pfc-to-sonata-these-firms-to-announce-dividend-with-q2-results-2026-this-week-11793537407103.html",
+        "title": "Asian shares slide as AI spending worries mount ahead of tech earnings",
+        "url": "https://www.business-standard.com/markets/news/asian-shares-slide-as-ai-spending-worries-mount-ahead-of-tech-earnings-126110200042_1.html",
         "companies": [],
         "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
         "source": ""
       },
       {
-        "title": "Emami vs Dabur FMCG shares Q2 results preview: Profit, revenue expectations; Dividend announcements in focus",
-        "url": "https://www.livemint.com/market/stock-market-news/emami-vs-dabur-fmcg-shares-q2-results-preview-profit-revenue-expectations-dividend-announcements-in-focus-11793546880029.html",
+        "title": "Varun Beverages’ Q3 volume surge can’t mask margin pain",
+        "url": "https://www.livemint.com/market/mark-to-market/varun-beverages-carbonated-soft-drinks-sting-pepsico-price-hikes-packaging-costs-11793513498775.html",
         "companies": [],
         "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
         "source": ""
@@ -320,9 +320,9 @@
         }
       },
       "catalyst": {
-        "title": "Australian home prices fall for seventh month, looming rate hike adds to pain",
-        "url": "https://www.investing.com/news/economy-news/australian-home-prices-fall-for-seventh-month-looming-rate-hike-adds-to-pain-4989781",
-        "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
+        "title": "Gold lingers near one-year low as Fed hike expectations firm",
+        "url": "https://economictimes.indiatimes.com/markets/commodities/news/gold-lingers-near-one-year-low-as-fed-hike-expectations-firm/articleshow/135442111.cms",
+        "why_it_matters": "Guides global liquidity dynamics, US Dollar Index (DXY) trajectory, and foreign institutional (FII) capital allocations.",
         "source": ""
       }
     }
