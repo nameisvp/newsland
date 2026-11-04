@@ -1,9 +1,9 @@
 {
-  "updated": "2026-11-04T17:59:02.463877+00:00",
+  "updated": "2026-11-04T23:39:18.164378+00:00",
   "schema_version": 2,
   "is_live": false,
-  "quote_updated": "2026-11-04T17:59:02.463471+00:00",
-  "quote_date": "2026-11-04",
+  "quote_updated": "2026-11-04T23:39:18.164032+00:00",
+  "quote_date": "2026-11-03",
   "quote_source": "yfinance",
   "live_bias_label": "LATEST AVAILABLE QUOTE",
   "bias_label": "LATEST AVAILABLE QUOTE",
@@ -21,23 +21,23 @@
   "vix": {
     "price": "15.19",
     "change": "-0.47",
-    "change_pct": "-2.99%",
+    "change_pct": "-2.98%",
     "regime": "Normal Volatility"
   },
   "overnight": {
     "SP500": {
-      "val": "7,711",
-      "pct": 1.88,
+      "val": "7,689",
+      "pct": 1.58,
       "date": "2026-11-04"
     },
     "NASDAQ": {
-      "val": "25,919",
-      "pct": 2.16,
+      "val": "25,737",
+      "pct": 1.44,
       "date": "2026-11-04"
     },
     "US10Y": {
-      "val": "4.90%",
-      "pct": -1.05,
+      "val": "4.89%",
+      "pct": -1.17,
       "date": "2026-11-04"
     }
   },
@@ -45,12 +45,12 @@
     "key": "BRENT",
     "quote_date": "2026-11-04",
     "label": "Brent Crude",
-    "price": "94.17",
-    "price_raw": 94.17,
+    "price": "94.69",
+    "price_raw": 94.69,
     "prev_close": 103.52,
     "prev_close_fmt": "103.52",
-    "change": -9.35,
-    "change_pct": -9.03,
+    "change": -8.83,
+    "change_pct": -8.53,
     "direction": "down",
     "unit": "USD/bbl",
     "range_52w": {
@@ -58,8 +58,8 @@
       "high": 126.1,
       "low_fmt": "58.72",
       "high_fmt": "126.10",
-      "pos_pct": 52.6,
-      "pct_from_high": -25.32
+      "pos_pct": 53.4,
+      "pct_from_high": -24.91
     }
   },
   "usdinr": {
@@ -85,35 +85,35 @@
   },
   "pivots": {
     "nifty": {
-      "pivot": 23872,
-      "s1": 23784,
-      "r1": 24049,
-      "s2": 23608,
-      "r2": 24137,
-      "date": "2026-11-04"
+      "pivot": 23702,
+      "s1": 23592,
+      "r1": 23920,
+      "s2": 23373,
+      "r2": 24030,
+      "date": "2026-11-03"
     },
     "banknifty": {
-      "pivot": 55718,
-      "s1": 55490,
-      "r1": 56142,
-      "s2": 55066,
-      "r2": 56371,
-      "date": "2026-11-04"
+      "pivot": 55484,
+      "s1": 55230,
+      "r1": 55795,
+      "s2": 54919,
+      "r2": 56049,
+      "date": "2026-11-03"
     }
   },
   "posture": {
-    "dma50": 23228,
-    "dma50_fmt": "23,228",
-    "pct_dma50": 3.16,
-    "dma200": 24009,
-    "dma200_fmt": "24,009",
-    "pct_dma200": -0.2,
+    "dma50": 23234,
+    "dma50_fmt": "23,234",
+    "pct_dma50": 2.48,
+    "dma200": 24017,
+    "dma200_fmt": "24,017",
+    "pct_dma200": -0.86,
     "high52": 26373,
     "high52_fmt": "26,373",
     "low52": 22180,
     "low52_fmt": "22,180",
-    "pct_from_high52": -9.15,
-    "pos_52w": 42.5,
+    "pct_from_high52": -9.72,
+    "pos_52w": 38.9,
     "regime": "COUNTER-TREND RALLY"
   },
   "sector_breadth": {
@@ -154,28 +154,28 @@
       "num": "02",
       "title": "Crude and input costs",
       "bias": "Context",
-      "desc": "Latest Brent quote: 94.17 USD/bbl (-9.03%). Higher crude can raise import and input costs; lower crude can ease them. This quote alone does not establish the cause of the move."
+      "desc": "Latest Brent quote: 94.69 USD/bbl (-8.53%). Higher crude can raise import and input costs; lower crude can ease them. This quote alone does not establish the cause of the move."
     },
     {
       "num": "03",
       "title": "Market posture & breadth",
       "bias": "Context",
-      "desc": "Nifty is 9.2% below 52W high (26,373), trading 0.2% below 200-DMA (24,009). Sector participation: 4/5 sectors in green (Top: Metal +2.79%)."
+      "desc": "Nifty is 9.7% below 52W high (26,373), trading 0.9% below 200-DMA (24,017). Sector participation: 4/5 sectors in green (Top: Metal +2.79%)."
     }
   ],
-  "trader_take": "Latest available Nifty quote: 23,961 (+0.63% versus previous close). Latest Nifty reading is above the 23,872 pivot. Next calculated resistance above this reading: 24,049. Pivots are calculated references, not confirmed support or resistance. Market regime: COUNTER-TREND RALLY (-9.2% from 52W peak, -0.2% vs 200-DMA). Sector breadth: 4/5 sectors in green.",
+  "trader_take": "Latest available Nifty quote: 23,961 (+0.63% versus previous close). Latest Nifty reading is above the 23,702 pivot. Next calculated resistance above this reading: 24,030. Pivots are calculated references, not confirmed support or resistance. Market regime: COUNTER-TREND RALLY (-9.7% from 52W peak, -0.9% vs 200-DMA). Sector breadth: 4/5 sectors in green.",
   "postmarket_pillars": {
     "commodities": {
       "brent": {
         "key": "BRENT",
         "quote_date": "2026-11-04",
         "label": "Brent Crude",
-        "price": "94.17",
-        "price_raw": 94.17,
+        "price": "94.69",
+        "price_raw": 94.69,
         "prev_close": 103.52,
         "prev_close_fmt": "103.52",
-        "change": -9.35,
-        "change_pct": -9.03,
+        "change": -8.83,
+        "change_pct": -8.53,
         "direction": "down",
         "unit": "USD/bbl",
         "range_52w": {
@@ -183,20 +183,20 @@
           "high": 126.1,
           "low_fmt": "58.72",
           "high_fmt": "126.10",
-          "pos_pct": 52.6,
-          "pct_from_high": -25.32
+          "pos_pct": 53.4,
+          "pct_from_high": -24.91
         }
       },
       "wti": {
         "key": "WTI",
         "quote_date": "2026-11-04",
         "label": "WTI Crude",
-        "price": "87.83",
-        "price_raw": 87.83,
+        "price": "88.19",
+        "price_raw": 88.19,
         "prev_close": 95.8,
         "prev_close_fmt": "95.80",
-        "change": -7.97,
-        "change_pct": -8.32,
+        "change": -7.61,
+        "change_pct": -7.94,
         "direction": "down",
         "unit": "USD/bbl",
         "range_52w": {
@@ -204,20 +204,20 @@
           "high": 119.48,
           "low_fmt": "54.98",
           "high_fmt": "119.48",
-          "pos_pct": 50.9,
-          "pct_from_high": -26.49
+          "pos_pct": 51.5,
+          "pct_from_high": -26.19
         }
       },
       "natgas": {
         "key": "NATGAS",
         "quote_date": "2026-11-04",
         "label": "Natural Gas",
-        "price": "2.96",
-        "price_raw": 2.965,
+        "price": "2.95",
+        "price_raw": 2.947,
         "prev_close": 2.871,
         "prev_close_fmt": "2.87",
-        "change": 0.094,
-        "change_pct": 3.27,
+        "change": 0.076,
+        "change_pct": 2.65,
         "direction": "up",
         "unit": "USD/MMBtu",
         "range_52w": {
@@ -225,20 +225,20 @@
           "high": 7.83,
           "low_fmt": "2.48",
           "high_fmt": "7.83",
-          "pos_pct": 9.0,
-          "pct_from_high": -62.12
+          "pos_pct": 8.7,
+          "pct_from_high": -62.35
         }
       },
       "gold": {
         "key": "GOLD",
         "quote_date": "2026-11-04",
         "label": "Gold",
-        "price": "4,079.20",
-        "price_raw": 4079.2,
+        "price": "4,073.70",
+        "price_raw": 4073.7,
         "prev_close": 3966.6001,
         "prev_close_fmt": "3,966.60",
-        "change": 112.5999,
-        "change_pct": 2.84,
+        "change": 107.0999,
+        "change_pct": 2.7,
         "direction": "up",
         "unit": "USD/oz",
         "range_52w": {
@@ -246,20 +246,20 @@
           "high": 5586.2,
           "low_fmt": "3,879.30",
           "high_fmt": "5,586.20",
-          "pos_pct": 11.7,
-          "pct_from_high": -26.98
+          "pos_pct": 11.4,
+          "pct_from_high": -27.08
         }
       },
       "silver": {
         "key": "SILVER",
         "quote_date": "2026-11-04",
         "label": "Silver",
-        "price": "52.44",
-        "price_raw": 52.445,
+        "price": "52.42",
+        "price_raw": 52.425,
         "prev_close": 49.955,
         "prev_close_fmt": "49.96",
-        "change": 2.49,
-        "change_pct": 4.98,
+        "change": 2.47,
+        "change_pct": 4.94,
         "direction": "up",
         "unit": "USD/oz",
         "range_52w": {
@@ -268,7 +268,7 @@
           "low_fmt": "47.56",
           "high_fmt": "121.30",
           "pos_pct": 6.6,
-          "pct_from_high": -56.76
+          "pct_from_high": -56.78
         }
       },
       "catalyst": {
@@ -280,22 +280,22 @@
     },
     "earnings": [
       {
-        "title": "Chalet Hotels Q2 net profit rises 40% to ₹216 crore, revenue falls 32%",
-        "url": "https://www.business-standard.com/companies/news/chalet-hotels-q2-net-profit-rises-40-to-216-crore-revenue-falls-32-126110402005_1.html",
+        "title": "Apollo Hospitals Q2 net profit rises 32% to ₹630 crore; revenue up 23%",
+        "url": "https://www.business-standard.com/companies/quarterly-results/apollo-hospitals-q2-net-profit-rises-32-to-630-crore-revenue-up-23-126110401965_1.html",
         "companies": [],
         "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
         "source": ""
       },
       {
-        "title": "Orkla India’s revenue rises 19.4% in Q2, but volume growth remains subdued",
-        "url": "https://www.livemint.com/companies/orkla-india-s-revenue-rises-19-4-in-q2-but-volume-growth-remains-subdued-11793803944844.html",
+        "title": "Allcargo Terminals Q2 Results: Profit Nearly Doubles, Revenue Jumps 22%",
+        "url": "https://www.ndtvprofit.com/markets/allcargo-terminals-q2-results-profit-nearly-doubles-revenue-jumps-22-12284484#publisher=newsstand",
         "companies": [],
         "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
         "source": ""
       },
       {
-        "title": "Aptus Value Housing Finance Q2 profit rises 18% to Rs 267 cr",
-        "url": "https://economictimes.indiatimes.com/markets/digital-real-estate/realty-news/aptus-value-housing-finance-q2-profit-rises-18-to-rs-267-cr/articleshow/135543628.cms",
+        "title": "Vertex A earnings beat by $0.04, revenue topped estimates",
+        "url": "https://www.investing.com/news/earnings/vertex-a-earnings-beat-by-004-revenue-topped-estimates-5001781",
         "companies": [],
         "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
         "source": ""
@@ -304,18 +304,18 @@
     "global_macro": {
       "overnight": {
         "SP500": {
-          "val": "7,711",
-          "pct": 1.88,
+          "val": "7,689",
+          "pct": 1.58,
           "date": "2026-11-04"
         },
         "NASDAQ": {
-          "val": "25,919",
-          "pct": 2.16,
+          "val": "25,737",
+          "pct": 1.44,
           "date": "2026-11-04"
         },
         "US10Y": {
-          "val": "4.90%",
-          "pct": -1.05,
+          "val": "4.89%",
+          "pct": -1.17,
           "date": "2026-11-04"
         }
       },
