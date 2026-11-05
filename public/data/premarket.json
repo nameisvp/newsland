@@ -1,15 +1,15 @@
 {
-  "updated": "2026-11-05T03:47:17.381385+00:00",
+  "updated": "2026-11-05T11:39:30.852769+00:00",
   "schema_version": 2,
   "is_live": false,
-  "quote_updated": "2026-11-05T03:47:17.380839+00:00",
+  "quote_updated": "2026-11-05T11:39:30.852437+00:00",
   "quote_date": "2026-11-05",
   "quote_source": "yfinance",
   "live_bias_label": "LATEST AVAILABLE QUOTE",
   "bias_label": "LATEST AVAILABLE QUOTE",
-  "live_nifty_price": "24,346",
-  "live_pts": 385,
-  "live_pct": 1.61,
+  "live_nifty_price": "24,537",
+  "live_pts": 576,
+  "live_pct": 2.4,
   "nifty_prev_close": "23,961",
   "fii_dii": {
     "date": "08 Oct 2026 (Prev Close)",
@@ -19,9 +19,9 @@
     "trend": "FII Selling / DII Absorbing"
   },
   "vix": {
-    "price": "14.85",
-    "change": "-0.32",
-    "change_pct": "-2.13%",
+    "price": "15.58",
+    "change": "+0.41",
+    "change_pct": "+2.69%",
     "regime": "Normal Volatility"
   },
   "overnight": {
@@ -43,35 +43,35 @@
   },
   "brent": {
     "key": "BRENT",
-    "quote_date": "2026-11-04",
+    "quote_date": "2026-11-05",
     "label": "Brent Crude",
-    "price": "93.83",
-    "price_raw": 93.83,
-    "prev_close": 103.52,
-    "prev_close_fmt": "103.52",
-    "change": -9.69,
-    "change_pct": -9.36,
-    "direction": "down",
+    "price": "96.30",
+    "price_raw": 96.3,
+    "prev_close": 93.59,
+    "prev_close_fmt": "93.59",
+    "change": 2.71,
+    "change_pct": 2.9,
+    "direction": "up",
     "unit": "USD/bbl",
     "range_52w": {
       "low": 58.72,
       "high": 126.1,
       "low_fmt": "58.72",
       "high_fmt": "126.10",
-      "pos_pct": 52.1,
-      "pct_from_high": -25.59
+      "pos_pct": 55.8,
+      "pct_from_high": -23.63
     }
   },
   "usdinr": {
     "key": "USDINR",
     "quote_date": "2026-11-05",
     "label": "INR / USD",
-    "price": "94.43",
-    "price_raw": 94.425,
+    "price": "94.47",
+    "price_raw": 94.47,
     "prev_close": 94.53,
     "prev_close_fmt": "94.53",
-    "change": -0.105,
-    "change_pct": -0.11,
+    "change": -0.06,
+    "change_pct": -0.06,
     "direction": "down",
     "unit": "",
     "range_52w": {
@@ -79,41 +79,41 @@
       "high": 97.05,
       "low_fmt": "85.86",
       "high_fmt": "97.05",
-      "pos_pct": 76.5,
-      "pct_from_high": -2.71
+      "pos_pct": 76.9,
+      "pct_from_high": -2.66
     }
   },
   "pivots": {
     "nifty": {
-      "pivot": 23872,
-      "s1": 23784,
-      "r1": 24049,
-      "s2": 23608,
-      "r2": 24137,
-      "date": "2026-11-04"
+      "pivot": 24471,
+      "s1": 24362,
+      "r1": 24646,
+      "s2": 24187,
+      "r2": 24755,
+      "date": "2026-11-05"
     },
     "banknifty": {
-      "pivot": 55718,
-      "s1": 55490,
-      "r1": 56142,
-      "s2": 55066,
-      "r2": 56371,
-      "date": "2026-11-04"
+      "pivot": 57446,
+      "s1": 57045,
+      "r1": 58175,
+      "s2": 56317,
+      "r2": 58576,
+      "date": "2026-11-05"
     }
   },
   "posture": {
-    "dma50": 23230,
-    "dma50_fmt": "23,230",
-    "pct_dma50": 4.8,
-    "dma200": 24001,
-    "dma200_fmt": "24,001",
-    "pct_dma200": 1.43,
+    "dma50": 23234,
+    "dma50_fmt": "23,234",
+    "pct_dma50": 5.61,
+    "dma200": 24002,
+    "dma200_fmt": "24,002",
+    "pct_dma200": 2.23,
     "high52": 26373,
     "high52_fmt": "26,373",
     "low52": 22180,
     "low52_fmt": "22,180",
-    "pct_from_high52": -7.69,
-    "pos_52w": 51.6,
+    "pct_from_high52": -6.96,
+    "pos_52w": 56.2,
     "regime": "STRUCTURAL UPTREND"
   },
   "sector_breadth": {
@@ -122,23 +122,23 @@
     "sectors": [
       {
         "name": "Auto",
-        "pct": 2.43
-      },
-      {
-        "name": "IT",
-        "pct": 1.86
+        "pct": 4.14
       },
       {
         "name": "Bank",
-        "pct": 1.75
+        "pct": 3.33
+      },
+      {
+        "name": "IT",
+        "pct": 2.42
       },
       {
         "name": "Metal",
-        "pct": 1.14
+        "pct": 0.87
       },
       {
         "name": "FMCG",
-        "pct": 0.74
+        "pct": 0.44
       }
     ],
     "summary": "5/5 sectors in green"
@@ -154,70 +154,70 @@
       "num": "02",
       "title": "Crude and input costs",
       "bias": "Context",
-      "desc": "Latest Brent quote: 93.83 USD/bbl (-9.36%). Higher crude can raise import and input costs; lower crude can ease them. This quote alone does not establish the cause of the move."
+      "desc": "Latest Brent quote: 96.30 USD/bbl (+2.90%). Higher crude can raise import and input costs; lower crude can ease them. This quote alone does not establish the cause of the move."
     },
     {
       "num": "03",
       "title": "Market posture & breadth",
       "bias": "Context",
-      "desc": "Nifty is 7.7% below 52W high (26,373), trading 1.4% above 200-DMA (24,001). Sector participation: 5/5 sectors in green (Top: Auto +2.43%)."
+      "desc": "Nifty is 7.0% below 52W high (26,373), trading 2.2% above 200-DMA (24,002). Sector participation: 5/5 sectors in green (Top: Auto +4.14%)."
     }
   ],
-  "trader_take": "Latest available Nifty quote: 24,346 (+1.61% versus previous close). Latest Nifty reading is above the 23,872 pivot. The reading is above both calculated resistance levels. Pivots are calculated references, not confirmed support or resistance. Market regime: STRUCTURAL UPTREND (-7.7% from 52W peak, +1.4% vs 200-DMA). Sector breadth: 5/5 sectors in green.",
+  "trader_take": "Latest available Nifty quote: 24,537 (+2.40% versus previous close). Latest Nifty reading is above the 24,471 pivot. Next calculated resistance above this reading: 24,646. Pivots are calculated references, not confirmed support or resistance. Market regime: STRUCTURAL UPTREND (-7.0% from 52W peak, +2.2% vs 200-DMA). Sector breadth: 5/5 sectors in green.",
   "postmarket_pillars": {
     "commodities": {
       "brent": {
         "key": "BRENT",
-        "quote_date": "2026-11-04",
+        "quote_date": "2026-11-05",
         "label": "Brent Crude",
-        "price": "93.83",
-        "price_raw": 93.83,
-        "prev_close": 103.52,
-        "prev_close_fmt": "103.52",
-        "change": -9.69,
-        "change_pct": -9.36,
-        "direction": "down",
+        "price": "96.30",
+        "price_raw": 96.3,
+        "prev_close": 93.59,
+        "prev_close_fmt": "93.59",
+        "change": 2.71,
+        "change_pct": 2.9,
+        "direction": "up",
         "unit": "USD/bbl",
         "range_52w": {
           "low": 58.72,
           "high": 126.1,
           "low_fmt": "58.72",
           "high_fmt": "126.10",
-          "pos_pct": 52.1,
-          "pct_from_high": -25.59
+          "pos_pct": 55.8,
+          "pct_from_high": -23.63
         }
       },
       "wti": {
         "key": "WTI",
-        "quote_date": "2026-11-04",
+        "quote_date": "2026-11-05",
         "label": "WTI Crude",
-        "price": "86.96",
-        "price_raw": 86.96,
-        "prev_close": 95.8,
-        "prev_close_fmt": "95.80",
-        "change": -8.84,
-        "change_pct": -9.23,
-        "direction": "down",
+        "price": "89.04",
+        "price_raw": 89.04,
+        "prev_close": 86.66,
+        "prev_close_fmt": "86.66",
+        "change": 2.38,
+        "change_pct": 2.75,
+        "direction": "up",
         "unit": "USD/bbl",
         "range_52w": {
           "low": 54.98,
           "high": 119.48,
           "low_fmt": "54.98",
           "high_fmt": "119.48",
-          "pos_pct": 49.6,
-          "pct_from_high": -27.22
+          "pos_pct": 52.8,
+          "pct_from_high": -25.48
         }
       },
       "natgas": {
         "key": "NATGAS",
-        "quote_date": "2026-11-04",
+        "quote_date": "2026-11-05",
         "label": "Natural Gas",
         "price": "2.94",
-        "price_raw": 2.942,
-        "prev_close": 2.871,
-        "prev_close_fmt": "2.87",
-        "change": 0.071,
-        "change_pct": 2.47,
+        "price_raw": 2.944,
+        "prev_close": 2.932,
+        "prev_close_fmt": "2.93",
+        "change": 0.012,
+        "change_pct": 0.41,
         "direction": "up",
         "unit": "USD/MMBtu",
         "range_52w": {
@@ -226,76 +226,76 @@
           "low_fmt": "2.48",
           "high_fmt": "7.83",
           "pos_pct": 8.6,
-          "pct_from_high": -62.41
+          "pct_from_high": -62.39
         }
       },
       "gold": {
         "key": "GOLD",
-        "quote_date": "2026-11-04",
+        "quote_date": "2026-11-05",
         "label": "Gold",
-        "price": "4,145.40",
-        "price_raw": 4145.3999,
-        "prev_close": 3966.6001,
-        "prev_close_fmt": "3,966.60",
-        "change": 178.7998,
-        "change_pct": 4.51,
-        "direction": "up",
+        "price": "4,142.50",
+        "price_raw": 4142.5,
+        "prev_close": 4149.7998,
+        "prev_close_fmt": "4,149.80",
+        "change": -7.2998,
+        "change_pct": -0.18,
+        "direction": "down",
         "unit": "USD/oz",
         "range_52w": {
           "low": 3879.3,
           "high": 5586.2,
           "low_fmt": "3,879.30",
           "high_fmt": "5,586.20",
-          "pos_pct": 15.6,
-          "pct_from_high": -25.79
+          "pos_pct": 15.4,
+          "pct_from_high": -25.84
         }
       },
       "silver": {
         "key": "SILVER",
-        "quote_date": "2026-11-04",
+        "quote_date": "2026-11-05",
         "label": "Silver",
-        "price": "53.17",
-        "price_raw": 53.175,
-        "prev_close": 49.955,
-        "prev_close_fmt": "49.96",
-        "change": 3.22,
-        "change_pct": 6.45,
-        "direction": "up",
+        "price": "52.83",
+        "price_raw": 52.835,
+        "prev_close": 53.095,
+        "prev_close_fmt": "53.10",
+        "change": -0.26,
+        "change_pct": -0.49,
+        "direction": "down",
         "unit": "USD/oz",
         "range_52w": {
-          "low": 47.56,
+          "low": 47.79,
           "high": 121.3,
-          "low_fmt": "47.56",
+          "low_fmt": "47.79",
           "high_fmt": "121.30",
-          "pos_pct": 7.6,
-          "pct_from_high": -56.16
+          "pos_pct": 6.9,
+          "pct_from_high": -56.44
         }
       },
       "catalyst": {
-        "title": "Stock Market LIVE: GIFT Nifty jumps 300 pts as Brent crude slips below $100; Kospi tumbles 4%",
-        "url": "https://www.business-standard.com/markets/news/stock-market-live-november-5-nse-bse-sensex-today-nifty50-gift-nifty-crude-oil-prices-ipo-today-126110500085_1.html",
+        "title": "Eurozone bond yields edge lower as oil prices stabilise, ECB rate bets ease",
+        "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/eurozone-bond-yields-edge-lower-as-oil-prices-stabilise-ecb-rate-bets-ease/articleshow/135568561.cms",
         "why_it_matters": "Crude affects India’s import bill and energy-sensitive sectors; the headline does not establish a clear price direction.",
         "source": ""
       }
     },
     "earnings": [
       {
-        "title": "Zydus Lifesciences Q2 net profit falls 26.6% to Rs 925.5 crore",
-        "url": "https://economictimes.indiatimes.com/markets/stocks/earnings/zydus-lifesciences-q2-net-profit-falls-26-6-to-rs-925-5-crore/articleshow/135555960.cms",
+        "title": "Stock Market LIVE: Sensex surges 2,000 pts, Nifty above 24500; BEML shares drop 4% post Q2 result",
+        "url": "https://www.business-standard.com/markets/news/stock-market-live-november-5-nse-bse-sensex-today-nifty50-gift-nifty-crude-oil-prices-ipo-today-126110500085_1.html",
         "companies": [],
         "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
         "source": ""
       },
       {
-        "title": "Bharti Airtel Q2 results 2026 today: Here's schedule, preview, expectations, returns; Should you buy ahead of earnings?",
-        "url": "https://www.livemint.com/market/stock-market-news/bharti-airtel-q2-results-2026-today-heres-schedule-preview-expectations-returns-should-you-buy-ahead-of-earnings-11793846386935.html",
+        "title": "168% rally in 3 yrs: After ₹270 dividend, auto ancillary stock to consider bonus, stock split - Do you own?",
+        "url": "https://www.livemint.com/market/stock-market-news/168-rally-in-3-yrs-after-rs-270-dividend-auto-ancillary-stock-to-consider-bonus-stock-split-do-you-own-11793867159176.html",
         "companies": [],
-        "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
+        "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
         "source": ""
       },
       {
-        "title": "Upbeat Earnings Bolster Case for India Stocks as Asia Wavers",
-        "url": "https://www.livemint.com/market/upbeat-earnings-bolster-case-for-india-stocks-as-asia-wavers-11793843572772.html",
+        "title": "Airtel's premiumization strategy drives strong Q2 revenue and Ebitda growth",
+        "url": "https://www.livemint.com/companies/company-results/airtels-premiumization-strategy-drives-strong-q2-revenue-and-ebitda-growth-11793861191107.html",
         "companies": [],
         "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
         "source": ""
@@ -320,9 +320,9 @@
         }
       },
       "catalyst": {
-        "title": "White House panel delays hearing on Fed's Lisa Cook to Dec. 14",
-        "url": "https://www.cnbc.com/2026/11/04/trump-federal-reserve-lisa-cook-hearing.html",
-        "why_it_matters": "The dispute concerns Federal Reserve governance and independence; it does not itself announce an interest-rate decision.",
+        "title": "Eurozone bond yields edge lower as oil prices stabilise, ECB rate bets ease",
+        "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/eurozone-bond-yields-edge-lower-as-oil-prices-stabilise-ecb-rate-bets-ease/articleshow/135568561.cms",
+        "why_it_matters": "Crude affects India’s import bill and energy-sensitive sectors; the headline does not establish a clear price direction.",
         "source": ""
       }
     }
