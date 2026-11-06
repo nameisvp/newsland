@@ -1,9 +1,9 @@
 {
-  "updated": "2026-11-06T14:42:54.398754+00:00",
+  "updated": "2026-11-06T20:38:41.553389+00:00",
   "schema_version": 2,
   "is_live": false,
-  "quote_updated": "2026-11-06T14:42:54.398208+00:00",
-  "quote_date": "2026-11-06",
+  "quote_updated": "2026-11-06T20:38:41.552881+00:00",
+  "quote_date": "2026-11-05",
   "quote_source": "yfinance",
   "live_bias_label": "LATEST AVAILABLE QUOTE",
   "bias_label": "LATEST AVAILABLE QUOTE",
@@ -26,18 +26,18 @@
   },
   "overnight": {
     "SP500": {
-      "val": "7,400",
-      "pct": 0.63,
+      "val": "7,394",
+      "pct": 0.54,
       "date": "2026-11-06"
     },
     "NASDAQ": {
-      "val": "24,698",
-      "pct": 1.57,
+      "val": "24,639",
+      "pct": 1.33,
       "date": "2026-11-06"
     },
     "US10Y": {
-      "val": "4.87%",
-      "pct": 0.64,
+      "val": "4.86%",
+      "pct": 0.45,
       "date": "2026-11-06"
     }
   },
@@ -45,12 +45,12 @@
     "key": "BRENT",
     "quote_date": "2026-11-06",
     "label": "Brent Crude",
-    "price": "98.11",
-    "price_raw": 98.11,
+    "price": "98.24",
+    "price_raw": 98.24,
     "prev_close": 99.66,
     "prev_close_fmt": "99.66",
-    "change": -1.55,
-    "change_pct": -1.56,
+    "change": -1.42,
+    "change_pct": -1.42,
     "direction": "down",
     "unit": "USD/bbl",
     "range_52w": {
@@ -58,8 +58,8 @@
       "high": 126.1,
       "low_fmt": "58.72",
       "high_fmt": "126.10",
-      "pos_pct": 58.5,
-      "pct_from_high": -22.2
+      "pos_pct": 58.7,
+      "pct_from_high": -22.09
     }
   },
   "usdinr": {
@@ -85,35 +85,35 @@
   },
   "pivots": {
     "nifty": {
-      "pivot": 24816,
-      "s1": 24602,
-      "r1": 25244,
-      "s2": 24174,
-      "r2": 25459,
-      "date": "2026-11-06"
+      "pivot": 24471,
+      "s1": 24362,
+      "r1": 24646,
+      "s2": 24187,
+      "r2": 24755,
+      "date": "2026-11-05"
     },
     "banknifty": {
-      "pivot": 58498,
-      "s1": 57909,
-      "r1": 59674,
-      "s2": 56732,
-      "r2": 60263,
-      "date": "2026-11-06"
+      "pivot": 57446,
+      "s1": 57045,
+      "r1": 58175,
+      "s2": 56317,
+      "r2": 58576,
+      "date": "2026-11-05"
     }
   },
   "posture": {
-    "dma50": 23248,
-    "dma50_fmt": "23,248",
-    "pct_dma50": 7.67,
-    "dma200": 23999,
-    "dma200_fmt": "23,999",
-    "pct_dma200": 4.3,
+    "dma50": 23234,
+    "dma50_fmt": "23,234",
+    "pct_dma50": 5.61,
+    "dma200": 24002,
+    "dma200_fmt": "24,002",
+    "pct_dma200": 2.23,
     "high52": 26373,
     "high52_fmt": "26,373",
     "low52": 22180,
     "low52_fmt": "22,180",
-    "pct_from_high52": -5.09,
-    "pos_52w": 68.0,
+    "pct_from_high52": -6.96,
+    "pos_52w": 56.2,
     "regime": "STRUCTURAL UPTREND"
   },
   "sector_breadth": {
@@ -154,28 +154,28 @@
       "num": "02",
       "title": "Crude and input costs",
       "bias": "Context",
-      "desc": "Latest Brent quote: 98.11 USD/bbl (-1.56%). Higher crude can raise import and input costs; lower crude can ease them. This quote alone does not establish the cause of the move."
+      "desc": "Latest Brent quote: 98.24 USD/bbl (-1.42%). Higher crude can raise import and input costs; lower crude can ease them. This quote alone does not establish the cause of the move."
     },
     {
       "num": "03",
       "title": "Market posture & breadth",
       "bias": "Context",
-      "desc": "Nifty is 5.1% below 52W high (26,373), trading 4.3% above 200-DMA (23,999). Sector participation: 5/5 sectors in green (Top: Bank +2.27%)."
+      "desc": "Nifty is 7.0% below 52W high (26,373), trading 2.2% above 200-DMA (24,002). Sector participation: 5/5 sectors in green (Top: Bank +2.27%)."
     }
   ],
-  "trader_take": "Latest available Nifty quote: 25,030 (+2.01% versus previous close). Latest Nifty reading is above the 24,816 pivot. Next calculated resistance above this reading: 25,244. Pivots are calculated references, not confirmed support or resistance. Market regime: STRUCTURAL UPTREND (-5.1% from 52W peak, +4.3% vs 200-DMA). Sector breadth: 5/5 sectors in green.",
+  "trader_take": "Latest available Nifty quote: 25,030 (+2.01% versus previous close). Latest Nifty reading is above the 24,471 pivot. The reading is above both calculated resistance levels. Pivots are calculated references, not confirmed support or resistance. Market regime: STRUCTURAL UPTREND (-7.0% from 52W peak, +2.2% vs 200-DMA). Sector breadth: 5/5 sectors in green.",
   "postmarket_pillars": {
     "commodities": {
       "brent": {
         "key": "BRENT",
         "quote_date": "2026-11-06",
         "label": "Brent Crude",
-        "price": "98.11",
-        "price_raw": 98.11,
+        "price": "98.24",
+        "price_raw": 98.24,
         "prev_close": 99.66,
         "prev_close_fmt": "99.66",
-        "change": -1.55,
-        "change_pct": -1.56,
+        "change": -1.42,
+        "change_pct": -1.42,
         "direction": "down",
         "unit": "USD/bbl",
         "range_52w": {
@@ -183,20 +183,20 @@
           "high": 126.1,
           "low_fmt": "58.72",
           "high_fmt": "126.10",
-          "pos_pct": 58.5,
-          "pct_from_high": -22.2
+          "pos_pct": 58.7,
+          "pct_from_high": -22.09
         }
       },
       "wti": {
         "key": "WTI",
         "quote_date": "2026-11-06",
         "label": "WTI Crude",
-        "price": "90.62",
-        "price_raw": 90.62,
+        "price": "90.83",
+        "price_raw": 90.83,
         "prev_close": 91.45,
         "prev_close_fmt": "91.45",
-        "change": -0.83,
-        "change_pct": -0.91,
+        "change": -0.62,
+        "change_pct": -0.68,
         "direction": "down",
         "unit": "USD/bbl",
         "range_52w": {
@@ -204,20 +204,20 @@
           "high": 119.48,
           "low_fmt": "54.98",
           "high_fmt": "119.48",
-          "pos_pct": 55.3,
-          "pct_from_high": -24.15
+          "pos_pct": 55.6,
+          "pct_from_high": -23.98
         }
       },
       "natgas": {
         "key": "NATGAS",
         "quote_date": "2026-11-06",
         "label": "Natural Gas",
-        "price": "3.00",
-        "price_raw": 2.996,
+        "price": "2.98",
+        "price_raw": 2.979,
         "prev_close": 2.956,
         "prev_close_fmt": "2.96",
-        "change": 0.04,
-        "change_pct": 1.35,
+        "change": 0.023,
+        "change_pct": 0.78,
         "direction": "up",
         "unit": "USD/MMBtu",
         "range_52w": {
@@ -225,41 +225,41 @@
           "high": 7.83,
           "low_fmt": "2.48",
           "high_fmt": "7.83",
-          "pos_pct": 9.6,
-          "pct_from_high": -61.72
+          "pos_pct": 9.3,
+          "pct_from_high": -61.94
         }
       },
       "gold": {
         "key": "GOLD",
         "quote_date": "2026-11-06",
         "label": "Gold",
-        "price": "4,050.00",
-        "price_raw": 4050.0,
+        "price": "4,072.60",
+        "price_raw": 4072.6001,
         "prev_close": 4053.8,
         "prev_close_fmt": "4,053.80",
-        "change": -3.8,
-        "change_pct": -0.09,
-        "direction": "down",
+        "change": 18.8,
+        "change_pct": 0.46,
+        "direction": "up",
         "unit": "USD/oz",
         "range_52w": {
           "low": 3879.3,
           "high": 5586.2,
           "low_fmt": "3,879.30",
           "high_fmt": "5,586.20",
-          "pos_pct": 10.0,
-          "pct_from_high": -27.5
+          "pos_pct": 11.3,
+          "pct_from_high": -27.1
         }
       },
       "silver": {
         "key": "SILVER",
         "quote_date": "2026-11-06",
         "label": "Silver",
-        "price": "51.67",
-        "price_raw": 51.665,
+        "price": "51.99",
+        "price_raw": 51.99,
         "prev_close": 51.545,
         "prev_close_fmt": "51.54",
-        "change": 0.12,
-        "change_pct": 0.23,
+        "change": 0.445,
+        "change_pct": 0.86,
         "direction": "up",
         "unit": "USD/oz",
         "range_52w": {
@@ -267,30 +267,18 @@
           "high": 121.3,
           "low_fmt": "48.01",
           "high_fmt": "121.30",
-          "pos_pct": 5.0,
-          "pct_from_high": -57.41
+          "pos_pct": 5.4,
+          "pct_from_high": -57.14
         }
       },
       "catalyst": {
-        "title": "Rupee hits six-month high of 93.91 against dollar on oil price decline",
-        "url": "https://www.business-standard.com/economy/news/rupee-hits-six-month-high-of-93-91-against-dollar-on-oil-price-decline-126110601558_1.html",
-        "why_it_matters": "Falling crude can ease India’s import bill and input costs for airlines and paints, while reducing upstream oil realizations.",
+        "title": "Dhanteras special: Gold beats stocks or Nifty takes the lead? Gold vs Nifty 50 returns in Samvat 2082 compared",
+        "url": "https://www.livemint.com/market/stock-market-news/dhanteras-diwali-gold-beats-stocks-or-nifty-takes-the-lead-gold-vs-nifty-50-returns-in-samvat-2082-compared-11793983947279.html",
+        "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
         "source": ""
       }
     },
     "earnings": [
-      {
-        "title": "Voltas Q2 profit rises 51.4% to ₹47.71 cr; revenue up 15.3% to ₹2,707 cr",
-        "url": "https://www.business-standard.com/companies/quarterly-results/voltas-q2-profit-rises-51-4-to-47-71-cr-revenue-up-15-3-to-2-707-cr-126110601657_1.html",
-        "companies": [
-          {
-            "name": "Voltas",
-            "symbol": "voltas"
-          }
-        ],
-        "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
-        "source": ""
-      },
       {
         "title": "Honasa Consumer eyes hair colour entry as Q2 net profit jumps 87% to ₹73 crore",
         "url": "https://www.livemint.com/companies/honasa-consumer-eyes-hair-colour-entry-as-q2-net-profit-jumps-87-to-73-crore-11793964302074.html",
@@ -304,30 +292,42 @@
         "companies": [],
         "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
         "source": ""
+      },
+      {
+        "title": "Hindalco beats Q2 estimates as strong metal prices offset rising input costs",
+        "url": "https://www.livemint.com/companies/company-results/hindalco-beats-q2-estimates-as-strong-metal-prices-offset-rising-input-costs-11793962947194.html",
+        "companies": [
+          {
+            "name": "Hindalco",
+            "symbol": "hindalco"
+          }
+        ],
+        "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
+        "source": ""
       }
     ],
     "global_macro": {
       "overnight": {
         "SP500": {
-          "val": "7,400",
-          "pct": 0.63,
+          "val": "7,394",
+          "pct": 0.54,
           "date": "2026-11-06"
         },
         "NASDAQ": {
-          "val": "24,698",
-          "pct": 1.57,
+          "val": "24,639",
+          "pct": 1.33,
           "date": "2026-11-06"
         },
         "US10Y": {
-          "val": "4.87%",
-          "pct": 0.64,
+          "val": "4.86%",
+          "pct": 0.45,
           "date": "2026-11-06"
         }
       },
       "catalyst": {
-        "title": "Stock Market Live Updates: Nasdaq futures rebound as Nvidia, chip stocks recover after AI selloff",
-        "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/stock-market-live-updates-dow-jones-nasdaq-sp-500-nvidia-amd-intel-broadcom-micron-tesla-airbnb-ai-chip-stocks-jobs-report-treasury-yields-iran-war-democrat-midterm-inflation-oil-prices-6th-november-2026/liveblog/135609029.cms",
-        "why_it_matters": "Alters market structure, compliance mandates, capital allocation rules, and retail derivative trading liquidity.",
+        "title": "Nvidia, AMD Lead Chip Stock Rebound After Wall Street's Worst Tech Selloff In 19 Months",
+        "url": "https://www.ndtvprofit.com/markets/nvidia-amd-lead-chip-stock-rebound-after-wall-streets-worst-tech-selloff-in-19-months-12294496#publisher=newsstand",
+        "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
         "source": ""
       }
     }
