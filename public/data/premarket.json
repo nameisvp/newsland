@@ -1,8 +1,8 @@
 {
-  "updated": "2026-11-05T19:05:33.022691+00:00",
+  "updated": "2026-11-06T00:14:28.834660+00:00",
   "schema_version": 2,
   "is_live": false,
-  "quote_updated": "2026-11-05T19:05:33.022135+00:00",
+  "quote_updated": "2026-11-06T00:14:28.834282+00:00",
   "quote_date": "2026-11-04",
   "quote_source": "yfinance",
   "live_bias_label": "LATEST AVAILABLE QUOTE",
@@ -26,18 +26,18 @@
   },
   "overnight": {
     "SP500": {
-      "val": "7,367",
-      "pct": -4.18,
+      "val": "7,354",
+      "pct": -4.36,
       "date": "2026-11-05"
     },
     "NASDAQ": {
-      "val": "24,367",
-      "pct": -5.32,
+      "val": "24,315",
+      "pct": -5.52,
       "date": "2026-11-05"
     },
     "US10Y": {
-      "val": "4.83%",
-      "pct": -1.29,
+      "val": "4.84%",
+      "pct": -1.16,
       "date": "2026-11-05"
     }
   },
@@ -45,12 +45,12 @@
     "key": "BRENT",
     "quote_date": "2026-11-05",
     "label": "Brent Crude",
-    "price": "97.89",
-    "price_raw": 97.89,
+    "price": "99.01",
+    "price_raw": 99.01,
     "prev_close": 93.59,
     "prev_close_fmt": "93.59",
-    "change": 4.3,
-    "change_pct": 4.59,
+    "change": 5.42,
+    "change_pct": 5.79,
     "direction": "up",
     "unit": "USD/bbl",
     "range_52w": {
@@ -58,15 +58,15 @@
       "high": 126.1,
       "low_fmt": "58.72",
       "high_fmt": "126.10",
-      "pos_pct": 58.1,
-      "pct_from_high": -22.37
+      "pos_pct": 59.8,
+      "pct_from_high": -21.48
     }
   },
   "usdinr": {
     "key": "USDINR",
     "quote_date": "2026-11-05",
     "label": "INR / USD",
-    "price": "94.46",
+    "price": "94.47",
     "price_raw": 94.465,
     "prev_close": 94.53,
     "prev_close_fmt": "94.53",
@@ -154,7 +154,7 @@
       "num": "02",
       "title": "Crude and input costs",
       "bias": "Context",
-      "desc": "Latest Brent quote: 97.89 USD/bbl (+4.59%). Higher crude can raise import and input costs; lower crude can ease them. This quote alone does not establish the cause of the move."
+      "desc": "Latest Brent quote: 99.01 USD/bbl (+5.79%). Higher crude can raise import and input costs; lower crude can ease them. This quote alone does not establish the cause of the move."
     },
     {
       "num": "03",
@@ -170,12 +170,12 @@
         "key": "BRENT",
         "quote_date": "2026-11-05",
         "label": "Brent Crude",
-        "price": "97.89",
-        "price_raw": 97.89,
+        "price": "99.01",
+        "price_raw": 99.01,
         "prev_close": 93.59,
         "prev_close_fmt": "93.59",
-        "change": 4.3,
-        "change_pct": 4.59,
+        "change": 5.42,
+        "change_pct": 5.79,
         "direction": "up",
         "unit": "USD/bbl",
         "range_52w": {
@@ -183,20 +183,20 @@
           "high": 126.1,
           "low_fmt": "58.72",
           "high_fmt": "126.10",
-          "pos_pct": 58.1,
-          "pct_from_high": -22.37
+          "pos_pct": 59.8,
+          "pct_from_high": -21.48
         }
       },
       "wti": {
         "key": "WTI",
         "quote_date": "2026-11-05",
         "label": "WTI Crude",
-        "price": "90.14",
-        "price_raw": 90.14,
+        "price": "91.08",
+        "price_raw": 91.08,
         "prev_close": 86.66,
         "prev_close_fmt": "86.66",
-        "change": 3.48,
-        "change_pct": 4.02,
+        "change": 4.42,
+        "change_pct": 5.1,
         "direction": "up",
         "unit": "USD/bbl",
         "range_52w": {
@@ -204,20 +204,20 @@
           "high": 119.48,
           "low_fmt": "54.98",
           "high_fmt": "119.48",
-          "pos_pct": 54.5,
-          "pct_from_high": -24.56
+          "pos_pct": 56.0,
+          "pct_from_high": -23.77
         }
       },
       "natgas": {
         "key": "NATGAS",
         "quote_date": "2026-11-05",
         "label": "Natural Gas",
-        "price": "2.93",
-        "price_raw": 2.935,
+        "price": "2.94",
+        "price_raw": 2.944,
         "prev_close": 2.932,
         "prev_close_fmt": "2.93",
-        "change": 0.003,
-        "change_pct": 0.1,
+        "change": 0.012,
+        "change_pct": 0.41,
         "direction": "up",
         "unit": "USD/MMBtu",
         "range_52w": {
@@ -225,20 +225,20 @@
           "high": 7.83,
           "low_fmt": "2.48",
           "high_fmt": "7.83",
-          "pos_pct": 8.5,
-          "pct_from_high": -62.5
+          "pos_pct": 8.6,
+          "pct_from_high": -62.39
         }
       },
       "gold": {
         "key": "GOLD",
         "quote_date": "2026-11-05",
         "label": "Gold",
-        "price": "4,116.00",
-        "price_raw": 4116.0,
+        "price": "4,104.50",
+        "price_raw": 4104.5,
         "prev_close": 4149.7998,
         "prev_close_fmt": "4,149.80",
-        "change": -33.7998,
-        "change_pct": -0.81,
+        "change": -45.2998,
+        "change_pct": -1.09,
         "direction": "down",
         "unit": "USD/oz",
         "range_52w": {
@@ -246,20 +246,20 @@
           "high": 5586.2,
           "low_fmt": "3,879.30",
           "high_fmt": "5,586.20",
-          "pos_pct": 13.9,
-          "pct_from_high": -26.32
+          "pos_pct": 13.2,
+          "pct_from_high": -26.52
         }
       },
       "silver": {
         "key": "SILVER",
         "quote_date": "2026-11-05",
         "label": "Silver",
-        "price": "52.47",
-        "price_raw": 52.47,
+        "price": "51.88",
+        "price_raw": 51.88,
         "prev_close": 53.095,
         "prev_close_fmt": "53.10",
-        "change": -0.625,
-        "change_pct": -1.18,
+        "change": -1.215,
+        "change_pct": -2.29,
         "direction": "down",
         "unit": "USD/oz",
         "range_52w": {
@@ -267,8 +267,8 @@
           "high": 121.3,
           "low_fmt": "47.79",
           "high_fmt": "121.30",
-          "pos_pct": 6.4,
-          "pct_from_high": -56.74
+          "pos_pct": 5.6,
+          "pct_from_high": -57.23
         }
       },
       "catalyst": {
@@ -280,54 +280,54 @@
     },
     "earnings": [
       {
-        "title": "Bharti Airtel net profit rises 24% to ₹10,710 crore in September quarter",
-        "url": "https://www.thehindu.com/business/Industry/bharti-airtel-net-profit-rises-24-to-10710-crore-in-september-quarter/article71671454.ece",
+        "title": "OCBC Q3 profit rises 3% as expected on lending strength",
+        "url": "https://www.investing.com/news/earnings/ocbc-q3-profit-rises-3-as-expected-on-lending-strength-5006108",
         "companies": [],
         "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
         "source": ""
       },
       {
-        "title": "Paras Healthcare posts Rs 40 crore Q2 net profit in first results after listing",
-        "url": "https://economictimes.indiatimes.com/markets/stocks/earnings/paras-healthcare-posts-rs-40-crore-q2-net-profit-in-first-results-after-listing/articleshow/135580435.cms",
+        "title": "Clarus earnings beat by $0.08, revenue topped estimates",
+        "url": "https://www.investing.com/news/earnings/clarus-earnings-beat-by-008-revenue-topped-estimates-5006106",
         "companies": [],
         "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
         "source": ""
       },
       {
-        "title": "M&M Q2 consolidated PAT surges on strong SUV demand, beats Maruti and Hyundai",
-        "url": "https://www.livemint.com/companies/company-results/mm-strong-suv-demand-maruti-hyundai-11793878483326.html",
+        "title": "ONGC Q2 profit up 57% as higher oil, gas prices offset decline in output",
+        "url": "https://www.business-standard.com/companies/news/ongc-net-profit-jumps-57-to-15-488-64-crore-on-higher-oil-gas-prices-126110501661_1.html",
         "companies": [
           {
-            "name": "Maruti Suzuki",
-            "symbol": "maruti"
+            "name": "ONGC",
+            "symbol": "ongc"
           }
         ],
-        "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
+        "why_it_matters": "Crude affects India’s import bill and energy-sensitive sectors; the headline does not establish a clear price direction.",
         "source": ""
       }
     ],
     "global_macro": {
       "overnight": {
         "SP500": {
-          "val": "7,367",
-          "pct": -4.18,
+          "val": "7,354",
+          "pct": -4.36,
           "date": "2026-11-05"
         },
         "NASDAQ": {
-          "val": "24,367",
-          "pct": -5.32,
+          "val": "24,315",
+          "pct": -5.52,
           "date": "2026-11-05"
         },
         "US10Y": {
-          "val": "4.83%",
-          "pct": -1.29,
+          "val": "4.84%",
+          "pct": -1.16,
           "date": "2026-11-05"
         }
       },
       "catalyst": {
-        "title": "US stock market crash: Chip stocks extend sell-off, AMD, Arm, Qualcomm and Sandisk plunge up to 17%; Nasdaq down 6%",
-        "url": "https://www.livemint.com/market/stock-market-news/us-stock-market-crash-chip-stocks-extend-sell-off-amd-arm-qualcomm-and-sandisk-plunge-up-to-17-nasdaq-down-6-11793900308301.html",
-        "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
+        "title": "Nasdaq posts biggest daily drop in 19 months on fears of AI regulations",
+        "url": "https://www.investing.com/news/stock-market-news/sp-500-futures-steady-after-midterm-rally-nasdaq-lags-on-chip-weakness-5003237",
+        "why_it_matters": "Alters market structure, compliance mandates, capital allocation rules, and retail derivative trading liquidity.",
         "source": ""
       }
     }
