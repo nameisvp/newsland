@@ -1,16 +1,16 @@
 {
-  "updated": "2026-11-08T14:28:17.567011+00:00",
+  "updated": "2026-11-08T19:00:18.555262+00:00",
   "schema_version": 2,
   "is_live": false,
-  "quote_updated": "2026-11-08T14:28:17.566493+00:00",
+  "quote_updated": "2026-11-08T19:00:18.554742+00:00",
   "quote_date": "2026-11-08",
   "quote_source": "yfinance",
   "live_bias_label": "LATEST AVAILABLE QUOTE",
   "bias_label": "LATEST AVAILABLE QUOTE",
   "live_nifty_price": "24,986",
-  "live_pts": -44,
-  "live_pct": -0.18,
-  "nifty_prev_close": "25,030",
+  "live_pts": 450,
+  "live_pct": 1.83,
+  "nifty_prev_close": "24,537",
   "fii_dii": {
     "date": "08 Oct 2026 (Prev Close)",
     "fii_net_cr": -2845.6,
@@ -20,8 +20,8 @@
   },
   "vix": {
     "price": "18.43",
-    "change": "+0.85",
-    "change_pct": "+4.84%",
+    "change": "+2.90",
+    "change_pct": "+18.65%",
     "regime": "Elevated Swings"
   },
   "overnight": {
@@ -66,12 +66,12 @@
     "key": "USDINR",
     "quote_date": "2026-11-08",
     "label": "INR / USD",
-    "price": "93.91",
-    "price_raw": 93.91,
+    "price": "93.89",
+    "price_raw": 93.895,
     "prev_close": 94.465,
     "prev_close_fmt": "94.46",
-    "change": -0.555,
-    "change_pct": -0.59,
+    "change": -0.57,
+    "change_pct": -0.6,
     "direction": "down",
     "unit": "",
     "range_52w": {
@@ -79,8 +79,8 @@
       "high": 97.05,
       "low_fmt": "85.86",
       "high_fmt": "97.05",
-      "pos_pct": 71.9,
-      "pct_from_high": -3.24
+      "pos_pct": 71.8,
+      "pct_from_high": -3.25
     }
   },
   "pivots": {
@@ -117,31 +117,31 @@
     "regime": "STRUCTURAL UPTREND"
   },
   "sector_breadth": {
-    "advances": 2,
+    "advances": 5,
     "total": 5,
     "sectors": [
       {
+        "name": "Bank",
+        "pct": 1.86
+      },
+      {
         "name": "Metal",
-        "pct": 0.26
+        "pct": 1.03
       },
       {
         "name": "Auto",
-        "pct": 0.11
+        "pct": 0.87
       },
       {
         "name": "FMCG",
-        "pct": -0.12
+        "pct": 0.55
       },
       {
         "name": "IT",
-        "pct": -0.33
-      },
-      {
-        "name": "Bank",
-        "pct": -0.4
+        "pct": 0.1
       }
     ],
-    "summary": "2/5 sectors in green"
+    "summary": "5/5 sectors in green"
   },
   "session_drivers": [
     {
@@ -160,10 +160,10 @@
       "num": "03",
       "title": "Market posture & breadth",
       "bias": "Context",
-      "desc": "Nifty is 5.3% below 52W high (26,373), trading 4.1% above 200-DMA (23,996). Sector participation: 2/5 sectors in green (Top: Metal +0.26%)."
+      "desc": "Nifty is 5.3% below 52W high (26,373), trading 4.1% above 200-DMA (23,996). Sector participation: 5/5 sectors in green (Top: Bank +1.86%)."
     }
   ],
-  "trader_take": "Latest available Nifty quote: 24,986 (-0.18% versus previous close). Latest Nifty reading is below the 25,035 pivot. Next calculated resistance above this reading: 25,084. Pivots are calculated references, not confirmed support or resistance. Market regime: STRUCTURAL UPTREND (-5.3% from 52W peak, +4.1% vs 200-DMA). Sector breadth: 2/5 sectors in green.",
+  "trader_take": "Latest available Nifty quote: 24,986 (+1.83% versus previous close). Latest Nifty reading is below the 25,035 pivot. Next calculated resistance above this reading: 25,084. Pivots are calculated references, not confirmed support or resistance. Market regime: STRUCTURAL UPTREND (-5.3% from 52W peak, +4.1% vs 200-DMA). Sector breadth: 5/5 sectors in green.",
   "postmarket_pillars": {
     "commodities": {
       "brent": {
@@ -280,15 +280,15 @@
     },
     "earnings": [
       {
-        "title": "Top Wall Street analysts like these 3 dividend stocks for consistent income",
-        "url": "https://www.cnbc.com/2026/11/08/top-analysts-like-these-3-dividend-stocks-for-consistent-income.html",
+        "title": "On Muhurat Trading 2026 Diwali, Zee Entertainment shares in rocket mode; 11% jump on buyback, interim dividend news",
+        "url": "https://www.livemint.com/market/stock-market-news/on-muhurat-trading-2026-diwali-zee-entertainment-shares-in-rocket-mode-11-jump-on-buyback-interim-dividend-news-11794129729751.html",
         "companies": [],
         "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
         "source": ""
       },
       {
-        "title": "On Muhurat Trading 2026 Diwali, Zee Entertainment shares in rocket mode; 11% jump on buyback, interim dividend news",
-        "url": "https://www.livemint.com/market/stock-market-news/on-muhurat-trading-2026-diwali-zee-entertainment-shares-in-rocket-mode-11-jump-on-buyback-interim-dividend-news-11794129729751.html",
+        "title": "Top Wall Street analysts like these 3 dividend stocks for consistent income",
+        "url": "https://www.cnbc.com/2026/11/08/top-analysts-like-these-3-dividend-stocks-for-consistent-income.html",
         "companies": [],
         "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
         "source": ""
@@ -320,9 +320,9 @@
         }
       },
       "catalyst": {
-        "title": "As tech swoon roils market, US inflation data on tap",
-        "url": "https://www.investing.com/news/stock-market-news/as-tech-swoon-roils-market-us-inflation-data-on-tap-5010231",
-        "why_it_matters": "Key determinant of central bank interest rate paths; elevated prints restrict policy easing and compress real yields.",
+        "title": "Nvidia CEO Jensen Huang faces bipartisan congressional scrutiny over reported China spy link",
+        "url": "https://www.cnbc.com/2026/11/08/jensen-huang-nvidia-china-spy-congress.html",
+        "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
         "source": ""
       }
     }

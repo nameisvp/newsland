@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-08T14:28:17.566493+00:00",
+  "updated": "2026-11-08T19:00:18.554742+00:00",
   "tickers": [
     {
       "key": "SENSEX",
@@ -7,11 +7,11 @@
       "label": "Sensex",
       "price": "80,999",
       "price_raw": 80999.3984,
-      "prev_close": 81028.0234,
-      "prev_close_fmt": "81,028",
-      "change": -28.625,
-      "change_pct": -0.04,
-      "direction": "down",
+      "prev_close": 79310.0078,
+      "prev_close_fmt": "79,310",
+      "change": 1689.3906,
+      "change_pct": 2.13,
+      "direction": "up",
       "unit": "",
       "range_52w": {
         "low": 71292.88,
@@ -28,11 +28,11 @@
       "label": "Nifty 50",
       "price": "24,986",
       "price_raw": 24986.4004,
-      "prev_close": 25030.3496,
-      "prev_close_fmt": "25,030",
-      "change": -43.9492,
-      "change_pct": -0.18,
-      "direction": "down",
+      "prev_close": 24536.5996,
+      "prev_close_fmt": "24,537",
+      "change": 449.8008,
+      "change_pct": 1.83,
+      "direction": "up",
       "unit": "",
       "range_52w": {
         "low": 22179.9,
@@ -49,10 +49,10 @@
       "label": "India VIX",
       "price": "18.43",
       "price_raw": 18.43,
-      "prev_close": 17.58,
-      "prev_close_fmt": "17.58",
-      "change": 0.85,
-      "change_pct": 4.84,
+      "prev_close": 15.5325,
+      "prev_close_fmt": "15.53",
+      "change": 2.8975,
+      "change_pct": 18.65,
       "direction": "up",
       "unit": "",
       "range_52w": {
@@ -173,12 +173,12 @@
       "key": "USDINR",
       "quote_date": "2026-11-08",
       "label": "INR / USD",
-      "price": "93.91",
-      "price_raw": 93.91,
+      "price": "93.89",
+      "price_raw": 93.895,
       "prev_close": 94.465,
       "prev_close_fmt": "94.46",
-      "change": -0.555,
-      "change_pct": -0.59,
+      "change": -0.57,
+      "change_pct": -0.6,
       "direction": "down",
       "unit": "",
       "range_52w": {
@@ -186,8 +186,8 @@
         "high": 97.05,
         "low_fmt": "85.86",
         "high_fmt": "97.05",
-        "pos_pct": 71.9,
-        "pct_from_high": -3.24
+        "pos_pct": 71.8,
+        "pct_from_high": -3.25
       }
     }
   ],
