@@ -1,8 +1,8 @@
 {
-  "updated": "2026-11-08T01:01:11.614327+00:00",
+  "updated": "2026-11-08T07:17:52.670240+00:00",
   "schema_version": 2,
   "is_live": false,
-  "quote_updated": "2026-11-08T01:01:11.613859+00:00",
+  "quote_updated": "2026-11-08T07:17:52.669671+00:00",
   "quote_date": "2026-11-06",
   "quote_source": "yfinance",
   "live_bias_label": "LATEST AVAILABLE QUOTE",
@@ -64,7 +64,7 @@
   },
   "usdinr": {
     "key": "USDINR",
-    "quote_date": "2026-11-07",
+    "quote_date": "2026-11-08",
     "label": "INR / USD",
     "price": "93.91",
     "price_raw": 93.91,
@@ -254,12 +254,12 @@
         "key": "SILVER",
         "quote_date": "2026-11-06",
         "label": "Silver",
-        "price": "51.80",
-        "price_raw": 51.803,
+        "price": "51.94",
+        "price_raw": 51.942,
         "prev_close": 51.545,
         "prev_close_fmt": "51.54",
-        "change": 0.258,
-        "change_pct": 0.5,
+        "change": 0.397,
+        "change_pct": 0.77,
         "direction": "up",
         "unit": "USD/oz",
         "range_52w": {
@@ -267,30 +267,30 @@
           "high": 121.3,
           "low_fmt": "48.12",
           "high_fmt": "121.30",
-          "pos_pct": 5.0,
-          "pct_from_high": -57.29
+          "pos_pct": 5.2,
+          "pct_from_high": -57.18
         }
       },
       "catalyst": {
-        "title": "Risk of Iran war escalation remains high despite Democratic sweep in U.S. midterm elections",
-        "url": "https://www.cnbc.com/2026/11/07/iran-war-midterm-election-oil-price-trump.html",
-        "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
+        "title": "Bullion may remain under pressure as markets track US-Iran war, inflation",
+        "url": "https://www.business-standard.com/markets/commodities/bullion-may-remain-under-pressure-as-markets-track-us-iran-war-inflation-126110800179_1.html",
+        "why_it_matters": "Key determinant of central bank interest rate paths; elevated prints restrict policy easing and compress real yields.",
         "source": ""
       }
     },
     "earnings": [
       {
+        "title": "Pacira earnings missed by $0.03, revenue fell short of estimates",
+        "url": "https://www.investing.com/news/earnings/pacira-earnings-missed-by-003-revenue-fell-short-of-estimates-5010123",
+        "companies": [],
+        "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
+        "source": ""
+      },
+      {
         "title": "US markets next week 9-14 Nov: After crash and bounce back, investors eye inflation data, tech earnings, and more",
         "url": "https://www.livemint.com/market/us-markets-next-week-9-14-nov-after-crash-and-bounce-back-investors-eye-inflation-data-tech-earnings-and-more-11794072283036.html",
         "companies": [],
         "why_it_matters": "Key determinant of central bank interest rate paths; elevated prints restrict policy easing and compress real yields.",
-        "source": ""
-      },
-      {
-        "title": "Kirloskar Industries Q2 profit rises 5% to ₹105 crore, income up 17%",
-        "url": "https://www.business-standard.com/companies/quarterly-results/kirloskar-industries-q2-profit-rises-5-to-105-crore-income-up-17-126110701228_1.html",
-        "companies": [],
-        "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
         "source": ""
       },
       {
@@ -320,8 +320,8 @@
         }
       },
       "catalyst": {
-        "title": "Emerging market central banks turn hawkish as inflation pressures mount, Citi says",
-        "url": "https://www.investing.com/news/economy-news/emerging-market-central-banks-turn-hawkish-as-inflation-pressures-mount-citi-says-5010059",
+        "title": "Bullion may remain under pressure as markets track US-Iran war, inflation",
+        "url": "https://www.business-standard.com/markets/commodities/bullion-may-remain-under-pressure-as-markets-track-us-iran-war-inflation-126110800179_1.html",
         "why_it_matters": "Key determinant of central bank interest rate paths; elevated prints restrict policy easing and compress real yields.",
         "source": ""
       }
