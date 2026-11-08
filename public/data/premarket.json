@@ -1,16 +1,16 @@
 {
-  "updated": "2026-11-08T07:17:52.670240+00:00",
+  "updated": "2026-11-08T14:28:17.567011+00:00",
   "schema_version": 2,
   "is_live": false,
-  "quote_updated": "2026-11-08T07:17:52.669671+00:00",
-  "quote_date": "2026-11-06",
+  "quote_updated": "2026-11-08T14:28:17.566493+00:00",
+  "quote_date": "2026-11-08",
   "quote_source": "yfinance",
   "live_bias_label": "LATEST AVAILABLE QUOTE",
   "bias_label": "LATEST AVAILABLE QUOTE",
-  "live_nifty_price": "25,030",
-  "live_pts": 494,
-  "live_pct": 2.01,
-  "nifty_prev_close": "24,537",
+  "live_nifty_price": "24,986",
+  "live_pts": -44,
+  "live_pct": -0.18,
+  "nifty_prev_close": "25,030",
   "fii_dii": {
     "date": "08 Oct 2026 (Prev Close)",
     "fii_net_cr": -2845.6,
@@ -19,9 +19,9 @@
     "trend": "FII Selling / DII Absorbing"
   },
   "vix": {
-    "price": "17.47",
-    "change": "+1.94",
-    "change_pct": "+12.47%",
+    "price": "18.43",
+    "change": "+0.85",
+    "change_pct": "+4.84%",
     "regime": "Elevated Swings"
   },
   "overnight": {
@@ -85,63 +85,63 @@
   },
   "pivots": {
     "nifty": {
-      "pivot": 24816,
-      "s1": 24602,
-      "r1": 25244,
-      "s2": 24174,
-      "r2": 25459,
-      "date": "2026-11-06"
+      "pivot": 25035,
+      "s1": 24937,
+      "r1": 25084,
+      "s2": 24888,
+      "r2": 25181,
+      "date": "2026-11-08"
     },
     "banknifty": {
-      "pivot": 58498,
-      "s1": 57909,
-      "r1": 59674,
-      "s2": 56732,
-      "r2": 60263,
-      "date": "2026-11-06"
+      "pivot": 58962,
+      "s1": 58680,
+      "r1": 59133,
+      "s2": 58509,
+      "r2": 59415,
+      "date": "2026-11-08"
     }
   },
   "posture": {
-    "dma50": 23248,
-    "dma50_fmt": "23,248",
-    "pct_dma50": 7.67,
-    "dma200": 23999,
-    "dma200_fmt": "23,999",
-    "pct_dma200": 4.3,
+    "dma50": 23264,
+    "dma50_fmt": "23,264",
+    "pct_dma50": 7.41,
+    "dma200": 23996,
+    "dma200_fmt": "23,996",
+    "pct_dma200": 4.13,
     "high52": 26373,
     "high52_fmt": "26,373",
     "low52": 22180,
     "low52_fmt": "22,180",
-    "pct_from_high52": -5.09,
-    "pos_52w": 68.0,
+    "pct_from_high52": -5.26,
+    "pos_52w": 66.9,
     "regime": "STRUCTURAL UPTREND"
   },
   "sector_breadth": {
-    "advances": 5,
+    "advances": 2,
     "total": 5,
     "sectors": [
       {
-        "name": "Bank",
-        "pct": 2.27
+        "name": "Metal",
+        "pct": 0.26
       },
       {
         "name": "Auto",
-        "pct": 0.76
-      },
-      {
-        "name": "Metal",
-        "pct": 0.68
+        "pct": 0.11
       },
       {
         "name": "FMCG",
-        "pct": 0.67
+        "pct": -0.12
       },
       {
         "name": "IT",
-        "pct": 0.43
+        "pct": -0.33
+      },
+      {
+        "name": "Bank",
+        "pct": -0.4
       }
     ],
-    "summary": "5/5 sectors in green"
+    "summary": "2/5 sectors in green"
   },
   "session_drivers": [
     {
@@ -160,10 +160,10 @@
       "num": "03",
       "title": "Market posture & breadth",
       "bias": "Context",
-      "desc": "Nifty is 5.1% below 52W high (26,373), trading 4.3% above 200-DMA (23,999). Sector participation: 5/5 sectors in green (Top: Bank +2.27%)."
+      "desc": "Nifty is 5.3% below 52W high (26,373), trading 4.1% above 200-DMA (23,996). Sector participation: 2/5 sectors in green (Top: Metal +0.26%)."
     }
   ],
-  "trader_take": "Latest available Nifty quote: 25,030 (+2.01% versus previous close). Latest Nifty reading is above the 24,816 pivot. Next calculated resistance above this reading: 25,244. Pivots are calculated references, not confirmed support or resistance. Market regime: STRUCTURAL UPTREND (-5.1% from 52W peak, +4.3% vs 200-DMA). Sector breadth: 5/5 sectors in green.",
+  "trader_take": "Latest available Nifty quote: 24,986 (-0.18% versus previous close). Latest Nifty reading is below the 25,035 pivot. Next calculated resistance above this reading: 25,084. Pivots are calculated references, not confirmed support or resistance. Market regime: STRUCTURAL UPTREND (-5.3% from 52W peak, +4.1% vs 200-DMA). Sector breadth: 2/5 sectors in green.",
   "postmarket_pillars": {
     "commodities": {
       "brent": {
@@ -272,30 +272,30 @@
         }
       },
       "catalyst": {
-        "title": "Bullion may remain under pressure as markets track US-Iran war, inflation",
-        "url": "https://www.business-standard.com/markets/commodities/bullion-may-remain-under-pressure-as-markets-track-us-iran-war-inflation-126110800179_1.html",
-        "why_it_matters": "Key determinant of central bank interest rate paths; elevated prints restrict policy easing and compress real yields.",
+        "title": "Lower crude, global stability to drive market growth in new Samvat: ANMI President Kamlesh Shroff",
+        "url": "https://economictimes.indiatimes.com/markets/stocks/news/lower-crude-global-stability-to-drive-market-growth-in-new-samvat-anmi-president-kamlesh-shroff/articleshow/135656109.cms",
+        "why_it_matters": "Crude affects India’s import bill and energy-sensitive sectors; the headline does not establish a clear price direction.",
         "source": ""
       }
     },
     "earnings": [
       {
-        "title": "Pacira earnings missed by $0.03, revenue fell short of estimates",
-        "url": "https://www.investing.com/news/earnings/pacira-earnings-missed-by-003-revenue-fell-short-of-estimates-5010123",
+        "title": "Top Wall Street analysts like these 3 dividend stocks for consistent income",
+        "url": "https://www.cnbc.com/2026/11/08/top-analysts-like-these-3-dividend-stocks-for-consistent-income.html",
         "companies": [],
-        "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
+        "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
         "source": ""
       },
       {
-        "title": "US markets next week 9-14 Nov: After crash and bounce back, investors eye inflation data, tech earnings, and more",
-        "url": "https://www.livemint.com/market/us-markets-next-week-9-14-nov-after-crash-and-bounce-back-investors-eye-inflation-data-tech-earnings-and-more-11794072283036.html",
+        "title": "On Muhurat Trading 2026 Diwali, Zee Entertainment shares in rocket mode; 11% jump on buyback, interim dividend news",
+        "url": "https://www.livemint.com/market/stock-market-news/on-muhurat-trading-2026-diwali-zee-entertainment-shares-in-rocket-mode-11-jump-on-buyback-interim-dividend-news-11794129729751.html",
         "companies": [],
-        "why_it_matters": "Key determinant of central bank interest rate paths; elevated prints restrict policy easing and compress real yields.",
+        "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
         "source": ""
       },
       {
-        "title": "Berkshire Hathaway more than doubles buybacks in third quarter as earnings decline",
-        "url": "https://www.cnbc.com/2026/11/07/berkshire-hathaway-q3-2026-earnings-buybacks.html",
+        "title": "Emami vs Dabur Q2 results: Which FMCG giant wins on profit, revenue and dividend? Check target, upcoming record dates",
+        "url": "https://www.livemint.com/market/stock-market-news/emami-vs-dabur-q2-results-which-fmcg-giant-wins-on-profit-revenue-and-dividend-check-target-upcoming-record-dates-11794133857711.html",
         "companies": [],
         "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
         "source": ""
@@ -320,8 +320,8 @@
         }
       },
       "catalyst": {
-        "title": "Bullion may remain under pressure as markets track US-Iran war, inflation",
-        "url": "https://www.business-standard.com/markets/commodities/bullion-may-remain-under-pressure-as-markets-track-us-iran-war-inflation-126110800179_1.html",
+        "title": "As tech swoon roils market, US inflation data on tap",
+        "url": "https://www.investing.com/news/stock-market-news/as-tech-swoon-roils-market-us-inflation-data-on-tap-5010231",
         "why_it_matters": "Key determinant of central bank interest rate paths; elevated prints restrict policy easing and compress real yields.",
         "source": ""
       }
