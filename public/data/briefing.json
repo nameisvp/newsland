@@ -1,6 +1,38 @@
 {
-  "updated": "2026-11-11T16:45:26.110672+00:00",
+  "updated": "2026-11-11T16:57:16.742168+00:00",
   "stories": [
+    {
+      "id": "9e718f170e9174a8",
+      "title": "Fed's Goolsbee calls inflation report 'borderline disturbing' as central bank weighs more hikes",
+      "url": "https://www.cnbc.com/2026/11/11/goolsbee-october-inflation-fed-rates-disturbing-distressing.html",
+      "published": 1794415742.0,
+      "region": "Global",
+      "official": false,
+      "sources": [
+        {
+          "name": "CNBC World",
+          "url": "https://www.cnbc.com/2026/11/11/goolsbee-october-inflation-fed-rates-disturbing-distressing.html"
+        }
+      ],
+      "score": 7,
+      "summary": "The consumer price index rose more than expected in October, raising alarm among Federal Reserve officials.",
+      "category": "Monetary policy",
+      "reason": "Directly shifts commercial bank cost of funds, repo borrowing rates, and rate-sensitive equity multiples (banks, real estate, auto).",
+      "matched": [
+        "Monetary policy",
+        "Economic data"
+      ],
+      "tier": "Must know",
+      "related": [],
+      "cluster_count": 1,
+      "impact_assets": [
+        "Rates",
+        "Equities"
+      ],
+      "why_it_matters": "Directly shifts commercial bank cost of funds, repo borrowing rates, and rate-sensitive equity multiples (banks, real estate, auto).",
+      "impact_chain": null,
+      "companies": []
+    },
     {
       "id": "ebf5534e3575cc2b",
       "title": "Tata Power Q2 profit jumps 32% to ₹1,652 crore",
@@ -176,38 +208,6 @@
       "companies": []
     },
     {
-      "id": "9e718f170e9174a8",
-      "title": "Fed's Goolsbee calls inflation report 'borderline disturbing' as central bank weighs more hikes",
-      "url": "https://www.cnbc.com/2026/11/11/goolsbee-october-inflation-fed-rates-disturbing-distressing.html",
-      "published": 1794407068.0,
-      "region": "Global",
-      "official": false,
-      "sources": [
-        {
-          "name": "CNBC World",
-          "url": "https://www.cnbc.com/2026/11/11/goolsbee-october-inflation-fed-rates-disturbing-distressing.html"
-        }
-      ],
-      "score": 7,
-      "summary": "The consumer price index rose more than expected in October, raising alarm among Federal Reserve officials.",
-      "category": "Monetary policy",
-      "reason": "Directly shifts commercial bank cost of funds, repo borrowing rates, and rate-sensitive equity multiples (banks, real estate, auto).",
-      "matched": [
-        "Monetary policy",
-        "Economic data"
-      ],
-      "tier": "Must know",
-      "related": [],
-      "cluster_count": 1,
-      "impact_assets": [
-        "Rates",
-        "Equities"
-      ],
-      "why_it_matters": "Directly shifts commercial bank cost of funds, repo borrowing rates, and rate-sensitive equity multiples (banks, real estate, auto).",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
       "id": "1e608070dcf37fc9",
       "title": "Selling Bullion? The Two Prices Gold And Silver Investors Must Watch Now",
       "url": "https://www.ndtvprofit.com/markets/selling-bullion-the-two-prices-gold-and-silver-investors-must-watch-now-12314019#publisher=newsstand",
@@ -261,47 +261,6 @@
       "cluster_count": 4,
       "impact_assets": [
         "Commodities"
-      ],
-      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "73714b8d1113eb99",
-      "title": "Three Reasons Why Wall Street Sans Dow Is Rallying: AI Bulls Lift Nasdaq Up Over 2%",
-      "url": "https://www.ndtvprofit.com/markets/three-reasons-why-wall-street-sans-dow-is-rallying-ai-bulls-lift-nasdaq-up-nearly-2-12313775#publisher=newsstand",
-      "published": 1794412489.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "Zerodha Pulse",
-          "url": "https://www.ndtvprofit.com/markets/three-reasons-why-wall-street-sans-dow-is-rallying-ai-bulls-lift-nasdaq-up-nearly-2-12313775#publisher=newsstand"
-        },
-        {
-          "name": "NDTV Profit",
-          "url": "https://www.ndtvprofit.com/markets/three-reasons-why-wall-street-sans-dow-is-rallying-ai-bulls-lift-nasdaq-up-nearly-2-12313775#publisher=newsstand"
-        }
-      ],
-      "score": 5,
-      "summary": "Nasdaq 100 advanced 668 points, or 2.4%, to 28,409.49 and S&P 500 gained 79.78 points, or 1.06%, to 7,600.71, while, the Dow Jones Industrial Average traded marginally lower at 52,181.16.",
-      "category": "Market flows",
-      "reason": "Flows, currency and yields provide context for Indian equity risk appetite.",
-      "matched": [
-        "Market flows"
-      ],
-      "tier": "Watch",
-      "related": [
-        {
-          "title": "Three Reasons Why Wall Street Sans Dow Is Rallying: AI Bulls Lift Nasdaq Up Nearly 2%",
-          "url": "https://www.ndtvprofit.com/markets/three-reasons-why-wall-street-sans-dow-is-rallying-ai-bulls-lift-nasdaq-up-nearly-2-12313775#publisher=newsstand",
-          "source": "Zerodha Pulse",
-          "published": 1794409559.0
-        }
-      ],
-      "cluster_count": 2,
-      "impact_assets": [
-        "Equities"
       ],
       "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
       "impact_chain": null,
@@ -380,28 +339,70 @@
       "companies": []
     },
     {
-      "id": "81b41adaa93e2336",
-      "title": "ArcelorMittal’s $900 million Brazil expansion plan trudges along as imports weigh on economics",
-      "url": "https://www.investing.com/news/stock-market-news/arcelormittals-900-million-brazil-expansion-plan-trudges-along-as-imports-weigh-on-economics-5019556",
-      "published": 1794414626.0,
+      "id": "0216d5f4a3494507",
+      "title": "A contrarian ECB rate bet targets 2.5% deposit rate through mid-March",
+      "url": "https://www.investing.com/news/forex-news/a-contrarian-ecb-rate-bet-targets-25-deposit-rate-through-midmarch-93CH-5019580",
+      "published": 1794415382.0,
       "region": "Global",
       "official": false,
       "sources": [
         {
           "name": "Investing.com",
-          "url": "https://www.investing.com/news/stock-market-news/arcelormittals-900-million-brazil-expansion-plan-trudges-along-as-imports-weigh-on-economics-5019556"
+          "url": "https://www.investing.com/news/forex-news/a-contrarian-ecb-rate-bet-targets-25-deposit-rate-through-midmarch-93CH-5019580"
         }
       ],
       "score": 4,
       "summary": "",
-      "category": "Economic data",
-      "reason": "Compare the release with expectations; the surprise can affect rates and risk appetite.",
+      "category": "Monetary policy",
+      "reason": "Key market catalyst driving market liquidity and session volatility.",
       "matched": [
-        "Economic data"
+        "Monetary policy"
       ],
       "tier": "Watch",
       "related": [],
       "cluster_count": 1,
+      "impact_assets": [
+        "Rates",
+        "Equities"
+      ],
+      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
+      "id": "73714b8d1113eb99",
+      "title": "Three Reasons Why Wall Street Sans Dow Is Rallying: AI Bulls Lift Nasdaq Up Over 2%",
+      "url": "https://www.ndtvprofit.com/markets/three-reasons-why-wall-street-sans-dow-is-rallying-ai-bulls-lift-nasdaq-up-nearly-2-12313775#publisher=newsstand",
+      "published": 1794412489.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "Zerodha Pulse",
+          "url": "https://www.ndtvprofit.com/markets/three-reasons-why-wall-street-sans-dow-is-rallying-ai-bulls-lift-nasdaq-up-nearly-2-12313775#publisher=newsstand"
+        },
+        {
+          "name": "NDTV Profit",
+          "url": "https://www.ndtvprofit.com/markets/three-reasons-why-wall-street-sans-dow-is-rallying-ai-bulls-lift-nasdaq-up-nearly-2-12313775#publisher=newsstand"
+        }
+      ],
+      "score": 5,
+      "summary": "Nasdaq 100 advanced 668 points, or 2.4%, to 28,409.49 and S&P 500 gained 79.78 points, or 1.06%, to 7,600.71, while, the Dow Jones Industrial Average traded marginally lower at 52,181.16.",
+      "category": "Market flows",
+      "reason": "Flows, currency and yields provide context for Indian equity risk appetite.",
+      "matched": [
+        "Market flows"
+      ],
+      "tier": "Watch",
+      "related": [
+        {
+          "title": "Three Reasons Why Wall Street Sans Dow Is Rallying: AI Bulls Lift Nasdaq Up Nearly 2%",
+          "url": "https://www.ndtvprofit.com/markets/three-reasons-why-wall-street-sans-dow-is-rallying-ai-bulls-lift-nasdaq-up-nearly-2-12313775#publisher=newsstand",
+          "source": "Zerodha Pulse",
+          "published": 1794409559.0
+        }
+      ],
+      "cluster_count": 2,
       "impact_assets": [
         "Equities"
       ],
@@ -737,41 +738,69 @@
       "companies": []
     },
     {
-      "id": "6c97d0575e1e492f",
-      "title": "Meta infrastructure chief Santosh Janardhan to step down in early 2027 - Bloomberg",
-      "url": "https://www.investing.com/news/stock-market-news/meta-infrastructure-chief-santosh-janardhan-to-step-down-in-early-2027--bloomberg-5019566",
-      "published": 1794414390.0,
+      "id": "52e39895ea20676a",
+      "title": "Earnings call transcript: Evolution Petroleum Q1 2027 revenue beats, shares fall",
+      "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-evolution-petroleum-q1-2027-revenue-beats-shares-fall-93CH-5019587",
+      "published": 1794415684.0,
       "region": "Global",
       "official": false,
       "sources": [
         {
           "name": "Investing.com",
-          "url": "https://www.investing.com/news/stock-market-news/meta-infrastructure-chief-santosh-janardhan-to-step-down-in-early-2027--bloomberg-5019566"
-        },
-        {
-          "name": "CNBC-TV18",
-          "url": "https://www.cnbctv18.com/market/parag-parikh-flexi-cap-fund-dumps-meta-adds-netflix-us-portfolio-reshuffle-20031373.htm"
+          "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-evolution-petroleum-q1-2027-revenue-beats-shares-fall-93CH-5019587"
         }
       ],
       "score": 2,
       "summary": "",
-      "category": "Other news",
-      "reason": "Key market catalyst driving market liquidity and session volatility.",
-      "matched": [],
-      "tier": "More",
-      "related": [
-        {
-          "title": "India’s biggest active fund dumps Meta, adds Netflix in major US portfolio reshuffle",
-          "url": "https://www.cnbctv18.com/market/parag-parikh-flexi-cap-fund-dumps-meta-adds-netflix-us-portfolio-reshuffle-20031373.htm",
-          "source": "CNBC-TV18",
-          "published": 1794385960.0
-        }
+      "category": "Earnings",
+      "reason": "Compare results and guidance with expectations for the company and its sector.",
+      "matched": [
+        "Earnings"
       ],
-      "cluster_count": 2,
+      "tier": "More",
+      "related": [],
+      "cluster_count": 1,
       "impact_assets": [
         "Equities"
       ],
-      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
+      "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
+      "id": "2dcfce91ed02d0b5",
+      "title": "Earnings call transcript: Conifex Timber narrows loss in Q3 2026 as stock jumps 19%",
+      "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-conifex-timber-narrows-loss-in-q3-2026-as-stock-jumps-19-93CH-5019577",
+      "published": 1794414921.0,
+      "region": "Global",
+      "official": false,
+      "sources": [
+        {
+          "name": "Investing.com",
+          "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-conifex-timber-narrows-loss-in-q3-2026-as-stock-jumps-19-93CH-5019577"
+        }
+      ],
+      "score": 2,
+      "summary": "",
+      "category": "Earnings",
+      "reason": "Compare results and guidance with expectations for the company and its sector.",
+      "matched": [
+        "Earnings"
+      ],
+      "tier": "More",
+      "related": [
+        {
+          "title": "Earnings call transcript: Fiera Milano lifts 2026 outlook after strong Q3 2026",
+          "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-fiera-milano-lifts-2026-outlook-after-strong-q3-2026-93CH-5019590",
+          "source": "Investing.com",
+          "published": 1794415979.0
+        }
+      ],
+      "cluster_count": 1,
+      "impact_assets": [
+        "Equities"
+      ],
+      "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
       "impact_chain": null,
       "companies": []
     },
@@ -804,73 +833,6 @@
         "Equities"
       ],
       "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "028aca138f6953ad",
-      "title": "Earnings call transcript: Motorpoint posts record H1 2026 as shares rise 3.6%",
-      "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-motorpoint-posts-record-h1-2026-as-shares-rise-36-93CH-5019563",
-      "published": 1794414295.0,
-      "region": "Global",
-      "official": false,
-      "sources": [
-        {
-          "name": "Investing.com",
-          "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-motorpoint-posts-record-h1-2026-as-shares-rise-36-93CH-5019563"
-        }
-      ],
-      "score": 2,
-      "summary": "",
-      "category": "Earnings",
-      "reason": "Compare results and guidance with expectations for the company and its sector.",
-      "matched": [
-        "Earnings"
-      ],
-      "tier": "More",
-      "related": [
-        {
-          "title": "Earnings call transcript: B&C Speakers Q3 2026 sales fall as shares drop 6.8%",
-          "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-bc-speakers-q3-2026-sales-fall-as-shares-drop-68-93CH-5019561",
-          "source": "Investing.com",
-          "published": 1794414256.0
-        }
-      ],
-      "cluster_count": 1,
-      "impact_assets": [
-        "Equities"
-      ],
-      "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "7598714d5e275760",
-      "title": "Snam 9M 2026 slides: EBITDA rises 11%, storage target achieved early",
-      "url": "https://www.investing.com/news/company-news/snam-9m-2026-slides-ebitda-rises-11-storage-target-achieved-early-93CH-5019560",
-      "published": 1794414209.0,
-      "region": "Global",
-      "official": false,
-      "sources": [
-        {
-          "name": "Investing.com",
-          "url": "https://www.investing.com/news/company-news/snam-9m-2026-slides-ebitda-rises-11-storage-target-achieved-early-93CH-5019560"
-        }
-      ],
-      "score": 2,
-      "summary": "",
-      "category": "Earnings",
-      "reason": "Compare results and guidance with expectations for the company and its sector.",
-      "matched": [
-        "Earnings"
-      ],
-      "tier": "More",
-      "related": [],
-      "cluster_count": 1,
-      "impact_assets": [
-        "Equities"
-      ],
-      "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
       "impact_chain": null,
       "companies": []
     },
@@ -912,100 +874,6 @@
       "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
       "impact_chain": null,
       "companies": []
-    },
-    {
-      "id": "27654926290e036a",
-      "title": "Cigarette Prices To Get Costlier: ITC Hikes Gold Flake Premium Prices By Rs 10 Per Pack",
-      "url": "https://www.ndtvprofit.com/markets/itc-raises-gold-flake-premium-prices-by-rs-10-per-pack-new-mrp-to-hit-shelves-by-late-november-12313825#publisher=newsstand",
-      "published": 1794412511.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "Zerodha Pulse",
-          "url": "https://www.ndtvprofit.com/markets/itc-raises-gold-flake-premium-prices-by-rs-10-per-pack-new-mrp-to-hit-shelves-by-late-november-12313825#publisher=newsstand"
-        },
-        {
-          "name": "NDTV Profit",
-          "url": "https://www.ndtvprofit.com/markets/itc-raises-gold-flake-premium-prices-by-rs-10-per-pack-new-mrp-to-hit-shelves-by-late-november-12313825#publisher=newsstand"
-        }
-      ],
-      "score": 2,
-      "summary": "ITC has raised Gold Flake Premium cigarette prices by 8% to Rs 135 per pack of 10, marking its second price hike this year amid higher taxes and pressure on legal cigarette volumes.",
-      "category": "Other news",
-      "reason": "Key market catalyst driving market liquidity and session volatility.",
-      "matched": [],
-      "tier": "More",
-      "related": [
-        {
-          "title": "ITC Raises Gold Flake Premium Prices By Rs 10 Per Pack, New MRP To Hit Shelves By Late November",
-          "url": "https://www.ndtvprofit.com/markets/itc-raises-gold-flake-premium-prices-by-rs-10-per-pack-new-mrp-to-hit-shelves-by-late-november-12313825#publisher=newsstand",
-          "source": "Zerodha Pulse",
-          "published": 1794411097.0
-        }
-      ],
-      "cluster_count": 2,
-      "impact_assets": [
-        "Commodities"
-      ],
-      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
-      "impact_chain": null,
-      "companies": [
-        {
-          "name": "ITC",
-          "symbol": "itc"
-        }
-      ]
-    },
-    {
-      "id": "4285de3ab7d10be6",
-      "title": "Bajaj Finance launches ₹11,700 crore QIP at 5% discount to closing price",
-      "url": "https://www.business-standard.com/markets/news/bajaj-finance-launches-11-700-crore-qip-at-5-discount-to-closing-price-126111101488_1.html",
-      "published": 1794412368.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "Business Standard",
-          "url": "https://www.business-standard.com/markets/news/bajaj-finance-launches-11-700-crore-qip-at-5-discount-to-closing-price-126111101488_1.html"
-        },
-        {
-          "name": "CNBC-TV18",
-          "url": "https://www.cnbctv18.com/market/bajaj-finance-launches-qip-with-floor-price-at-rs992-25-per-share-20031765.htm"
-        }
-      ],
-      "score": 2,
-      "summary": "NBFC sets indicative issue price at ₹1,025 per share, above Sebi's floor price; proceeds will be used to repay borrowings and meet general corporate requirements",
-      "category": "Other news",
-      "reason": "Key market catalyst driving market liquidity and session volatility.",
-      "matched": [],
-      "tier": "More",
-      "related": [
-        {
-          "title": "Bajaj Finance launches QIP with floor price at ₹992.25 per share",
-          "url": "https://www.cnbctv18.com/market/bajaj-finance-launches-qip-with-floor-price-at-rs992-25-per-share-20031765.htm",
-          "source": "CNBC-TV18",
-          "published": 1794400743.0
-        },
-        {
-          "title": "Bajaj Finance may launch ₹11,700 crore QIP soon, may price it at a small discount: Exclusive",
-          "url": "https://www.cnbctv18.com/market/bajaj-finance-share-price-11700-crore-qip-may-be-launched-soon-exclusive-pricing-warrants-funds-20031407.htm",
-          "source": "CNBC-TV18",
-          "published": 1794383724.0
-        }
-      ],
-      "cluster_count": 2,
-      "impact_assets": [
-        "Equities"
-      ],
-      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
-      "impact_chain": null,
-      "companies": [
-        {
-          "name": "Bajaj Finance",
-          "symbol": "bajaj finance"
-        }
-      ]
     },
     {
       "id": "4ebc16db40aed41d",
@@ -1129,34 +997,98 @@
       "companies": []
     },
     {
-      "id": "73e38badc60fd8d9",
-      "title": "Banca Ifis 9M26 slides: €67m loss masks €5m operating profit",
-      "url": "https://www.investing.com/news/company-news/banca-ifis-9m26-slides-67m-loss-masks-5m-operating-profit-93CH-5019562",
-      "published": 1794414277.0,
-      "region": "Global",
+      "id": "27654926290e036a",
+      "title": "Cigarette Prices To Get Costlier: ITC Hikes Gold Flake Premium Prices By Rs 10 Per Pack",
+      "url": "https://www.ndtvprofit.com/markets/itc-raises-gold-flake-premium-prices-by-rs-10-per-pack-new-mrp-to-hit-shelves-by-late-november-12313825#publisher=newsstand",
+      "published": 1794412511.0,
+      "region": "India",
       "official": false,
       "sources": [
         {
-          "name": "Investing.com",
-          "url": "https://www.investing.com/news/company-news/banca-ifis-9m26-slides-67m-loss-masks-5m-operating-profit-93CH-5019562"
+          "name": "Zerodha Pulse",
+          "url": "https://www.ndtvprofit.com/markets/itc-raises-gold-flake-premium-prices-by-rs-10-per-pack-new-mrp-to-hit-shelves-by-late-november-12313825#publisher=newsstand"
+        },
+        {
+          "name": "NDTV Profit",
+          "url": "https://www.ndtvprofit.com/markets/itc-raises-gold-flake-premium-prices-by-rs-10-per-pack-new-mrp-to-hit-shelves-by-late-november-12313825#publisher=newsstand"
         }
       ],
-      "score": 1,
-      "summary": "",
-      "category": "Earnings",
-      "reason": "Compare results and guidance with expectations for the company and its sector.",
-      "matched": [
-        "Earnings"
-      ],
+      "score": 2,
+      "summary": "ITC has raised Gold Flake Premium cigarette prices by 8% to Rs 135 per pack of 10, marking its second price hike this year amid higher taxes and pressure on legal cigarette volumes.",
+      "category": "Other news",
+      "reason": "Key market catalyst driving market liquidity and session volatility.",
+      "matched": [],
       "tier": "More",
-      "related": [],
-      "cluster_count": 1,
+      "related": [
+        {
+          "title": "ITC Raises Gold Flake Premium Prices By Rs 10 Per Pack, New MRP To Hit Shelves By Late November",
+          "url": "https://www.ndtvprofit.com/markets/itc-raises-gold-flake-premium-prices-by-rs-10-per-pack-new-mrp-to-hit-shelves-by-late-november-12313825#publisher=newsstand",
+          "source": "Zerodha Pulse",
+          "published": 1794411097.0
+        }
+      ],
+      "cluster_count": 2,
+      "impact_assets": [
+        "Commodities"
+      ],
+      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
+      "impact_chain": null,
+      "companies": [
+        {
+          "name": "ITC",
+          "symbol": "itc"
+        }
+      ]
+    },
+    {
+      "id": "4285de3ab7d10be6",
+      "title": "Bajaj Finance launches ₹11,700 crore QIP at 5% discount to closing price",
+      "url": "https://www.business-standard.com/markets/news/bajaj-finance-launches-11-700-crore-qip-at-5-discount-to-closing-price-126111101488_1.html",
+      "published": 1794412368.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "Business Standard",
+          "url": "https://www.business-standard.com/markets/news/bajaj-finance-launches-11-700-crore-qip-at-5-discount-to-closing-price-126111101488_1.html"
+        },
+        {
+          "name": "CNBC-TV18",
+          "url": "https://www.cnbctv18.com/market/bajaj-finance-launches-qip-with-floor-price-at-rs992-25-per-share-20031765.htm"
+        }
+      ],
+      "score": 2,
+      "summary": "NBFC sets indicative issue price at ₹1,025 per share, above Sebi's floor price; proceeds will be used to repay borrowings and meet general corporate requirements",
+      "category": "Other news",
+      "reason": "Key market catalyst driving market liquidity and session volatility.",
+      "matched": [],
+      "tier": "More",
+      "related": [
+        {
+          "title": "Bajaj Finance launches QIP with floor price at ₹992.25 per share",
+          "url": "https://www.cnbctv18.com/market/bajaj-finance-launches-qip-with-floor-price-at-rs992-25-per-share-20031765.htm",
+          "source": "CNBC-TV18",
+          "published": 1794400743.0
+        },
+        {
+          "title": "Bajaj Finance may launch ₹11,700 crore QIP soon, may price it at a small discount: Exclusive",
+          "url": "https://www.cnbctv18.com/market/bajaj-finance-share-price-11700-crore-qip-may-be-launched-soon-exclusive-pricing-warrants-funds-20031407.htm",
+          "source": "CNBC-TV18",
+          "published": 1794383724.0
+        }
+      ],
+      "cluster_count": 2,
       "impact_assets": [
         "Equities"
       ],
-      "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
+      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
       "impact_chain": null,
-      "companies": []
+      "companies": [
+        {
+          "name": "Bajaj Finance",
+          "symbol": "bajaj finance"
+        }
+      ]
     },
     {
       "id": "0cee4f7b70c86ea9",
@@ -1842,184 +1774,6 @@
       "companies": []
     },
     {
-      "id": "ebdf1899be47f08b",
-      "title": "Wall St slips as hot inflation data fuels rate-hike jitters; Nvidia down 4%",
-      "url": "https://www.business-standard.com/markets/news/wall-st-slips-as-hot-inflation-data-fuels-rate-hike-jitters-nvidia-down-4-126111001020_1.html",
-      "published": 1794329556.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "Business Standard",
-          "url": "https://www.business-standard.com/markets/news/wall-st-slips-as-hot-inflation-data-fuels-rate-hike-jitters-nvidia-down-4-126111001020_1.html"
-        },
-        {
-          "name": "Mint Markets",
-          "url": "https://www.livemint.com/market/stock-market-news/nvidia-shares-recover-4-5-after-steep-sell-off-china-spy-probe-and-november-17-earnings-to-test-investor-confidence-11794413606492.html"
-        },
-        {
-          "name": "CNBC-TV18",
-          "url": "https://www.cnbctv18.com/market/wall-street-rises-as-tech-shares-lead-rebound-nasdaq-gains-as-nvidia-shares-jump-20031856.htm"
-        },
-        {
-          "name": "CNBC World",
-          "url": "https://www.cnbc.com/2026/11/11/nvidia-stock-jensen-huang-affair-china.html"
-        },
-        {
-          "name": "Zerodha Pulse",
-          "url": "https://www.ndtvprofit.com/markets/nvidias-bull-case-hinges-on-ceo-huang-surviving-china-spy-probe-12313949#publisher=newsstand"
-        },
-        {
-          "name": "NDTV Profit",
-          "url": "https://www.ndtvprofit.com/markets/nvidias-bull-case-hinges-on-ceo-huang-surviving-china-spy-probe-12313949#publisher=newsstand"
-        },
-        {
-          "name": "ET Markets",
-          "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/baird-downgrades-nvidia-on-china-curbs-ai-demand-worries/articleshow/135740853.cms"
-        },
-        {
-          "name": "Mint Companies",
-          "url": "https://www.livemint.com/companies/news/nvidia-briefly-slips-behind-microsoft-in-market-value-as-shares-tumble-10-amid-jensen-huang-controversy-11794363923176.html"
-        }
-      ],
-      "score": 10,
-      "summary": "Wall Street fell after stronger-than-expected US inflation data fuelled expectations of a December Fed rate hike, while Brent crude briefly dropped below $90 a barrel.",
-      "category": "Economic data",
-      "reason": "Compare the release with expectations; the surprise can affect rates and risk appetite.",
-      "matched": [
-        "Economic data"
-      ],
-      "tier": "Must know",
-      "related": [
-        {
-          "title": "Nvidia shares recover 4.5% after steep sell-off; China spy probe and November 17 earnings to test investor confidence",
-          "url": "https://www.livemint.com/market/stock-market-news/nvidia-shares-recover-4-5-after-steep-sell-off-china-spy-probe-and-november-17-earnings-to-test-investor-confidence-11794413606492.html",
-          "source": "Mint Markets",
-          "published": 1794414114.0
-        },
-        {
-          "title": "Wall Street rises as tech shares lead rebound, Nasdaq gains as Nvidia jumps 5%",
-          "url": "https://www.cnbctv18.com/market/wall-street-rises-as-tech-shares-lead-rebound-nasdaq-gains-as-nvidia-shares-jump-20031856.htm",
-          "source": "CNBC-TV18",
-          "published": 1794408732.0
-        },
-        {
-          "title": "Morgan Stanley drops Nvidia from top stock picks, but isn't giving up on the stock just yet: Report",
-          "url": "https://www.cnbctv18.com/market/stocks/morgan-stanley-drops-nvidia-from-top-stock-picks-but-isnt-giving-up-on-the-stock-just-yet-report-20031801.htm",
-          "source": "CNBC-TV18",
-          "published": 1794404344.0
-        },
-        {
-          "title": "Nvidia shares rebound as Jensen Huang faces scrutiny ahead of earnings",
-          "url": "https://www.cnbc.com/2026/11/11/nvidia-stock-jensen-huang-affair-china.html",
-          "source": "CNBC World",
-          "published": 1794407723.0
-        },
-        {
-          "title": "Nvidia's Bull Case Hinges On CEO Huang Surviving China Spy Probe",
-          "url": "https://www.ndtvprofit.com/markets/nvidias-bull-case-hinges-on-ceo-huang-surviving-china-spy-probe-12313949#publisher=newsstand",
-          "source": "Zerodha Pulse",
-          "published": 1794412037.0
-        },
-        {
-          "title": "Baird downgrades Nvidia on CEO Huang worries, AI uncertainty",
-          "url": "https://www.cnbctv18.com/technology/baird-downgrades-nvidia-on-ceo-huang-worries-ai-uncertainty-20031891.htm",
-          "source": "CNBC-TV18",
-          "published": 1794411181.0
-        },
-        {
-          "title": "Baird downgrades Nvidia on China curbs, AI demand worries",
-          "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/baird-downgrades-nvidia-on-china-curbs-ai-demand-worries/articleshow/135740853.cms",
-          "source": "ET Markets",
-          "published": 1794407693.0
-        },
-        {
-          "title": "Nvidia's Huang tries to project 'business as usual' in return to office after affair revelation",
-          "url": "https://www.cnbc.com/2026/11/10/nvidia-jensen-huang-affair-office.html",
-          "source": "CNBC World",
-          "published": 1794404819.0
-        },
-        {
-          "title": "CoreWeave provides silver lining for neoclouds as Nvidia storm swirls",
-          "url": "https://www.cnbc.com/2026/11/11/coreweave-provides-silver-lining-for-neoclouds-as-nvidia-storm-swirls.html",
-          "source": "CNBC World",
-          "published": 1794398171.0
-        },
-        {
-          "title": "Nvidia sheds $430 billion in value as allegations tie CEO's affair to $7.5 billion chip smuggling ring",
-          "url": "https://www.cnbctv18.com/technology/nvidia-sheds-usd-430-billion-in-value-as-allegations-tie-ceos-affair-to-usd-7-5-billion-chip-smuggling-ring-20031457.htm",
-          "source": "CNBC-TV18",
-          "published": 1794385611.0
-        },
-        {
-          "title": "Alibaba announces plans to list T-Head, its Nvidia chip rival",
-          "url": "https://www.cnbc.com/2026/11/11/alibaba-pr.html",
-          "source": "CNBC World",
-          "published": 1794383274.0
-        },
-        {
-          "title": "Once AI darling of shareholders, Nvidia sued by own stock buyers over CEO Jensen Huang affair; $420 bn lost in 2 days",
-          "url": "https://www.livemint.com/market/stock-market-news/once-ai-darling-of-shareholders-nvidia-sued-by-own-stock-buyers-over-ceo-jensen-huang-affair-420-bn-lost-in-2-days-11794377931484.html",
-          "source": "Mint Markets",
-          "published": 1794380205.0
-        },
-        {
-          "title": "Nvidia Stock Sell-Off Deepens: Spy scandal, price target cuts put AI giant under pressure",
-          "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/nvidia-stock-sell-off-deepens-spy-scandal-price-target-cuts-put-ai-giant-under-pressure/slideshow/135728557.cms",
-          "source": "ET Markets",
-          "published": 1794379200.0
-        },
-        {
-          "title": "AI stock Nvidia crashed but Netweb Technologies shares jumped 8% today after falling 13% in 1 month? Reasons; target",
-          "url": "https://www.livemint.com/market/stock-market-news/ai-stock-nvidia-crashed-but-netweb-technologies-shares-jumped-8-today-after-falling-13-in-1-month-reasons-target-11794375606908.html",
-          "source": "Mint Markets",
-          "published": 1794376832.0
-        },
-        {
-          "title": "Nvidia briefly slips behind Microsoft in market value as shares tumble 10% amid Jensen Huang controversy",
-          "url": "https://www.livemint.com/companies/news/nvidia-briefly-slips-behind-microsoft-in-market-value-as-shares-tumble-10-amid-jensen-huang-controversy-11794363923176.html",
-          "source": "Mint Companies",
-          "published": 1794365158.0
-        },
-        {
-          "title": "Alice Huang used her relationship with Jensen Huang to move 240,000 Nvidia chips worth $7.5 billion to China: Report",
-          "url": "https://www.livemint.com/companies/news/alice-huang-used-her-relationship-with-jensen-huang-to-move-240-000-nvidia-chips-worth-7-5-billion-to-china-report-11794363878153.html",
-          "source": "Mint Companies",
-          "published": 1794364638.0
-        },
-        {
-          "title": "‘Lori took care of everything’: Nvidia CEO Jensen Huang’s old remarks about his wife resurface after affair admission",
-          "url": "https://www.livemint.com/companies/news/lori-took-care-of-everything-nvidia-ceo-jensen-huang-s-old-remarks-about-his-wife-resurface-after-affair-admission-11794322278848.html",
-          "source": "Mint Companies",
-          "published": 1794324335.0
-        },
-        {
-          "title": "Jensen Huang: The man in the leather jacket who built Nvidia's $5 trillion AI empire",
-          "url": "https://www.cnbctv18.com/technology/jensen-huang-the-man-in-the-leather-jacket-who-built-nvidias-5-trillion-ai-empire-20030991.htm",
-          "source": "CNBC-TV18",
-          "published": 1794320942.0
-        },
-        {
-          "title": "Troubles mount for Jensen Huang? Nvidia CEO summoned by US lawmakers over affair with Chinese ‘spy’ Alice Huang",
-          "url": "https://www.livemint.com/companies/news/troubles-mount-for-jensen-huang-nvidia-ceo-summoned-by-us-lawmakers-over-affair-with-chinese-spy-alice-huang-11794317474830.html",
-          "source": "Mint Companies",
-          "published": 1794319622.0
-        }
-      ],
-      "cluster_count": 8,
-      "impact_assets": [
-        "Equities"
-      ],
-      "why_it_matters": "Key determinant of central bank interest rate paths; elevated prints restrict policy easing and compress real yields.",
-      "impact_chain": null,
-      "companies": [
-        {
-          "name": "Nvidia",
-          "symbol": "nvidia"
-        }
-      ]
-    },
-    {
       "id": "9d2c5a0b3db2571c",
       "title": "Bajaj Hindusthan Sugar Q2 Results: Loss widens to ₹121 crore, approves Singapore unit sale",
       "url": "https://www.cnbctv18.com/market/stocks/bajaj-hindusthan-sugar-share-price-q2-results-loss-widens-to-rs-121-crore-approves-singapore-unit-sale-20031658.htm",
@@ -2166,36 +1920,6 @@
         "Equities"
       ],
       "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "1e9e7e56a29eb061",
-      "title": "Railway stocks on fast track! RVNL, IRFC jump up to 10% amid Sensex, Nifty rise | What's behind momentum? Key levels",
-      "url": "https://www.livemint.com/market/stock-market-news/railway-stocks-on-fast-track-rvnl-irfc-jump-up-to-10-amid-sensex-nifty-rise-whats-behind-momentum-key-levels-11794378046674.html",
-      "published": 1794379634.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "Mint Markets",
-          "url": "https://www.livemint.com/market/stock-market-news/railway-stocks-on-fast-track-rvnl-irfc-jump-up-to-10-amid-sensex-nifty-rise-whats-behind-momentum-key-levels-11794378046674.html"
-        }
-      ],
-      "score": 4,
-      "summary": "RVNL and IRFC shares rose as much as 10% amid a broader market rebound and renewed interest in railway stocks. Sentiment was buoyed by Japan’s first order for India-made train propulsion systems and expectations for infrastructure investment.&nbsp;",
-      "category": "Market flows",
-      "reason": "Flows, currency and yields provide context for Indian equity risk appetite.",
-      "matched": [
-        "Market flows"
-      ],
-      "tier": "Watch",
-      "related": [],
-      "cluster_count": 1,
-      "impact_assets": [
-        "Equities"
-      ],
-      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
       "impact_chain": null,
       "companies": []
     },
@@ -2759,6 +2483,47 @@
       ]
     },
     {
+      "id": "6a5f8552cf59abc5",
+      "title": "Bank Nifty tops 61,000, nears all-time high; what do charts say?",
+      "url": "https://www.business-standard.com/markets/news/bank-nifty-tops-61-000-nears-all-time-high-what-do-charts-say-126111100417_1.html",
+      "published": 1794377643.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "Business Standard",
+          "url": "https://www.business-standard.com/markets/news/bank-nifty-tops-61-000-nears-all-time-high-what-do-charts-say-126111100417_1.html"
+        },
+        {
+          "name": "Investing.com",
+          "url": "https://www.investing.com/news/company-news/heartflow-stock-reaches-alltime-high-at-6065-usd-93CH-5019584"
+        }
+      ],
+      "score": 5,
+      "summary": "The Bank Nifty has surged 12% thus far in November and quoted near its life-time high of 61,765 hit in February 2026.",
+      "category": "Market flows",
+      "reason": "Flows, currency and yields provide context for Indian equity risk appetite.",
+      "matched": [
+        "Market flows"
+      ],
+      "tier": "Watch",
+      "related": [
+        {
+          "title": "Heartflow stock reaches all-time high at 60.65 USD",
+          "url": "https://www.investing.com/news/company-news/heartflow-stock-reaches-alltime-high-at-6065-usd-93CH-5019584",
+          "source": "Investing.com",
+          "published": 1794415540.0
+        }
+      ],
+      "cluster_count": 2,
+      "impact_assets": [
+        "Equities"
+      ],
+      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
       "id": "52c984d5082f5eb8",
       "title": "Govt bans export of unsorted battery waste, scrap",
       "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/govt-bans-export-of-unsorted-battery-waste-scrap/articleshow/135724585.cms",
@@ -2840,6 +2605,184 @@
       "companies": []
     },
     {
+      "id": "ebdf1899be47f08b",
+      "title": "Wall St slips as hot inflation data fuels rate-hike jitters; Nvidia down 4%",
+      "url": "https://www.business-standard.com/markets/news/wall-st-slips-as-hot-inflation-data-fuels-rate-hike-jitters-nvidia-down-4-126111001020_1.html",
+      "published": 1794329556.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "Business Standard",
+          "url": "https://www.business-standard.com/markets/news/wall-st-slips-as-hot-inflation-data-fuels-rate-hike-jitters-nvidia-down-4-126111001020_1.html"
+        },
+        {
+          "name": "Mint Markets",
+          "url": "https://www.livemint.com/market/stock-market-news/nvidia-shares-recover-4-5-after-steep-sell-off-china-spy-probe-and-november-17-earnings-to-test-investor-confidence-11794413606492.html"
+        },
+        {
+          "name": "CNBC-TV18",
+          "url": "https://www.cnbctv18.com/market/wall-street-rises-as-tech-shares-lead-rebound-nasdaq-gains-as-nvidia-shares-jump-20031856.htm"
+        },
+        {
+          "name": "CNBC World",
+          "url": "https://www.cnbc.com/2026/11/11/nvidia-stock-jensen-huang-affair-china.html"
+        },
+        {
+          "name": "Zerodha Pulse",
+          "url": "https://www.ndtvprofit.com/markets/nvidias-bull-case-hinges-on-ceo-huang-surviving-china-spy-probe-12313949#publisher=newsstand"
+        },
+        {
+          "name": "NDTV Profit",
+          "url": "https://www.ndtvprofit.com/markets/nvidias-bull-case-hinges-on-ceo-huang-surviving-china-spy-probe-12313949#publisher=newsstand"
+        },
+        {
+          "name": "ET Markets",
+          "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/baird-downgrades-nvidia-on-china-curbs-ai-demand-worries/articleshow/135740853.cms"
+        },
+        {
+          "name": "Mint Companies",
+          "url": "https://www.livemint.com/companies/news/nvidia-briefly-slips-behind-microsoft-in-market-value-as-shares-tumble-10-amid-jensen-huang-controversy-11794363923176.html"
+        }
+      ],
+      "score": 10,
+      "summary": "Wall Street fell after stronger-than-expected US inflation data fuelled expectations of a December Fed rate hike, while Brent crude briefly dropped below $90 a barrel.",
+      "category": "Economic data",
+      "reason": "Compare the release with expectations; the surprise can affect rates and risk appetite.",
+      "matched": [
+        "Economic data"
+      ],
+      "tier": "Must know",
+      "related": [
+        {
+          "title": "Nvidia shares recover 4.5% after steep sell-off; China spy probe and November 17 earnings to test investor confidence",
+          "url": "https://www.livemint.com/market/stock-market-news/nvidia-shares-recover-4-5-after-steep-sell-off-china-spy-probe-and-november-17-earnings-to-test-investor-confidence-11794413606492.html",
+          "source": "Mint Markets",
+          "published": 1794414114.0
+        },
+        {
+          "title": "Wall Street rises as tech shares lead rebound, Nasdaq gains as Nvidia jumps 5%",
+          "url": "https://www.cnbctv18.com/market/wall-street-rises-as-tech-shares-lead-rebound-nasdaq-gains-as-nvidia-shares-jump-20031856.htm",
+          "source": "CNBC-TV18",
+          "published": 1794408732.0
+        },
+        {
+          "title": "Morgan Stanley drops Nvidia from top stock picks, but isn't giving up on the stock just yet: Report",
+          "url": "https://www.cnbctv18.com/market/stocks/morgan-stanley-drops-nvidia-from-top-stock-picks-but-isnt-giving-up-on-the-stock-just-yet-report-20031801.htm",
+          "source": "CNBC-TV18",
+          "published": 1794404344.0
+        },
+        {
+          "title": "Nvidia shares rebound as Jensen Huang faces scrutiny ahead of earnings",
+          "url": "https://www.cnbc.com/2026/11/11/nvidia-stock-jensen-huang-affair-china.html",
+          "source": "CNBC World",
+          "published": 1794407723.0
+        },
+        {
+          "title": "Nvidia's Bull Case Hinges On CEO Huang Surviving China Spy Probe",
+          "url": "https://www.ndtvprofit.com/markets/nvidias-bull-case-hinges-on-ceo-huang-surviving-china-spy-probe-12313949#publisher=newsstand",
+          "source": "Zerodha Pulse",
+          "published": 1794412037.0
+        },
+        {
+          "title": "Baird downgrades Nvidia on CEO Huang worries, AI uncertainty",
+          "url": "https://www.cnbctv18.com/technology/baird-downgrades-nvidia-on-ceo-huang-worries-ai-uncertainty-20031891.htm",
+          "source": "CNBC-TV18",
+          "published": 1794411181.0
+        },
+        {
+          "title": "Baird downgrades Nvidia on China curbs, AI demand worries",
+          "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/baird-downgrades-nvidia-on-china-curbs-ai-demand-worries/articleshow/135740853.cms",
+          "source": "ET Markets",
+          "published": 1794407693.0
+        },
+        {
+          "title": "Nvidia's Huang tries to project 'business as usual' in return to office after affair revelation",
+          "url": "https://www.cnbc.com/2026/11/10/nvidia-jensen-huang-affair-office.html",
+          "source": "CNBC World",
+          "published": 1794404819.0
+        },
+        {
+          "title": "CoreWeave provides silver lining for neoclouds as Nvidia storm swirls",
+          "url": "https://www.cnbc.com/2026/11/11/coreweave-provides-silver-lining-for-neoclouds-as-nvidia-storm-swirls.html",
+          "source": "CNBC World",
+          "published": 1794398171.0
+        },
+        {
+          "title": "Nvidia sheds $430 billion in value as allegations tie CEO's affair to $7.5 billion chip smuggling ring",
+          "url": "https://www.cnbctv18.com/technology/nvidia-sheds-usd-430-billion-in-value-as-allegations-tie-ceos-affair-to-usd-7-5-billion-chip-smuggling-ring-20031457.htm",
+          "source": "CNBC-TV18",
+          "published": 1794385611.0
+        },
+        {
+          "title": "Alibaba announces plans to list T-Head, its Nvidia chip rival",
+          "url": "https://www.cnbc.com/2026/11/11/alibaba-pr.html",
+          "source": "CNBC World",
+          "published": 1794383274.0
+        },
+        {
+          "title": "Once AI darling of shareholders, Nvidia sued by own stock buyers over CEO Jensen Huang affair; $420 bn lost in 2 days",
+          "url": "https://www.livemint.com/market/stock-market-news/once-ai-darling-of-shareholders-nvidia-sued-by-own-stock-buyers-over-ceo-jensen-huang-affair-420-bn-lost-in-2-days-11794377931484.html",
+          "source": "Mint Markets",
+          "published": 1794380205.0
+        },
+        {
+          "title": "Nvidia Stock Sell-Off Deepens: Spy scandal, price target cuts put AI giant under pressure",
+          "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/nvidia-stock-sell-off-deepens-spy-scandal-price-target-cuts-put-ai-giant-under-pressure/slideshow/135728557.cms",
+          "source": "ET Markets",
+          "published": 1794379200.0
+        },
+        {
+          "title": "AI stock Nvidia crashed but Netweb Technologies shares jumped 8% today after falling 13% in 1 month? Reasons; target",
+          "url": "https://www.livemint.com/market/stock-market-news/ai-stock-nvidia-crashed-but-netweb-technologies-shares-jumped-8-today-after-falling-13-in-1-month-reasons-target-11794375606908.html",
+          "source": "Mint Markets",
+          "published": 1794376832.0
+        },
+        {
+          "title": "Nvidia briefly slips behind Microsoft in market value as shares tumble 10% amid Jensen Huang controversy",
+          "url": "https://www.livemint.com/companies/news/nvidia-briefly-slips-behind-microsoft-in-market-value-as-shares-tumble-10-amid-jensen-huang-controversy-11794363923176.html",
+          "source": "Mint Companies",
+          "published": 1794365158.0
+        },
+        {
+          "title": "Alice Huang used her relationship with Jensen Huang to move 240,000 Nvidia chips worth $7.5 billion to China: Report",
+          "url": "https://www.livemint.com/companies/news/alice-huang-used-her-relationship-with-jensen-huang-to-move-240-000-nvidia-chips-worth-7-5-billion-to-china-report-11794363878153.html",
+          "source": "Mint Companies",
+          "published": 1794364638.0
+        },
+        {
+          "title": "‘Lori took care of everything’: Nvidia CEO Jensen Huang’s old remarks about his wife resurface after affair admission",
+          "url": "https://www.livemint.com/companies/news/lori-took-care-of-everything-nvidia-ceo-jensen-huang-s-old-remarks-about-his-wife-resurface-after-affair-admission-11794322278848.html",
+          "source": "Mint Companies",
+          "published": 1794324335.0
+        },
+        {
+          "title": "Jensen Huang: The man in the leather jacket who built Nvidia's $5 trillion AI empire",
+          "url": "https://www.cnbctv18.com/technology/jensen-huang-the-man-in-the-leather-jacket-who-built-nvidias-5-trillion-ai-empire-20030991.htm",
+          "source": "CNBC-TV18",
+          "published": 1794320942.0
+        },
+        {
+          "title": "Troubles mount for Jensen Huang? Nvidia CEO summoned by US lawmakers over affair with Chinese ‘spy’ Alice Huang",
+          "url": "https://www.livemint.com/companies/news/troubles-mount-for-jensen-huang-nvidia-ceo-summoned-by-us-lawmakers-over-affair-with-chinese-spy-alice-huang-11794317474830.html",
+          "source": "Mint Companies",
+          "published": 1794319622.0
+        }
+      ],
+      "cluster_count": 8,
+      "impact_assets": [
+        "Equities"
+      ],
+      "why_it_matters": "Key determinant of central bank interest rate paths; elevated prints restrict policy easing and compress real yields.",
+      "impact_chain": null,
+      "companies": [
+        {
+          "name": "Nvidia",
+          "symbol": "nvidia"
+        }
+      ]
+    },
+    {
       "id": "8bf042dd3e93cf3b",
       "title": "Easing global headwinds, lower crude oil prices may further lift rupee in coming months: Economists",
       "url": "https://economictimes.indiatimes.com/news/economy/indicators/easing-global-headwinds-lower-crude-oil-prices-may-further-lift-rupee-in-coming-months-economists/articleshow/135714320.cms",
@@ -2889,6 +2832,36 @@
         "FX"
       ],
       "why_it_matters": "Crude affects India’s import bill and energy-sensitive sectors; the headline does not establish a clear price direction.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
+      "id": "1e9e7e56a29eb061",
+      "title": "Railway stocks on fast track! RVNL, IRFC jump up to 10% amid Sensex, Nifty rise | What's behind momentum? Key levels",
+      "url": "https://www.livemint.com/market/stock-market-news/railway-stocks-on-fast-track-rvnl-irfc-jump-up-to-10-amid-sensex-nifty-rise-whats-behind-momentum-key-levels-11794378046674.html",
+      "published": 1794379634.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "Mint Markets",
+          "url": "https://www.livemint.com/market/stock-market-news/railway-stocks-on-fast-track-rvnl-irfc-jump-up-to-10-amid-sensex-nifty-rise-whats-behind-momentum-key-levels-11794378046674.html"
+        }
+      ],
+      "score": 4,
+      "summary": "RVNL and IRFC shares rose as much as 10% amid a broader market rebound and renewed interest in railway stocks. Sentiment was buoyed by Japan’s first order for India-made train propulsion systems and expectations for infrastructure investment.&nbsp;",
+      "category": "Market flows",
+      "reason": "Flows, currency and yields provide context for Indian equity risk appetite.",
+      "matched": [
+        "Market flows"
+      ],
+      "tier": "Watch",
+      "related": [],
+      "cluster_count": 1,
+      "impact_assets": [
+        "Equities"
+      ],
+      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
       "impact_chain": null,
       "companies": []
     },
@@ -3456,36 +3429,6 @@
       "companies": []
     },
     {
-      "id": "6a5f8552cf59abc5",
-      "title": "Bank Nifty tops 61,000, nears all-time high; what do charts say?",
-      "url": "https://www.business-standard.com/markets/news/bank-nifty-tops-61-000-nears-all-time-high-what-do-charts-say-126111100417_1.html",
-      "published": 1794377643.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "Business Standard",
-          "url": "https://www.business-standard.com/markets/news/bank-nifty-tops-61-000-nears-all-time-high-what-do-charts-say-126111100417_1.html"
-        }
-      ],
-      "score": 3,
-      "summary": "The Bank Nifty has surged 12% thus far in November and quoted near its life-time high of 61,765 hit in February 2026.",
-      "category": "Market flows",
-      "reason": "Flows, currency and yields provide context for Indian equity risk appetite.",
-      "matched": [
-        "Market flows"
-      ],
-      "tier": "Watch",
-      "related": [],
-      "cluster_count": 1,
-      "impact_assets": [
-        "Equities"
-      ],
-      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
       "id": "e647f775c0cbfd85",
       "title": "Nifty Bank nears record high - A look at the rally leaders and how the 2026 picture has changed",
       "url": "https://www.cnbctv18.com/market/nifty-bank-near-record-high-level-top-gainers-ytd-buy-sell-hdfc-bank-icici-axis-kotak-union-sbi-share-price-20031262.htm",
@@ -3694,57 +3637,6 @@
         "Equities"
       ],
       "why_it_matters": "Guides global liquidity dynamics, US Dollar Index (DXY) trajectory, and foreign institutional (FII) capital allocations.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "c8e9910a9d4393fe",
-      "title": "Anthropic targets $1 trillion IPO valuation in test of Wall Street's AI fervor",
-      "url": "https://www.cnbctv18.com/market/anthropic-targets-1-trillion-ipo-valuation-in-test-of-wall-streets-ai-fervor-20030964.htm",
-      "published": 1794311609.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "CNBC-TV18",
-          "url": "https://www.cnbctv18.com/market/anthropic-targets-1-trillion-ipo-valuation-in-test-of-wall-streets-ai-fervor-20030964.htm"
-        },
-        {
-          "name": "Mint Companies",
-          "url": "https://www.livemint.com/companies/anthropic-targets-1-trillion-ipo-valuation-in-test-of-wall-streets-ai-fervor-11794311074716.html"
-        },
-        {
-          "name": "ET Markets",
-          "url": "https://economictimes.indiatimes.com/markets/ipos/fpos/anthropic-ipo-a-1-4-trillion-bet-on-the-future-of-ai/videoshow/135738282.cms"
-        }
-      ],
-      "score": 7,
-      "summary": "Anthropic's upcoming IPO aims to raise up to $64.4 billion, targeting a valuation of $1.02 trillion, as the AI company launches a historic roadshow amid growing sector scrutiny.",
-      "category": "Market flows",
-      "reason": "Flows, currency and yields provide context for Indian equity risk appetite.",
-      "matched": [
-        "Market flows"
-      ],
-      "tier": "Must know",
-      "related": [
-        {
-          "title": "Anthropic targets $1 trillion IPO valuation in test of Wall Street's AI fervour",
-          "url": "https://www.livemint.com/companies/anthropic-targets-1-trillion-ipo-valuation-in-test-of-wall-streets-ai-fervor-11794311074716.html",
-          "source": "Mint Companies",
-          "published": 1794311283.0
-        },
-        {
-          "title": "Anthropic IPO: A $1.4 trillion bet on the future of AI",
-          "url": "https://economictimes.indiatimes.com/markets/ipos/fpos/anthropic-ipo-a-1-4-trillion-bet-on-the-future-of-ai/videoshow/135738282.cms",
-          "source": "ET Markets",
-          "published": 1794401481.0
-        }
-      ],
-      "cluster_count": 3,
-      "impact_assets": [
-        "Equities"
-      ],
-      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
       "impact_chain": null,
       "companies": []
     },
@@ -3984,6 +3876,47 @@
       "tier": "Watch",
       "related": [],
       "cluster_count": 1,
+      "impact_assets": [
+        "Equities"
+      ],
+      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
+      "id": "247ba61181ee1be5",
+      "title": "Anthropic targets $1 trillion IPO valuation in test of Wall Street's AI fervour",
+      "url": "https://www.livemint.com/companies/anthropic-targets-1-trillion-ipo-valuation-in-test-of-wall-streets-ai-fervor-11794311074716.html",
+      "published": 1794311283.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "Mint Companies",
+          "url": "https://www.livemint.com/companies/anthropic-targets-1-trillion-ipo-valuation-in-test-of-wall-streets-ai-fervor-11794311074716.html"
+        },
+        {
+          "name": "ET Markets",
+          "url": "https://economictimes.indiatimes.com/markets/ipos/fpos/anthropic-ipo-a-1-4-trillion-bet-on-the-future-of-ai/videoshow/135738282.cms"
+        }
+      ],
+      "score": 5,
+      "summary": "Anthropic plans to price its IPO at $70 to $78 per share, seeking a valuation as high as $1.02 trillion.&nbsp;",
+      "category": "Market flows",
+      "reason": "Flows, currency and yields provide context for Indian equity risk appetite.",
+      "matched": [
+        "Market flows"
+      ],
+      "tier": "Watch",
+      "related": [
+        {
+          "title": "Anthropic IPO: A $1.4 trillion bet on the future of AI",
+          "url": "https://economictimes.indiatimes.com/markets/ipos/fpos/anthropic-ipo-a-1-4-trillion-bet-on-the-future-of-ai/videoshow/135738282.cms",
+          "source": "ET Markets",
+          "published": 1794401481.0
+        }
+      ],
+      "cluster_count": 2,
       "impact_assets": [
         "Equities"
       ],
@@ -4411,7 +4344,7 @@
       "url": "https://www.livemint.com/rss/markets",
       "region": "India",
       "official": false,
-      "checked": "2026-11-11T16:45:24.918372+00:00",
+      "checked": "2026-11-11T16:57:15.618539+00:00",
       "status": "ok",
       "count": 35
     },
@@ -4420,7 +4353,7 @@
       "url": "https://www.livemint.com/rss/companies",
       "region": "India",
       "official": false,
-      "checked": "2026-11-11T16:45:24.918720+00:00",
+      "checked": "2026-11-11T16:57:15.618813+00:00",
       "status": "ok",
       "count": 35
     },
@@ -4429,7 +4362,7 @@
       "url": "https://www.sebi.gov.in/sebirss.xml",
       "region": "India",
       "official": true,
-      "checked": "2026-11-11T16:45:24.918999+00:00",
+      "checked": "2026-11-11T16:57:15.619115+00:00",
       "status": "ok",
       "count": 30
     },
@@ -4438,7 +4371,7 @@
       "url": "https://www.federalreserve.gov/feeds/press_monetary.xml",
       "region": "Global",
       "official": true,
-      "checked": "2026-11-11T16:45:24.920074+00:00",
+      "checked": "2026-11-11T16:57:15.619502+00:00",
       "status": "ok",
       "count": 0
     },
@@ -4447,7 +4380,7 @@
       "url": "https://www.bls.gov/feed/bls_latest.rss",
       "region": "Global",
       "official": true,
-      "checked": "2026-11-11T16:45:24.920366+00:00",
+      "checked": "2026-11-11T16:57:15.620242+00:00",
       "status": "ok",
       "count": 1
     },
@@ -4456,7 +4389,7 @@
       "url": "https://www.investing.com/rss/news.rss",
       "region": "Global",
       "official": false,
-      "checked": "2026-11-11T16:45:25.150557+00:00",
+      "checked": "2026-11-11T16:57:15.741520+00:00",
       "status": "ok",
       "count": 10
     },
@@ -4465,7 +4398,7 @@
       "url": "https://www.cnbc.com/id/100727362/device/rss/rss.html",
       "region": "Global",
       "official": false,
-      "checked": "2026-11-11T16:45:25.179550+00:00",
+      "checked": "2026-11-11T16:57:15.749180+00:00",
       "status": "ok",
       "count": 30
     },
@@ -4474,7 +4407,7 @@
       "url": "https://pulse.zerodha.com/feed.php",
       "region": "India",
       "official": false,
-      "checked": "2026-11-11T16:45:25.262687+00:00",
+      "checked": "2026-11-11T16:57:15.762436+00:00",
       "status": "ok",
       "count": 25
     },
@@ -4483,7 +4416,7 @@
       "url": "https://economictimes.indiatimes.com/markets/rssfeeds/1977021501.cms",
       "region": "India",
       "official": false,
-      "checked": "2026-11-11T16:45:25.323718+00:00",
+      "checked": "2026-11-11T16:57:15.809423+00:00",
       "status": "ok",
       "count": 50
     },
@@ -4492,7 +4425,7 @@
       "url": "https://economictimes.indiatimes.com/news/economy/rssfeeds/1373380680.cms",
       "region": "India",
       "official": false,
-      "checked": "2026-11-11T16:45:25.393369+00:00",
+      "checked": "2026-11-11T16:57:15.825715+00:00",
       "status": "ok",
       "count": 39
     },
@@ -4501,7 +4434,7 @@
       "url": "https://www.business-standard.com/rss/markets-106.rss",
       "region": "India",
       "official": false,
-      "checked": "2026-11-11T16:45:25.399672+00:00",
+      "checked": "2026-11-11T16:57:15.854005+00:00",
       "status": "ok",
       "count": 35
     },
@@ -4510,7 +4443,7 @@
       "url": "https://www.cnbctv18.com/commonfeeds/v1/cne/rss/market.xml",
       "region": "India",
       "official": false,
-      "checked": "2026-11-11T16:45:25.513211+00:00",
+      "checked": "2026-11-11T16:57:15.880067+00:00",
       "status": "ok",
       "count": 80
     },
@@ -4519,7 +4452,7 @@
       "url": "https://feeds.feedburner.com/ndtvprofit-latest",
       "region": "India",
       "official": false,
-      "checked": "2026-11-11T16:45:25.558111+00:00",
+      "checked": "2026-11-11T16:57:15.882913+00:00",
       "status": "ok",
       "count": 20
     },
@@ -4528,21 +4461,21 @@
       "url": "https://economictimes.indiatimes.com/markets/stocks/recos/rssfeeds/2143429.cms",
       "region": "India",
       "official": false,
-      "checked": "2026-11-11T16:45:25.565666+00:00",
+      "checked": "2026-11-11T16:57:16.099020+00:00",
       "status": "ok",
       "count": 13
     }
   ],
   "refreshing": false,
   "calendar": {
-    "checked": 1794415533.6501276,
+    "checked": 1794416244.9758866,
     "status": "ok"
   },
   "premarket": {
-    "updated": "2026-11-11T16:45:37.829713+00:00",
+    "updated": "2026-11-11T16:57:28.068980+00:00",
     "schema_version": 2,
     "is_live": false,
-    "quote_updated": "2026-11-11T16:45:37.828996+00:00",
+    "quote_updated": "2026-11-11T16:57:28.068335+00:00",
     "quote_date": "2026-11-11",
     "quote_source": "yfinance",
     "live_bias_label": "LATEST AVAILABLE QUOTE",
@@ -4566,13 +4499,13 @@
     },
     "overnight": {
       "SP500": {
-        "val": "7,616",
-        "pct": 1.27,
+        "val": "7,621",
+        "pct": 1.33,
         "date": "2026-11-11"
       },
       "NASDAQ": {
-        "val": "25,541",
-        "pct": 1.9,
+        "val": "25,566",
+        "pct": 2.0,
         "date": "2026-11-11"
       },
       "US10Y": {
@@ -4585,12 +4518,12 @@
       "key": "BRENT",
       "quote_date": "2026-11-11",
       "label": "Brent Crude",
-      "price": "94.04",
-      "price_raw": 94.04,
+      "price": "93.79",
+      "price_raw": 93.79,
       "prev_close": 92.44,
       "prev_close_fmt": "92.44",
-      "change": 1.6,
-      "change_pct": 1.73,
+      "change": 1.35,
+      "change_pct": 1.46,
       "direction": "up",
       "unit": "USD/bbl",
       "range_52w": {
@@ -4598,8 +4531,8 @@
         "high": 126.1,
         "low_fmt": "58.72",
         "high_fmt": "126.10",
-        "pos_pct": 52.4,
-        "pct_from_high": -25.42
+        "pos_pct": 52.0,
+        "pct_from_high": -25.62
       }
     },
     "usdinr": {
@@ -4694,7 +4627,7 @@
         "num": "02",
         "title": "Crude and input costs",
         "bias": "Context",
-        "desc": "Latest Brent quote: 94.04 USD/bbl (+1.73%). Higher crude can raise import and input costs; lower crude can ease them. This quote alone does not establish the cause of the move."
+        "desc": "Latest Brent quote: 93.79 USD/bbl (+1.46%). Higher crude can raise import and input costs; lower crude can ease them. This quote alone does not establish the cause of the move."
       },
       {
         "num": "03",
@@ -4710,12 +4643,12 @@
           "key": "BRENT",
           "quote_date": "2026-11-11",
           "label": "Brent Crude",
-          "price": "94.04",
-          "price_raw": 94.04,
+          "price": "93.79",
+          "price_raw": 93.79,
           "prev_close": 92.44,
           "prev_close_fmt": "92.44",
-          "change": 1.6,
-          "change_pct": 1.73,
+          "change": 1.35,
+          "change_pct": 1.46,
           "direction": "up",
           "unit": "USD/bbl",
           "range_52w": {
@@ -4723,20 +4656,20 @@
             "high": 126.1,
             "low_fmt": "58.72",
             "high_fmt": "126.10",
-            "pos_pct": 52.4,
-            "pct_from_high": -25.42
+            "pos_pct": 52.0,
+            "pct_from_high": -25.62
           }
         },
         "wti": {
           "key": "WTI",
           "quote_date": "2026-11-11",
           "label": "WTI Crude",
-          "price": "88.26",
-          "price_raw": 88.26,
+          "price": "88.04",
+          "price_raw": 88.04,
           "prev_close": 86.64,
           "prev_close_fmt": "86.64",
-          "change": 1.62,
-          "change_pct": 1.87,
+          "change": 1.4,
+          "change_pct": 1.62,
           "direction": "up",
           "unit": "USD/bbl",
           "range_52w": {
@@ -4744,41 +4677,41 @@
             "high": 119.48,
             "low_fmt": "54.98",
             "high_fmt": "119.48",
-            "pos_pct": 51.6,
-            "pct_from_high": -26.13
+            "pos_pct": 51.3,
+            "pct_from_high": -26.31
           }
         },
         "natgas": {
           "key": "NATGAS",
           "quote_date": "2026-11-11",
           "label": "Natural Gas",
-          "price": "3.29",
-          "price_raw": 3.291,
+          "price": "3.28",
+          "price_raw": 3.282,
           "prev_close": 3.291,
           "prev_close_fmt": "3.29",
-          "change": 0.0,
-          "change_pct": 0.0,
-          "direction": "up",
+          "change": -0.009,
+          "change_pct": -0.27,
+          "direction": "down",
           "unit": "USD/MMBtu",
           "range_52w": {
             "low": 2.48,
             "high": 7.83,
             "low_fmt": "2.48",
             "high_fmt": "7.83",
-            "pos_pct": 15.1,
-            "pct_from_high": -57.95
+            "pos_pct": 15.0,
+            "pct_from_high": -58.07
           }
         },
         "gold": {
           "key": "GOLD",
           "quote_date": "2026-11-11",
           "label": "Gold",
-          "price": "4,009.80",
-          "price_raw": 4009.8,
+          "price": "4,006.90",
+          "price_raw": 4006.8999,
           "prev_close": 4054.0,
           "prev_close_fmt": "4,054.00",
-          "change": -44.2,
-          "change_pct": -1.09,
+          "change": -47.1001,
+          "change_pct": -1.16,
           "direction": "down",
           "unit": "USD/oz",
           "range_52w": {
@@ -4786,20 +4719,20 @@
             "high": 5586.2,
             "low_fmt": "3,879.30",
             "high_fmt": "5,586.20",
-            "pos_pct": 7.6,
-            "pct_from_high": -28.22
+            "pos_pct": 7.5,
+            "pct_from_high": -28.27
           }
         },
         "silver": {
           "key": "SILVER",
           "quote_date": "2026-11-11",
           "label": "Silver",
-          "price": "52.17",
-          "price_raw": 52.175,
+          "price": "52.13",
+          "price_raw": 52.135,
           "prev_close": 52.52,
           "prev_close_fmt": "52.52",
-          "change": -0.345,
-          "change_pct": -0.66,
+          "change": -0.385,
+          "change_pct": -0.73,
           "direction": "down",
           "unit": "USD/oz",
           "range_52w": {
@@ -4808,7 +4741,7 @@
             "low_fmt": "48.12",
             "high_fmt": "121.30",
             "pos_pct": 5.5,
-            "pct_from_high": -56.99
+            "pct_from_high": -57.02
           }
         },
         "catalyst": {
@@ -4844,13 +4777,13 @@
       "global_macro": {
         "overnight": {
           "SP500": {
-            "val": "7,616",
-            "pct": 1.27,
+            "val": "7,621",
+            "pct": 1.33,
             "date": "2026-11-11"
           },
           "NASDAQ": {
-            "val": "25,541",
-            "pct": 1.9,
+            "val": "25,566",
+            "pct": 2.0,
             "date": "2026-11-11"
           },
           "US10Y": {
@@ -4860,9 +4793,9 @@
           }
         },
         "catalyst": {
-          "title": "Nasdaq futures rise nearly 2% as CoreWeave earnings calm AI spending fears",
-          "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/nasdaq-futures-rise-nearly-2-as-coreweave-earnings-calm-ai-spending-fears/articleshow/135738901.cms",
-          "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
+          "title": "Fed's Goolsbee calls inflation report 'borderline disturbing' as central bank weighs more hikes",
+          "url": "https://www.cnbc.com/2026/11/11/goolsbee-october-inflation-fed-rates-disturbing-distressing.html",
+          "why_it_matters": "Directly shifts commercial bank cost of funds, repo borrowing rates, and rate-sensitive equity multiples (banks, real estate, auto).",
           "source": ""
         }
       }

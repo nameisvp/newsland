@@ -1,8 +1,8 @@
 {
-  "updated": "2026-11-11T16:45:37.829713+00:00",
+  "updated": "2026-11-11T16:57:28.068980+00:00",
   "schema_version": 2,
   "is_live": false,
-  "quote_updated": "2026-11-11T16:45:37.828996+00:00",
+  "quote_updated": "2026-11-11T16:57:28.068335+00:00",
   "quote_date": "2026-11-11",
   "quote_source": "yfinance",
   "live_bias_label": "LATEST AVAILABLE QUOTE",
@@ -26,13 +26,13 @@
   },
   "overnight": {
     "SP500": {
-      "val": "7,616",
-      "pct": 1.27,
+      "val": "7,621",
+      "pct": 1.33,
       "date": "2026-11-11"
     },
     "NASDAQ": {
-      "val": "25,541",
-      "pct": 1.9,
+      "val": "25,566",
+      "pct": 2.0,
       "date": "2026-11-11"
     },
     "US10Y": {
@@ -45,12 +45,12 @@
     "key": "BRENT",
     "quote_date": "2026-11-11",
     "label": "Brent Crude",
-    "price": "94.04",
-    "price_raw": 94.04,
+    "price": "93.79",
+    "price_raw": 93.79,
     "prev_close": 92.44,
     "prev_close_fmt": "92.44",
-    "change": 1.6,
-    "change_pct": 1.73,
+    "change": 1.35,
+    "change_pct": 1.46,
     "direction": "up",
     "unit": "USD/bbl",
     "range_52w": {
@@ -58,8 +58,8 @@
       "high": 126.1,
       "low_fmt": "58.72",
       "high_fmt": "126.10",
-      "pos_pct": 52.4,
-      "pct_from_high": -25.42
+      "pos_pct": 52.0,
+      "pct_from_high": -25.62
     }
   },
   "usdinr": {
@@ -154,7 +154,7 @@
       "num": "02",
       "title": "Crude and input costs",
       "bias": "Context",
-      "desc": "Latest Brent quote: 94.04 USD/bbl (+1.73%). Higher crude can raise import and input costs; lower crude can ease them. This quote alone does not establish the cause of the move."
+      "desc": "Latest Brent quote: 93.79 USD/bbl (+1.46%). Higher crude can raise import and input costs; lower crude can ease them. This quote alone does not establish the cause of the move."
     },
     {
       "num": "03",
@@ -170,12 +170,12 @@
         "key": "BRENT",
         "quote_date": "2026-11-11",
         "label": "Brent Crude",
-        "price": "94.04",
-        "price_raw": 94.04,
+        "price": "93.79",
+        "price_raw": 93.79,
         "prev_close": 92.44,
         "prev_close_fmt": "92.44",
-        "change": 1.6,
-        "change_pct": 1.73,
+        "change": 1.35,
+        "change_pct": 1.46,
         "direction": "up",
         "unit": "USD/bbl",
         "range_52w": {
@@ -183,20 +183,20 @@
           "high": 126.1,
           "low_fmt": "58.72",
           "high_fmt": "126.10",
-          "pos_pct": 52.4,
-          "pct_from_high": -25.42
+          "pos_pct": 52.0,
+          "pct_from_high": -25.62
         }
       },
       "wti": {
         "key": "WTI",
         "quote_date": "2026-11-11",
         "label": "WTI Crude",
-        "price": "88.26",
-        "price_raw": 88.26,
+        "price": "88.04",
+        "price_raw": 88.04,
         "prev_close": 86.64,
         "prev_close_fmt": "86.64",
-        "change": 1.62,
-        "change_pct": 1.87,
+        "change": 1.4,
+        "change_pct": 1.62,
         "direction": "up",
         "unit": "USD/bbl",
         "range_52w": {
@@ -204,41 +204,41 @@
           "high": 119.48,
           "low_fmt": "54.98",
           "high_fmt": "119.48",
-          "pos_pct": 51.6,
-          "pct_from_high": -26.13
+          "pos_pct": 51.3,
+          "pct_from_high": -26.31
         }
       },
       "natgas": {
         "key": "NATGAS",
         "quote_date": "2026-11-11",
         "label": "Natural Gas",
-        "price": "3.29",
-        "price_raw": 3.291,
+        "price": "3.28",
+        "price_raw": 3.282,
         "prev_close": 3.291,
         "prev_close_fmt": "3.29",
-        "change": 0.0,
-        "change_pct": 0.0,
-        "direction": "up",
+        "change": -0.009,
+        "change_pct": -0.27,
+        "direction": "down",
         "unit": "USD/MMBtu",
         "range_52w": {
           "low": 2.48,
           "high": 7.83,
           "low_fmt": "2.48",
           "high_fmt": "7.83",
-          "pos_pct": 15.1,
-          "pct_from_high": -57.95
+          "pos_pct": 15.0,
+          "pct_from_high": -58.07
         }
       },
       "gold": {
         "key": "GOLD",
         "quote_date": "2026-11-11",
         "label": "Gold",
-        "price": "4,009.80",
-        "price_raw": 4009.8,
+        "price": "4,006.90",
+        "price_raw": 4006.8999,
         "prev_close": 4054.0,
         "prev_close_fmt": "4,054.00",
-        "change": -44.2,
-        "change_pct": -1.09,
+        "change": -47.1001,
+        "change_pct": -1.16,
         "direction": "down",
         "unit": "USD/oz",
         "range_52w": {
@@ -246,20 +246,20 @@
           "high": 5586.2,
           "low_fmt": "3,879.30",
           "high_fmt": "5,586.20",
-          "pos_pct": 7.6,
-          "pct_from_high": -28.22
+          "pos_pct": 7.5,
+          "pct_from_high": -28.27
         }
       },
       "silver": {
         "key": "SILVER",
         "quote_date": "2026-11-11",
         "label": "Silver",
-        "price": "52.17",
-        "price_raw": 52.175,
+        "price": "52.13",
+        "price_raw": 52.135,
         "prev_close": 52.52,
         "prev_close_fmt": "52.52",
-        "change": -0.345,
-        "change_pct": -0.66,
+        "change": -0.385,
+        "change_pct": -0.73,
         "direction": "down",
         "unit": "USD/oz",
         "range_52w": {
@@ -268,7 +268,7 @@
           "low_fmt": "48.12",
           "high_fmt": "121.30",
           "pos_pct": 5.5,
-          "pct_from_high": -56.99
+          "pct_from_high": -57.02
         }
       },
       "catalyst": {
@@ -304,13 +304,13 @@
     "global_macro": {
       "overnight": {
         "SP500": {
-          "val": "7,616",
-          "pct": 1.27,
+          "val": "7,621",
+          "pct": 1.33,
           "date": "2026-11-11"
         },
         "NASDAQ": {
-          "val": "25,541",
-          "pct": 1.9,
+          "val": "25,566",
+          "pct": 2.0,
           "date": "2026-11-11"
         },
         "US10Y": {
@@ -320,9 +320,9 @@
         }
       },
       "catalyst": {
-        "title": "Nasdaq futures rise nearly 2% as CoreWeave earnings calm AI spending fears",
-        "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/nasdaq-futures-rise-nearly-2-as-coreweave-earnings-calm-ai-spending-fears/articleshow/135738901.cms",
-        "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
+        "title": "Fed's Goolsbee calls inflation report 'borderline disturbing' as central bank weighs more hikes",
+        "url": "https://www.cnbc.com/2026/11/11/goolsbee-october-inflation-fed-rates-disturbing-distressing.html",
+        "why_it_matters": "Directly shifts commercial bank cost of funds, repo borrowing rates, and rate-sensitive equity multiples (banks, real estate, auto).",
         "source": ""
       }
     }
