@@ -41,6 +41,9 @@ MARKET_SYMBOLS = {
 GSHEET_CSV_URL = ''  # e.g. 'https://docs.google.com/spreadsheets/d/SHEET_ID/export?format=csv'
 MARKET_DATA = {'updated': None, 'tickers': [], 'source': None}
 
+RADAR_LOCK = threading.Lock()
+RADAR_DATA = {'updated': None, 'calls': [], 'stats': {'total': 0, 'bullish': 0, 'bearish': 0, 'neutral': 0, 'top_brokerages': []}}
+
 CALENDAR_URL = 'https://www.bea.gov/news/schedule/ics/online-calendar-subscription.ics'
 CALENDAR = {'checked': None, 'status': 'pending', 'events': []}
 RULES = [
@@ -740,6 +743,10 @@ def refresh():
         temp=DATA/'cache.tmp'
         temp.write_text(json.dumps(CACHE)); temp.replace(DATA/'cache.json')
         try:
+            refresh_radar(stories)
+        except Exception as exc:
+            print(f"[radar] error updating radar: {exc}", flush=True)
+        try:
             pub_brief = ROOT / 'public' / 'data' / 'briefing.json'
             if pub_brief.parent.exists():
                 payload = dict(CACHE, calendar={k:v for k,v in CALENDAR.items() if k!='events'}, premarket=PREMARKET_DATA)
@@ -1239,7 +1246,15 @@ COMPANY_TICKERS = {
     'ioc': ('IOC.NS', 'Indian Oil Corp', 'Oil Marketing (OMC)'),
     'tsmc': ('TSM', 'Taiwan Semiconductor Mfg', 'Semiconductors'),
     'nvidia': ('NVDA', 'NVIDIA Corporation', 'AI Semiconductors'),
-    'apple': ('AAPL', 'Apple Inc', 'Consumer Electronics')
+    'apple': ('AAPL', 'Apple Inc', 'Consumer Electronics'),
+    'mrf': ('MRF.NS', 'MRF Ltd', 'Tyres & Rubber'),
+    'britannia': ('BRITANNIA.NS', 'Britannia Industries Ltd', 'FMCG / Food'),
+    'kalyan jewellers': ('KALYANKJIL.NS', 'Kalyan Jewellers India', 'Jewellery Retail'),
+    'motherson': ('MOTHERSON.NS', 'Samvardhana Motherson International', 'Auto Components'),
+    'samvardhana motherson': ('MOTHERSON.NS', 'Samvardhana Motherson International', 'Auto Components'),
+    'zomato': ('ZOMATO.NS', 'Zomato Ltd', 'Internet / Quick Commerce'),
+    'swiggy': ('SWIGGY.NS', 'Swiggy Ltd', 'Internet / Quick Commerce'),
+    'paytm': ('PAYTM.NS', 'One97 Communications (Paytm)', 'Fintech')
 }
 
 COMPANY_CACHE = {}
@@ -1355,6 +1370,190 @@ def get_company_xray(query):
     COMPANY_CACHE[q] = {'time': now, 'data': result}
     return result
 
+# ── Brokerage Radar & Institutional Research Engine ────────────────────
+REPUTABLE_BROKERAGES = [
+    ('Morgan Stanley', re.compile(r'\bmorgan\s+stanley\b', re.I)),
+    ('Goldman Sachs', re.compile(r'\bgoldman(?:\s+sachs)?\b', re.I)),
+    ('Jefferies', re.compile(r'\bjefferies\b', re.I)),
+    ('Motilal Oswal', re.compile(r'\bmotilal(?:\s+oswal)?\b', re.I)),
+    ('CLSA', re.compile(r'\bclsa\b', re.I)),
+    ('Nomura', re.compile(r'\bnomura\b', re.I)),
+    ('UBS', re.compile(r'\bubs\b', re.I)),
+    ('Citi', re.compile(r'\b(?:citi(?:group)?|citibank)\b', re.I)),
+    ('Bernstein', re.compile(r'\bbernstein\b', re.I)),
+    ('Macquarie', re.compile(r'\bmacquarie\b', re.I)),
+    ('HSBC', re.compile(r'\bhsbc\b', re.I)),
+    ('JPMorgan', re.compile(r'\b(?:jpmorgan|jp\s+morgan)\b', re.I)),
+    ('BofA Securities', re.compile(r'\b(?:bofa|bank\s+of\s+america)\b', re.I)),
+    ('Kotak Equities', re.compile(r'\bkotak(?:\s+institutional|\s+equities|\s+securities)?\b', re.I)),
+    ('ICICI Securities', re.compile(r'\bicici\s+(?:direct|securities)\b', re.I)),
+    ('Nuvama', re.compile(r'\bnuvama\b', re.I)),
+    ('Emkay Global', re.compile(r'\bemkay(?:\s+global)?\b', re.I)),
+    ('Axis Capital', re.compile(r'\baxis\s+capital\b', re.I)),
+    ('HDFC Securities', re.compile(r'\bhdfc\s+sec(?:urities)?\b', re.I)),
+    ('Investec', re.compile(r'\binvestec\b', re.I)),
+    ('Baird', re.compile(r'\bbaird\b', re.I)),
+    ('Antique', re.compile(r'\bantique(?:\s+stock)?\b', re.I)),
+    ('Prabhudas Lilladher', re.compile(r'\bprabhudas(?:\s+lilladher)?\b', re.I)),
+    ('Sharekhan', re.compile(r'\bsharekhan\b', re.I)),
+    ('Choice Broking', re.compile(r'\bchoice\s+broking\b', re.I)),
+    ('Anand Rathi', re.compile(r'\banand\s+rathi\b', re.I))
+]
+
+def parse_radar_action(title, summary=''):
+    text = f"{title} {summary}"
+    if re.search(r'\b(target|price)\b.{0,30}\b(cut|lowered|slashed|reduced|downgrade[ds]?)\b|\b(downgrades?|cuts?|slashes?|lowers?|slashed|reduced)\b.{0,30}\b(target|price)\b', text, re.I):
+        return 'TARGET_CUT', 'Target Cut ▼', 'bearish'
+    if re.search(r'\b(target|price)\b.{0,30}\b(raised?|hiked?|upped?|upgrade[ds]?)\b|\b(upgrades?|raises?|hikes?|upped?)\b.{0,30}\b(target|price)\b', text, re.I):
+        return 'TARGET_RAISE', 'Target Raised ▲', 'bullish'
+    if re.search(r'\b(\d+%\s*upside|bullish|buy|overweight|outperform|accumulate|top\s+pick|bull\s+case)\b', text, re.I):
+        return 'BUY', 'Buy / Positive ▲', 'bullish'
+    if re.search(r'\b(sell|underweight|underperform|reduce|bearish)\b', text, re.I):
+        return 'SELL', 'Sell / Caution ▼', 'bearish'
+    if re.search(r'\b(neutral|hold|equal.?weight|market.?weight)\b', text, re.I):
+        return 'HOLD', 'Neutral ●', 'neutral'
+    return 'NOTE', 'Radar Note', 'neutral'
+
+def parse_radar_target(title, summary=''):
+    text = f"{title} {summary}"
+    m_up = re.search(r'(\d+%\s*upside)', text, re.I)
+    if m_up: return m_up.group(1).strip()
+    m_tp = re.search(r'(?:target|tp)\s*(?:of|to|is|at|price)?\s*(?:rs\.?|₹|inr)?\s*([\d,]+(?:\.\d+)?)', text, re.I)
+    if m_tp:
+        val = m_tp.group(1).strip().rstrip(',.')
+        if len(val) >= 2: return f"₹{val}"
+    m_rs = re.search(r'(?:rs\.?|₹)\s*([\d,]+(?:\.\d+)?)\s*(?:target|price\s*target)', text, re.I)
+    if m_rs:
+        val = m_rs.group(1).strip().rstrip(',.')
+        if len(val) >= 2: return f"₹{val}"
+    if re.search(r'\bbull\s+case\b', text, re.I): return 'Bull Case 2x'
+    return None
+
+def parse_radar_stock(title, summary=''):
+    text = title
+    t_low = text.lower()
+    for k, v in COMPANY_TICKERS.items():
+        if re.search(r'\b' + re.escape(k) + r'\b', t_low):
+            return v[1], v[0]
+    m = re.search(r'\b([A-Z][a-zA-Z0-9\s&]{2,25}?)\s+(?:shares?|share price|stock)\b', text)
+    if m:
+        c = m.group(1).strip()
+        if c.lower() not in ('top', 'hot', 'this', 'why', 'check', 'indian', 'us', 'global', 'these', 'why clsa', 'why ubs', 'why citi'):
+            return c, None
+    m2 = re.search(r'(?:Buy|Sell|Hold|Reduce|Accumulate)\s+([A-Z][a-zA-Z0-9\s&]{2,25}?)(?:;|\s*,\s*|\s+target|\s+share)', text)
+    if m2:
+        return m2.group(1).strip(), None
+    m3 = re.search(r'\b(Nifty(?:\s+50)?|Sensex|Bank\s+Nifty)\b', text, re.I)
+    if m3:
+        idx = m3.group(1)
+        return idx, '^NSEI' if 'nifty' in idx.lower() else '^BSESN'
+    return None, None
+
+def extract_radar_call(story):
+    title = story.get('title', '').strip()
+    if not title: return None
+    summary = story.get('summary', '').strip()
+    text = f"{title} {summary}"
+    
+    matched_brokerages = []
+    for name, rx in REPUTABLE_BROKERAGES:
+        if rx.search(text):
+            matched_brokerages.append(name)
+            
+    if not matched_brokerages:
+        if re.search(r'\b(brokerages?|analysts?|research\s+firm|brokerage\s+radar)\b', text, re.I) and \
+           re.search(r'\b(target|rating|buy|sell|hold|upgrade|downgrade|outperform|overweight)\b', text, re.I):
+            matched_brokerages.append('Brokerage Radar')
+            
+    if not matched_brokerages:
+        return None
+        
+    action_key, action_label, sentiment = parse_radar_action(title, summary)
+    target = parse_radar_target(title, summary)
+    stock_name, stock_symbol = parse_radar_stock(title, summary)
+    
+    pub_ts = story.get('published') or time.time()
+    try:
+        ist_dt = datetime.fromtimestamp(pub_ts, tz=timezone(timedelta(hours=5, minutes=30)))
+        pub_str = ist_dt.strftime('%d %b, %I:%M %p IST')
+    except Exception:
+        pub_str = 'Today'
+        
+    srcs = story.get('sources', [])
+    src_name = srcs[0].get('name') if srcs else (story.get('region') or 'Market Wire')
+    
+    return {
+        'id': story.get('id') or hashlib.md5((story.get('url', '') or title).encode()).hexdigest()[:16],
+        'title': title,
+        'summary': summary[:260],
+        'url': story.get('url', ''),
+        'published': pub_ts,
+        'published_str': pub_str,
+        'source': src_name,
+        'sources': srcs,
+        'brokerage': matched_brokerages[0],
+        'brokerages': matched_brokerages,
+        'action': action_key,
+        'action_label': action_label,
+        'sentiment': sentiment,
+        'target': target,
+        'stock': stock_name or 'Market / Sector',
+        'symbol': stock_symbol
+    }
+
+def refresh_radar(incoming_stories=None):
+    global RADAR_DATA
+    with RADAR_LOCK:
+        existing_calls = RADAR_DATA.get('calls', [])
+        calls_by_id = {c['id']: c for c in existing_calls}
+        
+        candidates = list(incoming_stories or [])
+        if not candidates and CACHE.get('stories'):
+            candidates = CACHE['stories']
+            
+        for s in candidates:
+            call = extract_radar_call(s)
+            if call:
+                calls_by_id[call['id']] = call
+                
+        now_ts = time.time()
+        filtered = [c for c in calls_by_id.values() if not c.get('published') or (now_ts - c['published'] <= 14 * 86400)]
+        sorted_calls = sorted(filtered, key=lambda x: x.get('published', 0) or 0, reverse=True)
+        
+        bullish_cnt = sum(1 for c in sorted_calls if c.get('sentiment') == 'bullish')
+        bearish_cnt = sum(1 for c in sorted_calls if c.get('sentiment') == 'bearish')
+        neutral_cnt = len(sorted_calls) - bullish_cnt - bearish_cnt
+        
+        broker_counts = {}
+        for c in sorted_calls:
+            b = c.get('brokerage', 'Other')
+            broker_counts[b] = broker_counts.get(b, 0) + 1
+        top_brokers = sorted([{'name': k, 'count': v} for k, v in broker_counts.items()], key=lambda x: x['count'], reverse=True)[:8]
+        
+        RADAR_DATA = {
+            'updated': datetime.now(timezone.utc).isoformat(),
+            'calls': sorted_calls,
+            'stats': {
+                'total': len(sorted_calls),
+                'bullish': bullish_cnt,
+                'bearish': bearish_cnt,
+                'neutral': neutral_cnt,
+                'top_brokerages': top_brokers
+            }
+        }
+        
+        try:
+            (DATA / 'radar.json').write_text(json.dumps(RADAR_DATA, ensure_ascii=False, indent=2))
+        except Exception:
+            pass
+            
+        try:
+            pub_radar = ROOT / 'public' / 'data' / 'radar.json'
+            if pub_radar.parent.exists():
+                pub_radar.write_text(json.dumps(RADAR_DATA, ensure_ascii=False, indent=2))
+        except Exception:
+            pass
+
 class Handler(SimpleHTTPRequestHandler):
     def __init__(self,*args,**kwargs): super().__init__(*args,directory=str(ROOT/'public'),**kwargs)
     def do_GET(self):
@@ -1380,6 +1579,10 @@ class Handler(SimpleHTTPRequestHandler):
             data = get_company_xray(query)
             body = json.dumps(data).encode(); self.send_response(200)
             self.send_header('Content-Type','application/json'); self.send_header('Cache-Control','max-age=60')
+            self.send_header('Content-Length',str(len(body))); self.end_headers(); self.wfile.write(body)
+        elif path=='/api/radar':
+            body = json.dumps(RADAR_DATA).encode(); self.send_response(200)
+            self.send_header('Content-Type','application/json'); self.send_header('Cache-Control','no-store')
             self.send_header('Content-Length',str(len(body))); self.end_headers(); self.wfile.write(body)
         else: super().do_GET()
     def end_headers(self):
@@ -1409,8 +1612,11 @@ if __name__=='__main__':
             saved_brief = json.loads((DATA/'premarket.json').read_text())
             if saved_brief.get('schema_version') == 2: PREMARKET_DATA.update(saved_brief)
         except (ValueError,OSError): pass
+    if (DATA/'radar.json').exists():
+        try: RADAR_DATA.update(json.loads((DATA/'radar.json').read_text()))
+        except (ValueError,OSError): pass
     if args.refresh_only:
-        refresh(); refresh_calendar(); refresh_market(); refresh_premarket(); print(json.dumps({'stories':len(CACHE['stories']),'sources':CACHE['sources'],'market':len(MARKET_DATA.get('tickers',[])),'premarket':bool(PREMARKET_DATA)},indent=2))
+        refresh(); refresh_calendar(); refresh_market(); refresh_premarket(); refresh_radar(); print(json.dumps({'stories':len(CACHE['stories']),'sources':CACHE['sources'],'market':len(MARKET_DATA.get('tickers',[])),'premarket':bool(PREMARKET_DATA),'radar':len(RADAR_DATA.get('calls',[]))},indent=2))
     else:
         threading.Thread(target=scheduled,daemon=True).start()
         threading.Thread(target=refresh_premarket,daemon=True).start()

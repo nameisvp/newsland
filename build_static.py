@@ -79,6 +79,11 @@ def main():
     (DATA_OUT / 'premarket.json').write_text(json.dumps(server.PREMARKET_DATA, ensure_ascii=False, indent=2))
     print(f" -> Wrote public/data/premarket.json")
 
+    # Write radar.json
+    server.refresh_radar()
+    (DATA_OUT / 'radar.json').write_text(json.dumps(server.RADAR_DATA, ensure_ascii=False, indent=2))
+    print(f" -> Wrote public/data/radar.json ({len(server.RADAR_DATA.get('calls', []))} brokerage calls)")
+
     # [5/5] Pre-render top companies for Company X-Ray
     top_stocks = [
         ('RELIANCE.NS', 'Reliance Industries'),

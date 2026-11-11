@@ -1,8 +1,8 @@
 {
-  "updated": "2026-11-11T10:53:56.533922+00:00",
+  "updated": "2026-11-11T16:18:54.006348+00:00",
   "schema_version": 2,
   "is_live": false,
-  "quote_updated": "2026-11-11T10:53:56.533588+00:00",
+  "quote_updated": "2026-11-11T16:18:54.005409+00:00",
   "quote_date": "2026-11-11",
   "quote_source": "yfinance",
   "live_bias_label": "LATEST AVAILABLE QUOTE",
@@ -26,31 +26,31 @@
   },
   "overnight": {
     "SP500": {
-      "val": "7,521",
-      "pct": -0.38,
-      "date": "2026-11-10"
+      "val": "7,606",
+      "pct": 1.13,
+      "date": "2026-11-11"
     },
     "NASDAQ": {
-      "val": "25,066",
-      "pct": -0.74,
-      "date": "2026-11-10"
+      "val": "25,488",
+      "pct": 1.68,
+      "date": "2026-11-11"
     },
     "US10Y": {
-      "val": "4.98%",
-      "pct": 2.45,
-      "date": "2026-11-10"
+      "val": "5.00%",
+      "pct": 0.3,
+      "date": "2026-11-11"
     }
   },
   "brent": {
     "key": "BRENT",
     "quote_date": "2026-11-11",
     "label": "Brent Crude",
-    "price": "93.46",
-    "price_raw": 93.46,
+    "price": "93.87",
+    "price_raw": 93.87,
     "prev_close": 92.44,
     "prev_close_fmt": "92.44",
-    "change": 1.02,
-    "change_pct": 1.1,
+    "change": 1.43,
+    "change_pct": 1.55,
     "direction": "up",
     "unit": "USD/bbl",
     "range_52w": {
@@ -58,8 +58,8 @@
       "high": 126.1,
       "low_fmt": "58.72",
       "high_fmt": "126.10",
-      "pos_pct": 51.6,
-      "pct_from_high": -25.88
+      "pos_pct": 52.2,
+      "pct_from_high": -25.56
     }
   },
   "usdinr": {
@@ -154,7 +154,7 @@
       "num": "02",
       "title": "Crude and input costs",
       "bias": "Context",
-      "desc": "Latest Brent quote: 93.46 USD/bbl (+1.10%). Higher crude can raise import and input costs; lower crude can ease them. This quote alone does not establish the cause of the move."
+      "desc": "Latest Brent quote: 93.87 USD/bbl (+1.55%). Higher crude can raise import and input costs; lower crude can ease them. This quote alone does not establish the cause of the move."
     },
     {
       "num": "03",
@@ -170,12 +170,12 @@
         "key": "BRENT",
         "quote_date": "2026-11-11",
         "label": "Brent Crude",
-        "price": "93.46",
-        "price_raw": 93.46,
+        "price": "93.87",
+        "price_raw": 93.87,
         "prev_close": 92.44,
         "prev_close_fmt": "92.44",
-        "change": 1.02,
-        "change_pct": 1.1,
+        "change": 1.43,
+        "change_pct": 1.55,
         "direction": "up",
         "unit": "USD/bbl",
         "range_52w": {
@@ -183,20 +183,20 @@
           "high": 126.1,
           "low_fmt": "58.72",
           "high_fmt": "126.10",
-          "pos_pct": 51.6,
-          "pct_from_high": -25.88
+          "pos_pct": 52.2,
+          "pct_from_high": -25.56
         }
       },
       "wti": {
         "key": "WTI",
         "quote_date": "2026-11-11",
         "label": "WTI Crude",
-        "price": "87.24",
-        "price_raw": 87.24,
+        "price": "87.94",
+        "price_raw": 87.94,
         "prev_close": 86.64,
         "prev_close_fmt": "86.64",
-        "change": 0.6,
-        "change_pct": 0.69,
+        "change": 1.3,
+        "change_pct": 1.5,
         "direction": "up",
         "unit": "USD/bbl",
         "range_52w": {
@@ -204,20 +204,20 @@
           "high": 119.48,
           "low_fmt": "54.98",
           "high_fmt": "119.48",
-          "pos_pct": 50.0,
-          "pct_from_high": -26.98
+          "pos_pct": 51.1,
+          "pct_from_high": -26.4
         }
       },
       "natgas": {
         "key": "NATGAS",
         "quote_date": "2026-11-11",
         "label": "Natural Gas",
-        "price": "3.32",
-        "price_raw": 3.318,
+        "price": "3.31",
+        "price_raw": 3.306,
         "prev_close": 3.291,
         "prev_close_fmt": "3.29",
-        "change": 0.027,
-        "change_pct": 0.82,
+        "change": 0.015,
+        "change_pct": 0.46,
         "direction": "up",
         "unit": "USD/MMBtu",
         "range_52w": {
@@ -225,77 +225,77 @@
           "high": 7.83,
           "low_fmt": "2.48",
           "high_fmt": "7.83",
-          "pos_pct": 15.6,
-          "pct_from_high": -57.61
+          "pos_pct": 15.4,
+          "pct_from_high": -57.76
         }
       },
       "gold": {
         "key": "GOLD",
         "quote_date": "2026-11-11",
         "label": "Gold",
-        "price": "4,056.20",
-        "price_raw": 4056.2,
+        "price": "4,012.40",
+        "price_raw": 4012.3999,
         "prev_close": 4054.0,
         "prev_close_fmt": "4,054.00",
-        "change": 2.2,
-        "change_pct": 0.05,
-        "direction": "up",
+        "change": -41.6001,
+        "change_pct": -1.03,
+        "direction": "down",
         "unit": "USD/oz",
         "range_52w": {
           "low": 3879.3,
           "high": 5586.2,
           "low_fmt": "3,879.30",
           "high_fmt": "5,586.20",
-          "pos_pct": 10.4,
-          "pct_from_high": -27.39
+          "pos_pct": 7.8,
+          "pct_from_high": -28.17
         }
       },
       "silver": {
         "key": "SILVER",
         "quote_date": "2026-11-11",
         "label": "Silver",
-        "price": "52.93",
-        "price_raw": 52.93,
+        "price": "52.26",
+        "price_raw": 52.26,
         "prev_close": 52.52,
         "prev_close_fmt": "52.52",
-        "change": 0.41,
-        "change_pct": 0.78,
-        "direction": "up",
+        "change": -0.26,
+        "change_pct": -0.5,
+        "direction": "down",
         "unit": "USD/oz",
         "range_52w": {
           "low": 48.12,
           "high": 121.3,
           "low_fmt": "48.12",
           "high_fmt": "121.30",
-          "pos_pct": 6.6,
-          "pct_from_high": -56.36
+          "pos_pct": 5.7,
+          "pct_from_high": -56.92
         }
       },
       "catalyst": {
-        "title": "India bonds slip as Treasury rout offsets oil slide",
-        "url": "https://economictimes.indiatimes.com/markets/bonds/india-bonds-slip-as-treasury-rout-offsets-oil-slide/articleshow/135727127.cms",
-        "why_it_matters": "Falling crude can ease India’s import bill and input costs for airlines and paints, while reducing upstream oil realizations.",
+        "title": "ITC Raises Gold Flake Premium Prices By Rs 10 Per Pack, New MRP To Hit Shelves By Late November",
+        "url": "https://www.ndtvprofit.com/markets/itc-raises-gold-flake-premium-prices-by-rs-10-per-pack-new-mrp-to-hit-shelves-by-late-november-12313825#publisher=newsstand",
+        "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
         "source": ""
       }
     },
     "earnings": [
       {
-        "title": "Q2 Results Live: Garden Reach Profit Rises 12%; Bajaj Hindusthan Sugar Loss Widens; Tata Power, GRSE, Hind Copper In Focus",
-        "url": "https://www.ndtvprofit.com/markets/q2-results-today-live-updates-tata-power-grse-hindustan-copper-among-companies-announcing-september-quarter-earnings-12310483#publisher=newsstand",
+        "title": "Tata Power Q2 profit jumps 32% to ₹1,652 crore",
+        "url": "https://www.thehindu.com/business/Industry/tata-power-q2-profit-jumps-32-to-1652-crore/article71690514.ece",
         "companies": [],
         "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
         "source": ""
       },
       {
-        "title": "Rentomojo climbs 10% to 52-wk high; what's behind gains as Q2 PAT dips 63%?",
-        "url": "https://www.business-standard.com/markets/news/rentomojo-climbs-10-to-52-wk-high-what-s-behind-gains-as-q2-pat-dips-63-126111100703_1.html",
+        "title": "Nasdaq futures rise nearly 2% as CoreWeave earnings calm AI spending fears",
+        "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/nasdaq-futures-rise-nearly-2-as-coreweave-earnings-calm-ai-spending-fears/articleshow/135738901.cms",
         "companies": [],
         "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
         "source": ""
       },
       {
-        "title": "Alcon shares drop 5% despite earnings beat on tighter outlook",
-        "url": "https://www.investing.com/news/stock-market-news/alcon-shares-drop-5-despite-earnings-beat-on-tighter-outlook-93CH-5018272",
+        "title": "Triveni Turbine Q2 Results: Net profit falls 42% on weak export sales; EBITDA drops 44%",
+        "url": "https://www.cnbctv18.com/market/stocks/triveni-turbine-share-price-q2-results-net-profit-falls-42-on-weak-export-sales-ebitda-drops-44-20031814.htm",
         "companies": [],
         "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
         "source": ""
@@ -304,25 +304,25 @@
     "global_macro": {
       "overnight": {
         "SP500": {
-          "val": "7,521",
-          "pct": -0.38,
-          "date": "2026-11-10"
+          "val": "7,606",
+          "pct": 1.13,
+          "date": "2026-11-11"
         },
         "NASDAQ": {
-          "val": "25,066",
-          "pct": -0.74,
-          "date": "2026-11-10"
+          "val": "25,488",
+          "pct": 1.68,
+          "date": "2026-11-11"
         },
         "US10Y": {
-          "val": "4.98%",
-          "pct": 2.45,
-          "date": "2026-11-10"
+          "val": "5.00%",
+          "pct": 0.3,
+          "date": "2026-11-11"
         }
       },
       "catalyst": {
-        "title": "India Is Beating Wall Street. One Fintech CEO Says That Only Strengthens The Case For US Stocks",
-        "url": "https://www.ndtvprofit.com/markets/india-is-beating-wall-street-one-fintech-ceo-says-that-only-strengthens-the-case-for-us-stocks-12312287#publisher=newsstand",
-        "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
+        "title": "Nasdaq futures rise nearly 2% as CoreWeave earnings calm AI spending fears",
+        "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/nasdaq-futures-rise-nearly-2-as-coreweave-earnings-calm-ai-spending-fears/articleshow/135738901.cms",
+        "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
         "source": ""
       }
     }

@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="paper">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
+  <title>Brokerage Radar | Newsland</title>
+  <meta name="description" content="Live stock recommendations, target price revisions, and institutional research radar from top Indian and global brokerages.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Dedicated Radar Page Styling */
+    .radar-page-wrap {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 1.25rem 4rem;
+    }
+
+    /* Top Nav Bar */
+    .radar-top-nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.25rem 0;
+      border-bottom: 1px solid var(--border);
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .radar-brand-group {
+      display: flex;
+      align-items: baseline;
+      gap: 0.6rem;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .radar-brand-logo {
+      font-family: var(--font-serif);
+      font-size: 1.75rem;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      color: var(--ink);
+    }
+
+    .radar-brand-dot {
+      color: var(--accent);
+    }
+
+    .radar-badge-tag {
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      background: var(--tag-bg);
+      color: var(--accent);
+      padding: 3px 8px;
+      border-radius: 4px;
+      border: 1px solid var(--border);
+    }
+
+    .radar-nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .radar-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
+      font-weight: 500;
+      text-decoration: none;
+      cursor: pointer;
+      transition: all 0.15s ease;
+      background: var(--card-bg);
+      color: var(--ink);
+      border: 1px solid var(--border);
+    }
+
+    .radar-btn:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    .radar-btn.primary {
+      background: var(--accent);
+      color: #ffffff;
+      border-color: var(--accent);
+    }
+
+    .radar-btn.primary:hover {
+      opacity: 0.92;
+      color: #ffffff;
+    }
+
+    /* Pulse / Stat Hero Strip */
+    .radar-hero-strip {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 0.85rem;
+      margin: 1.5rem 0;
+      padding: 1.25rem;
+      background: var(--bg-subtle);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+    }
+
+    .radar-stat-box {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+
+    .radar-stat-label {
+      font-family: var(--font-sans);
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--ink-muted);
+    }
+
+    .radar-stat-value {
+      font-family: var(--font-serif);
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--ink);
+      line-height: 1.2;
+    }
+
+    .radar-stat-sub {
+      font-size: 0.75rem;
+      color: var(--ink-secondary);
+    }
+
+    .val-bull { color: var(--green-ticker); }
+    .val-bear { color: var(--red-ticker); }
+    .val-neutral { color: var(--ink-muted); }
+
+    /* Filter Controls */
+    .radar-controls-wrap {
+      margin-bottom: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .radar-search-bar {
+      position: relative;
+      width: 100%;
+    }
+
+    .radar-search-input {
+      width: 100%;
+      padding: 11px 40px 11px 16px;
+      font-size: 0.95rem;
+      font-family: var(--font-sans);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      background: var(--card-bg);
+      color: var(--ink);
+      outline: none;
+      box-sizing: border-box;
+      transition: border-color 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .radar-search-input:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(217, 68, 31, 0.12);
+    }
+
+    .radar-search-icon {
+      position: absolute;
+      right: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--ink-muted);
+      pointer-events: none;
+      font-size: 0.9rem;
+    }
+
+    /* Filter Chips */
+    .radar-filter-bar {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      overflow-x: auto;
+      padding-bottom: 4px;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+    }
+    .radar-filter-bar::-webkit-scrollbar { display: none; }
+
+    .radar-filter-chip {
+      white-space: nowrap;
+      padding: 6px 14px;
+      border-radius: 16px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      font-family: var(--font-sans);
+      background: var(--tag-bg);
+      color: var(--ink-secondary);
+      border: 1px solid var(--border);
+      cursor: pointer;
+      transition: all 0.12s ease;
+    }
+
+    .radar-filter-chip:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    .radar-filter-chip.active {
+      background: var(--accent);
+      color: #ffffff;
+      border-color: var(--accent);
+    }
+
+    .radar-broker-bar {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      overflow-x: auto;
+      padding-bottom: 4px;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+    }
+    .radar-broker-bar::-webkit-scrollbar { display: none; }
+
+    .radar-broker-chip {
+      white-space: nowrap;
+      padding: 4px 10px;
+      border-radius: 12px;
+      font-size: 0.75rem;
+      font-weight: 500;
+      font-family: var(--font-sans);
+      background: var(--card-bg);
+      color: var(--ink-muted);
+      border: 1px solid var(--border);
+      cursor: pointer;
+      transition: all 0.12s ease;
+    }
+
+    .radar-broker-chip:hover, .radar-broker-chip.active {
+      border-color: var(--ink);
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    /* Cards Grid */
+    .radar-cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+      gap: 1.15rem;
+    }
+
+    @media (max-width: 768px) {
+      .radar-cards-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .radar-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 0.85rem;
+      transition: border-color 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .radar-card:hover {
+      border-color: var(--accent);
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+    }
+
+    .radar-card-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    .radar-card-pills {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      flex-wrap: wrap;
+    }
+
+    .broker-badge {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      background: var(--ink);
+      color: var(--bg);
+      padding: 3px 8px;
+      border-radius: 4px;
+    }
+
+    .action-badge {
+      font-family: var(--font-sans);
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: 4px;
+    }
+
+    .action-badge.bullish {
+      background: rgba(0, 135, 90, 0.12);
+      color: var(--green-ticker);
+    }
+
+    .action-badge.bearish {
+      background: rgba(222, 53, 11, 0.12);
+      color: var(--red-ticker);
+    }
+
+    .action-badge.neutral {
+      background: var(--tag-bg);
+      color: var(--ink-secondary);
+    }
+
+    .target-pill {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      font-weight: 700;
+      background: rgba(217, 68, 31, 0.1);
+      color: var(--accent);
+      padding: 3px 8px;
+      border-radius: 4px;
+      border: 1px solid rgba(217, 68, 31, 0.25);
+    }
+
+    .radar-stock-row {
+      display: flex;
+      align-items: baseline;
+      gap: 0.5rem;
+    }
+
+    .radar-stock-title {
+      font-family: var(--font-sans);
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--ink);
+    }
+
+    .radar-stock-link {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--accent);
+      text-decoration: none;
+      padding: 1px 6px;
+      background: var(--tag-bg);
+      border-radius: 3px;
+      transition: opacity 0.12s;
+    }
+
+    .radar-stock-link:hover {
+      text-decoration: underline;
+    }
+
+    .radar-card-body {
+      font-family: var(--font-serif);
+      font-size: 1.05rem;
+      line-height: 1.45;
+      color: var(--ink);
+    }
+
+    .radar-card-summary {
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
+      line-height: 1.45;
+      color: var(--ink-secondary);
+      margin-top: 0.35rem;
+    }
+
+    .radar-card-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1px solid var(--border);
+      padding-top: 0.75rem;
+      margin-top: 0.35rem;
+      font-size: 0.78rem;
+      color: var(--ink-muted);
+      font-family: var(--font-sans);
+    }
+
+    .radar-source-link {
+      color: var(--ink-secondary);
+      text-decoration: none;
+      font-weight: 500;
+      display: inline-flex;
+      align-items: center;
+      gap: 2px;
+    }
+
+    .radar-source-link:hover {
+      color: var(--accent);
+      text-decoration: underline;
+    }
+
+    /* Empty State */
+    .radar-empty {
+      grid-column: 1 / -1;
+      text-align: center;
+      padding: 4rem 1rem;
+      color: var(--ink-muted);
+      background: var(--bg-subtle);
+      border-radius: 8px;
+      border: 1px dashed var(--border);
+    }
+
+    .radar-empty h3 {
+      font-family: var(--font-serif);
+      font-size: 1.3rem;
+      color: var(--ink);
+      margin-bottom: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="radar-page-wrap">
+    <!-- Top Navigation Header -->
+    <header class="radar-top-nav">
+      <a href="index.html" class="radar-brand-group" title="Newsland Home">
+        <span class="radar-brand-logo">newsland<span class="radar-brand-dot">.</span></span>
+        <span class="radar-badge-tag">BROKERAGE RADAR</span>
+      </a>
+
+      <div class="radar-nav-actions">
+        <button id="theme-btn" class="radar-btn" title="Toggle Theme (Paper / Night / Sepia / Slate)">🌓 Theme</button>
+        <button id="refresh-btn" class="radar-btn" title="Refresh Latest Recommendations">↻ Refresh</button>
+        <a href="index.html" class="radar-btn primary">← Back to Desk Briefing</a>
+      </div>
+    </header>
+
+    <!-- Stat Hero Banner -->
+    <section class="radar-hero-strip">
+      <div class="radar-stat-box">
+        <span class="radar-stat-label">Active Research Calls</span>
+        <span id="stat-total" class="radar-stat-value">--</span>
+        <span id="stat-updated" class="radar-stat-sub">Syncing tape…</span>
+      </div>
+      <div class="radar-stat-box">
+        <span class="radar-stat-label">Buys &amp; Upgrades</span>
+        <span id="stat-bullish" class="radar-stat-value val-bull">--</span>
+        <span class="radar-stat-sub">Target hikes &amp; Outperforms</span>
+      </div>
+      <div class="radar-stat-box">
+        <span class="radar-stat-label">Sells &amp; Downgrades</span>
+        <span id="stat-bearish" class="radar-stat-value val-bear">--</span>
+        <span class="radar-stat-sub">Target cuts &amp; Underperforms</span>
+      </div>
+      <div class="radar-stat-box">
+        <span class="radar-stat-label">Top Active Firms</span>
+        <span id="stat-top-firm" class="radar-stat-value" style="font-size: 1.15rem; font-family: var(--font-sans); margin-top: 4px;">--</span>
+        <span id="stat-firm-sub" class="radar-stat-sub">Institutional coverage</span>
+      </div>
+    </section>
+
+    <!-- Filter & Search Controls -->
+    <section class="radar-controls-wrap">
+      <!-- Search Input -->
+      <div class="radar-search-bar">
+        <input id="radar-search" type="search" class="radar-search-input" placeholder="Search stock (e.g. Tata Steel, MRF), brokerage (e.g. Jefferies, Citi), or keyword..." autocomplete="off">
+        <span class="radar-search-icon">🔍</span>
+      </div>
+
+      <!-- Action Sentiment Filter -->
+      <div class="radar-filter-bar">
+        <button class="radar-filter-chip active" data-action="all">All Calls (<span id="count-all">0</span>)</button>
+        <button class="radar-filter-chip" data-action="bullish">🟢 Buys &amp; Target Hikes (<span id="count-bull">0</span>)</button>
+        <button class="radar-filter-chip" data-action="bearish">🔴 Sells &amp; Target Cuts (<span id="count-bear">0</span>)</button>
+        <button class="radar-filter-chip" data-action="neutral">🟡 Neutral / Holds (<span id="count-neutral">0</span>)</button>
+      </div>
+
+      <!-- Brokerage Horizontal Filter -->
+      <div id="broker-chips-row" class="radar-broker-bar">
+        <button class="radar-broker-chip active" data-broker="all">All Brokerages</button>
+      </div>
+    </section>
+
+    <!-- Cards Grid Container -->
+    <main id="radar-grid" class="radar-cards-grid">
+      <div class="radar-empty">
+        <h3>Loading Brokerage Radar…</h3>
+        <p>Fetching institutional recommendations and target prices from verified sources.</p>
+      </div>
+    </main>
+  </div>
+
+  <script src="radar.js"></script>
+</body>
+</html>

@@ -3700,6 +3700,18 @@ html[data-theme="night"] .shorts-floating-btn {
   font-weight: 750 !important;
 }
 
+.radar-accent-tab {
+  color: var(--accent-red) !important;
+  font-weight: 750 !important;
+  text-decoration: none !important;
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+}
+.radar-accent-tab:hover {
+  opacity: 0.85;
+}
+
 /* Fullscreen Layer with Exact Page Theme Ground */
 .shorts-layer {
   position: fixed;

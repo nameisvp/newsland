@@ -2140,10 +2140,10 @@ function initShareModal() {
 }
 
 // Section Tabs
-document.querySelectorAll('.tab-btn').forEach(b => {
+document.querySelectorAll('button.tab-btn[data-region]').forEach(b => {
   b.addEventListener('click', () => {
     region = b.dataset.region;
-    document.querySelectorAll('.tab-btn').forEach(x => {
+    document.querySelectorAll('button.tab-btn[data-region]').forEach(x => {
       x.classList.toggle('active', x === b);
       x.setAttribute('aria-selected', String(x === b));
     });
@@ -3939,5 +3939,14 @@ initInstantTickerSearch();
 initSignalDigest();
 setInterval(load, 30000);
 setInterval(loadMarket, 60000);
+
+// URL param check for direct company opening from Brokerage Radar
+try {
+  const urlParams = new URLSearchParams(window.location.search);
+  const compParam = urlParams.get('company');
+  if (compParam) {
+    setTimeout(() => openCompanyDrawer(compParam), 450);
+  }
+} catch (_) {}
 
 
