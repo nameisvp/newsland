@@ -42,23 +42,6 @@
       gap: 1rem;
     }
 
-    .radar-brand {
-      display: flex;
-      align-items: baseline;
-      gap: 0.65rem;
-      text-decoration: none;
-    }
-
-    .radar-wordmark {
-      font-family: var(--font-serif);
-      font-size: 1.55rem;
-      font-weight: 700;
-      letter-spacing: -0.03em;
-      color: var(--ink);
-    }
-
-    .radar-dot { color: var(--accent); }
-
     .radar-nav-right {
       display: flex;
       align-items: center;
@@ -480,9 +463,9 @@
   <div class="radar-shell">
     <!-- Top Masthead -->
     <header class="radar-nav">
-      <a href="index.html" class="radar-brand">
-        <span class="radar-wordmark">newsland<span class="radar-dot">.</span></span>
-      </a>
+      <div class="brand-block">
+        <a class="wordmark" href="index.html" aria-label="Newsland home">newsland<span class="ink-dot">.</span></a>
+      </div>
       <div class="radar-nav-right">
         <button id="theme-btn" class="nav-ghost-btn" title="Switch Reading Theme">🌓 Theme</button>
         <button id="refresh-btn" class="nav-ghost-btn" title="Refresh Feed">↻ Refresh</button>
