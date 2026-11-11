@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
   <title>Brokerage Radar | Newsland</title>
-  <meta name="description" content="Latest institutional stock recommendations, target prices, and analyst ratings for Indian & global markets.">
+  <meta name="description" content="Calm, structured feed of institutional stock recommendations, target prices, and analyst ratings.">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="stylesheet" href="style.css">
   <style>
@@ -15,38 +15,43 @@
       --ink-secondary: #484f54;
       --ink-muted: #727a80;
       --border: #e8e4db;
+      --border-light: rgba(0, 0, 0, 0.055);
       --accent: #d9441f;
       --card-bg: #ffffff;
       --tag-bg: #f5f2ea;
     }
-    .radar-wrap {
-      max-width: var(--max-width);
-      margin: 0 auto;
-      padding: 0 1.25rem 4rem;
+
+    body {
+      background: var(--bg);
+      color: var(--ink);
     }
 
-    /* Header */
-    .radar-header {
+    .radar-shell {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 0 1.5rem 5rem;
+    }
+
+    /* ── Top Masthead ── */
+    .radar-nav {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 1rem 0;
+      padding: 1.15rem 0;
       border-bottom: 1px solid var(--border);
-      gap: 0.75rem;
-      flex-wrap: wrap;
+      gap: 1rem;
     }
 
     .radar-brand {
       display: flex;
       align-items: baseline;
-      gap: 0.55rem;
+      gap: 0.65rem;
       text-decoration: none;
-      color: inherit;
     }
 
-    .radar-logo {
+    .radar-wordmark {
       font-family: var(--font-serif);
-      font-size: 1.6rem;
+      font-size: 1.55rem;
       font-weight: 700;
       letter-spacing: -0.03em;
       color: var(--ink);
@@ -54,272 +59,217 @@
 
     .radar-dot { color: var(--accent); }
 
-    .radar-tag {
-      font-family: var(--font-mono);
-      font-size: 0.68rem;
-      font-weight: 700;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      background: var(--tag-bg);
-      color: var(--accent);
-      padding: 2px 7px;
-      border-radius: 4px;
-      border: 1px solid var(--border);
-    }
-
-    .radar-actions {
+    .radar-nav-right {
       display: flex;
       align-items: center;
       gap: 0.5rem;
     }
 
-    .r-btn {
+    .nav-ghost-btn {
       display: inline-flex;
       align-items: center;
       gap: 0.35rem;
-      padding: 5px 12px;
-      border-radius: 18px;
+      height: 32px;
+      padding: 0 12px;
+      border-radius: 16px;
       font-family: var(--font-sans);
       font-size: 0.8rem;
       font-weight: 500;
-      text-decoration: none;
-      cursor: pointer;
-      background: var(--card-bg);
-      color: var(--ink);
+      color: var(--ink-secondary);
+      background: transparent;
       border: 1px solid var(--border);
-      transition: all 0.14s ease;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.15s ease;
     }
 
-    .r-btn:hover {
-      border-color: var(--accent);
-      color: var(--accent);
+    .nav-ghost-btn:hover {
+      color: var(--ink);
+      border-color: var(--ink-secondary);
+      background: var(--bg-subtle);
     }
 
-    .r-btn.primary {
+    .nav-back-btn {
       background: var(--ink);
       color: var(--bg);
       border-color: var(--ink);
+      font-weight: 600;
     }
 
-    .r-btn.primary:hover {
+    .nav-back-btn:hover {
       opacity: 0.88;
       color: var(--bg);
+      background: var(--ink);
     }
 
-    /* Compact Pulse Strip */
-    .radar-pulse-bar {
+    /* ── Calm Editorial Hero ── */
+    .radar-hero {
       display: flex;
-      align-items: center;
+      align-items: flex-end;
       justify-content: space-between;
+      gap: 1.25rem;
+      padding: 1.85rem 0 1.35rem;
       flex-wrap: wrap;
-      gap: 0.75rem;
-      padding: 0.65rem 0.9rem;
-      margin: 1rem 0 0.9rem;
-      background: var(--bg-subtle);
-      border: 1px solid var(--border);
-      border-radius: 6px;
+    }
+
+    .radar-title {
+      font-family: var(--font-serif);
+      font-size: 1.95rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+      margin: 0 0 0.3rem;
+      line-height: 1.15;
+    }
+
+    .radar-subtitle {
       font-family: var(--font-sans);
-      font-size: 0.8rem;
+      font-size: 0.88rem;
+      color: var(--ink-muted);
+      margin: 0;
+      line-height: 1.45;
     }
 
-    .pulse-metrics {
-      display: flex;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 1rem;
-    }
-
-    .pulse-item {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.35rem;
+    .pulse-inline {
       color: var(--ink-secondary);
       font-weight: 500;
     }
+    .pulse-inline .p-bull { color: var(--green-ticker); font-weight: 600; }
+    .pulse-inline .p-bear { color: var(--red-ticker); font-weight: 600; }
 
-    .pulse-item strong {
-      color: var(--ink);
-      font-family: var(--font-mono);
-      font-size: 0.85rem;
-    }
-
-    .pulse-item.bull strong { color: var(--green-ticker); }
-    .pulse-item.bear strong { color: var(--red-ticker); }
-
-    .pulse-updated {
-      font-size: 0.75rem;
-      color: var(--ink-muted);
-      font-family: var(--font-mono);
-    }
-
-    .pulse-right {
+    .radar-hero-right {
       display: flex;
-      align-items: center;
-      gap: 0.75rem;
-      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 0.45rem;
     }
 
-    .radar-time-pills {
+    .seg-group {
       display: inline-flex;
       align-items: center;
-      background: var(--card-bg);
+      background: var(--bg-subtle);
       border: 1px solid var(--border);
-      border-radius: 14px;
-      padding: 2px;
+      border-radius: 8px;
+      padding: 3px;
       gap: 2px;
     }
 
-    .time-pill {
-      padding: 3px 9px;
-      border-radius: 12px;
-      font-size: 0.72rem;
-      font-weight: 600;
+    .seg-btn {
+      padding: 5px 11px;
+      border-radius: 6px;
       font-family: var(--font-sans);
+      font-size: 0.78rem;
+      font-weight: 500;
       color: var(--ink-muted);
       background: transparent;
       border: none;
       cursor: pointer;
-      transition: all 0.12s ease;
+      white-space: nowrap;
+      transition: all 0.14s ease;
     }
 
-    .time-pill:hover { color: var(--ink); }
-    .time-pill.active {
-      background: var(--ink);
-      color: var(--bg);
+    .seg-btn:hover { color: var(--ink); }
+
+    .seg-btn.active {
+      background: var(--card-bg);
+      color: var(--ink);
+      font-weight: 600;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
     }
 
-    /* Toolbar: Search + Sentiment Pills */
-    .radar-toolbar {
+    .sync-caption {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      color: var(--ink-muted);
+    }
+
+    /* ── Unified Calm Filter Bar ── */
+    .filter-bar {
       display: flex;
       align-items: center;
-      justify-content: space-between;
       gap: 0.75rem;
-      margin-bottom: 0.75rem;
+      padding: 0.65rem 0.85rem;
+      margin-bottom: 1.35rem;
+      background: var(--bg-subtle);
+      border: 1px solid var(--border);
+      border-radius: 10px;
       flex-wrap: wrap;
     }
 
-    .radar-search-box {
+    .search-wrap {
       position: relative;
-      flex: 1 1 280px;
-      max-width: 440px;
+      flex: 1 1 220px;
+      min-width: 190px;
     }
 
-    .radar-search-input {
+    .search-field {
       width: 100%;
-      padding: 8px 34px 8px 14px;
-      font-size: 0.85rem;
+      height: 34px;
+      padding: 0 12px 0 32px;
       font-family: var(--font-sans);
-      border: 1px solid var(--border);
-      border-radius: 20px;
-      background: var(--card-bg);
+      font-size: 0.84rem;
       color: var(--ink);
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 7px;
       outline: none;
       box-sizing: border-box;
+      transition: border-color 0.15s ease;
     }
 
-    .radar-search-input:focus {
-      border-color: var(--accent);
-    }
+    .search-field::placeholder { color: var(--ink-muted); }
+    .search-field:focus { border-color: var(--accent); }
 
-    .radar-search-ico {
+    .search-glyph {
       position: absolute;
-      right: 12px;
+      left: 10px;
       top: 50%;
       transform: translateY(-50%);
-      font-size: 0.8rem;
+      width: 14px;
+      height: 14px;
       color: var(--ink-muted);
       pointer-events: none;
     }
 
-    .radar-sent-pills {
-      display: flex;
-      align-items: center;
-      gap: 0.4rem;
-      overflow-x: auto;
-      scrollbar-width: none;
-    }
-    .radar-sent-pills::-webkit-scrollbar { display: none; }
-
-    .radar-mkt-pills {
-      display: flex;
-      align-items: center;
-      gap: 0.35rem;
+    .filter-divider {
+      width: 1px;
+      height: 22px;
+      background: var(--border);
     }
 
-    .mkt-badge {
-      font-family: var(--font-mono);
-      font-size: 0.65rem;
-      font-weight: 700;
-      padding: 1px 5px;
-      border-radius: 3px;
-      background: var(--bg-subtle);
-      color: var(--ink-muted);
+    .firm-select {
+      height: 34px;
+      padding: 0 28px 0 10px;
+      font-family: var(--font-sans);
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: var(--ink);
+      background: var(--card-bg);
       border: 1px solid var(--border);
+      border-radius: 7px;
+      outline: none;
+      cursor: pointer;
     }
 
-    .r-pill {
-      white-space: nowrap;
-      padding: 5px 12px;
-      border-radius: 16px;
+    .firm-select:focus { border-color: var(--accent); }
+
+    .reset-link {
+      font-family: var(--font-sans);
       font-size: 0.78rem;
       font-weight: 600;
-      font-family: var(--font-sans);
-      background: var(--card-bg);
-      color: var(--ink-secondary);
-      border: 1px solid var(--border);
-      cursor: pointer;
-      transition: all 0.12s ease;
-    }
-
-    .r-pill:hover {
-      border-color: var(--ink);
-      color: var(--ink);
-    }
-
-    .r-pill.active {
-      background: var(--ink);
-      color: var(--bg);
-      border-color: var(--ink);
-    }
-
-    /* Brokerage Chips Bar */
-    .radar-firms-bar {
-      display: flex;
-      align-items: center;
-      gap: 0.35rem;
-      overflow-x: auto;
-      padding-bottom: 0.65rem;
-      margin-bottom: 0.5rem;
-      scrollbar-width: none;
-    }
-    .radar-firms-bar::-webkit-scrollbar { display: none; }
-
-    .firm-chip {
-      white-space: nowrap;
-      padding: 3px 10px;
-      border-radius: 12px;
-      font-size: 0.74rem;
-      font-weight: 500;
-      font-family: var(--font-sans);
+      color: var(--accent);
       background: transparent;
-      color: var(--ink-muted);
-      border: 1px solid var(--border);
+      border: none;
+      padding: 4px 6px;
       cursor: pointer;
-      transition: all 0.12s ease;
     }
+    .reset-link:hover { text-decoration: underline; }
 
-    .firm-chip:hover, .firm-chip.active {
-      background: var(--tag-bg);
-      color: var(--ink);
-      border-color: var(--ink-secondary);
-      font-weight: 600;
-    }
-
-    /* Institutional Table Layout */
-    .radar-table-wrap {
+    /* ── Spacious 5-Column Financial Table ── */
+    .table-surface {
       background: var(--card-bg);
       border: 1px solid var(--border);
-      border-radius: 8px;
+      border-radius: 10px;
       overflow: hidden;
     }
 
@@ -331,157 +281,167 @@
     }
 
     .radar-table thead th {
-      background: var(--bg-subtle);
-      color: var(--ink-muted);
+      padding: 0.8rem 1rem;
       font-size: 0.7rem;
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.06em;
-      padding: 0.65rem 0.9rem;
+      color: var(--ink-muted);
+      background: var(--bg-subtle);
       border-bottom: 1px solid var(--border);
       white-space: nowrap;
       user-select: none;
     }
 
-    .radar-table thead th.sortable {
-      cursor: pointer;
-    }
-    .radar-table thead th.sortable:hover {
-      color: var(--ink);
-    }
+    .radar-table thead th.sortable { cursor: pointer; }
+    .radar-table thead th.sortable:hover { color: var(--ink); }
 
     .radar-table tbody tr {
-      border-bottom: 1px solid var(--border);
-      transition: background 0.1s ease;
+      border-bottom: 1px solid var(--border-light);
+      transition: background 0.12s ease;
     }
 
-    .radar-table tbody tr:last-child {
-      border-bottom: none;
-    }
-
-    .radar-table tbody tr:hover {
-      background: var(--bg-subtle);
-    }
+    .radar-table tbody tr:last-child { border-bottom: none; }
+    .radar-table tbody tr:hover { background: var(--bg-subtle); }
 
     .radar-table td {
-      padding: 0.78rem 0.9rem;
-      vertical-align: middle;
-      font-size: 0.86rem;
-      color: var(--ink);
-    }
-
-    /* Table Cell Components */
-    .col-broker { width: 135px; white-space: nowrap; }
-    .col-stock { width: 175px; }
-    .col-reco { width: 130px; white-space: nowrap; }
-    .col-target { width: 110px; white-space: nowrap; }
-    .col-details { min-width: 280px; }
-    .col-meta { width: 135px; text-align: right; white-space: nowrap; }
-
-    .firm-pill {
-      display: inline-block;
-      font-family: var(--font-mono);
-      font-size: 0.72rem;
-      font-weight: 700;
-      letter-spacing: 0.02em;
-      padding: 3px 8px;
-      border-radius: 4px;
-      background: var(--tag-bg);
-      color: var(--ink);
-      border: 1px solid var(--border);
-    }
-
-    .stock-cell {
-      display: flex;
-      align-items: center;
-      gap: 0.4rem;
-      flex-wrap: wrap;
-    }
-
-    .stock-name {
-      font-weight: 700;
-      color: var(--ink);
+      padding: 1rem 1rem;
+      vertical-align: top;
       font-size: 0.88rem;
+      color: var(--ink);
     }
 
-    .xray-mini-link {
-      font-family: var(--font-mono);
-      font-size: 0.66rem;
+    .col-firm { width: 145px; }
+    .col-stock { width: 195px; }
+    .col-call { width: 120px; white-space: nowrap; }
+    .col-target { width: 115px; white-space: nowrap; }
+    .col-report { min-width: 280px; }
+
+    /* Cell Typography */
+    .firm-name {
       font-weight: 600;
-      color: var(--accent);
-      text-decoration: none;
-      padding: 1px 5px;
-      border-radius: 3px;
-      border: 1px solid rgba(217, 68, 31, 0.3);
-      opacity: 0.85;
-    }
-    .xray-mini-link:hover {
-      opacity: 1;
-      background: rgba(217, 68, 31, 0.08);
+      color: var(--ink);
+      font-size: 0.86rem;
+      line-height: 1.4;
     }
 
-    .reco-badge {
+    .stock-link {
       display: inline-flex;
       align-items: center;
-      font-size: 0.74rem;
-      font-weight: 700;
-      padding: 3px 8px;
-      border-radius: 4px;
-    }
-    .reco-badge.bullish { background: rgba(0, 135, 90, 0.12); color: var(--green-ticker); }
-    .reco-badge.bearish { background: rgba(222, 53, 11, 0.12); color: var(--red-ticker); }
-    .reco-badge.neutral { background: var(--tag-bg); color: var(--ink-secondary); }
-
-    .target-val {
-      font-family: var(--font-mono);
-      font-size: 0.82rem;
-      font-weight: 700;
-      color: var(--ink);
-    }
-    .target-empty {
-      color: var(--ink-muted);
-      font-family: var(--font-mono);
-      font-size: 0.8rem;
-    }
-
-    .detail-headline {
-      display: block;
-      color: var(--ink);
-      text-decoration: none;
-      font-weight: 500;
-      line-height: 1.38;
-    }
-    .detail-headline:hover {
-      color: var(--accent);
-      text-decoration: underline;
-    }
-
-    .meta-source {
-      display: block;
-      font-size: 0.76rem;
+      gap: 0.35rem;
       font-weight: 600;
-      color: var(--ink-secondary);
+      color: var(--ink);
       text-decoration: none;
+      line-height: 1.4;
     }
-    .meta-source:hover {
+
+    .stock-link:hover {
       color: var(--accent);
     }
-    .meta-time {
-      display: block;
+
+    .stock-link .xray-arrow {
       font-size: 0.72rem;
       color: var(--ink-muted);
-      margin-top: 2px;
+      opacity: 0;
+      transition: opacity 0.12s ease;
     }
 
-    .radar-empty-row td {
-      text-align: center;
-      padding: 3rem 1rem;
+    .stock-link:hover .xray-arrow {
+      opacity: 1;
+      color: var(--accent);
+    }
+
+    .mkt-micro {
+      font-family: var(--font-mono);
+      font-size: 0.64rem;
+      font-weight: 600;
+      color: var(--ink-muted);
+      background: var(--bg-subtle);
+      border: 1px solid var(--border);
+      padding: 0 4px;
+      border-radius: 3px;
+      line-height: 1.5;
+    }
+
+    .call-pill {
+      display: inline-flex;
+      align-items: center;
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 3px 9px;
+      border-radius: 5px;
+    }
+    .call-pill.bullish { background: rgba(0, 135, 90, 0.1); color: var(--green-ticker); }
+    .call-pill.bearish { background: rgba(222, 53, 11, 0.1); color: var(--red-ticker); }
+    .call-pill.neutral { background: var(--tag-bg); color: var(--ink-secondary); }
+
+    .target-num {
+      font-family: var(--font-mono);
+      font-size: 0.83rem;
+      font-weight: 600;
+      color: var(--ink);
+    }
+
+    .target-dash {
+      font-family: var(--font-mono);
+      font-size: 0.83rem;
       color: var(--ink-muted);
     }
 
-    /* Mobile Responsive List Transformation */
-    @media (max-width: 820px) {
-      .radar-wrap { padding: 0 0.75rem 3rem; }
+    .report-link {
+      display: block;
+      font-family: var(--font-sans);
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--ink);
+      text-decoration: none;
+      line-height: 1.42;
+    }
+
+    .report-link:hover {
+      color: var(--accent);
+    }
+
+    .report-meta {
+      display: flex;
+      align-items: center;
+      gap: 0.45rem;
+      margin-top: 0.3rem;
+      font-size: 0.75rem;
+      color: var(--ink-muted);
+    }
+
+    .empty-cell {
+      text-align: center;
+      padding: 3.5rem 1.5rem !important;
+      color: var(--ink-muted) !important;
+      font-size: 0.9rem;
+    }
+
+    /* ── Responsive Tablet / Mobile ── */
+    @media (max-width: 860px) {
+      .filter-divider { display: none; }
+      .radar-hero { padding: 1.25rem 0 1rem; }
+      .radar-hero-right { align-items: flex-start; }
+    }
+
+    @media (max-width: 720px) {
+      .radar-shell { padding: 0 0.85rem 3.5rem; }
+      .radar-title { font-size: 1.55rem; }
+
+      .filter-bar {
+        padding: 0.65rem;
+        gap: 0.55rem;
+      }
+
+      .seg-group {
+        max-width: 100%;
+        overflow-x: auto;
+        scrollbar-width: none;
+      }
+      .seg-group::-webkit-scrollbar { display: none; }
+
+      .firm-select { width: 100%; }
 
       .radar-table thead { display: none; }
       .radar-table, .radar-table tbody, .radar-table tr, .radar-table td {
@@ -491,125 +451,121 @@
       }
 
       .radar-table tbody tr {
-        padding: 0.9rem 0.95rem;
+        padding: 1rem;
         display: grid;
         grid-template-columns: 1fr auto;
         grid-template-areas:
-          "broker reco"
+          "firm call"
           "stock target"
-          "details details"
-          "meta meta";
-        gap: 0.35rem 0.65rem;
+          "report report";
+        gap: 0.35rem 0.75rem;
         align-items: center;
       }
 
       .radar-table td {
         padding: 0;
-        border: none;
         width: auto !important;
         min-width: 0 !important;
-        text-align: left !important;
       }
 
-      .col-broker { grid-area: broker; }
-      .col-reco { grid-area: reco; justify-self: end; }
-      .col-stock { grid-area: stock; margin-top: 2px; }
+      .col-firm { grid-area: firm; }
+      .col-call { grid-area: call; justify-self: end; }
+      .col-stock { grid-area: stock; }
       .col-target { grid-area: target; justify-self: end; }
-      .col-details { grid-area: details; margin-top: 4px; }
-      .col-meta {
-        grid-area: meta;
-        display: flex !important;
-        align-items: center;
-        justify-content: space-between;
-        margin-top: 6px;
-        padding-top: 6px !important;
-        border-top: 1px dashed var(--border) !important;
-      }
-      .meta-time { margin-top: 0; }
+      .col-report { grid-area: report; margin-top: 0.35rem; }
     }
   </style>
 </head>
 <body>
-  <div class="radar-wrap">
-    <!-- Top Header -->
-    <header class="radar-header">
+  <div class="radar-shell">
+    <!-- Top Masthead -->
+    <header class="radar-nav">
       <a href="index.html" class="radar-brand">
-        <span class="radar-logo">newsland<span class="radar-dot">.</span></span>
-        <span class="radar-tag">BROKERAGE RADAR</span>
+        <span class="radar-wordmark">newsland<span class="radar-dot">.</span></span>
       </a>
-      <div class="radar-actions">
-        <button id="theme-btn" class="r-btn" title="Switch Theme">🌓 Theme</button>
-        <button id="refresh-btn" class="r-btn" title="Sync Latest Calls">↻ Refresh</button>
-        <a href="index.html" class="r-btn primary">← Desk Briefing</a>
+      <div class="radar-nav-right">
+        <button id="theme-btn" class="nav-ghost-btn" title="Switch Reading Theme">🌓 Theme</button>
+        <button id="refresh-btn" class="nav-ghost-btn" title="Refresh Feed">↻ Refresh</button>
+        <a href="index.html" class="nav-ghost-btn nav-back-btn">← Desk Briefing</a>
       </div>
     </header>
 
-    <!-- Compact 1-Line Pulse Strip -->
-    <section class="radar-pulse-bar">
-      <div class="pulse-metrics">
-        <span class="pulse-item">Calls: <strong id="stat-total">--</strong></span>
-        <span class="pulse-item bull">Buys / Upgrades: <strong id="stat-bullish">--</strong></span>
-        <span class="pulse-item bear">Sells / Cuts: <strong id="stat-bearish">--</strong></span>
-        <span class="pulse-item">Neutral: <strong id="stat-neutral">--</strong></span>
+    <!-- Calm Hero Header -->
+    <section class="radar-hero">
+      <div>
+        <h1 class="radar-title">Brokerage Radar</h1>
+        <p class="radar-subtitle">
+          Institutional ratings &amp; price targets &middot;
+          <span class="pulse-inline">
+            <strong id="stat-total">--</strong> calls
+            (<span class="p-bull"><span id="stat-bullish">--</span> positive</span>,
+            <span class="p-bear"><span id="stat-bearish">--</span> cautious</span>)
+          </span>
+        </p>
       </div>
-      <div class="pulse-right">
-        <div class="radar-time-pills" role="group" aria-label="Time Horizon">
-          <button class="time-pill" data-days="2" title="Last 48 Hours">48h</button>
-          <button class="time-pill active" data-days="7" title="Last 7 Days">7 Days</button>
-          <button class="time-pill" data-days="30" title="Last 30 Days Archive">30D History</button>
+      <div class="radar-hero-right">
+        <div class="seg-group" role="group" aria-label="Time Window">
+          <button class="seg-btn time-pill" data-days="2">48h</button>
+          <button class="seg-btn time-pill active" data-days="7">7 Days</button>
+          <button class="seg-btn time-pill" data-days="30">30D History</button>
         </div>
-        <span id="stat-updated" class="pulse-updated">Syncing…</span>
+        <span id="stat-updated" class="sync-caption">Syncing…</span>
       </div>
     </section>
 
-    <!-- Search & Filter Toolbar -->
-    <section class="radar-toolbar">
-      <div class="radar-search-box">
-        <input id="radar-search" type="search" class="radar-search-input" placeholder="Filter by stock (MRF, Tata Steel) or brokerage (Citi, UBS)..." autocomplete="off">
-        <span class="radar-search-ico">🔍</span>
+    <!-- One Calm Unified Filter Bar -->
+    <section class="filter-bar" aria-label="Filter recommendations">
+      <div class="search-wrap">
+        <svg class="search-glyph" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+          <circle cx="7" cy="7" r="4.5"/>
+          <path d="m10.5 10.5 3.5 3.5" stroke-linecap="round"/>
+        </svg>
+        <input id="radar-search" type="search" class="search-field" placeholder="Search stock, brokerage, or target..." autocomplete="off">
       </div>
 
-      <div class="radar-mkt-pills" role="group" aria-label="Filter by Market">
-        <button class="r-pill mkt-pill active" data-market="all">All Markets (<span id="count-mkt-all">0</span>)</button>
-        <button class="r-pill mkt-pill" data-market="India">🇮🇳 India (<span id="count-mkt-india">0</span>)</button>
-        <button class="r-pill mkt-pill" data-market="US">🇺🇸 USA (<span id="count-mkt-us">0</span>)</button>
+      <span class="filter-divider" aria-hidden="true"></span>
+
+      <div class="seg-group" role="group" aria-label="Filter by Market">
+        <button class="seg-btn mkt-pill active" data-market="all">All Markets</button>
+        <button class="seg-btn mkt-pill" data-market="India">India (<span id="count-mkt-india">0</span>)</button>
+        <button class="seg-btn mkt-pill" data-market="US">USA (<span id="count-mkt-us">0</span>)</button>
       </div>
 
-      <div class="radar-sent-pills">
-        <button class="r-pill sent-pill active" data-action="all">All (<span id="count-all">0</span>)</button>
-        <button class="r-pill sent-pill" data-action="bullish">🟢 Buys / Upgrades (<span id="count-bull">0</span>)</button>
-        <button class="r-pill sent-pill" data-action="bearish">🔴 Sells / Cuts (<span id="count-bear">0</span>)</button>
-        <button class="r-pill sent-pill" data-action="neutral">🟡 Hold / Note (<span id="count-neutral">0</span>)</button>
+      <div class="seg-group" role="group" aria-label="Filter by Rating">
+        <button class="seg-btn sent-pill active" data-action="all">All</button>
+        <button class="seg-btn sent-pill" data-action="bullish">Buy / Up</button>
+        <button class="seg-btn sent-pill" data-action="bearish">Sell / Cut</button>
+        <button class="seg-btn sent-pill" data-action="neutral">Hold</button>
       </div>
+
+      <select id="firm-select" class="firm-select" aria-label="Filter by Brokerage Firm">
+        <option value="all">All Brokerages</option>
+      </select>
+
+      <button id="reset-filters-btn" class="reset-link" hidden>Reset</button>
     </section>
 
-    <!-- Brokerage Firm Filter Chips -->
-    <div id="broker-chips-row" class="radar-firms-bar">
-      <button class="firm-chip active" data-broker="all">All Brokerages</button>
-    </div>
-
-    <!-- Institutional Table / Mobile List -->
-    <main class="radar-table-wrap">
+    <!-- Spacious 5-Column Financial Table -->
+    <main class="table-surface">
       <table class="radar-table" aria-label="Brokerage Recommendations">
         <thead>
           <tr>
-            <th class="col-broker sortable" data-sort="brokerage">Brokerage ⇅</th>
+            <th class="col-firm sortable" data-sort="brokerage">Brokerage ⇅</th>
             <th class="col-stock sortable" data-sort="stock">Stock ⇅</th>
-            <th class="col-reco sortable" data-sort="action_label">Recommendation ⇅</th>
+            <th class="col-call sortable" data-sort="action_label">Call ⇅</th>
             <th class="col-target">Target</th>
-            <th class="col-details">Details</th>
-            <th class="col-meta sortable" data-sort="published">Source / Time ⇅</th>
+            <th class="col-report sortable" data-sort="published">Report &amp; Source ⇅</th>
           </tr>
         </thead>
         <tbody id="radar-tbody">
-          <tr class="radar-empty-row">
-            <td colspan="6">Loading brokerage recommendations…</td>
+          <tr>
+            <td colspan="5" class="empty-cell">Loading brokerage recommendations…</td>
           </tr>
         </tbody>
       </table>
     </main>
   </div>
 
-  <script src="radar.js?v=5"></script>
+  <script src="radar.js?v=6"></script>
 </body>
 </html>

@@ -1494,6 +1494,9 @@ def parse_radar_stock(title, summary=''):
     m2 = re.search(r'(?:Buy|Sell|Hold|Reduce|Accumulate|Reiterates)\s+([A-Z][a-zA-Z0-9\s&]{2,25}?)(?:;|\s*,\s*|\s+target|\s+share|\s+stock)', text)
     if m2:
         return _short_stock_name(m2.group(1).strip()), None
+    m_colon = re.search(r'stocks?\s+to\s+buy[^:]*:\s*([A-Z][a-zA-Z0-9\s,&]{2,32}?)(?:\s+by\s|\s*[-–]|$)', text, re.I)
+    if m_colon:
+        return m_colon.group(1).strip().rstrip(','), None
     m3 = re.search(r'\b(Nifty(?:\s+50)?|Sensex|Bank\s+Nifty)\b', text, re.I)
     if m3:
         idx = m3.group(1)

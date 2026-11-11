@@ -1,6 +1,6 @@
 /**
- * Newsland Brokerage Radar Engine (Tabular List Layout)
- * Renders institutional stock recommendations, ratings, and target prices.
+ * Newsland Brokerage Radar Engine
+ * Calm, structured 5-column financial table with instant filtering.
  */
 
 async function safeFetch(primaryUrl, fallbackUrl) {
@@ -33,7 +33,7 @@ let currentSentiment = 'all';
 let currentBroker = 'all';
 let currentQuery = '';
 let sortKey = 'published';
-let sortDir = -1; // -1 desc, 1 asc
+let sortDir = -1;
 
 function getItemMarket(c) {
   if (c.market === 'India' || c.market === 'US') return c.market;
@@ -93,6 +93,10 @@ function formatTimeAgo(ts) {
   return `${Math.floor(hr / 24)}d ago`;
 }
 
+function cleanActionLabel(label) {
+  return String(label || 'Coverage').replace(/\s*[▲▼●]\s*$/, '').trim();
+}
+
 function getWindowCalls() {
   const nowSec = Date.now() / 1000;
   const maxAge = currentDays * 86400;
@@ -104,21 +108,13 @@ function updateStats() {
   const total = windowCalls.length;
   const bull = windowCalls.filter(c => c.sentiment === 'bullish').length;
   const bear = windowCalls.filter(c => c.sentiment === 'bearish').length;
-  const neut = total - bull - bear;
 
   document.getElementById('stat-total').textContent = total;
   document.getElementById('stat-bullish').textContent = bull;
   document.getElementById('stat-bearish').textContent = bear;
-  document.getElementById('stat-neutral').textContent = neut;
-
-  document.getElementById('count-all').textContent = total;
-  document.getElementById('count-bull').textContent = bull;
-  document.getElementById('count-bear').textContent = bear;
-  document.getElementById('count-neutral').textContent = neut;
 
   const indiaCnt = windowCalls.filter(c => getItemMarket(c) === 'India').length;
   const usCnt = windowCalls.filter(c => getItemMarket(c) === 'US').length;
-  if (document.getElementById('count-mkt-all')) document.getElementById('count-mkt-all').textContent = total;
   if (document.getElementById('count-mkt-india')) document.getElementById('count-mkt-india').textContent = indiaCnt;
   if (document.getElementById('count-mkt-us')) document.getElementById('count-mkt-us').textContent = usCnt;
 
@@ -133,9 +129,9 @@ function updateStats() {
   }
 }
 
-function renderBrokerChips() {
-  const container = document.getElementById('broker-chips-row');
-  if (!container) return;
+function populateFirmDropdown() {
+  const select = document.getElementById('firm-select');
+  if (!select) return;
 
   const windowCalls = getWindowCalls();
   const counts = {};
@@ -144,32 +140,31 @@ function renderBrokerChips() {
     if (b === 'Street Consensus') continue;
     counts[b] = (counts[b] || 0) + 1;
   }
-  const top = Object.entries(counts)
+
+  const sortedFirms = Object.entries(counts)
     .map(([name, count]) => ({ name, count }))
-    .sort((a, b) => b.count - a.count)
-    .slice(0, 12);
+    .sort((a, b) => b.count - a.count || a.name.localeCompare(b.name));
 
-  let html = `<button class="firm-chip ${currentBroker === 'all' ? 'active' : ''}" data-broker="all">All Brokerages</button>`;
-  for (const b of top) {
-    const isActive = currentBroker.toLowerCase() === b.name.toLowerCase();
-    html += `<button class="firm-chip ${isActive ? 'active' : ''}" data-broker="${escapeHtml(b.name)}">${escapeHtml(b.name)} (${b.count})</button>`;
+  let html = `<option value="all">All Brokerages (${windowCalls.length})</option>`;
+  for (const f of sortedFirms) {
+    const sel = currentBroker.toLowerCase() === f.name.toLowerCase() ? 'selected' : '';
+    html += `<option value="${escapeHtml(f.name)}" ${sel}>${escapeHtml(f.name)} (${f.count})</option>`;
   }
-  container.innerHTML = html;
+  select.innerHTML = html;
+}
 
-  container.querySelectorAll('.firm-chip').forEach(btn => {
-    btn.addEventListener('click', () => {
-      container.querySelectorAll('.firm-chip').forEach(c => c.classList.remove('active'));
-      btn.classList.add('active');
-      currentBroker = btn.dataset.broker;
-      filterAndRender();
-    });
-  });
+function updateResetVisibility() {
+  const btn = document.getElementById('reset-filters-btn');
+  if (!btn) return;
+  const isFiltered = currentMarket !== 'all' || currentSentiment !== 'all' || currentBroker !== 'all' || currentQuery.trim() !== '';
+  btn.hidden = !isFiltered;
 }
 
 function filterAndRender() {
   const tbody = document.getElementById('radar-tbody');
   if (!tbody) return;
 
+  updateResetVisibility();
   const q = currentQuery.trim().toLowerCase();
   const windowCalls = getWindowCalls();
 
@@ -190,7 +185,6 @@ function filterAndRender() {
     return true;
   });
 
-  // Sort
   filtered.sort((a, b) => {
     const av = a[sortKey] ?? '';
     const bv = b[sortKey] ?? '';
@@ -202,8 +196,8 @@ function filterAndRender() {
 
   if (filtered.length === 0) {
     tbody.innerHTML = `
-      <tr class="radar-empty-row">
-        <td colspan="6">No matching brokerage calls found. Try clearing your filter or search query.</td>
+      <tr>
+        <td colspan="5" class="empty-cell">No matching brokerage calls found. Try clearing a filter or expanding to 30D History.</td>
       </tr>
     `;
     return;
@@ -213,43 +207,50 @@ function filterAndRender() {
   for (const item of filtered) {
     const sentimentCls = item.sentiment === 'bullish' ? 'bullish' : (item.sentiment === 'bearish' ? 'bearish' : 'neutral');
     const timeAgo = formatTimeAgo(item.published);
+    const timeLabel = (item.published && (Date.now() / 1000 - item.published > 86400))
+      ? (item.published_str || timeAgo)
+      : timeAgo;
     const sourceName = item.source || 'Wire';
 
     const stockName = item.stock || 'Market / Sector';
     const stockQuery = item.symbol || (stockName !== 'Multi / Sector' && stockName !== 'Market / Sector' ? stockName : '');
     const mkt = getItemMarket(item);
-    const mktShort = mkt === 'US' ? 'US' : 'IN';
-
-    const timeLabel = (item.published && (Date.now() / 1000 - item.published > 86400))
-      ? (item.published_str || timeAgo)
-      : timeAgo;
+    const callText = cleanActionLabel(item.action_label);
 
     html += `
       <tr data-id="${escapeHtml(item.id)}">
-        <td class="col-broker">
-          <span class="firm-pill">${escapeHtml(item.brokerage)}</span>
+        <td class="col-firm">
+          <span class="firm-name">${escapeHtml(item.brokerage)}</span>
         </td>
         <td class="col-stock">
-          <div class="stock-cell">
-            <span class="mkt-badge">${mktShort}</span>
-            <span class="stock-name">${escapeHtml(stockName)}</span>
-            ${stockQuery ? `<a href="index.html?company=${encodeURIComponent(stockQuery)}" class="xray-mini-link" title="Open ${escapeHtml(stockName)} in Company X-Ray">X-Ray ↗</a>` : ''}
-          </div>
+          ${stockQuery ? `
+            <a href="index.html?company=${encodeURIComponent(stockQuery)}" class="stock-link" title="Open ${escapeHtml(stockName)} in Company X-Ray">
+              <span>${escapeHtml(stockName)}</span>
+              ${mkt === 'US' ? '<span class="mkt-micro">US</span>' : ''}
+              <span class="xray-arrow">↗</span>
+            </a>
+          ` : `
+            <span class="stock-link">
+              <span>${escapeHtml(stockName)}</span>
+              ${mkt === 'US' ? '<span class="mkt-micro">US</span>' : ''}
+            </span>
+          `}
         </td>
-        <td class="col-reco">
-          <span class="reco-badge ${sentimentCls}">${escapeHtml(item.action_label)}</span>
+        <td class="col-call">
+          <span class="call-pill ${sentimentCls}">${escapeHtml(callText)}</span>
         </td>
         <td class="col-target">
-          ${item.target ? `<span class="target-val">${escapeHtml(item.target)}</span>` : `<span class="target-empty">—</span>`}
+          ${item.target ? `<span class="target-num">${escapeHtml(item.target)}</span>` : `<span class="target-dash">—</span>`}
         </td>
-        <td class="col-details">
-          <a href="${escapeHtml(item.url || '#')}" target="_blank" rel="noopener noreferrer" class="detail-headline">
+        <td class="col-report">
+          <a href="${escapeHtml(item.url || '#')}" target="_blank" rel="noopener noreferrer" class="report-link">
             ${escapeHtml(item.title)}
           </a>
-        </td>
-        <td class="col-meta">
-          <a href="${escapeHtml(item.url || '#')}" target="_blank" rel="noopener noreferrer" class="meta-source">${escapeHtml(sourceName)} ↗</a>
-          <span class="meta-time" title="${escapeHtml(item.published_str || '')}">${escapeHtml(timeLabel)}</span>
+          <div class="report-meta">
+            <span>${escapeHtml(sourceName)}</span>
+            <span>&middot;</span>
+            <span title="${escapeHtml(item.published_str || '')}">${escapeHtml(timeLabel)}</span>
+          </div>
         </td>
       </tr>
     `;
@@ -266,19 +267,37 @@ async function loadRadarData() {
     rawCalls = data.calls || [];
     lastUpdated = data.updated;
     updateStats();
-    renderBrokerChips();
+    populateFirmDropdown();
     filterAndRender();
   } catch (err) {
     console.error('Brokerage Radar load error:', err);
     const tbody = document.getElementById('radar-tbody');
     if (tbody) {
       tbody.innerHTML = `
-        <tr class="radar-empty-row">
-          <td colspan="6">Unable to load Brokerage Radar: ${escapeHtml(err.message)}</td>
+        <tr>
+          <td colspan="5" class="empty-cell">Unable to load Brokerage Radar: ${escapeHtml(err.message)}</td>
         </tr>
       `;
     }
   }
+}
+
+function resetAllFilters() {
+  currentMarket = 'all';
+  currentSentiment = 'all';
+  currentBroker = 'all';
+  currentQuery = '';
+
+  const searchInput = document.getElementById('radar-search');
+  if (searchInput) searchInput.value = '';
+
+  const firmSelect = document.getElementById('firm-select');
+  if (firmSelect) firmSelect.value = 'all';
+
+  document.querySelectorAll('.mkt-pill').forEach(b => b.classList.toggle('active', b.dataset.market === 'all'));
+  document.querySelectorAll('.sent-pill').forEach(b => b.classList.toggle('active', b.dataset.action === 'all'));
+
+  filterAndRender();
 }
 
 function setupEvents() {
@@ -288,7 +307,7 @@ function setupEvents() {
       btn.classList.add('active');
       currentDays = Number(btn.dataset.days) || 7;
       updateStats();
-      renderBrokerChips();
+      populateFirmDropdown();
       filterAndRender();
     });
   });
@@ -311,12 +330,25 @@ function setupEvents() {
     });
   });
 
+  const firmSelect = document.getElementById('firm-select');
+  if (firmSelect) {
+    firmSelect.addEventListener('change', e => {
+      currentBroker = e.target.value || 'all';
+      filterAndRender();
+    });
+  }
+
   const searchInput = document.getElementById('radar-search');
   if (searchInput) {
     searchInput.addEventListener('input', e => {
       currentQuery = e.target.value;
       filterAndRender();
     });
+  }
+
+  const resetBtn = document.getElementById('reset-filters-btn');
+  if (resetBtn) {
+    resetBtn.addEventListener('click', resetAllFilters);
   }
 
   document.querySelectorAll('.radar-table th.sortable').forEach(th => {

@@ -2,6 +2,9 @@
   X-Content-Type-Options: nosniff
   X-Frame-Options: DENY
 
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+
 /data/*
   Access-Control-Allow-Origin: *
   Cache-Control: public, max-age=60, s-maxage=60
