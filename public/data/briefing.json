@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-11T16:57:16.742168+00:00",
+  "updated": "2026-11-11T17:07:00.437712+00:00",
   "stories": [
     {
       "id": "9e718f170e9174a8",
@@ -301,40 +301,33 @@
       "companies": []
     },
     {
-      "id": "e4e1ee5022cb86da",
-      "title": "Triveni Turbine Q2 Results: Net profit falls 42% on weak export sales; EBITDA drops 44%",
-      "url": "https://www.cnbctv18.com/market/stocks/triveni-turbine-share-price-q2-results-net-profit-falls-42-on-weak-export-sales-ebitda-drops-44-20031814.htm",
-      "published": 1794405868.0,
+      "id": "953a9e060321b7b6",
+      "title": "Benchmarks rise nearly 1%; auto, bank stocks lead gains amid FPI inflows",
+      "url": "https://www.business-standard.com/markets/news/benchmarks-rise-nearly-1-auto-bank-stocks-lead-gains-amid-fpi-inflows-126111101384_1.html",
+      "published": 1794416211.0,
       "region": "India",
       "official": false,
       "sources": [
         {
-          "name": "CNBC-TV18",
-          "url": "https://www.cnbctv18.com/market/stocks/triveni-turbine-share-price-q2-results-net-profit-falls-42-on-weak-export-sales-ebitda-drops-44-20031814.htm"
+          "name": "Business Standard",
+          "url": "https://www.business-standard.com/markets/news/benchmarks-rise-nearly-1-auto-bank-stocks-lead-gains-amid-fpi-inflows-126111101384_1.html"
         }
       ],
-      "score": 6,
-      "summary": "Triveni Turbine reported a 41.6% YoY decline in Q2 FY27 net profit to ₹53.3 crore, while revenue fell 3% to ₹491 crore. EBITDA declined 43.9% to ₹64 crore, with margins contracting to 13%. Separately, the company enhanced its corporate guarantee for its South African subsidiary by up to $6 million, raising the aggregate facility limit to $15 millio",
-      "category": "Economic data",
-      "reason": "Compare the release with expectations; the surprise can affect rates and risk appetite.",
+      "score": 4,
+      "summary": "FPI inflows, profit booking steer market to second consecutive session of gains",
+      "category": "Market flows",
+      "reason": "Flows, currency and yields provide context for Indian equity risk appetite.",
       "matched": [
-        "Economic data",
-        "Earnings"
+        "Market flows"
       ],
-      "tier": "Must know",
-      "related": [
-        {
-          "title": "Avanti Feeds Q2 Results: Net profit tanks 55% to ₹69 crore, EBITDA drops 60%",
-          "url": "https://www.cnbctv18.com/market/stocks/avanti-feeds-share-price-q2-results-net-profit-tanks-55-to-rs-69-crore-ebitda-drops-60-20030999.htm",
-          "source": "CNBC-TV18",
-          "published": 1794325412.0
-        }
-      ],
+      "tier": "Watch",
+      "related": [],
       "cluster_count": 1,
       "impact_assets": [
-        "Equities"
+        "Equities",
+        "FX"
       ],
-      "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
+      "why_it_matters": "Measures institutional risk appetite and liquidity; sustained foreign outflows cap benchmark equity upside.",
       "impact_chain": null,
       "companies": []
     },
@@ -693,6 +686,44 @@
         "Equities"
       ],
       "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
+      "id": "e4e1ee5022cb86da",
+      "title": "Triveni Turbine Q2 Results: Net profit falls 42% on weak export sales; EBITDA drops 44%",
+      "url": "https://www.cnbctv18.com/market/stocks/triveni-turbine-share-price-q2-results-net-profit-falls-42-on-weak-export-sales-ebitda-drops-44-20031814.htm",
+      "published": 1794405868.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "CNBC-TV18",
+          "url": "https://www.cnbctv18.com/market/stocks/triveni-turbine-share-price-q2-results-net-profit-falls-42-on-weak-export-sales-ebitda-drops-44-20031814.htm"
+        }
+      ],
+      "score": 6,
+      "summary": "Triveni Turbine reported a 41.6% YoY decline in Q2 FY27 net profit to ₹53.3 crore, while revenue fell 3% to ₹491 crore. EBITDA declined 43.9% to ₹64 crore, with margins contracting to 13%. Separately, the company enhanced its corporate guarantee for its South African subsidiary by up to $6 million, raising the aggregate facility limit to $15 millio",
+      "category": "Economic data",
+      "reason": "Compare the release with expectations; the surprise can affect rates and risk appetite.",
+      "matched": [
+        "Economic data",
+        "Earnings"
+      ],
+      "tier": "Must know",
+      "related": [
+        {
+          "title": "Avanti Feeds Q2 Results: Net profit tanks 55% to ₹69 crore, EBITDA drops 60%",
+          "url": "https://www.cnbctv18.com/market/stocks/avanti-feeds-share-price-q2-results-net-profit-tanks-55-to-rs-69-crore-ebitda-drops-60-20030999.htm",
+          "source": "CNBC-TV18",
+          "published": 1794325412.0
+        }
+      ],
+      "cluster_count": 1,
+      "impact_assets": [
+        "Equities"
+      ],
+      "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
       "impact_chain": null,
       "companies": []
     },
@@ -1894,36 +1925,6 @@
       "companies": []
     },
     {
-      "id": "ea81124b985c0a25",
-      "title": "CoreWeave stock jumps after earnings: 7 things driving the AI cloud company's rally",
-      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/coreweave-stock-jumps-after-earnings-7-things-driving-the-ai-cloud-companys-rally/slideshow/135729203.cms",
-      "published": 1794380476.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "ET Markets",
-          "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/coreweave-stock-jumps-after-earnings-7-things-driving-the-ai-cloud-companys-rally/slideshow/135729203.cms"
-        }
-      ],
-      "score": 4,
-      "summary": "​CoreWeave shares surge after beating Q3 earnings expectations, reporting 168% revenue growth and a $132.5 billion backlog, while raising 2026 guidance despite mounting debt and infrastructure spending concerns.",
-      "category": "Earnings",
-      "reason": "Compare results and guidance with expectations for the company and its sector.",
-      "matched": [
-        "Earnings"
-      ],
-      "tier": "Watch",
-      "related": [],
-      "cluster_count": 1,
-      "impact_assets": [
-        "Equities"
-      ],
-      "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
       "id": "16a0e8479dc33d70",
       "title": "US Federal Reserve officials open door to a quicker round of rate hikes as inflation worsens",
       "url": "https://www.cnbctv18.com/economy/us-federal-reserve-officials-open-door-to-a-quicker-round-of-rate-hikes-as-inflation-worsens-20031086.htm",
@@ -2408,37 +2409,6 @@
       "companies": []
     },
     {
-      "id": "75656d284d978311",
-      "title": "Market spooked because now the Fed may need a supersized hike in December",
-      "url": "https://www.cnbctv18.com/access/market-spooked-because-now-the-fed-may-need-a-supersized-hike-in-december-20031056.htm",
-      "published": 1794359056.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "CNBC-TV18",
-          "url": "https://www.cnbctv18.com/access/market-spooked-because-now-the-fed-may-need-a-supersized-hike-in-december-20031056.htm"
-        }
-      ],
-      "score": 6,
-      "summary": "Wall Street was recently able to put inflation worries on the back burner, as traders focused on the midterm elections and swings in tech stocks. That’s over now.",
-      "category": "Monetary policy",
-      "reason": "Guides global liquidity dynamics, US Dollar Index (DXY) trajectory, and foreign institutional (FII) capital allocations.",
-      "matched": [
-        "Monetary policy"
-      ],
-      "tier": "Must know",
-      "related": [],
-      "cluster_count": 1,
-      "impact_assets": [
-        "Rates",
-        "Equities"
-      ],
-      "why_it_matters": "Guides global liquidity dynamics, US Dollar Index (DXY) trajectory, and foreign institutional (FII) capital allocations.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
       "id": "4b23e84521bbe872",
       "title": "Bajaj Finance said set to launch up to $1.2 billion QIP as early as this week",
       "url": "https://www.livemint.com/market/stock-market-news/bajaj-finance-said-set-to-launch-up-to-1-2-billion-qip-as-early-as-this-week-11794382537759.html",
@@ -2832,6 +2802,36 @@
         "FX"
       ],
       "why_it_matters": "Crude affects India’s import bill and energy-sensitive sectors; the headline does not establish a clear price direction.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
+      "id": "ea81124b985c0a25",
+      "title": "CoreWeave stock jumps after earnings: 7 things driving the AI cloud company's rally",
+      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/coreweave-stock-jumps-after-earnings-7-things-driving-the-ai-cloud-companys-rally/slideshow/135729203.cms",
+      "published": 1794380476.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "ET Markets",
+          "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/coreweave-stock-jumps-after-earnings-7-things-driving-the-ai-cloud-companys-rally/slideshow/135729203.cms"
+        }
+      ],
+      "score": 4,
+      "summary": "​CoreWeave shares surge after beating Q3 earnings expectations, reporting 168% revenue growth and a $132.5 billion backlog, while raising 2026 guidance despite mounting debt and infrastructure spending concerns.",
+      "category": "Earnings",
+      "reason": "Compare results and guidance with expectations for the company and its sector.",
+      "matched": [
+        "Earnings"
+      ],
+      "tier": "Watch",
+      "related": [],
+      "cluster_count": 1,
+      "impact_assets": [
+        "Equities"
+      ],
+      "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
       "impact_chain": null,
       "companies": []
     },
@@ -3304,6 +3304,37 @@
       "companies": []
     },
     {
+      "id": "75656d284d978311",
+      "title": "Market spooked because now the Fed may need a supersized hike in December",
+      "url": "https://www.cnbctv18.com/access/market-spooked-because-now-the-fed-may-need-a-supersized-hike-in-december-20031056.htm",
+      "published": 1794359056.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "CNBC-TV18",
+          "url": "https://www.cnbctv18.com/access/market-spooked-because-now-the-fed-may-need-a-supersized-hike-in-december-20031056.htm"
+        }
+      ],
+      "score": 6,
+      "summary": "Wall Street was recently able to put inflation worries on the back burner, as traders focused on the midterm elections and swings in tech stocks. That’s over now.",
+      "category": "Monetary policy",
+      "reason": "Guides global liquidity dynamics, US Dollar Index (DXY) trajectory, and foreign institutional (FII) capital allocations.",
+      "matched": [
+        "Monetary policy"
+      ],
+      "tier": "Must know",
+      "related": [],
+      "cluster_count": 1,
+      "impact_assets": [
+        "Rates",
+        "Equities"
+      ],
+      "why_it_matters": "Guides global liquidity dynamics, US Dollar Index (DXY) trajectory, and foreign institutional (FII) capital allocations.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
       "id": "1245acf7a0ac0b1c",
       "title": "MSCI Rebalancing Today: These stocks may see inclusion and exclusion from the list",
       "url": "https://www.cnbctv18.com/market/msci-rejig-later-today-coforge-lic-adani-green-meesho-icici-life-pi-ind-share-price-inclusion-exclusion-flows-20031274.htm",
@@ -3671,36 +3702,6 @@
       "companies": []
     },
     {
-      "id": "0940714c524e6f2e",
-      "title": "India well on track to achieve $1 trillion exports target for FY27: Piyush Goyal",
-      "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/india-well-on-track-to-achieve-1-trillion-exports-target-for-fy27-piyush-goyal/articleshow/135717065.cms",
-      "published": 1794330333.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "ET Economy",
-          "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/india-well-on-track-to-achieve-1-trillion-exports-target-for-fy27-piyush-goyal/articleshow/135717065.cms"
-        }
-      ],
-      "score": 4,
-      "summary": "Commerce Minister Piyush Goyal said India is on track to achieve its $1 trillion goods and services export target in FY27, having already recorded nearly $480 billion in exports during April-September. He highlighted opportunities from free trade agreements, particularly the proposed India-EU pact, for the automobile and mobility sectors. Goyal urg",
-      "category": "Economic data",
-      "reason": "Compare the release with expectations; the surprise can affect rates and risk appetite.",
-      "matched": [
-        "Economic data"
-      ],
-      "tier": "Watch",
-      "related": [],
-      "cluster_count": 1,
-      "impact_assets": [
-        "Equities"
-      ],
-      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
       "id": "004a5570e94c1968",
       "title": "Dow Jones falls 249 points, Nasdaq sheds 0.9% as hotter US inflation weighs on Wall Street",
       "url": "https://www.cnbctv18.com/market/dow-jones-falls-249-points-nasdaq-sheds-0-9-as-hotter-us-inflation-weighs-on-wall-street-20030997.htm",
@@ -3925,50 +3926,6 @@
       "companies": []
     },
     {
-      "id": "8044c0c29f6b4575",
-      "title": "Oil prices fall as Trump signals pause in military action against Iran",
-      "url": "https://www.business-standard.com/markets/commodities/oil-prices-fall-as-trump-signals-pause-in-military-action-against-iran-126111000067_1.html",
-      "published": 1794303478.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "Business Standard",
-          "url": "https://www.business-standard.com/markets/commodities/oil-prices-fall-as-trump-signals-pause-in-military-action-against-iran-126111000067_1.html"
-        }
-      ],
-      "score": 5,
-      "summary": "Brent crude falls 1.7% to $90.99 a barrel and WTI drops 1.8% as Trump's remarks ease concerns over prolonged supply disruptions in the Middle East",
-      "category": "Energy & geopolitics",
-      "reason": "Energy costs and disruption can affect Indian inflation, import costs and exposed sectors.",
-      "matched": [
-        "Energy & geopolitics"
-      ],
-      "tier": "Watch",
-      "related": [],
-      "cluster_count": 1,
-      "impact_assets": [
-        "Commodities"
-      ],
-      "why_it_matters": "Falling crude can ease India’s import bill and input costs for airlines and paints, while reducing upstream oil realizations.",
-      "impact_chain": {
-        "rule": "CRUDE_DROP",
-        "catalyst": "Falling crude · potential sector effects",
-        "tailwinds": [
-          "Asian Paints",
-          "IndiGo",
-          "BPCL",
-          "Apollo Tyres"
-        ],
-        "headwinds": [
-          "ONGC",
-          "Oil India"
-        ],
-        "rationale": "Softening crude reduces airline fuel bills and OMC procurement costs while softening paint raw materials."
-      },
-      "companies": []
-    },
-    {
       "id": "eab030b59fd71d29",
       "title": "India's investment outlook strengthens as credit, exports rebound; inflation relief likely: HSBC",
       "url": "https://economictimes.indiatimes.com/news/economy/indicators/indias-investment-outlook-strengthens-as-credit-exports-rebound-inflation-relief-likely-hsbc/articleshow/135680029.cms",
@@ -4093,6 +4050,36 @@
         "Equities"
       ],
       "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
+      "id": "0940714c524e6f2e",
+      "title": "India well on track to achieve $1 trillion exports target for FY27: Piyush Goyal",
+      "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/india-well-on-track-to-achieve-1-trillion-exports-target-for-fy27-piyush-goyal/articleshow/135717065.cms",
+      "published": 1794330333.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "ET Economy",
+          "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/india-well-on-track-to-achieve-1-trillion-exports-target-for-fy27-piyush-goyal/articleshow/135717065.cms"
+        }
+      ],
+      "score": 4,
+      "summary": "Commerce Minister Piyush Goyal said India is on track to achieve its $1 trillion goods and services export target in FY27, having already recorded nearly $480 billion in exports during April-September. He highlighted opportunities from free trade agreements, particularly the proposed India-EU pact, for the automobile and mobility sectors. Goyal urg",
+      "category": "Economic data",
+      "reason": "Compare the release with expectations; the surprise can affect rates and risk appetite.",
+      "matched": [
+        "Economic data"
+      ],
+      "tier": "Watch",
+      "related": [],
+      "cluster_count": 1,
+      "impact_assets": [
+        "Equities"
+      ],
+      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
       "impact_chain": null,
       "companies": []
     },
@@ -4344,7 +4331,7 @@
       "url": "https://www.livemint.com/rss/markets",
       "region": "India",
       "official": false,
-      "checked": "2026-11-11T16:57:15.618539+00:00",
+      "checked": "2026-11-11T17:06:59.183046+00:00",
       "status": "ok",
       "count": 35
     },
@@ -4353,7 +4340,7 @@
       "url": "https://www.livemint.com/rss/companies",
       "region": "India",
       "official": false,
-      "checked": "2026-11-11T16:57:15.618813+00:00",
+      "checked": "2026-11-11T17:06:59.183229+00:00",
       "status": "ok",
       "count": 35
     },
@@ -4362,7 +4349,7 @@
       "url": "https://www.sebi.gov.in/sebirss.xml",
       "region": "India",
       "official": true,
-      "checked": "2026-11-11T16:57:15.619115+00:00",
+      "checked": "2026-11-11T17:06:59.183413+00:00",
       "status": "ok",
       "count": 30
     },
@@ -4371,7 +4358,7 @@
       "url": "https://www.federalreserve.gov/feeds/press_monetary.xml",
       "region": "Global",
       "official": true,
-      "checked": "2026-11-11T16:57:15.619502+00:00",
+      "checked": "2026-11-11T17:06:59.184101+00:00",
       "status": "ok",
       "count": 0
     },
@@ -4380,7 +4367,7 @@
       "url": "https://www.bls.gov/feed/bls_latest.rss",
       "region": "Global",
       "official": true,
-      "checked": "2026-11-11T16:57:15.620242+00:00",
+      "checked": "2026-11-11T17:06:59.184260+00:00",
       "status": "ok",
       "count": 1
     },
@@ -4389,7 +4376,7 @@
       "url": "https://www.investing.com/rss/news.rss",
       "region": "Global",
       "official": false,
-      "checked": "2026-11-11T16:57:15.741520+00:00",
+      "checked": "2026-11-11T17:06:59.373950+00:00",
       "status": "ok",
       "count": 10
     },
@@ -4398,7 +4385,7 @@
       "url": "https://www.cnbc.com/id/100727362/device/rss/rss.html",
       "region": "Global",
       "official": false,
-      "checked": "2026-11-11T16:57:15.749180+00:00",
+      "checked": "2026-11-11T17:06:59.395573+00:00",
       "status": "ok",
       "count": 30
     },
@@ -4407,7 +4394,7 @@
       "url": "https://pulse.zerodha.com/feed.php",
       "region": "India",
       "official": false,
-      "checked": "2026-11-11T16:57:15.762436+00:00",
+      "checked": "2026-11-11T17:06:59.485734+00:00",
       "status": "ok",
       "count": 25
     },
@@ -4416,7 +4403,7 @@
       "url": "https://economictimes.indiatimes.com/markets/rssfeeds/1977021501.cms",
       "region": "India",
       "official": false,
-      "checked": "2026-11-11T16:57:15.809423+00:00",
+      "checked": "2026-11-11T17:06:59.534051+00:00",
       "status": "ok",
       "count": 50
     },
@@ -4425,7 +4412,7 @@
       "url": "https://economictimes.indiatimes.com/news/economy/rssfeeds/1373380680.cms",
       "region": "India",
       "official": false,
-      "checked": "2026-11-11T16:57:15.825715+00:00",
+      "checked": "2026-11-11T17:06:59.572218+00:00",
       "status": "ok",
       "count": 39
     },
@@ -4434,7 +4421,7 @@
       "url": "https://www.business-standard.com/rss/markets-106.rss",
       "region": "India",
       "official": false,
-      "checked": "2026-11-11T16:57:15.854005+00:00",
+      "checked": "2026-11-11T17:06:59.717226+00:00",
       "status": "ok",
       "count": 35
     },
@@ -4443,7 +4430,7 @@
       "url": "https://www.cnbctv18.com/commonfeeds/v1/cne/rss/market.xml",
       "region": "India",
       "official": false,
-      "checked": "2026-11-11T16:57:15.880067+00:00",
+      "checked": "2026-11-11T17:06:59.913618+00:00",
       "status": "ok",
       "count": 80
     },
@@ -4452,7 +4439,7 @@
       "url": "https://feeds.feedburner.com/ndtvprofit-latest",
       "region": "India",
       "official": false,
-      "checked": "2026-11-11T16:57:15.882913+00:00",
+      "checked": "2026-11-11T17:06:59.939363+00:00",
       "status": "ok",
       "count": 20
     },
@@ -4461,21 +4448,21 @@
       "url": "https://economictimes.indiatimes.com/markets/stocks/recos/rssfeeds/2143429.cms",
       "region": "India",
       "official": false,
-      "checked": "2026-11-11T16:57:16.099020+00:00",
+      "checked": "2026-11-11T17:07:00.083595+00:00",
       "status": "ok",
       "count": 13
     }
   ],
   "refreshing": false,
   "calendar": {
-    "checked": 1794416244.9758866,
+    "checked": 1794416825.1680968,
     "status": "ok"
   },
   "premarket": {
-    "updated": "2026-11-11T16:57:28.068980+00:00",
+    "updated": "2026-11-11T17:07:09.517808+00:00",
     "schema_version": 2,
     "is_live": false,
-    "quote_updated": "2026-11-11T16:57:28.068335+00:00",
+    "quote_updated": "2026-11-11T17:07:09.517417+00:00",
     "quote_date": "2026-11-11",
     "quote_source": "yfinance",
     "live_bias_label": "LATEST AVAILABLE QUOTE",
@@ -4499,8 +4486,8 @@
     },
     "overnight": {
       "SP500": {
-        "val": "7,621",
-        "pct": 1.33,
+        "val": "7,624",
+        "pct": 1.37,
         "date": "2026-11-11"
       },
       "NASDAQ": {
@@ -4518,12 +4505,12 @@
       "key": "BRENT",
       "quote_date": "2026-11-11",
       "label": "Brent Crude",
-      "price": "93.79",
-      "price_raw": 93.79,
+      "price": "93.86",
+      "price_raw": 93.86,
       "prev_close": 92.44,
       "prev_close_fmt": "92.44",
-      "change": 1.35,
-      "change_pct": 1.46,
+      "change": 1.42,
+      "change_pct": 1.54,
       "direction": "up",
       "unit": "USD/bbl",
       "range_52w": {
@@ -4531,8 +4518,8 @@
         "high": 126.1,
         "low_fmt": "58.72",
         "high_fmt": "126.10",
-        "pos_pct": 52.0,
-        "pct_from_high": -25.62
+        "pos_pct": 52.2,
+        "pct_from_high": -25.57
       }
     },
     "usdinr": {
@@ -4627,7 +4614,7 @@
         "num": "02",
         "title": "Crude and input costs",
         "bias": "Context",
-        "desc": "Latest Brent quote: 93.79 USD/bbl (+1.46%). Higher crude can raise import and input costs; lower crude can ease them. This quote alone does not establish the cause of the move."
+        "desc": "Latest Brent quote: 93.86 USD/bbl (+1.54%). Higher crude can raise import and input costs; lower crude can ease them. This quote alone does not establish the cause of the move."
       },
       {
         "num": "03",
@@ -4643,12 +4630,12 @@
           "key": "BRENT",
           "quote_date": "2026-11-11",
           "label": "Brent Crude",
-          "price": "93.79",
-          "price_raw": 93.79,
+          "price": "93.86",
+          "price_raw": 93.86,
           "prev_close": 92.44,
           "prev_close_fmt": "92.44",
-          "change": 1.35,
-          "change_pct": 1.46,
+          "change": 1.42,
+          "change_pct": 1.54,
           "direction": "up",
           "unit": "USD/bbl",
           "range_52w": {
@@ -4656,20 +4643,20 @@
             "high": 126.1,
             "low_fmt": "58.72",
             "high_fmt": "126.10",
-            "pos_pct": 52.0,
-            "pct_from_high": -25.62
+            "pos_pct": 52.2,
+            "pct_from_high": -25.57
           }
         },
         "wti": {
           "key": "WTI",
           "quote_date": "2026-11-11",
           "label": "WTI Crude",
-          "price": "88.04",
-          "price_raw": 88.04,
+          "price": "88.03",
+          "price_raw": 88.03,
           "prev_close": 86.64,
           "prev_close_fmt": "86.64",
-          "change": 1.4,
-          "change_pct": 1.62,
+          "change": 1.39,
+          "change_pct": 1.6,
           "direction": "up",
           "unit": "USD/bbl",
           "range_52w": {
@@ -4677,20 +4664,20 @@
             "high": 119.48,
             "low_fmt": "54.98",
             "high_fmt": "119.48",
-            "pos_pct": 51.3,
-            "pct_from_high": -26.31
+            "pos_pct": 51.2,
+            "pct_from_high": -26.32
           }
         },
         "natgas": {
           "key": "NATGAS",
           "quote_date": "2026-11-11",
           "label": "Natural Gas",
-          "price": "3.28",
-          "price_raw": 3.282,
+          "price": "3.29",
+          "price_raw": 3.286,
           "prev_close": 3.291,
           "prev_close_fmt": "3.29",
-          "change": -0.009,
-          "change_pct": -0.27,
+          "change": -0.005,
+          "change_pct": -0.15,
           "direction": "down",
           "unit": "USD/MMBtu",
           "range_52w": {
@@ -4699,18 +4686,18 @@
             "low_fmt": "2.48",
             "high_fmt": "7.83",
             "pos_pct": 15.0,
-            "pct_from_high": -58.07
+            "pct_from_high": -58.02
           }
         },
         "gold": {
           "key": "GOLD",
           "quote_date": "2026-11-11",
           "label": "Gold",
-          "price": "4,006.90",
-          "price_raw": 4006.8999,
+          "price": "4,006.80",
+          "price_raw": 4006.8,
           "prev_close": 4054.0,
           "prev_close_fmt": "4,054.00",
-          "change": -47.1001,
+          "change": -47.2,
           "change_pct": -1.16,
           "direction": "down",
           "unit": "USD/oz",
@@ -4727,12 +4714,12 @@
           "key": "SILVER",
           "quote_date": "2026-11-11",
           "label": "Silver",
-          "price": "52.13",
-          "price_raw": 52.135,
+          "price": "52.03",
+          "price_raw": 52.035,
           "prev_close": 52.52,
           "prev_close_fmt": "52.52",
-          "change": -0.385,
-          "change_pct": -0.73,
+          "change": -0.485,
+          "change_pct": -0.92,
           "direction": "down",
           "unit": "USD/oz",
           "range_52w": {
@@ -4740,8 +4727,8 @@
             "high": 121.3,
             "low_fmt": "48.12",
             "high_fmt": "121.30",
-            "pos_pct": 5.5,
-            "pct_from_high": -57.02
+            "pos_pct": 5.3,
+            "pct_from_high": -57.1
           }
         },
         "catalyst": {
@@ -4777,8 +4764,8 @@
       "global_macro": {
         "overnight": {
           "SP500": {
-            "val": "7,621",
-            "pct": 1.33,
+            "val": "7,624",
+            "pct": 1.37,
             "date": "2026-11-11"
           },
           "NASDAQ": {
