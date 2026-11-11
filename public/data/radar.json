@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-11T16:45:39.779593+00:00",
+  "updated": "2026-11-11T16:56:30.946218+00:00",
   "calls": [
     {
       "id": "ff6316a50a455d7e",
@@ -24,7 +24,8 @@
       "sentiment": "bearish",
       "target": null,
       "stock": "NVIDIA",
-      "symbol": "NVDA"
+      "symbol": "NVDA",
+      "market": "US"
     },
     {
       "id": "154dce00c8edc37e",
@@ -49,7 +50,8 @@
       "sentiment": "bullish",
       "target": "30% Upside",
       "stock": "MRF",
-      "symbol": "MRF.NS"
+      "symbol": "MRF.NS",
+      "market": "India"
     },
     {
       "id": "574394ca31aff34a",
@@ -74,7 +76,8 @@
       "sentiment": "bearish",
       "target": null,
       "stock": "NVIDIA",
-      "symbol": "NVDA"
+      "symbol": "NVDA",
+      "market": "US"
     },
     {
       "id": "64b3c862e4063750",
@@ -101,7 +104,8 @@
       "sentiment": "bullish",
       "target": "₹28,000",
       "stock": "Nifty 50",
-      "symbol": "^NSEI"
+      "symbol": "^NSEI",
+      "market": "India"
     },
     {
       "id": "0aed261e8226771e",
@@ -126,7 +130,8 @@
       "sentiment": "bearish",
       "target": null,
       "stock": "NVIDIA",
-      "symbol": "NVDA"
+      "symbol": "NVDA",
+      "market": "US"
     },
     {
       "id": "f43b0eb5361d1bde",
@@ -151,7 +156,8 @@
       "sentiment": "bullish",
       "target": null,
       "stock": "Multi / Sector",
-      "symbol": null
+      "symbol": null,
+      "market": "India"
     },
     {
       "id": "0527b44a1b24a51a",
@@ -176,7 +182,8 @@
       "sentiment": "bullish",
       "target": "18% Upside",
       "stock": "Moneyview",
-      "symbol": null
+      "symbol": null,
+      "market": "India"
     },
     {
       "id": "139a8c7a86c9b5d2",
@@ -201,7 +208,8 @@
       "sentiment": "bullish",
       "target": "Bull Case",
       "stock": "Multi / Sector",
-      "symbol": null
+      "symbol": null,
+      "market": "India"
     },
     {
       "id": "b7a0e8caf41d34bc",
@@ -226,7 +234,8 @@
       "sentiment": "bearish",
       "target": null,
       "stock": "Samvardhana Motherson",
-      "symbol": "MOTHERSON.NS"
+      "symbol": "MOTHERSON.NS",
+      "market": "India"
     },
     {
       "id": "3ffc883c315009de",
@@ -251,7 +260,8 @@
       "sentiment": "bullish",
       "target": null,
       "stock": "InterGlobe Aviation",
-      "symbol": "INDIGO.NS"
+      "symbol": "INDIGO.NS",
+      "market": "India"
     },
     {
       "id": "ec500d38f6ff7764",
@@ -276,7 +286,8 @@
       "sentiment": "bullish",
       "target": null,
       "stock": "Nifty 50",
-      "symbol": "^NSEI"
+      "symbol": "^NSEI",
+      "market": "India"
     },
     {
       "id": "e02c452cbb2ca631",
@@ -301,7 +312,8 @@
       "sentiment": "bullish",
       "target": "32% Upside",
       "stock": "MRF",
-      "symbol": "MRF.NS"
+      "symbol": "MRF.NS",
+      "market": "India"
     },
     {
       "id": "72a3fb3735cd22f9",
@@ -327,7 +339,8 @@
       "sentiment": "bearish",
       "target": null,
       "stock": "Tata Steel",
-      "symbol": "TATASTEEL.NS"
+      "symbol": "TATASTEEL.NS",
+      "market": "India"
     },
     {
       "id": "d09fc60e03449b5d",
@@ -352,7 +365,8 @@
       "sentiment": "bullish",
       "target": "-11% TP",
       "stock": "Britannia Industries",
-      "symbol": "BRITANNIA.NS"
+      "symbol": "BRITANNIA.NS",
+      "market": "India"
     },
     {
       "id": "bca76c52024fc922",
@@ -377,7 +391,8 @@
       "sentiment": "bullish",
       "target": "₹900",
       "stock": "Kalyan Jewellers",
-      "symbol": "KALYANKJIL.NS"
+      "symbol": "KALYANKJIL.NS",
+      "market": "India"
     },
     {
       "id": "9981772dfc0b0c33",
@@ -402,7 +417,8 @@
       "sentiment": "neutral",
       "target": null,
       "stock": "Reliance Industries",
-      "symbol": "RELIANCE.NS"
+      "symbol": "RELIANCE.NS",
+      "market": "India"
     },
     {
       "id": "8bbc249ff6b8f73a",
@@ -427,7 +443,8 @@
       "sentiment": "neutral",
       "target": null,
       "stock": "Hindalco Industries",
-      "symbol": "HINDALCO.NS"
+      "symbol": "HINDALCO.NS",
+      "market": "India"
     }
   ],
   "stats": {
@@ -435,6 +452,8 @@
     "bullish": 10,
     "bearish": 5,
     "neutral": 2,
+    "india": 14,
+    "us": 3,
     "top_brokerages": [
       {
         "name": "Citi",

@@ -1500,6 +1500,37 @@ def parse_radar_stock(title, summary=''):
         return idx, '^NSEI' if 'nifty' in idx.lower() else '^BSESN'
     return None, None
 
+RADAR_US_PATTERN = re.compile(
+    r'\b(nvidia|apple|microsoft|alphabet|google|amazon|meta|tesla|regeneron|amd|intel|'
+    r'broadcom|netflix|palantir|coreweave|nasdaq|nyse|wall\s+street|s&p\s*500|dow\s+jones|'
+    r'us\s+stocks|baird|eli\s+lilly|berkshire|jpmorgan\s+stock|walmart|oracle)\b|/us-stocks/',
+    re.I
+)
+RADAR_INDIA_PATTERN = re.compile(
+    r'₹|\brs\.?\s*\d|\binr\b|\b(nifty|sensex|nse|bse|sebi|rbi|fpi|fii|dii|india|indian|'
+    r'rupee|crore|mrf|tata|reliance|ril|hdfc|icici|kotak|sbi|axis|infosys|tcs|wipro|indigo|'
+    r'motherson|britannia|kalyan|hindalco|airtel|maruti|bajaj|adani|zomato|swiggy|paytm|'
+    r'moneyview|groww|canara|pine\s+labs|motilal|nuvama|emkay|prabhudas|sharekhan)\b',
+    re.I
+)
+
+def detect_radar_market(story, symbol, target):
+    sym = symbol or ''
+    if sym.endswith('.NS') or sym.endswith('.BO') or sym in ('^NSEI', '^BSESN'):
+        return 'India'
+    if sym in ('NVDA', 'AAPL', 'MSFT', 'GOOGL', 'AMZN', 'META', 'TSLA', 'TSM'):
+        return 'US'
+    text = f"{story.get('title', '')} {story.get('summary', '')} {story.get('url', '')}"
+    if RADAR_US_PATTERN.search(text) and not RADAR_INDIA_PATTERN.search(text):
+        return 'US'
+    if RADAR_INDIA_PATTERN.search(text):
+        return 'India'
+    if target and str(target).startswith('$'):
+        return 'US'
+    if story.get('region') == 'Global':
+        return 'US'
+    return 'India'
+
 def extract_radar_call(story):
     title = clean(story.get('title', '').strip())
     if not title or RADAR_NOISE_EXCLUDE.search(title):
@@ -1540,6 +1571,7 @@ def extract_radar_call(story):
         
     srcs = story.get('sources', [])
     src_name = srcs[0].get('name') if srcs else (story.get('region') or 'Market Wire')
+    market = detect_radar_market(story, stock_symbol, target)
     
     return {
         'id': story.get('id') or hashlib.md5((story.get('url', '') or title).encode()).hexdigest()[:16],
@@ -1557,7 +1589,8 @@ def extract_radar_call(story):
         'sentiment': sentiment,
         'target': target,
         'stock': stock_name or 'Multi / Sector',
-        'symbol': stock_symbol
+        'symbol': stock_symbol,
+        'market': market
     }
 
 def refresh_radar(incoming_stories=None):
@@ -1586,6 +1619,8 @@ def refresh_radar(incoming_stories=None):
         bullish_cnt = sum(1 for c in sorted_calls if c.get('sentiment') == 'bullish')
         bearish_cnt = sum(1 for c in sorted_calls if c.get('sentiment') == 'bearish')
         neutral_cnt = len(sorted_calls) - bullish_cnt - bearish_cnt
+        india_cnt = sum(1 for c in sorted_calls if c.get('market') == 'India')
+        us_cnt = sum(1 for c in sorted_calls if c.get('market') == 'US')
         
         broker_counts = {}
         for c in sorted_calls:
@@ -1601,6 +1636,8 @@ def refresh_radar(incoming_stories=None):
                 'bullish': bullish_cnt,
                 'bearish': bearish_cnt,
                 'neutral': neutral_cnt,
+                'india': india_cnt,
+                'us': us_cnt,
                 'top_brokerages': top_brokers
             }
         }

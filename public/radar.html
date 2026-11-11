@@ -204,6 +204,23 @@
     }
     .radar-sent-pills::-webkit-scrollbar { display: none; }
 
+    .radar-mkt-pills {
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+
+    .mkt-badge {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      font-weight: 700;
+      padding: 1px 5px;
+      border-radius: 3px;
+      background: var(--bg-subtle);
+      color: var(--ink-muted);
+      border: 1px solid var(--border);
+    }
+
     .r-pill {
       white-space: nowrap;
       padding: 5px 12px;
@@ -509,11 +526,17 @@
         <span class="radar-search-ico">🔍</span>
       </div>
 
+      <div class="radar-mkt-pills" role="group" aria-label="Filter by Market">
+        <button class="r-pill mkt-pill active" data-market="all">All Markets (<span id="count-mkt-all">0</span>)</button>
+        <button class="r-pill mkt-pill" data-market="India">🇮🇳 India (<span id="count-mkt-india">0</span>)</button>
+        <button class="r-pill mkt-pill" data-market="US">🇺🇸 USA (<span id="count-mkt-us">0</span>)</button>
+      </div>
+
       <div class="radar-sent-pills">
-        <button class="r-pill active" data-action="all">All (<span id="count-all">0</span>)</button>
-        <button class="r-pill" data-action="bullish">🟢 Buys / Upgrades (<span id="count-bull">0</span>)</button>
-        <button class="r-pill" data-action="bearish">🔴 Sells / Cuts (<span id="count-bear">0</span>)</button>
-        <button class="r-pill" data-action="neutral">🟡 Hold / Note (<span id="count-neutral">0</span>)</button>
+        <button class="r-pill sent-pill active" data-action="all">All (<span id="count-all">0</span>)</button>
+        <button class="r-pill sent-pill" data-action="bullish">🟢 Buys / Upgrades (<span id="count-bull">0</span>)</button>
+        <button class="r-pill sent-pill" data-action="bearish">🔴 Sells / Cuts (<span id="count-bear">0</span>)</button>
+        <button class="r-pill sent-pill" data-action="neutral">🟡 Hold / Note (<span id="count-neutral">0</span>)</button>
       </div>
     </section>
 
@@ -544,6 +567,6 @@
     </main>
   </div>
 
-  <script src="radar.js?v=3"></script>
+  <script src="radar.js?v=4"></script>
 </body>
 </html>

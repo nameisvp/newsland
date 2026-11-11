@@ -26,11 +26,24 @@ async function safeFetch(primaryUrl, fallbackUrl) {
 }
 
 let rawCalls = [];
+let currentMarket = 'all';
 let currentSentiment = 'all';
 let currentBroker = 'all';
 let currentQuery = '';
 let sortKey = 'published';
 let sortDir = -1; // -1 desc, 1 asc
+
+function getItemMarket(c) {
+  if (c.market === 'India' || c.market === 'US') return c.market;
+  const sym = c.symbol || '';
+  if (sym.endsWith('.NS') || sym.endsWith('.BO') || sym === '^NSEI' || sym === '^BSESN') return 'India';
+  if (['NVDA', 'AAPL', 'MSFT', 'GOOGL', 'AMZN', 'META', 'TSLA', 'TSM'].includes(sym)) return 'US';
+  const text = `${c.title || ''} ${c.url || ''}`.toLowerCase();
+  if (/\b(nvidia|apple|microsoft|alphabet|google|amazon|meta|tesla|regeneron|nasdaq|nyse|wall street|us-stocks|baird)\b/.test(text) && !/₹|\brs\b|\bnifty\b|\bsensex\b|\bindia\b/.test(text)) {
+    return 'US';
+  }
+  return 'India';
+}
 
 const THEMES = ['paper', 'night', 'sepia', 'slate'];
 function readSavedTheme() {
@@ -95,6 +108,12 @@ function updateStats(data) {
   document.getElementById('count-bear').textContent = bear;
   document.getElementById('count-neutral').textContent = neut;
 
+  const indiaCnt = stats.india ?? rawCalls.filter(c => getItemMarket(c) === 'India').length;
+  const usCnt = stats.us ?? rawCalls.filter(c => getItemMarket(c) === 'US').length;
+  if (document.getElementById('count-mkt-all')) document.getElementById('count-mkt-all').textContent = total;
+  if (document.getElementById('count-mkt-india')) document.getElementById('count-mkt-india').textContent = indiaCnt;
+  if (document.getElementById('count-mkt-us')) document.getElementById('count-mkt-us').textContent = usCnt;
+
   if (data.updated) {
     try {
       const d = new Date(data.updated);
@@ -135,6 +154,7 @@ function filterAndRender() {
   const q = currentQuery.trim().toLowerCase();
 
   let filtered = rawCalls.filter(c => {
+    if (currentMarket !== 'all' && getItemMarket(c) !== currentMarket) return false;
     if (currentSentiment !== 'all' && c.sentiment !== currentSentiment) return false;
 
     if (currentBroker !== 'all') {
@@ -177,6 +197,8 @@ function filterAndRender() {
 
     const stockName = item.stock || 'Market / Sector';
     const stockQuery = item.symbol || (stockName !== 'Multi / Sector' && stockName !== 'Market / Sector' ? stockName : '');
+    const mkt = getItemMarket(item);
+    const mktShort = mkt === 'US' ? 'US' : 'IN';
 
     html += `
       <tr data-id="${escapeHtml(item.id)}">
@@ -185,6 +207,7 @@ function filterAndRender() {
         </td>
         <td class="col-stock">
           <div class="stock-cell">
+            <span class="mkt-badge">${mktShort}</span>
             <span class="stock-name">${escapeHtml(stockName)}</span>
             ${stockQuery ? `<a href="index.html?company=${encodeURIComponent(stockQuery)}" class="xray-mini-link" title="Open ${escapeHtml(stockName)} in Company X-Ray">X-Ray ↗</a>` : ''}
           </div>
@@ -234,9 +257,18 @@ async function loadRadarData() {
 }
 
 function setupEvents() {
-  document.querySelectorAll('.r-pill').forEach(btn => {
+  document.querySelectorAll('.mkt-pill').forEach(btn => {
     btn.addEventListener('click', () => {
-      document.querySelectorAll('.r-pill').forEach(c => c.classList.remove('active'));
+      document.querySelectorAll('.mkt-pill').forEach(c => c.classList.remove('active'));
+      btn.classList.add('active');
+      currentMarket = btn.dataset.market;
+      filterAndRender();
+    });
+  });
+
+  document.querySelectorAll('.sent-pill').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.sent-pill').forEach(c => c.classList.remove('active'));
       btn.classList.add('active');
       currentSentiment = btn.dataset.action;
       filterAndRender();
