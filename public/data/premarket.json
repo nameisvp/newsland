@@ -1,8 +1,8 @@
 {
-  "updated": "2026-11-11T17:24:49.491481+00:00",
+  "updated": "2026-11-11T18:14:44.153974+00:00",
   "schema_version": 2,
   "is_live": false,
-  "quote_updated": "2026-11-11T17:24:49.490964+00:00",
+  "quote_updated": "2026-11-11T18:14:44.153614+00:00",
   "quote_date": "2026-11-11",
   "quote_source": "yfinance",
   "live_bias_label": "LATEST AVAILABLE QUOTE",
@@ -26,13 +26,13 @@
   },
   "overnight": {
     "SP500": {
-      "val": "7,633",
-      "pct": 1.49,
+      "val": "7,635",
+      "pct": 1.51,
       "date": "2026-11-11"
     },
     "NASDAQ": {
-      "val": "25,612",
-      "pct": 2.18,
+      "val": "25,602",
+      "pct": 2.14,
       "date": "2026-11-11"
     },
     "US10Y": {
@@ -45,12 +45,12 @@
     "key": "BRENT",
     "quote_date": "2026-11-11",
     "label": "Brent Crude",
-    "price": "93.43",
-    "price_raw": 93.43,
+    "price": "93.30",
+    "price_raw": 93.3,
     "prev_close": 92.44,
     "prev_close_fmt": "92.44",
-    "change": 0.99,
-    "change_pct": 1.07,
+    "change": 0.86,
+    "change_pct": 0.93,
     "direction": "up",
     "unit": "USD/bbl",
     "range_52w": {
@@ -58,8 +58,8 @@
       "high": 126.1,
       "low_fmt": "58.72",
       "high_fmt": "126.10",
-      "pos_pct": 51.5,
-      "pct_from_high": -25.91
+      "pos_pct": 51.3,
+      "pct_from_high": -26.01
     }
   },
   "usdinr": {
@@ -154,7 +154,7 @@
       "num": "02",
       "title": "Crude and input costs",
       "bias": "Context",
-      "desc": "Latest Brent quote: 93.43 USD/bbl (+1.07%). Higher crude can raise import and input costs; lower crude can ease them. This quote alone does not establish the cause of the move."
+      "desc": "Latest Brent quote: 93.30 USD/bbl (+0.93%). Higher crude can raise import and input costs; lower crude can ease them. This quote alone does not establish the cause of the move."
     },
     {
       "num": "03",
@@ -170,12 +170,12 @@
         "key": "BRENT",
         "quote_date": "2026-11-11",
         "label": "Brent Crude",
-        "price": "93.43",
-        "price_raw": 93.43,
+        "price": "93.30",
+        "price_raw": 93.3,
         "prev_close": 92.44,
         "prev_close_fmt": "92.44",
-        "change": 0.99,
-        "change_pct": 1.07,
+        "change": 0.86,
+        "change_pct": 0.93,
         "direction": "up",
         "unit": "USD/bbl",
         "range_52w": {
@@ -183,20 +183,20 @@
           "high": 126.1,
           "low_fmt": "58.72",
           "high_fmt": "126.10",
-          "pos_pct": 51.5,
-          "pct_from_high": -25.91
+          "pos_pct": 51.3,
+          "pct_from_high": -26.01
         }
       },
       "wti": {
         "key": "WTI",
         "quote_date": "2026-11-11",
         "label": "WTI Crude",
-        "price": "87.48",
-        "price_raw": 87.48,
+        "price": "87.19",
+        "price_raw": 87.19,
         "prev_close": 86.64,
         "prev_close_fmt": "86.64",
-        "change": 0.84,
-        "change_pct": 0.97,
+        "change": 0.55,
+        "change_pct": 0.63,
         "direction": "up",
         "unit": "USD/bbl",
         "range_52w": {
@@ -204,41 +204,41 @@
           "high": 119.48,
           "low_fmt": "54.98",
           "high_fmt": "119.48",
-          "pos_pct": 50.4,
-          "pct_from_high": -26.78
+          "pos_pct": 49.9,
+          "pct_from_high": -27.03
         }
       },
       "natgas": {
         "key": "NATGAS",
         "quote_date": "2026-11-11",
         "label": "Natural Gas",
-        "price": "3.30",
-        "price_raw": 3.304,
+        "price": "3.25",
+        "price_raw": 3.252,
         "prev_close": 3.291,
         "prev_close_fmt": "3.29",
-        "change": 0.013,
-        "change_pct": 0.4,
-        "direction": "up",
+        "change": -0.039,
+        "change_pct": -1.19,
+        "direction": "down",
         "unit": "USD/MMBtu",
         "range_52w": {
           "low": 2.48,
           "high": 7.83,
           "low_fmt": "2.48",
           "high_fmt": "7.83",
-          "pos_pct": 15.4,
-          "pct_from_high": -57.79
+          "pos_pct": 14.4,
+          "pct_from_high": -58.45
         }
       },
       "gold": {
         "key": "GOLD",
         "quote_date": "2026-11-11",
         "label": "Gold",
-        "price": "4,008.30",
-        "price_raw": 4008.3,
+        "price": "3,996.20",
+        "price_raw": 3996.2,
         "prev_close": 4054.0,
         "prev_close_fmt": "4,054.00",
-        "change": -45.7,
-        "change_pct": -1.13,
+        "change": -57.8,
+        "change_pct": -1.43,
         "direction": "down",
         "unit": "USD/oz",
         "range_52w": {
@@ -246,20 +246,20 @@
           "high": 5586.2,
           "low_fmt": "3,879.30",
           "high_fmt": "5,586.20",
-          "pos_pct": 7.6,
-          "pct_from_high": -28.25
+          "pos_pct": 6.8,
+          "pct_from_high": -28.46
         }
       },
       "silver": {
         "key": "SILVER",
         "quote_date": "2026-11-11",
         "label": "Silver",
-        "price": "52.12",
-        "price_raw": 52.125,
+        "price": "51.97",
+        "price_raw": 51.97,
         "prev_close": 52.52,
         "prev_close_fmt": "52.52",
-        "change": -0.395,
-        "change_pct": -0.75,
+        "change": -0.55,
+        "change_pct": -1.05,
         "direction": "down",
         "unit": "USD/oz",
         "range_52w": {
@@ -267,28 +267,21 @@
           "high": 121.3,
           "low_fmt": "48.12",
           "high_fmt": "121.30",
-          "pos_pct": 5.5,
-          "pct_from_high": -57.03
+          "pos_pct": 5.3,
+          "pct_from_high": -57.16
         }
       },
       "catalyst": {
-        "title": "FTSE 100 today: Stocks gain as oil rebounds; Spirax tops gainers",
-        "url": "https://www.investing.com/news/stock-market-news/ftse-100-climbs-as-oil-rebounds-ahead-of-uk-gdp-test-5017989",
+        "title": "Oil up 2% as Iran official says country will keep enriched nuclear material",
+        "url": "https://www.investing.com/news/commodities-news/oil-rises-from-twomonth-low-as-hormuz-shipping-attacks-offset-iran-truce-hopes-5017512",
         "why_it_matters": "Crude affects India’s import bill and energy-sensitive sectors; the headline does not establish a clear price direction.",
         "source": ""
       }
     },
     "earnings": [
       {
-        "title": "Tata Power Q2 profit jumps 32% to ₹1,652 crore",
-        "url": "https://www.thehindu.com/business/Industry/tata-power-q2-profit-jumps-32-to-1652-crore/article71690514.ece",
-        "companies": [],
-        "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
-        "source": ""
-      },
-      {
-        "title": "Nasdaq futures rise nearly 2% as CoreWeave earnings calm AI spending fears",
-        "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/nasdaq-futures-rise-nearly-2-as-coreweave-earnings-calm-ai-spending-fears/articleshow/135738901.cms",
+        "title": "Tata Power Q2 profit rises 33% to ₹1,652 cr; ₹11,871 cr project approved",
+        "url": "https://www.business-standard.com/companies/quarterly-results/tata-power-q2-profit-rises-33-to-1-652-cr-11-871-cr-project-approved-126111101450_1.html",
         "companies": [],
         "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
         "source": ""
@@ -299,18 +292,25 @@
         "companies": [],
         "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
         "source": ""
+      },
+      {
+        "title": "Nasdaq futures rise nearly 2% as CoreWeave earnings calm AI spending fears",
+        "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/nasdaq-futures-rise-nearly-2-as-coreweave-earnings-calm-ai-spending-fears/articleshow/135738901.cms",
+        "companies": [],
+        "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
+        "source": ""
       }
     ],
     "global_macro": {
       "overnight": {
         "SP500": {
-          "val": "7,633",
-          "pct": 1.49,
+          "val": "7,635",
+          "pct": 1.51,
           "date": "2026-11-11"
         },
         "NASDAQ": {
-          "val": "25,612",
-          "pct": 2.18,
+          "val": "25,602",
+          "pct": 2.14,
           "date": "2026-11-11"
         },
         "US10Y": {

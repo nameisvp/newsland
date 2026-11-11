@@ -1,6 +1,33 @@
 {
-  "updated": "2026-11-11T17:24:50.935920+00:00",
+  "updated": "2026-11-11T18:14:46.559687+00:00",
   "calls": [
+    {
+      "id": "558c366cc76dd2f9",
+      "title": "Nvidia Jumps 4% After Two-Day Rout As Dip-Buyers Overlook Huang Probe, Wall Street Downgrades",
+      "summary": "Nvidia shares rose 3.9% after losing nearly 10% over two sessions. The rebound came despite Baird's downgrade and Morgan Stanley's decision to remove the stock from its top-pick list.",
+      "url": "https://www.ndtvprofit.com/markets/nvidia-jumps-7-after-two-day-rout-as-dip-buyers-overlook-huang-probe-wall-street-downgrades-12314085#publisher=newsstand",
+      "published": 1794414745.0,
+      "published_str": "11 Nov, 10:02 PM",
+      "source": "NDTV Profit",
+      "sources": [
+        {
+          "name": "NDTV Profit",
+          "url": "https://www.ndtvprofit.com/markets/nvidia-jumps-7-after-two-day-rout-as-dip-buyers-overlook-huang-probe-wall-street-downgrades-12314085#publisher=newsstand"
+        }
+      ],
+      "brokerage": "Morgan Stanley",
+      "brokerages": [
+        "Morgan Stanley",
+        "Baird"
+      ],
+      "action": "SELL",
+      "action_label": "Sell ▼",
+      "sentiment": "bearish",
+      "target": null,
+      "stock": "NVIDIA",
+      "symbol": "NVDA",
+      "market": "US"
+    },
     {
       "id": "ff6316a50a455d7e",
       "title": "Baird downgrades Nvidia on CEO Huang worries, AI uncertainty",
@@ -448,16 +475,20 @@
     }
   ],
   "stats": {
-    "total": 17,
+    "total": 18,
     "bullish": 10,
-    "bearish": 5,
+    "bearish": 6,
     "neutral": 2,
     "india": 14,
-    "us": 3,
+    "us": 4,
     "top_brokerages": [
       {
         "name": "Citi",
         "count": 3
+      },
+      {
+        "name": "Morgan Stanley",
+        "count": 2
       },
       {
         "name": "Baird",
@@ -470,10 +501,6 @@
       {
         "name": "UBS",
         "count": 2
-      },
-      {
-        "name": "Morgan Stanley",
-        "count": 1
       },
       {
         "name": "BofA Securities",
