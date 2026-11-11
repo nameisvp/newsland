@@ -1,8 +1,8 @@
 {
-  "updated": "2026-11-11T17:11:53.691797+00:00",
+  "updated": "2026-11-11T17:24:49.491481+00:00",
   "schema_version": 2,
   "is_live": false,
-  "quote_updated": "2026-11-11T17:11:53.691276+00:00",
+  "quote_updated": "2026-11-11T17:24:49.490964+00:00",
   "quote_date": "2026-11-11",
   "quote_source": "yfinance",
   "live_bias_label": "LATEST AVAILABLE QUOTE",
@@ -26,13 +26,13 @@
   },
   "overnight": {
     "SP500": {
-      "val": "7,624",
-      "pct": 1.38,
+      "val": "7,633",
+      "pct": 1.49,
       "date": "2026-11-11"
     },
     "NASDAQ": {
-      "val": "25,568",
-      "pct": 2.0,
+      "val": "25,612",
+      "pct": 2.18,
       "date": "2026-11-11"
     },
     "US10Y": {
@@ -45,12 +45,12 @@
     "key": "BRENT",
     "quote_date": "2026-11-11",
     "label": "Brent Crude",
-    "price": "93.54",
-    "price_raw": 93.54,
+    "price": "93.43",
+    "price_raw": 93.43,
     "prev_close": 92.44,
     "prev_close_fmt": "92.44",
-    "change": 1.1,
-    "change_pct": 1.19,
+    "change": 0.99,
+    "change_pct": 1.07,
     "direction": "up",
     "unit": "USD/bbl",
     "range_52w": {
@@ -58,8 +58,8 @@
       "high": 126.1,
       "low_fmt": "58.72",
       "high_fmt": "126.10",
-      "pos_pct": 51.7,
-      "pct_from_high": -25.82
+      "pos_pct": 51.5,
+      "pct_from_high": -25.91
     }
   },
   "usdinr": {
@@ -154,7 +154,7 @@
       "num": "02",
       "title": "Crude and input costs",
       "bias": "Context",
-      "desc": "Latest Brent quote: 93.54 USD/bbl (+1.19%). Higher crude can raise import and input costs; lower crude can ease them. This quote alone does not establish the cause of the move."
+      "desc": "Latest Brent quote: 93.43 USD/bbl (+1.07%). Higher crude can raise import and input costs; lower crude can ease them. This quote alone does not establish the cause of the move."
     },
     {
       "num": "03",
@@ -170,12 +170,12 @@
         "key": "BRENT",
         "quote_date": "2026-11-11",
         "label": "Brent Crude",
-        "price": "93.54",
-        "price_raw": 93.54,
+        "price": "93.43",
+        "price_raw": 93.43,
         "prev_close": 92.44,
         "prev_close_fmt": "92.44",
-        "change": 1.1,
-        "change_pct": 1.19,
+        "change": 0.99,
+        "change_pct": 1.07,
         "direction": "up",
         "unit": "USD/bbl",
         "range_52w": {
@@ -183,20 +183,20 @@
           "high": 126.1,
           "low_fmt": "58.72",
           "high_fmt": "126.10",
-          "pos_pct": 51.7,
-          "pct_from_high": -25.82
+          "pos_pct": 51.5,
+          "pct_from_high": -25.91
         }
       },
       "wti": {
         "key": "WTI",
         "quote_date": "2026-11-11",
         "label": "WTI Crude",
-        "price": "87.71",
-        "price_raw": 87.71,
+        "price": "87.48",
+        "price_raw": 87.48,
         "prev_close": 86.64,
         "prev_close_fmt": "86.64",
-        "change": 1.07,
-        "change_pct": 1.23,
+        "change": 0.84,
+        "change_pct": 0.97,
         "direction": "up",
         "unit": "USD/bbl",
         "range_52w": {
@@ -204,41 +204,41 @@
           "high": 119.48,
           "low_fmt": "54.98",
           "high_fmt": "119.48",
-          "pos_pct": 50.7,
-          "pct_from_high": -26.59
+          "pos_pct": 50.4,
+          "pct_from_high": -26.78
         }
       },
       "natgas": {
         "key": "NATGAS",
         "quote_date": "2026-11-11",
         "label": "Natural Gas",
-        "price": "3.29",
-        "price_raw": 3.287,
+        "price": "3.30",
+        "price_raw": 3.304,
         "prev_close": 3.291,
         "prev_close_fmt": "3.29",
-        "change": -0.004,
-        "change_pct": -0.12,
-        "direction": "down",
+        "change": 0.013,
+        "change_pct": 0.4,
+        "direction": "up",
         "unit": "USD/MMBtu",
         "range_52w": {
           "low": 2.48,
           "high": 7.83,
           "low_fmt": "2.48",
           "high_fmt": "7.83",
-          "pos_pct": 15.0,
-          "pct_from_high": -58.0
+          "pos_pct": 15.4,
+          "pct_from_high": -57.79
         }
       },
       "gold": {
         "key": "GOLD",
         "quote_date": "2026-11-11",
         "label": "Gold",
-        "price": "4,007.20",
-        "price_raw": 4007.2,
+        "price": "4,008.30",
+        "price_raw": 4008.3,
         "prev_close": 4054.0,
         "prev_close_fmt": "4,054.00",
-        "change": -46.8,
-        "change_pct": -1.15,
+        "change": -45.7,
+        "change_pct": -1.13,
         "direction": "down",
         "unit": "USD/oz",
         "range_52w": {
@@ -246,20 +246,20 @@
           "high": 5586.2,
           "low_fmt": "3,879.30",
           "high_fmt": "5,586.20",
-          "pos_pct": 7.5,
-          "pct_from_high": -28.27
+          "pos_pct": 7.6,
+          "pct_from_high": -28.25
         }
       },
       "silver": {
         "key": "SILVER",
         "quote_date": "2026-11-11",
         "label": "Silver",
-        "price": "52.08",
-        "price_raw": 52.075,
+        "price": "52.12",
+        "price_raw": 52.125,
         "prev_close": 52.52,
         "prev_close_fmt": "52.52",
-        "change": -0.445,
-        "change_pct": -0.85,
+        "change": -0.395,
+        "change_pct": -0.75,
         "direction": "down",
         "unit": "USD/oz",
         "range_52w": {
@@ -267,14 +267,14 @@
           "high": 121.3,
           "low_fmt": "48.12",
           "high_fmt": "121.30",
-          "pos_pct": 5.4,
-          "pct_from_high": -57.07
+          "pos_pct": 5.5,
+          "pct_from_high": -57.03
         }
       },
       "catalyst": {
-        "title": "Selling Bullion? The Two Prices Gold And Silver Investors Must Watch Now",
-        "url": "https://www.ndtvprofit.com/markets/selling-bullion-the-two-prices-gold-and-silver-investors-must-watch-now-12314019#publisher=newsstand",
-        "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
+        "title": "FTSE 100 today: Stocks gain as oil rebounds; Spirax tops gainers",
+        "url": "https://www.investing.com/news/stock-market-news/ftse-100-climbs-as-oil-rebounds-ahead-of-uk-gdp-test-5017989",
+        "why_it_matters": "Crude affects India’s import bill and energy-sensitive sectors; the headline does not establish a clear price direction.",
         "source": ""
       }
     },
@@ -304,13 +304,13 @@
     "global_macro": {
       "overnight": {
         "SP500": {
-          "val": "7,624",
-          "pct": 1.38,
+          "val": "7,633",
+          "pct": 1.49,
           "date": "2026-11-11"
         },
         "NASDAQ": {
-          "val": "25,568",
-          "pct": 2.0,
+          "val": "25,612",
+          "pct": 2.18,
           "date": "2026-11-11"
         },
         "US10Y": {
