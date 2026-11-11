@@ -1596,6 +1596,15 @@ def extract_radar_call(story):
 def refresh_radar(incoming_stories=None):
     global RADAR_DATA
     with RADAR_LOCK:
+        # Ensure disk history is loaded even when invoked from build_static.py
+        if not RADAR_DATA.get('calls') and (DATA / 'radar.json').exists():
+            try:
+                saved_radar = json.loads((DATA / 'radar.json').read_text())
+                if saved_radar.get('calls'):
+                    RADAR_DATA.update(saved_radar)
+            except (ValueError, OSError):
+                pass
+
         # Re-validate existing calls to automatically prune noise when rules tighten
         calls_by_id = {}
         for old_c in RADAR_DATA.get('calls', []):
@@ -1613,7 +1622,8 @@ def refresh_radar(incoming_stories=None):
                 calls_by_id[call['id']] = call
                 
         now_ts = time.time()
-        filtered = [c for c in calls_by_id.values() if not c.get('published') or (now_ts - c['published'] <= 14 * 86400)]
+        # Retain up to 30 days of historical recommendations
+        filtered = [c for c in calls_by_id.values() if not c.get('published') or (now_ts - c['published'] <= 30 * 86400)]
         sorted_calls = sorted(filtered, key=lambda x: x.get('published', 0) or 0, reverse=True)
         
         bullish_cnt = sum(1 for c in sorted_calls if c.get('sentiment') == 'bullish')

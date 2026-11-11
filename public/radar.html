@@ -152,6 +152,42 @@
       font-family: var(--font-mono);
     }
 
+    .pulse-right {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+    }
+
+    .radar-time-pills {
+      display: inline-flex;
+      align-items: center;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 2px;
+      gap: 2px;
+    }
+
+    .time-pill {
+      padding: 3px 9px;
+      border-radius: 12px;
+      font-size: 0.72rem;
+      font-weight: 600;
+      font-family: var(--font-sans);
+      color: var(--ink-muted);
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      transition: all 0.12s ease;
+    }
+
+    .time-pill:hover { color: var(--ink); }
+    .time-pill.active {
+      background: var(--ink);
+      color: var(--bg);
+    }
+
     /* Toolbar: Search + Sentiment Pills */
     .radar-toolbar {
       display: flex;
@@ -516,7 +552,14 @@
         <span class="pulse-item bear">Sells / Cuts: <strong id="stat-bearish">--</strong></span>
         <span class="pulse-item">Neutral: <strong id="stat-neutral">--</strong></span>
       </div>
-      <span id="stat-updated" class="pulse-updated">Syncing…</span>
+      <div class="pulse-right">
+        <div class="radar-time-pills" role="group" aria-label="Time Horizon">
+          <button class="time-pill" data-days="2" title="Last 48 Hours">48h</button>
+          <button class="time-pill active" data-days="7" title="Last 7 Days">7 Days</button>
+          <button class="time-pill" data-days="30" title="Last 30 Days Archive">30D History</button>
+        </div>
+        <span id="stat-updated" class="pulse-updated">Syncing…</span>
+      </div>
     </section>
 
     <!-- Search & Filter Toolbar -->
@@ -567,6 +610,6 @@
     </main>
   </div>
 
-  <script src="radar.js?v=4"></script>
+  <script src="radar.js?v=5"></script>
 </body>
 </html>

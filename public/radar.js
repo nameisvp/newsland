@@ -26,6 +26,8 @@ async function safeFetch(primaryUrl, fallbackUrl) {
 }
 
 let rawCalls = [];
+let lastUpdated = null;
+let currentDays = 7;
 let currentMarket = 'all';
 let currentSentiment = 'all';
 let currentBroker = 'all';
@@ -91,12 +93,18 @@ function formatTimeAgo(ts) {
   return `${Math.floor(hr / 24)}d ago`;
 }
 
-function updateStats(data) {
-  const stats = data.stats || {};
-  const total = stats.total || rawCalls.length || 0;
-  const bull = stats.bullish || 0;
-  const bear = stats.bearish || 0;
-  const neut = stats.neutral || 0;
+function getWindowCalls() {
+  const nowSec = Date.now() / 1000;
+  const maxAge = currentDays * 86400;
+  return rawCalls.filter(c => !c.published || (nowSec - c.published <= maxAge));
+}
+
+function updateStats() {
+  const windowCalls = getWindowCalls();
+  const total = windowCalls.length;
+  const bull = windowCalls.filter(c => c.sentiment === 'bullish').length;
+  const bear = windowCalls.filter(c => c.sentiment === 'bearish').length;
+  const neut = total - bull - bear;
 
   document.getElementById('stat-total').textContent = total;
   document.getElementById('stat-bullish').textContent = bull;
@@ -108,15 +116,15 @@ function updateStats(data) {
   document.getElementById('count-bear').textContent = bear;
   document.getElementById('count-neutral').textContent = neut;
 
-  const indiaCnt = stats.india ?? rawCalls.filter(c => getItemMarket(c) === 'India').length;
-  const usCnt = stats.us ?? rawCalls.filter(c => getItemMarket(c) === 'US').length;
+  const indiaCnt = windowCalls.filter(c => getItemMarket(c) === 'India').length;
+  const usCnt = windowCalls.filter(c => getItemMarket(c) === 'US').length;
   if (document.getElementById('count-mkt-all')) document.getElementById('count-mkt-all').textContent = total;
   if (document.getElementById('count-mkt-india')) document.getElementById('count-mkt-india').textContent = indiaCnt;
   if (document.getElementById('count-mkt-us')) document.getElementById('count-mkt-us').textContent = usCnt;
 
-  if (data.updated) {
+  if (lastUpdated) {
     try {
-      const d = new Date(data.updated);
+      const d = new Date(lastUpdated);
       document.getElementById('stat-updated').textContent =
         `Synced ${d.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}`;
     } catch (_) {
@@ -125,11 +133,22 @@ function updateStats(data) {
   }
 }
 
-function renderBrokerChips(stats) {
+function renderBrokerChips() {
   const container = document.getElementById('broker-chips-row');
   if (!container) return;
 
-  const top = (stats.top_brokerages || []).filter(b => b.name !== 'Street Consensus');
+  const windowCalls = getWindowCalls();
+  const counts = {};
+  for (const c of windowCalls) {
+    const b = c.brokerage || 'Other';
+    if (b === 'Street Consensus') continue;
+    counts[b] = (counts[b] || 0) + 1;
+  }
+  const top = Object.entries(counts)
+    .map(([name, count]) => ({ name, count }))
+    .sort((a, b) => b.count - a.count)
+    .slice(0, 12);
+
   let html = `<button class="firm-chip ${currentBroker === 'all' ? 'active' : ''}" data-broker="all">All Brokerages</button>`;
   for (const b of top) {
     const isActive = currentBroker.toLowerCase() === b.name.toLowerCase();
@@ -152,8 +171,9 @@ function filterAndRender() {
   if (!tbody) return;
 
   const q = currentQuery.trim().toLowerCase();
+  const windowCalls = getWindowCalls();
 
-  let filtered = rawCalls.filter(c => {
+  let filtered = windowCalls.filter(c => {
     if (currentMarket !== 'all' && getItemMarket(c) !== currentMarket) return false;
     if (currentSentiment !== 'all' && c.sentiment !== currentSentiment) return false;
 
@@ -200,6 +220,10 @@ function filterAndRender() {
     const mkt = getItemMarket(item);
     const mktShort = mkt === 'US' ? 'US' : 'IN';
 
+    const timeLabel = (item.published && (Date.now() / 1000 - item.published > 86400))
+      ? (item.published_str || timeAgo)
+      : timeAgo;
+
     html += `
       <tr data-id="${escapeHtml(item.id)}">
         <td class="col-broker">
@@ -225,7 +249,7 @@ function filterAndRender() {
         </td>
         <td class="col-meta">
           <a href="${escapeHtml(item.url || '#')}" target="_blank" rel="noopener noreferrer" class="meta-source">${escapeHtml(sourceName)} ↗</a>
-          <span class="meta-time" title="${escapeHtml(item.published_str || '')}">${escapeHtml(timeAgo)}</span>
+          <span class="meta-time" title="${escapeHtml(item.published_str || '')}">${escapeHtml(timeLabel)}</span>
         </td>
       </tr>
     `;
@@ -240,8 +264,9 @@ async function loadRadarData() {
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const data = await res.json();
     rawCalls = data.calls || [];
-    updateStats(data);
-    renderBrokerChips(data.stats || {});
+    lastUpdated = data.updated;
+    updateStats();
+    renderBrokerChips();
     filterAndRender();
   } catch (err) {
     console.error('Brokerage Radar load error:', err);
@@ -257,6 +282,17 @@ async function loadRadarData() {
 }
 
 function setupEvents() {
+  document.querySelectorAll('.time-pill').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.time-pill').forEach(c => c.classList.remove('active'));
+      btn.classList.add('active');
+      currentDays = Number(btn.dataset.days) || 7;
+      updateStats();
+      renderBrokerChips();
+      filterAndRender();
+    });
+  });
+
   document.querySelectorAll('.mkt-pill').forEach(btn => {
     btn.addEventListener('click', () => {
       document.querySelectorAll('.mkt-pill').forEach(c => c.classList.remove('active'));
