@@ -55,7 +55,7 @@ RULES = [
  ('Market flows', r'\b(fii|fpi|dii|treasury|bond yields?|rupee|dollar|foreign investors|nifty|sensex|hang seng|nikkei|kospi|shanghai|msci|equity flows?|market indices|stock market|asian stocks|european stocks|us stocks|chipmakers?|wall street)\b', 3, 'Flows, currency and yields provide context for Indian equity risk appetite.')
 ]
 NOISE = re.compile(
-    r'\b(stocks to buy|buy or sell|multibagger|target price|horoscope|stock recommendations|technical picks|box office|movie review|celebrity|sports betting|iphone deals?|gmp today|grey market premium)\b|'
+    r'\b(stocks to buy|buy or sell|multibagger|target price|horoscope|stock recommendations|technical picks|box office|movie review|celebrity|wedding|marriage|engaged|fianc[eé]|dating|rumours|sports betting|iphone deals?|gmp today|grey market premium)\b|'
     r'recovery certificate|remittance order|release order|settlement order|verification system|notice of demand|notice of attachment|appeal no\.|summons|case status|decree holder|'
     r'searched (?:his|her|their) home|feud explained|campaigns in [a-z]+|banning \d+ media|judge indefinitely blocks|'
     r'\b(?:cmo|cco|clo|director|officer|general counsel|chief [a-z]+ officer)\b.*?\b(?:sells?|disposes?|buys?)\b.*?\$\d{1,3},\d{3}\b',

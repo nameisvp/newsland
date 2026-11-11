@@ -21,8 +21,8 @@
   <meta name="twitter:image" content="/og-preview.png">
   <meta name="theme-color" content="#090D14">
 
-  <link rel="stylesheet" href="/style.css?v=20">
-  <script src="/app.js?v=20" defer></script>
+  <link rel="stylesheet" href="/style.css?v=21">
+  <script src="/app.js?v=21" defer></script>
 </head>
 <body>
   <!-- Top Navigation Bar -->
@@ -49,6 +49,7 @@
       </div>
 
       <div class="header-right">
+        <a href="radar.html" class="header-radar-btn" title="Brokerage Radar: Institutional Recommendations &amp; Price Targets">Brokerage Radar ↗</a>
         <span id="date" class="header-date"></span>
         <button id="menu-btn" class="hamburger-btn" aria-label="Open settings &amp; preferences" title="Preferences">
           <svg viewBox="0 0 18 18" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
@@ -66,38 +67,41 @@
     </div>
   </section>
 
-  <!-- Subnav: Trending Keywords + Section Tabs -->
+  <!-- Subnav: Clean Two-Row Editorial Controls -->
   <div class="subnav-strip">
     <div class="subnav-inner">
-      <div class="trending-wrap">
-        <span class="trending-label">Trending</span>
-        <div id="trending-keywords" class="trending-pills" aria-label="Trending keywords">
-          <!-- Populated dynamically: Shares, Growth, Sensex, Nifty, Gold, Prices, Data, Fed, War, Yields, Business -->
+      <div class="subnav-row-primary">
+        <nav id="region-tabs" class="sec-tabs" role="tablist" aria-label="Briefing sections">
+          <button role="tab" aria-selected="true" data-region="All" class="tab-btn active">All</button>
+          <button role="tab" aria-selected="false" data-region="India" class="tab-btn">India</button>
+          <button role="tab" aria-selected="false" data-region="Global" class="tab-btn">Global</button>
+          <button role="tab" aria-selected="false" data-region="Events" class="tab-btn">Catalysts</button>
+          <a href="radar.html" class="tab-btn radar-accent-tab" title="Brokerage Radar: Institutional Recommendations &amp; Price Targets">Radar</a>
+          <button id="nav-shorts-btn" class="tab-btn shorts-accent-tab" title="Turn into Instagram-style Short News stories">Shorts</button>
+        </nav>
+
+        <div class="tabs-controls-right">
+          <button id="movers-filter-btn" class="movers-filter-btn" aria-pressed="false" title="Filter for high-conviction market movers only">Market Movers</button>
+          <button id="latest-sort-btn" class="latest-sort-btn" aria-pressed="false" title="Sort broadsheet by latest news first">Latest First</button>
         </div>
       </div>
 
-      <div class="tabs-wrap">
+      <div class="subnav-row-secondary">
         <div id="sector-pills" class="sector-pills" aria-label="Filter by sector">
-          <button class="sector-pill active" data-sector="all">All</button>
-          <button class="sector-pill" data-sector="earnings">Results / Earnings</button>
-          <button class="sector-pill" data-sector="commodities">MCX &amp; Commodities</button>
+          <button class="sector-pill active" data-sector="all">All Sectors</button>
+          <button class="sector-pill" data-sector="earnings">Results</button>
+          <button class="sector-pill" data-sector="commodities">Commodities</button>
           <button class="sector-pill" data-sector="banking">Banking</button>
           <button class="sector-pill" data-sector="it">IT</button>
           <button class="sector-pill" data-sector="energy">Energy</button>
           <button class="sector-pill" data-sector="auto">Auto</button>
           <button class="sector-pill" data-sector="metals">Metals</button>
         </div>
-        <span class="subnav-divider" aria-hidden="true">|</span>
-        <button id="movers-filter-btn" class="movers-filter-btn" aria-pressed="false" title="Filter for high-conviction market movers only">⚡ Market Movers</button>
-        <button id="latest-sort-btn" class="latest-sort-btn" aria-pressed="false" title="Sort broadsheet by latest news first">🕒 Latest First</button>
-        <nav id="region-tabs" class="sec-tabs" role="tablist" aria-label="Briefing sections">
-          <button role="tab" aria-selected="true" data-region="All" class="tab-btn active">All</button>
-          <button role="tab" aria-selected="false" data-region="India" class="tab-btn">India</button>
-          <button role="tab" aria-selected="false" data-region="Global" class="tab-btn">Global</button>
-          <button role="tab" aria-selected="false" data-region="Events" class="tab-btn">Catalysts</button>
-          <a href="radar.html" class="tab-btn radar-accent-tab" style="text-decoration: none;" title="Brokerage Radar: Institutional Recommendations &amp; Price Targets">🎯 Radar</a>
-          <button id="nav-shorts-btn" class="tab-btn shorts-accent-tab" title="Turn into Instagram-style Short News stories">⚡ Shorts</button>
-        </nav>
+
+        <div class="trending-wrap">
+          <span class="trending-label">Trending</span>
+          <div id="trending-keywords" class="trending-pills" aria-label="Trending keywords"></div>
+        </div>
       </div>
     </div>
   </div>
@@ -105,11 +109,11 @@
   <!-- Mobile View Mode Switcher Strip (Prominent on Mobile) -->
   <div class="mobile-mode-strip" id="mobile-mode-strip">
     <div class="mobile-mode-inner">
-      <span class="mobile-mode-label">VIEW MODE:</span>
+      <span class="mobile-mode-label">VIEW</span>
       <div class="mobile-mode-toggle-group">
-        <button id="btn-mode-broadsheet" class="mobile-mode-btn active" title="Desktop Broadsheet newspaper view">📰 Broadsheet</button>
-        <button id="btn-mode-shorts" class="mobile-mode-btn" title="Instagram-style short news cards">⚡ Insta Shorts</button>
-        <a href="radar.html" class="mobile-mode-btn" style="text-decoration: none;" title="Brokerage Radar: Institutional Stock Recommendations">🎯 Radar</a>
+        <button id="btn-mode-broadsheet" class="mobile-mode-btn active" title="Desktop Broadsheet newspaper view">Broadsheet</button>
+        <button id="btn-mode-shorts" class="mobile-mode-btn" title="Instagram-style short news cards">Shorts</button>
+        <a href="radar.html" class="mobile-mode-btn" style="text-decoration: none;" title="Brokerage Radar: Institutional Stock Recommendations">Radar</a>
       </div>
     </div>
   </div>
@@ -134,17 +138,15 @@
         <div class="premarket-actions">
           <button id="audio-brief-btn" class="audio-brief-btn" title="Listen to 60-Second Audio Market Brief" aria-label="Listen to 60-second morning audio brief">
             <span class="audio-icon">▶</span>
-            <span class="audio-label">60s Audio Brief</span>
+            <span class="audio-label">60s Brief</span>
             <span id="audio-soundwave" class="soundwave" hidden>
               <span></span><span></span><span></span><span></span>
             </span>
           </button>
           <button id="signal-digest-btn" class="signal-digest-btn" title="View Executive Smart Signal Digest">
-            <span class="digest-icon">⚡</span>
             <span class="digest-label">Signal Digest</span>
           </button>
           <button id="share-card-btn" class="share-card-btn" title="Export & Share Pre-Market Card">
-            <span class="share-icon">📤</span>
             <span class="share-label">Share Card</span>
           </button>
           <button id="premarket-toggle" class="premarket-toggle" aria-expanded="true">Collapse ▴</button>
