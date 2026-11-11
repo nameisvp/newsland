@@ -33,8 +33,20 @@ let sortKey = 'published';
 let sortDir = -1; // -1 desc, 1 asc
 
 const THEMES = ['paper', 'night', 'sepia', 'slate'];
+function readSavedTheme() {
+  try {
+    const raw = localStorage.getItem('newsland.theme');
+    if (!raw) return 'paper';
+    const parsed = JSON.parse(raw);
+    return THEMES.includes(parsed) ? parsed : 'paper';
+  } catch (_) {
+    const raw = (localStorage.getItem('newsland.theme') || '').replace(/"/g, '');
+    return THEMES.includes(raw) ? raw : 'paper';
+  }
+}
+
 function initTheme() {
-  const savedTheme = localStorage.getItem('newsland.theme') || 'paper';
+  const savedTheme = readSavedTheme();
   document.documentElement.setAttribute('data-theme', savedTheme);
 
   const themeBtn = document.getElementById('theme-btn');
@@ -43,7 +55,7 @@ function initTheme() {
       const cur = document.documentElement.getAttribute('data-theme') || 'paper';
       const nextTheme = THEMES[(THEMES.indexOf(cur) + 1) % THEMES.length];
       document.documentElement.setAttribute('data-theme', nextTheme);
-      localStorage.setItem('newsland.theme', nextTheme);
+      try { localStorage.setItem('newsland.theme', JSON.stringify(nextTheme)); } catch (_) {}
     });
   }
 }
