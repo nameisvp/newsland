@@ -1,31 +1,6 @@
 {
-  "updated": "2026-11-11T16:43:59.202680+00:00",
+  "updated": "2026-11-11T16:45:39.779593+00:00",
   "calls": [
-    {
-      "id": "99eb045cd87a76e8",
-      "title": "Jefferies reiterates Regeneron stock rating ahead of patent hearing",
-      "summary": "",
-      "url": "https://www.investing.com/news/analyst-ratings/jefferies-reiterates-regeneron-stock-rating-ahead-of-patent-hearing-93CH-5019543",
-      "published": 1794413571.0,
-      "published_str": "11 Nov, 09:42 PM",
-      "source": "Investing.com",
-      "sources": [
-        {
-          "name": "Investing.com",
-          "url": "https://www.investing.com/news/analyst-ratings/jefferies-reiterates-regeneron-stock-rating-ahead-of-patent-hearing-93CH-5019543"
-        }
-      ],
-      "brokerage": "Jefferies",
-      "brokerages": [
-        "Jefferies"
-      ],
-      "action": "HOLD",
-      "action_label": "Hold / Neutral ●",
-      "sentiment": "neutral",
-      "target": null,
-      "stock": "Regeneron",
-      "symbol": null
-    },
     {
       "id": "ff6316a50a455d7e",
       "title": "Baird downgrades Nvidia on CEO Huang worries, AI uncertainty",
@@ -254,6 +229,31 @@
       "symbol": "MOTHERSON.NS"
     },
     {
+      "id": "3ffc883c315009de",
+      "title": "IndiGo shares: InterGlobe Aviation stock flying 5% high, among top Nifty 50 gainers | Buy? Target price, upside",
+      "summary": "IndiGo share price opened at ₹5,520 apiece on NSE today, as compared to the previous close of ₹5,430 on Monday and touched an intraday high of ₹5,692.30 on Wednesday.",
+      "url": "https://www.livemint.com/market/stock-market-news/indigo-shares-interglobe-aviation-stock-flying-5-high-among-top-nifty-50-gainers-buy-target-price-upside-11794372567454.html",
+      "published": 1794374909.0,
+      "published_str": "11 Nov, 10:58 AM",
+      "source": "Mint Markets",
+      "sources": [
+        {
+          "name": "Mint Markets",
+          "url": "https://www.livemint.com/market/stock-market-news/indigo-shares-interglobe-aviation-stock-flying-5-high-among-top-nifty-50-gainers-buy-target-price-upside-11794372567454.html"
+        }
+      ],
+      "brokerage": "Street Consensus",
+      "brokerages": [
+        "Street Consensus"
+      ],
+      "action": "BUY",
+      "action_label": "Buy ▲",
+      "sentiment": "bullish",
+      "target": null,
+      "stock": "InterGlobe Aviation",
+      "symbol": "INDIGO.NS"
+    },
+    {
       "id": "ec500d38f6ff7764",
       "title": "Bernstein raises Nifty 50 target but highlights some long-term concerns; Details here",
       "summary": "While still rich, Bernstein expects momentum to support near-term valuations and beyond that, weaker earnings, limited revisions and weak global positioning across trade, AI and energy elevate risks, according to the fir",
@@ -432,20 +432,20 @@
   ],
   "stats": {
     "total": 17,
-    "bullish": 9,
+    "bullish": 10,
     "bearish": 5,
-    "neutral": 3,
+    "neutral": 2,
     "top_brokerages": [
       {
         "name": "Citi",
         "count": 3
       },
       {
-        "name": "Jefferies",
+        "name": "Baird",
         "count": 2
       },
       {
-        "name": "Baird",
+        "name": "Street Consensus",
         "count": 2
       },
       {
@@ -454,10 +454,6 @@
       },
       {
         "name": "Morgan Stanley",
-        "count": 1
-      },
-      {
-        "name": "Street Consensus",
         "count": 1
       },
       {
@@ -474,6 +470,10 @@
       },
       {
         "name": "CLSA",
+        "count": 1
+      },
+      {
+        "name": "Nomura",
         "count": 1
       }
     ]
