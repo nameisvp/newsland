@@ -1379,13 +1379,13 @@ REPUTABLE_BROKERAGES = [
     ('CLSA', re.compile(r'\bclsa\b', re.I)),
     ('Nomura', re.compile(r'\bnomura\b', re.I)),
     ('UBS', re.compile(r'\bubs\b', re.I)),
-    ('Citi', re.compile(r'\b(?:citi(?:group)?|citibank)\b', re.I)),
+    ('Citi', re.compile(r'\b(?:citi|citigroup|citibank)\b', re.I)),
     ('Bernstein', re.compile(r'\bbernstein\b', re.I)),
     ('Macquarie', re.compile(r'\bmacquarie\b', re.I)),
     ('HSBC', re.compile(r'\bhsbc\b', re.I)),
     ('JPMorgan', re.compile(r'\b(?:jpmorgan|jp\s+morgan)\b', re.I)),
     ('BofA Securities', re.compile(r'\b(?:bofa|bank\s+of\s+america)\b', re.I)),
-    ('Kotak Equities', re.compile(r'\bkotak(?:\s+institutional|\s+equities|\s+securities)?\b', re.I)),
+    ('Kotak Equities', re.compile(r'\bkotak\s+(?:institutional|equities|securities)\b|\bkotak(?:\'s)?\s+(?:shrikant|analyst|research)\b', re.I)),
     ('ICICI Securities', re.compile(r'\bicici\s+(?:direct|securities)\b', re.I)),
     ('Nuvama', re.compile(r'\bnuvama\b', re.I)),
     ('Emkay Global', re.compile(r'\bemkay(?:\s+global)?\b', re.I)),
@@ -1400,49 +1400,100 @@ REPUTABLE_BROKERAGES = [
     ('Anand Rathi', re.compile(r'\banand\s+rathi\b', re.I))
 ]
 
-def parse_radar_action(title, summary=''):
-    text = f"{title} {summary}"
-    if re.search(r'\b(target|price)\b.{0,30}\b(cut|lowered|slashed|reduced|downgrade[ds]?)\b|\b(downgrades?|cuts?|slashes?|lowers?|slashed|reduced)\b.{0,30}\b(target|price)\b', text, re.I):
+RADAR_CALL_SIGNAL = re.compile(
+    r'\b(buy|sell|hold|overweight|underweight|outperform|underperform|neutral|equal.?weight|'
+    r'accumulate|reduce|target|price\s+target|upgrade[ds]?|downgrade[ds]?|reiterate[ds]?|'
+    r'initiate[ds]?|coverage|top\s+(?:stock\s+)?picks?|stock\s+picks?|bull\s+case|bear\s+case|'
+    r'upside|downside|rating|cuts?\s+target|raises?\s+target|hikes?\s+target|sees\s+(?:stock|index)|'
+    r'recommendations?|stocks\s+to\s+buy|bets?\s+on|betting\s+on|picks?)\b',
+    re.I
+)
+
+RADAR_NOISE_EXCLUDE = re.compile(
+    r'\b(preferential\s+issue|raises\s+₹|pmi|services\s+growth|inflation\s+relief|'
+    r'share\s+price\s+highlights|stock\s+price\s+history|q[1-4]\s+results\s+live)\b',
+    re.I
+)
+
+def _match_action_in_text(text):
+    if re.search(r'\b(sell\s+candidate|\'sell\'|"sell"|downgrades?|underweight|underperform|reduce|drops\s+.*?\s+from\s+top)\b', text, re.I):
+        if re.search(r'\bdrops\s+.*?\s+from\s+top', text, re.I):
+            return 'CAUTION', 'Dropped ▼', 'bearish'
+        return 'SELL', 'Sell ▼', 'bearish'
+    if re.search(r'\b(upgrades?|\'buy\'|"buy"|\bbuy\b|overweight|outperform|accumulate|top\s+picks?|bull\s+case|\d+(?:\.\d+)?%\s*upside)\b', text, re.I):
+        return 'BUY', 'Buy ▲', 'bullish'
+    if re.search(r'\b(target|price)\b.{0,30}\b(cut|lowered|slashed|reduced)\b|\b(cuts?|slashes?|lowers?|cutting)\b.{0,30}\b(target|price)\b', text, re.I):
         return 'TARGET_CUT', 'Target Cut ▼', 'bearish'
-    if re.search(r'\b(target|price)\b.{0,30}\b(raised?|hiked?|upped?|upgrade[ds]?)\b|\b(upgrades?|raises?|hikes?|upped?)\b.{0,30}\b(target|price)\b', text, re.I):
+    if re.search(r'\b(target|price)\b.{0,30}\b(raised?|hiked?|upped?|lifted?)\b|\b(raises?|hikes?|lifts?|upped?)\b.{0,30}\b(target|price)\b', text, re.I):
         return 'TARGET_RAISE', 'Target Raised ▲', 'bullish'
-    if re.search(r'\b(\d+%\s*upside|bullish|buy|overweight|outperform|accumulate|top\s+pick|bull\s+case)\b', text, re.I):
-        return 'BUY', 'Buy / Positive ▲', 'bullish'
-    if re.search(r'\b(sell|underweight|underperform|reduce|bearish)\b', text, re.I):
-        return 'SELL', 'Sell / Caution ▼', 'bearish'
-    if re.search(r'\b(neutral|hold|equal.?weight|market.?weight)\b', text, re.I):
-        return 'HOLD', 'Neutral ●', 'neutral'
-    return 'NOTE', 'Radar Note', 'neutral'
+    if re.search(r'\b(neutral|\'neutral\'|\bhold\b|equal.?weight|market.?weight|reiterates?)\b', text, re.I):
+        return 'HOLD', 'Hold / Neutral ●', 'neutral'
+    if re.search(r'\b(sell|bearish)\b', text, re.I):
+        return 'SELL', 'Sell ▼', 'bearish'
+    return None
+
+def parse_radar_action(title, summary=''):
+    res = _match_action_in_text(title)
+    if res:
+        return res
+    res = _match_action_in_text(summary)
+    if res:
+        return res
+    return 'NOTE', 'Coverage ●', 'neutral'
+
+def _match_target_in_text(text):
+    m_up = re.search(r'(\d+(?:\.\d+)?%\s*(?:upside|downside))', text, re.I)
+    if m_up:
+        return m_up.group(1).strip().title()
+    m_pct_cut = re.search(r'(?:cutting|cuts?|slashed?)\s+target\s+by\s+(\d+(?:\.\d+)?%)', text, re.I)
+    if m_pct_cut:
+        return f"-{m_pct_cut.group(1)} TP"
+    m_pct_raise = re.search(r'(?:raises?|hikes?|lifted?)\s+target\s+by\s+(\d+(?:\.\d+)?%)', text, re.I)
+    if m_pct_raise:
+        return f"+{m_pct_raise.group(1)} TP"
+    m_tp_curr = re.search(r'(?:target|tp|sees\s+(?:stock|index|nifty)\s+at)\s*(?:of|to|is|at|price)?\s*(rs\.?|₹|\$)\s*([\d,]+(?:\.\d+)?)', text, re.I)
+    if m_tp_curr:
+        sym = '$' if '$' in m_tp_curr.group(1) else '₹'
+        val = m_tp_curr.group(2).strip().rstrip(',.')
+        if len(val) >= 2:
+            return f"{sym}{val}"
+    m_tp_num = re.search(r'(?:target|tp)\s+(?:of|to|at)\s+([\d,]{3,}(?:\.\d+)?)', text, re.I)
+    if m_tp_num:
+        val = m_tp_num.group(1).strip().rstrip(',.')
+        return f"₹{val}"
+    m_rs = re.search(r'(rs\.?|₹|\$)\s*([\d,]+(?:\.\d+)?)\s*(?:target|price\s*target)', text, re.I)
+    if m_rs:
+        sym = '$' if '$' in m_rs.group(1) else '₹'
+        val = m_rs.group(2).strip().rstrip(',.')
+        if len(val) >= 2:
+            return f"{sym}{val}"
+    if re.search(r'\bbull\s+case\b', text, re.I):
+        return 'Bull Case'
+    return None
 
 def parse_radar_target(title, summary=''):
-    text = f"{title} {summary}"
-    m_up = re.search(r'(\d+%\s*upside)', text, re.I)
-    if m_up: return m_up.group(1).strip()
-    m_tp = re.search(r'(?:target|tp)\s*(?:of|to|is|at|price)?\s*(?:rs\.?|₹|inr)?\s*([\d,]+(?:\.\d+)?)', text, re.I)
-    if m_tp:
-        val = m_tp.group(1).strip().rstrip(',.')
-        if len(val) >= 2: return f"₹{val}"
-    m_rs = re.search(r'(?:rs\.?|₹)\s*([\d,]+(?:\.\d+)?)\s*(?:target|price\s*target)', text, re.I)
-    if m_rs:
-        val = m_rs.group(1).strip().rstrip(',.')
-        if len(val) >= 2: return f"₹{val}"
-    if re.search(r'\bbull\s+case\b', text, re.I): return 'Bull Case 2x'
-    return None
+    return _match_target_in_text(title) or _match_target_in_text(summary)
+
+def _short_stock_name(name):
+    if not name:
+        return name
+    name = re.sub(r'\s+(?:Ltd|Limited|Corp|Corporation|Inc|India|International)\b\.?', '', name, flags=re.I).strip()
+    return name
 
 def parse_radar_stock(title, summary=''):
     text = title
     t_low = text.lower()
     for k, v in COMPANY_TICKERS.items():
         if re.search(r'\b' + re.escape(k) + r'\b', t_low):
-            return v[1], v[0]
+            return _short_stock_name(v[1]), v[0]
     m = re.search(r'\b([A-Z][a-zA-Z0-9\s&]{2,25}?)\s+(?:shares?|share price|stock)\b', text)
     if m:
         c = m.group(1).strip()
-        if c.lower() not in ('top', 'hot', 'this', 'why', 'check', 'indian', 'us', 'global', 'these', 'why clsa', 'why ubs', 'why citi'):
-            return c, None
-    m2 = re.search(r'(?:Buy|Sell|Hold|Reduce|Accumulate)\s+([A-Z][a-zA-Z0-9\s&]{2,25}?)(?:;|\s*,\s*|\s+target|\s+share)', text)
+        if c.lower() not in ('top', 'hot', 'this', 'why', 'check', 'indian', 'us', 'global', 'these', 'why clsa', 'why ubs', 'why citi', 'these 2', 'top 2'):
+            return _short_stock_name(c), None
+    m2 = re.search(r'(?:Buy|Sell|Hold|Reduce|Accumulate|Reiterates)\s+([A-Z][a-zA-Z0-9\s&]{2,25}?)(?:;|\s*,\s*|\s+target|\s+share|\s+stock)', text)
     if m2:
-        return m2.group(1).strip(), None
+        return _short_stock_name(m2.group(1).strip()), None
     m3 = re.search(r'\b(Nifty(?:\s+50)?|Sensex|Bank\s+Nifty)\b', text, re.I)
     if m3:
         idx = m3.group(1)
@@ -1450,32 +1501,40 @@ def parse_radar_stock(title, summary=''):
     return None, None
 
 def extract_radar_call(story):
-    title = story.get('title', '').strip()
-    if not title: return None
-    summary = story.get('summary', '').strip()
-    text = f"{title} {summary}"
+    title = clean(story.get('title', '').strip())
+    if not title or RADAR_NOISE_EXCLUDE.search(title):
+        return None
+    summary = clean(story.get('summary', '').strip())
     
-    matched_brokerages = []
-    for name, rx in REPUTABLE_BROKERAGES:
-        if rx.search(text):
-            matched_brokerages.append(name)
-            
+    # Match brokerages in title first (highest precision)
+    matched_brokerages = [name for name, rx in REPUTABLE_BROKERAGES if rx.search(title)]
+    if not matched_brokerages and RADAR_CALL_SIGNAL.search(title):
+        # Fallback: check summary only if headline itself clearly signals a stock call/target
+        matched_brokerages = [name for name, rx in REPUTABLE_BROKERAGES if rx.search(summary)]
+        
     if not matched_brokerages:
-        if re.search(r'\b(brokerages?|analysts?|research\s+firm|brokerage\s+radar)\b', text, re.I) and \
-           re.search(r'\b(target|rating|buy|sell|hold|upgrade|downgrade|outperform|overweight)\b', text, re.I):
-            matched_brokerages.append('Brokerage Radar')
+        if re.search(r'\b(brokerages?|stocks\s+to\s+buy|target\s+price)\b', title, re.I) and RADAR_CALL_SIGNAL.search(title):
+            matched_brokerages.append('Street Consensus')
             
     if not matched_brokerages:
         return None
-        
+
+    # Require a call/rating/target signal in title or summary
+    if not (RADAR_CALL_SIGNAL.search(title) or RADAR_CALL_SIGNAL.search(summary)):
+        return None
+
     action_key, action_label, sentiment = parse_radar_action(title, summary)
     target = parse_radar_target(title, summary)
     stock_name, stock_symbol = parse_radar_stock(title, summary)
-    
+
+    # Filter out generic macro commentary with no stock AND no action/target
+    if not stock_name and action_key == 'NOTE' and not target:
+        return None
+
     pub_ts = story.get('published') or time.time()
     try:
         ist_dt = datetime.fromtimestamp(pub_ts, tz=timezone(timedelta(hours=5, minutes=30)))
-        pub_str = ist_dt.strftime('%d %b, %I:%M %p IST')
+        pub_str = ist_dt.strftime('%d %b, %I:%M %p')
     except Exception:
         pub_str = 'Today'
         
@@ -1485,7 +1544,7 @@ def extract_radar_call(story):
     return {
         'id': story.get('id') or hashlib.md5((story.get('url', '') or title).encode()).hexdigest()[:16],
         'title': title,
-        'summary': summary[:260],
+        'summary': summary[:220],
         'url': story.get('url', ''),
         'published': pub_ts,
         'published_str': pub_str,
@@ -1497,15 +1556,19 @@ def extract_radar_call(story):
         'action_label': action_label,
         'sentiment': sentiment,
         'target': target,
-        'stock': stock_name or 'Market / Sector',
+        'stock': stock_name or 'Multi / Sector',
         'symbol': stock_symbol
     }
 
 def refresh_radar(incoming_stories=None):
     global RADAR_DATA
     with RADAR_LOCK:
-        existing_calls = RADAR_DATA.get('calls', [])
-        calls_by_id = {c['id']: c for c in existing_calls}
+        # Re-validate existing calls to automatically prune noise when rules tighten
+        calls_by_id = {}
+        for old_c in RADAR_DATA.get('calls', []):
+            re_extracted = extract_radar_call(old_c)
+            if re_extracted:
+                calls_by_id[re_extracted['id']] = re_extracted
         
         candidates = list(incoming_stories or [])
         if not candidates and CACHE.get('stories'):
@@ -1528,7 +1591,7 @@ def refresh_radar(incoming_stories=None):
         for c in sorted_calls:
             b = c.get('brokerage', 'Other')
             broker_counts[b] = broker_counts.get(b, 0) + 1
-        top_brokers = sorted([{'name': k, 'count': v} for k, v in broker_counts.items()], key=lambda x: x['count'], reverse=True)[:8]
+        top_brokers = sorted([{'name': k, 'count': v} for k, v in broker_counts.items()], key=lambda x: x['count'], reverse=True)[:10]
         
         RADAR_DATA = {
             'updated': datetime.now(timezone.utc).isoformat(),
