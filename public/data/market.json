@@ -1,15 +1,15 @@
 {
-  "updated": "2026-11-12T16:22:05.720269+00:00",
+  "updated": "2026-11-12T22:25:29.871495+00:00",
   "tickers": [
     {
       "key": "SENSEX",
-      "quote_date": "2026-11-12",
+      "quote_date": "2026-11-11",
       "label": "Sensex",
       "price": "81,911",
-      "price_raw": 81911.0078,
+      "price_raw": 81911.01,
       "prev_close": 81879.3984,
       "prev_close_fmt": "81,879",
-      "change": 31.6094,
+      "change": 31.6116,
       "change_pct": 0.04,
       "direction": "up",
       "unit": "",
@@ -24,13 +24,13 @@
     },
     {
       "key": "NIFTY",
-      "quote_date": "2026-11-12",
+      "quote_date": "2026-11-11",
       "label": "Nifty 50",
       "price": "25,299",
-      "price_raw": 25299.3496,
+      "price_raw": 25299.35,
       "prev_close": 25255.0508,
       "prev_close_fmt": "25,255",
-      "change": 44.2988,
+      "change": 44.2992,
       "change_pct": 0.18,
       "direction": "up",
       "unit": "",
@@ -45,13 +45,13 @@
     },
     {
       "key": "INDIAVIX",
-      "quote_date": "2026-11-12",
+      "quote_date": "2026-11-11",
       "label": "India VIX",
       "price": "16.62",
-      "price_raw": 16.6175,
+      "price_raw": 16.618,
       "prev_close": 17.5325,
       "prev_close_fmt": "17.53",
-      "change": -0.915,
+      "change": -0.9145,
       "change_pct": -5.22,
       "direction": "down",
       "unit": "",
@@ -68,12 +68,12 @@
       "key": "GOLD",
       "quote_date": "2026-11-12",
       "label": "Gold",
-      "price": "3,881.30",
-      "price_raw": 3881.3,
+      "price": "3,881.70",
+      "price_raw": 3881.7,
       "prev_close": 3980.5,
       "prev_close_fmt": "3,980.50",
-      "change": -99.2,
-      "change_pct": -2.49,
+      "change": -98.8,
+      "change_pct": -2.48,
       "direction": "down",
       "unit": "USD/oz",
       "range_52w": {
@@ -82,19 +82,19 @@
         "low_fmt": "3,879.30",
         "high_fmt": "5,586.20",
         "pos_pct": 0.1,
-        "pct_from_high": -30.52
+        "pct_from_high": -30.51
       }
     },
     {
       "key": "SILVER",
       "quote_date": "2026-11-12",
       "label": "Silver",
-      "price": "50.22",
-      "price_raw": 50.22,
+      "price": "49.96",
+      "price_raw": 49.955,
       "prev_close": 51.425,
       "prev_close_fmt": "51.42",
-      "change": -1.205,
-      "change_pct": -2.34,
+      "change": -1.47,
+      "change_pct": -2.86,
       "direction": "down",
       "unit": "USD/oz",
       "range_52w": {
@@ -102,20 +102,20 @@
         "high": 121.3,
         "low_fmt": "48.12",
         "high_fmt": "121.30",
-        "pos_pct": 2.9,
-        "pct_from_high": -58.6
+        "pos_pct": 2.5,
+        "pct_from_high": -58.82
       }
     },
     {
       "key": "BRENT",
       "quote_date": "2026-11-12",
       "label": "Brent Crude",
-      "price": "93.76",
-      "price_raw": 93.76,
+      "price": "95.77",
+      "price_raw": 95.77,
       "prev_close": 91.29,
       "prev_close_fmt": "91.29",
-      "change": 2.47,
-      "change_pct": 2.71,
+      "change": 4.48,
+      "change_pct": 4.91,
       "direction": "up",
       "unit": "USD/bbl",
       "range_52w": {
@@ -123,20 +123,20 @@
         "high": 126.1,
         "low_fmt": "58.72",
         "high_fmt": "126.10",
-        "pos_pct": 52.0,
-        "pct_from_high": -25.65
+        "pos_pct": 55.0,
+        "pct_from_high": -24.05
       }
     },
     {
       "key": "WTI",
       "quote_date": "2026-11-12",
       "label": "WTI Crude",
-      "price": "86.87",
-      "price_raw": 86.87,
+      "price": "88.70",
+      "price_raw": 88.7,
       "prev_close": 85.27,
       "prev_close_fmt": "85.27",
-      "change": 1.6,
-      "change_pct": 1.88,
+      "change": 3.43,
+      "change_pct": 4.02,
       "direction": "up",
       "unit": "USD/bbl",
       "range_52w": {
@@ -144,40 +144,40 @@
         "high": 119.48,
         "low_fmt": "54.98",
         "high_fmt": "119.48",
-        "pos_pct": 49.4,
-        "pct_from_high": -27.29
+        "pos_pct": 52.3,
+        "pct_from_high": -25.76
       }
     },
     {
       "key": "NATGAS",
       "quote_date": "2026-11-12",
       "label": "Natural Gas",
-      "price": "3.27",
-      "price_raw": 3.265,
+      "price": "3.36",
+      "price_raw": 3.361,
       "prev_close": 3.268,
       "prev_close_fmt": "3.27",
-      "change": -0.003,
-      "change_pct": -0.09,
-      "direction": "down",
+      "change": 0.093,
+      "change_pct": 2.85,
+      "direction": "up",
       "unit": "USD/MMBtu",
       "range_52w": {
         "low": 2.48,
         "high": 7.83,
         "low_fmt": "2.48",
         "high_fmt": "7.83",
-        "pos_pct": 14.6,
-        "pct_from_high": -58.29
+        "pos_pct": 16.4,
+        "pct_from_high": -57.06
       }
     },
     {
       "key": "USDINR",
       "quote_date": "2026-11-12",
       "label": "INR / USD",
-      "price": "94.03",
-      "price_raw": 94.033,
+      "price": "94.04",
+      "price_raw": 94.04,
       "prev_close": 93.68,
       "prev_close_fmt": "93.68",
-      "change": 0.353,
+      "change": 0.36,
       "change_pct": 0.38,
       "direction": "up",
       "unit": "",
@@ -186,7 +186,7 @@
         "high": 97.05,
         "low_fmt": "85.86",
         "high_fmt": "97.05",
-        "pos_pct": 73.0,
+        "pos_pct": 73.1,
         "pct_from_high": -3.11
       }
     }
