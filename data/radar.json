@@ -1,6 +1,111 @@
 {
-  "updated": "2026-11-12T07:48:38.709301+00:00",
+  "updated": "2026-11-12T16:22:07.853909+00:00",
   "calls": [
+    {
+      "id": "ae9e3b9c4dfcc965",
+      "title": "Nvidia Hit By Seven Downgrades In 24 Hours As Jensen Huang's Exit Rattles Wall Street",
+      "summary": "Baird, Oppenheimer, Bernstein, Evercore ISI, William Blair, KeyBanc Capital Markets and Melius Research all moved Nvidia off their buy-equivalent ratings.",
+      "url": "https://www.ndtvprofit.com/markets/nvidia-hit-by-seven-downgrades-in-24-hours-as-jensen-huangs-exit-rattles-wall-street-12318623#publisher=newsstand",
+      "published": 1794496006.0,
+      "published_str": "12 Nov, 08:36 PM",
+      "source": "NDTV Profit",
+      "sources": [
+        {
+          "name": "NDTV Profit",
+          "url": "https://www.ndtvprofit.com/markets/nvidia-hit-by-seven-downgrades-in-24-hours-as-jensen-huangs-exit-rattles-wall-street-12318623#publisher=newsstand"
+        }
+      ],
+      "brokerage": "Bernstein",
+      "brokerages": [
+        "Bernstein",
+        "Baird"
+      ],
+      "action": "SELL",
+      "action_label": "Sell ▼",
+      "sentiment": "bearish",
+      "target": null,
+      "stock": "NVIDIA",
+      "symbol": "NVDA",
+      "market": "US"
+    },
+    {
+      "id": "1ca42ae611cf4136",
+      "title": "Nifty target at 26,200 as BofA tweaks India strategy; upgrades hospitals, telecom, downgrades two-wheelers",
+      "summary": "BofA Securities maintained its year-end Nifty target of 26,200, citing improving earnings and easing market risks. It favors large-cap stocks over small- and mid-caps, while warning that volatility, a weak monsoon and fi",
+      "url": "https://www.livemint.com/market/stock-market-news/nifty-target-at-26-200-as-bofa-tweaks-india-strategy-upgrades-hospitals-telecom-downgrades-twowheelers-11794474956038.html",
+      "published": 1794476286.0,
+      "published_str": "12 Nov, 03:08 PM",
+      "source": "Mint Markets",
+      "sources": [
+        {
+          "name": "Mint Markets",
+          "url": "https://www.livemint.com/market/stock-market-news/nifty-target-at-26-200-as-bofa-tweaks-india-strategy-upgrades-hospitals-telecom-downgrades-twowheelers-11794474956038.html"
+        }
+      ],
+      "brokerage": "BofA Securities",
+      "brokerages": [
+        "BofA Securities"
+      ],
+      "action": "SELL",
+      "action_label": "Sell ▼",
+      "sentiment": "bearish",
+      "target": "₹26,200",
+      "stock": "Nifty",
+      "symbol": "^NSEI",
+      "market": "India"
+    },
+    {
+      "id": "d54656b161fdfd95",
+      "title": "Down 27% in six months! This power stock could rally 36%, says ICICI Direct - Do you own it? Check target price",
+      "summary": "CESC shares swung sharply during Thursday's trading as volume surged, while the stock remained down nearly 28% over six months. ICICI Direct maintained a Buy rating with a ₹176 target, citing growth prospects and renewab",
+      "url": "https://www.livemint.com/market/stock-market-news/down-27-in-six-months-this-power-stock-could-rally-36-says-icici-direct-do-you-own-check-target-price-11794470175551.html",
+      "published": 1794473822.0,
+      "published_str": "12 Nov, 02:27 PM",
+      "source": "Mint Markets",
+      "sources": [
+        {
+          "name": "Mint Markets",
+          "url": "https://www.livemint.com/market/stock-market-news/down-27-in-six-months-this-power-stock-could-rally-36-says-icici-direct-do-you-own-check-target-price-11794470175551.html"
+        }
+      ],
+      "brokerage": "ICICI Securities",
+      "brokerages": [
+        "ICICI Securities"
+      ],
+      "action": "BUY",
+      "action_label": "Buy ▲",
+      "sentiment": "bullish",
+      "target": "₹176",
+      "stock": "This power",
+      "symbol": null,
+      "market": "India"
+    },
+    {
+      "id": "28f65b946d045cd7",
+      "title": "NSE shares hit fresh highs, rise over 2%; Nuvama sees 14% upside, calls the stock exchange a ‘compelling buy’",
+      "summary": "NSE shares rose more than 2% to a record ₹1,994.50 after Nuvama initiated coverage with a buy rating and a ₹2,220 target. The brokerage cited NSE’s dominant market share, liquidity advantage, technology investments and g",
+      "url": "https://www.livemint.com/market/stock-market-news/nse-shares-hit-fresh-highs-rise-over-2-nuvama-sees-14-upside-calls-the-stock-exchange-a-compelling-buy-11794468560614.html",
+      "published": 1794471414.0,
+      "published_str": "12 Nov, 01:46 PM",
+      "source": "Mint Markets",
+      "sources": [
+        {
+          "name": "Mint Markets",
+          "url": "https://www.livemint.com/market/stock-market-news/nse-shares-hit-fresh-highs-rise-over-2-nuvama-sees-14-upside-calls-the-stock-exchange-a-compelling-buy-11794468560614.html"
+        }
+      ],
+      "brokerage": "Nuvama",
+      "brokerages": [
+        "Nuvama"
+      ],
+      "action": "BUY",
+      "action_label": "Buy ▲",
+      "sentiment": "bullish",
+      "target": "14% Upside",
+      "stock": "NSE",
+      "symbol": null,
+      "market": "India"
+    },
     {
       "id": "aeb7ae2c7eac90e6",
       "title": "Lemon Tree Hotels shares gain as CLSA sees 42% upside on 2,000 keys target by this year",
@@ -13,14 +118,6 @@
         {
           "name": "CNBC-TV18",
           "url": "https://www.cnbctv18.com/market/lemon-tree-hotels-share-price-clsa-target-upside-buy-2000-keys-target-omaxe-contract-20032243.htm"
-        },
-        {
-          "name": "Zerodha Pulse",
-          "url": "https://www.ndtvprofit.com/markets/lemon-tree-idbi-capital-sees-up-to-37-percent-upside-on-strong-q2-earnings-check-target-price-12315798#publisher=newsstand"
-        },
-        {
-          "name": "NDTV Profit",
-          "url": "https://www.ndtvprofit.com/markets/lemon-tree-idbi-capital-sees-up-to-37-percent-upside-on-strong-q2-earnings-check-target-price-12315798#publisher=newsstand"
         }
       ],
       "brokerage": "CLSA",
@@ -849,12 +946,12 @@
     }
   ],
   "stats": {
-    "total": 32,
-    "bullish": 22,
-    "bearish": 7,
+    "total": 36,
+    "bullish": 24,
+    "bearish": 9,
     "neutral": 3,
-    "india": 28,
-    "us": 4,
+    "india": 31,
+    "us": 5,
     "top_brokerages": [
       {
         "name": "Street Consensus",
@@ -873,28 +970,28 @@
         "count": 3
       },
       {
+        "name": "Bernstein",
+        "count": 2
+      },
+      {
+        "name": "BofA Securities",
+        "count": 2
+      },
+      {
+        "name": "ICICI Securities",
+        "count": 2
+      },
+      {
+        "name": "Nuvama",
+        "count": 2
+      },
+      {
         "name": "JPMorgan",
         "count": 2
       },
       {
         "name": "Motilal Oswal",
         "count": 2
-      },
-      {
-        "name": "Morgan Stanley",
-        "count": 2
-      },
-      {
-        "name": "Baird",
-        "count": 2
-      },
-      {
-        "name": "Goldman Sachs",
-        "count": 1
-      },
-      {
-        "name": "Nuvama",
-        "count": 1
       }
     ]
   }
