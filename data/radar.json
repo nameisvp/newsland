@@ -1,6 +1,33 @@
 {
-  "updated": "2026-11-13T17:44:02.120783+00:00",
+  "updated": "2026-11-13T22:56:21.025199+00:00",
   "calls": [
+    {
+      "id": "67e11302688e06b0",
+      "title": "Wall Street Trims Nvidia Bets With Downgrades, Yet Stays Bullish On A 14% S&P Rally: Here's Why",
+      "summary": "HSBC turns cautious on Nvidia amid leadership uncertainty and export curbs, while Goldman Sachs expects the S&P 500 to gain 14% over the next 12 months.",
+      "url": "https://www.ndtvprofit.com/markets/hsbc-downgrades-nvidia-slashes-target-by-50-yet-goldman-sees-s-p-500-rallying-14-to-8-700-12324097#publisher=newsstand",
+      "published": 1794591452.0,
+      "published_str": "13 Nov, 11:07 PM",
+      "source": "NDTV Profit",
+      "sources": [
+        {
+          "name": "NDTV Profit",
+          "url": "https://www.ndtvprofit.com/markets/hsbc-downgrades-nvidia-slashes-target-by-50-yet-goldman-sees-s-p-500-rallying-14-to-8-700-12324097#publisher=newsstand"
+        }
+      ],
+      "brokerage": "Goldman Sachs",
+      "brokerages": [
+        "Goldman Sachs",
+        "HSBC"
+      ],
+      "action": "SELL",
+      "action_label": "Sell ▼",
+      "sentiment": "bearish",
+      "target": null,
+      "stock": "NVIDIA",
+      "symbol": "NVDA",
+      "market": "US"
+    },
     {
       "id": "4aff9e240deac60c",
       "title": "Why the data center slowdown concern is overblown. Two stocks to buy amid the fear",
@@ -1338,12 +1365,12 @@
     }
   ],
   "stats": {
-    "total": 50,
+    "total": 51,
     "bullish": 35,
-    "bearish": 11,
+    "bearish": 12,
     "neutral": 4,
     "india": 45,
-    "us": 5,
+    "us": 6,
     "top_brokerages": [
       {
         "name": "Street Consensus",
@@ -1374,15 +1401,15 @@
         "count": 3
       },
       {
+        "name": "Goldman Sachs",
+        "count": 2
+      },
+      {
         "name": "Nomura",
         "count": 2
       },
       {
         "name": "Bernstein",
-        "count": 2
-      },
-      {
-        "name": "BofA Securities",
         "count": 2
       }
     ]
