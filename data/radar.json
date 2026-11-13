@@ -1,6 +1,84 @@
 {
-  "updated": "2026-11-13T10:07:38.478692+00:00",
+  "updated": "2026-11-13T17:44:02.120783+00:00",
   "calls": [
+    {
+      "id": "4aff9e240deac60c",
+      "title": "Why the data center slowdown concern is overblown. Two stocks to buy amid the fear",
+      "summary": "Not one utility CEO we spoke with at the EEI conference is anticipating a slowdown in electricity growth expectations.",
+      "url": "https://www.cnbc.com/2026/11/13/data-center-slowdown-utility-stocks.html",
+      "published": 1794588880.0,
+      "published_str": "13 Nov, 10:24 PM",
+      "source": "CNBC World",
+      "sources": [
+        {
+          "name": "CNBC World",
+          "url": "https://www.cnbc.com/2026/11/13/data-center-slowdown-utility-stocks.html"
+        }
+      ],
+      "brokerage": "Street Consensus",
+      "brokerages": [
+        "Street Consensus"
+      ],
+      "action": "BUY",
+      "action_label": "Buy ▲",
+      "sentiment": "bullish",
+      "target": null,
+      "stock": "Multi / Sector",
+      "symbol": null,
+      "market": "India"
+    },
+    {
+      "id": "7184b1654f70405e",
+      "title": "BEML share price falls after hitting 52-week high: ICICI Direct sees 39% upside in defence PSU stock—should you buy?",
+      "summary": "BEML shares fell 1.23% on Friday but gained 7.64% for the week. ICICI Securities maintained a Buy rating and set a target price of ₹2,765, citing a strong rail and metro order pipeline and growth prospects. BEML’s Q2FY27",
+      "url": "https://www.livemint.com/market/stock-market-news/beml-share-price-falls-after-hitting-52-week-high-icici-direct-sees-39-upside-in-the-defence-psu-stock-should-you-buy-11794580770478.html",
+      "published": 1794586292.0,
+      "published_str": "13 Nov, 09:41 PM",
+      "source": "Mint Markets",
+      "sources": [
+        {
+          "name": "Mint Markets",
+          "url": "https://www.livemint.com/market/stock-market-news/beml-share-price-falls-after-hitting-52-week-high-icici-direct-sees-39-upside-in-the-defence-psu-stock-should-you-buy-11794580770478.html"
+        }
+      ],
+      "brokerage": "ICICI Securities",
+      "brokerages": [
+        "ICICI Securities"
+      ],
+      "action": "BUY",
+      "action_label": "Buy ▲",
+      "sentiment": "bullish",
+      "target": "39% Upside",
+      "stock": "BEML",
+      "symbol": null,
+      "market": "India"
+    },
+    {
+      "id": "bf8772c574b6eb62",
+      "title": "Bharti Airtel gets ₹2,400 target from Motilal Oswal on expected tariff hike",
+      "summary": "Siddhartha Khemka, Motilal Oswal Financial Services sees further upside in Bharti Airtel on a potential tariff hike and premiumisation, while NSE remains a long-term play on India's growing capital markets.",
+      "url": "https://www.cnbctv18.com/market/bharti-airtel-nse-motilal-oswal-target-price-tariff-hikes-alpha-article-20033183.htm",
+      "published": 1794566756.0,
+      "published_str": "13 Nov, 04:15 PM",
+      "source": "CNBC-TV18",
+      "sources": [
+        {
+          "name": "CNBC-TV18",
+          "url": "https://www.cnbctv18.com/market/bharti-airtel-nse-motilal-oswal-target-price-tariff-hikes-alpha-article-20033183.htm"
+        }
+      ],
+      "brokerage": "Motilal Oswal",
+      "brokerages": [
+        "Motilal Oswal"
+      ],
+      "action": "NOTE",
+      "action_label": "Coverage ●",
+      "sentiment": "neutral",
+      "target": "₹2,400",
+      "stock": "Multi / Sector",
+      "symbol": null,
+      "market": "India"
+    },
     {
       "id": "1544ebbb920f3759",
       "title": "Looking for stocks to buy for 2027? HDFC Bank, Meesho, Paytm, Park Medi, LG Electronics - Ventura's top picks revealed",
@@ -1260,16 +1338,16 @@
     }
   ],
   "stats": {
-    "total": 47,
-    "bullish": 33,
+    "total": 50,
+    "bullish": 35,
     "bearish": 11,
-    "neutral": 3,
-    "india": 42,
+    "neutral": 4,
+    "india": 45,
     "us": 5,
     "top_brokerages": [
       {
         "name": "Street Consensus",
-        "count": 9
+        "count": 10
       },
       {
         "name": "CLSA",
@@ -1280,11 +1358,15 @@
         "count": 5
       },
       {
-        "name": "Jefferies",
+        "name": "ICICI Securities",
+        "count": 4
+      },
+      {
+        "name": "Motilal Oswal",
         "count": 3
       },
       {
-        "name": "ICICI Securities",
+        "name": "Jefferies",
         "count": 3
       },
       {
@@ -1301,10 +1383,6 @@
       },
       {
         "name": "BofA Securities",
-        "count": 2
-      },
-      {
-        "name": "Nuvama",
         "count": 2
       }
     ]
