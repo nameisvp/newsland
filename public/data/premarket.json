@@ -1,8 +1,8 @@
 {
-  "updated": "2026-11-14T03:12:21.398503+00:00",
+  "updated": "2026-11-14T10:26:29.919863+00:00",
   "schema_version": 2,
   "is_live": false,
-  "quote_updated": "2026-11-14T03:12:21.398141+00:00",
+  "quote_updated": "2026-11-14T10:26:29.919312+00:00",
   "quote_date": "2026-11-13",
   "quote_source": "yfinance",
   "live_bias_label": "LATEST AVAILABLE QUOTE",
@@ -45,12 +45,12 @@
     "key": "BRENT",
     "quote_date": "2026-11-13",
     "label": "Brent Crude",
-    "price": "96.08",
-    "price_raw": 96.08,
+    "price": "95.84",
+    "price_raw": 95.84,
     "prev_close": 95.63,
     "prev_close_fmt": "95.63",
-    "change": 0.45,
-    "change_pct": 0.47,
+    "change": 0.21,
+    "change_pct": 0.22,
     "direction": "up",
     "unit": "USD/bbl",
     "range_52w": {
@@ -58,29 +58,29 @@
       "high": 126.1,
       "low_fmt": "58.72",
       "high_fmt": "126.10",
-      "pos_pct": 55.4,
-      "pct_from_high": -23.81
+      "pos_pct": 55.1,
+      "pct_from_high": -24.0
     }
   },
   "usdinr": {
     "key": "USDINR",
-    "quote_date": "2026-11-13",
+    "quote_date": "2026-11-14",
     "label": "INR / USD",
-    "price": "94.03",
-    "price_raw": 94.0338,
+    "price": "94.24",
+    "price_raw": 94.24,
     "prev_close": 94.04,
     "prev_close_fmt": "94.04",
-    "change": -0.0062,
-    "change_pct": -0.01,
-    "direction": "down",
+    "change": 0.2,
+    "change_pct": 0.21,
+    "direction": "up",
     "unit": "",
     "range_52w": {
       "low": 85.86,
       "high": 97.05,
       "low_fmt": "85.86",
       "high_fmt": "97.05",
-      "pos_pct": 73.0,
-      "pct_from_high": -3.11
+      "pos_pct": 74.9,
+      "pct_from_high": -2.9
     }
   },
   "pivots": {
@@ -154,7 +154,7 @@
       "num": "02",
       "title": "Crude and input costs",
       "bias": "Context",
-      "desc": "Latest Brent quote: 96.08 USD/bbl (+0.47%). Higher crude can raise import and input costs; lower crude can ease them. This quote alone does not establish the cause of the move."
+      "desc": "Latest Brent quote: 95.84 USD/bbl (+0.22%). Higher crude can raise import and input costs; lower crude can ease them. This quote alone does not establish the cause of the move."
     },
     {
       "num": "03",
@@ -170,12 +170,12 @@
         "key": "BRENT",
         "quote_date": "2026-11-13",
         "label": "Brent Crude",
-        "price": "96.08",
-        "price_raw": 96.08,
+        "price": "95.84",
+        "price_raw": 95.84,
         "prev_close": 95.63,
         "prev_close_fmt": "95.63",
-        "change": 0.45,
-        "change_pct": 0.47,
+        "change": 0.21,
+        "change_pct": 0.22,
         "direction": "up",
         "unit": "USD/bbl",
         "range_52w": {
@@ -183,20 +183,20 @@
           "high": 126.1,
           "low_fmt": "58.72",
           "high_fmt": "126.10",
-          "pos_pct": 55.4,
-          "pct_from_high": -23.81
+          "pos_pct": 55.1,
+          "pct_from_high": -24.0
         }
       },
       "wti": {
         "key": "WTI",
         "quote_date": "2026-11-13",
         "label": "WTI Crude",
-        "price": "88.92",
-        "price_raw": 88.92,
+        "price": "88.56",
+        "price_raw": 88.56,
         "prev_close": 88.25,
         "prev_close_fmt": "88.25",
-        "change": 0.67,
-        "change_pct": 0.76,
+        "change": 0.31,
+        "change_pct": 0.35,
         "direction": "up",
         "unit": "USD/bbl",
         "range_52w": {
@@ -204,20 +204,20 @@
           "high": 119.48,
           "low_fmt": "54.98",
           "high_fmt": "119.48",
-          "pos_pct": 52.6,
-          "pct_from_high": -25.58
+          "pos_pct": 52.1,
+          "pct_from_high": -25.88
         }
       },
       "natgas": {
         "key": "NATGAS",
         "quote_date": "2026-11-13",
         "label": "Natural Gas",
-        "price": "3.24",
-        "price_raw": 3.242,
+        "price": "3.23",
+        "price_raw": 3.23,
         "prev_close": 3.332,
         "prev_close_fmt": "3.33",
-        "change": -0.09,
-        "change_pct": -2.7,
+        "change": -0.102,
+        "change_pct": -3.06,
         "direction": "down",
         "unit": "USD/MMBtu",
         "range_52w": {
@@ -225,20 +225,20 @@
           "high": 7.83,
           "low_fmt": "2.48",
           "high_fmt": "7.83",
-          "pos_pct": 14.2,
-          "pct_from_high": -58.58
+          "pos_pct": 14.0,
+          "pct_from_high": -58.73
         }
       },
       "gold": {
         "key": "GOLD",
         "quote_date": "2026-11-13",
         "label": "Gold",
-        "price": "3,887.60",
-        "price_raw": 3887.6001,
+        "price": "3,886.30",
+        "price_raw": 3886.3,
         "prev_close": 3917.1001,
         "prev_close_fmt": "3,917.10",
-        "change": -29.5,
-        "change_pct": -0.75,
+        "change": -30.8,
+        "change_pct": -0.79,
         "direction": "down",
         "unit": "USD/oz",
         "range_52w": {
@@ -246,20 +246,20 @@
           "high": 5586.2,
           "low_fmt": "3,856.70",
           "high_fmt": "5,586.20",
-          "pos_pct": 1.8,
-          "pct_from_high": -30.41
+          "pos_pct": 1.7,
+          "pct_from_high": -30.43
         }
       },
       "silver": {
         "key": "SILVER",
         "quote_date": "2026-11-13",
         "label": "Silver",
-        "price": "48.65",
-        "price_raw": 48.65,
+        "price": "49.03",
+        "price_raw": 49.031,
         "prev_close": 50.245,
         "prev_close_fmt": "50.24",
-        "change": -1.595,
-        "change_pct": -3.17,
+        "change": -1.214,
+        "change_pct": -2.42,
         "direction": "down",
         "unit": "USD/oz",
         "range_52w": {
@@ -267,40 +267,35 @@
           "high": 121.3,
           "low_fmt": "48.12",
           "high_fmt": "121.30",
-          "pos_pct": 0.7,
-          "pct_from_high": -59.89
+          "pos_pct": 1.2,
+          "pct_from_high": -59.58
         }
       },
       "catalyst": {
-        "title": "Oil prices set for second straight weekly decline on growing signs of supply surplus",
-        "url": "https://www.livemint.com/market/oil-prices-set-for-second-straight-weekly-decline-on-growing-signs-of-supply-surplus-11794595284142.html",
+        "title": "Germany Has an Edge in a Lower Oil Price World: Taking Stock",
+        "url": "https://www.livemint.com/market/germany-has-an-edge-in-a-lower-oil-price-world-taking-stock-11794636529660.html",
         "why_it_matters": "Crude affects India’s import bill and energy-sensitive sectors; the headline does not establish a clear price direction.",
         "source": ""
       }
     },
     "earnings": [
       {
-        "title": "Mars bets on India as a top-five growth market, targets $1.2 billion-plus revenue by 2030",
-        "url": "https://www.livemint.com/companies/news/mars-bets-on-india-as-top-five-growth-market-targets-1-2-billion-plus-revenue-dog-cat-food-vet-services-snacks-11794548363309.html",
+        "title": "Patanjali Foods Q2 Results: Profit Falls 19% To Rs 420 Crore Despite 16% Revenue Growth",
+        "url": "https://www.ndtvprofit.com/markets/patanjali-foods-q2-results-profit-falls-19-to-rs-420-crore-despite-16-revenue-growth-12326157#publisher=newsstand",
         "companies": [],
         "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
         "source": ""
       },
       {
-        "title": "Earnings Central: From Tata Motors, Eicher and Manipal Health to Jubilant Pharmova, the hits and misses",
-        "url": "https://www.cnbctv18.com/market/earnings/earnings-central-from-tata-motors-eicher-and-manipal-health-to-jubilant-pharmova-the-hits-and-misses-20033805.htm",
-        "companies": [
-          {
-            "name": "Tata Motors",
-            "symbol": "tata motors"
-          }
-        ],
+        "title": "Sammaan Capital Q2 Results: Profit edges up to ₹312 crore, core income turns negative",
+        "url": "https://www.cnbctv18.com/market/sammaan-capital-q2-results-share-price-profit-core-income-loss-aum-loans-nii-20033987.htm",
+        "companies": [],
         "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
         "source": ""
       },
       {
-        "title": "Jubilant Pharmova Q2 Results: Net profit falls as sterile injectables, radiopharma earnings decline",
-        "url": "https://www.cnbctv18.com/market/stocks/jubilant-pharmova-share-price-q2-results-net-profit-falls-as-sterile-injectables-radiopharma-earnings-decline-20033764.htm",
+        "title": "Earnings call transcript: CMS Info Systems posts record Q2 2027 services revenue",
+        "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-cms-info-systems-posts-record-q2-2027-services-revenue-93CH-5027262",
         "companies": [],
         "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
         "source": ""
@@ -325,9 +320,9 @@
         }
       },
       "catalyst": {
-        "title": "Fed's Jefferson Says Inflation Will Determine Rate Decisions",
-        "url": "https://www.ndtvprofit.com/markets/feds-jefferson-says-inflation-will-determine-rate-decisions-12324898#publisher=newsstand",
-        "why_it_matters": "Guides global liquidity dynamics, US Dollar Index (DXY) trajectory, and foreign institutional (FII) capital allocations.",
+        "title": "Nvidia has worst week since Trump tariff selloff as Huang exits",
+        "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/nvidia-has-worst-week-since-trump-tariff-selloff-as-huang-exits/articleshow/135822623.cms",
+        "why_it_matters": "Alters market structure, compliance mandates, capital allocation rules, and retail derivative trading liquidity.",
         "source": ""
       }
     }
