@@ -1,6 +1,84 @@
 {
-  "updated": "2026-11-14T10:26:31.784428+00:00",
+  "updated": "2026-11-14T16:42:38.319858+00:00",
   "calls": [
+    {
+      "id": "df907859af747d11",
+      "title": "Small-cap stock rallies 70% in a year: Motilal Oswal sees another 47% upside | Should you buy? Check target price",
+      "summary": "GNG Electronics shares rose 0.91% to ₹577.10 on Friday after early-week losses. Motilal Oswal maintained a Buy rating and ₹840 target, citing the company’s distribution scale, expanding network and demand for affordable",
+      "url": "https://www.livemint.com/market/stock-market-news/smallcap-stock-rallies-70-in-a-year-motilal-oswal-sees-another-47-upside-should-you-buy-check-target-price-11794666328017.html",
+      "published": 1794669396.0,
+      "published_str": "14 Nov, 08:46 PM",
+      "source": "Mint Markets",
+      "sources": [
+        {
+          "name": "Mint Markets",
+          "url": "https://www.livemint.com/market/stock-market-news/smallcap-stock-rallies-70-in-a-year-motilal-oswal-sees-another-47-upside-should-you-buy-check-target-price-11794666328017.html"
+        }
+      ],
+      "brokerage": "Motilal Oswal",
+      "brokerages": [
+        "Motilal Oswal"
+      ],
+      "action": "BUY",
+      "action_label": "Buy ▲",
+      "sentiment": "bullish",
+      "target": "47% Upside",
+      "stock": "Multi / Sector",
+      "symbol": null,
+      "market": "India"
+    },
+    {
+      "id": "1d5d3bc337b06238",
+      "title": "Dividend king PSU stock: Down 23% in 6 months! Nuvama sees 42% upside; target price, rationale",
+      "summary": "NMDC shares fell 1.76% to ₹69.90 on Friday after its second-quarter EBITDA declined 3% year over year to ₹19.4 billion, below expectations. Nuvama retained a Buy rating and raised its target price to ₹100, citing normali",
+      "url": "https://www.livemint.com/market/stock-market-news/dividend-king-psu-stock-down-23-in-6-months-nuvama-sees-42-upside-target-price-rationale-11794660044292.html",
+      "published": 1794665470.0,
+      "published_str": "14 Nov, 07:41 PM",
+      "source": "Mint Markets",
+      "sources": [
+        {
+          "name": "Mint Markets",
+          "url": "https://www.livemint.com/market/stock-market-news/dividend-king-psu-stock-down-23-in-6-months-nuvama-sees-42-upside-target-price-rationale-11794660044292.html"
+        }
+      ],
+      "brokerage": "Nuvama",
+      "brokerages": [
+        "Nuvama"
+      ],
+      "action": "BUY",
+      "action_label": "Buy ▲",
+      "sentiment": "bullish",
+      "target": "42% Upside",
+      "stock": "Dividend king PSU",
+      "symbol": null,
+      "market": "India"
+    },
+    {
+      "id": "0576863305c7b0d6",
+      "title": "Dividend stock to buy: TD Power shares rally 369% in 3 years, more upside ahead? Check target price before record date",
+      "summary": "TD Power Systems will be in focus ahead of its November 18 dividend record date. The board approved a dividend of ₹0.65 per share. Strong Q2 results, a robust order book and upgraded guidance have supported the stock, wh",
+      "url": "https://www.livemint.com/market/stock-market-news/dividend-stock-to-buy-td-power-shares-rally-369-in-3-years-more-upside-ahead-check-target-price-before-record-date-11794648803654.html",
+      "published": 1794652037.0,
+      "published_str": "14 Nov, 03:57 PM",
+      "source": "Mint Markets",
+      "sources": [
+        {
+          "name": "Mint Markets",
+          "url": "https://www.livemint.com/market/stock-market-news/dividend-stock-to-buy-td-power-shares-rally-369-in-3-years-more-upside-ahead-check-target-price-before-record-date-11794648803654.html"
+        }
+      ],
+      "brokerage": "Street Consensus",
+      "brokerages": [
+        "Street Consensus"
+      ],
+      "action": "BUY",
+      "action_label": "Buy ▲",
+      "sentiment": "bullish",
+      "target": null,
+      "stock": "Dividend",
+      "symbol": null,
+      "market": "India"
+    },
     {
       "id": "05a7f38a6ac6effc",
       "title": "Around 600% jump in 5 years: Citi maintains 'buy' on Maharatna defence PSU HAL for up to 28% - Check target, rationale",
@@ -1413,16 +1491,16 @@
     }
   ],
   "stats": {
-    "total": 53,
-    "bullish": 37,
+    "total": 56,
+    "bullish": 40,
     "bearish": 12,
     "neutral": 4,
-    "india": 47,
+    "india": 50,
     "us": 6,
     "top_brokerages": [
       {
         "name": "Street Consensus",
-        "count": 10
+        "count": 11
       },
       {
         "name": "Citi",
@@ -1433,11 +1511,15 @@
         "count": 6
       },
       {
+        "name": "Motilal Oswal",
+        "count": 4
+      },
+      {
         "name": "ICICI Securities",
         "count": 4
       },
       {
-        "name": "Motilal Oswal",
+        "name": "Nuvama",
         "count": 3
       },
       {
@@ -1454,10 +1536,6 @@
       },
       {
         "name": "Nomura",
-        "count": 2
-      },
-      {
-        "name": "Bernstein",
         "count": 2
       }
     ]
