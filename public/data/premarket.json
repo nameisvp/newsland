@@ -1,9 +1,9 @@
 {
-  "updated": "2026-11-13T22:56:20.000404+00:00",
+  "updated": "2026-11-14T03:12:21.398503+00:00",
   "schema_version": 2,
   "is_live": false,
-  "quote_updated": "2026-11-13T22:56:20.000076+00:00",
-  "quote_date": "2026-11-12",
+  "quote_updated": "2026-11-14T03:12:21.398141+00:00",
+  "quote_date": "2026-11-13",
   "quote_source": "yfinance",
   "live_bias_label": "LATEST AVAILABLE QUOTE",
   "bias_label": "LATEST AVAILABLE QUOTE",
@@ -19,9 +19,9 @@
     "trend": "FII Selling / DII Absorbing"
   },
   "vix": {
-    "price": "15.49",
+    "price": "15.50",
     "change": "-1.09",
-    "change_pct": "-6.59%",
+    "change_pct": "-6.56%",
     "regime": "Normal Volatility"
   },
   "overnight": {
@@ -66,54 +66,54 @@
     "key": "USDINR",
     "quote_date": "2026-11-13",
     "label": "INR / USD",
-    "price": "94.23",
-    "price_raw": 94.23,
+    "price": "94.03",
+    "price_raw": 94.0338,
     "prev_close": 94.04,
     "prev_close_fmt": "94.04",
-    "change": 0.19,
-    "change_pct": 0.2,
-    "direction": "up",
+    "change": -0.0062,
+    "change_pct": -0.01,
+    "direction": "down",
     "unit": "",
     "range_52w": {
       "low": 85.86,
       "high": 97.05,
       "low_fmt": "85.86",
       "high_fmt": "97.05",
-      "pos_pct": 74.8,
-      "pct_from_high": -2.91
+      "pos_pct": 73.0,
+      "pct_from_high": -3.11
     }
   },
   "pivots": {
     "nifty": {
-      "pivot": 25276,
-      "s1": 25167,
-      "r1": 25408,
-      "s2": 25034,
-      "r2": 25518,
-      "date": "2026-11-12"
+      "pivot": 25148,
+      "s1": 25050,
+      "r1": 25242,
+      "s2": 24956,
+      "r2": 25340,
+      "date": "2026-11-13"
     },
     "banknifty": {
-      "pivot": 61262,
-      "s1": 60979,
-      "r1": 61802,
-      "s2": 60440,
-      "r2": 62085,
-      "date": "2026-11-12"
+      "pivot": 61038,
+      "s1": 60776,
+      "r1": 61296,
+      "s2": 60518,
+      "r2": 61558,
+      "date": "2026-11-13"
     }
   },
   "posture": {
-    "dma50": 23311,
-    "dma50_fmt": "23,311",
-    "pct_dma50": 8.53,
+    "dma50": 23332,
+    "dma50_fmt": "23,332",
+    "pct_dma50": 7.77,
     "dma200": 23992,
     "dma200_fmt": "23,992",
-    "pct_dma200": 5.45,
+    "pct_dma200": 4.8,
     "high52": 26373,
     "high52_fmt": "26,373",
     "low52": 22180,
     "low52_fmt": "22,180",
-    "pct_from_high52": -4.07,
-    "pos_52w": 74.4,
+    "pct_from_high52": -4.66,
+    "pos_52w": 70.7,
     "regime": "STRUCTURAL UPTREND"
   },
   "sector_breadth": {
@@ -160,10 +160,10 @@
       "num": "03",
       "title": "Market posture & breadth",
       "bias": "Context",
-      "desc": "Nifty is 4.1% below 52W high (26,373), trading 5.5% above 200-DMA (23,992). Sector participation: 0/5 sectors in green (Top: FMCG -0.01%)."
+      "desc": "Nifty is 4.7% below 52W high (26,373), trading 4.8% above 200-DMA (23,992). Sector participation: 0/5 sectors in green (Top: FMCG -0.01%)."
     }
   ],
-  "trader_take": "Latest available Nifty quote: 25,144 (-0.61% versus previous close). Latest Nifty reading is below the 25,276 pivot. Next calculated resistance above this reading: 25,408. Pivots are calculated references, not confirmed support or resistance. Market regime: STRUCTURAL UPTREND (-4.1% from 52W peak, +5.5% vs 200-DMA). Sector breadth: 0/5 sectors in green.",
+  "trader_take": "Latest available Nifty quote: 25,144 (-0.61% versus previous close). Latest Nifty reading is below the 25,148 pivot. Next calculated resistance above this reading: 25,242. Pivots are calculated references, not confirmed support or resistance. Market regime: STRUCTURAL UPTREND (-4.7% from 52W peak, +4.8% vs 200-DMA). Sector breadth: 0/5 sectors in green.",
   "postmarket_pillars": {
     "commodities": {
       "brent": {
@@ -280,6 +280,13 @@
     },
     "earnings": [
       {
+        "title": "Mars bets on India as a top-five growth market, targets $1.2 billion-plus revenue by 2030",
+        "url": "https://www.livemint.com/companies/news/mars-bets-on-india-as-top-five-growth-market-targets-1-2-billion-plus-revenue-dog-cat-food-vet-services-snacks-11794548363309.html",
+        "companies": [],
+        "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
+        "source": ""
+      },
+      {
         "title": "Earnings Central: From Tata Motors, Eicher and Manipal Health to Jubilant Pharmova, the hits and misses",
         "url": "https://www.cnbctv18.com/market/earnings/earnings-central-from-tata-motors-eicher-and-manipal-health-to-jubilant-pharmova-the-hits-and-misses-20033805.htm",
         "companies": [
@@ -292,15 +299,8 @@
         "source": ""
       },
       {
-        "title": "Deepak Fertilisers Q2 Results: Profit Surges 85% To Rs 394 Crore As Margins Expand, Revenue Up 11%",
-        "url": "https://www.ndtvprofit.com/markets/deepak-fertilisers-q2-results-profit-surges-85-to-rs-394-crore-as-margins-expand-revenue-up-11-12323802#publisher=newsstand",
-        "companies": [],
-        "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
-        "source": ""
-      },
-      {
-        "title": "CMS Info Q2 Results: Cash Logistics Firm's Profit Climbs As Income Crosses Rs 660 Crore",
-        "url": "https://www.ndtvprofit.com/business/cms-info-q2-results-cash-logistics-firms-profit-climbs-as-income-crosses-rs-660-crore-12324148#publisher=newsstand",
+        "title": "Jubilant Pharmova Q2 Results: Net profit falls as sterile injectables, radiopharma earnings decline",
+        "url": "https://www.cnbctv18.com/market/stocks/jubilant-pharmova-share-price-q2-results-net-profit-falls-as-sterile-injectables-radiopharma-earnings-decline-20033764.htm",
         "companies": [],
         "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
         "source": ""
@@ -325,8 +325,8 @@
         }
       },
       "catalyst": {
-        "title": "US Treasury chief says Fed should not hike rates over energy shock tied to Iran war",
-        "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/us-treasury-chief-says-fed-should-not-hike-rates-over-energy-shock-tied-to-iran-war/articleshow/135806960.cms",
+        "title": "Fed's Jefferson Says Inflation Will Determine Rate Decisions",
+        "url": "https://www.ndtvprofit.com/markets/feds-jefferson-says-inflation-will-determine-rate-decisions-12324898#publisher=newsstand",
         "why_it_matters": "Guides global liquidity dynamics, US Dollar Index (DXY) trajectory, and foreign institutional (FII) capital allocations.",
         "source": ""
       }
