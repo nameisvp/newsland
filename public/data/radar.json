@@ -1,6 +1,84 @@
 {
-  "updated": "2026-11-15T07:50:06.295265+00:00",
+  "updated": "2026-11-15T15:01:40.365945+00:00",
   "calls": [
+    {
+      "id": "ecbbbe95465dbd66",
+      "title": "Jefferies reiterates Summit Therapeutics stock rating after FDA setback",
+      "summary": "",
+      "url": "https://www.investing.com/news/analyst-ratings/jefferies-reiterates-summit-therapeutics-stock-rating-after-fda-setback-93CH-5027978",
+      "published": 1794753422.0,
+      "published_str": "15 Nov, 08:07 PM",
+      "source": "Investing.com",
+      "sources": [
+        {
+          "name": "Investing.com",
+          "url": "https://www.investing.com/news/analyst-ratings/jefferies-reiterates-summit-therapeutics-stock-rating-after-fda-setback-93CH-5027978"
+        }
+      ],
+      "brokerage": "Jefferies",
+      "brokerages": [
+        "Jefferies"
+      ],
+      "action": "HOLD",
+      "action_label": "Hold / Neutral ●",
+      "sentiment": "neutral",
+      "target": null,
+      "stock": "Summit Therapeutics",
+      "symbol": null,
+      "market": "India"
+    },
+    {
+      "id": "44728e2d0a468429",
+      "title": "Goldman Sachs turns bullish on India, sees 19% returns for Asian stocks in 2027",
+      "summary": "Goldman Sachs has upgraded India to overweight and expects the MSCI Asia ex-Japan Index to return 19% in 2027, driven primarily by earnings growth, Bloomberg reported.",
+      "url": "https://www.cnbctv18.com/market/stocks/goldman-sachs-turns-bullish-on-india-sees-19-returns-for-asian-stocks-in-2027-20034338.htm",
+      "published": 1794734593.0,
+      "published_str": "15 Nov, 02:53 PM",
+      "source": "CNBC-TV18",
+      "sources": [
+        {
+          "name": "CNBC-TV18",
+          "url": "https://www.cnbctv18.com/market/stocks/goldman-sachs-turns-bullish-on-india-sees-19-returns-for-asian-stocks-in-2027-20034338.htm"
+        }
+      ],
+      "brokerage": "Goldman Sachs",
+      "brokerages": [
+        "Goldman Sachs"
+      ],
+      "action": "BUY",
+      "action_label": "Buy ▲",
+      "sentiment": "bullish",
+      "target": null,
+      "stock": "Multi / Sector",
+      "symbol": null,
+      "market": "India"
+    },
+    {
+      "id": "c55bfd652d4452c5",
+      "title": "Powerful solar stock to generate further returns? 33% up in 6 months, Motilal Oswal sees 40% more; do you own it? Target",
+      "summary": "Fujiyama Power Systems shares fell 2.05% on Friday, extending recent losses, though they remain up 33% over six months. Motilal Oswal expects earnings growth in the second half of FY27, citing expanding distribution, new",
+      "url": "https://www.livemint.com/market/stock-market-news/midcap-solar-stock-rallies-33-in-six-months-motilal-oswal-sees-40-upside-do-you-own-it-check-target-price-11794669986419.html",
+      "published": 1794730707.0,
+      "published_str": "15 Nov, 01:48 PM",
+      "source": "Mint Markets",
+      "sources": [
+        {
+          "name": "Mint Markets",
+          "url": "https://www.livemint.com/market/stock-market-news/midcap-solar-stock-rallies-33-in-six-months-motilal-oswal-sees-40-upside-do-you-own-it-check-target-price-11794669986419.html"
+        }
+      ],
+      "brokerage": "Motilal Oswal",
+      "brokerages": [
+        "Motilal Oswal"
+      ],
+      "action": "NOTE",
+      "action_label": "Coverage ●",
+      "sentiment": "neutral",
+      "target": null,
+      "stock": "Powerful solar",
+      "symbol": null,
+      "market": "India"
+    },
     {
       "id": "048ddc5d5b392a22",
       "title": "ABB India shares 36% up in 2026: Time to buy? Rating upgrade boost and target price hike by Motilal Oswal - Details here",
@@ -1647,11 +1725,11 @@
     }
   ],
   "stats": {
-    "total": 62,
-    "bullish": 45,
+    "total": 65,
+    "bullish": 46,
     "bearish": 12,
-    "neutral": 5,
-    "india": 56,
+    "neutral": 7,
+    "india": 59,
     "us": 6,
     "top_brokerages": [
       {
@@ -1660,7 +1738,7 @@
       },
       {
         "name": "Motilal Oswal",
-        "count": 6
+        "count": 7
       },
       {
         "name": "Citi",
@@ -1675,11 +1753,15 @@
         "count": 5
       },
       {
-        "name": "Nuvama",
+        "name": "Jefferies",
+        "count": 4
+      },
+      {
+        "name": "Goldman Sachs",
         "count": 3
       },
       {
-        "name": "Jefferies",
+        "name": "Nuvama",
         "count": 3
       },
       {
@@ -1688,10 +1770,6 @@
       },
       {
         "name": "Choice Broking",
-        "count": 2
-      },
-      {
-        "name": "Goldman Sachs",
         "count": 2
       }
     ]
