@@ -1,8 +1,8 @@
 {
-  "updated": "2026-11-15T01:01:13.232402+00:00",
+  "updated": "2026-11-15T07:50:04.919102+00:00",
   "schema_version": 2,
   "is_live": false,
-  "quote_updated": "2026-11-15T01:01:13.232029+00:00",
+  "quote_updated": "2026-11-15T07:50:04.918730+00:00",
   "quote_date": "2026-11-13",
   "quote_source": "yfinance",
   "live_bias_label": "LATEST AVAILABLE QUOTE",
@@ -64,7 +64,7 @@
   },
   "usdinr": {
     "key": "USDINR",
-    "quote_date": "2026-11-14",
+    "quote_date": "2026-11-15",
     "label": "INR / USD",
     "price": "94.24",
     "price_raw": 94.24,
@@ -254,12 +254,12 @@
         "key": "SILVER",
         "quote_date": "2026-11-13",
         "label": "Silver",
-        "price": "49.03",
-        "price_raw": 49.031,
+        "price": "49.12",
+        "price_raw": 49.121,
         "prev_close": 50.245,
         "prev_close_fmt": "50.24",
-        "change": -1.214,
-        "change_pct": -2.42,
+        "change": -1.124,
+        "change_pct": -2.24,
         "direction": "down",
         "unit": "USD/oz",
         "range_52w": {
@@ -267,44 +267,35 @@
           "high": 121.3,
           "low_fmt": "48.12",
           "high_fmt": "121.30",
-          "pos_pct": 1.2,
-          "pct_from_high": -59.58
+          "pos_pct": 1.4,
+          "pct_from_high": -59.5
         }
       },
       "catalyst": {
-        "title": "Dividend Stocks To Watch This Week: Ashok Leyland, Cochin Shipyard, MRF, Oil India, Power Finance Corporation, And Many More",
-        "url": "https://www.ndtvprofit.com/markets/dividend-stocks-to-watch-this-week-ashok-leyland-cochin-shipyard-mrf-oil-india-power-finance-corporation-and-many-more-12327939#publisher=newsstand",
-        "why_it_matters": "Crude affects India’s import bill and energy-sensitive sectors; the headline does not establish a clear price direction.",
+        "title": "Iran claims fresh strike on U.S. base as Hormuz shipping crisis deepens",
+        "url": "https://www.investing.com/news/economy-news/iran-claims-fresh-strike-on-us-base-as-hormuz-shipping-crisis-deepens-5027672",
+        "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
         "source": ""
       }
     },
     "earnings": [
       {
-        "title": "CMS Info Q2 Results: Profit Rises 10% As Services Revenue Hits Record For Fourth Straight Quarter",
-        "url": "https://www.ndtvprofit.com/business/cms-info-q2-results-cash-logistics-firms-profit-climbs-as-income-crosses-rs-660-crore-12324148#publisher=newsstand",
+        "title": "Hero Motors Q2 Results: Net Profit Surges 65%, Margin Expands",
+        "url": "https://www.ndtvprofit.com/markets/hero-motors-q2-results-net-profit-surges-65-percent-margin-expands-12328851#publisher=newsstand",
         "companies": [],
         "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
         "source": ""
       },
       {
-        "title": "Dividend Stocks To Watch This Week: Ashok Leyland, Cochin Shipyard, MRF, Oil India, Power Finance Corporation, And Many More",
-        "url": "https://www.ndtvprofit.com/markets/dividend-stocks-to-watch-this-week-ashok-leyland-cochin-shipyard-mrf-oil-india-power-finance-corporation-and-many-more-12327939#publisher=newsstand",
-        "companies": [
-          {
-            "name": "Oil India",
-            "symbol": "oil india"
-          },
-          {
-            "name": "MRF",
-            "symbol": "mrf"
-          }
-        ],
-        "why_it_matters": "Crude affects India’s import bill and energy-sensitive sectors; the headline does not establish a clear price direction.",
+        "title": "Ashok Leyland Q2 Results: Profit Rises 12.7% To Rs 869 Crore, Dividend Declared; Check Record Date",
+        "url": "https://www.ndtvprofit.com/markets/ashok-leyland-q2-results-profit-rises-12-7-to-rs-869-crore-revenue-up-39-dividend-declared-check-record-date-12328711#publisher=newsstand",
+        "companies": [],
+        "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
         "source": ""
       },
       {
-        "title": "RHI Magnesita Q2 net profit jumps 62 pc to over Rs 62 cr",
-        "url": "https://economictimes.indiatimes.com/markets/stocks/earnings/rhi-magnesita-q2-net-profit-jumps-62-pc-to-over-rs-62-cr/articleshow/135830890.cms",
+        "title": "LICO Materials targets ₹450-500 crore revenue in current fiscal: CEO",
+        "url": "https://www.business-standard.com/companies/news/lico-materials-targets-450-500-crore-revenue-in-current-fiscal-ceo-126111500160_1.html",
         "companies": [],
         "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
         "source": ""
@@ -329,9 +320,9 @@
         }
       },
       "catalyst": {
-        "title": "SpaceX's S&P 500 Bid Gets New Life As Musk Pitches Tesla Merger",
-        "url": "https://www.ndtvprofit.com/business/spacexs-s-p-500-bid-gets-new-life-as-musk-pitches-tesla-merger-12327806#publisher=newsstand",
-        "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
+        "title": "Crypto news: Bitcoin price falls to $64,962, lowest since July as investors favour AI stocks, factor likely Fed hike",
+        "url": "https://www.livemint.com/market/cryptocurrency/crypto-bitcoin-price-today-falls-64962-15-nov-lowest-since-july-investors-pull-out-favour-ai-stocks-factor-fed-rate-hike-11794711853135.html",
+        "why_it_matters": "Guides global liquidity dynamics, US Dollar Index (DXY) trajectory, and foreign institutional (FII) capital allocations.",
         "source": ""
       }
     }
