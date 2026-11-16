@@ -1,16 +1,16 @@
 {
-  "updated": "2026-11-16T00:17:07.825569+00:00",
+  "updated": "2026-11-16T07:10:11.115868+00:00",
   "schema_version": 2,
   "is_live": false,
-  "quote_updated": "2026-11-16T00:17:07.825158+00:00",
-  "quote_date": "2026-11-13",
+  "quote_updated": "2026-11-16T07:10:11.115526+00:00",
+  "quote_date": "2026-11-16",
   "quote_source": "yfinance",
   "live_bias_label": "LATEST AVAILABLE QUOTE",
   "bias_label": "LATEST AVAILABLE QUOTE",
-  "live_nifty_price": "25,144",
-  "live_pts": -155,
-  "live_pct": -0.61,
-  "nifty_prev_close": "25,299",
+  "live_nifty_price": "25,249",
+  "live_pts": 105,
+  "live_pct": 0.42,
+  "nifty_prev_close": "25,144",
   "fii_dii": {
     "date": "08 Oct 2026 (Prev Close)",
     "fii_net_cr": -2845.6,
@@ -19,9 +19,9 @@
     "trend": "FII Selling / DII Absorbing"
   },
   "vix": {
-    "price": "15.50",
-    "change": "-1.09",
-    "change_pct": "-6.56%",
+    "price": "15.79",
+    "change": "+0.26",
+    "change_pct": "+1.69%",
     "regime": "Normal Volatility"
   },
   "overnight": {
@@ -43,44 +43,44 @@
   },
   "brent": {
     "key": "BRENT",
-    "quote_date": "2026-11-15",
+    "quote_date": "2026-11-16",
     "label": "Brent Crude",
-    "price": "95.57",
-    "price_raw": 95.57,
-    "prev_close": 95.84,
-    "prev_close_fmt": "95.84",
-    "change": -0.27,
-    "change_pct": -0.28,
-    "direction": "down",
+    "price": "96.41",
+    "price_raw": 96.41,
+    "prev_close": 95.27,
+    "prev_close_fmt": "95.27",
+    "change": 1.14,
+    "change_pct": 1.2,
+    "direction": "up",
     "unit": "USD/bbl",
     "range_52w": {
       "low": 58.72,
       "high": 126.1,
       "low_fmt": "58.72",
       "high_fmt": "126.10",
-      "pos_pct": 54.7,
-      "pct_from_high": -24.21
+      "pos_pct": 55.9,
+      "pct_from_high": -23.54
     }
   },
   "usdinr": {
     "key": "USDINR",
-    "quote_date": "2026-11-15",
+    "quote_date": "2026-11-16",
     "label": "INR / USD",
-    "price": "94.23",
-    "price_raw": 94.23,
-    "prev_close": 94.04,
-    "prev_close_fmt": "94.04",
-    "change": 0.19,
-    "change_pct": 0.2,
-    "direction": "up",
+    "price": "94.02",
+    "price_raw": 94.02,
+    "prev_close": 94.23,
+    "prev_close_fmt": "94.23",
+    "change": -0.21,
+    "change_pct": -0.22,
+    "direction": "down",
     "unit": "",
     "range_52w": {
       "low": 85.86,
       "high": 97.05,
       "low_fmt": "85.86",
       "high_fmt": "97.05",
-      "pos_pct": 74.8,
-      "pct_from_high": -2.91
+      "pos_pct": 72.9,
+      "pct_from_high": -3.13
     }
   },
   "pivots": {
@@ -102,46 +102,46 @@
     }
   },
   "posture": {
-    "dma50": 23332,
-    "dma50_fmt": "23,332",
-    "pct_dma50": 7.77,
+    "dma50": 23356,
+    "dma50_fmt": "23,356",
+    "pct_dma50": 8.11,
     "dma200": 23992,
     "dma200_fmt": "23,992",
-    "pct_dma200": 4.8,
+    "pct_dma200": 5.24,
     "high52": 26373,
     "high52_fmt": "26,373",
     "low52": 22180,
     "low52_fmt": "22,180",
-    "pct_from_high52": -4.66,
-    "pos_52w": 70.7,
+    "pct_from_high52": -4.26,
+    "pos_52w": 73.2,
     "regime": "STRUCTURAL UPTREND"
   },
   "sector_breadth": {
-    "advances": 0,
+    "advances": 2,
     "total": 5,
     "sectors": [
       {
         "name": "FMCG",
-        "pct": -0.01
-      },
-      {
-        "name": "IT",
-        "pct": -0.72
+        "pct": 1.28
       },
       {
         "name": "Bank",
-        "pct": -0.79
+        "pct": 0.83
+      },
+      {
+        "name": "IT",
+        "pct": -0.38
       },
       {
         "name": "Metal",
-        "pct": -0.97
+        "pct": -1.2
       },
       {
         "name": "Auto",
-        "pct": -1.07
+        "pct": -1.33
       }
     ],
-    "summary": "0/5 sectors in green"
+    "summary": "2/5 sectors in green"
   },
   "session_drivers": [
     {
@@ -154,70 +154,70 @@
       "num": "02",
       "title": "Crude and input costs",
       "bias": "Context",
-      "desc": "Latest Brent quote: 95.57 USD/bbl (-0.28%). Higher crude can raise import and input costs; lower crude can ease them. This quote alone does not establish the cause of the move."
+      "desc": "Latest Brent quote: 96.41 USD/bbl (+1.20%). Higher crude can raise import and input costs; lower crude can ease them. This quote alone does not establish the cause of the move."
     },
     {
       "num": "03",
       "title": "Market posture & breadth",
       "bias": "Context",
-      "desc": "Nifty is 4.7% below 52W high (26,373), trading 4.8% above 200-DMA (23,992). Sector participation: 0/5 sectors in green (Top: FMCG -0.01%)."
+      "desc": "Nifty is 4.3% below 52W high (26,373), trading 5.2% above 200-DMA (23,992). Sector participation: 2/5 sectors in green (Top: FMCG +1.28%)."
     }
   ],
-  "trader_take": "Latest available Nifty quote: 25,144 (-0.61% versus previous close). Latest Nifty reading is below the 25,148 pivot. Next calculated resistance above this reading: 25,242. Pivots are calculated references, not confirmed support or resistance. Market regime: STRUCTURAL UPTREND (-4.7% from 52W peak, +4.8% vs 200-DMA). Sector breadth: 0/5 sectors in green.",
+  "trader_take": "Latest available Nifty quote: 25,249 (+0.42% versus previous close). Latest Nifty reading is above the 25,148 pivot. Next calculated resistance above this reading: 25,340. Pivots are calculated references, not confirmed support or resistance. Market regime: STRUCTURAL UPTREND (-4.3% from 52W peak, +5.2% vs 200-DMA). Sector breadth: 2/5 sectors in green.",
   "postmarket_pillars": {
     "commodities": {
       "brent": {
         "key": "BRENT",
-        "quote_date": "2026-11-15",
+        "quote_date": "2026-11-16",
         "label": "Brent Crude",
-        "price": "95.57",
-        "price_raw": 95.57,
-        "prev_close": 95.84,
-        "prev_close_fmt": "95.84",
-        "change": -0.27,
-        "change_pct": -0.28,
-        "direction": "down",
+        "price": "96.41",
+        "price_raw": 96.41,
+        "prev_close": 95.27,
+        "prev_close_fmt": "95.27",
+        "change": 1.14,
+        "change_pct": 1.2,
+        "direction": "up",
         "unit": "USD/bbl",
         "range_52w": {
           "low": 58.72,
           "high": 126.1,
           "low_fmt": "58.72",
           "high_fmt": "126.10",
-          "pos_pct": 54.7,
-          "pct_from_high": -24.21
+          "pos_pct": 55.9,
+          "pct_from_high": -23.54
         }
       },
       "wti": {
         "key": "WTI",
-        "quote_date": "2026-11-15",
+        "quote_date": "2026-11-16",
         "label": "WTI Crude",
-        "price": "88.54",
-        "price_raw": 88.54,
-        "prev_close": 88.56,
-        "prev_close_fmt": "88.56",
-        "change": -0.02,
-        "change_pct": -0.02,
-        "direction": "down",
+        "price": "89.12",
+        "price_raw": 89.12,
+        "prev_close": 88.24,
+        "prev_close_fmt": "88.24",
+        "change": 0.88,
+        "change_pct": 1.0,
+        "direction": "up",
         "unit": "USD/bbl",
         "range_52w": {
           "low": 54.98,
           "high": 119.48,
           "low_fmt": "54.98",
           "high_fmt": "119.48",
-          "pos_pct": 52.0,
-          "pct_from_high": -25.9
+          "pos_pct": 52.9,
+          "pct_from_high": -25.41
         }
       },
       "natgas": {
         "key": "NATGAS",
-        "quote_date": "2026-11-15",
+        "quote_date": "2026-11-16",
         "label": "Natural Gas",
-        "price": "3.17",
-        "price_raw": 3.167,
-        "prev_close": 3.23,
-        "prev_close_fmt": "3.23",
-        "change": -0.063,
-        "change_pct": -1.95,
+        "price": "3.11",
+        "price_raw": 3.112,
+        "prev_close": 3.154,
+        "prev_close_fmt": "3.15",
+        "change": -0.042,
+        "change_pct": -1.33,
         "direction": "down",
         "unit": "USD/MMBtu",
         "range_52w": {
@@ -225,41 +225,41 @@
           "high": 7.83,
           "low_fmt": "2.48",
           "high_fmt": "7.83",
-          "pos_pct": 12.8,
-          "pct_from_high": -59.54
+          "pos_pct": 11.8,
+          "pct_from_high": -60.24
         }
       },
       "gold": {
         "key": "GOLD",
-        "quote_date": "2026-11-15",
+        "quote_date": "2026-11-16",
         "label": "Gold",
-        "price": "3,897.80",
-        "price_raw": 3897.8,
-        "prev_close": 3886.3,
-        "prev_close_fmt": "3,886.30",
-        "change": 11.5,
-        "change_pct": 0.3,
-        "direction": "up",
+        "price": "3,855.20",
+        "price_raw": 3855.2,
+        "prev_close": 3886.5,
+        "prev_close_fmt": "3,886.50",
+        "change": -31.3,
+        "change_pct": -0.81,
+        "direction": "down",
         "unit": "USD/oz",
         "range_52w": {
           "low": 3856.7,
           "high": 5586.2,
           "low_fmt": "3,856.70",
           "high_fmt": "5,586.20",
-          "pos_pct": 2.4,
-          "pct_from_high": -30.22
+          "pos_pct": 0.0,
+          "pct_from_high": -30.99
         }
       },
       "silver": {
         "key": "SILVER",
-        "quote_date": "2026-11-15",
+        "quote_date": "2026-11-16",
         "label": "Silver",
-        "price": "48.86",
-        "price_raw": 48.86,
-        "prev_close": 49.121,
-        "prev_close_fmt": "49.12",
-        "change": -0.261,
-        "change_pct": -0.53,
+        "price": "47.42",
+        "price_raw": 47.425,
+        "prev_close": 47.55,
+        "prev_close_fmt": "47.55",
+        "change": -0.125,
+        "change_pct": -0.26,
         "direction": "down",
         "unit": "USD/oz",
         "range_52w": {
@@ -267,46 +267,36 @@
           "high": 121.3,
           "low_fmt": "48.12",
           "high_fmt": "121.30",
-          "pos_pct": 1.0,
-          "pct_from_high": -59.72
+          "pos_pct": 0.0,
+          "pct_from_high": -60.9
         }
       },
       "catalyst": {
-        "title": "Gold, silver prices outlook: Inflation data, Fed signals and West Asia tensions to guide bullion this week",
-        "url": "https://www.cnbctv18.com/market/commodities/gold-silver-price-outlook-inflation-data-fed-west-asia-20034448.htm",
-        "why_it_matters": "Guides global liquidity dynamics, US Dollar Index (DXY) trajectory, and foreign institutional (FII) capital allocations.",
+        "title": "Stock markets rally in early trade led by foreign fund inflows, lower crude oil",
+        "url": "https://www.thehindu.com/business/stock-markets-rally-in-early-trade-led-by-foreign-fund-inflows-lower-crude-oil/article71706819.ece",
+        "why_it_matters": "Crude affects India’s import bill and energy-sensitive sectors; the headline does not establish a clear price direction.",
         "source": ""
       }
     },
     "earnings": [
       {
-        "title": "Wall Street Week Ahead: Nvidia earnings, Anthropic IPO, Federal Reserve minutes, retail sales - Top things to watch",
-        "url": "https://www.livemint.com/market/stock-market-news/wall-street-week-ahead-nvidia-earnings-anthropic-ipo-federal-reserve-minutes-retail-sales-top-things-to-watch-11794763105921.html",
-        "companies": [
-          {
-            "name": "Nvidia",
-            "symbol": "nvidia"
-          }
-        ],
-        "why_it_matters": "Guides global liquidity dynamics, US Dollar Index (DXY) trajectory, and foreign institutional (FII) capital allocations.",
-        "source": ""
-      },
-      {
-        "title": "Japan Q3 GDP unexpectedly shrinks as slowing exports, weak spending weigh",
-        "url": "https://www.investing.com/news/economic-indicators/japan-q3-gdp-unexpectedly-shrinks-as-slowing-exports-weak-spending-weigh-5028204",
+        "title": "Kaynes Tech shares fall 14% after Q2 results miss, prior financials being restated",
+        "url": "https://www.cnbctv18.com/market/kaynes-tech-share-price-q2-result-reaction-financials-restated-stake-sale-earnings-miss-fy27-guidance-cash-flow-buy-sell-20034601.htm",
         "companies": [],
-        "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
+        "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
         "source": ""
       },
       {
-        "title": "Tata Motors PV shares are a 'sell' candidate after Q2 results, Motilal Oswal says after cutting target",
-        "url": "https://www.cnbctv18.com/market/tata-motors-pv-share-price-q2-result-reaction-buy-sell-motilal-cuts-target-eps-estimates-jlr-headwinds-20034512.htm",
-        "companies": [
-          {
-            "name": "Tata Motors",
-            "symbol": "tata motors"
-          }
-        ],
+        "title": "Skyways Air zooms 9% as Q2 PAT jumps 130% YoY, but remains below IPO price",
+        "url": "https://www.business-standard.com/markets/news/skyways-air-share-price-zooms-9-as-q2-pat-jumps-130-yoy-but-remains-below-ipo-price-126111600857_1.html",
+        "companies": [],
+        "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
+        "source": ""
+      },
+      {
+        "title": "Eicher Motors shares vroom like its Bullet, stock price jumps over 3%; what brokerages say post Q2; Buy or avoid? Target",
+        "url": "https://www.livemint.com/market/stock-market-news/eicher-motors-shares-vroom-like-its-bullet-stock-price-jumps-over-3-what-brokerages-say-post-q2-buy-or-avoid-target-11794804317886.html",
+        "companies": [],
         "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
         "source": ""
       }
@@ -330,9 +320,9 @@
         }
       },
       "catalyst": {
-        "title": "Wall Street Week Ahead: Nvidia earnings, Anthropic IPO, Federal Reserve minutes, retail sales - Top things to watch",
-        "url": "https://www.livemint.com/market/stock-market-news/wall-street-week-ahead-nvidia-earnings-anthropic-ipo-federal-reserve-minutes-retail-sales-top-things-to-watch-11794763105921.html",
-        "why_it_matters": "Guides global liquidity dynamics, US Dollar Index (DXY) trajectory, and foreign institutional (FII) capital allocations.",
+        "title": "India’s wholesale inflation rises to 12.29% in October",
+        "url": "https://www.investing.com/news/economic-indicators/indias-wholesale-inflation-rises-to-1229-in-october-93CH-5028458",
+        "why_it_matters": "Key determinant of central bank interest rate paths; elevated prints restrict policy easing and compress real yields.",
         "source": ""
       }
     }
