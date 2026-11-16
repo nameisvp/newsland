@@ -1,8 +1,8 @@
 {
-  "updated": "2026-11-15T20:23:59.616740+00:00",
+  "updated": "2026-11-16T00:17:07.825569+00:00",
   "schema_version": 2,
   "is_live": false,
-  "quote_updated": "2026-11-15T20:23:59.616361+00:00",
+  "quote_updated": "2026-11-16T00:17:07.825158+00:00",
   "quote_date": "2026-11-13",
   "quote_source": "yfinance",
   "live_bias_label": "LATEST AVAILABLE QUOTE",
@@ -43,23 +43,23 @@
   },
   "brent": {
     "key": "BRENT",
-    "quote_date": "2026-11-13",
+    "quote_date": "2026-11-15",
     "label": "Brent Crude",
-    "price": "95.84",
-    "price_raw": 95.84,
-    "prev_close": 95.63,
-    "prev_close_fmt": "95.63",
-    "change": 0.21,
-    "change_pct": 0.22,
-    "direction": "up",
+    "price": "95.57",
+    "price_raw": 95.57,
+    "prev_close": 95.84,
+    "prev_close_fmt": "95.84",
+    "change": -0.27,
+    "change_pct": -0.28,
+    "direction": "down",
     "unit": "USD/bbl",
     "range_52w": {
       "low": 58.72,
       "high": 126.1,
       "low_fmt": "58.72",
       "high_fmt": "126.10",
-      "pos_pct": 55.1,
-      "pct_from_high": -24.0
+      "pos_pct": 54.7,
+      "pct_from_high": -24.21
     }
   },
   "usdinr": {
@@ -154,7 +154,7 @@
       "num": "02",
       "title": "Crude and input costs",
       "bias": "Context",
-      "desc": "Latest Brent quote: 95.84 USD/bbl (+0.22%). Higher crude can raise import and input costs; lower crude can ease them. This quote alone does not establish the cause of the move."
+      "desc": "Latest Brent quote: 95.57 USD/bbl (-0.28%). Higher crude can raise import and input costs; lower crude can ease them. This quote alone does not establish the cause of the move."
     },
     {
       "num": "03",
@@ -168,56 +168,56 @@
     "commodities": {
       "brent": {
         "key": "BRENT",
-        "quote_date": "2026-11-13",
+        "quote_date": "2026-11-15",
         "label": "Brent Crude",
-        "price": "95.84",
-        "price_raw": 95.84,
-        "prev_close": 95.63,
-        "prev_close_fmt": "95.63",
-        "change": 0.21,
-        "change_pct": 0.22,
-        "direction": "up",
+        "price": "95.57",
+        "price_raw": 95.57,
+        "prev_close": 95.84,
+        "prev_close_fmt": "95.84",
+        "change": -0.27,
+        "change_pct": -0.28,
+        "direction": "down",
         "unit": "USD/bbl",
         "range_52w": {
           "low": 58.72,
           "high": 126.1,
           "low_fmt": "58.72",
           "high_fmt": "126.10",
-          "pos_pct": 55.1,
-          "pct_from_high": -24.0
+          "pos_pct": 54.7,
+          "pct_from_high": -24.21
         }
       },
       "wti": {
         "key": "WTI",
-        "quote_date": "2026-11-13",
+        "quote_date": "2026-11-15",
         "label": "WTI Crude",
-        "price": "88.56",
-        "price_raw": 88.56,
-        "prev_close": 88.25,
-        "prev_close_fmt": "88.25",
-        "change": 0.31,
-        "change_pct": 0.35,
-        "direction": "up",
+        "price": "88.54",
+        "price_raw": 88.54,
+        "prev_close": 88.56,
+        "prev_close_fmt": "88.56",
+        "change": -0.02,
+        "change_pct": -0.02,
+        "direction": "down",
         "unit": "USD/bbl",
         "range_52w": {
           "low": 54.98,
           "high": 119.48,
           "low_fmt": "54.98",
           "high_fmt": "119.48",
-          "pos_pct": 52.1,
-          "pct_from_high": -25.88
+          "pos_pct": 52.0,
+          "pct_from_high": -25.9
         }
       },
       "natgas": {
         "key": "NATGAS",
-        "quote_date": "2026-11-13",
+        "quote_date": "2026-11-15",
         "label": "Natural Gas",
-        "price": "3.23",
-        "price_raw": 3.23,
-        "prev_close": 3.332,
-        "prev_close_fmt": "3.33",
-        "change": -0.102,
-        "change_pct": -3.06,
+        "price": "3.17",
+        "price_raw": 3.167,
+        "prev_close": 3.23,
+        "prev_close_fmt": "3.23",
+        "change": -0.063,
+        "change_pct": -1.95,
         "direction": "down",
         "unit": "USD/MMBtu",
         "range_52w": {
@@ -225,41 +225,41 @@
           "high": 7.83,
           "low_fmt": "2.48",
           "high_fmt": "7.83",
-          "pos_pct": 14.0,
-          "pct_from_high": -58.73
+          "pos_pct": 12.8,
+          "pct_from_high": -59.54
         }
       },
       "gold": {
         "key": "GOLD",
-        "quote_date": "2026-11-13",
+        "quote_date": "2026-11-15",
         "label": "Gold",
-        "price": "3,886.30",
-        "price_raw": 3886.3,
-        "prev_close": 3917.1001,
-        "prev_close_fmt": "3,917.10",
-        "change": -30.8,
-        "change_pct": -0.79,
-        "direction": "down",
+        "price": "3,897.80",
+        "price_raw": 3897.8,
+        "prev_close": 3886.3,
+        "prev_close_fmt": "3,886.30",
+        "change": 11.5,
+        "change_pct": 0.3,
+        "direction": "up",
         "unit": "USD/oz",
         "range_52w": {
           "low": 3856.7,
           "high": 5586.2,
           "low_fmt": "3,856.70",
           "high_fmt": "5,586.20",
-          "pos_pct": 1.7,
-          "pct_from_high": -30.43
+          "pos_pct": 2.4,
+          "pct_from_high": -30.22
         }
       },
       "silver": {
         "key": "SILVER",
-        "quote_date": "2026-11-13",
+        "quote_date": "2026-11-15",
         "label": "Silver",
-        "price": "49.12",
-        "price_raw": 49.121,
-        "prev_close": 50.245,
-        "prev_close_fmt": "50.24",
-        "change": -1.124,
-        "change_pct": -2.24,
+        "price": "48.86",
+        "price_raw": 48.86,
+        "prev_close": 49.121,
+        "prev_close_fmt": "49.12",
+        "change": -0.261,
+        "change_pct": -0.53,
         "direction": "down",
         "unit": "USD/oz",
         "range_52w": {
@@ -267,8 +267,8 @@
           "high": 121.3,
           "low_fmt": "48.12",
           "high_fmt": "121.30",
-          "pos_pct": 1.4,
-          "pct_from_high": -59.5
+          "pos_pct": 1.0,
+          "pct_from_high": -59.72
         }
       },
       "catalyst": {
@@ -292,22 +292,22 @@
         "source": ""
       },
       {
-        "title": "Stock to buy after Q2 Results 2026: Up 70% in YTD! Should you buy retail stock after strong guidance? Target, stop-loss",
-        "url": "https://www.livemint.com/market/stock-market-news/stock-to-buy-after-q2-results-2026-up-70-in-ytd-should-you-buy-this-retail-stock-after-strong-growth-guidance-target-11794751254602.html",
+        "title": "Japan Q3 GDP unexpectedly shrinks as slowing exports, weak spending weigh",
+        "url": "https://www.investing.com/news/economic-indicators/japan-q3-gdp-unexpectedly-shrinks-as-slowing-exports-weak-spending-weigh-5028204",
         "companies": [],
-        "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
+        "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
         "source": ""
       },
       {
-        "title": "PSU dividend this week Nov 16-20: Cochin Shipyard, Power Finance Corp, SCI to Oil India - Check record dates and returns",
-        "url": "https://www.livemint.com/market/stock-market-news/psu-dividend-this-week-nov-16-20-cochin-shipyard-power-finance-corp-sci-to-oil-india-check-record-dates-and-returns-11794735494353.html",
+        "title": "Tata Motors PV shares are a 'sell' candidate after Q2 results, Motilal Oswal says after cutting target",
+        "url": "https://www.cnbctv18.com/market/tata-motors-pv-share-price-q2-result-reaction-buy-sell-motilal-cuts-target-eps-estimates-jlr-headwinds-20034512.htm",
         "companies": [
           {
-            "name": "Oil India",
-            "symbol": "oil india"
+            "name": "Tata Motors",
+            "symbol": "tata motors"
           }
         ],
-        "why_it_matters": "Crude affects India’s import bill and energy-sensitive sectors; the headline does not establish a clear price direction.",
+        "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
         "source": ""
       }
     ],
