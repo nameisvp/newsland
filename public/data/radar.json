@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-16T16:59:55.025871+00:00",
+  "updated": "2026-11-17T00:47:54.252717+00:00",
   "calls": [
     {
       "id": "7505b5093510b71c",
@@ -54,6 +54,32 @@
       "market": "US"
     },
     {
+      "id": "f95e92fd88d23f36",
+      "title": "Morgan Stanley turns bullish on global stocks, targets S&P 500 at 8,700",
+      "summary": "Morgan Stanley has upgraded global equities to maximum overweight, citing favorable valuations for risk assets in the coming years. It projects an S&P 500 target of 8,700 for 2027, reflecting a significant increase from",
+      "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/morgan-stanley-raises-global-equities-to-maximum-overweight-on-cheap-valuations-earnings-strength/articleshow/135888237.cms",
+      "published": 1794830228.0,
+      "published_str": "16 Nov, 05:27 PM",
+      "source": "ET Markets",
+      "sources": [
+        {
+          "name": "ET Markets",
+          "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/morgan-stanley-raises-global-equities-to-maximum-overweight-on-cheap-valuations-earnings-strength/articleshow/135888237.cms"
+        }
+      ],
+      "brokerage": "Morgan Stanley",
+      "brokerages": [
+        "Morgan Stanley"
+      ],
+      "action": "BUY",
+      "action_label": "Buy ▲",
+      "sentiment": "bullish",
+      "target": "₹8,700",
+      "stock": "Multi / Sector",
+      "symbol": null,
+      "market": "US"
+    },
+    {
       "id": "1c139c4fc3a59208",
       "title": "13% rally in 2 weeks, but 67% upside still left? InCred bullish on this small cap stock - Do you own? Check target price",
       "summary": "Techno Electric reported strong Q2 FY27 results, with revenue rising 31.4% and EBITDA 63% year on year. InCred Equities maintained a Buy rating, citing data centre growth potential and projecting nearly 67% upside.",
@@ -77,6 +103,32 @@
       "target": "67% Upside",
       "stock": "Multi / Sector",
       "symbol": null,
+      "market": "India"
+    },
+    {
+      "id": "b8b16de1c0e86ec2",
+      "title": "Morgan Stanley sees Sensex at 95K, an upside of 16%, by December 2027",
+      "summary": "Morgan Stanley expects improving corporate earnings, domestic flows and low foreign investor positioning to support equities, with financials, consumer discretionary and industrials favoured",
+      "url": "https://www.business-standard.com/markets/news/morgan-stanley-sensex-target-95000-december-2027-indian-equities-126111601258_1.html",
+      "published": 1794824022.0,
+      "published_str": "16 Nov, 03:43 PM",
+      "source": "Business Standard",
+      "sources": [
+        {
+          "name": "Business Standard",
+          "url": "https://www.business-standard.com/markets/news/morgan-stanley-sensex-target-95000-december-2027-indian-equities-126111601258_1.html"
+        }
+      ],
+      "brokerage": "Morgan Stanley",
+      "brokerages": [
+        "Morgan Stanley"
+      ],
+      "action": "NOTE",
+      "action_label": "Coverage ●",
+      "sentiment": "neutral",
+      "target": null,
+      "stock": "Sensex",
+      "symbol": "^BSESN",
       "market": "India"
     },
     {
@@ -355,6 +407,18 @@
         {
           "name": "Business Standard",
           "url": "https://www.business-standard.com/markets/news/tata-motors-pv-shares-plunge-9-after-q2-results-brokerages-cut-target-126111600451_1.html"
+        },
+        {
+          "name": "CNBC-TV18",
+          "url": "https://www.cnbctv18.com/market/tata-motors-pv-share-price-q2-result-reaction-buy-sell-motilal-cuts-target-eps-estimates-jlr-headwinds-20034512.htm"
+        },
+        {
+          "name": "Mint Markets",
+          "url": "https://www.livemint.com/market/stock-market-news/tata-motors-pv-vs-eicher-motors-which-auto-stock-is-set-to-race-ahead-and-which-should-you-buy-after-q2-results-11794815971549.html"
+        },
+        {
+          "name": "Mint Companies",
+          "url": "https://www.livemint.com/companies/news/pb-balaji-drove-tata-motors-out-of-debt-jlr-is-dragging-it-back-in-11794823794702.html"
         }
       ],
       "brokerage": "Street Consensus",
@@ -2224,12 +2288,12 @@
     }
   ],
   "stats": {
-    "total": 84,
-    "bullish": 61,
+    "total": 86,
+    "bullish": 62,
     "bearish": 15,
-    "neutral": 8,
-    "india": 77,
-    "us": 7,
+    "neutral": 9,
+    "india": 78,
+    "us": 8,
     "top_brokerages": [
       {
         "name": "Street Consensus",
@@ -2244,16 +2308,16 @@
         "count": 7
       },
       {
+        "name": "Morgan Stanley",
+        "count": 7
+      },
+      {
         "name": "Citi",
         "count": 7
       },
       {
         "name": "CLSA",
         "count": 6
-      },
-      {
-        "name": "Morgan Stanley",
-        "count": 5
       },
       {
         "name": "ICICI Securities",
