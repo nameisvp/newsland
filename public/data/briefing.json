@@ -1,21 +1,37 @@
 {
-  "updated": "2026-11-17T17:51:15.459186+00:00",
+  "updated": "2026-11-18T00:02:51.185220+00:00",
   "stories": [
     {
-      "id": "0b25937913edb1b1",
-      "title": "US stock market today: Dow, S&P 500, Nasdaq slip ahead of Nvidia earnings",
-      "url": "https://www.cnbctv18.com/market/us-stock-market-today-dow-jones-nasdaq-nvidia-earnings-anthropic-ipo-20036213.htm",
-      "published": 1794936731.0,
+      "id": "253e7d14485663e5",
+      "title": "Dow Jones falls 1,600 points in two sessions, but futures rebound after Nvidia results",
+      "url": "https://www.cnbctv18.com/market/dow-jones-snp-500-nasdaq-sell-off-futures-rebound-nvidia-results-anthropic-ipo-pricing-bearish-banks-20036341.htm",
+      "published": 1794959102.0,
       "region": "India",
       "official": false,
       "sources": [
         {
           "name": "CNBC-TV18",
-          "url": "https://www.cnbctv18.com/market/us-stock-market-today-dow-jones-nasdaq-nvidia-earnings-anthropic-ipo-20036213.htm"
+          "url": "https://www.cnbctv18.com/market/dow-jones-snp-500-nasdaq-sell-off-futures-rebound-nvidia-results-anthropic-ipo-pricing-bearish-banks-20036341.htm"
+        },
+        {
+          "name": "Zerodha Pulse",
+          "url": "https://www.ndtvprofit.com/markets/nvidia-q3-earnings-ai-chipmaker-posts-record-115-billion-revenue-q4-guidance-beats-street-estimates-12341325#publisher=newsstand"
+        },
+        {
+          "name": "NDTV Profit",
+          "url": "https://www.ndtvprofit.com/markets/nvidia-q3-earnings-ai-chipmaker-posts-record-115-billion-revenue-q4-guidance-beats-street-estimates-12341325#publisher=newsstand"
+        },
+        {
+          "name": "Investing.com",
+          "url": "https://www.investing.com/news/stock-market-news/nvidia-earnings-beat-estimates-attention-turns-to-call-5034180"
         },
         {
           "name": "CNBC World",
           "url": "https://www.cnbc.com/2026/11/17/nvidia-stock-earnings-jensen-huang-resignation.html"
+        },
+        {
+          "name": "Mint Markets",
+          "url": "https://www.livemint.com/market/us-yields-ease-as-equities-drop-before-nvidia-results-11794948835861.html"
         },
         {
           "name": "ET Markets",
@@ -28,38 +44,61 @@
         {
           "name": "Mint Companies",
           "url": "https://www.livemint.com/companies/know-nvidia-how-next-version-became-jensen-huang-s-ai-giant-and-what-does-green-colour-of-chipmaker-s-logo-signify-11794902356944.html"
-        },
-        {
-          "name": "Investing.com",
-          "url": "https://www.investing.com/news/stock-market-news/european-shares-slip-on-fresh-us-chip-curbs-5031847"
-        },
-        {
-          "name": "Zerodha Pulse",
-          "url": "https://www.ndtvprofit.com/business/jensen-huang-breaks-silence-says-hes-open-to-returning-as-nvidia-ceo-owns-his-mistakes-12340475#publisher=newsstand"
-        },
-        {
-          "name": "NDTV Profit",
-          "url": "https://www.ndtvprofit.com/business/jensen-huang-breaks-silence-says-hes-open-to-returning-as-nvidia-ceo-owns-his-mistakes-12340475#publisher=newsstand"
         }
       ],
-      "score": 9,
-      "summary": "US stocks slipped as Wall Street turned cautious ahead of Nvidia's earnings report, while retail sales rose and a Federal Reserve official signaled potential rate hikes.",
-      "category": "Earnings",
-      "reason": "Compare results and guidance with expectations for the company and its sector.",
+      "score": 10,
+      "summary": "US futures this morning have staged a rebound. The Dow futures are up 165 points, S&P 500 futures are up 60 points, while the Nasdaq futures are up nearly 400 points after Nvidia reported strong results for the third quarter and also raised its revenue growth guidance for fiscal 2028.",
+      "category": "Regulation",
+      "reason": "Check who is covered, whether it is proposed or final, and its effective date.",
       "matched": [
-        "Earnings",
-        "Market flows"
+        "Regulation"
       ],
       "tier": "Must know",
       "related": [
         {
-          "title": "Nvidia stock falls ahead of earnings as company reels from Huang resignation",
-          "url": "https://www.cnbc.com/2026/11/17/nvidia-stock-earnings-jensen-huang-resignation.html",
-          "source": "CNBC World",
-          "published": 1794934152.0
+          "title": "Nvidia Q3 Earnings: AI Chipmaker Posts Record $115-Billion Revenue; Q4 Guidance Beats Street Estimates",
+          "url": "https://www.ndtvprofit.com/markets/nvidia-q3-earnings-ai-chipmaker-posts-record-115-billion-revenue-q4-guidance-beats-street-estimates-12341325#publisher=newsstand",
+          "source": "Zerodha Pulse",
+          "published": 1794951760.0
         },
         {
-          "title": "Dow tumbles over 600 pts ahead of Nvidia Q3 earnings: Stock Market Live Updates",
+          "title": "Nvidia earnings beat estimates; firm won’t take questions on resignation",
+          "url": "https://www.investing.com/news/stock-market-news/nvidia-earnings-beat-estimates-attention-turns-to-call-5034180",
+          "source": "Investing.com",
+          "published": 1794958586.0
+        },
+        {
+          "title": "Nvidia shares jump nearly 6% after strong Q3 results, guidance increase, management commentary",
+          "url": "https://www.cnbctv18.com/market/nvidia-q3-results-beat-estimates-fy28-guidance-increased-data-center-surge-jensen-huang-removal-share-price-surge-20036338.htm",
+          "source": "CNBC-TV18",
+          "published": 1794957967.0
+        },
+        {
+          "title": "Nvidia closes lower ahead of earnings as company reels from Huang resignation",
+          "url": "https://www.cnbc.com/2026/11/17/nvidia-stock-earnings-jensen-huang-resignation.html",
+          "source": "CNBC World",
+          "published": 1794949524.0
+        },
+        {
+          "title": "US yields ease as equities drop before Nvidia results",
+          "url": "https://www.livemint.com/market/us-yields-ease-as-equities-drop-before-nvidia-results-11794948835861.html",
+          "source": "Mint Markets",
+          "published": 1794948835.0
+        },
+        {
+          "title": "Wall Street falters ahead of Nvidia earnings, Anthropic debut",
+          "url": "https://www.livemint.com/market/wall-street-falters-ahead-of-nvidia-earnings-anthropic-debut-11794943844807.html",
+          "source": "Mint Markets",
+          "published": 1794943844.0
+        },
+        {
+          "title": "US stock market today: Dow, S&P 500, Nasdaq slip ahead of Nvidia earnings",
+          "url": "https://www.cnbctv18.com/market/us-stock-market-today-dow-jones-nasdaq-nvidia-earnings-anthropic-ipo-20036213.htm",
+          "source": "CNBC-TV18",
+          "published": 1794936731.0
+        },
+        {
+          "title": "Dow plunges over 850 points as Nvidia turmoil deepens selloff in AI stocks: Stock Market Highlights",
           "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/stock-market-live-updates-dow-jones-nasdaq-sp-500-ai-stocks-intel-coreweave-meta-tesla-nvidia-earnings-anthropic-ipo-treasury-fed-rate-treasury-bond-yield-brent-oil-news-17th-november-2026/liveblog/135927419.cms",
           "source": "ET Markets",
           "published": 1794920863.0
@@ -83,12 +122,6 @@
           "published": 1794879353.0
         },
         {
-          "title": "US markets open lower as Nvidia faces fresh pressure; chip stocks slide ahead of earnings",
-          "url": "https://www.cnbctv18.com/market/us-markets-nasdaq-sp-500-open-lower-nvidia-shares-fall-chip-stocks-slide-earnings-20035239.htm",
-          "source": "CNBC-TV18",
-          "published": 1794840931.0
-        },
-        {
           "title": "Know Nvidia: How ‘next version’ became Jensen Huang’s AI giant and what green colour of chipmaker’s logo signifies",
           "url": "https://www.livemint.com/companies/know-nvidia-how-next-version-became-jensen-huang-s-ai-giant-and-what-does-green-colour-of-chipmaker-s-logo-signify-11794902356944.html",
           "source": "Mint Companies",
@@ -107,16 +140,22 @@
           "published": 1794887075.0
         },
         {
-          "title": "European shares fall on fresh U.S. chip curbs; Nvidia awaited",
-          "url": "https://www.investing.com/news/stock-market-news/european-shares-slip-on-fresh-us-chip-curbs-5031847",
-          "source": "Investing.com",
-          "published": 1794936182.0
+          "title": "Nvidia Hires Headhunters To Replace Jensen Huang, Even As He Offers To Come Back",
+          "url": "https://www.ndtvprofit.com/world/nvidia-hires-headhunters-to-replace-jensen-huang-even-as-he-offers-to-come-back-12340908#publisher=newsstand",
+          "source": "Zerodha Pulse",
+          "published": 1794939646.0
         },
         {
-          "title": "Former Nvidia CEO Jensen Huang says he’s open to returning in first statement since resignation",
-          "url": "https://www.cnbc.com/2026/11/17/nvidia-jensen-huang-statement.html",
-          "source": "CNBC World",
-          "published": 1794935582.0
+          "title": "Nvidia hires Heidrick & Struggles to find next CEO after Jensen Huang's exit",
+          "url": "https://www.livemint.com/companies/news/nvidia-hires-heidrick-struggles-to-find-next-ceo-after-jensen-huangs-exit-11794938861014.html",
+          "source": "Mint Companies",
+          "published": 1794939086.0
+        },
+        {
+          "title": "Nvidia Dynasty? How Jensen Huang's Exit Exposes A Quiet Family Power Structure",
+          "url": "https://www.ndtvprofit.com/business/nvidia-dynasty-how-jensen-huangs-exit-exposes-a-quiet-family-power-structure-12340025#publisher=newsstand",
+          "source": "Zerodha Pulse",
+          "published": 1794938496.0
         },
         {
           "title": "Jensen Huang breaks silence 5 days after he resigned as Nvidia CEO: Read his full statement",
@@ -125,34 +164,16 @@
           "published": 1794934861.0
         },
         {
+          "title": "Jensen Huang's Nvidia exit exposes succession and governance risks for companies and boards",
+          "url": "https://www.cnbc.com/2026/11/17/nvidia-jensen-huang-succession-board-lessons.html",
+          "source": "CNBC World",
+          "published": 1794934801.0
+        },
+        {
           "title": "Jensen Huang says ‘would be honored’ to return as Nvidia CEO if board deems it beneficial for employees, shareholders",
           "url": "https://www.livemint.com/companies/people/jensen-huang-says-would-be-honored-to-return-as-nvidia-ceo-if-board-deems-it-beneficial-for-employees-shareholders-11794932600479.html",
           "source": "Mint Companies",
           "published": 1794932754.0
-        },
-        {
-          "title": "Jensen Huang Breaks Silence, Says He's Open To Returning As Nvidia CEO, 'Owns' His Mistakes",
-          "url": "https://www.ndtvprofit.com/business/jensen-huang-breaks-silence-says-hes-open-to-returning-as-nvidia-ceo-owns-his-mistakes-12340475#publisher=newsstand",
-          "source": "Zerodha Pulse",
-          "published": 1794932750.0
-        },
-        {
-          "title": "'Stop Yelling At Me': When Nvidia's Indian-Born Top Exec Took On Jensen Huang's Daughter",
-          "url": "https://www.ndtvprofit.com/business/stop-yelling-at-me-when-nvidias-indian-born-top-exec-took-on-jensen-huangs-daughter-12340264#publisher=newsstand",
-          "source": "Zerodha Pulse",
-          "published": 1794930229.0
-        },
-        {
-          "title": "'Big Short’ Michael Burry Buys The Stock AI Was Feared To Kill, And Keeps Betting Against Nvidia",
-          "url": "https://www.ndtvprofit.com/markets/big-short-michael-burry-buys-the-stock-ai-was-feared-to-kill-and-keeps-betting-against-nvidia-12340231#publisher=newsstand",
-          "source": "Zerodha Pulse",
-          "published": 1794930010.0
-        },
-        {
-          "title": "Months Before Scandal Hit Nvidia, Jensen Huang's Family Locked In A $10.5 Billion Trust Transfer",
-          "url": "https://www.ndtvprofit.com/world/months-before-scandal-hit-nvidia-jensen-huangs-family-locked-in-a-10-5-billion-trust-transfer-12340235#publisher=newsstand",
-          "source": "Zerodha Pulse",
-          "published": 1794929200.0
         },
         {
           "title": "Bring Jensen Huang Back to Nvidia: 1,90,000 people, including Musk and Tim Sweeney, seek ex-CEO’s return, amid scandal",
@@ -227,29 +248,17 @@
           "published": 1794878771.0
         },
         {
-          "title": "Nvidia fallout: Commerce targets loophole for China's data center use",
-          "url": "https://www.cnbc.com/2026/11/16/nvidia-commerce-china-lutnick.html",
-          "source": "CNBC World",
-          "published": 1794865903.0
-        },
-        {
           "title": "Nvidia board is not considering bringing Jensen Huang back as CEO, source tells CNBC",
           "url": "https://www.cnbc.com/2026/11/16/nvidia-ceo-jensen-huang.html",
           "source": "CNBC World",
           "published": 1794858386.0
-        },
-        {
-          "title": "Nvidia faces extraordinary push to restore Huang days after his exit",
-          "url": "https://www.livemint.com/companies/nvidia-faces-extraordinary-push-to-restore-huang-days-after-his-exit-11794855915717.html",
-          "source": "Mint Companies",
-          "published": 1794855915.0
         }
       ],
-      "cluster_count": 8,
+      "cluster_count": 9,
       "impact_assets": [
         "Equities"
       ],
-      "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
+      "why_it_matters": "Alters market structure, compliance mandates, capital allocation rules, and retail derivative trading liquidity.",
       "impact_chain": null,
       "companies": [
         {
@@ -257,6 +266,326 @@
           "symbol": "nvidia"
         }
       ]
+    },
+    {
+      "id": "a909db52ccfc1b61",
+      "title": "Japan exports in October surge 20.5%, beating estimates on robust chip shipments",
+      "url": "https://www.cnbc.com/2026/11/18/japan-exports-october-imports-chips.html",
+      "published": 1794959741.0,
+      "region": "Global",
+      "official": false,
+      "sources": [
+        {
+          "name": "CNBC World",
+          "url": "https://www.cnbc.com/2026/11/18/japan-exports-october-imports-chips.html"
+        }
+      ],
+      "score": 5,
+      "summary": "",
+      "category": "Economic data",
+      "reason": "Compare the release with expectations; the surprise can affect rates and risk appetite.",
+      "matched": [
+        "Economic data"
+      ],
+      "tier": "Watch",
+      "related": [],
+      "cluster_count": 1,
+      "impact_assets": [
+        "Equities"
+      ],
+      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
+      "id": "1a561ad8d24f93c8",
+      "title": "Widespread outages hit banks, air travel, the NSA and Apple, disrupting seemingly everything",
+      "url": "https://www.cnbc.com/2026/11/17/apple-microsoft-faa-jpmorgan-outages.html",
+      "published": 1794953037.0,
+      "region": "Global",
+      "official": false,
+      "sources": [
+        {
+          "name": "CNBC World",
+          "url": "https://www.cnbc.com/2026/11/17/apple-microsoft-faa-jpmorgan-outages.html"
+        },
+        {
+          "name": "Zerodha Pulse",
+          "url": "https://www.ndtvprofit.com/technology/apple-outage-icloud-app-store-apple-pay-down-for-thousands-company-blames-internal-update-12341235#publisher=newsstand"
+        },
+        {
+          "name": "NDTV Profit",
+          "url": "https://www.ndtvprofit.com/technology/apple-outage-icloud-app-store-apple-pay-down-for-thousands-company-blames-internal-update-12341235#publisher=newsstand"
+        },
+        {
+          "name": "Mint Companies",
+          "url": "https://www.livemint.com/companies/apple-joins-a-parade-of-technology-hiccups-in-recent-days-11794945149704.html"
+        }
+      ],
+      "score": 5,
+      "summary": "Major outages showcase the risks of interconnected tech in the age of AI.",
+      "category": "Other news",
+      "reason": "Key market catalyst driving market liquidity and session volatility.",
+      "matched": [],
+      "tier": "Watch",
+      "related": [
+        {
+          "title": "Apple Outage: iCloud, App Store, Apple Pay Down For Thousands; Company Blames 'Internal Update'",
+          "url": "https://www.ndtvprofit.com/technology/apple-outage-icloud-app-store-apple-pay-down-for-thousands-company-blames-internal-update-12341235#publisher=newsstand",
+          "source": "Zerodha Pulse",
+          "published": 1794947216.0
+        },
+        {
+          "title": "Apple joins a parade of technology hiccups in recent days",
+          "url": "https://www.livemint.com/companies/apple-joins-a-parade-of-technology-hiccups-in-recent-days-11794945149704.html",
+          "source": "Mint Companies",
+          "published": 1794945149.0
+        }
+      ],
+      "cluster_count": 4,
+      "impact_assets": [
+        "Equities"
+      ],
+      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
+      "impact_chain": null,
+      "companies": [
+        {
+          "name": "Apple",
+          "symbol": "apple"
+        }
+      ]
+    },
+    {
+      "id": "07530714568d1876",
+      "title": "Buy, Sell Or Hold: Hero MotoCorp, Bosch, SBI, Shriram Finance And Lodha Developers — Ask Profit",
+      "url": "https://www.ndtvprofit.com/markets/buy-sell-or-hold-hero-motocorp-bosch-sbi-shriram-finance-and-lodha-developers-ask-profit-12340693#publisher=newsstand",
+      "published": 1794936601.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "Zerodha Pulse",
+          "url": "https://www.ndtvprofit.com/markets/buy-sell-or-hold-hero-motocorp-bosch-sbi-shriram-finance-and-lodha-developers-ask-profit-12340693#publisher=newsstand"
+        },
+        {
+          "name": "NDTV Profit",
+          "url": "https://www.ndtvprofit.com/markets/buy-sell-or-hold-hero-motocorp-bosch-sbi-shriram-finance-and-lodha-developers-ask-profit-12340693#publisher=newsstand"
+        },
+        {
+          "name": "ET Markets",
+          "url": "https://economictimes.indiatimes.com/markets/stocks/stock-liveblog/sbi-life-share-price-live-updates-17-nov-2026/liveblog/135908344.cms"
+        }
+      ],
+      "score": 8,
+      "summary": "Market experts shared buy, sell and hold recommendations for stocks such as",
+      "category": "Earnings",
+      "reason": "Compare results and guidance with expectations for the company and its sector.",
+      "matched": [
+        "Earnings"
+      ],
+      "tier": "Must know",
+      "related": [
+        {
+          "title": "SBI Life Share Price Highlights: SBI Life Stock Price History",
+          "url": "https://economictimes.indiatimes.com/markets/stocks/stock-liveblog/sbi-life-share-price-live-updates-17-nov-2026/liveblog/135908344.cms",
+          "source": "ET Markets",
+          "published": 1794884170.0
+        },
+        {
+          "title": "SBI Share Price Highlights: SBI Stock Price History",
+          "url": "https://economictimes.indiatimes.com/markets/stocks/stock-liveblog/sbi-share-price-today-live-updates-17-nov-2026/liveblog/135908328.cms",
+          "source": "ET Markets",
+          "published": 1794884147.0
+        }
+      ],
+      "cluster_count": 3,
+      "impact_assets": [
+        "Equities"
+      ],
+      "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
+      "impact_chain": null,
+      "companies": [
+        {
+          "name": "SBI",
+          "symbol": "sbi"
+        }
+      ]
+    },
+    {
+      "id": "4873879dd68accf2",
+      "title": "Upcoming IPO: Advanced Sys-Tek gets Sebi nod for public issue – fundraising, fresh equity issue, OFS & other key facts",
+      "url": "https://www.livemint.com/market/upcoming-ipo-advanced-sys-tek-receives-sebi-nod-for-public-issue-fundraising-fresh-equity-issue-ofs-other-key-11794936665478.html",
+      "published": 1794939882.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "Mint Markets",
+          "url": "https://www.livemint.com/market/upcoming-ipo-advanced-sys-tek-receives-sebi-nod-for-public-issue-fundraising-fresh-equity-issue-ofs-other-key-11794936665478.html"
+        },
+        {
+          "name": "Business Standard",
+          "url": "https://www.business-standard.com/markets/ipo/meganet-rediff-com-file-ipo-papers-advanced-sys-tek-gets-sebi-nod-126111701516_1.html"
+        }
+      ],
+      "score": 6,
+      "summary": "Advanced Sys-Tek plans to utilise the net proceeds from the fresh issue primarily to finance its expansion plans and meet long-term working capital requirements",
+      "category": "Regulation",
+      "reason": "Check who is covered, whether it is proposed or final, and its effective date.",
+      "matched": [
+        "Regulation"
+      ],
+      "tier": "Must know",
+      "related": [
+        {
+          "title": "Meganet, Rediff.com file IPO papers; Advanced Sys-Tek gets Sebi nod",
+          "url": "https://www.business-standard.com/markets/ipo/meganet-rediff-com-file-ipo-papers-advanced-sys-tek-gets-sebi-nod-126111701516_1.html",
+          "source": "Business Standard",
+          "published": 1794935708.0
+        }
+      ],
+      "cluster_count": 2,
+      "impact_assets": [
+        "Equities"
+      ],
+      "why_it_matters": "Alters market structure, compliance mandates, capital allocation rules, and retail derivative trading liquidity.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
+      "id": "e63a04ffd6668d24",
+      "title": "Sebi lowers margin requirements for agri-derivatives contracts",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/sebi-lowers-margin-requirements-for-agri-derivatives-contracts/articleshow/135929718.cms",
+      "published": 1794926173.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "ET Markets",
+          "url": "https://economictimes.indiatimes.com/markets/stocks/news/sebi-lowers-margin-requirements-for-agri-derivatives-contracts/articleshow/135929718.cms"
+        },
+        {
+          "name": "Mint Markets",
+          "url": "https://www.livemint.com/market/commodities/sebi-aligns-margin-requirements-for-agri-non-agri-commodity-derivatives-11794920785221.html"
+        }
+      ],
+      "score": 7,
+      "summary": "The Securities and Exchange Board of India has decided to lower the minimum margin requirements for agricultural commodities, reducing the initial margin to between 6% and 10%. This adjustment aims to align the margin standards for agricultural products with those for non-agricultural commodities, such as metals. Set to take effect on December 1, t",
+      "category": "Regulation",
+      "reason": "Check who is covered, whether it is proposed or final, and its effective date.",
+      "matched": [
+        "Regulation"
+      ],
+      "tier": "Must know",
+      "related": [
+        {
+          "title": "Sebi aligns margin requirements for agri, non-agri commodity derivatives",
+          "url": "https://www.livemint.com/market/commodities/sebi-aligns-margin-requirements-for-agri-non-agri-commodity-derivatives-11794920785221.html",
+          "source": "Mint Markets",
+          "published": 1794925339.0
+        }
+      ],
+      "cluster_count": 2,
+      "impact_assets": [
+        "Equities"
+      ],
+      "why_it_matters": "Alters market structure, compliance mandates, capital allocation rules, and retail derivative trading liquidity.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
+      "id": "355ea31527a2690d",
+      "title": "Treasury yields moderate as investors parse retail sales data",
+      "url": "https://www.cnbc.com/2026/11/17/treasury-yields-bonds-inflation.html",
+      "published": 1794953844.0,
+      "region": "Global",
+      "official": false,
+      "sources": [
+        {
+          "name": "CNBC World",
+          "url": "https://www.cnbc.com/2026/11/17/treasury-yields-bonds-inflation.html"
+        }
+      ],
+      "score": 3,
+      "summary": "Investors digested economic data and comments from Federal Reserve officials on Tuesday.",
+      "category": "Market flows",
+      "reason": "Flows, currency and yields provide context for Indian equity risk appetite.",
+      "matched": [
+        "Market flows"
+      ],
+      "tier": "Watch",
+      "related": [],
+      "cluster_count": 1,
+      "impact_assets": [
+        "Rates",
+        "Equities"
+      ],
+      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
+      "id": "b60afdaf218fe898",
+      "title": "US 10-Year Yield Set for Historic Run Above 5% on Fed Cycle",
+      "url": "https://www.livemint.com/market/us-10-year-yield-set-for-historic-run-above-5-on-fed-cycle-11794948232494.html",
+      "published": 1794948231.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "Mint Markets",
+          "url": "https://www.livemint.com/market/us-10-year-yield-set-for-historic-run-above-5-on-fed-cycle-11794948232494.html"
+        }
+      ],
+      "score": 5,
+      "summary": "The US’s 10-year Treasury yield is nearing its longest run above 5% in almost two decades as investors position for the Federal Reserve to hike interest rates more amid stubbornly elevated inflation.",
+      "category": "Monetary policy",
+      "reason": "Guides global liquidity dynamics, US Dollar Index (DXY) trajectory, and foreign institutional (FII) capital allocations.",
+      "matched": [
+        "Monetary policy"
+      ],
+      "tier": "Watch",
+      "related": [],
+      "cluster_count": 1,
+      "impact_assets": [
+        "Rates",
+        "Equities"
+      ],
+      "why_it_matters": "Guides global liquidity dynamics, US Dollar Index (DXY) trajectory, and foreign institutional (FII) capital allocations.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
+      "id": "b42e8ffbe34b2cbd",
+      "title": "Nifty Outlook for November 18: Index recovers pre-war losses, but 25,500 holds the key",
+      "url": "https://www.cnbctv18.com/market/nifty-outlook-wednesday-november-18-index-recovers-pre-war-losses-but-25500-holds-the-key-20036146.htm",
+      "published": 1794926166.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "CNBC-TV18",
+          "url": "https://www.cnbctv18.com/market/nifty-outlook-wednesday-november-18-index-recovers-pre-war-losses-but-25500-holds-the-key-20036146.htm"
+        }
+      ],
+      "score": 6,
+      "summary": "The Nifty 50 crossed its pre-conflict level of 25,476 on Tuesday, recovering all losses recorded since the outbreak of the US-Iran conflict. Analysts see 25,500 as a crucial resistance, with a decisive breakout potentially opening the door to 25,900-26,000 levels.",
+      "category": "Energy & geopolitics",
+      "reason": "Energy costs and disruption can affect Indian inflation, import costs and exposed sectors.",
+      "matched": [
+        "Energy & geopolitics",
+        "Market flows"
+      ],
+      "tier": "Must know",
+      "related": [],
+      "cluster_count": 1,
+      "impact_assets": [
+        "Equities",
+        "Commodities"
+      ],
+      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
+      "impact_chain": null,
+      "companies": []
     },
     {
       "id": "659670c7fa4b7b77",
@@ -323,62 +652,214 @@
       "companies": []
     },
     {
-      "id": "f336d7ca192d21e5",
-      "title": "SEBI weighs curbs on leveraged stock purchases amid rising retail exposure",
-      "url": "https://www.thehindu.com/business/sebi-weighs-curbs-on-leveraged-stock-purchases-amid-rising-retail-exposure/article71713317.ece",
-      "published": 1794937292.0,
+      "id": "7f058f6322258a4e",
+      "title": "Emerging-Market Currencies Halt Three-Day Slump, Stocks Slide",
+      "url": "https://www.livemint.com/market/emergingmarket-currencies-halt-three-day-slump-stocks-slide-11794955884837.html",
+      "published": 1794955884.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "Mint Markets",
+          "url": "https://www.livemint.com/market/emergingmarket-currencies-halt-three-day-slump-stocks-slide-11794955884837.html"
+        },
+        {
+          "name": "CNBC-TV18",
+          "url": "https://www.cnbctv18.com/market/dow-jones-snp-500-nasdaq-us-market-sell-off-ai-nvidia-anthropic-kevin-warsh-crude-oil-triggers-20035370.htm"
+        }
+      ],
+      "score": 2,
+      "summary": "Emerging-market currencies rebounded as the dollar halted a five-day rally, while developing stocks retreated for a fourth straight session with Nvidia Corp.’s earnings in focus.",
+      "category": "Other news",
+      "reason": "Key market catalyst driving market liquidity and session volatility.",
+      "matched": [],
+      "tier": "More",
+      "related": [
+        {
+          "title": "US Market Sell-Off: Dow Jones, Nasdaq fall 750 points; Kevin Warsh may have added to the pressure",
+          "url": "https://www.cnbctv18.com/market/dow-jones-snp-500-nasdaq-us-market-sell-off-ai-nvidia-anthropic-kevin-warsh-crude-oil-triggers-20035370.htm",
+          "source": "CNBC-TV18",
+          "published": 1794873361.0
+        }
+      ],
+      "cluster_count": 2,
+      "impact_assets": [
+        "Equities"
+      ],
+      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
+      "id": "2a0eb1f268c8b4ed",
+      "title": "Crypto Treasury Stocks Fall Anew as Ex-Citadel Securities Trader Nets Gains",
+      "url": "https://www.livemint.com/market/crypto-treasury-stocks-fall-anew-as-ex-citadel-securities-trader-nets-gains-11794948041924.html",
+      "published": 1794948041.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "Mint Markets",
+          "url": "https://www.livemint.com/market/crypto-treasury-stocks-fall-anew-as-ex-citadel-securities-trader-nets-gains-11794948041924.html"
+        }
+      ],
+      "score": 4,
+      "summary": "Crypto’s latest slide is hitting shares of companies that raised money to stockpile digital tokens, putting fresh pressure on a once-hot business model that relied on selling stock at a premium to buy more digital assets.",
+      "category": "Market flows",
+      "reason": "Flows, currency and yields provide context for Indian equity risk appetite.",
+      "matched": [
+        "Market flows"
+      ],
+      "tier": "Watch",
+      "related": [],
+      "cluster_count": 1,
+      "impact_assets": [
+        "Rates",
+        "Equities"
+      ],
+      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
+      "id": "7b154e7632f02e05",
+      "title": "Stocks To Watch Today: Arvind Smartspaces, Ashoka Buildcon, HCL Tech And Lumino Industries",
+      "url": "https://www.ndtvprofit.com/markets/stocks-to-watch-today-arvind-smartspaces-ashoka-buildcon-hcl-tech-and-lumino-industries-12340961#publisher=newsstand",
+      "published": 1794940201.0,
       "region": "India",
       "official": false,
       "sources": [
         {
           "name": "Zerodha Pulse",
-          "url": "https://www.thehindu.com/business/sebi-weighs-curbs-on-leveraged-stock-purchases-amid-rising-retail-exposure/article71713317.ece"
+          "url": "https://www.ndtvprofit.com/markets/stocks-to-watch-today-arvind-smartspaces-ashoka-buildcon-hcl-tech-and-lumino-industries-12340961#publisher=newsstand"
+        },
+        {
+          "name": "NDTV Profit",
+          "url": "https://www.ndtvprofit.com/markets/stocks-to-watch-today-arvind-smartspaces-ashoka-buildcon-hcl-tech-and-lumino-industries-12340961#publisher=newsstand"
+        },
+        {
+          "name": "ET Markets",
+          "url": "https://economictimes.indiatimes.com/markets/stocks/stock-liveblog/hcl-tech-stock-price-live-updates-17-nov-2026/liveblog/135908351.cms"
         }
       ],
       "score": 4,
-      "summary": "Proposed restrictions could prevent fresh margin-funded positions in stocks where leverage crosses a threshold linked to free float, with small- and mid-cap shares accounting for most of the exposure",
-      "category": "Regulation",
-      "reason": "Check who is covered, whether it is proposed or final, and its effective date.",
-      "matched": [
-        "Regulation"
-      ],
+      "summary": "Here's a look at stocks that are likely to be in focus during the trading session on Wednesday.",
+      "category": "Other news",
+      "reason": "Key market catalyst driving market liquidity and session volatility.",
+      "matched": [],
       "tier": "Watch",
-      "related": [],
-      "cluster_count": 1,
+      "related": [
+        {
+          "title": "HCL Tech Share Price Highlights: HCL Tech Stock Price History",
+          "url": "https://economictimes.indiatimes.com/markets/stocks/stock-liveblog/hcl-tech-stock-price-live-updates-17-nov-2026/liveblog/135908351.cms",
+          "source": "ET Markets",
+          "published": 1794884194.0
+        }
+      ],
+      "cluster_count": 3,
       "impact_assets": [
         "Equities"
       ],
-      "why_it_matters": "Alters market structure, compliance mandates, capital allocation rules, and retail derivative trading liquidity.",
+      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
       "impact_chain": null,
-      "companies": []
+      "companies": [
+        {
+          "name": "HCL Tech",
+          "symbol": "hcl tech"
+        }
+      ]
     },
     {
-      "id": "399e37578ad05f13",
-      "title": "Meganet, Rediff.com file IPO papers; Advanced Sys-Tek gets Sebi nod",
-      "url": "https://www.business-standard.com/markets/ipo/meganet-rediff-com-file-ipo-papers-advanced-sys-tek-gets-sebi-nod-126111701516_1.html",
-      "published": 1794935708.0,
+      "id": "3bd9df51bf199466",
+      "title": "Reliance plans $1.6 billion investment in 100 compressed biogas plants by 2030",
+      "url": "https://www.thehindu.com/business/reliance-plans-16-billion-investment-in-100-compressed-biogas-plants-by-2030/article71713310.ece",
+      "published": 1794938889.0,
       "region": "India",
       "official": false,
       "sources": [
         {
-          "name": "Business Standard",
-          "url": "https://www.business-standard.com/markets/ipo/meganet-rediff-com-file-ipo-papers-advanced-sys-tek-gets-sebi-nod-126111701516_1.html"
+          "name": "Zerodha Pulse",
+          "url": "https://www.thehindu.com/business/reliance-plans-16-billion-investment-in-100-compressed-biogas-plants-by-2030/article71713310.ece"
+        },
+        {
+          "name": "CNBC-TV18",
+          "url": "https://www.cnbctv18.com/business/reliance-to-invest-%25e2%2582%25b91600-cr-in-campa-cola-plant-in-vijayapura-generating-2000-direct-jobs-20036318.htm"
+        },
+        {
+          "name": "Mint Companies",
+          "url": "https://www.livemint.com/companies/news/reliance-lays-foundation-for-1-600-crore-campa-cola-plant-in-karnataka-109-acre-vijayapura-unit-to-create-5-000-jobs-11794934344765.html"
         }
       ],
       "score": 4,
-      "summary": "Internet firm Rediff.com India has filed updated draft papers with the markets regulator to raise up to ₹600 crore through its initial public offering",
-      "category": "Regulation",
-      "reason": "Check who is covered, whether it is proposed or final, and its effective date.",
-      "matched": [
-        "Regulation"
-      ],
+      "summary": "The company aims to produce five million cubic metres of biogas daily using agricultural residue, as India seeks to increase gas’s share in its energy mix",
+      "category": "Other news",
+      "reason": "Key market catalyst driving market liquidity and session volatility.",
+      "matched": [],
       "tier": "Watch",
-      "related": [],
-      "cluster_count": 1,
+      "related": [
+        {
+          "title": "Reliance to invest ₹1,600 cr in Campa Cola plant in Vijayapura, generating 2,000 direct jobs",
+          "url": "https://www.cnbctv18.com/business/reliance-to-invest-%25e2%2582%25b91600-cr-in-campa-cola-plant-in-vijayapura-generating-2000-direct-jobs-20036318.htm",
+          "source": "CNBC-TV18",
+          "published": 1794938445.0
+        },
+        {
+          "title": "Reliance lays foundation for ₹1,600-crore Campa Cola plant in Karnataka; 109-acre Vijayapura unit to create 5,000 jobs",
+          "url": "https://www.livemint.com/companies/news/reliance-lays-foundation-for-1-600-crore-campa-cola-plant-in-karnataka-109-acre-vijayapura-unit-to-create-5-000-jobs-11794934344765.html",
+          "source": "Mint Companies",
+          "published": 1794936875.0
+        },
+        {
+          "title": "AstraZeneca Pharma India signs LoI with Reliance's Strand Life Sciences for healthcare tie-up",
+          "url": "https://www.cnbctv18.com/market/astrazeneca-pharma-india-signs-loi-with-reliance-strand-life-sciences-healthcare-tie-up-20035844.htm",
+          "source": "CNBC-TV18",
+          "published": 1794907345.0
+        }
+      ],
+      "cluster_count": 3,
       "impact_assets": [
         "Equities"
       ],
-      "why_it_matters": "Alters market structure, compliance mandates, capital allocation rules, and retail derivative trading liquidity.",
+      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
+      "impact_chain": null,
+      "companies": [
+        {
+          "name": "Reliance",
+          "symbol": "reliance"
+        }
+      ]
+    },
+    {
+      "id": "c4ca5fee2b5643f6",
+      "title": "Trade Setup For Nov 18: Nifty Bulls Face Resistance At 25,500; Will Consolidation Test Further Upswing?",
+      "url": "https://www.ndtvprofit.com/markets/trade-setup-for-nov-18-nifty-bulls-face-resistance-at-25-500-will-consolidation-test-further-upswing-12340847#publisher=newsstand",
+      "published": 1794937132.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "Zerodha Pulse",
+          "url": "https://www.ndtvprofit.com/markets/trade-setup-for-nov-18-nifty-bulls-face-resistance-at-25-500-will-consolidation-test-further-upswing-12340847#publisher=newsstand"
+        },
+        {
+          "name": "NDTV Profit",
+          "url": "https://www.ndtvprofit.com/markets/trade-setup-for-nov-18-nifty-bulls-face-resistance-at-25-500-will-consolidation-test-further-upswing-12340847#publisher=newsstand"
+        }
+      ],
+      "score": 5,
+      "summary": "Trade Setup For Nov 18: Nifty 50 closed with a bullish candlestick formation on the daily chart, indicating sustained buying interest, said analysts. The immediate resistance for the index sits at 25,500 with likely consolidation in the upcoming sessions.",
+      "category": "Market flows",
+      "reason": "Flows, currency and yields provide context for Indian equity risk appetite.",
+      "matched": [
+        "Market flows"
+      ],
+      "tier": "Watch",
+      "related": [],
+      "cluster_count": 2,
+      "impact_assets": [
+        "Equities"
+      ],
+      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
       "impact_chain": null,
       "companies": []
     },
@@ -411,47 +892,6 @@
         "Commodities"
       ],
       "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "e63a04ffd6668d24",
-      "title": "Sebi lowers margin requirements for agri-derivatives contracts",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/sebi-lowers-margin-requirements-for-agri-derivatives-contracts/articleshow/135929718.cms",
-      "published": 1794926173.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "ET Markets",
-          "url": "https://economictimes.indiatimes.com/markets/stocks/news/sebi-lowers-margin-requirements-for-agri-derivatives-contracts/articleshow/135929718.cms"
-        },
-        {
-          "name": "Mint Markets",
-          "url": "https://www.livemint.com/market/commodities/sebi-aligns-margin-requirements-for-agri-non-agri-commodity-derivatives-11794920785221.html"
-        }
-      ],
-      "score": 7,
-      "summary": "The Securities and Exchange Board of India has decided to lower the minimum margin requirements for agricultural commodities, reducing the initial margin to between 6% and 10%. This adjustment aims to align the margin standards for agricultural products with those for non-agricultural commodities, such as metals. Set to take effect on December 1, t",
-      "category": "Regulation",
-      "reason": "Check who is covered, whether it is proposed or final, and its effective date.",
-      "matched": [
-        "Regulation"
-      ],
-      "tier": "Must know",
-      "related": [
-        {
-          "title": "Sebi aligns margin requirements for agri, non-agri commodity derivatives",
-          "url": "https://www.livemint.com/market/commodities/sebi-aligns-margin-requirements-for-agri-non-agri-commodity-derivatives-11794920785221.html",
-          "source": "Mint Markets",
-          "published": 1794925339.0
-        }
-      ],
-      "cluster_count": 2,
-      "impact_assets": [
-        "Equities"
-      ],
-      "why_it_matters": "Alters market structure, compliance mandates, capital allocation rules, and retail derivative trading liquidity.",
       "impact_chain": null,
       "companies": []
     },
@@ -508,12 +948,6 @@
           "url": "https://economictimes.indiatimes.com/markets/stocks/stock-liveblog/hdfc-bank-share-price-live-updates-17-nov-2026/liveblog/135908470.cms",
           "source": "ET Markets",
           "published": 1794884493.0
-        },
-        {
-          "title": "Honasa Consumer, HDFC Bank: Two stock ideas by Shrikant Chouhan",
-          "url": "https://www.business-standard.com/markets/news/honasa-consumer-hdfc-bank-two-stock-ideas-by-shrikant-chouhan-126111700074_1.html",
-          "source": "Business Standard",
-          "published": 1794881780.0
         }
       ],
       "cluster_count": 3,
@@ -530,87 +964,68 @@
       ]
     },
     {
-      "id": "b655bff22c0654bb",
-      "title": "Darius Khambata hits back at Venu Srinivasan, Vijay Singh; says control of Tata Sons by Trusts essence of Tata model",
-      "url": "https://economictimes.indiatimes.com/news/company/corporate-trends/darius-khambata-hits-back-at-venu-srinivasan-vijay-singh-says-control-of-tata-sons-by-trusts-essence-of-tata-model/articleshow/135933469.cms",
-      "published": 1794933764.0,
+      "id": "f336d7ca192d21e5",
+      "title": "SEBI weighs curbs on leveraged stock purchases amid rising retail exposure",
+      "url": "https://www.thehindu.com/business/sebi-weighs-curbs-on-leveraged-stock-purchases-amid-rising-retail-exposure/article71713317.ece",
+      "published": 1794937292.0,
       "region": "India",
       "official": false,
       "sources": [
         {
-          "name": "ET Recos",
-          "url": "https://economictimes.indiatimes.com/news/company/corporate-trends/darius-khambata-hits-back-at-venu-srinivasan-vijay-singh-says-control-of-tata-sons-by-trusts-essence-of-tata-model/articleshow/135933469.cms"
-        },
-        {
           "name": "Zerodha Pulse",
-          "url": "https://www.business-standard.com/companies/news/khambata-hits-out-at-srinivasan-singh-says-no-change-in-stand-on-chandra-126111701271_1.html"
-        },
-        {
-          "name": "CNBC-TV18",
-          "url": "https://www.cnbctv18.com/business/companies/tata-tussle-darius-khambata-hits-back-at-venu-srinivasan-vijay-singh-over-listing-u-turn-20036003.htm"
+          "url": "https://www.thehindu.com/business/sebi-weighs-curbs-on-leveraged-stock-purchases-amid-rising-retail-exposure/article71713317.ece"
         }
       ],
       "score": 4,
-      "summary": "Control of Tata Sons by Tata Trusts, a set of non-profits which collectively own two-thirds of the largest conglomerate's holding company, is the essence of the 'Tata model', Khambata, a senior lawyer, said in a four-page letter written to Srinivasan and Singh.",
-      "category": "Other news",
-      "reason": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
-      "matched": [],
-      "tier": "Watch",
-      "related": [
-        {
-          "title": "Khambata hits out at Srinivasan, Singh; says no change in stand on Chandra",
-          "url": "https://www.business-standard.com/companies/news/khambata-hits-out-at-srinivasan-singh-says-no-change-in-stand-on-chandra-126111701271_1.html",
-          "source": "Zerodha Pulse",
-          "published": 1794930594.0
-        },
-        {
-          "title": "Tata tussle: Darius Khambata hits back at Venu Srinivasan, Vijay Singh over listing U-turn",
-          "url": "https://www.cnbctv18.com/business/companies/tata-tussle-darius-khambata-hits-back-at-venu-srinivasan-vijay-singh-over-listing-u-turn-20036003.htm",
-          "source": "CNBC-TV18",
-          "published": 1794917987.0
-        }
+      "summary": "Proposed restrictions could prevent fresh margin-funded positions in stocks where leverage crosses a threshold linked to free float, with small- and mid-cap shares accounting for most of the exposure",
+      "category": "Regulation",
+      "reason": "Check who is covered, whether it is proposed or final, and its effective date.",
+      "matched": [
+        "Regulation"
       ],
-      "cluster_count": 3,
+      "tier": "Watch",
+      "related": [],
+      "cluster_count": 1,
       "impact_assets": [
         "Equities"
       ],
-      "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
+      "why_it_matters": "Alters market structure, compliance mandates, capital allocation rules, and retail derivative trading liquidity.",
       "impact_chain": null,
       "companies": []
     },
     {
-      "id": "1783f42e5cb5a8bd",
-      "title": "Zelensky Hails 'Unprecedented' Ukraine Attack As Section Of Putin's Crimea Bridge Collapses",
-      "url": "https://www.ndtvprofit.com/world/zelensky-hails-unprecedented-ukraine-attack-as-section-of-putins-crimea-bridge-collapses-12340058#publisher=newsstand",
-      "published": 1794929836.0,
+      "id": "5ff2bf5d62c85520",
+      "title": "From Audio To Skincare: Shark Tank Judge Aman Gupta Bets On Men's Grooming Brand H.I.M With Ranveer Singh",
+      "url": "https://www.ndtvprofit.com/business/from-audio-to-skincare-shark-tank-india-judge-aman-gupta-teams-up-with-ranveer-singh-to-launch-grooming-brand-h-i-m-12340774#publisher=newsstand",
+      "published": 1794936306.0,
       "region": "India",
       "official": false,
       "sources": [
         {
           "name": "Zerodha Pulse",
-          "url": "https://www.ndtvprofit.com/world/zelensky-hails-unprecedented-ukraine-attack-as-section-of-putins-crimea-bridge-collapses-12340058#publisher=newsstand"
+          "url": "https://www.ndtvprofit.com/business/from-audio-to-skincare-shark-tank-india-judge-aman-gupta-teams-up-with-ranveer-singh-to-launch-grooming-brand-h-i-m-12340774#publisher=newsstand"
         },
         {
           "name": "NDTV Profit",
-          "url": "https://www.ndtvprofit.com/world/zelensky-hails-unprecedented-ukraine-attack-as-section-of-putins-crimea-bridge-collapses-12340058#publisher=newsstand"
+          "url": "https://www.ndtvprofit.com/business/from-audio-to-skincare-shark-tank-india-judge-aman-gupta-teams-up-with-ranveer-singh-to-launch-grooming-brand-h-i-m-12340774#publisher=newsstand"
         },
         {
-          "name": "CNBC World",
-          "url": "https://www.cnbc.com/2026/11/17/kerch-bridge-ukraine-russia-putin-kyiv.html"
+          "name": "Mint Companies",
+          "url": "https://www.livemint.com/companies/people/who-is-aman-gupta-shark-tank-india-judge-joins-ranveer-singh-to-launch-men-s-grooming-brand-him-11794919086129.html"
         }
       ],
       "score": 4,
-      "summary": "Ukraine's multi-stage strike cripples a key Russian supply route to Crimea, while Moscow vows to rebuild the damaged bridge.",
+      "summary": "BoAt co-founder Aman Gupta and Actor Ranveer Singh have launched H.I.M, a men's grooming brand with eight products across face, body and hair care. Prices range from Rs 299 to Rs 899.",
       "category": "Other news",
       "reason": "Key market catalyst driving market liquidity and session volatility.",
       "matched": [],
       "tier": "Watch",
       "related": [
         {
-          "title": "Ukraine damages Putin’s prized Crimea bridge as Zelenskyy lauds ‘unprecedented operation’",
-          "url": "https://www.cnbc.com/2026/11/17/kerch-bridge-ukraine-russia-putin-kyiv.html",
-          "source": "CNBC World",
-          "published": 1794919694.0
+          "title": "Who is Aman Gupta? Shark Tank India judge joins Ranveer Singh to launch men’s grooming brand HIM",
+          "url": "https://www.livemint.com/companies/people/who-is-aman-gupta-shark-tank-india-judge-joins-ranveer-singh-to-launch-men-s-grooming-brand-him-11794919086129.html",
+          "source": "Mint Companies",
+          "published": 1794924398.0
         }
       ],
       "cluster_count": 3,
@@ -652,193 +1067,77 @@
       "companies": []
     },
     {
-      "id": "06e5749a7282ab8a",
-      "title": "Analysis: The Fed's chairman sees an AI revolution coming. Now he has to figure out what it means",
-      "url": "https://www.cnbc.com/2026/11/16/kevin-warsh-fed-ai-jobs-productivity-interest-rateshtml.html",
-      "published": 1794929713.0,
-      "region": "Global",
+      "id": "d869583c98f28dff",
+      "title": "Advait Energy Transitions bags ₹130 cr GETCO order for 220 kV transmission line reconductoring",
+      "url": "https://www.cnbctv18.com/market/stocks/advait-energy-transitions-share-price-bags-rs-130-cr-getco-order-for-220-kv-transmission-line-reconductoring-20036144.htm",
+      "published": 1794925557.0,
+      "region": "India",
       "official": false,
       "sources": [
         {
-          "name": "CNBC World",
-          "url": "https://www.cnbc.com/2026/11/16/kevin-warsh-fed-ai-jobs-productivity-interest-rateshtml.html"
+          "name": "CNBC-TV18",
+          "url": "https://www.cnbctv18.com/market/stocks/advait-energy-transitions-share-price-bags-rs-130-cr-getco-order-for-220-kv-transmission-line-reconductoring-20036144.htm"
         }
       ],
       "score": 4,
-      "summary": "Kevin Warsh sees AI at a turning point. He faces tough questions on jobs and interest rates.",
-      "category": "Monetary policy",
-      "reason": "Guides global liquidity dynamics, US Dollar Index (DXY) trajectory, and foreign institutional (FII) capital allocations.",
+      "summary": "Advait Energy Transitions has secured a ₹130.49 crore order from GETCO for reconductoring two 220 kV transmission lines in Gujarat with higher-ampacity conductors. The supply, installation, testing and commissioning contract is to be executed within 15 months.",
+      "category": "Company move",
+      "reason": "A large contract or order may affect the company and its sector; check execution and guidance.",
       "matched": [
-        "Monetary policy"
+        "Company move"
       ],
       "tier": "Watch",
       "related": [],
       "cluster_count": 1,
       "impact_assets": [
-        "Rates",
         "Equities"
       ],
-      "why_it_matters": "Guides global liquidity dynamics, US Dollar Index (DXY) trajectory, and foreign institutional (FII) capital allocations.",
+      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
       "impact_chain": null,
       "companies": []
     },
     {
-      "id": "6fd1dd179c8f3655",
-      "title": "Anthropic IPO: AI Major Likely To Raise Price Above $70-78 Range, Says Report",
-      "url": "https://www.ndtvprofit.com/markets/anthropic-ipo-ai-major-likely-to-raise-price-above-70-78-range-says-report-12339974#publisher=newsstand",
-      "published": 1794928615.0,
+      "id": "1c124f0d4021d335",
+      "title": "IIFL Finance Block Deal: Fairfax likely to sell 13% stake at ₹611 floor price",
+      "url": "https://www.cnbctv18.com/market/stocks/iifl-finance-share-price-block-deal-fairfax-likely-to-sell-13-stake-at-rs-611-floor-price-20036050.htm",
+      "published": 1794924984.0,
       "region": "India",
       "official": false,
       "sources": [
         {
-          "name": "Zerodha Pulse",
-          "url": "https://www.ndtvprofit.com/markets/anthropic-ipo-ai-major-likely-to-raise-price-above-70-78-range-says-report-12339974#publisher=newsstand"
+          "name": "CNBC-TV18",
+          "url": "https://www.cnbctv18.com/market/stocks/iifl-finance-share-price-block-deal-fairfax-likely-to-sell-13-stake-at-rs-611-floor-price-20036050.htm"
         },
         {
-          "name": "NDTV Profit",
-          "url": "https://www.ndtvprofit.com/markets/anthropic-ipo-ai-major-likely-to-raise-price-above-70-78-range-says-report-12339974#publisher=newsstand"
+          "name": "Mint Companies",
+          "url": "https://www.livemint.com/companies/fairfax-puts-entire-370-mn-iifl-finance-stake-on-the-block-after-idbi-acquisition-11794920000664.html"
         },
         {
-          "name": "CNBC World",
-          "url": "https://www.cnbc.com/2026/11/17/anthropic-ipo-price.html"
+          "name": "Mint Markets",
+          "url": "https://www.livemint.com/market/stock-market-news/fairfax-likely-to-sell-13-25-stake-in-iifl-finance-via-rs-3-454-crore-block-deal-report-11794919349807.html"
         }
       ],
       "score": 4,
-      "summary": "Anthropic might also close its subscription window and record total bids by 4 p.m. ET on Tuesday.",
+      "summary": "Fairfax is looking to sell up to a 13.25% stake in IIFL Finance through a block deal, involving up to 5.65 crore shares worth ₹3,454 crore. The floor price of ₹611 per share represents a nearly 4% discount to the current market price.",
       "category": "Other news",
       "reason": "Key market catalyst driving market liquidity and session volatility.",
       "matched": [],
       "tier": "Watch",
       "related": [
         {
-          "title": "Anthropic likely to price IPO above the current range of $70 to $78, sources tell CNBC",
-          "url": "https://www.cnbc.com/2026/11/17/anthropic-ipo-price.html",
-          "source": "CNBC World",
-          "published": 1794926088.0
+          "title": "Fairfax to sell entire 13.25% stake in IIFL Finance via block deal",
+          "url": "https://www.livemint.com/companies/fairfax-puts-entire-370-mn-iifl-finance-stake-on-the-block-after-idbi-acquisition-11794920000664.html",
+          "source": "Mint Companies",
+          "published": 1794924405.0
+        },
+        {
+          "title": "After IDBI Bank stake buy, now Fairfax set to sell 13.25% stake in IIFL Finance via ₹3,454-crore block deal: Report",
+          "url": "https://www.livemint.com/market/stock-market-news/fairfax-likely-to-sell-13-25-stake-in-iifl-finance-via-rs-3-454-crore-block-deal-report-11794919349807.html",
+          "source": "Mint Markets",
+          "published": 1794920866.0
         }
       ],
       "cluster_count": 3,
-      "impact_assets": [
-        "Equities"
-      ],
-      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "b42e8ffbe34b2cbd",
-      "title": "Nifty Outlook for November 18: Index recovers pre-war losses, but 25,500 holds the key",
-      "url": "https://www.cnbctv18.com/market/nifty-outlook-wednesday-november-18-index-recovers-pre-war-losses-but-25500-holds-the-key-20036146.htm",
-      "published": 1794926166.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "CNBC-TV18",
-          "url": "https://www.cnbctv18.com/market/nifty-outlook-wednesday-november-18-index-recovers-pre-war-losses-but-25500-holds-the-key-20036146.htm"
-        }
-      ],
-      "score": 6,
-      "summary": "The Nifty 50 crossed its pre-conflict level of 25,476 on Tuesday, recovering all losses recorded since the outbreak of the US-Iran conflict. Analysts see 25,500 as a crucial resistance, with a decisive breakout potentially opening the door to 25,900-26,000 levels.",
-      "category": "Energy & geopolitics",
-      "reason": "Energy costs and disruption can affect Indian inflation, import costs and exposed sectors.",
-      "matched": [
-        "Energy & geopolitics",
-        "Market flows"
-      ],
-      "tier": "Must know",
-      "related": [],
-      "cluster_count": 1,
-      "impact_assets": [
-        "Equities",
-        "Commodities"
-      ],
-      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "b8ecd4a7109d3429",
-      "title": "Reliance lays foundation for ₹1,600-crore Campa Cola plant in Karnataka; 109-acre Vijayapura unit to create 5,000 jobs",
-      "url": "https://www.livemint.com/companies/news/reliance-lays-foundation-for-1-600-crore-campa-cola-plant-in-karnataka-109-acre-vijayapura-unit-to-create-5-000-jobs-11794934344765.html",
-      "published": 1794936875.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "Mint Companies",
-          "url": "https://www.livemint.com/companies/news/reliance-lays-foundation-for-1-600-crore-campa-cola-plant-in-karnataka-109-acre-vijayapura-unit-to-create-5-000-jobs-11794934344765.html"
-        },
-        {
-          "name": "CNBC-TV18",
-          "url": "https://www.cnbctv18.com/market/astrazeneca-pharma-india-signs-loi-with-reliance-strand-life-sciences-healthcare-tie-up-20035844.htm"
-        }
-      ],
-      "score": 2,
-      "summary": "Reliance Group will invest ₹1,600 crore to set up a Campa Cola plant on 109 acres in Karnataka's Vijayapura district. The project is expected to generate 2,000 direct and over 3,000 indirect jobs, with priority urged for families who gave up land.",
-      "category": "Other news",
-      "reason": "Key market catalyst driving market liquidity and session volatility.",
-      "matched": [],
-      "tier": "More",
-      "related": [
-        {
-          "title": "AstraZeneca Pharma India signs LoI with Reliance's Strand Life Sciences for healthcare tie-up",
-          "url": "https://www.cnbctv18.com/market/astrazeneca-pharma-india-signs-loi-with-reliance-strand-life-sciences-healthcare-tie-up-20035844.htm",
-          "source": "CNBC-TV18",
-          "published": 1794907345.0
-        }
-      ],
-      "cluster_count": 2,
-      "impact_assets": [
-        "Equities"
-      ],
-      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
-      "impact_chain": null,
-      "companies": [
-        {
-          "name": "Reliance",
-          "symbol": "reliance"
-        }
-      ]
-    },
-    {
-      "id": "4d721d1be323008e",
-      "title": "Alphabet’s Google acquires AI scheduling startup Howie to bolster agent lineup",
-      "url": "https://www.investing.com/news/stock-market-news/alphabets-google-acquires-ai-scheduling-startup-howie-to-bolster-agent-lineup-5033699",
-      "published": 1794936707.0,
-      "region": "Global",
-      "official": false,
-      "sources": [
-        {
-          "name": "Investing.com",
-          "url": "https://www.investing.com/news/stock-market-news/alphabets-google-acquires-ai-scheduling-startup-howie-to-bolster-agent-lineup-5033699"
-        },
-        {
-          "name": "CNBC World",
-          "url": "https://www.cnbc.com/2026/11/17/isomorphic-labs-series-c-ai-drug-discovery-.html"
-        }
-      ],
-      "score": 2,
-      "summary": "",
-      "category": "Other news",
-      "reason": "Key market catalyst driving market liquidity and session volatility.",
-      "matched": [],
-      "tier": "More",
-      "related": [
-        {
-          "title": "Exclusive-Trump’s China data center curb advances despite Amazon, Google, Meta lobbying",
-          "url": "https://www.investing.com/news/stock-market-news/exclusivetrumps-china-data-center-curb-advances-despite-amazon-google-meta-lobbying-5032280",
-          "source": "Investing.com",
-          "published": 1794936294.0
-        },
-        {
-          "title": "Demis Hassabis’ AI company raises $5 billion, months after he left as Google DeepMind CEO",
-          "url": "https://www.cnbc.com/2026/11/17/isomorphic-labs-series-c-ai-drug-discovery-.html",
-          "source": "CNBC World",
-          "published": 1794923887.0
-        }
-      ],
-      "cluster_count": 2,
       "impact_assets": [
         "Equities"
       ],
@@ -890,35 +1189,188 @@
       "companies": []
     },
     {
-      "id": "355ea31527a2690d",
-      "title": "Treasury yields moderate as investors parse retail sales data",
-      "url": "https://www.cnbc.com/2026/11/17/treasury-yields-bonds-inflation.html",
-      "published": 1794929758.0,
-      "region": "Global",
+      "id": "a95fc86d49c111e3",
+      "title": "Argentina vs Costa Rica: When And Where To Watch International Friendly Live",
+      "url": "https://www.ndtvprofit.com/sports/argentina-vs-costa-rica-when-and-where-to-watch-international-friendly-live-12341071#publisher=newsstand",
+      "published": 1794941220.0,
+      "region": "India",
       "official": false,
       "sources": [
         {
-          "name": "CNBC World",
-          "url": "https://www.cnbc.com/2026/11/17/treasury-yields-bonds-inflation.html"
+          "name": "Zerodha Pulse",
+          "url": "https://www.ndtvprofit.com/sports/argentina-vs-costa-rica-when-and-where-to-watch-international-friendly-live-12341071#publisher=newsstand"
+        },
+        {
+          "name": "NDTV Profit",
+          "url": "https://www.ndtvprofit.com/sports/argentina-vs-costa-rica-when-and-where-to-watch-international-friendly-live-12341071#publisher=newsstand"
         }
       ],
-      "score": 3,
-      "summary": "Investors digested economic data and comments from Federal Reserve officials on Tuesday.",
-      "category": "Market flows",
-      "reason": "Flows, currency and yields provide context for Indian equity risk appetite.",
-      "matched": [
-        "Market flows"
-      ],
-      "tier": "Watch",
+      "score": 2,
+      "summary": "Argentina will play their second international friendly of the November window against Costa Rica following Lionel Messi's international retirement.",
+      "category": "Other news",
+      "reason": "Key market catalyst driving market liquidity and session volatility.",
+      "matched": [],
+      "tier": "More",
       "related": [],
-      "cluster_count": 1,
+      "cluster_count": 2,
       "impact_assets": [
-        "Rates",
         "Equities"
       ],
       "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
       "impact_chain": null,
       "companies": []
+    },
+    {
+      "id": "179df2da29aeacd8",
+      "title": "Sunil Chhetri Congratulates India After Pakistan Win, Sends Special Message To Blue Tigers",
+      "url": "https://www.ndtvprofit.com/sports/sunil-chhetri-congratulates-india-after-pakistan-win-sends-special-message-to-blue-tigers-12341040#publisher=newsstand",
+      "published": 1794940205.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "Zerodha Pulse",
+          "url": "https://www.ndtvprofit.com/sports/sunil-chhetri-congratulates-india-after-pakistan-win-sends-special-message-to-blue-tigers-12341040#publisher=newsstand"
+        },
+        {
+          "name": "NDTV Profit",
+          "url": "https://www.ndtvprofit.com/sports/sunil-chhetri-congratulates-india-after-pakistan-win-sends-special-message-to-blue-tigers-12341040#publisher=newsstand"
+        }
+      ],
+      "score": 2,
+      "summary": "Chhetri was India's star performer in the 2023 edition, winning both the Golden Ball and Golden Boot as the Blue Tigers lifted the trophy.",
+      "category": "Other news",
+      "reason": "Key market catalyst driving market liquidity and session volatility.",
+      "matched": [],
+      "tier": "More",
+      "related": [],
+      "cluster_count": 2,
+      "impact_assets": [
+        "Equities"
+      ],
+      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
+      "id": "5df6fb3da20725f8",
+      "title": "No SpiceJet Departures From Mumbai Since 7 PM, Passengers Complain Of Lack Of Updates",
+      "url": "https://www.ndtvprofit.com/india/no-spicejet-departures-from-mumbai-since-7-pm-passengers-complain-of-lack-of-updates-12340982#publisher=newsstand",
+      "published": 1794939323.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "Zerodha Pulse",
+          "url": "https://www.ndtvprofit.com/india/no-spicejet-departures-from-mumbai-since-7-pm-passengers-complain-of-lack-of-updates-12340982#publisher=newsstand"
+        },
+        {
+          "name": "NDTV Profit",
+          "url": "https://www.ndtvprofit.com/india/no-spicejet-departures-from-mumbai-since-7-pm-passengers-complain-of-lack-of-updates-12340982#publisher=newsstand"
+        }
+      ],
+      "score": 2,
+      "summary": "With no flights taking off since 7 PM, passengers continue to face inconvenience amid a lack of clear communication.",
+      "category": "Other news",
+      "reason": "Key market catalyst driving market liquidity and session volatility.",
+      "matched": [],
+      "tier": "More",
+      "related": [],
+      "cluster_count": 2,
+      "impact_assets": [
+        "Equities"
+      ],
+      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
+      "id": "758d3b2880a67197",
+      "title": "DRI searches Cipla’s Mumbai office and Bhiwandi depot over imported drug classification",
+      "url": "https://www.thehindu.com/business/dri-searches-ciplas-mumbai-office-and-bhiwandi-depot-over-imported-drug-classification/article71713303.ece",
+      "published": 1794939031.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "Zerodha Pulse",
+          "url": "https://www.thehindu.com/business/dri-searches-ciplas-mumbai-office-and-bhiwandi-depot-over-imported-drug-classification/article71713303.ece"
+        },
+        {
+          "name": "CNBC-TV18",
+          "url": "https://www.cnbctv18.com/market/stocks/cipla-share-price-says-dri-conducts-search-at-mumbai-office-bhiwandi-depot-over-imported-drug-20035367.htm"
+        }
+      ],
+      "score": 2,
+      "summary": "The pharmaceutical company said it cooperated with authorities and that the search would have no material impact on its financials or operations",
+      "category": "Other news",
+      "reason": "Key market catalyst driving market liquidity and session volatility.",
+      "matched": [],
+      "tier": "More",
+      "related": [
+        {
+          "title": "Cipla says DRI conducts search at Mumbai office, Bhiwandi depot over imported drug",
+          "url": "https://www.cnbctv18.com/market/stocks/cipla-share-price-says-dri-conducts-search-at-mumbai-office-bhiwandi-depot-over-imported-drug-20035367.htm",
+          "source": "CNBC-TV18",
+          "published": 1794854554.0
+        }
+      ],
+      "cluster_count": 2,
+      "impact_assets": [
+        "Equities"
+      ],
+      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
+      "impact_chain": null,
+      "companies": [
+        {
+          "name": "Cipla",
+          "symbol": "cipla"
+        }
+      ]
+    },
+    {
+      "id": "cc7defa8956b35fa",
+      "title": "BlackRock, NBIM, and GIC likely to invest in Bajaj Finance share sale",
+      "url": "https://www.business-standard.com/finance/investment/blackrock-nbim-and-gic-likely-to-invest-in-bajaj-finance-share-sale-126111701556_1.html",
+      "published": 1794938595.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "Zerodha Pulse",
+          "url": "https://www.business-standard.com/finance/investment/blackrock-nbim-and-gic-likely-to-invest-in-bajaj-finance-share-sale-126111701556_1.html"
+        },
+        {
+          "name": "ET Markets",
+          "url": "https://economictimes.indiatimes.com/markets/stocks/stock-liveblog/bajaj-finance-share-price-today-live-17-nov-2026/liveblog/135908831.cms"
+        }
+      ],
+      "score": 2,
+      "summary": "Norges Bank Investment Management, GIC and other global funds participated in the ₹11,700 crore institutional placement, alongside major domestic mutual funds",
+      "category": "Other news",
+      "reason": "Key market catalyst driving market liquidity and session volatility.",
+      "matched": [],
+      "tier": "More",
+      "related": [
+        {
+          "title": "Bajaj Finance Share Price Highlights: Bajaj Finance Stock Price History",
+          "url": "https://economictimes.indiatimes.com/markets/stocks/stock-liveblog/bajaj-finance-share-price-today-live-17-nov-2026/liveblog/135908831.cms",
+          "source": "ET Markets",
+          "published": 1794885677.0
+        }
+      ],
+      "cluster_count": 2,
+      "impact_assets": [
+        "Equities"
+      ],
+      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
+      "impact_chain": null,
+      "companies": [
+        {
+          "name": "Bajaj Finance",
+          "symbol": "bajaj finance"
+        }
+      ]
     },
     {
       "id": "dcdf47d02c9adb15",
@@ -947,36 +1399,6 @@
         "Equities"
       ],
       "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "42a555c90e3be1ee",
-      "title": "Major Economic Indicators Latest Numbers",
-      "url": "https://www.bls.gov/bls/",
-      "published": 1794922225.0,
-      "region": "Global",
-      "official": true,
-      "sources": [
-        {
-          "name": "US BLS",
-          "url": "https://www.bls.gov/bls/"
-        }
-      ],
-      "score": 5,
-      "summary": "Consumer Price Index (CPI): +0.4% in Oct 2026 News Release Historical Data Unemployment Rate: 4.1% in Oct 2026 News Release Historical Data Payroll Employment: +165,000(p) in Oct 2026 News Release Historical Data Average Hourly Earnings: +$0.14(p) in Oct 2026 News Release Historical Data Producer Price Index - Final Demand: +0.3%(p) in Oct 2026 New",
-      "category": "Economic data",
-      "reason": "Compare the release with expectations; the surprise can affect rates and risk appetite.",
-      "matched": [
-        "Economic data"
-      ],
-      "tier": "Watch",
-      "related": [],
-      "cluster_count": 1,
-      "impact_assets": [
-        "Equities"
-      ],
-      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
       "impact_chain": null,
       "companies": []
     },
@@ -1115,463 +1537,376 @@
       "companies": []
     },
     {
-      "id": "c433f30b0e66b7cb",
-      "title": "India Beat Pakistan 2-1 To Win SAFF Championship 2026, Secure Historic Three-Peat",
-      "url": "https://www.ndtvprofit.com/sports/india-beat-pakistan-2-1-to-win-saff-championship-2026-secure-historic-three-peat-12340554#publisher=newsstand",
-      "published": 1794933594.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "Zerodha Pulse",
-          "url": "https://www.ndtvprofit.com/sports/india-beat-pakistan-2-1-to-win-saff-championship-2026-secure-historic-three-peat-12340554#publisher=newsstand"
-        },
-        {
-          "name": "NDTV Profit",
-          "url": "https://www.ndtvprofit.com/sports/india-beat-pakistan-2-1-to-win-saff-championship-2026-secure-historic-three-peat-12340554#publisher=newsstand"
-        }
-      ],
-      "score": 2,
-      "summary": "India became the first team to win three consecutive SAFF Championship titles after defeating Pakistan 2-1 in the final in Dhaka.",
-      "category": "Other news",
-      "reason": "Key market catalyst driving market liquidity and session volatility.",
-      "matched": [],
-      "tier": "More",
-      "related": [],
-      "cluster_count": 2,
-      "impact_assets": [
-        "Equities"
-      ],
-      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "633fa38f7f651059",
-      "title": "Mahindra Last Mile Mobility Wins Earthshot Prize 2026 In 'Clean Our Air' Category",
-      "url": "https://www.ndtvprofit.com/business/mahindra-last-mile-mobility-wins-earthshot-prize-2026-in-clean-our-air-category-12340565#publisher=newsstand",
-      "published": 1794933570.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "Zerodha Pulse",
-          "url": "https://www.ndtvprofit.com/business/mahindra-last-mile-mobility-wins-earthshot-prize-2026-in-clean-our-air-category-12340565#publisher=newsstand"
-        },
-        {
-          "name": "NDTV Profit",
-          "url": "https://www.ndtvprofit.com/business/mahindra-last-mile-mobility-wins-earthshot-prize-2026-in-clean-our-air-category-12340565#publisher=newsstand"
-        }
-      ],
-      "score": 2,
-      "summary": "Mahindra's 4 lakh electric commercial vehicles have covered over 9 billion km, helping avert 1.85 lakh tonnes of CO₂ emissions.",
-      "category": "Other news",
-      "reason": "Key market catalyst driving market liquidity and session volatility.",
-      "matched": [],
-      "tier": "More",
-      "related": [],
-      "cluster_count": 2,
-      "impact_assets": [
-        "Equities"
-      ],
-      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "39d1f6d9efa8f62f",
-      "title": "Thane Water Shutdown: Supply To Remain Affected On These Days; Check Details",
-      "url": "https://www.ndtvprofit.com/india/thane-water-shutdown-supply-to-remain-affected-on-these-days-check-details-12340548#publisher=newsstand",
-      "published": 1794933024.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "Zerodha Pulse",
-          "url": "https://www.ndtvprofit.com/india/thane-water-shutdown-supply-to-remain-affected-on-these-days-check-details-12340548#publisher=newsstand"
-        },
-        {
-          "name": "NDTV Profit",
-          "url": "https://www.ndtvprofit.com/india/thane-water-shutdown-supply-to-remain-affected-on-these-days-check-details-12340548#publisher=newsstand"
-        }
-      ],
-      "score": 2,
-      "summary": "The shutdown is part of a 10% water cut ordered after weak post-monsoon rainfall and El Nio. Supply may stay at low pressure for a day or two after it resumes.",
-      "category": "Other news",
-      "reason": "Key market catalyst driving market liquidity and session volatility.",
-      "matched": [],
-      "tier": "More",
-      "related": [],
-      "cluster_count": 2,
-      "impact_assets": [
-        "Equities"
-      ],
-      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "c24203cd55e6908d",
-      "title": "OM Advance Bookings: Dhanush-Mammootty Starrer Makes Early Mark With Strong Ticket Sales",
-      "url": "https://www.ndtvprofit.com/entertainment/cinema-kollywood-movie-om-operation-mole-advance-bookings-dhanush-mammootty-sai-pallavi-sreeleela-tamil-film-pre-release-ticket-sales-12340315#publisher=newsstand",
-      "published": 1794932191.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "Zerodha Pulse",
-          "url": "https://www.ndtvprofit.com/entertainment/cinema-kollywood-movie-om-operation-mole-advance-bookings-dhanush-mammootty-sai-pallavi-sreeleela-tamil-film-pre-release-ticket-sales-12340315#publisher=newsstand"
-        },
-        {
-          "name": "NDTV Profit",
-          "url": "https://www.ndtvprofit.com/entertainment/cinema-kollywood-movie-om-operation-mole-advance-bookings-dhanush-mammootty-sai-pallavi-sreeleela-tamil-film-pre-release-ticket-sales-12340315#publisher=newsstand"
-        }
-      ],
-      "score": 2,
-      "summary": "Directed by Rajkumar Periasamy, O.M - Operation Mole also stars Sai Pallavi and Sreeleela in key roles.",
-      "category": "Other news",
-      "reason": "Key market catalyst driving market liquidity and session volatility.",
-      "matched": [],
-      "tier": "More",
-      "related": [],
-      "cluster_count": 2,
-      "impact_assets": [
-        "Equities"
-      ],
-      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "8a1109eb18577af6",
-      "title": "Delhi Capitals Part Ways With Mitchell Starc, 5 Others Ahead Of IPL 2027 Auction",
-      "url": "https://www.ndtvprofit.com/sports/delhi-capitals-part-ways-with-mitchell-starc-5-others-ahead-of-ipl-2027-auction-12340498#publisher=newsstand",
-      "published": 1794931952.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "Zerodha Pulse",
-          "url": "https://www.ndtvprofit.com/sports/delhi-capitals-part-ways-with-mitchell-starc-5-others-ahead-of-ipl-2027-auction-12340498#publisher=newsstand"
-        },
-        {
-          "name": "NDTV Profit",
-          "url": "https://www.ndtvprofit.com/sports/delhi-capitals-part-ways-with-mitchell-starc-5-others-ahead-of-ipl-2027-auction-12340498#publisher=newsstand"
-        }
-      ],
-      "score": 2,
-      "summary": "The December 16 mini-auction will give Delhi Capitals an opportunity to fill the vacant spots in their squad and strengthen their options ahead of the new season.",
-      "category": "Other news",
-      "reason": "Key market catalyst driving market liquidity and session volatility.",
-      "matched": [],
-      "tier": "More",
-      "related": [],
-      "cluster_count": 2,
-      "impact_assets": [
-        "Equities"
-      ],
-      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "06de7de4b4b7079e",
-      "title": "Thane Police Commissioner's Phone Hacked, Obscene Videos Posted On WhatsApp Status",
-      "url": "https://www.ndtvprofit.com/india/thane-police-commissioners-phone-hacked-obscene-videos-posted-on-whatsapp-status-12340347#publisher=newsstand",
-      "published": 1794930740.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "Zerodha Pulse",
-          "url": "https://www.ndtvprofit.com/india/thane-police-commissioners-phone-hacked-obscene-videos-posted-on-whatsapp-status-12340347#publisher=newsstand"
-        },
-        {
-          "name": "NDTV Profit",
-          "url": "https://www.ndtvprofit.com/india/thane-police-commissioners-phone-hacked-obscene-videos-posted-on-whatsapp-status-12340347#publisher=newsstand"
-        }
-      ],
-      "score": 2,
-      "summary": "The WhatsApp account of Thane Police Commissioner Ashutosh Dumbare has allegedly been hacked.",
-      "category": "Other news",
-      "reason": "Key market catalyst driving market liquidity and session volatility.",
-      "matched": [],
-      "tier": "More",
-      "related": [],
-      "cluster_count": 2,
-      "impact_assets": [
-        "Equities"
-      ],
-      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "4838762a69be1cbe",
-      "title": "'No Disturbance During Missions': Couple's GTA 6 Contract Goes Viral Ahead Of Game's Launch",
-      "url": "https://www.ndtvprofit.com/trending/no-disturbance-during-missions-couples-gta-6-contract-goes-viral-ahead-of-games-launch-12340200#publisher=newsstand",
-      "published": 1794930470.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "Zerodha Pulse",
-          "url": "https://www.ndtvprofit.com/trending/no-disturbance-during-missions-couples-gta-6-contract-goes-viral-ahead-of-games-launch-12340200#publisher=newsstand"
-        },
-        {
-          "name": "NDTV Profit",
-          "url": "https://www.ndtvprofit.com/trending/no-disturbance-during-missions-couples-gta-6-contract-goes-viral-ahead-of-games-launch-12340200#publisher=newsstand"
-        }
-      ],
-      "score": 2,
-      "summary": "The five-point agreement gives the husband 10 days of uninterrupted gaming. Some users told the wife she \"deserves better,\" but the couple say they are enjoying the reactions.",
-      "category": "Other news",
-      "reason": "Key market catalyst driving market liquidity and session volatility.",
-      "matched": [],
-      "tier": "More",
-      "related": [],
-      "cluster_count": 2,
-      "impact_assets": [
-        "Equities"
-      ],
-      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "85a981a653ff00b3",
-      "title": "Can AI Solve All Disease? DeepMind Co-Founder Demis Hassabis Just Raised $5 Billion To Find Out",
-      "url": "https://www.ndtvprofit.com/business/can-ai-solve-all-disease-deepmind-co-founder-demis-hassabis-just-raised-usd-5-billion-to-find-out-12339907#publisher=newsstand",
-      "published": 1794930290.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "Zerodha Pulse",
-          "url": "https://www.ndtvprofit.com/business/can-ai-solve-all-disease-deepmind-co-founder-demis-hassabis-just-raised-usd-5-billion-to-find-out-12339907#publisher=newsstand"
-        },
-        {
-          "name": "NDTV Profit",
-          "url": "https://www.ndtvprofit.com/business/can-ai-solve-all-disease-deepmind-co-founder-demis-hassabis-just-raised-usd-5-billion-to-find-out-12339907#publisher=newsstand"
-        }
-      ],
-      "score": 2,
-      "summary": "At the centre of this strategy is IsoDDE, Isomorphic's AI platform that uses simulation models to study biological systems and design potential drug molecules.",
-      "category": "Other news",
-      "reason": "Key market catalyst driving market liquidity and session volatility.",
-      "matched": [],
-      "tier": "More",
-      "related": [],
-      "cluster_count": 2,
-      "impact_assets": [
-        "Equities"
-      ],
-      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "b747faa40dd84454",
-      "title": "Was Jeffrey Epstein Murdered? New Forensic Findings Challenge Official Cause Of Death",
-      "url": "https://www.ndtvprofit.com/world/was-jeffrey-epstein-murdered-new-forensic-findings-challenge-official-cause-of-death-12340177#publisher=newsstand",
-      "published": 1794929628.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "Zerodha Pulse",
-          "url": "https://www.ndtvprofit.com/world/was-jeffrey-epstein-murdered-new-forensic-findings-challenge-official-cause-of-death-12340177#publisher=newsstand"
-        },
-        {
-          "name": "NDTV Profit",
-          "url": "https://www.ndtvprofit.com/world/was-jeffrey-epstein-murdered-new-forensic-findings-challenge-official-cause-of-death-12340177#publisher=newsstand"
-        }
-      ],
-      "score": 2,
-      "summary": "Michael Freeman and two other researchers say autopsy records and photographic reconstructions point to strangulation, not suicide.",
-      "category": "Other news",
-      "reason": "Key market catalyst driving market liquidity and session volatility.",
-      "matched": [],
-      "tier": "More",
-      "related": [],
-      "cluster_count": 2,
-      "impact_assets": [
-        "Equities"
-      ],
-      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "e4f67038cc1bea7a",
-      "title": "How Dan Carney Turned $600 Borrowed From His Mother Into Pizza Hut; And What He Left Behind At 95",
-      "url": "https://www.ndtvprofit.com/business/how-dan-carney-turned-600-borrowed-from-his-mother-into-pizza-hut-and-what-he-left-behind-at-95-12339931#publisher=newsstand",
-      "published": 1794929018.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "Zerodha Pulse",
-          "url": "https://www.ndtvprofit.com/business/how-dan-carney-turned-600-borrowed-from-his-mother-into-pizza-hut-and-what-he-left-behind-at-95-12339931#publisher=newsstand"
-        },
-        {
-          "name": "NDTV Profit",
-          "url": "https://www.ndtvprofit.com/business/how-dan-carney-turned-600-borrowed-from-his-mother-into-pizza-hut-and-what-he-left-behind-at-95-12339931#publisher=newsstand"
-        }
-      ],
-      "score": 2,
-      "summary": "A 26-year-old Carney and his brother Frank borrowed $600 from their mother and opened a small pizza parlor in Kansas, where they bet on an Italian dish that most Americans had barely heard of. Seven decades later, the firm has become one of the most recognizable restaurant empires in the world.",
-      "category": "Other news",
-      "reason": "Key market catalyst driving market liquidity and session volatility.",
-      "matched": [],
-      "tier": "More",
-      "related": [],
-      "cluster_count": 2,
-      "impact_assets": [
-        "Equities"
-      ],
-      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "0144c2c3f6bd4876",
-      "title": "GTA 6 Release Day: School Offers Gaming Vouchers To Stop Students Skipping Classes",
-      "url": "https://www.ndtvprofit.com/trending/gta-6-release-day-school-offers-gaming-vouchers-to-stop-students-skipping-classes-12340151#publisher=newsstand",
-      "published": 1794928722.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "Zerodha Pulse",
-          "url": "https://www.ndtvprofit.com/trending/gta-6-release-day-school-offers-gaming-vouchers-to-stop-students-skipping-classes-12340151#publisher=newsstand"
-        },
-        {
-          "name": "NDTV Profit",
-          "url": "https://www.ndtvprofit.com/trending/gta-6-release-day-school-offers-gaming-vouchers-to-stop-students-skipping-classes-12340151#publisher=newsstand"
-        }
-      ],
-      "score": 2,
-      "summary": "The new game lands 13 years after GTA 5, whose 2013 release gave rise to the phrase \"GTA Flu\" after reports of widespread sick leave. GTA 5 has since sold nearly 230 million copies.",
-      "category": "Other news",
-      "reason": "Key market catalyst driving market liquidity and session volatility.",
-      "matched": [],
-      "tier": "More",
-      "related": [],
-      "cluster_count": 2,
-      "impact_assets": [
-        "Equities"
-      ],
-      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "d869583c98f28dff",
-      "title": "Advait Energy Transitions bags ₹130 cr GETCO order for 220 kV transmission line reconductoring",
-      "url": "https://www.cnbctv18.com/market/stocks/advait-energy-transitions-share-price-bags-rs-130-cr-getco-order-for-220-kv-transmission-line-reconductoring-20036144.htm",
-      "published": 1794925557.0,
+      "id": "ed6767bb3f81655f",
+      "title": "Earnings recovery, lower oil prices put India back on global investors' radar: Arvind Sanger",
+      "url": "https://www.cnbctv18.com/market/india-earnings-recovery-ai-trade-arvind-sanger-geosphere-capital-20035488.htm",
+      "published": 1794887353.0,
       "region": "India",
       "official": false,
       "sources": [
         {
           "name": "CNBC-TV18",
-          "url": "https://www.cnbctv18.com/market/stocks/advait-energy-transitions-share-price-bags-rs-130-cr-getco-order-for-220-kv-transmission-line-reconductoring-20036144.htm"
-        }
-      ],
-      "score": 4,
-      "summary": "Advait Energy Transitions has secured a ₹130.49 crore order from GETCO for reconductoring two 220 kV transmission lines in Gujarat with higher-ampacity conductors. The supply, installation, testing and commissioning contract is to be executed within 15 months.",
-      "category": "Company move",
-      "reason": "A large contract or order may affect the company and its sector; check execution and guidance.",
-      "matched": [
-        "Company move"
-      ],
-      "tier": "Watch",
-      "related": [],
-      "cluster_count": 1,
-      "impact_assets": [
-        "Equities"
-      ],
-      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "1c124f0d4021d335",
-      "title": "IIFL Finance Block Deal: Fairfax likely to sell 13% stake at ₹611 floor price",
-      "url": "https://www.cnbctv18.com/market/stocks/iifl-finance-share-price-block-deal-fairfax-likely-to-sell-13-stake-at-rs-611-floor-price-20036050.htm",
-      "published": 1794924984.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "CNBC-TV18",
-          "url": "https://www.cnbctv18.com/market/stocks/iifl-finance-share-price-block-deal-fairfax-likely-to-sell-13-stake-at-rs-611-floor-price-20036050.htm"
+          "url": "https://www.cnbctv18.com/market/india-earnings-recovery-ai-trade-arvind-sanger-geosphere-capital-20035488.htm"
         },
-        {
-          "name": "Mint Companies",
-          "url": "https://www.livemint.com/companies/fairfax-puts-entire-370-mn-iifl-finance-stake-on-the-block-after-idbi-acquisition-11794920000664.html"
-        },
-        {
-          "name": "Mint Markets",
-          "url": "https://www.livemint.com/market/stock-market-news/fairfax-likely-to-sell-13-25-stake-in-iifl-finance-via-rs-3-454-crore-block-deal-report-11794919349807.html"
-        }
-      ],
-      "score": 4,
-      "summary": "Fairfax is looking to sell up to a 13.25% stake in IIFL Finance through a block deal, involving up to 5.65 crore shares worth ₹3,454 crore. The floor price of ₹611 per share represents a nearly 4% discount to the current market price.",
-      "category": "Other news",
-      "reason": "Key market catalyst driving market liquidity and session volatility.",
-      "matched": [],
-      "tier": "Watch",
-      "related": [
-        {
-          "title": "Fairfax to sell entire 13.25% stake in IIFL Finance via block deal",
-          "url": "https://www.livemint.com/companies/fairfax-puts-entire-370-mn-iifl-finance-stake-on-the-block-after-idbi-acquisition-11794920000664.html",
-          "source": "Mint Companies",
-          "published": 1794924405.0
-        },
-        {
-          "title": "After IDBI Bank stake buy, now Fairfax set to sell 13.25% stake in IIFL Finance via ₹3,454-crore block deal: Report",
-          "url": "https://www.livemint.com/market/stock-market-news/fairfax-likely-to-sell-13-25-stake-in-iifl-finance-via-rs-3-454-crore-block-deal-report-11794919349807.html",
-          "source": "Mint Markets",
-          "published": 1794920866.0
-        }
-      ],
-      "cluster_count": 3,
-      "impact_assets": [
-        "Equities"
-      ],
-      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "4269d7b7fb5aa3dc",
-      "title": "States' subsidy, cash transfer outgo jumps from 16% to 21% of revenue receipts in 5 years: Report",
-      "url": "https://economictimes.indiatimes.com/news/economy/indicators/states-subsidy-cash-transfer-outgo-jumps-from-16-to-21-of-revenue-receipts-in-5-years-report/articleshow/135926308.cms",
-      "published": 1794919726.0,
-      "region": "India",
-      "official": false,
-      "sources": [
         {
           "name": "ET Economy",
-          "url": "https://economictimes.indiatimes.com/news/economy/indicators/states-subsidy-cash-transfer-outgo-jumps-from-16-to-21-of-revenue-receipts-in-5-years-report/articleshow/135926308.cms"
+          "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/indias-2025-26-edible-oil-import-bill-up-24-pc-to-record-rs-2-lakh-cr-crude-palm-oil-buying-surges/articleshow/135888763.cms"
         }
       ],
-      "score": 4,
-      "summary": "States' spending on subsidies and transfers has risen significantly over recent years and is expected to continue growing. By 2026-27, states are estimated to spend around 1 percent of GDP on cash transfer schemes. Major contributors to this increase are power subsidies and unconditional transfers for various beneficiaries, including women and farm",
+      "score": 8,
+      "summary": "Arvind Sanger, Managing Partner of Geosphere Capital Management discusses the outlook for Indian equities, global investment trends, AI-related volatility, interest rates and sectors offering opportunities.",
       "category": "Earnings",
       "reason": "Compare results and guidance with expectations for the company and its sector.",
       "matched": [
-        "Earnings"
+        "Earnings",
+        "Energy & geopolitics"
       ],
-      "tier": "Watch",
+      "tier": "Must know",
+      "related": [
+        {
+          "title": "India's 2025-26 edible oil import bill up 24 pc to record Rs 2 lakh cr; crude palm oil buying surges",
+          "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/indias-2025-26-edible-oil-import-bill-up-24-pc-to-record-rs-2-lakh-cr-crude-palm-oil-buying-surges/articleshow/135888763.cms",
+          "source": "ET Economy",
+          "published": 1794831113.0
+        },
+        {
+          "title": "India's CAD may touch 1.2% of GDP in FY27 as oil, gold demand pose risks: UBI",
+          "url": "https://economictimes.indiatimes.com/news/economy/indicators/indias-cad-may-touch-1-2-of-gdp-in-fy27-as-oil-gold-demand-pose-risks-ubi/articleshow/135914575.cms",
+          "source": "ET Economy",
+          "published": 1794898714.0
+        }
+      ],
+      "cluster_count": 2,
+      "impact_assets": [
+        "Equities",
+        "Commodities"
+      ],
+      "why_it_matters": "Crude affects India’s import bill and energy-sensitive sectors; the headline does not establish a clear price direction.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
+      "id": "b82f2c05cc9b00e2",
+      "title": "Bharat NCAP-Like Safety Ratings For E-Rickshaws? What Nitin Gadkari Has Announced",
+      "url": "https://www.ndtvprofit.com/india/bharat-ncap-like-safety-ratings-for-e-rickshaws-what-nitin-gadkari-has-announced-12340917#publisher=newsstand",
+      "published": 1794938512.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "Zerodha Pulse",
+          "url": "https://www.ndtvprofit.com/india/bharat-ncap-like-safety-ratings-for-e-rickshaws-what-nitin-gadkari-has-announced-12340917#publisher=newsstand"
+        },
+        {
+          "name": "NDTV Profit",
+          "url": "https://www.ndtvprofit.com/india/bharat-ncap-like-safety-ratings-for-e-rickshaws-what-nitin-gadkari-has-announced-12340917#publisher=newsstand"
+        }
+      ],
+      "score": 2,
+      "summary": "Gadkari's announcement comes against the backdrop of India's persistent road safety challenges.",
+      "category": "Other news",
+      "reason": "Key market catalyst driving market liquidity and session volatility.",
+      "matched": [],
+      "tier": "More",
       "related": [],
-      "cluster_count": 1,
+      "cluster_count": 2,
+      "impact_assets": [
+        "Equities"
+      ],
+      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
+      "id": "0fba7a9bc9bb47d6",
+      "title": "These Uber Eats Drones Don't Land. Here's How The Food Delivery Actually Reaches",
+      "url": "https://www.ndtvprofit.com/business/these-uber-eats-drones-do-not-land-here-is-how-the-food-delivery-actually-reaches-12340916#publisher=newsstand",
+      "published": 1794938111.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "Zerodha Pulse",
+          "url": "https://www.ndtvprofit.com/business/these-uber-eats-drones-do-not-land-here-is-how-the-food-delivery-actually-reaches-12340916#publisher=newsstand"
+        },
+        {
+          "name": "NDTV Profit",
+          "url": "https://www.ndtvprofit.com/business/these-uber-eats-drones-do-not-land-here-is-how-the-food-delivery-actually-reaches-12340916#publisher=newsstand"
+        }
+      ],
+      "score": 2,
+      "summary": "The rollout puts Uber and Zipline in competition with other major players pursuing commercial drone deliveries, including Alphabet's Wing and Amazon's Prime Air.",
+      "category": "Other news",
+      "reason": "Key market catalyst driving market liquidity and session volatility.",
+      "matched": [],
+      "tier": "More",
+      "related": [],
+      "cluster_count": 2,
+      "impact_assets": [
+        "Equities"
+      ],
+      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
+      "id": "b525e92537d06214",
+      "title": "'I Am Responsible For 40% Of Air Pollution': Nitin Gadkari's Push To Move India Beyond Petrol, Diesel",
+      "url": "https://www.ndtvprofit.com/india/i-am-responsible-for-40-of-air-pollution-nitin-gadkaris-push-to-move-india-beyond-petrol-diesel-12340914#publisher=newsstand",
+      "published": 1794937796.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "Zerodha Pulse",
+          "url": "https://www.ndtvprofit.com/india/i-am-responsible-for-40-of-air-pollution-nitin-gadkaris-push-to-move-india-beyond-petrol-diesel-12340914#publisher=newsstand"
+        },
+        {
+          "name": "NDTV Profit",
+          "url": "https://www.ndtvprofit.com/india/i-am-responsible-for-40-of-air-pollution-nitin-gadkaris-push-to-move-india-beyond-petrol-diesel-12340914#publisher=newsstand"
+        }
+      ],
+      "score": 2,
+      "summary": "The minister also spoke about 3,000 plants under the GOBARdhan Yojana and the possibility of converting carbon dioxide into urea.",
+      "category": "Other news",
+      "reason": "Key market catalyst driving market liquidity and session volatility.",
+      "matched": [],
+      "tier": "More",
+      "related": [],
+      "cluster_count": 2,
+      "impact_assets": [
+        "Equities"
+      ],
+      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
+      "id": "aa89ea21f42ee6e6",
+      "title": "Kate Middleton's Red Anarkali, Prince William's Bandhgala Bring Indian Fashion To Earthshot Awards",
+      "url": "https://www.ndtvprofit.com/lifestyle/kate-middletons-red-anarkali-and-prince-williams-bandhgala-bring-indian-fashion-to-earthshot-awards-12340840#publisher=newsstand",
+      "published": 1794937255.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "Zerodha Pulse",
+          "url": "https://www.ndtvprofit.com/lifestyle/kate-middletons-red-anarkali-and-prince-williams-bandhgala-bring-indian-fashion-to-earthshot-awards-12340840#publisher=newsstand"
+        },
+        {
+          "name": "NDTV Profit",
+          "url": "https://www.ndtvprofit.com/lifestyle/kate-middletons-red-anarkali-and-prince-williams-bandhgala-bring-indian-fashion-to-earthshot-awards-12340840#publisher=newsstand"
+        }
+      ],
+      "score": 2,
+      "summary": "Prince William and Kate Middleton made a stylish appearance at the Earthshot Prize Awards in Mumbai, with their looks blending royal charm with the rich design and craftsmanship of India.",
+      "category": "Other news",
+      "reason": "Key market catalyst driving market liquidity and session volatility.",
+      "matched": [],
+      "tier": "More",
+      "related": [],
+      "cluster_count": 2,
+      "impact_assets": [
+        "Equities"
+      ],
+      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
+      "id": "6d414daefe6cb6d2",
+      "title": "AI Could Take 20% Of Global Work, But Create Tens Of Millions Of Jobs In India: IBM CEO | Exclusive",
+      "url": "https://www.ndtvprofit.com/technology/ai-could-take-20-of-global-work-but-create-tens-of-millions-of-jobs-in-india-ibm-ceo-exclusive-12340777#publisher=newsstand",
+      "published": 1794935841.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "Zerodha Pulse",
+          "url": "https://www.ndtvprofit.com/technology/ai-could-take-20-of-global-work-but-create-tens-of-millions-of-jobs-in-india-ibm-ceo-exclusive-12340777#publisher=newsstand"
+        },
+        {
+          "name": "NDTV Profit",
+          "url": "https://www.ndtvprofit.com/technology/ai-could-take-20-of-global-work-but-create-tens-of-millions-of-jobs-in-india-ibm-ceo-exclusive-12340777#publisher=newsstand"
+        }
+      ],
+      "score": 2,
+      "summary": "IBM CEO Arvind Krishna says that AI agents could take over half of today's white-collar jobs within five years, but India could unlock tens of millions of new jobs by becoming a global hub for AI deployment.",
+      "category": "Other news",
+      "reason": "Key market catalyst driving market liquidity and session volatility.",
+      "matched": [],
+      "tier": "More",
+      "related": [],
+      "cluster_count": 2,
+      "impact_assets": [
+        "Equities"
+      ],
+      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
+      "id": "6322324679451f40",
+      "title": "WATCH: MS Dhoni Shares Emotional Video After IPL Retirement, Says 'Fans Proved Me Wrong'",
+      "url": "https://www.ndtvprofit.com/sports/watch-ms-dhoni-shares-emotional-video-after-ipl-retirement-says-fans-proved-me-wrong-12340794#publisher=newsstand",
+      "published": 1794935704.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "Zerodha Pulse",
+          "url": "https://www.ndtvprofit.com/sports/watch-ms-dhoni-shares-emotional-video-after-ipl-retirement-says-fans-proved-me-wrong-12340794#publisher=newsstand"
+        },
+        {
+          "name": "NDTV Profit",
+          "url": "https://www.ndtvprofit.com/sports/watch-ms-dhoni-shares-emotional-video-after-ipl-retirement-says-fans-proved-me-wrong-12340794#publisher=newsstand"
+        }
+      ],
+      "score": 2,
+      "summary": "The former India captain shared a video featuring memorable moments from his cricketing journey, hours after Chennai Super Kings announced his appointment as team mentor from IPL 2027.",
+      "category": "Other news",
+      "reason": "Key market catalyst driving market liquidity and session volatility.",
+      "matched": [],
+      "tier": "More",
+      "related": [],
+      "cluster_count": 2,
+      "impact_assets": [
+        "Equities"
+      ],
+      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
+      "id": "810c25fc961cb1a5",
+      "title": "Sona Mohapatra Takes Fresh Dig At Salman Khan Over Maatrubhumi's 'Teri Sexy Beauty' Song",
+      "url": "https://www.ndtvprofit.com/entertainment/sona-mohapatra-takes-fresh-dig-at-salman-khan-over-maatrubhumis-teri-sexy-beauty-song-12340753#publisher=newsstand",
+      "published": 1794935520.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "Zerodha Pulse",
+          "url": "https://www.ndtvprofit.com/entertainment/sona-mohapatra-takes-fresh-dig-at-salman-khan-over-maatrubhumis-teri-sexy-beauty-song-12340753#publisher=newsstand"
+        },
+        {
+          "name": "NDTV Profit",
+          "url": "https://www.ndtvprofit.com/entertainment/sona-mohapatra-takes-fresh-dig-at-salman-khan-over-maatrubhumis-teri-sexy-beauty-song-12340753#publisher=newsstand"
+        }
+      ],
+      "score": 2,
+      "summary": "The singer recalled the threats she faced after calling out the actor in 2016 and 2019, and said she had no regrets about building her own career outside Bollywood.",
+      "category": "Other news",
+      "reason": "Key market catalyst driving market liquidity and session volatility.",
+      "matched": [],
+      "tier": "More",
+      "related": [],
+      "cluster_count": 2,
+      "impact_assets": [
+        "Equities"
+      ],
+      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
+      "id": "33ca9768af8496a9",
+      "title": "Panchayat Season 5 Release Date: The Wait Ends Tomorrow, Phulera Gang Set For A New Chapter",
+      "url": "https://www.ndtvprofit.com/entertainment/panchayat-season-5-release-date-the-wait-ends-tomorrow-phulera-gang-set-for-a-new-chapter-12340724#publisher=newsstand",
+      "published": 1794935500.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "Zerodha Pulse",
+          "url": "https://www.ndtvprofit.com/entertainment/panchayat-season-5-release-date-the-wait-ends-tomorrow-phulera-gang-set-for-a-new-chapter-12340724#publisher=newsstand"
+        },
+        {
+          "name": "NDTV Profit",
+          "url": "https://www.ndtvprofit.com/entertainment/panchayat-season-5-release-date-the-wait-ends-tomorrow-phulera-gang-set-for-a-new-chapter-12340724#publisher=newsstand"
+        }
+      ],
+      "score": 2,
+      "summary": "Jitendra Kumar will reprise his role as Abhishek Tripathi, with Neena Gupta returning as Manju Devi and Raghubir Yadav as Brij Bhushan Dubey.",
+      "category": "Other news",
+      "reason": "Key market catalyst driving market liquidity and session volatility.",
+      "matched": [],
+      "tier": "More",
+      "related": [],
+      "cluster_count": 2,
+      "impact_assets": [
+        "Equities"
+      ],
+      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
+      "id": "b655bff22c0654bb",
+      "title": "Darius Khambata hits back at Venu Srinivasan, Vijay Singh; says control of Tata Sons by Trusts essence of Tata model",
+      "url": "https://economictimes.indiatimes.com/news/company/corporate-trends/darius-khambata-hits-back-at-venu-srinivasan-vijay-singh-says-control-of-tata-sons-by-trusts-essence-of-tata-model/articleshow/135933469.cms",
+      "published": 1794933764.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "ET Recos",
+          "url": "https://economictimes.indiatimes.com/news/company/corporate-trends/darius-khambata-hits-back-at-venu-srinivasan-vijay-singh-says-control-of-tata-sons-by-trusts-essence-of-tata-model/articleshow/135933469.cms"
+        },
+        {
+          "name": "CNBC-TV18",
+          "url": "https://www.cnbctv18.com/business/companies/tata-tussle-darius-khambata-hits-back-at-venu-srinivasan-vijay-singh-over-listing-u-turn-20036003.htm"
+        }
+      ],
+      "score": 2,
+      "summary": "Control of Tata Sons by Tata Trusts, a set of non-profits which collectively own two-thirds of the largest conglomerate's holding company, is the essence of the 'Tata model', Khambata, a senior lawyer, said in a four-page letter written to Srinivasan and Singh.",
+      "category": "Other news",
+      "reason": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
+      "matched": [],
+      "tier": "More",
+      "related": [
+        {
+          "title": "Tata tussle: Darius Khambata hits back at Venu Srinivasan, Vijay Singh over listing U-turn",
+          "url": "https://www.cnbctv18.com/business/companies/tata-tussle-darius-khambata-hits-back-at-venu-srinivasan-vijay-singh-over-listing-u-turn-20036003.htm",
+          "source": "CNBC-TV18",
+          "published": 1794917987.0
+        }
+      ],
+      "cluster_count": 2,
       "impact_assets": [
         "Equities"
       ],
       "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
+      "id": "42a555c90e3be1ee",
+      "title": "Major Economic Indicators Latest Numbers",
+      "url": "https://www.bls.gov/bls/",
+      "published": 1794922225.0,
+      "region": "Global",
+      "official": true,
+      "sources": [
+        {
+          "name": "US BLS",
+          "url": "https://www.bls.gov/bls/"
+        }
+      ],
+      "score": 5,
+      "summary": "Consumer Price Index (CPI): +0.4% in Oct 2026 News Release Historical Data Unemployment Rate: 4.1% in Oct 2026 News Release Historical Data Payroll Employment: +165,000(p) in Oct 2026 News Release Historical Data Average Hourly Earnings: +$0.14(p) in Oct 2026 News Release Historical Data Producer Price Index - Final Demand: +0.3%(p) in Oct 2026 New",
+      "category": "Economic data",
+      "reason": "Compare the release with expectations; the surprise can affect rates and risk appetite.",
+      "matched": [
+        "Economic data"
+      ],
+      "tier": "Watch",
+      "related": [],
+      "cluster_count": 1,
+      "impact_assets": [
+        "Equities"
+      ],
+      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
       "impact_chain": null,
       "companies": []
     },
@@ -1612,12 +1947,6 @@
           "url": "https://www.livemint.com/companies/news/amazons-7-billion-green-energy-india-investment-4-projects-3-states-934-mw-capacity-and-power-for-3-5-million-homes-11794909333504.html",
           "source": "Mint Companies",
           "published": 1794911836.0
-        },
-        {
-          "title": "Amazon vows to fight the companys first North American union contract at a Canadian warehouse",
-          "url": "https://www.livemint.com/companies/amazon-vows-to-fight-the-companys-first-north-american-union-contract-at-a-canadian-warehouse-11794855174755.html",
-          "source": "Mint Companies",
-          "published": 1794855174.0
         }
       ],
       "cluster_count": 2,
@@ -1711,124 +2040,65 @@
       "companies": []
     },
     {
-      "id": "276d9545605bbaf3",
-      "title": "Tata Chemicals share price jumps 9%: Volume surge, Tata Sons listing buzz behind the Tata Group stock rally. Do you own?",
-      "url": "https://www.livemint.com/market/stock-market-news/tata-chemicals-share-price-jumps-9-volume-surge-tata-sons-listing-buzz-behind-the-tata-group-stock-rally-do-you-own-11794888270229.html",
-      "published": 1794888924.0,
+      "id": "496293c4c2114601",
+      "title": "Gold holds after hitting a near 14-month low as inflation pressure and AI worries persist",
+      "url": "https://www.cnbctv18.com/market/commodities/gold-holds-after-hitting-a-near-14-month-low-as-inflation-pressure-and-ai-worries-persist-20035389.htm",
+      "published": 1794879536.0,
       "region": "India",
       "official": false,
       "sources": [
+        {
+          "name": "CNBC-TV18",
+          "url": "https://www.cnbctv18.com/market/commodities/gold-holds-after-hitting-a-near-14-month-low-as-inflation-pressure-and-ai-worries-persist-20035389.htm"
+        },
         {
           "name": "Mint Markets",
-          "url": "https://www.livemint.com/market/stock-market-news/tata-chemicals-share-price-jumps-9-volume-surge-tata-sons-listing-buzz-behind-the-tata-group-stock-rally-do-you-own-11794888270229.html"
-        },
-        {
-          "name": "Business Standard",
-          "url": "https://www.business-standard.com/markets/news/tata-chemicals-shares-rally-11-in-3-days-why-is-tata-group-stock-rising-126111700701_1.html"
-        },
-        {
-          "name": "CNBC-TV18",
-          "url": "https://www.cnbctv18.com/photos/market/tata-chemicals-investment-motors-pv-consumer-products-share-price-potential-tata-sons-listing-equity-stake-valuation-20035569.htm"
+          "url": "https://www.livemint.com/market/gold-struggles-to-rebound-from-one-year-low-as-us-dollar-yields-advance-11794942964000.html"
         }
       ],
-      "score": 8,
-      "summary": "Tata Chemicals shares surged 9.3% to ₹669.05 as trading volumes climbed more than fivefold. Investor interest returned to the company’s estimated 2.5% to 3% stake in Tata Sons after the RBI reiterated that the holding company must comply with listing requirements for upper-layer NBFCs.",
-      "category": "Company move",
-      "reason": "A named company or share-price move may affect that stock and its peers.",
+      "score": 7,
+      "summary": "On Monday, Cleveland Fed President Beth Hammack said she supports modest, gradual rate increases, while noting that the central bank may need to consider larger moves if inflation worsens. Higher interest rates generally weigh on precious metals, which do not generate yields.",
+      "category": "Economic data",
+      "reason": "Compare the release with expectations; the surprise can affect rates and risk appetite.",
       "matched": [
-        "Company move"
+        "Economic data"
       ],
       "tier": "Must know",
       "related": [
         {
-          "title": "Tata Chemicals shares rally 11% in 3 days; why is Tata Group stock rising?",
-          "url": "https://www.business-standard.com/markets/news/tata-chemicals-shares-rally-11-in-3-days-why-is-tata-group-stock-rising-126111700701_1.html",
-          "source": "Business Standard",
-          "published": 1794909211.0
-        },
-        {
-          "title": "Here's how various Tata Group companies stack up in case of a potential Tata Sons listing",
-          "url": "https://www.cnbctv18.com/photos/market/tata-chemicals-investment-motors-pv-consumer-products-share-price-potential-tata-sons-listing-equity-stake-valuation-20035569.htm",
-          "source": "CNBC-TV18",
-          "published": 1794907608.0
-        }
-      ],
-      "cluster_count": 3,
-      "impact_assets": [
-        "Equities"
-      ],
-      "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "ed6767bb3f81655f",
-      "title": "Earnings recovery, lower oil prices put India back on global investors' radar: Arvind Sanger",
-      "url": "https://www.cnbctv18.com/market/india-earnings-recovery-ai-trade-arvind-sanger-geosphere-capital-20035488.htm",
-      "published": 1794887353.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "CNBC-TV18",
-          "url": "https://www.cnbctv18.com/market/india-earnings-recovery-ai-trade-arvind-sanger-geosphere-capital-20035488.htm"
-        },
-        {
-          "name": "ET Economy",
-          "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/indias-2025-26-edible-oil-import-bill-up-24-pc-to-record-rs-2-lakh-cr-crude-palm-oil-buying-surges/articleshow/135888763.cms"
-        }
-      ],
-      "score": 8,
-      "summary": "Arvind Sanger, Managing Partner of Geosphere Capital Management discusses the outlook for Indian equities, global investment trends, AI-related volatility, interest rates and sectors offering opportunities.",
-      "category": "Earnings",
-      "reason": "Compare results and guidance with expectations for the company and its sector.",
-      "matched": [
-        "Earnings",
-        "Energy & geopolitics"
-      ],
-      "tier": "Must know",
-      "related": [
-        {
-          "title": "India's 2025-26 edible oil import bill up 24 pc to record Rs 2 lakh cr; crude palm oil buying surges",
-          "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/indias-2025-26-edible-oil-import-bill-up-24-pc-to-record-rs-2-lakh-cr-crude-palm-oil-buying-surges/articleshow/135888763.cms",
-          "source": "ET Economy",
-          "published": 1794831113.0
-        },
-        {
-          "title": "India's CAD may touch 1.2% of GDP in FY27 as oil, gold demand pose risks: UBI",
-          "url": "https://economictimes.indiatimes.com/news/economy/indicators/indias-cad-may-touch-1-2-of-gdp-in-fy27-as-oil-gold-demand-pose-risks-ubi/articleshow/135914575.cms",
-          "source": "ET Economy",
-          "published": 1794898714.0
+          "title": "Gold struggles to rebound from one-year low as US dollar, yields advance",
+          "url": "https://www.livemint.com/market/gold-struggles-to-rebound-from-one-year-low-as-us-dollar-yields-advance-11794942964000.html",
+          "source": "Mint Markets",
+          "published": 1794942963.0
         }
       ],
       "cluster_count": 2,
       "impact_assets": [
-        "Equities",
         "Commodities"
       ],
-      "why_it_matters": "Crude affects India’s import bill and energy-sensitive sectors; the headline does not establish a clear price direction.",
+      "why_it_matters": "Key determinant of central bank interest rate paths; elevated prints restrict policy easing and compress real yields.",
       "impact_chain": null,
       "companies": []
     },
     {
-      "id": "d587d56b2dca29e8",
-      "title": "M3M India to invest Rs 1,650 cr to build luxury homes under Jacob & Co brand in Gurugram",
-      "url": "https://economictimes.indiatimes.com/markets/digital-real-estate/realty-news/m3m-india-to-invest-rs-1650-cr-to-build-luxury-homes-under-jacob-co-brand-in-gurugram/articleshow/135926381.cms",
-      "published": 1794919825.0,
+      "id": "4269d7b7fb5aa3dc",
+      "title": "States' subsidy, cash transfer outgo jumps from 16% to 21% of revenue receipts in 5 years: Report",
+      "url": "https://economictimes.indiatimes.com/news/economy/indicators/states-subsidy-cash-transfer-outgo-jumps-from-16-to-21-of-revenue-receipts-in-5-years-report/articleshow/135926308.cms",
+      "published": 1794919726.0,
       "region": "India",
       "official": false,
       "sources": [
         {
-          "name": "ET Markets",
-          "url": "https://economictimes.indiatimes.com/markets/digital-real-estate/realty-news/m3m-india-to-invest-rs-1650-cr-to-build-luxury-homes-under-jacob-co-brand-in-gurugram/articleshow/135926381.cms"
+          "name": "ET Economy",
+          "url": "https://economictimes.indiatimes.com/news/economy/indicators/states-subsidy-cash-transfer-outgo-jumps-from-16-to-21-of-revenue-receipts-in-5-years-report/articleshow/135926308.cms"
         }
       ],
-      "score": 3,
-      "summary": "M3M India is set to invest Rs 1,650 crore in the luxurious M3M Jacob & Co Residences, located in the prime Sector 111 on the Dwarka Expressway in Gurugram. This lavish development will feature 120 exclusive apartments, each spanning about 7,300 square feet and starting at a price of Rs 26 crore.",
-      "category": "Corporate development",
-      "reason": "A large investment, contract or capital commitment directly impacts forward guidance.",
+      "score": 4,
+      "summary": "States' spending on subsidies and transfers has risen significantly over recent years and is expected to continue growing. By 2026-27, states are estimated to spend around 1 percent of GDP on cash transfer schemes. Major contributors to this increase are power subsidies and unconditional transfers for various beneficiaries, including women and farm",
+      "category": "Earnings",
+      "reason": "Compare results and guidance with expectations for the company and its sector.",
       "matched": [
-        "Corporate development"
+        "Earnings"
       ],
       "tier": "Watch",
       "related": [],
@@ -1836,67 +2106,7 @@
       "impact_assets": [
         "Equities"
       ],
-      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "f927e3ebdc8c8ab3",
-      "title": "Nifty 50 hits 9-month high, crosses 25,500: Can the rally extend towards 25,800? Here's what analysts say",
-      "url": "https://www.livemint.com/market/stock-market-news/nifty-50-hits-9-month-high-crosses-25-500-can-the-rally-extend-towards-25-800-heres-what-analysts-say-11794916441623.html",
-      "published": 1794917212.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "Mint Markets",
-          "url": "https://www.livemint.com/market/stock-market-news/nifty-50-hits-9-month-high-crosses-25-500-can-the-rally-extend-towards-25-800-heres-what-analysts-say-11794916441623.html"
-        }
-      ],
-      "score": 3,
-      "summary": "The Nifty 50 rose 0.38% to a nine-month high on Tuesday, briefly crossing 25,500, as banking and realty shares gained and easing oil prices and foreign inflows lifted sentiment. Analysts see further upside if the index clears 25,500, with 25,000–25,200 as key support.",
-      "category": "Market flows",
-      "reason": "Flows, currency and yields provide context for Indian equity risk appetite.",
-      "matched": [
-        "Market flows"
-      ],
-      "tier": "Watch",
-      "related": [],
-      "cluster_count": 1,
-      "impact_assets": [
-        "Equities"
-      ],
-      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "ea3de0edbb165c17",
-      "title": "Eternal among 5 stocks hitting 52-week highs; stock rallies up to 15% in a month",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/eternal-among-5-stocks-hitting-52-week-highs-stock-rallies-up-to-15-in-a-month/slideshow/135924700.cms",
-      "published": 1794916636.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "ET Markets",
-          "url": "https://economictimes.indiatimes.com/markets/stocks/news/eternal-among-5-stocks-hitting-52-week-highs-stock-rallies-up-to-15-in-a-month/slideshow/135924700.cms"
-        }
-      ],
-      "score": 3,
-      "summary": "Five BSE 100 stocks, including Eternal, DLF and Kotak Mahindra Bank, touched fresh 52-week highs on Tuesday. Eternal led monthly gains with a 15% rally.",
-      "category": "Company move",
-      "reason": "A named company or share-price move may affect that stock and its peers.",
-      "matched": [
-        "Company move"
-      ],
-      "tier": "Watch",
-      "related": [],
-      "cluster_count": 1,
-      "impact_assets": [
-        "Equities"
-      ],
-      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
+      "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
       "impact_chain": null,
       "companies": []
     },
@@ -2171,6 +2381,174 @@
       "companies": []
     },
     {
+      "id": "6ccbdd97c9eaaed0",
+      "title": "Senco Gold shares jump 8% on record festive sales of ₹2,426 crore",
+      "url": "https://www.business-standard.com/markets/news/senco-gold-shares-jump-8-on-record-festive-sales-of-2-426-crore-126111700328_1.html",
+      "published": 1794895502.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "Business Standard",
+          "url": "https://www.business-standard.com/markets/news/senco-gold-shares-jump-8-on-record-festive-sales-of-2-426-crore-126111700328_1.html"
+        },
+        {
+          "name": "CNBC-TV18",
+          "url": "https://www.cnbctv18.com/market/senco-gold-share-price-surge-strong-growth-dhanteras-diwali-festive-period-new-customers-store-additions-expansion-outlook-plans-20035519.htm"
+        }
+      ],
+      "score": 6,
+      "summary": "The company said that it has delivered a record performance during the 41- day festive period from October 1, 2026, to November 11, 2026, achieving its highest-ever retail NSV of over ₹2,426 crore.",
+      "category": "Company move",
+      "reason": "A named company or share-price move may affect that stock and its peers.",
+      "matched": [
+        "Company move"
+      ],
+      "tier": "Must know",
+      "related": [
+        {
+          "title": "Senco Gold shares gain up to 8% after strong growth during the Dhanteras festive period",
+          "url": "https://www.cnbctv18.com/market/senco-gold-share-price-surge-strong-growth-dhanteras-diwali-festive-period-new-customers-store-additions-expansion-outlook-plans-20035519.htm",
+          "source": "CNBC-TV18",
+          "published": 1794891918.0
+        }
+      ],
+      "cluster_count": 2,
+      "impact_assets": [
+        "Commodities"
+      ],
+      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
+      "impact_chain": null,
+      "companies": [
+        {
+          "name": "Senco Gold",
+          "symbol": "senco gold"
+        }
+      ]
+    },
+    {
+      "id": "c3268ba2d217f860",
+      "title": "Inflation Crosses 6%: Did RBI Act Too Late? | The Morning Brief Decode",
+      "url": "https://economictimes.indiatimes.com/news/economy/indicators/inflation-crosses-6-did-rbi-act-too-late-the-morning-brief-decode/videoshow/135912037.cms",
+      "published": 1794893206.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "ET Economy",
+          "url": "https://economictimes.indiatimes.com/news/economy/indicators/inflation-crosses-6-did-rbi-act-too-late-the-morning-brief-decode/videoshow/135912037.cms"
+        }
+      ],
+      "score": 6,
+      "summary": "",
+      "category": "Monetary policy",
+      "reason": "Directly shifts commercial bank cost of funds, repo borrowing rates, and rate-sensitive equity multiples (banks, real estate, auto).",
+      "matched": [
+        "Monetary policy",
+        "Economic data"
+      ],
+      "tier": "Must know",
+      "related": [],
+      "cluster_count": 1,
+      "impact_assets": [
+        "Rates",
+        "Equities"
+      ],
+      "why_it_matters": "Directly shifts commercial bank cost of funds, repo borrowing rates, and rate-sensitive equity multiples (banks, real estate, auto).",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
+      "id": "d587d56b2dca29e8",
+      "title": "M3M India to invest Rs 1,650 cr to build luxury homes under Jacob & Co brand in Gurugram",
+      "url": "https://economictimes.indiatimes.com/markets/digital-real-estate/realty-news/m3m-india-to-invest-rs-1650-cr-to-build-luxury-homes-under-jacob-co-brand-in-gurugram/articleshow/135926381.cms",
+      "published": 1794919825.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "ET Markets",
+          "url": "https://economictimes.indiatimes.com/markets/digital-real-estate/realty-news/m3m-india-to-invest-rs-1650-cr-to-build-luxury-homes-under-jacob-co-brand-in-gurugram/articleshow/135926381.cms"
+        }
+      ],
+      "score": 3,
+      "summary": "M3M India is set to invest Rs 1,650 crore in the luxurious M3M Jacob & Co Residences, located in the prime Sector 111 on the Dwarka Expressway in Gurugram. This lavish development will feature 120 exclusive apartments, each spanning about 7,300 square feet and starting at a price of Rs 26 crore.",
+      "category": "Corporate development",
+      "reason": "A large investment, contract or capital commitment directly impacts forward guidance.",
+      "matched": [
+        "Corporate development"
+      ],
+      "tier": "Watch",
+      "related": [],
+      "cluster_count": 1,
+      "impact_assets": [
+        "Equities"
+      ],
+      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
+      "id": "f927e3ebdc8c8ab3",
+      "title": "Nifty 50 hits 9-month high, crosses 25,500: Can the rally extend towards 25,800? Here's what analysts say",
+      "url": "https://www.livemint.com/market/stock-market-news/nifty-50-hits-9-month-high-crosses-25-500-can-the-rally-extend-towards-25-800-heres-what-analysts-say-11794916441623.html",
+      "published": 1794917212.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "Mint Markets",
+          "url": "https://www.livemint.com/market/stock-market-news/nifty-50-hits-9-month-high-crosses-25-500-can-the-rally-extend-towards-25-800-heres-what-analysts-say-11794916441623.html"
+        }
+      ],
+      "score": 3,
+      "summary": "The Nifty 50 rose 0.38% to a nine-month high on Tuesday, briefly crossing 25,500, as banking and realty shares gained and easing oil prices and foreign inflows lifted sentiment. Analysts see further upside if the index clears 25,500, with 25,000–25,200 as key support.",
+      "category": "Market flows",
+      "reason": "Flows, currency and yields provide context for Indian equity risk appetite.",
+      "matched": [
+        "Market flows"
+      ],
+      "tier": "Watch",
+      "related": [],
+      "cluster_count": 1,
+      "impact_assets": [
+        "Equities"
+      ],
+      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
+      "id": "ea3de0edbb165c17",
+      "title": "Eternal among 5 stocks hitting 52-week highs; stock rallies up to 15% in a month",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/eternal-among-5-stocks-hitting-52-week-highs-stock-rallies-up-to-15-in-a-month/slideshow/135924700.cms",
+      "published": 1794916636.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "ET Markets",
+          "url": "https://economictimes.indiatimes.com/markets/stocks/news/eternal-among-5-stocks-hitting-52-week-highs-stock-rallies-up-to-15-in-a-month/slideshow/135924700.cms"
+        }
+      ],
+      "score": 3,
+      "summary": "Five BSE 100 stocks, including Eternal, DLF and Kotak Mahindra Bank, touched fresh 52-week highs on Tuesday. Eternal led monthly gains with a 15% rally.",
+      "category": "Company move",
+      "reason": "A named company or share-price move may affect that stock and its peers.",
+      "matched": [
+        "Company move"
+      ],
+      "tier": "Watch",
+      "related": [],
+      "cluster_count": 1,
+      "impact_assets": [
+        "Equities"
+      ],
+      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
       "id": "164a857421317426",
       "title": "Making a comeback! Down 60% in 1 year, strong rally seen ahead for renewable energy stock Inox Wind; 42% upside likely",
       "url": "https://www.livemint.com/market/stock-market-news/making-a-comeback-down-60-in-1-year-strong-rally-seen-ahead-for-renewable-energy-stock-inox-wind-42-upside-likely-11794910421216.html",
@@ -2262,6 +2640,36 @@
       "companies": []
     },
     {
+      "id": "f61914406fb2f57a",
+      "title": "Tata Chemicals shares rally 11% in 3 days; why is Tata Group stock rising?",
+      "url": "https://www.business-standard.com/markets/news/tata-chemicals-shares-rally-11-in-3-days-why-is-tata-group-stock-rising-126111700701_1.html",
+      "published": 1794909211.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "Business Standard",
+          "url": "https://www.business-standard.com/markets/news/tata-chemicals-shares-rally-11-in-3-days-why-is-tata-group-stock-rising-126111700701_1.html"
+        }
+      ],
+      "score": 3,
+      "summary": "Tata Chemicals holds a stake in Tata Sons, with the Street anticipating that the listing of the holding company could lead to value unlocking.",
+      "category": "Company move",
+      "reason": "A named company or share-price move may affect that stock and its peers.",
+      "matched": [
+        "Company move"
+      ],
+      "tier": "Watch",
+      "related": [],
+      "cluster_count": 1,
+      "impact_assets": [
+        "Equities"
+      ],
+      "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
       "id": "adfe439990760135",
       "title": "Up 70% in 6 months! Small-cap stock under ₹100 hits 52-week high logging intraday rally of 4.5%; do you own?",
       "url": "https://www.livemint.com/market/stock-market-news/up-70-in-6-months-small-cap-stock-under-rs-100-hits-52-week-high-logging-intraday-rally-of-4-5-do-you-own-11794902143131.html",
@@ -2288,84 +2696,6 @@
         "Equities"
       ],
       "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "6ccbdd97c9eaaed0",
-      "title": "Senco Gold shares jump 8% on record festive sales of ₹2,426 crore",
-      "url": "https://www.business-standard.com/markets/news/senco-gold-shares-jump-8-on-record-festive-sales-of-2-426-crore-126111700328_1.html",
-      "published": 1794895502.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "Business Standard",
-          "url": "https://www.business-standard.com/markets/news/senco-gold-shares-jump-8-on-record-festive-sales-of-2-426-crore-126111700328_1.html"
-        },
-        {
-          "name": "CNBC-TV18",
-          "url": "https://www.cnbctv18.com/market/senco-gold-share-price-surge-strong-growth-dhanteras-diwali-festive-period-new-customers-store-additions-expansion-outlook-plans-20035519.htm"
-        }
-      ],
-      "score": 6,
-      "summary": "The company said that it has delivered a record performance during the 41- day festive period from October 1, 2026, to November 11, 2026, achieving its highest-ever retail NSV of over ₹2,426 crore.",
-      "category": "Company move",
-      "reason": "A named company or share-price move may affect that stock and its peers.",
-      "matched": [
-        "Company move"
-      ],
-      "tier": "Must know",
-      "related": [
-        {
-          "title": "Senco Gold shares gain up to 8% after strong growth during the Dhanteras festive period",
-          "url": "https://www.cnbctv18.com/market/senco-gold-share-price-surge-strong-growth-dhanteras-diwali-festive-period-new-customers-store-additions-expansion-outlook-plans-20035519.htm",
-          "source": "CNBC-TV18",
-          "published": 1794891918.0
-        }
-      ],
-      "cluster_count": 2,
-      "impact_assets": [
-        "Commodities"
-      ],
-      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
-      "impact_chain": null,
-      "companies": [
-        {
-          "name": "Senco Gold",
-          "symbol": "senco gold"
-        }
-      ]
-    },
-    {
-      "id": "c3268ba2d217f860",
-      "title": "Inflation Crosses 6%: Did RBI Act Too Late? | The Morning Brief Decode",
-      "url": "https://economictimes.indiatimes.com/news/economy/indicators/inflation-crosses-6-did-rbi-act-too-late-the-morning-brief-decode/videoshow/135912037.cms",
-      "published": 1794893206.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "ET Economy",
-          "url": "https://economictimes.indiatimes.com/news/economy/indicators/inflation-crosses-6-did-rbi-act-too-late-the-morning-brief-decode/videoshow/135912037.cms"
-        }
-      ],
-      "score": 6,
-      "summary": "",
-      "category": "Monetary policy",
-      "reason": "Directly shifts commercial bank cost of funds, repo borrowing rates, and rate-sensitive equity multiples (banks, real estate, auto).",
-      "matched": [
-        "Monetary policy",
-        "Economic data"
-      ],
-      "tier": "Must know",
-      "related": [],
-      "cluster_count": 1,
-      "impact_assets": [
-        "Rates",
-        "Equities"
-      ],
-      "why_it_matters": "Directly shifts commercial bank cost of funds, repo borrowing rates, and rate-sensitive equity multiples (banks, real estate, auto).",
       "impact_chain": null,
       "companies": []
     },
@@ -2443,47 +2773,6 @@
       "companies": []
     },
     {
-      "id": "31156b49d533f5c9",
-      "title": "TTK Healthcare shares soar 20%: Board to consider bonus issue of preference shares on Nov 20 - Key things to know",
-      "url": "https://www.livemint.com/market/stock-market-news/ttk-healthcare-shares-soar-20-board-to-consider-bonus-issue-of-preference-shares-on-nov-20-key-things-to-know-buy-11794891413979.html",
-      "published": 1794892971.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "Mint Markets",
-          "url": "https://www.livemint.com/market/stock-market-news/ttk-healthcare-shares-soar-20-board-to-consider-bonus-issue-of-preference-shares-on-nov-20-key-things-to-know-buy-11794891413979.html"
-        },
-        {
-          "name": "Business Standard",
-          "url": "https://www.business-standard.com/markets/news/ttk-healthcare-zooms-20-as-board-mulls-issuing-preference-shares-via-bonus-126111700516_1.html"
-        }
-      ],
-      "score": 5,
-      "summary": "TTK Healthcare shares rose 20% on November 17 after the company said its board would consider issuing non-convertible redeemable preference shares to existing equity shareholders as a bonus. The board is scheduled to discuss the proposed scheme on November 20, 2026.",
-      "category": "Company move",
-      "reason": "A named company or share-price move may affect that stock and its peers.",
-      "matched": [
-        "Company move"
-      ],
-      "tier": "Watch",
-      "related": [
-        {
-          "title": "TTK Healthcare zooms 20% as board mulls issuing preference shares via bonus",
-          "url": "https://www.business-standard.com/markets/news/ttk-healthcare-zooms-20-as-board-mulls-issuing-preference-shares-via-bonus-126111700516_1.html",
-          "source": "Business Standard",
-          "published": 1794903006.0
-        }
-      ],
-      "cluster_count": 2,
-      "impact_assets": [
-        "Equities"
-      ],
-      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
       "id": "d52a51f26c246743",
       "title": "Capital Markets: Derivatives surge on volatility; cash, MF flows stay muted",
       "url": "https://www.business-standard.com/markets/news/capital-markets-derivatives-surge-on-volatility-cash-mf-flows-stay-muted-126111700094_1.html",
@@ -2512,6 +2801,174 @@
       "why_it_matters": "Alters market structure, compliance mandates, capital allocation rules, and retail derivative trading liquidity.",
       "impact_chain": null,
       "companies": []
+    },
+    {
+      "id": "78a0679612b3d9c4",
+      "title": "Food inflation to stay elevated; ICICI Bank sees 25 bps RBI rate hike in December",
+      "url": "https://economictimes.indiatimes.com/news/economy/indicators/food-inflation-to-stay-elevated-icici-bank-sees-25-bps-rbi-rate-hike-in-december/articleshow/135789519.cms",
+      "published": 1794544614.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "ET Economy",
+          "url": "https://economictimes.indiatimes.com/news/economy/indicators/food-inflation-to-stay-elevated-icici-bank-sees-25-bps-rbi-rate-hike-in-december/articleshow/135789519.cms"
+        }
+      ],
+      "score": 7,
+      "summary": "Food inflation in India is projected to remain elevated in the coming months due to a shortfall in crops. The Reserve Bank of India is anticipated to raise interest rates by 25 basis points to manage retail inflation. Factors such as weak monsoon and high energy prices contribute to the rising inflation. Many essential food items are experiencing u",
+      "category": "Monetary policy",
+      "reason": "Directly shifts commercial bank cost of funds, repo borrowing rates, and rate-sensitive equity multiples (banks, real estate, auto).",
+      "matched": [
+        "Monetary policy",
+        "Economic data"
+      ],
+      "tier": "Must know",
+      "related": [],
+      "cluster_count": 1,
+      "impact_assets": [
+        "Rates",
+        "Equities"
+      ],
+      "why_it_matters": "Directly shifts commercial bank cost of funds, repo borrowing rates, and rate-sensitive equity multiples (banks, real estate, auto).",
+      "impact_chain": {
+        "rule": "RATE_HIKE",
+        "catalyst": "Hawkish Central Bank / Rate Hike",
+        "tailwinds": [
+          "SBI",
+          "ICICI Bank",
+          "HDFC Bank"
+        ],
+        "headwinds": [
+          "DLF",
+          "Godrej Properties",
+          "Tata Motors",
+          "Bajaj Finance"
+        ],
+        "rationale": "Rate hikes lift net interest margins for large CASA lenders but dampen rate-sensitive housing and auto demand."
+      },
+      "companies": [
+        {
+          "name": "ICICI Bank",
+          "symbol": "icici bank"
+        }
+      ]
+    },
+    {
+      "id": "7d56b1ad8e5cc2db",
+      "title": "Uneven monsoons, El Nino pose upside risks to inflation; another RBI hike possible: Report",
+      "url": "https://economictimes.indiatimes.com/news/economy/indicators/uneven-monsoons-el-nino-pose-upside-risks-to-inflation-another-rbi-hike-possible-report/articleshow/135788065.cms",
+      "published": 1794540934.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "ET Economy",
+          "url": "https://economictimes.indiatimes.com/news/economy/indicators/uneven-monsoons-el-nino-pose-upside-risks-to-inflation-another-rbi-hike-possible-report/articleshow/135788065.cms"
+        }
+      ],
+      "score": 7,
+      "summary": "Uneven monsoons and the possibility of El Nino conditions could pose upside risks to food inflation in FY27, keeping the Reserve Bank of India (RBI) open to another interest rate hike despite expectations of gradual moderation in overall price pressures, according to a report by Nuvama Institutional Equities.",
+      "category": "Monetary policy",
+      "reason": "Directly shifts commercial bank cost of funds, repo borrowing rates, and rate-sensitive equity multiples (banks, real estate, auto).",
+      "matched": [
+        "Monetary policy",
+        "Economic data"
+      ],
+      "tier": "Must know",
+      "related": [],
+      "cluster_count": 1,
+      "impact_assets": [
+        "Rates",
+        "Equities"
+      ],
+      "why_it_matters": "Directly shifts commercial bank cost of funds, repo borrowing rates, and rate-sensitive equity multiples (banks, real estate, auto).",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
+      "id": "87a784bdd6110f05",
+      "title": "Federal Reserve announces revised tentative schedule of Federal Open Market Committee meetings in 2027",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261112a.htm",
+      "published": 1794505500.0,
+      "region": "Global",
+      "official": true,
+      "sources": [
+        {
+          "name": "Federal Reserve",
+          "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261112a.htm"
+        }
+      ],
+      "score": 7,
+      "summary": "Federal Reserve announces revised tentative schedule of Federal Open Market Committee meetings in 2027",
+      "category": "Monetary policy",
+      "reason": "Guides global liquidity dynamics, US Dollar Index (DXY) trajectory, and foreign institutional (FII) capital allocations.",
+      "matched": [
+        "Monetary policy"
+      ],
+      "tier": "Must know",
+      "related": [],
+      "cluster_count": 1,
+      "impact_assets": [
+        "Rates",
+        "Equities"
+      ],
+      "why_it_matters": "Guides global liquidity dynamics, US Dollar Index (DXY) trajectory, and foreign institutional (FII) capital allocations.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
+      "id": "76034e4f4b98d315",
+      "title": "SBI economists halve December RBI rate hike forecast to 25 bps on easing rupee pressure, foreign inflows",
+      "url": "https://economictimes.indiatimes.com/news/economy/indicators/sbi-economists-halve-december-rbi-rate-hike-forecast-to-25-bps-on-easing-rupee-pressure-foreign-inflows/articleshow/135774632.cms",
+      "published": 1794497053.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "ET Economy",
+          "url": "https://economictimes.indiatimes.com/news/economy/indicators/sbi-economists-halve-december-rbi-rate-hike-forecast-to-25-bps-on-easing-rupee-pressure-foreign-inflows/articleshow/135774632.cms"
+        }
+      ],
+      "score": 7,
+      "summary": "State Bank of India has revised its estimate for the upcoming Reserve Bank of India rate hike. The new projection suggests a 0.25 percent increase instead of a previously expected 0.50 percent. This adjustment follows improvements in external conditions and a revival in foreign fund inflows. Analysts note that inflation is projected to remain above",
+      "category": "Monetary policy",
+      "reason": "This RBI action concerns currency-market liquidity or dollar demand; it is not a repo-rate decision.",
+      "matched": [
+        "Monetary policy",
+        "Market flows"
+      ],
+      "tier": "Must know",
+      "related": [],
+      "cluster_count": 1,
+      "impact_assets": [
+        "Rates",
+        "Equities",
+        "FX"
+      ],
+      "why_it_matters": "This RBI action concerns currency-market liquidity or dollar demand; it is not a repo-rate decision.",
+      "impact_chain": {
+        "rule": "RATE_HIKE",
+        "catalyst": "Hawkish Central Bank / Rate Hike",
+        "tailwinds": [
+          "SBI",
+          "ICICI Bank",
+          "HDFC Bank"
+        ],
+        "headwinds": [
+          "DLF",
+          "Godrej Properties",
+          "Tata Motors",
+          "Bajaj Finance"
+        ],
+        "rationale": "Rate hikes lift net interest margins for large CASA lenders but dampen rate-sensitive housing and auto demand."
+      },
+      "companies": [
+        {
+          "name": "SBI",
+          "symbol": "sbi"
+        }
+      ]
     },
     {
       "id": "bbd19363757bfc2a",
@@ -2849,6 +3306,37 @@
       "companies": []
     },
     {
+      "id": "39c645ef4770aad0",
+      "title": "Supply shocks to weaken monetary policy effectiveness: CEA",
+      "url": "https://economictimes.indiatimes.com/news/economy/policy/monetary-policy-ineffectiveness-cea-warns-of-supply-shocks-eroding-inflation-control/articleshow/135797233.cms",
+      "published": 1794563815.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "ET Economy",
+          "url": "https://economictimes.indiatimes.com/news/economy/policy/monetary-policy-ineffectiveness-cea-warns-of-supply-shocks-eroding-inflation-control/articleshow/135797233.cms"
+        }
+      ],
+      "score": 6,
+      "summary": "Chief Economic Advisor V Anantha Nageswaran emphasized the diminishing effectiveness of interest rate adjustments in controlling inflation due to supply chain disruptions. He indicated that fiscal policies will play a critical role in addressing these supply-induced challenges. Nageswaran highlighted that many countries have struggled to meet their",
+      "category": "Monetary policy",
+      "reason": "Key market catalyst driving market liquidity and session volatility.",
+      "matched": [
+        "Monetary policy"
+      ],
+      "tier": "Must know",
+      "related": [],
+      "cluster_count": 1,
+      "impact_assets": [
+        "Rates",
+        "Equities"
+      ],
+      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
       "id": "9161f808139f8e35",
       "title": "Sensex zooms 800 pts intraday, Nifty tops 25,500: 5 factors behind bull run",
       "url": "https://www.business-standard.com/markets/news/sensex-zooms-800-pts-intraday-nifty-tops-25-500-5-factors-behind-bull-run-126111700469_1.html",
@@ -2909,36 +3397,6 @@
       "companies": []
     },
     {
-      "id": "d8ded906420a0ef6",
-      "title": "FirstCry-parent Brainbees Solutions shares rally 13%: Q2 net loss narrows 75%, revenue jumps - Should you buy?",
-      "url": "https://www.livemint.com/market/stock-market-news/firstcryparent-brainbees-solutions-shares-rally-13-q2-net-loss-narrows-75-revenue-jumps-should-you-buy-11794895128954.html",
-      "published": 1794896543.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "Mint Markets",
-          "url": "https://www.livemint.com/market/stock-market-news/firstcryparent-brainbees-solutions-shares-rally-13-q2-net-loss-narrows-75-revenue-jumps-should-you-buy-11794895128954.html"
-        }
-      ],
-      "score": 3,
-      "summary": "Brainbees Solutions, parent of FirstCry, rose 13% after Q2 FY27 net losses narrowed 75.1% year-on-year to ₹12.6 crore and revenue grew 14.1% to ₹2,395.8 crore. However, adjusted EBITDA and gross margins weakened. Management expects stronger performance in Q3.",
-      "category": "Earnings",
-      "reason": "Compare results and guidance with expectations for the company and its sector.",
-      "matched": [
-        "Earnings"
-      ],
-      "tier": "Watch",
-      "related": [],
-      "cluster_count": 1,
-      "impact_assets": [
-        "Equities"
-      ],
-      "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
       "id": "615225ec2cc6b978",
       "title": "India's stock market premium faces test from slower growth, tight rates: UBS",
       "url": "https://www.business-standard.com/markets/news/india-s-stock-market-premium-faces-test-from-slower-growth-tight-rates-ubs-126111700336_1.html",
@@ -2953,36 +3411,6 @@
       ],
       "score": 3,
       "summary": "Globally, however, UBS remains constructive on US equities and expects the S&P 500 to climb around 20 per cent to 8,900 by the fourth quarter of 2027 (Q4-2027).",
-      "category": "Market flows",
-      "reason": "Flows, currency and yields provide context for Indian equity risk appetite.",
-      "matched": [
-        "Market flows"
-      ],
-      "tier": "Watch",
-      "related": [],
-      "cluster_count": 1,
-      "impact_assets": [
-        "Equities"
-      ],
-      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "fddfd38969900749",
-      "title": "PNB vs Canara Bank: Which PSU bank is a better stock to buy Nifty Bank at record high, and why? Experts' views, targets",
-      "url": "https://www.livemint.com/market/stock-market-news/pnb-vs-canara-bank-which-psu-bank-is-a-better-stock-to-buy-nifty-bank-at-record-high-and-why-experts-views-targets-11794892103071.html",
-      "published": 1794894709.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "Mint Markets",
-          "url": "https://www.livemint.com/market/stock-market-news/pnb-vs-canara-bank-which-psu-bank-is-a-better-stock-to-buy-nifty-bank-at-record-high-and-why-experts-views-targets-11794892103071.html"
-        }
-      ],
-      "score": 3,
-      "summary": "Shares of Punjab National Bank and Canara Bank are moving sharply higher as the Nifty PSU Bank index and Bank Nifty hit record highs during Tuesday's morning deals",
       "category": "Market flows",
       "reason": "Flows, currency and yields provide context for Indian equity risk appetite.",
       "matched": [
@@ -3060,36 +3488,6 @@
       "companies": []
     },
     {
-      "id": "709939ad59cdc11d",
-      "title": "Nifty Bank at record high after Feb 3 levels; rises over 11% in a month | 3 reasons explained; top stocks, what's next",
-      "url": "https://www.livemint.com/market/stock-market-news/nifty-bank-at-record-high-after-feb-3-levels-rises-over-11-in-a-month-3-reasons-explained-top-stocks-whats-n-11794888264095.html",
-      "published": 1794889445.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "Mint Markets",
-          "url": "https://www.livemint.com/market/stock-market-news/nifty-bank-at-record-high-after-feb-3-levels-rises-over-11-in-a-month-3-reasons-explained-top-stocks-whats-n-11794888264095.html"
-        }
-      ],
-      "score": 3,
-      "summary": "Defying the weak trends in the global markets, the Indian stock market extended its rally for yet another session on Tuesday morning deals",
-      "category": "Market flows",
-      "reason": "Flows, currency and yields provide context for Indian equity risk appetite.",
-      "matched": [
-        "Market flows"
-      ],
-      "tier": "Watch",
-      "related": [],
-      "cluster_count": 1,
-      "impact_assets": [
-        "Equities"
-      ],
-      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
       "id": "ca95e7955fd4653b",
       "title": "Nifty IT rebounds 21% in over 4 months: Dead-cat bounce or trend reversal?",
       "url": "https://www.business-standard.com/markets/news/nifty-it-rebounds-21-in-over-4-months-dead-cat-bounce-or-trend-reversal-126111601257_1.html",
@@ -3146,448 +3544,6 @@
         "Equities"
       ],
       "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "1768f4b470104d92",
-      "title": "Stock Market Close: Sensex ends 427 pts up as rally extends to 2nd day, Nifty at 25,387; banks shine",
-      "url": "https://www.business-standard.com/markets/news/stock-market-live-november-17-nse-bse-sensex-today-nifty50-gift-nifty-crude-oil-prices-bse-share-price-126111700071_1.html",
-      "published": 1794882316.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "Business Standard",
-          "url": "https://www.business-standard.com/markets/news/stock-market-live-november-17-nse-bse-sensex-today-nifty50-gift-nifty-crude-oil-prices-bse-share-price-126111700071_1.html"
-        }
-      ],
-      "score": 3,
-      "summary": "Sensex Today | Stock Market Highlights, Tuesday: In the broader markets, the Nifty MidCap 100 rose 0.25 per cent while the Nifty SmallCap 100 fell 0.22 per cent",
-      "category": "Market flows",
-      "reason": "Flows, currency and yields provide context for Indian equity risk appetite.",
-      "matched": [
-        "Market flows"
-      ],
-      "tier": "Watch",
-      "related": [],
-      "cluster_count": 1,
-      "impact_assets": [
-        "Equities"
-      ],
-      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "496293c4c2114601",
-      "title": "Gold holds after hitting a near 14-month low as inflation pressure and AI worries persist",
-      "url": "https://www.cnbctv18.com/market/commodities/gold-holds-after-hitting-a-near-14-month-low-as-inflation-pressure-and-ai-worries-persist-20035389.htm",
-      "published": 1794879536.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "CNBC-TV18",
-          "url": "https://www.cnbctv18.com/market/commodities/gold-holds-after-hitting-a-near-14-month-low-as-inflation-pressure-and-ai-worries-persist-20035389.htm"
-        }
-      ],
-      "score": 5,
-      "summary": "On Monday, Cleveland Fed President Beth Hammack said she supports modest, gradual rate increases, while noting that the central bank may need to consider larger moves if inflation worsens. Higher interest rates generally weigh on precious metals, which do not generate yields.",
-      "category": "Economic data",
-      "reason": "Compare the release with expectations; the surprise can affect rates and risk appetite.",
-      "matched": [
-        "Economic data"
-      ],
-      "tier": "Watch",
-      "related": [],
-      "cluster_count": 1,
-      "impact_assets": [
-        "Commodities"
-      ],
-      "why_it_matters": "Key determinant of central bank interest rate paths; elevated prints restrict policy easing and compress real yields.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "2fb8267388123c4c",
-      "title": "Jio Platforms, BLS Polymers, Shiprocket, more: 23 stocks to watch as anchor lock-in expires this week | List",
-      "url": "https://www.livemint.com/market/ipo/jio-platforms-bls-polymers-shiprocket-more-23-stocks-to-watch-as-anchor-lock-in-expires-this-week-list-11794896708353.html",
-      "published": 1794900349.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "Mint Markets",
-          "url": "https://www.livemint.com/market/ipo/jio-platforms-bls-polymers-shiprocket-more-23-stocks-to-watch-as-anchor-lock-in-expires-this-week-list-11794896708353.html"
-        },
-        {
-          "name": "ET Markets",
-          "url": "https://economictimes.indiatimes.com/markets/stocks/stock-liveblog/jio-financial-services-share-price-today-live-updates-17-nov-2026/liveblog/135908364.cms"
-        }
-      ],
-      "score": 2,
-      "summary": "Twenty-three recently listed companies will see anchor investor lock-in periods expire from November 16 to 30, making 13% to 22% of their shares eligible for trading. All 11 companies in the 30-day group trade above IPO prices, while performance among the 12 companies in the 90-day group is mixed.&nbsp;",
-      "category": "Other news",
-      "reason": "Key market catalyst driving market liquidity and session volatility.",
-      "matched": [],
-      "tier": "More",
-      "related": [
-        {
-          "title": "Jio Financial Services Share Price Highlights: Jio Financial Services Stock Price History",
-          "url": "https://economictimes.indiatimes.com/markets/stocks/stock-liveblog/jio-financial-services-share-price-today-live-updates-17-nov-2026/liveblog/135908364.cms",
-          "source": "ET Markets",
-          "published": 1794884224.0
-        }
-      ],
-      "cluster_count": 2,
-      "impact_assets": [
-        "Equities"
-      ],
-      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "707bcc0d207d63f7",
-      "title": "Why JLR remains the albatross around Tata Motors’ neck",
-      "url": "https://www.livemint.com/market/mark-to-market/tata-motors-share-price-jlr-recovery-delayed-fy28-cash-flow-11794892499084.html",
-      "published": 1794898267.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "Mint Markets",
-          "url": "https://www.livemint.com/market/mark-to-market/tata-motors-share-price-jlr-recovery-delayed-fy28-cash-flow-11794892499084.html"
-        },
-        {
-          "name": "Mint Companies",
-          "url": "https://www.livemint.com/companies/news/pb-balaji-drove-tata-motors-out-of-debt-jlr-is-dragging-it-back-in-11794823794702.html"
-        }
-      ],
-      "score": 2,
-      "summary": "China is expected to remain a tough market as overcapacity among domestic automakers could crowd out global brands.",
-      "category": "Other news",
-      "reason": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
-      "matched": [],
-      "tier": "More",
-      "related": [
-        {
-          "title": "PB Balaji drove Tata Motors out of debt. JLR is dragging it back in",
-          "url": "https://www.livemint.com/companies/news/pb-balaji-drove-tata-motors-out-of-debt-jlr-is-dragging-it-back-in-11794823794702.html",
-          "source": "Mint Companies",
-          "published": 1794875418.0
-        }
-      ],
-      "cluster_count": 2,
-      "impact_assets": [
-        "Equities"
-      ],
-      "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
-      "impact_chain": null,
-      "companies": [
-        {
-          "name": "Tata Motors",
-          "symbol": "tata motors"
-        }
-      ]
-    },
-    {
-      "id": "9c2abac6d41b453c",
-      "title": "Groww share price hits record high after massive ₹1,905 crore block deal: Key things to know - Should you buy?",
-      "url": "https://www.livemint.com/market/stock-market-news/groww-share-price-hits-record-high-after-massive-rs-1-905-crore-block-deal-key-things-to-know-should-you-buy-11794889175341.html",
-      "published": 1794890847.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "Mint Markets",
-          "url": "https://www.livemint.com/market/stock-market-news/groww-share-price-hits-record-high-after-massive-rs-1-905-crore-block-deal-key-things-to-know-should-you-buy-11794889175341.html"
-        }
-      ],
-      "score": 2,
-      "summary": "Groww-parent Billionbrains Garage Ventures rose 2.5% to a 52-week high after a ₹1,905 crore block deal involving 1.4% of its equity.&nbsp;",
-      "category": "Company move",
-      "reason": "A named company or share-price move may affect that stock and its peers.",
-      "matched": [
-        "Company move"
-      ],
-      "tier": "More",
-      "related": [],
-      "cluster_count": 1,
-      "impact_assets": [
-        "Equities"
-      ],
-      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "511488cdfd601840",
-      "title": "Aegis Logistics closes ₹3500 crore QIP; over 83% of shares issued to Nomura India, Quant Mutual Fund, 2 US-based FPIs",
-      "url": "https://www.livemint.com/market/stock-market-news/aegis-logistics-closes-rs-3500-crore-qip-over-83-of-shares-issued-to-nomura-india-quant-mutual-fund-2-us-based-fpis-11794885634109.html",
-      "published": 1794887783.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "Mint Markets",
-          "url": "https://www.livemint.com/market/stock-market-news/aegis-logistics-closes-rs-3500-crore-qip-over-83-of-shares-issued-to-nomura-india-quant-mutual-fund-2-us-based-fpis-11794885634109.html"
-        },
-        {
-          "name": "CNBC-TV18",
-          "url": "https://www.cnbctv18.com/market/aegis-logistics-share-price-3600-crore-fund-raise-qip-four-major-funds-get-majority-allotment-details-20035397.htm"
-        }
-      ],
-      "score": 2,
-      "summary": "Aegis Logistics has closed ₹3500 crore QIP, issueing over 83% of shares to four major funds — Smallica P World Fund, Quant Mutual Fund, New World Fund, and Nomura India",
-      "category": "Other news",
-      "reason": "Key market catalyst driving market liquidity and session volatility.",
-      "matched": [],
-      "tier": "More",
-      "related": [
-        {
-          "title": "Aegis Logistics closes ₹3,600 crore QIP - 80% of shares issued to four major funds",
-          "url": "https://www.cnbctv18.com/market/aegis-logistics-share-price-3600-crore-fund-raise-qip-four-major-funds-get-majority-allotment-details-20035397.htm",
-          "source": "CNBC-TV18",
-          "published": 1794881759.0
-        }
-      ],
-      "cluster_count": 2,
-      "impact_assets": [
-        "Equities"
-      ],
-      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "78a0679612b3d9c4",
-      "title": "Food inflation to stay elevated; ICICI Bank sees 25 bps RBI rate hike in December",
-      "url": "https://economictimes.indiatimes.com/news/economy/indicators/food-inflation-to-stay-elevated-icici-bank-sees-25-bps-rbi-rate-hike-in-december/articleshow/135789519.cms",
-      "published": 1794544614.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "ET Economy",
-          "url": "https://economictimes.indiatimes.com/news/economy/indicators/food-inflation-to-stay-elevated-icici-bank-sees-25-bps-rbi-rate-hike-in-december/articleshow/135789519.cms"
-        }
-      ],
-      "score": 7,
-      "summary": "Food inflation in India is projected to remain elevated in the coming months due to a shortfall in crops. The Reserve Bank of India is anticipated to raise interest rates by 25 basis points to manage retail inflation. Factors such as weak monsoon and high energy prices contribute to the rising inflation. Many essential food items are experiencing u",
-      "category": "Monetary policy",
-      "reason": "Directly shifts commercial bank cost of funds, repo borrowing rates, and rate-sensitive equity multiples (banks, real estate, auto).",
-      "matched": [
-        "Monetary policy",
-        "Economic data"
-      ],
-      "tier": "Must know",
-      "related": [],
-      "cluster_count": 1,
-      "impact_assets": [
-        "Rates",
-        "Equities"
-      ],
-      "why_it_matters": "Directly shifts commercial bank cost of funds, repo borrowing rates, and rate-sensitive equity multiples (banks, real estate, auto).",
-      "impact_chain": {
-        "rule": "RATE_HIKE",
-        "catalyst": "Hawkish Central Bank / Rate Hike",
-        "tailwinds": [
-          "SBI",
-          "ICICI Bank",
-          "HDFC Bank"
-        ],
-        "headwinds": [
-          "DLF",
-          "Godrej Properties",
-          "Tata Motors",
-          "Bajaj Finance"
-        ],
-        "rationale": "Rate hikes lift net interest margins for large CASA lenders but dampen rate-sensitive housing and auto demand."
-      },
-      "companies": [
-        {
-          "name": "ICICI Bank",
-          "symbol": "icici bank"
-        }
-      ]
-    },
-    {
-      "id": "7d56b1ad8e5cc2db",
-      "title": "Uneven monsoons, El Nino pose upside risks to inflation; another RBI hike possible: Report",
-      "url": "https://economictimes.indiatimes.com/news/economy/indicators/uneven-monsoons-el-nino-pose-upside-risks-to-inflation-another-rbi-hike-possible-report/articleshow/135788065.cms",
-      "published": 1794540934.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "ET Economy",
-          "url": "https://economictimes.indiatimes.com/news/economy/indicators/uneven-monsoons-el-nino-pose-upside-risks-to-inflation-another-rbi-hike-possible-report/articleshow/135788065.cms"
-        }
-      ],
-      "score": 7,
-      "summary": "Uneven monsoons and the possibility of El Nino conditions could pose upside risks to food inflation in FY27, keeping the Reserve Bank of India (RBI) open to another interest rate hike despite expectations of gradual moderation in overall price pressures, according to a report by Nuvama Institutional Equities.",
-      "category": "Monetary policy",
-      "reason": "Directly shifts commercial bank cost of funds, repo borrowing rates, and rate-sensitive equity multiples (banks, real estate, auto).",
-      "matched": [
-        "Monetary policy",
-        "Economic data"
-      ],
-      "tier": "Must know",
-      "related": [],
-      "cluster_count": 1,
-      "impact_assets": [
-        "Rates",
-        "Equities"
-      ],
-      "why_it_matters": "Directly shifts commercial bank cost of funds, repo borrowing rates, and rate-sensitive equity multiples (banks, real estate, auto).",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "87a784bdd6110f05",
-      "title": "Federal Reserve announces revised tentative schedule of Federal Open Market Committee meetings in 2027",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261112a.htm",
-      "published": 1794505500.0,
-      "region": "Global",
-      "official": true,
-      "sources": [
-        {
-          "name": "Federal Reserve",
-          "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261112a.htm"
-        }
-      ],
-      "score": 7,
-      "summary": "Federal Reserve announces revised tentative schedule of Federal Open Market Committee meetings in 2027",
-      "category": "Monetary policy",
-      "reason": "Guides global liquidity dynamics, US Dollar Index (DXY) trajectory, and foreign institutional (FII) capital allocations.",
-      "matched": [
-        "Monetary policy"
-      ],
-      "tier": "Must know",
-      "related": [],
-      "cluster_count": 1,
-      "impact_assets": [
-        "Rates",
-        "Equities"
-      ],
-      "why_it_matters": "Guides global liquidity dynamics, US Dollar Index (DXY) trajectory, and foreign institutional (FII) capital allocations.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "76034e4f4b98d315",
-      "title": "SBI economists halve December RBI rate hike forecast to 25 bps on easing rupee pressure, foreign inflows",
-      "url": "https://economictimes.indiatimes.com/news/economy/indicators/sbi-economists-halve-december-rbi-rate-hike-forecast-to-25-bps-on-easing-rupee-pressure-foreign-inflows/articleshow/135774632.cms",
-      "published": 1794497053.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "ET Economy",
-          "url": "https://economictimes.indiatimes.com/news/economy/indicators/sbi-economists-halve-december-rbi-rate-hike-forecast-to-25-bps-on-easing-rupee-pressure-foreign-inflows/articleshow/135774632.cms"
-        }
-      ],
-      "score": 7,
-      "summary": "State Bank of India has revised its estimate for the upcoming Reserve Bank of India rate hike. The new projection suggests a 0.25 percent increase instead of a previously expected 0.50 percent. This adjustment follows improvements in external conditions and a revival in foreign fund inflows. Analysts note that inflation is projected to remain above",
-      "category": "Monetary policy",
-      "reason": "This RBI action concerns currency-market liquidity or dollar demand; it is not a repo-rate decision.",
-      "matched": [
-        "Monetary policy",
-        "Market flows"
-      ],
-      "tier": "Must know",
-      "related": [],
-      "cluster_count": 1,
-      "impact_assets": [
-        "Rates",
-        "Equities",
-        "FX"
-      ],
-      "why_it_matters": "This RBI action concerns currency-market liquidity or dollar demand; it is not a repo-rate decision.",
-      "impact_chain": {
-        "rule": "RATE_HIKE",
-        "catalyst": "Hawkish Central Bank / Rate Hike",
-        "tailwinds": [
-          "SBI",
-          "ICICI Bank",
-          "HDFC Bank"
-        ],
-        "headwinds": [
-          "DLF",
-          "Godrej Properties",
-          "Tata Motors",
-          "Bajaj Finance"
-        ],
-        "rationale": "Rate hikes lift net interest margins for large CASA lenders but dampen rate-sensitive housing and auto demand."
-      },
-      "companies": [
-        {
-          "name": "SBI",
-          "symbol": "sbi"
-        }
-      ]
-    },
-    {
-      "id": "39c645ef4770aad0",
-      "title": "Supply shocks to weaken monetary policy effectiveness: CEA",
-      "url": "https://economictimes.indiatimes.com/news/economy/policy/monetary-policy-ineffectiveness-cea-warns-of-supply-shocks-eroding-inflation-control/articleshow/135797233.cms",
-      "published": 1794563815.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "ET Economy",
-          "url": "https://economictimes.indiatimes.com/news/economy/policy/monetary-policy-ineffectiveness-cea-warns-of-supply-shocks-eroding-inflation-control/articleshow/135797233.cms"
-        }
-      ],
-      "score": 6,
-      "summary": "Chief Economic Advisor V Anantha Nageswaran emphasized the diminishing effectiveness of interest rate adjustments in controlling inflation due to supply chain disruptions. He indicated that fiscal policies will play a critical role in addressing these supply-induced challenges. Nageswaran highlighted that many countries have struggled to meet their",
-      "category": "Monetary policy",
-      "reason": "Key market catalyst driving market liquidity and session volatility.",
-      "matched": [
-        "Monetary policy"
-      ],
-      "tier": "Must know",
-      "related": [],
-      "cluster_count": 1,
-      "impact_assets": [
-        "Rates",
-        "Equities"
-      ],
-      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "a63454ec0cc203c1",
-      "title": "Exclusive: RBI tells Tata Sons to comply with listing norms",
-      "url": "https://www.cnbctv18.com/business/companies/exclusive-rbi-tells-tata-sons-to-comply-with-listing-norms-20035318.htm",
-      "published": 1794845585.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "CNBC-TV18",
-          "url": "https://www.cnbctv18.com/business/companies/exclusive-rbi-tells-tata-sons-to-comply-with-listing-norms-20035318.htm"
-        }
-      ],
-      "score": 5,
-      "summary": "The RBI has reiterated that Tata Sons must comply with Upper Layer NBFC regulations, including listing, in a November 16 letter ahead of the company's November 26 board meeting.",
-      "category": "Monetary policy",
-      "reason": "Directly shifts commercial bank cost of funds, repo borrowing rates, and rate-sensitive equity multiples (banks, real estate, auto).",
-      "matched": [
-        "Monetary policy"
-      ],
-      "tier": "Watch",
-      "related": [],
-      "cluster_count": 1,
-      "impact_assets": [
-        "Rates",
-        "Equities"
-      ],
-      "why_it_matters": "Directly shifts commercial bank cost of funds, repo borrowing rates, and rate-sensitive equity multiples (banks, real estate, auto).",
       "impact_chain": null,
       "companies": []
     },
@@ -3834,34 +3790,34 @@
       "companies": []
     },
     {
-      "id": "5cceedf049050a2e",
-      "title": "From JPMorgan Chase to Bank of America, here's what to know about banking delays affecting major US banks",
-      "url": "https://www.cnbctv18.com/business/from-jpmorgan-chase-to-bank-of-america-heres-what-to-know-about-banking-delays-affecting-major-us-banks-20035413.htm",
-      "published": 1794879646.0,
+      "id": "2fb8267388123c4c",
+      "title": "Jio Platforms, BLS Polymers, Shiprocket, more: 23 stocks to watch as anchor lock-in expires this week | List",
+      "url": "https://www.livemint.com/market/ipo/jio-platforms-bls-polymers-shiprocket-more-23-stocks-to-watch-as-anchor-lock-in-expires-this-week-list-11794896708353.html",
+      "published": 1794900349.0,
       "region": "India",
       "official": false,
       "sources": [
         {
-          "name": "CNBC-TV18",
-          "url": "https://www.cnbctv18.com/business/from-jpmorgan-chase-to-bank-of-america-heres-what-to-know-about-banking-delays-affecting-major-us-banks-20035413.htm"
+          "name": "Mint Markets",
+          "url": "https://www.livemint.com/market/ipo/jio-platforms-bls-polymers-shiprocket-more-23-stocks-to-watch-as-anchor-lock-in-expires-this-week-list-11794896708353.html"
         },
         {
-          "name": "CNBC World",
-          "url": "https://www.cnbc.com/2026/11/16/jpmorgan-chase-technical-issue.html"
+          "name": "ET Markets",
+          "url": "https://economictimes.indiatimes.com/markets/stocks/stock-liveblog/jio-financial-services-share-price-today-live-updates-17-nov-2026/liveblog/135908364.cms"
         }
       ],
       "score": 2,
-      "summary": "A software bug at JPMorgan Chase caused transaction delays and online account access issues for customers, also impacting other major US banks and Zelle.",
+      "summary": "Twenty-three recently listed companies will see anchor investor lock-in periods expire from November 16 to 30, making 13% to 22% of their shares eligible for trading. All 11 companies in the 30-day group trade above IPO prices, while performance among the 12 companies in the 90-day group is mixed.&nbsp;",
       "category": "Other news",
       "reason": "Key market catalyst driving market liquidity and session volatility.",
       "matched": [],
       "tier": "More",
       "related": [
         {
-          "title": "JPMorgan Chase says temporary software bug is affecting consumer banking",
-          "url": "https://www.cnbc.com/2026/11/16/jpmorgan-chase-technical-issue.html",
-          "source": "CNBC World",
-          "published": 1794867287.0
+          "title": "Jio Financial Services Share Price Highlights: Jio Financial Services Stock Price History",
+          "url": "https://economictimes.indiatimes.com/markets/stocks/stock-liveblog/jio-financial-services-share-price-today-live-updates-17-nov-2026/liveblog/135908364.cms",
+          "source": "ET Markets",
+          "published": 1794884224.0
         }
       ],
       "cluster_count": 2,
@@ -3869,36 +3825,6 @@
         "Equities"
       ],
       "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "a88cb0c7605bcad2",
-      "title": "BSE's BANKEX Futures get US CFTC nod for sale to American investors",
-      "url": "https://www.cnbctv18.com/market/bses-bankex-futures-get-us-cftc-nod-for-sale-to-american-investors-20035246.htm",
-      "published": 1794842255.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "CNBC-TV18",
-          "url": "https://www.cnbctv18.com/market/bses-bankex-futures-get-us-cftc-nod-for-sale-to-american-investors-20035246.htm"
-        }
-      ],
-      "score": 4,
-      "summary": "BANKEX tracks the performance of leading banking stocks listed on BSE. Its futures contract will allow US-based investors, including asset managers, hedge funds and proprietary trading firms, to take exposure to India's banking sector or hedge their positions through a single instrument.",
-      "category": "Regulation",
-      "reason": "Check who is covered, whether it is proposed or final, and its effective date.",
-      "matched": [
-        "Regulation"
-      ],
-      "tier": "Watch",
-      "related": [],
-      "cluster_count": 1,
-      "impact_assets": [
-        "Equities"
-      ],
-      "why_it_matters": "Alters market structure, compliance mandates, capital allocation rules, and retail derivative trading liquidity.",
       "impact_chain": null,
       "companies": []
     },
@@ -4149,7 +4075,7 @@
       "url": "https://www.livemint.com/rss/markets",
       "region": "India",
       "official": false,
-      "checked": "2026-11-17T17:51:14.133135+00:00",
+      "checked": "2026-11-18T00:02:50.223667+00:00",
       "status": "ok",
       "count": 35
     },
@@ -4158,7 +4084,7 @@
       "url": "https://www.livemint.com/rss/companies",
       "region": "India",
       "official": false,
-      "checked": "2026-11-17T17:51:14.133422+00:00",
+      "checked": "2026-11-18T00:02:50.223900+00:00",
       "status": "ok",
       "count": 35
     },
@@ -4167,7 +4093,7 @@
       "url": "https://www.sebi.gov.in/sebirss.xml",
       "region": "India",
       "official": true,
-      "checked": "2026-11-17T17:51:14.133694+00:00",
+      "checked": "2026-11-18T00:02:50.224115+00:00",
       "status": "unavailable",
       "count": 0,
       "error": "No RSS or Atom entries returned"
@@ -4177,7 +4103,7 @@
       "url": "https://www.federalreserve.gov/feeds/press_monetary.xml",
       "region": "Global",
       "official": true,
-      "checked": "2026-11-17T17:51:14.134629+00:00",
+      "checked": "2026-11-18T00:02:50.224350+00:00",
       "status": "ok",
       "count": 1
     },
@@ -4186,7 +4112,7 @@
       "url": "https://www.bls.gov/feed/bls_latest.rss",
       "region": "Global",
       "official": true,
-      "checked": "2026-11-17T17:51:14.134849+00:00",
+      "checked": "2026-11-18T00:02:50.224996+00:00",
       "status": "ok",
       "count": 1
     },
@@ -4195,7 +4121,7 @@
       "url": "https://www.investing.com/rss/news.rss",
       "region": "Global",
       "official": false,
-      "checked": "2026-11-17T17:51:14.416216+00:00",
+      "checked": "2026-11-18T00:02:50.372357+00:00",
       "status": "ok",
       "count": 10
     },
@@ -4204,7 +4130,7 @@
       "url": "https://www.cnbc.com/id/100727362/device/rss/rss.html",
       "region": "Global",
       "official": false,
-      "checked": "2026-11-17T17:51:14.496860+00:00",
+      "checked": "2026-11-18T00:02:50.397305+00:00",
       "status": "ok",
       "count": 30
     },
@@ -4213,7 +4139,7 @@
       "url": "https://pulse.zerodha.com/feed.php",
       "region": "India",
       "official": false,
-      "checked": "2026-11-17T17:51:14.539960+00:00",
+      "checked": "2026-11-18T00:02:50.456147+00:00",
       "status": "ok",
       "count": 25
     },
@@ -4222,7 +4148,7 @@
       "url": "https://economictimes.indiatimes.com/markets/rssfeeds/1977021501.cms",
       "region": "India",
       "official": false,
-      "checked": "2026-11-17T17:51:14.549566+00:00",
+      "checked": "2026-11-18T00:02:50.478772+00:00",
       "status": "ok",
       "count": 50
     },
@@ -4231,7 +4157,7 @@
       "url": "https://economictimes.indiatimes.com/news/economy/rssfeeds/1373380680.cms",
       "region": "India",
       "official": false,
-      "checked": "2026-11-17T17:51:14.577911+00:00",
+      "checked": "2026-11-18T00:02:50.580297+00:00",
       "status": "ok",
       "count": 42
     },
@@ -4240,7 +4166,7 @@
       "url": "https://www.business-standard.com/rss/markets-106.rss",
       "region": "India",
       "official": false,
-      "checked": "2026-11-17T17:51:14.756699+00:00",
+      "checked": "2026-11-18T00:02:50.585312+00:00",
       "status": "ok",
       "count": 35
     },
@@ -4249,7 +4175,7 @@
       "url": "https://www.cnbctv18.com/commonfeeds/v1/cne/rss/market.xml",
       "region": "India",
       "official": false,
-      "checked": "2026-11-17T17:51:14.811062+00:00",
+      "checked": "2026-11-18T00:02:50.615238+00:00",
       "status": "ok",
       "count": 80
     },
@@ -4258,7 +4184,7 @@
       "url": "https://feeds.feedburner.com/ndtvprofit-latest",
       "region": "India",
       "official": false,
-      "checked": "2026-11-17T17:51:14.835886+00:00",
+      "checked": "2026-11-18T00:02:50.637489+00:00",
       "status": "ok",
       "count": 20
     },
@@ -4267,22 +4193,22 @@
       "url": "https://economictimes.indiatimes.com/markets/stocks/recos/rssfeeds/2143429.cms",
       "region": "India",
       "official": false,
-      "checked": "2026-11-17T17:51:14.947105+00:00",
+      "checked": "2026-11-18T00:02:50.769256+00:00",
       "status": "ok",
       "count": 15
     }
   ],
   "refreshing": false,
   "calendar": {
-    "checked": 1794937883.4753318,
+    "checked": 1794960176.9268346,
     "status": "ok"
   },
   "premarket": {
-    "updated": "2026-11-17T17:51:27.798196+00:00",
+    "updated": "2026-11-18T00:03:01.709075+00:00",
     "schema_version": 2,
     "is_live": false,
-    "quote_updated": "2026-11-17T17:51:27.797588+00:00",
-    "quote_date": "2026-11-17",
+    "quote_updated": "2026-11-18T00:03:01.708534+00:00",
+    "quote_date": "2026-11-16",
     "quote_source": "yfinance",
     "live_bias_label": "LATEST AVAILABLE QUOTE",
     "bias_label": "LATEST AVAILABLE QUOTE",
@@ -4305,18 +4231,18 @@
     },
     "overnight": {
       "SP500": {
-        "val": "7,333",
-        "pct": -1.13,
+        "val": "7,341",
+        "pct": -1.03,
         "date": "2026-11-17"
       },
       "NASDAQ": {
-        "val": "24,235",
-        "pct": -1.12,
+        "val": "24,328",
+        "pct": -0.74,
         "date": "2026-11-17"
       },
       "US10Y": {
-        "val": "5.09%",
-        "pct": -0.59,
+        "val": "5.10%",
+        "pct": -0.35,
         "date": "2026-11-17"
       }
     },
@@ -4324,12 +4250,12 @@
       "key": "BRENT",
       "quote_date": "2026-11-17",
       "label": "Brent Crude",
-      "price": "93.35",
-      "price_raw": 93.35,
+      "price": "93.33",
+      "price_raw": 93.33,
       "prev_close": 91.74,
       "prev_close_fmt": "91.74",
-      "change": 1.61,
-      "change_pct": 1.75,
+      "change": 1.59,
+      "change_pct": 1.73,
       "direction": "up",
       "unit": "USD/bbl",
       "range_52w": {
@@ -4338,7 +4264,7 @@
         "low_fmt": "58.72",
         "high_fmt": "126.10",
         "pos_pct": 51.4,
-        "pct_from_high": -25.97
+        "pct_from_high": -25.99
       }
     },
     "usdinr": {
@@ -4364,35 +4290,35 @@
     },
     "pivots": {
       "nifty": {
-        "pivot": 25385,
-        "s1": 25269,
-        "r1": 25503,
-        "s2": 25151,
-        "r2": 25619,
-        "date": "2026-11-17"
+        "pivot": 25267,
+        "s1": 25196,
+        "r1": 25362,
+        "s2": 25101,
+        "r2": 25432,
+        "date": "2026-11-16"
       },
       "banknifty": {
-        "pivot": 62068,
-        "s1": 61693,
-        "r1": 62648,
-        "s2": 61114,
-        "r2": 63022,
-        "date": "2026-11-17"
+        "pivot": 61501,
+        "s1": 61288,
+        "r1": 61788,
+        "s2": 61001,
+        "r2": 62000,
+        "date": "2026-11-16"
       }
     },
     "posture": {
-      "dma50": 23386,
-      "dma50_fmt": "23,386",
-      "pct_dma50": 8.56,
-      "dma200": 23993,
-      "dma200_fmt": "23,993",
-      "pct_dma200": 5.81,
+      "dma50": 23356,
+      "dma50_fmt": "23,356",
+      "pct_dma50": 8.28,
+      "dma200": 23992,
+      "dma200_fmt": "23,992",
+      "pct_dma200": 5.41,
       "high52": 26373,
       "high52_fmt": "26,373",
       "low52": 22180,
       "low52_fmt": "22,180",
-      "pct_from_high52": -3.74,
-      "pos_52w": 76.5,
+      "pct_from_high52": -4.1,
+      "pos_52w": 74.2,
       "regime": "STRUCTURAL UPTREND"
     },
     "sector_breadth": {
@@ -4433,28 +4359,28 @@
         "num": "02",
         "title": "Crude and input costs",
         "bias": "Context",
-        "desc": "Latest Brent quote: 93.35 USD/bbl (+1.75%). Higher crude can raise import and input costs; lower crude can ease them. This quote alone does not establish the cause of the move."
+        "desc": "Latest Brent quote: 93.33 USD/bbl (+1.73%). Higher crude can raise import and input costs; lower crude can ease them. This quote alone does not establish the cause of the move."
       },
       {
         "num": "03",
         "title": "Market posture & breadth",
         "bias": "Context",
-        "desc": "Nifty is 3.7% below 52W high (26,373), trading 5.8% above 200-DMA (23,993). Sector participation: 3/5 sectors in green (Top: Bank +1.13%)."
+        "desc": "Nifty is 4.1% below 52W high (26,373), trading 5.4% above 200-DMA (23,992). Sector participation: 3/5 sectors in green (Top: Bank +1.13%)."
       }
     ],
-    "trader_take": "Latest available Nifty quote: 25,387 (+0.38% versus previous close). Latest Nifty reading is above the 25,385 pivot. Next calculated resistance above this reading: 25,503. Pivots are calculated references, not confirmed support or resistance. Market regime: STRUCTURAL UPTREND (-3.7% from 52W peak, +5.8% vs 200-DMA). Sector breadth: 3/5 sectors in green.",
+    "trader_take": "Latest available Nifty quote: 25,387 (+0.38% versus previous close). Latest Nifty reading is above the 25,267 pivot. Next calculated resistance above this reading: 25,432. Pivots are calculated references, not confirmed support or resistance. Market regime: STRUCTURAL UPTREND (-4.1% from 52W peak, +5.4% vs 200-DMA). Sector breadth: 3/5 sectors in green.",
     "postmarket_pillars": {
       "commodities": {
         "brent": {
           "key": "BRENT",
           "quote_date": "2026-11-17",
           "label": "Brent Crude",
-          "price": "93.35",
-          "price_raw": 93.35,
+          "price": "93.33",
+          "price_raw": 93.33,
           "prev_close": 91.74,
           "prev_close_fmt": "91.74",
-          "change": 1.61,
-          "change_pct": 1.75,
+          "change": 1.59,
+          "change_pct": 1.73,
           "direction": "up",
           "unit": "USD/bbl",
           "range_52w": {
@@ -4463,19 +4389,19 @@
             "low_fmt": "58.72",
             "high_fmt": "126.10",
             "pos_pct": 51.4,
-            "pct_from_high": -25.97
+            "pct_from_high": -25.99
           }
         },
         "wti": {
           "key": "WTI",
           "quote_date": "2026-11-17",
           "label": "WTI Crude",
-          "price": "86.45",
-          "price_raw": 86.45,
+          "price": "85.85",
+          "price_raw": 85.85,
           "prev_close": 85.01,
           "prev_close_fmt": "85.01",
-          "change": 1.44,
-          "change_pct": 1.69,
+          "change": 0.84,
+          "change_pct": 0.99,
           "direction": "up",
           "unit": "USD/bbl",
           "range_52w": {
@@ -4483,20 +4409,20 @@
             "high": 119.48,
             "low_fmt": "54.98",
             "high_fmt": "119.48",
-            "pos_pct": 48.8,
-            "pct_from_high": -27.64
+            "pos_pct": 47.9,
+            "pct_from_high": -28.15
           }
         },
         "natgas": {
           "key": "NATGAS",
           "quote_date": "2026-11-17",
           "label": "Natural Gas",
-          "price": "3.17",
-          "price_raw": 3.17,
+          "price": "3.20",
+          "price_raw": 3.202,
           "prev_close": 3.087,
           "prev_close_fmt": "3.09",
-          "change": 0.083,
-          "change_pct": 2.69,
+          "change": 0.115,
+          "change_pct": 3.73,
           "direction": "up",
           "unit": "USD/MMBtu",
           "range_52w": {
@@ -4504,20 +4430,20 @@
             "high": 7.83,
             "low_fmt": "2.48",
             "high_fmt": "7.83",
-            "pos_pct": 12.9,
-            "pct_from_high": -59.5
+            "pos_pct": 13.5,
+            "pct_from_high": -59.09
           }
         },
         "gold": {
           "key": "GOLD",
           "quote_date": "2026-11-17",
           "label": "Gold",
-          "price": "3,869.00",
-          "price_raw": 3869.0,
+          "price": "3,852.90",
+          "price_raw": 3852.8999,
           "prev_close": 3877.2,
           "prev_close_fmt": "3,877.20",
-          "change": -8.2,
-          "change_pct": -0.21,
+          "change": -24.3,
+          "change_pct": -0.63,
           "direction": "down",
           "unit": "USD/oz",
           "range_52w": {
@@ -4525,29 +4451,29 @@
             "high": 5586.2,
             "low_fmt": "3,835.20",
             "high_fmt": "5,586.20",
-            "pos_pct": 1.9,
-            "pct_from_high": -30.74
+            "pos_pct": 1.0,
+            "pct_from_high": -31.03
           }
         },
         "silver": {
           "key": "SILVER",
           "quote_date": "2026-11-17",
           "label": "Silver",
-          "price": "47.49",
-          "price_raw": 47.495,
+          "price": "47.41",
+          "price_raw": 47.41,
           "prev_close": 47.485,
           "prev_close_fmt": "47.49",
-          "change": 0.01,
-          "change_pct": 0.02,
-          "direction": "up",
+          "change": -0.075,
+          "change_pct": -0.16,
+          "direction": "down",
           "unit": "USD/oz",
           "range_52w": {
             "low": 46.47,
             "high": 121.3,
             "low_fmt": "46.47",
             "high_fmt": "121.30",
-            "pos_pct": 1.4,
-            "pct_from_high": -60.85
+            "pos_pct": 1.3,
+            "pct_from_high": -60.92
           }
         },
         "catalyst": {
@@ -4558,18 +4484,6 @@
         }
       },
       "earnings": [
-        {
-          "title": "US stock market today: Dow, S&P 500, Nasdaq slip ahead of Nvidia earnings",
-          "url": "https://www.cnbctv18.com/market/us-stock-market-today-dow-jones-nasdaq-nvidia-earnings-anthropic-ipo-20036213.htm",
-          "companies": [
-            {
-              "name": "Nvidia",
-              "symbol": "nvidia"
-            }
-          ],
-          "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
-          "source": ""
-        },
         {
           "title": "HDFC Bank vs Axis Bank: Both shares recover after Q2 sell-off; which banking stock offers higher upside? Check targets",
           "url": "https://www.livemint.com/market/stock-market-news/hdfc-bank-vs-axis-bank-both-shares-recover-after-q2-sell-off-which-banking-stock-offers-higher-upside-check-targets-11794907748296.html",
@@ -4588,30 +4502,37 @@
           "companies": [],
           "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
           "source": ""
+        },
+        {
+          "title": "Earnings recovery, lower oil prices put India back on global investors' radar: Arvind Sanger",
+          "url": "https://www.cnbctv18.com/market/india-earnings-recovery-ai-trade-arvind-sanger-geosphere-capital-20035488.htm",
+          "companies": [],
+          "why_it_matters": "Crude affects India’s import bill and energy-sensitive sectors; the headline does not establish a clear price direction.",
+          "source": ""
         }
       ],
       "global_macro": {
         "overnight": {
           "SP500": {
-            "val": "7,333",
-            "pct": -1.13,
+            "val": "7,341",
+            "pct": -1.03,
             "date": "2026-11-17"
           },
           "NASDAQ": {
-            "val": "24,235",
-            "pct": -1.12,
+            "val": "24,328",
+            "pct": -0.74,
             "date": "2026-11-17"
           },
           "US10Y": {
-            "val": "5.09%",
-            "pct": -0.59,
+            "val": "5.10%",
+            "pct": -0.35,
             "date": "2026-11-17"
           }
         },
         "catalyst": {
-          "title": "US stock market today: Dow, S&P 500, Nasdaq slip ahead of Nvidia earnings",
-          "url": "https://www.cnbctv18.com/market/us-stock-market-today-dow-jones-nasdaq-nvidia-earnings-anthropic-ipo-20036213.htm",
-          "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
+          "title": "Dow Jones falls 1,600 points in two sessions, but futures rebound after Nvidia results",
+          "url": "https://www.cnbctv18.com/market/dow-jones-snp-500-nasdaq-sell-off-futures-rebound-nvidia-results-anthropic-ipo-pricing-bearish-banks-20036341.htm",
+          "why_it_matters": "Alters market structure, compliance mandates, capital allocation rules, and retail derivative trading liquidity.",
           "source": ""
         }
       }
