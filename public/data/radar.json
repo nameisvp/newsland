@@ -1,6 +1,84 @@
 {
-  "updated": "2026-11-18T00:03:04.104391+00:00",
+  "updated": "2026-11-18T07:24:58.209367+00:00",
   "calls": [
+    {
+      "id": "6645952ab2bdaa0f",
+      "title": "This midcap IT stock remains CLSA's 'high-conviction' bet among its peers; Check return potential",
+      "summary": "Of the 40 analysts who have coverage on the Coforge stock, 32 have a \"buy\" rating, two have a \"hold\" rating and six have a \"sell\" recommendation.",
+      "url": "https://www.cnbctv18.com/market/coforge-share-price-clsa-high-conviction-outperform-rating-clsa-target-returns-encora-acquisition-benefits-synergies-returns-20036426.htm",
+      "published": 1794973347.0,
+      "published_str": "18 Nov, 09:12 AM",
+      "source": "CNBC-TV18",
+      "sources": [
+        {
+          "name": "CNBC-TV18",
+          "url": "https://www.cnbctv18.com/market/coforge-share-price-clsa-high-conviction-outperform-rating-clsa-target-returns-encora-acquisition-benefits-synergies-returns-20036426.htm"
+        }
+      ],
+      "brokerage": "CLSA",
+      "brokerages": [
+        "CLSA"
+      ],
+      "action": "BUY",
+      "action_label": "Buy ▲",
+      "sentiment": "bullish",
+      "target": null,
+      "stock": "This midcap IT",
+      "symbol": null,
+      "market": "India"
+    },
+    {
+      "id": "dfcfa42c08642aed",
+      "title": "Havells, RR Kabel shares in focus as CLSA cites growth opportunities; check price targets",
+      "summary": "CLSA has maintained ‘Outperform’ ratings on Havells India and RR Kabel, with price targets of ₹1,290 and ₹2,815, respectively. The brokerage sees medium-term growth opportunities but flags signs of channel destocking ami",
+      "url": "https://www.cnbctv18.com/market/havells-rr-kabel-shares-clsa-cites-growth-opportunities-check-price-targets-20036388.htm",
+      "published": 1794970152.0,
+      "published_str": "18 Nov, 08:19 AM",
+      "source": "CNBC-TV18",
+      "sources": [
+        {
+          "name": "CNBC-TV18",
+          "url": "https://www.cnbctv18.com/market/havells-rr-kabel-shares-clsa-cites-growth-opportunities-check-price-targets-20036388.htm"
+        }
+      ],
+      "brokerage": "CLSA",
+      "brokerages": [
+        "CLSA"
+      ],
+      "action": "BUY",
+      "action_label": "Buy ▲",
+      "sentiment": "bullish",
+      "target": null,
+      "stock": "Havells",
+      "symbol": "HAVELLS.NS",
+      "market": "India"
+    },
+    {
+      "id": "a8a58078f9752646",
+      "title": "Reliance, UltraTech, Hyundai Motor shares: Top 3 stocks to buy; check ratings, target price, stop loss by Jay Thakkar",
+      "summary": "Indian benchmarks rose to their highest levels since late February, supported by lower crude prices, record foreign investment and corporate earnings. ICICI Securities analyst Jay Thakkar recommended Reliance Industries,",
+      "url": "https://www.livemint.com/market/stock-market-news/reliance-ultratech-hyundai-motor-shares-top-3-stocks-to-buy-check-ratings-target-price-stop-loss-by-jay-thakkar-11794931314865.html",
+      "published": 1794962061.0,
+      "published_str": "18 Nov, 06:04 AM",
+      "source": "Mint Markets",
+      "sources": [
+        {
+          "name": "Mint Markets",
+          "url": "https://www.livemint.com/market/stock-market-news/reliance-ultratech-hyundai-motor-shares-top-3-stocks-to-buy-check-ratings-target-price-stop-loss-by-jay-thakkar-11794931314865.html"
+        }
+      ],
+      "brokerage": "ICICI Securities",
+      "brokerages": [
+        "ICICI Securities"
+      ],
+      "action": "BUY",
+      "action_label": "Buy ▲",
+      "sentiment": "bullish",
+      "target": null,
+      "stock": "Reliance Industries",
+      "symbol": "RELIANCE.NS",
+      "market": "India"
+    },
     {
       "id": "b02c5b7c9029d01c",
       "title": "AI boom euphoria fades: Fund managers slash tech exposure at fastest pace since 2006, BofA survey shows",
@@ -2553,11 +2631,11 @@
     }
   ],
   "stats": {
-    "total": 96,
-    "bullish": 69,
+    "total": 99,
+    "bullish": 72,
     "bearish": 16,
     "neutral": 11,
-    "india": 88,
+    "india": 91,
     "us": 8,
     "top_brokerages": [
       {
@@ -2567,6 +2645,10 @@
       {
         "name": "Motilal Oswal",
         "count": 12
+      },
+      {
+        "name": "CLSA",
+        "count": 8
       },
       {
         "name": "Jefferies",
@@ -2581,12 +2663,8 @@
         "count": 7
       },
       {
-        "name": "CLSA",
-        "count": 6
-      },
-      {
         "name": "ICICI Securities",
-        "count": 5
+        "count": 6
       },
       {
         "name": "BofA Securities",
