@@ -1,6 +1,110 @@
 {
-  "updated": "2026-11-18T23:10:56.286052+00:00",
+  "updated": "2026-11-19T04:11:06.364776+00:00",
   "calls": [
+    {
+      "id": "08566f5988b4e2db",
+      "title": "MCX Trading Momentum Strengthens; UBS Remains Bullish, Raises Target Price",
+      "summary": "At current volume run-rate, UBS said, annualised EPS would be around Rs 100, which is 15% above its FY28 EPS estimate of Rs 87, suggesting further upside to the estimates if current activity levels sustain.",
+      "url": "https://www.ndtvprofit.com/markets/mcx-trading-momentum-strengthens-ubs-remains-bullish-raises-target-price-12346852#publisher=newsstand",
+      "published": 1795056137.0,
+      "published_str": "19 Nov, 08:12 AM",
+      "source": "NDTV Profit",
+      "sources": [
+        {
+          "name": "NDTV Profit",
+          "url": "https://www.ndtvprofit.com/markets/mcx-trading-momentum-strengthens-ubs-remains-bullish-raises-target-price-12346852#publisher=newsstand"
+        }
+      ],
+      "brokerage": "UBS",
+      "brokerages": [
+        "UBS"
+      ],
+      "action": "TARGET_RAISE",
+      "action_label": "Target Raised ▲",
+      "sentiment": "bullish",
+      "target": null,
+      "stock": "Multi / Sector",
+      "symbol": null,
+      "market": "India"
+    },
+    {
+      "id": "497fcb7087b6b9ef",
+      "title": "Stocks To Buy Or Sell: Three Top Picks By Jay Thakkar Of ICICI Securities",
+      "summary": "Jay Thakkar recommends buying Radico Khaitan and Dr. Reddy's Laboratories, while selling Bharat Dynamics for short-term trading.",
+      "url": "https://www.ndtvprofit.com/markets/stocks-to-buy-or-sell-three-top-picks-by-jay-thakkar-of-icici-securities-12346738#publisher=newsstand",
+      "published": 1795053043.0,
+      "published_str": "19 Nov, 07:20 AM",
+      "source": "Zerodha Pulse",
+      "sources": [
+        {
+          "name": "Zerodha Pulse",
+          "url": "https://www.ndtvprofit.com/markets/stocks-to-buy-or-sell-three-top-picks-by-jay-thakkar-of-icici-securities-12346738#publisher=newsstand"
+        }
+      ],
+      "brokerage": "ICICI Securities",
+      "brokerages": [
+        "ICICI Securities"
+      ],
+      "action": "BUY",
+      "action_label": "Buy ▲",
+      "sentiment": "bullish",
+      "target": null,
+      "stock": "Three Top Picks",
+      "symbol": null,
+      "market": "India"
+    },
+    {
+      "id": "0c342194c8586b92",
+      "title": "Stock Picks Today: Paytm, Kaynes Tech, UltraTech Cement, And More On Brokerages' Radar",
+      "summary": "Check out the top stock calls, initiations, upgrades, downgrades, and target price revisions from leading brokerages ahead of today's trade.",
+      "url": "https://www.ndtvprofit.com/markets/stock-picks-today-paytm-kaynes-technology-ultratech-cement-multi-commodity-exchange-of-india-oberoi-realty-and-more-on-brokerages-radar-12346714#publisher=newsstand",
+      "published": 1795052232.0,
+      "published_str": "19 Nov, 07:07 AM",
+      "source": "Zerodha Pulse",
+      "sources": [
+        {
+          "name": "Zerodha Pulse",
+          "url": "https://www.ndtvprofit.com/markets/stock-picks-today-paytm-kaynes-technology-ultratech-cement-multi-commodity-exchange-of-india-oberoi-realty-and-more-on-brokerages-radar-12346714#publisher=newsstand"
+        }
+      ],
+      "brokerage": "Street Consensus",
+      "brokerages": [
+        "Street Consensus"
+      ],
+      "action": "SELL",
+      "action_label": "Sell ▼",
+      "sentiment": "bearish",
+      "target": null,
+      "stock": "One97 Communications (Paytm)",
+      "symbol": "PAYTM.NS",
+      "market": "India"
+    },
+    {
+      "id": "2707cabf3e799181",
+      "title": "GMR Airports, IIFL Finance shares: Top 2 stocks to buy in near term; check target price, stop loss by Nagaraj Shetti",
+      "summary": "The Sensex fell 500 points and the Nifty 50 dropped 159 points on Wednesday, ending a two-day winning streak as investors booked profits. Analysts cited support for the Nifty near 25,000–24,900 and recommended GMR Airpor",
+      "url": "https://www.livemint.com/market/stock-market-news/gmr-airports-iifl-finance-shares-top-2-stocks-to-buy-in-near-term-check-target-price-stop-loss-by-nagaraj-shetti-11795014291243.html",
+      "published": 1795048375.0,
+      "published_str": "19 Nov, 06:02 AM",
+      "source": "Mint Markets",
+      "sources": [
+        {
+          "name": "Mint Markets",
+          "url": "https://www.livemint.com/market/stock-market-news/gmr-airports-iifl-finance-shares-top-2-stocks-to-buy-in-near-term-check-target-price-stop-loss-by-nagaraj-shetti-11795014291243.html"
+        }
+      ],
+      "brokerage": "Street Consensus",
+      "brokerages": [
+        "Street Consensus"
+      ],
+      "action": "BUY",
+      "action_label": "Buy ▲",
+      "sentiment": "bullish",
+      "target": null,
+      "stock": "IIFL Finance",
+      "symbol": null,
+      "market": "India"
+    },
     {
       "id": "5a026bd63a9d6ecb",
       "title": "Market Trading Guide: Deepak Fertilisers among 3 stock recommendations for Thursday",
@@ -2765,16 +2869,16 @@
     }
   ],
   "stats": {
-    "total": 104,
-    "bullish": 76,
-    "bearish": 16,
+    "total": 108,
+    "bullish": 79,
+    "bearish": 17,
     "neutral": 12,
-    "india": 96,
+    "india": 100,
     "us": 8,
     "top_brokerages": [
       {
         "name": "Street Consensus",
-        "count": 24
+        "count": 26
       },
       {
         "name": "Motilal Oswal",
@@ -2789,6 +2893,10 @@
         "count": 8
       },
       {
+        "name": "ICICI Securities",
+        "count": 7
+      },
+      {
         "name": "Morgan Stanley",
         "count": 7
       },
@@ -2797,20 +2905,16 @@
         "count": 7
       },
       {
-        "name": "ICICI Securities",
-        "count": 6
-      },
-      {
         "name": "Goldman Sachs",
         "count": 5
       },
       {
-        "name": "Choice Broking",
+        "name": "UBS",
         "count": 4
       },
       {
-        "name": "Anand Rathi",
-        "count": 3
+        "name": "Choice Broking",
+        "count": 4
       }
     ]
   }
