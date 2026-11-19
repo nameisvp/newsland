@@ -1,6 +1,84 @@
 {
-  "updated": "2026-11-19T13:02:30.312812+00:00",
+  "updated": "2026-11-19T21:30:08.952372+00:00",
   "calls": [
+    {
+      "id": "84e38375354d56a9",
+      "title": "Jefferies cuts Futu stock price target on soft market conditions",
+      "summary": "",
+      "url": "https://www.investing.com/news/analyst-ratings/jefferies-cuts-futu-stock-price-target-on-soft-market-conditions-93CH-5040043",
+      "published": 1795123367.0,
+      "published_str": "20 Nov, 02:52 AM",
+      "source": "Investing.com",
+      "sources": [
+        {
+          "name": "Investing.com",
+          "url": "https://www.investing.com/news/analyst-ratings/jefferies-cuts-futu-stock-price-target-on-soft-market-conditions-93CH-5040043"
+        }
+      ],
+      "brokerage": "Jefferies",
+      "brokerages": [
+        "Jefferies"
+      ],
+      "action": "TARGET_CUT",
+      "action_label": "Target Cut ▼",
+      "sentiment": "bearish",
+      "target": null,
+      "stock": "Jefferies cuts Futu",
+      "symbol": null,
+      "market": "India"
+    },
+    {
+      "id": "d03859d82422d7e9",
+      "title": "Goldman Sachs turns bullish on India stock market, upgrades rating to Overweight; sets Nifty target of 28,500",
+      "summary": "Goldman Sachs upgraded Indian equities to Overweight and set a December 2027 Nifty 50 target of 28,500, citing expected earnings growth, resilient demand and renewed foreign investment.",
+      "url": "https://www.livemint.com/market/stock-market-news/goldman-sachs-turns-bullish-on-india-stock-market-upgrades-rating-to-overweight-sets-nifty-target-of-28500-11795099232497.html",
+      "published": 1795099795.0,
+      "published_str": "19 Nov, 08:19 PM",
+      "source": "Mint Markets",
+      "sources": [
+        {
+          "name": "Mint Markets",
+          "url": "https://www.livemint.com/market/stock-market-news/goldman-sachs-turns-bullish-on-india-stock-market-upgrades-rating-to-overweight-sets-nifty-target-of-28500-11795099232497.html"
+        }
+      ],
+      "brokerage": "Goldman Sachs",
+      "brokerages": [
+        "Goldman Sachs"
+      ],
+      "action": "BUY",
+      "action_label": "Buy ▲",
+      "sentiment": "bullish",
+      "target": "₹28,500",
+      "stock": "India",
+      "symbol": null,
+      "market": "India"
+    },
+    {
+      "id": "d8d7ae24147fe6a8",
+      "title": "Anthropic shares set for Nasdaq debut today; Wall Street brokerages see up to 87% upside from IPO price: Report",
+      "summary": "Four brokerages issued bullish ratings, with price targets implying potential gains of 51% to 87%, citing growth prospects and rising AI adoption.",
+      "url": "https://www.livemint.com/market/stock-market-news/anthropic-shares-set-for-nasdaq-debut-today-wall-street-brokerages-see-up-to-87-upside-from-ipo-price-report-11795092766156.html",
+      "published": 1795094280.0,
+      "published_str": "19 Nov, 06:48 PM",
+      "source": "Mint Markets",
+      "sources": [
+        {
+          "name": "Mint Markets",
+          "url": "https://www.livemint.com/market/stock-market-news/anthropic-shares-set-for-nasdaq-debut-today-wall-street-brokerages-see-up-to-87-upside-from-ipo-price-report-11795092766156.html"
+        }
+      ],
+      "brokerage": "Street Consensus",
+      "brokerages": [
+        "Street Consensus"
+      ],
+      "action": "BUY",
+      "action_label": "Buy ▲",
+      "sentiment": "bullish",
+      "target": "87% Upside",
+      "stock": "Anthropic",
+      "symbol": null,
+      "market": "US"
+    },
     {
       "id": "23132a6512650ba0",
       "title": "Physicswallah share price up 6%: Motilal Oswal sees 56% upside on strong growth guidance - Should you buy? Target price",
@@ -69,10 +147,6 @@
         {
           "name": "Mint Markets",
           "url": "https://www.livemint.com/market/stock-market-news/reliance-industries-shares-after-13-surge-in-1-month-jpmorgan-sees-another-23-upside-in-mukesh-ambani-stock-target-11795069231709.html"
-        },
-        {
-          "name": "CNBC-TV18",
-          "url": "https://www.cnbctv18.com/market/reliance-industries-share-price-jpmorgan-sees-further-upside-after-recent-rally-two-key-triggers-20037463.htm"
         }
       ],
       "brokerage": "JPMorgan",
@@ -151,6 +225,10 @@
         {
           "name": "CNBC-TV18",
           "url": "https://www.cnbctv18.com/market/reliance-industries-share-price-jpmorgan-sees-further-upside-after-recent-rally-two-key-triggers-20037463.htm"
+        },
+        {
+          "name": "ET Markets",
+          "url": "https://economictimes.indiatimes.com/markets/stocks/stock-liveblog/ril-stock-price-livestock-price-today-live-updates-19-nov-2026/liveblog/135976081.cms"
         }
       ],
       "brokerage": "JPMorgan",
@@ -3111,16 +3189,16 @@
     }
   ],
   "stats": {
-    "total": 117,
-    "bullish": 86,
-    "bearish": 17,
+    "total": 120,
+    "bullish": 88,
+    "bearish": 18,
     "neutral": 14,
-    "india": 108,
-    "us": 9,
+    "india": 110,
+    "us": 10,
     "top_brokerages": [
       {
         "name": "Street Consensus",
-        "count": 26
+        "count": 27
       },
       {
         "name": "Motilal Oswal",
@@ -3128,7 +3206,7 @@
       },
       {
         "name": "Jefferies",
-        "count": 9
+        "count": 10
       },
       {
         "name": "Morgan Stanley",
@@ -3139,16 +3217,16 @@
         "count": 8
       },
       {
+        "name": "Goldman Sachs",
+        "count": 7
+      },
+      {
         "name": "ICICI Securities",
         "count": 7
       },
       {
         "name": "Citi",
         "count": 7
-      },
-      {
-        "name": "Goldman Sachs",
-        "count": 6
       },
       {
         "name": "UBS",
