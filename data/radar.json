@@ -1,6 +1,58 @@
 {
-  "updated": "2026-11-19T21:30:08.952372+00:00",
+  "updated": "2026-11-20T02:32:25.622787+00:00",
   "calls": [
+    {
+      "id": "ad353ee8a006ff8a",
+      "title": "Sensex Today | Stock Market Live Updates: GIFT Nifty down 180 points; Citi cuts Vedanta target",
+      "summary": "Sensex Today | Stock Market Live Updates: The index will continue to look for support at the 25,250 - 25,200 zone on the downside. A major reason behind the Nifty recovery has been the Nifty Bank, which made a new peak o",
+      "url": "https://www.cnbctv18.com/market/stock-market-live-updates-sensex-nifty-50-ai-it-psu-banks-paytm-sbi-hdfc-ashoka-buildcon-gold-manappuram-nse-share-price-liveblog-20038184.htm",
+      "published": 1795141780.0,
+      "published_str": "20 Nov, 07:59 AM",
+      "source": "CNBC-TV18",
+      "sources": [
+        {
+          "name": "CNBC-TV18",
+          "url": "https://www.cnbctv18.com/market/stock-market-live-updates-sensex-nifty-50-ai-it-psu-banks-paytm-sbi-hdfc-ashoka-buildcon-gold-manappuram-nse-share-price-liveblog-20038184.htm"
+        }
+      ],
+      "brokerage": "Citi",
+      "brokerages": [
+        "Citi"
+      ],
+      "action": "TARGET_CUT",
+      "action_label": "Target Cut ▼",
+      "sentiment": "bearish",
+      "target": null,
+      "stock": "Vedanta",
+      "symbol": "VEDL.NS",
+      "market": "India"
+    },
+    {
+      "id": "87cda29103f5e74b",
+      "title": "M&M, Bank of Baroda shares: Top 2 stocks to buy; check expected returns, ratings, target price by Chandan Taparia",
+      "summary": "The Sensex and Nifty reached nine-month closing highs as foreign inflows and easing commodity prices supported a broad market rally. Banking, auto and FMCG stocks advanced. Motilal Oswal’s Chandan Taparia suggested buyin",
+      "url": "https://www.livemint.com/market/stock-market-news/mm-bank-of-baroda-shares-top-2-stocks-to-buy-check-expected-returns-ratings-target-price-by-chandan-taparia-11795100891827.html",
+      "published": 1795134800.0,
+      "published_str": "20 Nov, 06:03 AM",
+      "source": "Mint Markets",
+      "sources": [
+        {
+          "name": "Mint Markets",
+          "url": "https://www.livemint.com/market/stock-market-news/mm-bank-of-baroda-shares-top-2-stocks-to-buy-check-expected-returns-ratings-target-price-by-chandan-taparia-11795100891827.html"
+        }
+      ],
+      "brokerage": "Motilal Oswal",
+      "brokerages": [
+        "Motilal Oswal"
+      ],
+      "action": "BUY",
+      "action_label": "Buy ▲",
+      "sentiment": "bullish",
+      "target": null,
+      "stock": "Bank of Baroda",
+      "symbol": null,
+      "market": "India"
+    },
     {
       "id": "84e38375354d56a9",
       "title": "Jefferies cuts Futu stock price target on soft market conditions",
@@ -3189,11 +3241,11 @@
     }
   ],
   "stats": {
-    "total": 120,
-    "bullish": 88,
-    "bearish": 18,
+    "total": 122,
+    "bullish": 89,
+    "bearish": 19,
     "neutral": 14,
-    "india": 110,
+    "india": 112,
     "us": 10,
     "top_brokerages": [
       {
@@ -3202,11 +3254,15 @@
       },
       {
         "name": "Motilal Oswal",
-        "count": 14
+        "count": 15
       },
       {
         "name": "Jefferies",
         "count": 10
+      },
+      {
+        "name": "Citi",
+        "count": 8
       },
       {
         "name": "Morgan Stanley",
@@ -3222,10 +3278,6 @@
       },
       {
         "name": "ICICI Securities",
-        "count": 7
-      },
-      {
-        "name": "Citi",
         "count": 7
       },
       {
