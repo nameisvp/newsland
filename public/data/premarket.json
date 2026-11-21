@@ -1,9 +1,9 @@
 {
-  "updated": "2026-11-21T00:22:08.565571+00:00",
+  "updated": "2026-11-21T07:38:22.115269+00:00",
   "schema_version": 2,
   "is_live": false,
-  "quote_updated": "2026-11-21T00:22:08.565168+00:00",
-  "quote_date": "2026-11-19",
+  "quote_updated": "2026-11-21T07:38:22.114730+00:00",
+  "quote_date": "2026-11-20",
   "quote_source": "yfinance",
   "live_bias_label": "LATEST AVAILABLE QUOTE",
   "bias_label": "LATEST AVAILABLE QUOTE",
@@ -45,75 +45,75 @@
     "key": "BRENT",
     "quote_date": "2026-11-20",
     "label": "Brent Crude",
-    "price": "89.87",
-    "price_raw": 89.87,
+    "price": "92.57",
+    "price_raw": 92.57,
     "prev_close": 90.05,
     "prev_close_fmt": "90.05",
-    "change": -0.18,
-    "change_pct": -0.2,
-    "direction": "down",
+    "change": 2.52,
+    "change_pct": 2.8,
+    "direction": "up",
     "unit": "USD/bbl",
     "range_52w": {
       "low": 58.72,
       "high": 126.1,
       "low_fmt": "58.72",
       "high_fmt": "126.10",
-      "pos_pct": 46.2,
-      "pct_from_high": -28.73
+      "pos_pct": 50.2,
+      "pct_from_high": -26.59
     }
   },
   "usdinr": {
     "key": "USDINR",
-    "quote_date": "2026-11-20",
+    "quote_date": "2026-11-21",
     "label": "INR / USD",
-    "price": "93.29",
-    "price_raw": 93.295,
+    "price": "92.67",
+    "price_raw": 92.67,
     "prev_close": 93.28,
     "prev_close_fmt": "93.28",
-    "change": 0.015,
-    "change_pct": 0.02,
-    "direction": "up",
+    "change": -0.61,
+    "change_pct": -0.65,
+    "direction": "down",
     "unit": "",
     "range_52w": {
       "low": 85.86,
       "high": 97.05,
       "low_fmt": "85.86",
       "high_fmt": "97.05",
-      "pos_pct": 66.4,
-      "pct_from_high": -3.87
+      "pos_pct": 60.8,
+      "pct_from_high": -4.52
     }
   },
   "pivots": {
     "nifty": {
-      "pivot": 25378,
-      "s1": 25241,
-      "r1": 25651,
-      "s2": 24968,
-      "r2": 25787,
-      "date": "2026-11-19"
+      "pivot": 25652,
+      "s1": 25494,
+      "r1": 25958,
+      "s2": 25188,
+      "r2": 26115,
+      "date": "2026-11-20"
     },
     "banknifty": {
-      "pivot": 62692,
-      "s1": 62322,
-      "r1": 63434,
-      "s2": 61580,
-      "r2": 63804,
-      "date": "2026-11-19"
+      "pivot": 63972,
+      "s1": 63262,
+      "r1": 65344,
+      "s2": 61889,
+      "r2": 66054,
+      "date": "2026-11-20"
     }
   },
   "posture": {
-    "dma50": 23445,
-    "dma50_fmt": "23,445",
-    "pct_dma50": 8.82,
-    "dma200": 23996,
-    "dma200_fmt": "23,996",
-    "pct_dma200": 6.33,
+    "dma50": 23486,
+    "dma50_fmt": "23,486",
+    "pct_dma50": 9.86,
+    "dma200": 23998,
+    "dma200_fmt": "23,998",
+    "pct_dma200": 7.51,
     "high52": 26373,
     "high52_fmt": "26,373",
     "low52": 22180,
     "low52_fmt": "22,180",
-    "pct_from_high52": -3.26,
-    "pos_52w": 79.5,
+    "pct_from_high52": -2.17,
+    "pos_52w": 86.3,
     "regime": "STRUCTURAL UPTREND"
   },
   "sector_breadth": {
@@ -154,49 +154,49 @@
       "num": "02",
       "title": "Crude and input costs",
       "bias": "Context",
-      "desc": "Latest Brent quote: 89.87 USD/bbl (-0.20%). Higher crude can raise import and input costs; lower crude can ease them. This quote alone does not establish the cause of the move."
+      "desc": "Latest Brent quote: 92.57 USD/bbl (+2.80%). Higher crude can raise import and input costs; lower crude can ease them. This quote alone does not establish the cause of the move."
     },
     {
       "num": "03",
       "title": "Market posture & breadth",
       "bias": "Context",
-      "desc": "Nifty is 3.3% below 52W high (26,373), trading 6.3% above 200-DMA (23,996). Sector participation: 3/5 sectors in green (Top: Bank +2.49%)."
+      "desc": "Nifty is 2.2% below 52W high (26,373), trading 7.5% above 200-DMA (23,998). Sector participation: 3/5 sectors in green (Top: Bank +2.49%)."
     }
   ],
-  "trader_take": "Latest available Nifty quote: 25,801 (+1.12% versus previous close). Latest Nifty reading is above the 25,378 pivot. The reading is above both calculated resistance levels. Pivots are calculated references, not confirmed support or resistance. Market regime: STRUCTURAL UPTREND (-3.3% from 52W peak, +6.3% vs 200-DMA). Sector breadth: 3/5 sectors in green.",
+  "trader_take": "Latest available Nifty quote: 25,801 (+1.12% versus previous close). Latest Nifty reading is above the 25,652 pivot. Next calculated resistance above this reading: 25,958. Pivots are calculated references, not confirmed support or resistance. Market regime: STRUCTURAL UPTREND (-2.2% from 52W peak, +7.5% vs 200-DMA). Sector breadth: 3/5 sectors in green.",
   "postmarket_pillars": {
     "commodities": {
       "brent": {
         "key": "BRENT",
         "quote_date": "2026-11-20",
         "label": "Brent Crude",
-        "price": "89.87",
-        "price_raw": 89.87,
+        "price": "92.57",
+        "price_raw": 92.57,
         "prev_close": 90.05,
         "prev_close_fmt": "90.05",
-        "change": -0.18,
-        "change_pct": -0.2,
-        "direction": "down",
+        "change": 2.52,
+        "change_pct": 2.8,
+        "direction": "up",
         "unit": "USD/bbl",
         "range_52w": {
           "low": 58.72,
           "high": 126.1,
           "low_fmt": "58.72",
           "high_fmt": "126.10",
-          "pos_pct": 46.2,
-          "pct_from_high": -28.73
+          "pos_pct": 50.2,
+          "pct_from_high": -26.59
         }
       },
       "wti": {
         "key": "WTI",
         "quote_date": "2026-11-20",
         "label": "WTI Crude",
-        "price": "83.62",
-        "price_raw": 83.62,
+        "price": "83.98",
+        "price_raw": 83.98,
         "prev_close": 82.99,
         "prev_close_fmt": "82.99",
-        "change": 0.63,
-        "change_pct": 0.76,
+        "change": 0.99,
+        "change_pct": 1.19,
         "direction": "up",
         "unit": "USD/bbl",
         "range_52w": {
@@ -204,20 +204,20 @@
           "high": 119.48,
           "low_fmt": "54.98",
           "high_fmt": "119.48",
-          "pos_pct": 44.4,
-          "pct_from_high": -30.01
+          "pos_pct": 45.0,
+          "pct_from_high": -29.71
         }
       },
       "natgas": {
         "key": "NATGAS",
         "quote_date": "2026-11-20",
         "label": "Natural Gas",
-        "price": "3.79",
-        "price_raw": 3.791,
-        "prev_close": 3.232,
+        "price": "3.41",
+        "price_raw": 3.411,
+        "prev_close": 3.231,
         "prev_close_fmt": "3.23",
-        "change": 0.559,
-        "change_pct": 17.3,
+        "change": 0.18,
+        "change_pct": 5.57,
         "direction": "up",
         "unit": "USD/MMBtu",
         "range_52w": {
@@ -225,79 +225,84 @@
           "high": 7.83,
           "low_fmt": "2.48",
           "high_fmt": "7.83",
-          "pos_pct": 24.5,
-          "pct_from_high": -51.57
+          "pos_pct": 17.4,
+          "pct_from_high": -56.42
         }
       },
       "gold": {
         "key": "GOLD",
         "quote_date": "2026-11-20",
         "label": "Gold",
-        "price": "3,539.00",
-        "price_raw": 3539.0,
+        "price": "3,515.40",
+        "price_raw": 3515.3999,
         "prev_close": 3533.0,
         "prev_close_fmt": "3,533.00",
-        "change": 6.0,
-        "change_pct": 0.17,
-        "direction": "up",
+        "change": -17.6001,
+        "change_pct": -0.5,
+        "direction": "down",
         "unit": "USD/oz",
         "range_52w": {
-          "low": 3620.6,
+          "low": 3502.9,
           "high": 5586.2,
-          "low_fmt": "3,620.60",
+          "low_fmt": "3,502.90",
           "high_fmt": "5,586.20",
-          "pos_pct": 0.0,
-          "pct_from_high": -36.65
+          "pos_pct": 0.6,
+          "pct_from_high": -37.07
         }
       },
       "silver": {
         "key": "SILVER",
         "quote_date": "2026-11-20",
         "label": "Silver",
-        "price": "41.08",
-        "price_raw": 41.08,
+        "price": "41.03",
+        "price_raw": 41.035,
         "prev_close": 41.36,
         "prev_close_fmt": "41.36",
-        "change": -0.28,
-        "change_pct": -0.68,
+        "change": -0.325,
+        "change_pct": -0.79,
         "direction": "down",
         "unit": "USD/oz",
         "range_52w": {
-          "low": 44.32,
+          "low": 40.93,
           "high": 121.3,
-          "low_fmt": "44.32",
+          "low_fmt": "40.93",
           "high_fmt": "121.30",
-          "pos_pct": 0.0,
-          "pct_from_high": -66.13
+          "pos_pct": 0.1,
+          "pct_from_high": -66.17
         }
       },
       "catalyst": {
-        "title": "Rupee Settles Above 93 Level After 7 Months On FII Flows, Weak Crude; Gains 70 Paise To 92.62/USD",
-        "url": "https://www.ndtvprofit.com/markets/rupee-settles-above-93-level-after-7-months-on-fii-flows-weak-crude-gains-70-paise-to-92-62-usd-12356158#publisher=newsstand",
-        "why_it_matters": "Crude affects India’s import bill and energy-sensitive sectors; the headline does not establish a clear price direction.",
+        "title": "AI to lead investment strategy in 2027; Energy and borrowing costs shape macro outlook: Barclays",
+        "url": "https://economictimes.indiatimes.com/markets/stocks/news/ai-to-lead-investment-strategy-in-2027-energy-and-borrowing-costs-shape-macro-outlook-barclays/articleshow/136046648.cms",
+        "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
         "source": ""
       }
     },
     "earnings": [
       {
-        "title": "Sharp rupee appreciation may cut IT firms' FY27 earnings by up to 13%: Report",
-        "url": "https://economictimes.indiatimes.com/markets/forex/sharp-rupee-appreciation-may-cut-it-firms-fy27-earnings-by-up-to-13-report/articleshow/136021296.cms",
+        "title": "Nvidia vs Anthropic shares: AI chip stock tanks 14% while Claude-maker falls 8.5% - See who wins in earnings, valuation?",
+        "url": "https://www.livemint.com/market/stock-market-news/nvidia-vs-anthropic-shares-ai-chip-stock-tanks-14-while-claude-maker-falls-8-5-see-who-wins-in-earnings-valuation-11795238170165.html",
+        "companies": [
+          {
+            "name": "Nvidia",
+            "symbol": "nvidia"
+          }
+        ],
+        "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
+        "source": ""
+      },
+      {
+        "title": "India's cumin soda revolution costs ₹10: Lahori Zeera challenges Coca-Cola and Pepsi, targets ₹1,112 crore in revenue",
+        "url": "https://www.livemint.com/companies/indias-cumin-soda-revolution-costs-10-lahori-zeera-challenges-coca-cola-and-pepsi-targets-1-112-crore-in-revenue-11795240176635.html",
         "companies": [],
         "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
         "source": ""
       },
       {
-        "title": "RBI may hike interest rates by 75 basis points by Q2 of next year: Goldman Sachs",
-        "url": "https://economictimes.indiatimes.com/news/economy/policy/rbi-may-hike-interest-rates-by-75-basis-points-by-q2-of-next-year-goldman-sachs/articleshow/135959983.cms",
+        "title": "Five pharma CDMO stocks with robust revenue growth in Q2FY27",
+        "url": "https://www.livemint.com/market/stock-market-news/best-pharma-cdmo-stocks-china-plus-one-pharma-stocks-india-pharma-stocks-top-pharma-cdmo-stocks-11795178604521.html",
         "companies": [],
-        "why_it_matters": "Directly shifts commercial bank cost of funds, repo borrowing rates, and rate-sensitive equity multiples (banks, real estate, auto).",
-        "source": ""
-      },
-      {
-        "title": "Dilip Buildcon share price surges 7% on ₹419-crore Gurugram Metro order win",
-        "url": "https://www.business-standard.com/markets/news/dilip-buildcon-share-price-surges-7-on-419-crore-gurugram-metro-order-win-126112000240_1.html",
-        "companies": [],
-        "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
+        "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
         "source": ""
       }
     ],
@@ -321,7 +326,7 @@
       },
       "catalyst": {
         "title": "Dollar weaker as Fed-fueled rally stalls; lower US yields help yen",
-        "url": "https://www.livemint.com/market/dollar-weaker-as-fed-fueled-rally-stalls-lower-us-yields-help-yen-11795205355081.html",
+        "url": "https://economictimes.indiatimes.com/markets/forex/forex-news/dollar-weaker-as-fed-fueled-rally-stalls-lower-us-yields-help-yen/articleshow/136045620.cms",
         "why_it_matters": "Guides global liquidity dynamics, US Dollar Index (DXY) trajectory, and foreign institutional (FII) capital allocations.",
         "source": ""
       }
