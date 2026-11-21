@@ -1,8 +1,8 @@
 {
-  "updated": "2026-11-20T18:45:44.351090+00:00",
+  "updated": "2026-11-21T00:22:08.565571+00:00",
   "schema_version": 2,
   "is_live": false,
-  "quote_updated": "2026-11-20T18:45:44.350536+00:00",
+  "quote_updated": "2026-11-21T00:22:08.565168+00:00",
   "quote_date": "2026-11-19",
   "quote_source": "yfinance",
   "live_bias_label": "LATEST AVAILABLE QUOTE",
@@ -26,18 +26,18 @@
   },
   "overnight": {
     "SP500": {
-      "val": "7,014",
-      "pct": -2.26,
+      "val": "6,910",
+      "pct": -3.7,
       "date": "2026-11-20"
     },
     "NASDAQ": {
-      "val": "22,993",
-      "pct": -3.71,
+      "val": "22,618",
+      "pct": -5.28,
       "date": "2026-11-20"
     },
     "US10Y": {
-      "val": "4.94%",
-      "pct": -2.18,
+      "val": "4.91%",
+      "pct": -2.77,
       "date": "2026-11-20"
     }
   },
@@ -45,12 +45,12 @@
     "key": "BRENT",
     "quote_date": "2026-11-20",
     "label": "Brent Crude",
-    "price": "89.35",
-    "price_raw": 89.35,
+    "price": "89.87",
+    "price_raw": 89.87,
     "prev_close": 90.05,
     "prev_close_fmt": "90.05",
-    "change": -0.7,
-    "change_pct": -0.78,
+    "change": -0.18,
+    "change_pct": -0.2,
     "direction": "down",
     "unit": "USD/bbl",
     "range_52w": {
@@ -58,29 +58,29 @@
       "high": 126.1,
       "low_fmt": "58.72",
       "high_fmt": "126.10",
-      "pos_pct": 45.5,
-      "pct_from_high": -29.14
+      "pos_pct": 46.2,
+      "pct_from_high": -28.73
     }
   },
   "usdinr": {
     "key": "USDINR",
     "quote_date": "2026-11-20",
     "label": "INR / USD",
-    "price": "92.67",
-    "price_raw": 92.67,
+    "price": "93.29",
+    "price_raw": 93.295,
     "prev_close": 93.28,
     "prev_close_fmt": "93.28",
-    "change": -0.61,
-    "change_pct": -0.65,
-    "direction": "down",
+    "change": 0.015,
+    "change_pct": 0.02,
+    "direction": "up",
     "unit": "",
     "range_52w": {
       "low": 85.86,
       "high": 97.05,
       "low_fmt": "85.86",
       "high_fmt": "97.05",
-      "pos_pct": 60.8,
-      "pct_from_high": -4.52
+      "pos_pct": 66.4,
+      "pct_from_high": -3.87
     }
   },
   "pivots": {
@@ -154,7 +154,7 @@
       "num": "02",
       "title": "Crude and input costs",
       "bias": "Context",
-      "desc": "Latest Brent quote: 89.35 USD/bbl (-0.78%). Higher crude can raise import and input costs; lower crude can ease them. This quote alone does not establish the cause of the move."
+      "desc": "Latest Brent quote: 89.87 USD/bbl (-0.20%). Higher crude can raise import and input costs; lower crude can ease them. This quote alone does not establish the cause of the move."
     },
     {
       "num": "03",
@@ -170,12 +170,12 @@
         "key": "BRENT",
         "quote_date": "2026-11-20",
         "label": "Brent Crude",
-        "price": "89.35",
-        "price_raw": 89.35,
+        "price": "89.87",
+        "price_raw": 89.87,
         "prev_close": 90.05,
         "prev_close_fmt": "90.05",
-        "change": -0.7,
-        "change_pct": -0.78,
+        "change": -0.18,
+        "change_pct": -0.2,
         "direction": "down",
         "unit": "USD/bbl",
         "range_52w": {
@@ -183,41 +183,41 @@
           "high": 126.1,
           "low_fmt": "58.72",
           "high_fmt": "126.10",
-          "pos_pct": 45.5,
-          "pct_from_high": -29.14
+          "pos_pct": 46.2,
+          "pct_from_high": -28.73
         }
       },
       "wti": {
         "key": "WTI",
         "quote_date": "2026-11-20",
         "label": "WTI Crude",
-        "price": "82.98",
-        "price_raw": 82.98,
+        "price": "83.62",
+        "price_raw": 83.62,
         "prev_close": 82.99,
         "prev_close_fmt": "82.99",
-        "change": -0.01,
-        "change_pct": -0.01,
-        "direction": "down",
+        "change": 0.63,
+        "change_pct": 0.76,
+        "direction": "up",
         "unit": "USD/bbl",
         "range_52w": {
           "low": 54.98,
           "high": 119.48,
           "low_fmt": "54.98",
           "high_fmt": "119.48",
-          "pos_pct": 43.4,
-          "pct_from_high": -30.55
+          "pos_pct": 44.4,
+          "pct_from_high": -30.01
         }
       },
       "natgas": {
         "key": "NATGAS",
         "quote_date": "2026-11-20",
         "label": "Natural Gas",
-        "price": "3.66",
-        "price_raw": 3.657,
+        "price": "3.79",
+        "price_raw": 3.791,
         "prev_close": 3.232,
         "prev_close_fmt": "3.23",
-        "change": 0.425,
-        "change_pct": 13.15,
+        "change": 0.559,
+        "change_pct": 17.3,
         "direction": "up",
         "unit": "USD/MMBtu",
         "range_52w": {
@@ -225,21 +225,21 @@
           "high": 7.83,
           "low_fmt": "2.48",
           "high_fmt": "7.83",
-          "pos_pct": 22.0,
-          "pct_from_high": -53.28
+          "pos_pct": 24.5,
+          "pct_from_high": -51.57
         }
       },
       "gold": {
         "key": "GOLD",
         "quote_date": "2026-11-20",
         "label": "Gold",
-        "price": "3,520.00",
-        "price_raw": 3520.0,
+        "price": "3,539.00",
+        "price_raw": 3539.0,
         "prev_close": 3533.0,
         "prev_close_fmt": "3,533.00",
-        "change": -13.0,
-        "change_pct": -0.37,
-        "direction": "down",
+        "change": 6.0,
+        "change_pct": 0.17,
+        "direction": "up",
         "unit": "USD/oz",
         "range_52w": {
           "low": 3620.6,
@@ -247,19 +247,19 @@
           "low_fmt": "3,620.60",
           "high_fmt": "5,586.20",
           "pos_pct": 0.0,
-          "pct_from_high": -36.99
+          "pct_from_high": -36.65
         }
       },
       "silver": {
         "key": "SILVER",
         "quote_date": "2026-11-20",
         "label": "Silver",
-        "price": "41.09",
-        "price_raw": 41.09,
+        "price": "41.08",
+        "price_raw": 41.08,
         "prev_close": 41.36,
         "prev_close_fmt": "41.36",
-        "change": -0.27,
-        "change_pct": -0.65,
+        "change": -0.28,
+        "change_pct": -0.68,
         "direction": "down",
         "unit": "USD/oz",
         "range_52w": {
@@ -280,17 +280,17 @@
     },
     "earnings": [
       {
-        "title": "Jewellery demand remains resilient for Q3 despite gold price surge",
-        "url": "https://www.thehindu.com/business/Industry/jewellery-demand-remains-resilient-for-q3-despite-gold-price-surge/article71675165.ece",
+        "title": "Sharp rupee appreciation may cut IT firms' FY27 earnings by up to 13%: Report",
+        "url": "https://economictimes.indiatimes.com/markets/forex/sharp-rupee-appreciation-may-cut-it-firms-fy27-earnings-by-up-to-13-report/articleshow/136021296.cms",
         "companies": [],
         "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
         "source": ""
       },
       {
-        "title": "Sharp rupee appreciation may cut IT firms' FY27 earnings by up to 13%: Report",
-        "url": "https://economictimes.indiatimes.com/markets/forex/sharp-rupee-appreciation-may-cut-it-firms-fy27-earnings-by-up-to-13-report/articleshow/136021296.cms",
+        "title": "RBI may hike interest rates by 75 basis points by Q2 of next year: Goldman Sachs",
+        "url": "https://economictimes.indiatimes.com/news/economy/policy/rbi-may-hike-interest-rates-by-75-basis-points-by-q2-of-next-year-goldman-sachs/articleshow/135959983.cms",
         "companies": [],
-        "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
+        "why_it_matters": "Directly shifts commercial bank cost of funds, repo borrowing rates, and rate-sensitive equity multiples (banks, real estate, auto).",
         "source": ""
       },
       {
@@ -304,24 +304,24 @@
     "global_macro": {
       "overnight": {
         "SP500": {
-          "val": "7,014",
-          "pct": -2.26,
+          "val": "6,910",
+          "pct": -3.7,
           "date": "2026-11-20"
         },
         "NASDAQ": {
-          "val": "22,993",
-          "pct": -3.71,
+          "val": "22,618",
+          "pct": -5.28,
           "date": "2026-11-20"
         },
         "US10Y": {
-          "val": "4.94%",
-          "pct": -2.18,
+          "val": "4.91%",
+          "pct": -2.77,
           "date": "2026-11-20"
         }
       },
       "catalyst": {
-        "title": "Fed’s Cook says central bank watching AI industry financing",
-        "url": "https://www.investing.com/news/economy-news/feds-cook-says-central-bank-watching-ai-industry-financing-5042385",
+        "title": "Dollar weaker as Fed-fueled rally stalls; lower US yields help yen",
+        "url": "https://www.livemint.com/market/dollar-weaker-as-fed-fueled-rally-stalls-lower-us-yields-help-yen-11795205355081.html",
         "why_it_matters": "Guides global liquidity dynamics, US Dollar Index (DXY) trajectory, and foreign institutional (FII) capital allocations.",
         "source": ""
       }
