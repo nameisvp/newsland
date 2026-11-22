@@ -1,6 +1,38 @@
 {
-  "updated": "2026-11-21T21:14:21.206209+00:00",
+  "updated": "2026-11-22T01:22:38.781785+00:00",
   "stories": [
+    {
+      "id": "d70c799a46f8c843",
+      "title": "Crude Oil Has Fallen, But Why Is $91 Still Bad News For India? UBS' Gautam Chhaocharia On The Risks | Profit Exclusive",
+      "url": "https://www.ndtvprofit.com/markets/exclusive-brent-crude-oil-wti-has-fallen-but-why-is-91-still-bad-news-for-india-ubs-gautam-chhaocharia-iran-war-middle-east-supply-disruption-commodit-12350989#publisher=newsstand",
+      "published": 1795307403.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "NDTV Profit",
+          "url": "https://www.ndtvprofit.com/markets/exclusive-brent-crude-oil-wti-has-fallen-but-why-is-91-still-bad-news-for-india-ubs-gautam-chhaocharia-iran-war-middle-east-supply-disruption-commodit-12350989#publisher=newsstand"
+        }
+      ],
+      "score": 5,
+      "summary": "UBS's FY27 inflation forecast of 4.8% was based on an assumption that Brent crude would average $80-85 a barrel. With prices hovering around $91, the recent correction has not yet brought oil to the level factored into the brokerage's projections.",
+      "category": "Earnings",
+      "reason": "Compare results and guidance with expectations for the company and its sector.",
+      "matched": [
+        "Earnings",
+        "Energy & geopolitics"
+      ],
+      "tier": "Watch",
+      "related": [],
+      "cluster_count": 1,
+      "impact_assets": [
+        "Equities",
+        "Commodities"
+      ],
+      "why_it_matters": "Crude affects India’s import bill and energy-sensitive sectors; the headline does not establish a clear price direction.",
+      "impact_chain": null,
+      "companies": []
+    },
     {
       "id": "9a0d630bdb6c58c9",
       "title": "Anthropic’s record IPO collides with tech’s worst week on Wall Street since 2020",
@@ -98,6 +130,88 @@
       "companies": []
     },
     {
+      "id": "8ea497c369097bed",
+      "title": "Gold rate today in India at 14-month low; will it hit ₹1 lakh? Experts list out 3 reasons for gold price drop in 2026",
+      "url": "https://www.livemint.com/market/commodities/gold-rate-today-in-india-at-14-month-low-will-it-hit-rs-1-lakh-experts-list-out-3-reasons-for-gold-price-drop-in-2026-11795283484060.html",
+      "published": 1795304091.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "Mint Markets",
+          "url": "https://www.livemint.com/market/commodities/gold-rate-today-in-india-at-14-month-low-will-it-hit-rs-1-lakh-experts-list-out-3-reasons-for-gold-price-drop-in-2026-11795283484060.html"
+        },
+        {
+          "name": "Zerodha Pulse",
+          "url": "https://www.thehindu.com/business/gold-copper-aluminium-dive-to-at-least-7-month-lows/article71729065.ece"
+        }
+      ],
+      "score": 2,
+      "summary": "Gold rate today in India: MCX gold rate finished at 14-month low of ₹1,21,949 per 10 gm on Friday, whereas gold price in the international market ended at $3,539/oz",
+      "category": "Other news",
+      "reason": "Key market catalyst driving market liquidity and session volatility.",
+      "matched": [],
+      "tier": "More",
+      "related": [
+        {
+          "title": "Gold, copper, aluminium dive to at least 7-month lows",
+          "url": "https://www.thehindu.com/business/gold-copper-aluminium-dive-to-at-least-7-month-lows/article71729065.ece",
+          "source": "Zerodha Pulse",
+          "published": 1795276665.0
+        }
+      ],
+      "cluster_count": 2,
+      "impact_assets": [
+        "Commodities"
+      ],
+      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
+      "impact_chain": {
+        "rule": "GOLD_RALLY",
+        "catalyst": "Gold / Bullion Surge",
+        "tailwinds": [
+          "Titan",
+          "Kalyan Jewellers",
+          "Senco Gold",
+          "Muthoot Finance"
+        ],
+        "headwinds": [],
+        "rationale": "Elevated bullion expands inventory valuation spreads and increases collateral value for gold loan lenders."
+      },
+      "companies": []
+    },
+    {
+      "id": "59ad09e19a23c4dc",
+      "title": "Syed Mushtaq Ali Trophy 2026: When And Where To Watch 5th Round Matches Live",
+      "url": "https://www.ndtvprofit.com/sports/syed-mushtaq-ali-trophy-2026-when-and-where-to-watch-5th-round-matches-live-12360129#publisher=newsstand",
+      "published": 1795303801.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "Zerodha Pulse",
+          "url": "https://www.ndtvprofit.com/sports/syed-mushtaq-ali-trophy-2026-when-and-where-to-watch-5th-round-matches-live-12360129#publisher=newsstand"
+        },
+        {
+          "name": "NDTV Profit",
+          "url": "https://www.ndtvprofit.com/sports/syed-mushtaq-ali-trophy-2026-when-and-where-to-watch-5th-round-matches-live-12360129#publisher=newsstand"
+        }
+      ],
+      "score": 2,
+      "summary": "Several top domestic teams will be in action on November 22. Here's everything you need to know about watching the matches.",
+      "category": "Other news",
+      "reason": "Key market catalyst driving market liquidity and session volatility.",
+      "matched": [],
+      "tier": "More",
+      "related": [],
+      "cluster_count": 2,
+      "impact_assets": [
+        "Equities"
+      ],
+      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
       "id": "67849507a933bc8c",
       "title": "Small businesses can deliver 100 times more impact from loans: RBI chief",
       "url": "https://www.business-standard.com/finance/news/rbi-chief-urges-banks-to-step-up-lending-to-small-and-micro-businesses-126112100918_1.html",
@@ -125,6 +239,38 @@
         "Equities"
       ],
       "why_it_matters": "Directly shifts commercial bank cost of funds, repo borrowing rates, and rate-sensitive equity multiples (banks, real estate, auto).",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
+      "id": "c91260cb909d5e49",
+      "title": "India vs New Zealand Hockey Live Streaming: When And Where To Watch IND vs NZ 3rd Match?",
+      "url": "https://www.ndtvprofit.com/sports/india-vs-new-zealand-hockey-live-streaming-when-and-where-to-watch-ind-vs-nz-3rd-match-12360298#publisher=newsstand",
+      "published": 1795298401.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "Zerodha Pulse",
+          "url": "https://www.ndtvprofit.com/sports/india-vs-new-zealand-hockey-live-streaming-when-and-where-to-watch-ind-vs-nz-3rd-match-12360298#publisher=newsstand"
+        },
+        {
+          "name": "NDTV Profit",
+          "url": "https://www.ndtvprofit.com/sports/india-vs-new-zealand-hockey-live-streaming-when-and-where-to-watch-ind-vs-nz-3rd-match-12360298#publisher=newsstand"
+        }
+      ],
+      "score": 2,
+      "summary": "India will face New Zealand in the final match of their three-game series in Auckland. Check the match timing, venue and live streaming details.",
+      "category": "Other news",
+      "reason": "Key market catalyst driving market liquidity and session volatility.",
+      "matched": [],
+      "tier": "More",
+      "related": [],
+      "cluster_count": 2,
+      "impact_assets": [
+        "Equities"
+      ],
+      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
       "impact_chain": null,
       "companies": []
     },
@@ -279,103 +425,87 @@
       "companies": []
     },
     {
-      "id": "f407cc7d2a626774",
-      "title": "Premier Explosives gets ₹311-crore export order for defence explosives",
-      "url": "https://www.cnbctv18.com/market/premier-explosives-gets-%25e2%2582%25b9311-crore-export-order-for-defence-explosives-20039164.htm",
-      "published": 1795273633.0,
+      "id": "1884cd84a405008d",
+      "title": "Gold, silver prices fall amid stronger dollar, hawkish Fed signals",
+      "url": "https://www.business-standard.com/markets/commodities/gold-silver-prices-fall-amid-stronger-dollar-hawkish-fed-signals-126112000502_1.html",
+      "published": 1795161466.0,
       "region": "India",
       "official": false,
       "sources": [
         {
-          "name": "CNBC-TV18",
-          "url": "https://www.cnbctv18.com/market/premier-explosives-gets-%25e2%2582%25b9311-crore-export-order-for-defence-explosives-20039164.htm"
-        }
-      ],
-      "score": 5,
-      "summary": "Premier Explosives received a $33.603 million export order from an international entity for defence explosives, to be executed within 12 months.",
-      "category": "Economic data",
-      "reason": "Compare the release with expectations; the surprise can affect rates and risk appetite.",
-      "matched": [
-        "Economic data"
-      ],
-      "tier": "Watch",
-      "related": [],
-      "cluster_count": 1,
-      "impact_assets": [
-        "Equities"
-      ],
-      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
-      "impact_chain": {
-        "rule": "DEFENCE_ORDERS",
-        "catalyst": "Defence Capex & Orders",
-        "tailwinds": [
-          "HAL",
-          "BEL",
-          "Mazagon Dock",
-          "Solar Industries"
-        ],
-        "headwinds": [],
-        "rationale": "Long-term indigenization contracts expand order backlogs and revenue visibility for domestic defence PSUs."
-      },
-      "companies": []
-    },
-    {
-      "id": "53ae4dbcf6cd8ec9",
-      "title": "State and federal battle over prediction markets regulation heats up after midterms",
-      "url": "https://www.cnbc.com/2026/11/21/prediction-market-regulation-kalshi-cftc.html",
-      "published": 1795266761.0,
-      "region": "Global",
-      "official": false,
-      "sources": [
+          "name": "Business Standard",
+          "url": "https://www.business-standard.com/markets/commodities/gold-silver-prices-fall-amid-stronger-dollar-hawkish-fed-signals-126112000502_1.html"
+        },
         {
-          "name": "CNBC World",
-          "url": "https://www.cnbc.com/2026/11/21/prediction-market-regulation-kalshi-cftc.html"
-        }
-      ],
-      "score": 4,
-      "summary": "States, Congress and the CFTC are escalating the fight over prediction market regulation after the midterms.",
-      "category": "Regulation",
-      "reason": "Check who is covered, whether it is proposed or final, and its effective date.",
-      "matched": [
-        "Regulation"
-      ],
-      "tier": "Watch",
-      "related": [],
-      "cluster_count": 1,
-      "impact_assets": [
-        "Equities"
-      ],
-      "why_it_matters": "Alters market structure, compliance mandates, capital allocation rules, and retail derivative trading liquidity.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "ea8b7510b45d9c69",
-      "title": "Texmaco Rail gets ₹230 crore orders from JSW entities for 553 wagons",
-      "url": "https://www.cnbctv18.com/market/texmaco-rail-gets-rs-230-crore-orders-from-jsw-entities-for-rs-553-wagons-20039158.htm",
-      "published": 1795264494.0,
-      "region": "India",
-      "official": false,
-      "sources": [
+          "name": "Mint Markets",
+          "url": "https://www.livemint.com/market/gold-logs-worst-week-since-march-on-hawkish-fed-ai-selloff-11795214360197.html"
+        },
         {
           "name": "CNBC-TV18",
-          "url": "https://www.cnbctv18.com/market/texmaco-rail-gets-rs-230-crore-orders-from-jsw-entities-for-rs-553-wagons-20039158.htm"
+          "url": "https://www.cnbctv18.com/market/commodities/gold-falls-to-lowest-levels-in-14-months-as-us-dollar-strengthens-amid-fed-rate-hike-worries-20038187.htm"
         }
       ],
-      "score": 4,
-      "summary": "Texmaco Rail & Engineering secured two LOIs worth ₹230.58 crore from JSW Rail Infra Logistics and JSW (South) Rail Logistics to manufacture and supply 553 wagons by mid-2027.",
-      "category": "Company move",
-      "reason": "A large contract or order may affect the company and its sector; check execution and guidance.",
+      "score": 11,
+      "summary": "In the domestic market, gold futures on the Multi Commodity Exchange (MCX) were trading near ₹1,23,000 per 10 gram, while silver futures were trading near ₹1,49,600 per kg",
+      "category": "Monetary policy",
+      "reason": "Guides global liquidity dynamics, US Dollar Index (DXY) trajectory, and foreign institutional (FII) capital allocations.",
       "matched": [
-        "Company move"
+        "Monetary policy",
+        "Market flows"
       ],
-      "tier": "Watch",
-      "related": [],
-      "cluster_count": 1,
+      "tier": "Must know",
+      "related": [
+        {
+          "title": "Gold Logs Worst Week Since March on Hawkish Fed, AI Selloff",
+          "url": "https://www.livemint.com/market/gold-logs-worst-week-since-march-on-hawkish-fed-ai-selloff-11795214360197.html",
+          "source": "Mint Markets",
+          "published": 1795214359.0
+        },
+        {
+          "title": "Gold falls further, set for worst week since March as Fed rate hike worries rise",
+          "url": "https://www.cnbctv18.com/market/commodities/gold-falls-to-lowest-levels-in-14-months-as-us-dollar-strengthens-amid-fed-rate-hike-worries-20038187.htm",
+          "source": "CNBC-TV18",
+          "published": 1795140733.0
+        },
+        {
+          "title": "Gold, silver price crash: DSP Mutual Fund turns bullish on bullion, reveals new buying strategy; check price levels",
+          "url": "https://www.livemint.com/market/commodities/gold-silver-price-crash-dsp-mutual-fund-turns-bullish-on-bullion-reveals-new-buying-strategy-check-price-levels-11795252615511.html",
+          "source": "Mint Markets",
+          "published": 1795260008.0
+        },
+        {
+          "title": "Gold vs silver price crash compared: White metal loses 65%, gold sheds 37% from record highs| Wealth wiped, returns",
+          "url": "https://www.livemint.com/market/stock-market-news/gold-vs-silver-price-crash-compared-white-metal-loses-65-gold-sheds-37-from-record-highs-wealth-wiped-returns-11795241673262.html",
+          "source": "Mint Markets",
+          "published": 1795244752.0
+        },
+        {
+          "title": "Gold, silver prices near a bottom? JM Financial, Motilal Oswal flag key levels for a rebound",
+          "url": "https://www.cnbctv18.com/market/gold-price-silver-price-crash-outlook-jm-financial-motilal-oswal-key-support-levels-rebound-targets-mcx-copper-zinc-crude-oil-20038612.htm",
+          "source": "CNBC-TV18",
+          "published": 1795168667.0
+        },
+        {
+          "title": "Gold price crash: Yellow metal and silver slump over 4% each on MCX",
+          "url": "https://www.cnbctv18.com/market/commodities/gold-price-crash-gold-silver-on-mcx-us-fed-rate-hike-us-dollar-rises-ai-worries-20038292.htm",
+          "source": "CNBC-TV18",
+          "published": 1795151386.0
+        },
+        {
+          "title": "Gold ETFs down 5%; Silver ETFs plunge over 6%, trade at 52-week lows",
+          "url": "https://www.business-standard.com/markets/news/gold-silver-prices-crash-gold-etfs-down-5-silver-etfs-plunge-over-6-trade-at-52-week-lows-126112000221_1.html",
+          "source": "Business Standard",
+          "published": 1795148324.0
+        }
+      ],
+      "cluster_count": 3,
       "impact_assets": [
-        "Equities"
+        "Rates",
+        "Equities",
+        "Commodities",
+        "FX"
       ],
-      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
+      "why_it_matters": "Guides global liquidity dynamics, US Dollar Index (DXY) trajectory, and foreign institutional (FII) capital allocations.",
       "impact_chain": null,
       "companies": []
     },
@@ -732,56 +862,24 @@
       "companies": []
     },
     {
-      "id": "0e0e5445e45c79ea",
-      "title": "Pune FDA Crackdown: The Fern, Hotel Orchid In Lonavala And Burger Barn Cafe Among 17 Licences Suspended",
-      "url": "https://www.ndtvprofit.com/india/pune-fda-crackdown-the-fern-hotel-orchid-in-lonavala-and-burger-barn-cafe-among-17-licences-suspended-12359386#publisher=newsstand",
-      "published": 1795274323.0,
+      "id": "f407cc7d2a626774",
+      "title": "Premier Explosives gets ₹311-crore export order for defence explosives",
+      "url": "https://www.cnbctv18.com/market/premier-explosives-gets-%25e2%2582%25b9311-crore-export-order-for-defence-explosives-20039164.htm",
+      "published": 1795273633.0,
       "region": "India",
       "official": false,
       "sources": [
         {
-          "name": "Zerodha Pulse",
-          "url": "https://www.ndtvprofit.com/india/pune-fda-crackdown-the-fern-hotel-orchid-in-lonavala-and-burger-barn-cafe-among-17-licences-suspended-12359386#publisher=newsstand"
-        },
-        {
-          "name": "NDTV Profit",
-          "url": "https://www.ndtvprofit.com/india/pune-fda-crackdown-the-fern-hotel-orchid-in-lonavala-and-burger-barn-cafe-among-17-licences-suspended-12359386#publisher=newsstand"
+          "name": "CNBC-TV18",
+          "url": "https://www.cnbctv18.com/market/premier-explosives-gets-%25e2%2582%25b9311-crore-export-order-for-defence-explosives-20039164.htm"
         }
       ],
-      "score": 2,
-      "summary": "Eight eateries in Pune city had their licences suspended over filthy kitchens and insect infestation, with six of them also found using artificial colour. Unlabelled jaggery powder was seized from a unit in Kolhapur district.",
-      "category": "Other news",
-      "reason": "Key market catalyst driving market liquidity and session volatility.",
-      "matched": [],
-      "tier": "More",
-      "related": [],
-      "cluster_count": 2,
-      "impact_assets": [
-        "Equities"
-      ],
-      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "477c2a08b2578d4b",
-      "title": "Stock split reset: SanDisk stock crashes 87.5% overnight? Here's what investors need to know about its 8-for-1 split",
-      "url": "https://www.livemint.com/market/stock-market-news/stock-split-reset-sandisk-stock-crashes-87-5-overnight-heres-what-investors-need-to-know-about-its-8-for-1-split-11795267376660.html",
-      "published": 1795267632.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "Mint Markets",
-          "url": "https://www.livemint.com/market/stock-market-news/stock-split-reset-sandisk-stock-crashes-87-5-overnight-heres-what-investors-need-to-know-about-its-8-for-1-split-11795267376660.html"
-        }
-      ],
-      "score": 3,
-      "summary": "SanDisk completed an eight-for-one stock split, giving eligible shareholders seven additional shares for each share held. The adjustment lowered the per-share price from $755.16 to about $94.40 without changing investors’ ownership or the company’s market value",
-      "category": "Company move",
-      "reason": "A named company or share-price move may affect that stock and its peers.",
+      "score": 5,
+      "summary": "Premier Explosives received a $33.603 million export order from an international entity for defence explosives, to be executed within 12 months.",
+      "category": "Economic data",
+      "reason": "Compare the release with expectations; the surprise can affect rates and risk appetite.",
       "matched": [
-        "Company move"
+        "Economic data"
       ],
       "tier": "Watch",
       "related": [],
@@ -790,158 +888,73 @@
         "Equities"
       ],
       "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
-      "impact_chain": null,
+      "impact_chain": {
+        "rule": "DEFENCE_ORDERS",
+        "catalyst": "Defence Capex & Orders",
+        "tailwinds": [
+          "HAL",
+          "BEL",
+          "Mazagon Dock",
+          "Solar Industries"
+        ],
+        "headwinds": [],
+        "rationale": "Long-term indigenization contracts expand order backlogs and revenue visibility for domestic defence PSUs."
+      },
       "companies": []
     },
     {
-      "id": "1884cd84a405008d",
-      "title": "Gold, silver prices fall amid stronger dollar, hawkish Fed signals",
-      "url": "https://www.business-standard.com/markets/commodities/gold-silver-prices-fall-amid-stronger-dollar-hawkish-fed-signals-126112000502_1.html",
-      "published": 1795161466.0,
-      "region": "India",
+      "id": "53ae4dbcf6cd8ec9",
+      "title": "State and federal battle over prediction markets regulation heats up after midterms",
+      "url": "https://www.cnbc.com/2026/11/21/prediction-market-regulation-kalshi-cftc.html",
+      "published": 1795266761.0,
+      "region": "Global",
       "official": false,
       "sources": [
         {
-          "name": "Business Standard",
-          "url": "https://www.business-standard.com/markets/commodities/gold-silver-prices-fall-amid-stronger-dollar-hawkish-fed-signals-126112000502_1.html"
-        },
-        {
-          "name": "Mint Markets",
-          "url": "https://www.livemint.com/market/gold-logs-worst-week-since-march-on-hawkish-fed-ai-selloff-11795214360197.html"
-        },
-        {
-          "name": "CNBC-TV18",
-          "url": "https://www.cnbctv18.com/market/commodities/gold-falls-to-lowest-levels-in-14-months-as-us-dollar-strengthens-amid-fed-rate-hike-worries-20038187.htm"
+          "name": "CNBC World",
+          "url": "https://www.cnbc.com/2026/11/21/prediction-market-regulation-kalshi-cftc.html"
         }
       ],
-      "score": 11,
-      "summary": "In the domestic market, gold futures on the Multi Commodity Exchange (MCX) were trading near ₹1,23,000 per 10 gram, while silver futures were trading near ₹1,49,600 per kg",
-      "category": "Monetary policy",
-      "reason": "Guides global liquidity dynamics, US Dollar Index (DXY) trajectory, and foreign institutional (FII) capital allocations.",
+      "score": 4,
+      "summary": "States, Congress and the CFTC are escalating the fight over prediction market regulation after the midterms.",
+      "category": "Regulation",
+      "reason": "Check who is covered, whether it is proposed or final, and its effective date.",
       "matched": [
-        "Monetary policy",
-        "Market flows"
+        "Regulation"
       ],
-      "tier": "Must know",
-      "related": [
-        {
-          "title": "Gold Logs Worst Week Since March on Hawkish Fed, AI Selloff",
-          "url": "https://www.livemint.com/market/gold-logs-worst-week-since-march-on-hawkish-fed-ai-selloff-11795214360197.html",
-          "source": "Mint Markets",
-          "published": 1795214359.0
-        },
-        {
-          "title": "Gold falls further, set for worst week since March as Fed rate hike worries rise",
-          "url": "https://www.cnbctv18.com/market/commodities/gold-falls-to-lowest-levels-in-14-months-as-us-dollar-strengthens-amid-fed-rate-hike-worries-20038187.htm",
-          "source": "CNBC-TV18",
-          "published": 1795140733.0
-        },
-        {
-          "title": "Gold, silver price crash: DSP Mutual Fund turns bullish on bullion, reveals new buying strategy; check price levels",
-          "url": "https://www.livemint.com/market/commodities/gold-silver-price-crash-dsp-mutual-fund-turns-bullish-on-bullion-reveals-new-buying-strategy-check-price-levels-11795252615511.html",
-          "source": "Mint Markets",
-          "published": 1795260008.0
-        },
-        {
-          "title": "Gold vs silver price crash compared: White metal loses 65%, gold sheds 37% from record highs| Wealth wiped, returns",
-          "url": "https://www.livemint.com/market/stock-market-news/gold-vs-silver-price-crash-compared-white-metal-loses-65-gold-sheds-37-from-record-highs-wealth-wiped-returns-11795241673262.html",
-          "source": "Mint Markets",
-          "published": 1795244752.0
-        },
-        {
-          "title": "Gold, silver prices near a bottom? JM Financial, Motilal Oswal flag key levels for a rebound",
-          "url": "https://www.cnbctv18.com/market/gold-price-silver-price-crash-outlook-jm-financial-motilal-oswal-key-support-levels-rebound-targets-mcx-copper-zinc-crude-oil-20038612.htm",
-          "source": "CNBC-TV18",
-          "published": 1795168667.0
-        },
-        {
-          "title": "Gold price crash: Yellow metal and silver slump over 4% each on MCX",
-          "url": "https://www.cnbctv18.com/market/commodities/gold-price-crash-gold-silver-on-mcx-us-fed-rate-hike-us-dollar-rises-ai-worries-20038292.htm",
-          "source": "CNBC-TV18",
-          "published": 1795151386.0
-        },
-        {
-          "title": "Gold ETFs down 5%; Silver ETFs plunge over 6%, trade at 52-week lows",
-          "url": "https://www.business-standard.com/markets/news/gold-silver-prices-crash-gold-etfs-down-5-silver-etfs-plunge-over-6-trade-at-52-week-lows-126112000221_1.html",
-          "source": "Business Standard",
-          "published": 1795148324.0
-        }
-      ],
-      "cluster_count": 3,
-      "impact_assets": [
-        "Rates",
-        "Equities",
-        "Commodities",
-        "FX"
-      ],
-      "why_it_matters": "Guides global liquidity dynamics, US Dollar Index (DXY) trajectory, and foreign institutional (FII) capital allocations.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "7a9a8e921ca7fbe4",
-      "title": "EPFO SWP Calculator: How Much Can You Withdraw Monthly From Rs 20 Lakh Corpus For 20 Years?",
-      "url": "https://www.ndtvprofit.com/personal-finance/epfo-swp-calculator-how-much-can-you-withdraw-monthly-from-rs-20-lakh-corpus-for-20-years-12359494#publisher=newsstand",
-      "published": 1795274052.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "Zerodha Pulse",
-          "url": "https://www.ndtvprofit.com/personal-finance/epfo-swp-calculator-how-much-can-you-withdraw-monthly-from-rs-20-lakh-corpus-for-20-years-12359494#publisher=newsstand"
-        },
-        {
-          "name": "NDTV Profit",
-          "url": "https://www.ndtvprofit.com/personal-finance/epfo-swp-calculator-how-much-can-you-withdraw-monthly-from-rs-20-lakh-corpus-for-20-years-12359494#publisher=newsstand"
-        }
-      ],
-      "score": 2,
-      "summary": "While EPFO is yet to provide operational details of the initiative, we explain how much can a retiree possibly withdraw in a month with a Rs 20 lakh corpus.",
-      "category": "Other news",
-      "reason": "Key market catalyst driving market liquidity and session volatility.",
-      "matched": [],
-      "tier": "More",
+      "tier": "Watch",
       "related": [],
-      "cluster_count": 2,
+      "cluster_count": 1,
       "impact_assets": [
         "Equities"
       ],
-      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
+      "why_it_matters": "Alters market structure, compliance mandates, capital allocation rules, and retail derivative trading liquidity.",
       "impact_chain": null,
       "companies": []
     },
     {
-      "id": "a9497a92d8c15a41",
-      "title": "Max Healthcare, Fortis, Apollo, Aster: Hospital stocks steal show on D-Street with up to 14% rally - Buy now or wait?",
-      "url": "https://www.livemint.com/market/stock-market-news/max-healthcare-fortis-apollo-aster-hospital-stocks-steal-show-on-d-street-with-up-to-14-rally-buy-now-or-wait-11795262811423.html",
-      "published": 1795273007.0,
+      "id": "ea8b7510b45d9c69",
+      "title": "Texmaco Rail gets ₹230 crore orders from JSW entities for 553 wagons",
+      "url": "https://www.cnbctv18.com/market/texmaco-rail-gets-rs-230-crore-orders-from-jsw-entities-for-rs-553-wagons-20039158.htm",
+      "published": 1795264494.0,
       "region": "India",
       "official": false,
       "sources": [
         {
-          "name": "Mint Markets",
-          "url": "https://www.livemint.com/market/stock-market-news/max-healthcare-fortis-apollo-aster-hospital-stocks-steal-show-on-d-street-with-up-to-14-rally-buy-now-or-wait-11795262811423.html"
-        },
-        {
-          "name": "ET Markets",
-          "url": "https://economictimes.indiatimes.com/markets/stocks/stock-liveblog/apollo-hospital-share-price-live-updates-20-nov-2026/liveblog/136013439.cms"
+          "name": "CNBC-TV18",
+          "url": "https://www.cnbctv18.com/market/texmaco-rail-gets-rs-230-crore-orders-from-jsw-entities-for-rs-553-wagons-20039158.htm"
         }
       ],
-      "score": 2,
-      "summary": "Hospital stocks rallied up to 14% over five trading sessions amid optimism about corporate earnings and growth prospects. Apollo Hospitals, Fortis, Max Healthcare and Aster DM Quality Care all advanced on Friday, with brokerages maintaining Buy ratings on Apollo, Fortis and Max.",
-      "category": "Other news",
-      "reason": "Key market catalyst driving market liquidity and session volatility.",
-      "matched": [],
-      "tier": "More",
-      "related": [
-        {
-          "title": "Apollo Hospital Share Price Highlights: Apollo Hospital Stock Price History",
-          "url": "https://economictimes.indiatimes.com/markets/stocks/stock-liveblog/apollo-hospital-share-price-live-updates-20-nov-2026/liveblog/136013439.cms",
-          "source": "ET Markets",
-          "published": 1795149214.0
-        }
+      "score": 4,
+      "summary": "Texmaco Rail & Engineering secured two LOIs worth ₹230.58 crore from JSW Rail Infra Logistics and JSW (South) Rail Logistics to manufacture and supply 553 wagons by mid-2027.",
+      "category": "Company move",
+      "reason": "A large contract or order may affect the company and its sector; check execution and guidance.",
+      "matched": [
+        "Company move"
       ],
-      "cluster_count": 2,
+      "tier": "Watch",
+      "related": [],
+      "cluster_count": 1,
       "impact_assets": [
         "Equities"
       ],
@@ -1003,78 +1016,6 @@
       "related": [],
       "cluster_count": 1,
       "impact_assets": [
-        "Equities"
-      ],
-      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "86b527ebc67bad51",
-      "title": "Ashoka Buildcon loses Saudi Arabia contract worth ₹846 crore: What happened and what it means",
-      "url": "https://www.livemint.com/companies/news/ashoka-buildcon-loses-saudi-arabia-contract-worth-rs-846-crore-what-happened-and-what-it-means-11795249520850.html",
-      "published": 1795250410.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "Mint Companies",
-          "url": "https://www.livemint.com/companies/news/ashoka-buildcon-loses-saudi-arabia-contract-worth-rs-846-crore-what-happened-and-what-it-means-11795249520850.html"
-        },
-        {
-          "name": "Business Standard",
-          "url": "https://www.business-standard.com/markets/news/ashoka-buildcon-shares-tank-6-as-846-cr-saudi-arabia-project-cancelled-126112000220_1.html"
-        }
-      ],
-      "score": 4,
-      "summary": "Ashoka Buildcon has lost a ₹846.38 crore Saudi Arabia construction contract after Diriyah Company cancelled the project, citing internal reasons. The cancellation comes amid a 73% decline in the company's Q2 standalone net profit.",
-      "category": "Company move",
-      "reason": "A large contract or order may affect the company and its sector; check execution and guidance.",
-      "matched": [
-        "Company move"
-      ],
-      "tier": "Watch",
-      "related": [
-        {
-          "title": "Ashoka Buildcon shares tank 6% as ₹846-cr Saudi Arabia project cancelled",
-          "url": "https://www.business-standard.com/markets/news/ashoka-buildcon-shares-tank-6-as-846-cr-saudi-arabia-project-cancelled-126112000220_1.html",
-          "source": "Business Standard",
-          "published": 1795148315.0
-        }
-      ],
-      "cluster_count": 2,
-      "impact_assets": [
-        "Equities"
-      ],
-      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "c3d0af736a4c297b",
-      "title": "US Treasury yields drop for day and week; AI trade concern spurs safe-haven bid",
-      "url": "https://economictimes.indiatimes.com/markets/bonds/us-treasury-yields-drop-for-day-and-week-ai-trade-concern-spurs-safe-haven-bid/articleshow/136045682.cms",
-      "published": 1795238629.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "ET Markets",
-          "url": "https://economictimes.indiatimes.com/markets/bonds/us-treasury-yields-drop-for-day-and-week-ai-trade-concern-spurs-safe-haven-bid/articleshow/136045682.cms"
-        }
-      ],
-      "score": 4,
-      "summary": "US Treasury yields experienced a significant decline due to heightened investor concerns surrounding the AI trade. As a result, investors shifted their focus towards safe-haven assets such as Treasury securities. The yield on the 10-year Treasury note fell below 5% for the first time in several months. Concerns about rising company debt and spendin",
-      "category": "Market flows",
-      "reason": "Flows, currency and yields provide context for Indian equity risk appetite.",
-      "matched": [
-        "Market flows"
-      ],
-      "tier": "Watch",
-      "related": [],
-      "cluster_count": 1,
-      "impact_assets": [
-        "Rates",
         "Equities"
       ],
       "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
@@ -1172,24 +1113,24 @@
       ]
     },
     {
-      "id": "38caa8f76e4b8475",
-      "title": "India's cumin soda revolution costs ₹10: Lahori Zeera challenges Coca-Cola and Pepsi, targets ₹1,112 crore in revenue",
-      "url": "https://www.livemint.com/companies/indias-cumin-soda-revolution-costs-10-lahori-zeera-challenges-coca-cola-and-pepsi-targets-1-112-crore-in-revenue-11795240176635.html",
-      "published": 1795240633.0,
+      "id": "477c2a08b2578d4b",
+      "title": "Stock split reset: SanDisk stock crashes 87.5% overnight? Here's what investors need to know about its 8-for-1 split",
+      "url": "https://www.livemint.com/market/stock-market-news/stock-split-reset-sandisk-stock-crashes-87-5-overnight-heres-what-investors-need-to-know-about-its-8-for-1-split-11795267376660.html",
+      "published": 1795267632.0,
       "region": "India",
       "official": false,
       "sources": [
         {
-          "name": "Mint Companies",
-          "url": "https://www.livemint.com/companies/indias-cumin-soda-revolution-costs-10-lahori-zeera-challenges-coca-cola-and-pepsi-targets-1-112-crore-in-revenue-11795240176635.html"
+          "name": "Mint Markets",
+          "url": "https://www.livemint.com/market/stock-market-news/stock-split-reset-sandisk-stock-crashes-87-5-overnight-heres-what-investors-need-to-know-about-its-8-for-1-split-11795267376660.html"
         }
       ],
       "score": 3,
-      "summary": "Three cousins turned a kitchen experiment into Lahori Zeera, a cumin-flavoured soda now challenging global beverage brands in India’s affordable drinks market.&nbsp;",
-      "category": "Earnings",
-      "reason": "Compare results and guidance with expectations for the company and its sector.",
+      "summary": "SanDisk completed an eight-for-one stock split, giving eligible shareholders seven additional shares for each share held. The adjustment lowered the per-share price from $755.16 to about $94.40 without changing investors’ ownership or the company’s market value",
+      "category": "Company move",
+      "reason": "A named company or share-price move may affect that stock and its peers.",
       "matched": [
-        "Earnings"
+        "Company move"
       ],
       "tier": "Watch",
       "related": [],
@@ -1197,7 +1138,7 @@
       "impact_assets": [
         "Equities"
       ],
-      "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
+      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
       "impact_chain": null,
       "companies": []
     },
@@ -1271,41 +1212,41 @@
       "companies": []
     },
     {
-      "id": "0d466dce32ee4f9d",
-      "title": "Noel Tata writes to Tata Sons again, seeks recording of Chandrasekaran reappointment meeting",
-      "url": "https://www.cnbctv18.com/business/companies/noel-tata-writes-to-tata-sons-again-seeks-recording-of-chandrasekaran-reappointment-meeting-20038968.htm",
-      "published": 1795241401.0,
+      "id": "a9497a92d8c15a41",
+      "title": "Max Healthcare, Fortis, Apollo, Aster: Hospital stocks steal show on D-Street with up to 14% rally - Buy now or wait?",
+      "url": "https://www.livemint.com/market/stock-market-news/max-healthcare-fortis-apollo-aster-hospital-stocks-steal-show-on-d-street-with-up-to-14-rally-buy-now-or-wait-11795262811423.html",
+      "published": 1795273007.0,
       "region": "India",
       "official": false,
       "sources": [
         {
-          "name": "CNBC-TV18",
-          "url": "https://www.cnbctv18.com/business/companies/noel-tata-writes-to-tata-sons-again-seeks-recording-of-chandrasekaran-reappointment-meeting-20038968.htm"
+          "name": "Mint Markets",
+          "url": "https://www.livemint.com/market/stock-market-news/max-healthcare-fortis-apollo-aster-hospital-stocks-steal-show-on-d-street-with-up-to-14-rally-buy-now-or-wait-11795262811423.html"
         },
         {
-          "name": "ET Recos",
-          "url": "https://economictimes.indiatimes.com/news/company/corporate-trends/noel-tata-demands-recordings-of-tata-sons-board-meeting-questions-venu-srinivasans-involvement-in-chandras-reappointment/articleshow/136036581.cms"
+          "name": "ET Markets",
+          "url": "https://economictimes.indiatimes.com/markets/stocks/stock-liveblog/apollo-hospital-share-price-live-updates-20-nov-2026/liveblog/136013439.cms"
         }
       ],
       "score": 2,
-      "summary": "The disagreement centres on whether the September 17 vote validly secured the required majority for Chandrasekaran's reappointment. Tata Sons maintains that the casting vote settled the matter.",
+      "summary": "Hospital stocks rallied up to 14% over five trading sessions amid optimism about corporate earnings and growth prospects. Apollo Hospitals, Fortis, Max Healthcare and Aster DM Quality Care all advanced on Friday, with brokerages maintaining Buy ratings on Apollo, Fortis and Max.",
       "category": "Other news",
-      "reason": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
+      "reason": "Key market catalyst driving market liquidity and session volatility.",
       "matched": [],
       "tier": "More",
       "related": [
         {
-          "title": "Noel seeks Tata Sons board meet recordings, objects to Venu voting on Chandra' s reappointment",
-          "url": "https://economictimes.indiatimes.com/news/company/corporate-trends/noel-tata-demands-recordings-of-tata-sons-board-meeting-questions-venu-srinivasans-involvement-in-chandras-reappointment/articleshow/136036581.cms",
-          "source": "ET Recos",
-          "published": 1795197418.0
+          "title": "Apollo Hospital Share Price Highlights: Apollo Hospital Stock Price History",
+          "url": "https://economictimes.indiatimes.com/markets/stocks/stock-liveblog/apollo-hospital-share-price-live-updates-20-nov-2026/liveblog/136013439.cms",
+          "source": "ET Markets",
+          "published": 1795149214.0
         }
       ],
       "cluster_count": 2,
       "impact_assets": [
         "Equities"
       ],
-      "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
+      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
       "impact_chain": null,
       "companies": []
     },
@@ -1605,6 +1546,78 @@
         "Equities"
       ],
       "why_it_matters": "Directly shifts commercial bank cost of funds, repo borrowing rates, and rate-sensitive equity multiples (banks, real estate, auto).",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
+      "id": "86b527ebc67bad51",
+      "title": "Ashoka Buildcon loses Saudi Arabia contract worth ₹846 crore: What happened and what it means",
+      "url": "https://www.livemint.com/companies/news/ashoka-buildcon-loses-saudi-arabia-contract-worth-rs-846-crore-what-happened-and-what-it-means-11795249520850.html",
+      "published": 1795250410.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "Mint Companies",
+          "url": "https://www.livemint.com/companies/news/ashoka-buildcon-loses-saudi-arabia-contract-worth-rs-846-crore-what-happened-and-what-it-means-11795249520850.html"
+        },
+        {
+          "name": "Business Standard",
+          "url": "https://www.business-standard.com/markets/news/ashoka-buildcon-shares-tank-6-as-846-cr-saudi-arabia-project-cancelled-126112000220_1.html"
+        }
+      ],
+      "score": 4,
+      "summary": "Ashoka Buildcon has lost a ₹846.38 crore Saudi Arabia construction contract after Diriyah Company cancelled the project, citing internal reasons. The cancellation comes amid a 73% decline in the company's Q2 standalone net profit.",
+      "category": "Company move",
+      "reason": "A large contract or order may affect the company and its sector; check execution and guidance.",
+      "matched": [
+        "Company move"
+      ],
+      "tier": "Watch",
+      "related": [
+        {
+          "title": "Ashoka Buildcon shares tank 6% as ₹846-cr Saudi Arabia project cancelled",
+          "url": "https://www.business-standard.com/markets/news/ashoka-buildcon-shares-tank-6-as-846-cr-saudi-arabia-project-cancelled-126112000220_1.html",
+          "source": "Business Standard",
+          "published": 1795148315.0
+        }
+      ],
+      "cluster_count": 2,
+      "impact_assets": [
+        "Equities"
+      ],
+      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
+      "id": "c3d0af736a4c297b",
+      "title": "US Treasury yields drop for day and week; AI trade concern spurs safe-haven bid",
+      "url": "https://economictimes.indiatimes.com/markets/bonds/us-treasury-yields-drop-for-day-and-week-ai-trade-concern-spurs-safe-haven-bid/articleshow/136045682.cms",
+      "published": 1795238629.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "ET Markets",
+          "url": "https://economictimes.indiatimes.com/markets/bonds/us-treasury-yields-drop-for-day-and-week-ai-trade-concern-spurs-safe-haven-bid/articleshow/136045682.cms"
+        }
+      ],
+      "score": 4,
+      "summary": "US Treasury yields experienced a significant decline due to heightened investor concerns surrounding the AI trade. As a result, investors shifted their focus towards safe-haven assets such as Treasury securities. The yield on the 10-year Treasury note fell below 5% for the first time in several months. Concerns about rising company debt and spendin",
+      "category": "Market flows",
+      "reason": "Flows, currency and yields provide context for Indian equity risk appetite.",
+      "matched": [
+        "Market flows"
+      ],
+      "tier": "Watch",
+      "related": [],
+      "cluster_count": 1,
+      "impact_assets": [
+        "Rates",
+        "Equities"
+      ],
+      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
       "impact_chain": null,
       "companies": []
     },
@@ -1935,6 +1948,36 @@
       "companies": []
     },
     {
+      "id": "38caa8f76e4b8475",
+      "title": "India's cumin soda revolution costs ₹10: Lahori Zeera challenges Coca-Cola and Pepsi, targets ₹1,112 crore in revenue",
+      "url": "https://www.livemint.com/companies/indias-cumin-soda-revolution-costs-10-lahori-zeera-challenges-coca-cola-and-pepsi-targets-1-112-crore-in-revenue-11795240176635.html",
+      "published": 1795240633.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "Mint Companies",
+          "url": "https://www.livemint.com/companies/indias-cumin-soda-revolution-costs-10-lahori-zeera-challenges-coca-cola-and-pepsi-targets-1-112-crore-in-revenue-11795240176635.html"
+        }
+      ],
+      "score": 3,
+      "summary": "Three cousins turned a kitchen experiment into Lahori Zeera, a cumin-flavoured soda now challenging global beverage brands in India’s affordable drinks market.&nbsp;",
+      "category": "Earnings",
+      "reason": "Compare results and guidance with expectations for the company and its sector.",
+      "matched": [
+        "Earnings"
+      ],
+      "tier": "Watch",
+      "related": [],
+      "cluster_count": 1,
+      "impact_assets": [
+        "Equities"
+      ],
+      "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
       "id": "3a5706c7b804dd27",
       "title": "Wall Street Week Ahead: 'Black Friday' brings consumer spending into focus for AI-rocked market",
       "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/wall-street-week-ahead-black-friday-brings-consumer-spending-into-focus-for-ai-rocked-market/articleshow/136044202.cms",
@@ -2234,6 +2277,45 @@
       "companies": []
     },
     {
+      "id": "0d466dce32ee4f9d",
+      "title": "Noel Tata writes to Tata Sons again, seeks recording of Chandrasekaran reappointment meeting",
+      "url": "https://www.cnbctv18.com/business/companies/noel-tata-writes-to-tata-sons-again-seeks-recording-of-chandrasekaran-reappointment-meeting-20038968.htm",
+      "published": 1795241401.0,
+      "region": "India",
+      "official": false,
+      "sources": [
+        {
+          "name": "CNBC-TV18",
+          "url": "https://www.cnbctv18.com/business/companies/noel-tata-writes-to-tata-sons-again-seeks-recording-of-chandrasekaran-reappointment-meeting-20038968.htm"
+        },
+        {
+          "name": "ET Recos",
+          "url": "https://economictimes.indiatimes.com/news/company/corporate-trends/noel-tata-demands-recordings-of-tata-sons-board-meeting-questions-venu-srinivasans-involvement-in-chandras-reappointment/articleshow/136036581.cms"
+        }
+      ],
+      "score": 2,
+      "summary": "The disagreement centres on whether the September 17 vote validly secured the required majority for Chandrasekaran's reappointment. Tata Sons maintains that the casting vote settled the matter.",
+      "category": "Other news",
+      "reason": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
+      "matched": [],
+      "tier": "More",
+      "related": [
+        {
+          "title": "Noel seeks Tata Sons board meet recordings, objects to Venu voting on Chandra' s reappointment",
+          "url": "https://economictimes.indiatimes.com/news/company/corporate-trends/noel-tata-demands-recordings-of-tata-sons-board-meeting-questions-venu-srinivasans-involvement-in-chandras-reappointment/articleshow/136036581.cms",
+          "source": "ET Recos",
+          "published": 1795197418.0
+        }
+      ],
+      "cluster_count": 2,
+      "impact_assets": [
+        "Equities"
+      ],
+      "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
+      "impact_chain": null,
+      "companies": []
+    },
+    {
       "id": "c0c74b7910af4d9e",
       "title": "Bitcoin's regulation bull case is played out. What could drive crypto gains moving forward",
       "url": "https://www.cnbc.com/2026/11/20/bitcoin-price-catalysts-tokenization-regulation.html",
@@ -2339,36 +2421,6 @@
         "Equities"
       ],
       "why_it_matters": "Alters market structure, compliance mandates, capital allocation rules, and retail derivative trading liquidity.",
-      "impact_chain": null,
-      "companies": []
-    },
-    {
-      "id": "c7de21369841b0e3",
-      "title": "SoftBank shares crash 14.5%, biggest 1-day fall in 2 years: Why Anthropic's strong IPO debut failed to revive AI trade",
-      "url": "https://www.livemint.com/market/stock-market-news/softbank-shares-crash-14-5-biggest-1-day-fall-in-2-years-why-anthropics-strong-ipo-debut-failed-to-revive-ai-trade-11795173623939.html",
-      "published": 1795179253.0,
-      "region": "India",
-      "official": false,
-      "sources": [
-        {
-          "name": "Mint Markets",
-          "url": "https://www.livemint.com/market/stock-market-news/softbank-shares-crash-14-5-biggest-1-day-fall-in-2-years-why-anthropics-strong-ipo-debut-failed-to-revive-ai-trade-11795173623939.html"
-        }
-      ],
-      "score": 4,
-      "summary": "SoftBank shares plunged 14.5% as a technology selloff swept Japan, despite a strong Nasdaq debut for AI company Anthropic. Investor concerns over interest rates and AI valuations weighed on the sector, while SoftBank’s close ties to OpenAI and Arm heightened its exposure.",
-      "category": "Company move",
-      "reason": "A named company or share-price move may affect that stock and its peers.",
-      "matched": [
-        "Company move"
-      ],
-      "tier": "Watch",
-      "related": [],
-      "cluster_count": 1,
-      "impact_assets": [
-        "Equities"
-      ],
-      "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
       "impact_chain": null,
       "companies": []
     },
@@ -3725,7 +3777,7 @@
       "url": "https://www.livemint.com/rss/markets",
       "region": "India",
       "official": false,
-      "checked": "2026-11-21T21:14:20.260703+00:00",
+      "checked": "2026-11-22T01:22:37.033820+00:00",
       "status": "ok",
       "count": 35
     },
@@ -3734,7 +3786,7 @@
       "url": "https://www.livemint.com/rss/companies",
       "region": "India",
       "official": false,
-      "checked": "2026-11-21T21:14:20.260896+00:00",
+      "checked": "2026-11-22T01:22:37.034094+00:00",
       "status": "ok",
       "count": 35
     },
@@ -3743,7 +3795,7 @@
       "url": "https://www.sebi.gov.in/sebirss.xml",
       "region": "India",
       "official": true,
-      "checked": "2026-11-21T21:14:20.261030+00:00",
+      "checked": "2026-11-22T01:22:37.034442+00:00",
       "status": "unavailable",
       "count": 0,
       "error": "No RSS or Atom entries returned"
@@ -3753,7 +3805,7 @@
       "url": "https://www.federalreserve.gov/feeds/press_monetary.xml",
       "region": "Global",
       "official": true,
-      "checked": "2026-11-21T21:14:20.261262+00:00",
+      "checked": "2026-11-22T01:22:37.035451+00:00",
       "status": "ok",
       "count": 1
     },
@@ -3762,7 +3814,7 @@
       "url": "https://www.bls.gov/feed/bls_latest.rss",
       "region": "Global",
       "official": true,
-      "checked": "2026-11-21T21:14:20.261498+00:00",
+      "checked": "2026-11-22T01:22:37.035704+00:00",
       "status": "ok",
       "count": 1
     },
@@ -3771,7 +3823,7 @@
       "url": "https://www.investing.com/rss/news.rss",
       "region": "Global",
       "official": false,
-      "checked": "2026-11-21T21:14:20.352016+00:00",
+      "checked": "2026-11-22T01:22:37.227232+00:00",
       "status": "ok",
       "count": 10
     },
@@ -3780,7 +3832,7 @@
       "url": "https://www.cnbc.com/id/100727362/device/rss/rss.html",
       "region": "Global",
       "official": false,
-      "checked": "2026-11-21T21:14:20.388877+00:00",
+      "checked": "2026-11-22T01:22:37.324638+00:00",
       "status": "ok",
       "count": 30
     },
@@ -3789,7 +3841,7 @@
       "url": "https://pulse.zerodha.com/feed.php",
       "region": "India",
       "official": false,
-      "checked": "2026-11-21T21:14:20.424481+00:00",
+      "checked": "2026-11-22T01:22:37.376026+00:00",
       "status": "ok",
       "count": 25
     },
@@ -3798,7 +3850,7 @@
       "url": "https://economictimes.indiatimes.com/markets/rssfeeds/1977021501.cms",
       "region": "India",
       "official": false,
-      "checked": "2026-11-21T21:14:20.435270+00:00",
+      "checked": "2026-11-22T01:22:37.532599+00:00",
       "status": "ok",
       "count": 50
     },
@@ -3807,7 +3859,7 @@
       "url": "https://economictimes.indiatimes.com/news/economy/rssfeeds/1373380680.cms",
       "region": "India",
       "official": false,
-      "checked": "2026-11-21T21:14:20.497895+00:00",
+      "checked": "2026-11-22T01:22:37.573157+00:00",
       "status": "ok",
       "count": 43
     },
@@ -3816,7 +3868,7 @@
       "url": "https://www.business-standard.com/rss/markets-106.rss",
       "region": "India",
       "official": false,
-      "checked": "2026-11-21T21:14:20.531725+00:00",
+      "checked": "2026-11-22T01:22:37.766228+00:00",
       "status": "ok",
       "count": 35
     },
@@ -3825,7 +3877,7 @@
       "url": "https://www.cnbctv18.com/commonfeeds/v1/cne/rss/market.xml",
       "region": "India",
       "official": false,
-      "checked": "2026-11-21T21:14:20.537090+00:00",
+      "checked": "2026-11-22T01:22:37.774734+00:00",
       "status": "ok",
       "count": 80
     },
@@ -3834,7 +3886,7 @@
       "url": "https://feeds.feedburner.com/ndtvprofit-latest",
       "region": "India",
       "official": false,
-      "checked": "2026-11-21T21:14:20.548665+00:00",
+      "checked": "2026-11-22T01:22:37.957033+00:00",
       "status": "ok",
       "count": 20
     },
@@ -3843,21 +3895,21 @@
       "url": "https://economictimes.indiatimes.com/markets/stocks/recos/rssfeeds/2143429.cms",
       "region": "India",
       "official": false,
-      "checked": "2026-11-21T21:14:20.576291+00:00",
+      "checked": "2026-11-22T01:22:37.997457+00:00",
       "status": "ok",
       "count": 18
     }
   ],
   "refreshing": false,
   "calendar": {
-    "checked": 1795295668.5632172,
+    "checked": 1795310566.996729,
     "status": "ok"
   },
   "premarket": {
-    "updated": "2026-11-21T21:14:31.241011+00:00",
+    "updated": "2026-11-22T01:22:50.756864+00:00",
     "schema_version": 2,
     "is_live": false,
-    "quote_updated": "2026-11-21T21:14:31.240647+00:00",
+    "quote_updated": "2026-11-22T01:22:50.755799+00:00",
     "quote_date": "2026-11-20",
     "quote_source": "yfinance",
     "live_bias_label": "LATEST AVAILABLE QUOTE",
@@ -4069,10 +4121,10 @@
           "label": "Natural Gas",
           "price": "3.41",
           "price_raw": 3.411,
-          "prev_close": 3.232,
+          "prev_close": 3.231,
           "prev_close_fmt": "3.23",
-          "change": 0.179,
-          "change_pct": 5.54,
+          "change": 0.18,
+          "change_pct": 5.57,
           "direction": "up",
           "unit": "USD/MMBtu",
           "range_52w": {
@@ -4127,9 +4179,9 @@
           }
         },
         "catalyst": {
-          "title": "Gold, silver prices fall amid stronger dollar, hawkish Fed signals",
-          "url": "https://www.business-standard.com/markets/commodities/gold-silver-prices-fall-amid-stronger-dollar-hawkish-fed-signals-126112000502_1.html",
-          "why_it_matters": "Guides global liquidity dynamics, US Dollar Index (DXY) trajectory, and foreign institutional (FII) capital allocations.",
+          "title": "Crude Oil Has Fallen, But Why Is $91 Still Bad News For India? UBS' Gautam Chhaocharia On The Risks | Profit Exclusive",
+          "url": "https://www.ndtvprofit.com/markets/exclusive-brent-crude-oil-wti-has-fallen-but-why-is-91-still-bad-news-for-india-ubs-gautam-chhaocharia-iran-war-middle-east-supply-disruption-commodit-12350989#publisher=newsstand",
+          "why_it_matters": "Crude affects India’s import bill and energy-sensitive sectors; the headline does not establish a clear price direction.",
           "source": ""
         }
       },
@@ -4147,17 +4199,17 @@
           "source": ""
         },
         {
-          "title": "India's cumin soda revolution costs ₹10: Lahori Zeera challenges Coca-Cola and Pepsi, targets ₹1,112 crore in revenue",
-          "url": "https://www.livemint.com/companies/indias-cumin-soda-revolution-costs-10-lahori-zeera-challenges-coca-cola-and-pepsi-targets-1-112-crore-in-revenue-11795240176635.html",
-          "companies": [],
-          "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
-          "source": ""
-        },
-        {
           "title": "RBI may hike interest rates by 75 basis points by Q2 of next year: Goldman Sachs",
           "url": "https://economictimes.indiatimes.com/news/economy/policy/rbi-may-hike-interest-rates-by-75-basis-points-by-q2-of-next-year-goldman-sachs/articleshow/135959983.cms",
           "companies": [],
           "why_it_matters": "Directly shifts commercial bank cost of funds, repo borrowing rates, and rate-sensitive equity multiples (banks, real estate, auto).",
+          "source": ""
+        },
+        {
+          "title": "India's cumin soda revolution costs ₹10: Lahori Zeera challenges Coca-Cola and Pepsi, targets ₹1,112 crore in revenue",
+          "url": "https://www.livemint.com/companies/indias-cumin-soda-revolution-costs-10-lahori-zeera-challenges-coca-cola-and-pepsi-targets-1-112-crore-in-revenue-11795240176635.html",
+          "companies": [],
+          "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
           "source": ""
         }
       ],
