@@ -1,6 +1,32 @@
 {
-  "updated": "2026-11-22T16:44:01.692067+00:00",
+  "updated": "2026-11-22T22:11:39.001166+00:00",
   "calls": [
+    {
+      "id": "d10ee13fedd560cd",
+      "title": "Should you buy the massive dip in memory stocks? Citi weighs in",
+      "summary": "",
+      "url": "https://www.investing.com/news/analyst-ratings/should-you-buy-the-massive-dip-in-memory-stocks-citi-weighs-in-5044137",
+      "published": 1795383536.0,
+      "published_str": "23 Nov, 03:08 AM",
+      "source": "Investing.com",
+      "sources": [
+        {
+          "name": "Investing.com",
+          "url": "https://www.investing.com/news/analyst-ratings/should-you-buy-the-massive-dip-in-memory-stocks-citi-weighs-in-5044137"
+        }
+      ],
+      "brokerage": "Citi",
+      "brokerages": [
+        "Citi"
+      ],
+      "action": "BUY",
+      "action_label": "Buy ▲",
+      "sentiment": "bullish",
+      "target": null,
+      "stock": "Multi / Sector",
+      "symbol": null,
+      "market": "India"
+    },
     {
       "id": "5a8cb76c6707cdaa",
       "title": "'Extremely Cheap' Yet Too Risky: Why Bernstein Is Hesitating To Buy The Dip In Nvidia Stock",
@@ -4007,11 +4033,11 @@
     }
   ],
   "stats": {
-    "total": 151,
-    "bullish": 113,
+    "total": 152,
+    "bullish": 114,
     "bearish": 21,
     "neutral": 17,
-    "india": 139,
+    "india": 140,
     "us": 12,
     "top_brokerages": [
       {
@@ -4027,12 +4053,12 @@
         "count": 12
       },
       {
-        "name": "ICICI Securities",
+        "name": "Citi",
         "count": 10
       },
       {
-        "name": "Citi",
-        "count": 9
+        "name": "ICICI Securities",
+        "count": 10
       },
       {
         "name": "Goldman Sachs",

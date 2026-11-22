@@ -1,8 +1,8 @@
 {
-  "updated": "2026-11-22T16:44:00.304627+00:00",
+  "updated": "2026-11-22T22:11:37.455065+00:00",
   "schema_version": 2,
   "is_live": false,
-  "quote_updated": "2026-11-22T16:44:00.304212+00:00",
+  "quote_updated": "2026-11-22T22:11:37.454496+00:00",
   "quote_date": "2026-11-20",
   "quote_source": "yfinance",
   "live_bias_label": "LATEST AVAILABLE QUOTE",
@@ -214,10 +214,10 @@
         "label": "Natural Gas",
         "price": "3.75",
         "price_raw": 3.748,
-        "prev_close": 3.231,
+        "prev_close": 3.232,
         "prev_close_fmt": "3.23",
-        "change": 0.517,
-        "change_pct": 16.0,
+        "change": 0.516,
+        "change_pct": 15.97,
         "direction": "up",
         "unit": "USD/MMBtu",
         "range_52w": {
@@ -280,21 +280,14 @@
     },
     "earnings": [
       {
-        "title": "Organon earnings on deck as Sun Pharma deal looms",
-        "url": "https://www.investing.com/news/earnings/organon-earnings-on-deck-as-sun-pharma-deal-looms-93CH-5044025",
+        "title": "Tata Steel announces ₹28,000 cr deal with APL Apollo Tubes for two units",
+        "url": "https://www.business-standard.com/companies/news/tata-steel-board-clears-28k-cr-sale-of-two-businesses-to-apl-apollo-tubes-126112200721_1.html",
         "companies": [
           {
-            "name": "Sun Pharma",
-            "symbol": "sun pharma"
+            "name": "Tata Steel",
+            "symbol": "tata steel"
           }
         ],
-        "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
-        "source": ""
-      },
-      {
-        "title": "ChipMOS earnings up next: Can packaging specialist sustain growth?",
-        "url": "https://www.investing.com/news/earnings/chipmos-earnings-up-next-can-packaging-specialist-sustain-growth-93CH-5044024",
-        "companies": [],
         "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
         "source": ""
       },
@@ -308,6 +301,13 @@
           }
         ],
         "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
+        "source": ""
+      },
+      {
+        "title": "RBI may hike interest rates by 75 basis points by Q2 of next year: Goldman Sachs",
+        "url": "https://economictimes.indiatimes.com/news/economy/policy/rbi-may-hike-interest-rates-by-75-basis-points-by-q2-of-next-year-goldman-sachs/articleshow/135959983.cms",
+        "companies": [],
+        "why_it_matters": "Directly shifts commercial bank cost of funds, repo borrowing rates, and rate-sensitive equity multiples (banks, real estate, auto).",
         "source": ""
       }
     ],
@@ -330,9 +330,9 @@
         }
       },
       "catalyst": {
-        "title": "Asia’s Stock Rescue Efforts Gather Pace After Wall Street Plunge",
-        "url": "https://www.livemint.com/market/asias-stock-rescue-efforts-gather-pace-after-wall-street-plunge-11795351882145.html",
-        "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
+        "title": "Bullion May Extend Losses This Week As US Economic Data, Fed Cues Loom: Analysts",
+        "url": "https://www.ndtvprofit.com/markets/bullion-may-extend-losses-this-week-as-us-economic-data-fed-cues-loom-analysts-12363000#publisher=newsstand",
+        "why_it_matters": "Guides global liquidity dynamics, US Dollar Index (DXY) trajectory, and foreign institutional (FII) capital allocations.",
         "source": ""
       }
     }
