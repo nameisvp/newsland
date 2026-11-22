@@ -1,8 +1,8 @@
 {
-  "updated": "2026-11-22T08:42:55.822761+00:00",
+  "updated": "2026-11-22T16:44:00.304627+00:00",
   "schema_version": 2,
   "is_live": false,
-  "quote_updated": "2026-11-22T08:42:55.822322+00:00",
+  "quote_updated": "2026-11-22T16:44:00.304212+00:00",
   "quote_date": "2026-11-20",
   "quote_source": "yfinance",
   "live_bias_label": "LATEST AVAILABLE QUOTE",
@@ -66,12 +66,12 @@
     "key": "USDINR",
     "quote_date": "2026-11-22",
     "label": "INR / USD",
-    "price": "92.67",
-    "price_raw": 92.67,
+    "price": "92.66",
+    "price_raw": 92.66,
     "prev_close": 93.28,
     "prev_close_fmt": "93.28",
-    "change": -0.61,
-    "change_pct": -0.65,
+    "change": -0.62,
+    "change_pct": -0.66,
     "direction": "down",
     "unit": "",
     "range_52w": {
@@ -79,8 +79,8 @@
       "high": 97.05,
       "low_fmt": "85.86",
       "high_fmt": "97.05",
-      "pos_pct": 60.8,
-      "pct_from_high": -4.52
+      "pos_pct": 60.7,
+      "pct_from_high": -4.53
     }
   },
   "pivots": {
@@ -234,10 +234,10 @@
         "quote_date": "2026-11-20",
         "label": "Gold",
         "price": "3,515.40",
-        "price_raw": 3515.4,
+        "price_raw": 3515.3999,
         "prev_close": 3533.0,
         "prev_close_fmt": "3,533.00",
-        "change": -17.6,
+        "change": -17.6001,
         "change_pct": -0.5,
         "direction": "down",
         "unit": "USD/oz",
@@ -263,22 +263,41 @@
         "direction": "down",
         "unit": "USD/oz",
         "range_52w": {
-          "low": 40.93,
+          "low": 40.62,
           "high": 121.3,
-          "low_fmt": "40.93",
+          "low_fmt": "40.62",
           "high_fmt": "121.30",
-          "pos_pct": 0.2,
+          "pos_pct": 0.6,
           "pct_from_high": -66.14
         }
       },
       "catalyst": {
-        "title": "Oil, gas import bill up 60% in Oct as Brent surges, LPG use declines",
-        "url": "https://www.business-standard.com/economy/news/oil-gas-import-bill-up-60-in-oct-as-brent-surges-lpg-use-declines-126112200197_1.html",
-        "why_it_matters": "Rising crude can increase India’s import bill and input costs, while supporting upstream oil realizations.",
+        "title": "Stocks to Watch for November 23: Tata Steel, APL Apollo Tubes, Maruti Suzuki, Adani Energy and more",
+        "url": "https://www.cnbctv18.com/photos/market/stocks-to-watch-for-november-23-maruti-suzuki-welspun-living-ashoka-buildcon-adani-energy-share-price-20039268.htm",
+        "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
         "source": ""
       }
     },
     "earnings": [
+      {
+        "title": "Organon earnings on deck as Sun Pharma deal looms",
+        "url": "https://www.investing.com/news/earnings/organon-earnings-on-deck-as-sun-pharma-deal-looms-93CH-5044025",
+        "companies": [
+          {
+            "name": "Sun Pharma",
+            "symbol": "sun pharma"
+          }
+        ],
+        "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
+        "source": ""
+      },
+      {
+        "title": "ChipMOS earnings up next: Can packaging specialist sustain growth?",
+        "url": "https://www.investing.com/news/earnings/chipmos-earnings-up-next-can-packaging-specialist-sustain-growth-93CH-5044024",
+        "companies": [],
+        "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
+        "source": ""
+      },
       {
         "title": "Reliance Brands FY26 revenue up 3.8% to Rs 3,390.9 crore; loss narrows to Rs 137 crore",
         "url": "https://economictimes.indiatimes.com/markets/stocks/earnings/reliance-brands-fy26-revenue-up-3-8-to-rs-3390-9-crore-loss-narrows-to-rs-137-crore/articleshow/136068185.cms",
@@ -288,20 +307,6 @@
             "symbol": "reliance"
           }
         ],
-        "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
-        "source": ""
-      },
-      {
-        "title": "India Inc earnings outlook remains upbeat for second half of FY27 on broad-based demand: Report",
-        "url": "https://economictimes.indiatimes.com/news/company/corporate-trends/india-inc-earnings-outlook-remains-upbeat-for-second-half-of-fy27-on-broad-based-demand-report/articleshow/136066604.cms",
-        "companies": [],
-        "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
-        "source": ""
-      },
-      {
-        "title": "Paint companies eye stronger Q3 demand on festival shift, weddings",
-        "url": "https://www.business-standard.com/markets/stock-market-news/markets-stock-market-paint-sector-demand-q3fy27-asian-paints-berger-kansai-nerolac-outlook-126112200081_1.html",
-        "companies": [],
         "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
         "source": ""
       }
@@ -325,9 +330,9 @@
         }
       },
       "catalyst": {
-        "title": "SNB closely watching for second-round inflation effects, vice chairman tells paper",
-        "url": "https://www.investing.com/news/economy-news/snb-closely-watching-for-secondround-inflation-effects-vicechairman-tells-paper-5043809",
-        "why_it_matters": "Key determinant of central bank interest rate paths; elevated prints restrict policy easing and compress real yields.",
+        "title": "Asia’s Stock Rescue Efforts Gather Pace After Wall Street Plunge",
+        "url": "https://www.livemint.com/market/asias-stock-rescue-efforts-gather-pace-after-wall-street-plunge-11795351882145.html",
+        "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
         "source": ""
       }
     }
