@@ -1,8 +1,8 @@
 {
-  "updated": "2026-11-22T22:11:37.455065+00:00",
+  "updated": "2026-11-23T02:44:51.518078+00:00",
   "schema_version": 2,
   "is_live": false,
-  "quote_updated": "2026-11-22T22:11:37.454496+00:00",
+  "quote_updated": "2026-11-23T02:44:51.517521+00:00",
   "quote_date": "2026-11-20",
   "quote_source": "yfinance",
   "live_bias_label": "LATEST AVAILABLE QUOTE",
@@ -43,14 +43,14 @@
   },
   "brent": {
     "key": "BRENT",
-    "quote_date": "2026-11-20",
+    "quote_date": "2026-11-22",
     "label": "Brent Crude",
-    "price": "89.95",
-    "price_raw": 89.95,
-    "prev_close": 90.05,
-    "prev_close_fmt": "90.05",
-    "change": -0.1,
-    "change_pct": -0.11,
+    "price": "89.58",
+    "price_raw": 89.58,
+    "prev_close": 89.95,
+    "prev_close_fmt": "89.95",
+    "change": -0.37,
+    "change_pct": -0.41,
     "direction": "down",
     "unit": "USD/bbl",
     "range_52w": {
@@ -58,21 +58,21 @@
       "high": 126.1,
       "low_fmt": "58.72",
       "high_fmt": "126.10",
-      "pos_pct": 46.3,
-      "pct_from_high": -28.67
+      "pos_pct": 45.8,
+      "pct_from_high": -28.96
     }
   },
   "usdinr": {
     "key": "USDINR",
-    "quote_date": "2026-11-22",
+    "quote_date": "2026-11-23",
     "label": "INR / USD",
     "price": "92.66",
     "price_raw": 92.66,
-    "prev_close": 93.28,
-    "prev_close_fmt": "93.28",
-    "change": -0.62,
-    "change_pct": -0.66,
-    "direction": "down",
+    "prev_close": 92.66,
+    "prev_close_fmt": "92.66",
+    "change": 0.0,
+    "change_pct": 0.0,
+    "direction": "up",
     "unit": "",
     "range_52w": {
       "low": 85.86,
@@ -154,7 +154,7 @@
       "num": "02",
       "title": "Crude and input costs",
       "bias": "Context",
-      "desc": "Latest Brent quote: 89.95 USD/bbl (-0.11%). Higher crude can raise import and input costs; lower crude can ease them. This quote alone does not establish the cause of the move."
+      "desc": "Latest Brent quote: 89.58 USD/bbl (-0.41%). Higher crude can raise import and input costs; lower crude can ease them. This quote alone does not establish the cause of the move."
     },
     {
       "num": "03",
@@ -168,14 +168,14 @@
     "commodities": {
       "brent": {
         "key": "BRENT",
-        "quote_date": "2026-11-20",
+        "quote_date": "2026-11-22",
         "label": "Brent Crude",
-        "price": "89.95",
-        "price_raw": 89.95,
-        "prev_close": 90.05,
-        "prev_close_fmt": "90.05",
-        "change": -0.1,
-        "change_pct": -0.11,
+        "price": "89.58",
+        "price_raw": 89.58,
+        "prev_close": 89.95,
+        "prev_close_fmt": "89.95",
+        "change": -0.37,
+        "change_pct": -0.41,
         "direction": "down",
         "unit": "USD/bbl",
         "range_52w": {
@@ -183,131 +183,121 @@
           "high": 126.1,
           "low_fmt": "58.72",
           "high_fmt": "126.10",
-          "pos_pct": 46.3,
-          "pct_from_high": -28.67
+          "pos_pct": 45.8,
+          "pct_from_high": -28.96
         }
       },
       "wti": {
         "key": "WTI",
-        "quote_date": "2026-11-20",
+        "quote_date": "2026-11-22",
         "label": "WTI Crude",
-        "price": "83.41",
-        "price_raw": 83.41,
-        "prev_close": 82.99,
-        "prev_close_fmt": "82.99",
-        "change": 0.42,
-        "change_pct": 0.51,
-        "direction": "up",
+        "price": "83.09",
+        "price_raw": 83.09,
+        "prev_close": 83.41,
+        "prev_close_fmt": "83.41",
+        "change": -0.32,
+        "change_pct": -0.38,
+        "direction": "down",
         "unit": "USD/bbl",
         "range_52w": {
           "low": 54.98,
           "high": 119.48,
           "low_fmt": "54.98",
           "high_fmt": "119.48",
-          "pos_pct": 44.1,
-          "pct_from_high": -30.19
+          "pos_pct": 43.6,
+          "pct_from_high": -30.46
         }
       },
       "natgas": {
         "key": "NATGAS",
-        "quote_date": "2026-11-20",
+        "quote_date": "2026-11-22",
         "label": "Natural Gas",
-        "price": "3.75",
-        "price_raw": 3.748,
-        "prev_close": 3.232,
-        "prev_close_fmt": "3.23",
-        "change": 0.516,
-        "change_pct": 15.97,
-        "direction": "up",
+        "price": "3.62",
+        "price_raw": 3.617,
+        "prev_close": 3.748,
+        "prev_close_fmt": "3.75",
+        "change": -0.131,
+        "change_pct": -3.5,
+        "direction": "down",
         "unit": "USD/MMBtu",
         "range_52w": {
           "low": 2.48,
           "high": 7.83,
           "low_fmt": "2.48",
           "high_fmt": "7.83",
-          "pos_pct": 23.7,
-          "pct_from_high": -52.11
+          "pos_pct": 21.2,
+          "pct_from_high": -53.79
         }
       },
       "gold": {
         "key": "GOLD",
-        "quote_date": "2026-11-20",
+        "quote_date": "2026-11-22",
         "label": "Gold",
-        "price": "3,515.40",
-        "price_raw": 3515.3999,
-        "prev_close": 3533.0,
-        "prev_close_fmt": "3,533.00",
-        "change": -17.6001,
-        "change_pct": -0.5,
-        "direction": "down",
+        "price": "3,579.50",
+        "price_raw": 3579.5,
+        "prev_close": 3515.3999,
+        "prev_close_fmt": "3,515.40",
+        "change": 64.1001,
+        "change_pct": 1.82,
+        "direction": "up",
         "unit": "USD/oz",
         "range_52w": {
           "low": 3502.9,
           "high": 5586.2,
           "low_fmt": "3,502.90",
           "high_fmt": "5,586.20",
-          "pos_pct": 0.6,
-          "pct_from_high": -37.07
+          "pos_pct": 3.7,
+          "pct_from_high": -35.92
         }
       },
       "silver": {
         "key": "SILVER",
-        "quote_date": "2026-11-20",
+        "quote_date": "2026-11-22",
         "label": "Silver",
-        "price": "41.07",
-        "price_raw": 41.07,
-        "prev_close": 41.36,
-        "prev_close_fmt": "41.36",
-        "change": -0.29,
-        "change_pct": -0.7,
-        "direction": "down",
+        "price": "41.58",
+        "price_raw": 41.575,
+        "prev_close": 41.07,
+        "prev_close_fmt": "41.07",
+        "change": 0.505,
+        "change_pct": 1.23,
+        "direction": "up",
         "unit": "USD/oz",
         "range_52w": {
-          "low": 40.62,
+          "low": 40.93,
           "high": 121.3,
-          "low_fmt": "40.62",
+          "low_fmt": "40.93",
           "high_fmt": "121.30",
-          "pos_pct": 0.6,
-          "pct_from_high": -66.14
+          "pos_pct": 0.8,
+          "pct_from_high": -65.73
         }
       },
       "catalyst": {
-        "title": "Stocks to Watch for November 23: Tata Steel, APL Apollo Tubes, Maruti Suzuki, Adani Energy and more",
-        "url": "https://www.cnbctv18.com/photos/market/stocks-to-watch-for-november-23-maruti-suzuki-welspun-living-ashoka-buildcon-adani-energy-share-price-20039268.htm",
-        "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
+        "title": "Stock Market Today: Gift Nifty, Gold Rates To Oil Prices; Five Key Factors For Sensex, Nifty 50 On Nov 23",
+        "url": "https://www.ndtvprofit.com/markets/stock-market-today-gift-nifty-gold-rates-to-oil-prices-five-key-factors-that-may-drive-sensex-nifty-50-on-november-23-12363812#publisher=newsstand",
+        "why_it_matters": "Crude affects India’s import bill and energy-sensitive sectors; the headline does not establish a clear price direction.",
         "source": ""
       }
     },
     "earnings": [
       {
-        "title": "Tata Steel announces ₹28,000 cr deal with APL Apollo Tubes for two units",
-        "url": "https://www.business-standard.com/companies/news/tata-steel-board-clears-28k-cr-sale-of-two-businesses-to-apl-apollo-tubes-126112200721_1.html",
-        "companies": [
-          {
-            "name": "Tata Steel",
-            "symbol": "tata steel"
-          }
-        ],
-        "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
-        "source": ""
-      },
-      {
-        "title": "Reliance Brands FY26 revenue up 3.8% to Rs 3,390.9 crore; loss narrows to Rs 137 crore",
-        "url": "https://economictimes.indiatimes.com/markets/stocks/earnings/reliance-brands-fy26-revenue-up-3-8-to-rs-3390-9-crore-loss-narrows-to-rs-137-crore/articleshow/136068185.cms",
-        "companies": [
-          {
-            "name": "Reliance",
-            "symbol": "reliance"
-          }
-        ],
-        "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
-        "source": ""
-      },
-      {
-        "title": "RBI may hike interest rates by 75 basis points by Q2 of next year: Goldman Sachs",
-        "url": "https://economictimes.indiatimes.com/news/economy/policy/rbi-may-hike-interest-rates-by-75-basis-points-by-q2-of-next-year-goldman-sachs/articleshow/135959983.cms",
+        "title": "Earnings call transcript: Zepp Health posts mixed Q3 2026 results as stock falls",
+        "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-zepp-health-posts-mixed-q3-2026-results-as-stock-falls-93CH-5044238",
         "companies": [],
-        "why_it_matters": "Directly shifts commercial bank cost of funds, repo borrowing rates, and rate-sensitive equity multiples (banks, real estate, auto).",
+        "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
+        "source": ""
+      },
+      {
+        "title": "Indian IT’s growth revival remains elusive despite better Q2",
+        "url": "https://www.livemint.com/market/mark-to-market/indian-it-sector-growth-outlook-ai-revenue-infosys-tcs-wipro-11795328533948.html",
+        "companies": [],
+        "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
+        "source": ""
+      },
+      {
+        "title": "Perfetti Van Melle to close 2026 at ₹4,000 crore revenue; tough year ahead, says MD",
+        "url": "https://www.livemint.com/companies/news/perfetti-van-melle-to-close-2026-with-4-000-crore-revenue-tough-year-ahead-md-fmcg-chocolate-cocoa-confectionery-11795337168596.html",
+        "companies": [],
+        "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
         "source": ""
       }
     ],
@@ -330,9 +320,9 @@
         }
       },
       "catalyst": {
-        "title": "Bullion May Extend Losses This Week As US Economic Data, Fed Cues Loom: Analysts",
-        "url": "https://www.ndtvprofit.com/markets/bullion-may-extend-losses-this-week-as-us-economic-data-fed-cues-loom-analysts-12363000#publisher=newsstand",
-        "why_it_matters": "Guides global liquidity dynamics, US Dollar Index (DXY) trajectory, and foreign institutional (FII) capital allocations.",
+        "title": "Kospi slumps nearly 4%; Asian markets fall as Wall Street sell-off deepens",
+        "url": "https://www.cnbctv18.com/market/asian-market-share-price-kospi-taiex-wall-street-selloff-ai-stocks-nvidia-market-volatility-gift-nifty-china-20039472.htm",
+        "why_it_matters": "Key market catalyst driving market liquidity and session volatility.",
         "source": ""
       }
     }
