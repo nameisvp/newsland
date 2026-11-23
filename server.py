@@ -61,6 +61,110 @@ NOISE = re.compile(
     r'\b(?:cmo|cco|clo|director|officer|general counsel|chief [a-z]+ officer)\b.*?\b(?:sells?|disposes?|buys?)\b.*?\$\d{1,3},\d{3}\b',
     re.I
 )
+
+# ── Irrelevant & Non-Financial Content Filters ──────────────────────────
+IRRELEVANT_PATTERNS = re.compile(
+    r'\b('
+    # Sports / Cricket / Matches / Tournaments
+    r'cricket|test ton|test match|ipl|wpl|bcci|icc|world cup|asia cup|t20|odi|innings|wicket|bowler|batsman|batsmen|batting|bowling|'
+    r'runs in|century|hat-trick|fifa|football|soccer|tennis|badminton|hockey|kabaddi|olympics|medal|coach|captaincy|'
+    r'rishabh pant|virat kohli|rohit sharma|ms dhoni|jasprit bumrah|kl rahul|hardik pandya|babar azam|gilchrist|mccullum|'
+    r'live streaming|match prediction|when and where to watch|pitch report|toss updates?|rising stars match|playing xi|squad announced|'
+    # Civic / Municipal / City infrastructure disruptions
+    r'water crisis|water supply|water cut|supply disruption|pipeline burst|sewage|drainage|drinking water|potholes|'
+    r'auto strike|taxi strike|cab strike|bus strike|metro strike|commuters need to know|traffic advisory|traffic jam|route diverted|route diversion|local train delayed|road closed|'
+    r'panvel residents|mumbai commuters|pune commuters|delhi commuters|thane and other maharashtra cities|'
+    r'weather forecast|heavy rains? (?:in|alerts?)|heatwave|dense fog|aqi level|air pollution in (?:delhi|mumbai|noida)|air quality index|'
+    # Gaming / Social Media / Viral / Entertainment / Horoscope
+    r'gta\s*[56v]|grand theft auto|playstation|xbox|video game|pubg|bgmi|pavel durov|telegram jibe|viral video|meme|'
+    r'box office collection|ott release|movie review|trailer out|teaser out|horoscope|astrology|tarot|rashifal|zodiac|'
+    # Foreign Domestic Holiday / Travel Trivia
+    r'thanksgiving holiday|delayed ahead of thanksgiving|flight delays? ahead of thanksgiving|holiday travel rush|black friday sales'
+    r')\b',
+    re.I
+)
+
+IRRELEVANT_URL_PATTERNS = re.compile(
+    r'/(?:sports|cricket|entertainment|lifestyle|trending|viral|travel|gaming|astrology|bollywood|horoscope)/',
+    re.I
+)
+
+def is_irrelevant_story(title, url='', summary=''):
+    t = str(title or '').strip()
+    u = str(url or '').strip()
+    if u and IRRELEVANT_URL_PATTERNS.search(u):
+        return True
+    if IRRELEVANT_PATTERNS.search(t):
+        return True
+    return False
+
+# ── Content-Aware Region Intelligence ──────────────────────────────────
+INDIA_MARKET_PATTERNS = re.compile(
+    r'('
+    r'₹|\brs\.?\s*\d|\bcrores?\b|\bcr\b|\blakhs?\b|'
+    r'\b('
+    r'nifty|sensex|rupee|inr|paise|rbi|sebi|bse|nse|dalal street|d-street|'
+    r'india|indian|new delhi|mumbai|bengaluru|hyderabad|chennai|kolkata|'
+    r'finmin|nirmala sitharaman|saktikanta das|gst council|fii|dii|fpi|'
+    r'reliance|ril|tcs|infosys|infy|hdfc|icici|sbi|axis bank|kotak|itc|l&t|tata motors|tata steel|tata power|'
+    r'maruti|bharti airtel|airtel|adani|swiggy|zomato|paytm|indusind|apl apollo|tbz|aurobindo|'
+    r'nalco|iifl|sterlite|paradeep|persistent|dabur|eicher|bajaj|vedanta|hindalco|jsw|ongc|bpcl|ioc|'
+    r'bhel|lic|coforge|meesho|triveni|hindustan copper|power grid|dr reddy|sun pharma|cipla|divis|kathpalia'
+    r')\b'
+    r')',
+    re.I
+)
+
+PURE_GLOBAL_PATTERNS = re.compile(
+    r'\b('
+    r'wall street|nasdaq|s&p 500|s&p|dow jones|dow|nyse|fed|federal reserve|fomc|jerome powell|'
+    r'us inflation|us economy|us jobs|us stocks|us treasury|treasury yields|treasury futures|treasuries|'
+    r'dollar edges|dollar firms|dollar index|dxy|greenback|yen softens|yen|yuan|euro|pound sterling|'
+    r'trump|biden|white house|pentagon|'
+    r'yemen|houthi|saudi oil|saudi aramco|saudi arabia|saudi|opec|iran|tehran|israel|gaza|lebanon|beirut|middle east|'
+    r'ukraine|russia|putin|zelenskyy|'
+    r'china|chinese|beijing|xi jinping|taiwan\w*|tsmc|'
+    r'south korea\w*|korea\w*|kospi|seoul|tokyo|japan\w*|nikkei|bank of japan|boj|'
+    r'australia\w*|south australian|sydney|bhp|rio tinto|'
+    r'indonesia\w*|prabowo|dalio|jakarta|'
+    r'ecb|european central bank|eurozone|frankfurt|london|ftse|bank of england|'
+    r'anthropic|openai|chatgpt|sam altman|coreweave|sellas|momentus|'
+    r'thanksgiving|global stocks|global equities'
+    r')\b',
+    re.I
+)
+
+GLOBAL_COMMODITY_PATTERNS = re.compile(
+    r'\b(copper|crude|brent|wti|gold|silver|bullion|metals? turmoil)\b.*(?:\$|\busd\b|iran war|opec|global)|(?:\$|\busd\b).*(?:copper|crude|brent|wti|metals?)',
+    re.I
+)
+
+GLOBAL_CURRENCY_OR_DOLLAR = re.compile(
+    r'(\$\s*\d|\busd\b|\bcents?\b|\byen\b|\beuro\b|\bpounds?\b)',
+    re.I
+)
+
+def detect_story_region(title, source_region='Global', summary='', url=''):
+    t = str(title or '').strip()
+    has_india = bool(INDIA_MARKET_PATTERNS.search(t))
+    has_global = bool(PURE_GLOBAL_PATTERNS.search(t) or GLOBAL_COMMODITY_PATTERNS.search(t))
+
+    if has_india and not has_global:
+        return 'India'
+    if has_global and not has_india:
+        return 'Global'
+    if has_india and has_global:
+        # Both matched: check if it's primarily an Indian impact angle (e.g. "Rupee declines against dollar", "How US inflation impacts India")
+        if re.search(r'\b(rupee|nifty|sensex|rbi|dalal street|india could gain|indian)\b', t, re.I):
+            return 'India'
+        return 'Global'
+
+    # Neither matched: check for foreign currency / dollar without Indian markers
+    if GLOBAL_CURRENCY_OR_DOLLAR.search(t) and not re.search(r'(₹|\brs\.?|\binr\b|\bcrore|\blakh)', t, re.I):
+        return 'Global'
+
+    return source_region if source_region in ('India', 'Global') else 'Global'
+
 MARKET_ACTION = re.compile(r'\b(cuts?|hikes?|holds?|keeps?|raises?|lowers?|beats?|misses?|surges?|jumps?|plunges?|falls?|drops?|rises?|dips?|slumps?|declin\w*|retreat\w*|weak\w*|strengthen\w*|weaken\w*|sell.?offs?|approves?|bans?|releases?|announces?|orders?|suspends?|delays?|tightens?|eases?)\b', re.I)
 INDIA_LINK = re.compile(r'\b(india|indian|rbi|sebi|rupee|nifty|sensex|nse|bse|mumbai|new delhi)\b', re.I)
 LOW_SIGNAL = re.compile(r'\b(opinion|explainer|what to know|what it means|top stocks|best stocks|should you|price target|analyst pick|reshaped markets|look back|year in review|retrospective|charts indicate|technical indicators|dead cat bounce)\b', re.I)
@@ -126,10 +230,18 @@ def assess_story(title, region='Global', official=False):
 
 def rescore_story(story):
     """Upgrade cached headlines to the current rules without fetching their publisher again."""
-    assessment = assess_story(story.get('title', ''), story.get('region', 'Global'), story.get('official', False))
+    title = story.get('title', '')
+    url = story.get('url', '')
+    summary = story.get('summary', '')
+    if is_irrelevant_story(title, url, summary):
+        story.update({'score': -10, 'category': 'Irrelevant', 'matched': [], 'tier': 'Exclude', 'reason': 'Filtered non-market content.'})
+        return story
+    detected_region = detect_story_region(title, story.get('region', 'Global'), summary=summary, url=url)
+    story['region'] = detected_region
+    assessment = assess_story(title, detected_region, story.get('official', False))
     # Preserve the existing administrative-notice exception for cached SEBI items.
     source_names = {source.get('name') for source in story.get('sources', [])}
-    if 'SEBI' in source_names and re.search(r'recovery certificate|remittance order|release order|settlement order|verification system', story.get('title', ''), re.I):
+    if 'SEBI' in source_names and re.search(r'recovery certificate|remittance order|release order|settlement order|verification system', title, re.I):
         assessment = {'score': 0, 'category': 'Other news', 'matched': [], 'tier': 'More', 'reason': 'Routine administrative notice; retained in More for review.'}
     story.update(assessment)
     return story
@@ -181,16 +293,19 @@ def fetch(source):
             if not link:
                 link = next((x.attrib.get('href', '') for x in item if x.tag.split('}')[-1]=='link' and x.attrib.get('rel','alternate')=='alternate'), '')
             if not title or urlparse(link).scheme not in ('http','https'): continue
+            summary = clean(field(item, 'description') or field(item, 'summary') or '')[:350]
+            if is_irrelevant_story(title, link, summary):
+                continue
             date = timestamp(field(item, 'pubDate') or field(item, 'published') or field(item, 'updated') or field(item, 'date'))
             # Do not publish stale releases as today's news, or future-dated stories.
             if date and (date > time.time()+3600 or time.time()-date > 7*86400): continue
-            assessment = assess_story(title, source['region'], source['official'])
+            detected_region = detect_story_region(title, source['region'], summary=summary, url=link)
+            assessment = assess_story(title, detected_region, source['official'])
             matches = [r for r in RULES if r[0] in assessment['matched']]
             if source['name'] == 'SEBI' and re.search(r'recovery certificate|remittance order|release order|settlement order|verification system', title, re.I):
                 assessment = {'score': 0, 'category': 'Other news', 'matched': [], 'tier': 'More', 'reason': 'Routine administrative notice; retained in More for review.'}
-            summary = clean(field(item, 'description') or field(item, 'summary') or '')[:350]
             stories.append({'id':hashlib.sha256(link.encode()).hexdigest()[:16], 'title': title,
-                'url':link, 'published':date, 'region':source['region'], 'official':source['official'],
+                'url':link, 'published':date, 'region':detected_region, 'official':source['official'],
                 'sources':[{'name':source['name'],'url':link}], 'score':assessment['score'], 'summary': summary,
                 'category':assessment['category'], 'reason':assessment['reason'],
                 'matched':assessment['matched'], 'tier':assessment['tier']})
@@ -366,56 +481,112 @@ COMPANY_DISPLAY_MAP = {
     'wipro': 'Wipro',
     'tata elxsi': 'Tata Elxsi',
     'persistent systems': 'Persistent',
+    'persistent': 'Persistent',
     'reliance': 'Reliance',
     'ril': 'Reliance',
     'ongc': 'ONGC',
     'oil india': 'Oil India',
     'bpcl': 'BPCL',
+    'hpcl': 'HPCL',
+    'ioc': 'IOC',
     'asian paints': 'Asian Paints',
     'indigo': 'IndiGo',
     'interglobe aviation': 'IndiGo',
     'mrf': 'MRF',
     'apollo tyres': 'Apollo Tyres',
     'sbi': 'SBI',
+    'state bank': 'SBI',
     'icici bank': 'ICICI Bank',
     'icici': 'ICICI Bank',
     'hdfc bank': 'HDFC Bank',
     'hdfc': 'HDFC Bank',
+    'axis bank': 'Axis Bank',
+    'axis': 'Axis Bank',
+    'kotak bank': 'Kotak Bank',
+    'kotak mahindra bank': 'Kotak Bank',
+    'kotak': 'Kotak Bank',
+    'indusind bank': 'IndusInd Bank',
+    'indusind': 'IndusInd Bank',
     'dlf': 'DLF',
     'godrej properties': 'Godrej Prop',
+    'godrej prop': 'Godrej Prop',
     'tata motors': 'Tata Motors',
+    'tata steel': 'Tata Steel',
+    'tata power': 'Tata Power',
+    'apl apollo tubes': 'APL Apollo',
+    'apl apollo': 'APL Apollo',
+    'jsw steel': 'JSW Steel',
+    'jsw': 'JSW Steel',
+    'hindalco': 'Hindalco',
+    'vedanta': 'Vedanta',
+    'nalco': 'NALCO',
+    'hindustan copper': 'Hindustan Copper',
+    'sterlite tech': 'Sterlite Tech',
+    'sterlite': 'Sterlite Tech',
+    'paradeep phosphates': 'Paradeep Phosphates',
+    'paradeep': 'Paradeep Phosphates',
+    'tbz': 'TBZ',
+    'tribhovandas bhimji zaveri': 'TBZ',
+    'aurobindo pharma': 'Aurobindo Pharma',
+    'aurobindo': 'Aurobindo Pharma',
+    'iifl finance': 'IIFL',
+    'iifl': 'IIFL',
     'bajaj finance': 'Bajaj Finance',
+    'bajaj finserv': 'Bajaj Finserv',
+    'bajaj auto': 'Bajaj Auto',
+    'eicher motors': 'Eicher Motors',
+    'eicher': 'Eicher Motors',
+    'maruti suzuki': 'Maruti Suzuki',
+    'maruti': 'Maruti Suzuki',
     'sun pharma': 'Sun Pharma',
     'cipla': 'Cipla',
+    'dr reddy': "Dr Reddy's",
+    'divis': "Divi's Lab",
     'voltas': 'Voltas',
     'dixon tech': 'Dixon Tech',
     'havells': 'Havells',
     'titan': 'Titan',
     'kalyan jewellers': 'Kalyan Jewellers',
     'senco gold': 'Senco Gold',
+    'pc jeweller': 'PC Jeweller',
     'muthoot finance': 'Muthoot Fin',
-    'tata steel': 'Tata Steel',
-    'jsw steel': 'JSW Steel',
-    'hindalco': 'Hindalco',
-    'vedanta': 'Vedanta',
-    'maruti suzuki': 'Maruti Suzuki',
-    'maruti': 'Maruti Suzuki',
     'l&t': 'L&T',
+    'larsen & toubro': 'L&T',
+    'larsen': 'L&T',
     'bel': 'BEL',
     'bharat electronics': 'BEL',
     'hal': 'HAL',
+    'hindustan aeronautics': 'HAL',
     'mazagon dock': 'Mazagon Dock',
     'solar industries': 'Solar Ind',
+    'adani enterprises': 'Adani',
+    'adani ports': 'Adani',
+    'adani power': 'Adani',
+    'adani green': 'Adani',
     'adani': 'Adani',
     'fino payments': 'Fino Payments',
     'itc': 'ITC',
     'tech mahindra': 'Tech Mahindra',
     'hcl tech': 'HCL Tech',
     'ntpc': 'NTPC',
-    'ioc': 'IOC',
+    'power grid': 'Power Grid',
+    'coal india': 'Coal India',
+    'bhel': 'BHEL',
+    'lic': 'LIC',
+    'swiggy': 'Swiggy',
+    'zomato': 'Zomato',
+    'paytm': 'Paytm',
+    'one97': 'Paytm',
     'tsmc': 'TSMC',
     'nvidia': 'Nvidia',
     'apple': 'Apple',
+    'tesla': 'Tesla',
+    'microsoft': 'Microsoft',
+    'google': 'Google',
+    'meta': 'Meta',
+    'amazon': 'Amazon',
+    'bhp': 'BHP',
+    'momentus': 'Momentus',
 }
 
 def extract_company_entities(title):
@@ -450,48 +621,11 @@ def normalize_title(title):
 def extract_primary_subject(title):
     t_raw = str(title or '').strip()
     t_low = t_raw.lower()
-    companies = [
-        ('senco gold', r'senco\s*gold'),
-        ('fino payments', r'fino(\s*payments)?(\s*bank)?'),
-        ('pc jeweller', r'pc\s*jeweller'),
-        ('tcs', r'\b(tcs|tata\s+consultancy)\b'),
-        ('infosys', r'\b(infosys|infy)\b'),
-        ('hcl tech', r'hcl\s*tech'),
-        ('tech mahindra', r'tech\s*mahindra'),
-        ('wipro', r'\bwipro\b'),
-        ('hdfc bank', r'\bhdfc(\s*bank)?\b'),
-        ('icici bank', r'\bicici(\s*bank)?\b'),
-        ('sbi', r'\b(sbi|state\s*bank)\b'),
-        ('axis bank', r'axis\s*bank'),
-        ('kotak bank', r'kotak(\s*mahindra)?\s*bank'),
-        ('adani', r'\badani\b'),
-        ('reliance', r'\b(reliance|ril|jio)\b'),
-        ('tata motors', r'tata\s*motors'),
-        ('maruti', r'\bmaruti\b'),
-        ('l&t', r'\b(l&t|larson)\b'),
-        ('vedanta', r'\bvedanta\b'),
-        ('tsmc', r'\btsmc\b'),
-        ('samsung', r'\bsamsung\b'),
-        ('nvidia', r'\bnvidia\b'),
-        ('apple', r'\bapple\b'),
-        ('tesla', r'\btesla\b'),
-        ('microsoft', r'\bmicrosoft\b'),
-        ('google', r'\b(google|alphabet)\b'),
-        ('meta', r'\bmeta\b'),
-        ('amazon', r'\bamazon\b'),
-        ('zoho', r'\bzoho\b'),
-        ('swiggy', r'\bswiggy\b'),
-        ('zomato', r'\bzomato\b'),
-        ('paytm', r'\bpaytm\b'),
-        ('liquidia', r'\bliquidia\b'),
-        ('everpure', r'\beverpure\b'),
-        ('accenture', r'\baccenture\b'),
-        ('ifci', r'\bifci\b'),
-        ('gm breweries', r'gm\s*breweries'),
-    ]
-    for name, pat in companies:
-        if re.search(pat, t_low):
-            return name
+    # Dynamic match against known company entities (longest match first)
+    for k in sorted(COMPANY_DISPLAY_MAP.keys(), key=lambda x: -len(x)):
+        pattern = r'\b' + re.escape(k) + r'\b'
+        if re.search(pattern, t_low):
+            return COMPANY_DISPLAY_MAP[k].lower()
 
     # Dynamic extraction: Ticker in parentheses e.g. Liquidia (NASDAQ:LQDA)
     m = re.search(r'\b([A-Z][a-zA-Z0-9\.\s&\'\-]+?)\s*\((?:NASDAQ|NYSE|BSE|NSE|OTCMKTS|LON|TSE):\s*([A-Za-z0-9\.\-]+)\)', t_raw, re.I)
@@ -503,6 +637,14 @@ def extract_primary_subject(title):
 
     # Dynamic extraction: Executive / Insider transaction headline: Company + Officer + sells/buys
     officer_pat = r'\b(?:cmo|cco|clo|ceo|cfo|coo|cto|cro|chief\s+[a-z]+\s+officer|director|general\s+counsel|president|chairman|vp|evp|svp)\b'
+    m_off = re.search(r'^([A-Z][a-zA-Z0-9\.\s&\'\-]+?)\s+' + officer_pat, t_raw)
+    if m_off:
+        name = m_off.group(1).strip().lower()
+        name = re.sub(r'\b(corp|corporation|inc|incorporated|ltd|limited|co)\b', '', name).strip()
+        if len(name) >= 3:
+            return name
+
+    return None
     m2 = re.search(rf'^([A-Z][a-zA-Z0-9&\'\-]+(?:\s+[A-Z][a-zA-Z0-9&\'\-]+){{0,2}})\s+(?:{officer_pat}|corp|inc|ltd)\b', t_raw, re.I)
     if m2:
         name = m2.group(1).strip().lower()
@@ -554,6 +696,9 @@ def should_cluster(s1, s2):
     if abs(t1 - t2) > 48 * 3600:
         return False
 
+    t1_low = str(s1.get('title', '')).lower()
+    t2_low = str(s2.get('title', '')).lower()
+
     # Protection for distinct numerical policy rate changes (e.g. 5.5% vs 5.0%)
     r1 = re.findall(r'(?:repo rate|policy rate|interest rate)\s*(\d+(?:\.\d+)?%?)', s1.get('title', '').lower())
     r2 = re.findall(r'(?:repo rate|policy rate|interest rate)\s*(\d+(?:\.\d+)?%?)', s2.get('title', '').lower())
@@ -563,14 +708,20 @@ def should_cluster(s1, s2):
     subj1 = extract_primary_subject(s1.get('title', ''))
     subj2 = extract_primary_subject(s2.get('title', ''))
 
-    # If both specifically name different companies, they must never cluster
-    if subj1 and subj2 and subj1 != subj2:
-        return False
-    if (subj1 is not None) != (subj2 is not None):
+    ents1 = {e['name'] for e in extract_company_entities(s1.get('title', ''))}
+    ents2 = {e['name'] for e in extract_company_entities(s2.get('title', ''))}
+    shared_ents = ents1 & ents2
+
+    # If both specifically name different companies and share no named entities, they must never cluster
+    if subj1 and subj2 and subj1 != subj2 and not shared_ents:
         return False
 
     evt1 = get_corporate_event_type(s1.get('title', ''))
     evt2 = get_corporate_event_type(s2.get('title', ''))
+
+    # If one is a specific corporate action (earnings, insider trade) and the other doesn't mention the company, don't cluster
+    if (evt1 in ('insider_trade', 'earnings') or evt2 in ('insider_trade', 'earnings')) and not shared_ents and (not subj1 or not subj2 or subj1 != subj2):
+        return False
 
     w1 = substantive_tokens(s1.get('title', ''))
     w2 = substantive_tokens(s2.get('title', ''))
@@ -579,10 +730,15 @@ def should_cluster(s1, s2):
     jaccard = (len(inter) / len(w1 | w2)) if (w1 or w2) else 0
 
     # 1. Same named company/corporate entity
-    if subj1 and subj2 and subj1 == subj2:
+    if (subj1 and subj2 and subj1 == subj2) or shared_ents:
         # If both describe the same corporate event type (e.g. routine insider trades, earnings reports, legal orders)
         if evt1 and evt2 and evt1 == evt2:
             return True
+        # If deal/acquisition/takeover/stake or share movement is mentioned
+        if any(w in t1_low for w in ('deal', 'acquisition', 'stake', 'merger', 'buy', 'buys', 'fall', 'falls', 'slump', 'drop', 'surge', 'shares', 'stock')) and \
+           any(w in t2_low for w in ('deal', 'acquisition', 'stake', 'merger', 'buy', 'buys', 'fall', 'falls', 'slump', 'drop', 'surge', 'shares', 'stock')):
+            if len(inter) >= 2 or jaccard >= 0.16:
+                return True
         # If either is an insider trade and both mention stock/share/stake movement
         if (evt1 == 'insider_trade' or evt2 == 'insider_trade') and re.search(r'\b(sells?|buys?|shares?|stock|stake|dispos\w*)\b', (s1.get('title', '') + ' ' + s2.get('title', '')).lower()):
             return True
@@ -594,9 +750,6 @@ def should_cluster(s1, s2):
         return False
 
     # 2. Key Macro / Benchmark Event Domains
-    t1_low = s1.get('title', '').lower()
-    t2_low = s2.get('title', '').lower()
-
     # Conflicting oil directions should not be presented as corroborating coverage.
     oil1, oil2 = crude_direction(t1_low), crude_direction(t2_low)
     if oil1 and oil2 and oil1 != oil2:
@@ -605,6 +758,11 @@ def should_cluster(s1, s2):
     # Same named governance dispute, with matching event intent.
     if all(re.search(r'\bcook\b', t) and 'fed' in t and 'trump' in t and re.search(r'\b(hearing|inquiry)\b', t) for t in (t1_low, t2_low)):
         return True
+
+    # Currency / Rupee / Forex moves
+    if bool(re.search(r'\b(rupee|inr|dollar|usdinr|forex|currency)\b', t1_low)) and bool(re.search(r'\b(rupee|inr|dollar|usdinr|forex|currency)\b', t2_low)):
+        if bool(re.search(r'\b(gain\w*|rise\w*|fell|fall\w*|slump\w*|drop\w*|strengthen\w*|weaken\w*|record low|paise|\$|against dollar|inflows?|outflows?|depreciat\w*|appreciat\w*)\b', t1_low)) and bool(re.search(r'\b(gain\w*|rise\w*|fell|fall\w*|slump\w*|drop\w*|strengthen\w*|weaken\w*|record low|paise|\$|against dollar|inflows?|outflows?|depreciat\w*|appreciat\w*)\b', t2_low)):
+            return True
 
     # Energy / Crude Oil
     if bool(re.search(r'\b(crude|brent|oil|opec)\b', t1_low)) and bool(re.search(r'\b(crude|brent|oil|opec)\b', t2_low)):
@@ -623,8 +781,8 @@ def should_cluster(s1, s2):
                 return True
 
     # Intraday Benchmark Crash / Market Fall Live Coverage
-    if bool(re.search(r'\b(sensex|nifty|market)\b', t1_low)) and bool(re.search(r'\b(sensex|nifty|market)\b', t2_low)):
-        if any(re.search(rf'\b{w}\b', t1_low) for w in ['crash', 'down', 'slump', 'tank', 'fall', 'live']) and any(re.search(rf'\b{w}\b', t2_low) for w in ['crash', 'down', 'slump', 'tank', 'fall', 'live']):
+    if bool(re.search(r'\b(sensex|nifty|market|dalal street|d-street)\b', t1_low)) and bool(re.search(r'\b(sensex|nifty|market|dalal street|d-street)\b', t2_low)):
+        if any(re.search(rf'\b{w}\b', t1_low) for w in ['crash', 'down', 'slump', 'tank', 'fall', 'falls', 'drop', 'drops', 'live', 'plunge', 'red', 'negative']) and any(re.search(rf'\b{w}\b', t2_low) for w in ['crash', 'down', 'slump', 'tank', 'fall', 'falls', 'drop', 'drops', 'live', 'plunge', 'red', 'negative']):
             return True
 
     # Regulatory Mandates (e.g. Risk-o-meter for debt)
@@ -632,15 +790,24 @@ def should_cluster(s1, s2):
         return True
 
     # 3. General Cross-Outlet Wire Deduplication
-    if jaccard >= 0.32 or (min_len >= 3 and len(inter) / min_len >= 0.50):
+    if jaccard >= 0.28 or (min_len >= 3 and len(inter) / min_len >= 0.45) or len(inter) >= 4:
         return True
 
     return False
 
 def group(stories):
     """Intelligently cluster multi-source stories, deduplicate coverage, and enrich with market context."""
+    valid_stories = []
+    for story in stories:
+        t = story.get('title', '')
+        u = story.get('url', '')
+        s = story.get('summary', '')
+        if is_irrelevant_story(t, u, s) or story.get('tier') == 'Exclude' or story.get('category') == 'Irrelevant':
+            continue
+        valid_stories.append(story)
+
     # Sort by initial score and recency
-    sorted_stories = sorted(stories, key=lambda s: (s.get('score', 0) or 0, s.get('published', 0) or 0), reverse=True)
+    sorted_stories = sorted(valid_stories, key=lambda s: (s.get('score', 0) or 0, s.get('published', 0) or 0), reverse=True)
     clusters = []
 
     for story in sorted_stories:
@@ -677,6 +844,9 @@ def group(stories):
         num_sources = len(c.get('sources', []))
         c['cluster_count'] = num_sources
         
+        # Ensure region is accurately detected from cluster headline & content
+        c['region'] = detect_story_region(c['title'], c.get('region', 'Global'), summary=c.get('summary', ''), url=c.get('url', ''))
+
         # Multi-Source Confirmation Boost:
         # Multiple independent newsrooms reporting on an event signals high market velocity
         boost = 0
@@ -703,6 +873,10 @@ def group(stories):
     curated_clusters = []
     for c in clusters:
         t = c.get('title', '')
+        u = c.get('url', '')
+        s = c.get('summary', '')
+        if is_irrelevant_story(t, u, s) or c.get('tier') == 'Exclude' or c.get('category') == 'Irrelevant':
+            continue
         if NOISE.search(t):
             continue
         # Drop stories with 0 score that have only 1 uncorroborated source and no recognized entity

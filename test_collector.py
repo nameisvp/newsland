@@ -65,7 +65,6 @@ class CollectorTests(unittest.TestCase):
         official = assess_story('RBI keeps repo rate unchanged', 'India', official=True)
         other = assess_story('RBI keeps repo rate unchanged', 'India', official=False)
         self.assertEqual(official['score'] - other['score'], 1)
-if __name__=='__main__': unittest.main()
 
 class BriefEvidenceTests(unittest.TestCase):
     def test_partial_flow_offset(self):
@@ -97,3 +96,44 @@ class BriefEvidenceTests(unittest.TestCase):
     def test_cook_hearing_group(self):
         from server import should_cluster
         self.assertTrue(should_cluster({'title': 'Trump to hold inquiry into Fed’s Lisa Cook at White House', 'published': 1}, {'title': 'Trump orders Nov. 5 Cook hearing in renewed bid to oust Fed governor Lisa Cook', 'published': 1}))
+
+    def test_rupee_currency_move_clustering(self):
+        from server import should_cluster
+        s1 = {'title': 'Rupee gains 20 paise to 92.47 against dollar: How far can the currency rise from here', 'published': 100}
+        s2 = {'title': 'Rupee could rise to 91.50/$ on equity inflows, says HDFC Bank\'s treasury head', 'published': 120}
+        self.assertTrue(should_cluster(s1, s2))
+
+    def test_irrelevant_stories_filtered(self):
+        from server import is_irrelevant_story
+        self.assertTrue(is_irrelevant_story('Rishabh Pant Scripts History With Ninth Test Ton, Surpasses Brendon McCullum; Joins Gilchrist In Elite Test Records'))
+        self.assertTrue(is_irrelevant_story('Afghanistan A vs Hong Kong Live Streaming: When And Where To Watch Asia Cup Rising Stars Match?'))
+        self.assertTrue(is_irrelevant_story('Navi Mumbai Water Crisis: Panvel Residents To Face One-Day Weekly Supply Disruption; Check Details'))
+        self.assertTrue(is_irrelevant_story('Auto Strike In Mumbai, Thane And Other Maharashtra Cities Today? Here\'s What Commuters Need To Know'))
+        self.assertTrue(is_irrelevant_story('GTA 6 Gets A Telegram Jibe From Pavel Durov; Elon Musk Joins The Conversation'))
+        self.assertTrue(is_irrelevant_story('Delta Flight Delays: Here\'s What We Know As Thousands Of Flights Delayed Ahead Of Thanksgiving Holiday'))
+        # Legitimate market stories should NOT be filtered
+        self.assertFalse(is_irrelevant_story('Sensex Today | Stock Market Live Updates: Nifty slumps 350 points from opening highs to turn negative'))
+        self.assertFalse(is_irrelevant_story('IndusInd Bank down 1% after terminating ex-CEO Kathpalia, invoking clawback'))
+
+    def test_tata_steel_apl_apollo_clustering(self):
+        from server import should_cluster
+        s1 = {'title': 'Tata Steel shares fall 6% after announcing mega ₹32,266 crore APL Apollo Tubes deal', 'published': 100}
+        s2 = {'title': 'Tata Steel shares fall 5% as investors weigh ₹32,000 cr APL Apollo acquisition plan | Should you buy? Check key levels', 'published': 105}
+        self.assertTrue(should_cluster(s1, s2))
+
+    def test_region_detection(self):
+        from server import detect_story_region
+        self.assertEqual(detect_story_region('Copper falls below $12,000 after minor recovery as metals turmoil deepens', 'India'), 'Global')
+        self.assertEqual(detect_story_region('BHP plans to double South Australian copper output by 2040; shares up', 'India'), 'Global')
+        self.assertEqual(detect_story_region('Momentus earnings missed by $0.04, revenue topped estimates', 'India'), 'Global')
+        self.assertEqual(detect_story_region('Dollar edges off 19-month high after market rout; yen softens', 'India'), 'Global')
+        self.assertEqual(detect_story_region('Yemen\'s Houthis claim attacks on Saudi oil refinery as Trump warns of new strikes next year', 'India'), 'Global')
+        self.assertEqual(detect_story_region('MSCI Discussed Avoiding Indonesia Downgrade With Prabowo, Dalio', 'India'), 'Global')
+        self.assertEqual(detect_story_region('Anthropic\'s stock market debut: a record IPO, a quick fade, decabillionaires, and the risks ahead | Explained', 'India'), 'Global')
+        self.assertEqual(detect_story_region('Delta Flight Delays: Here\'s What We Know As Thousands Of Flights Delayed Ahead Of Thanksgiving Holiday', 'India'), 'Global')
+        self.assertEqual(detect_story_region('Sensex Today | Stock Market Live Updates: Nifty slumps 350 points from opening highs to turn negative', 'Global'), 'India')
+        self.assertEqual(detect_story_region('Rupee gains 20 paise to 92.47 against dollar: How far can the currency rise from here', 'Global'), 'India')
+        self.assertEqual(detect_story_region('Rupee declines 23 paise to 92.85 against U.S. dollar in early trade', 'Global'), 'India')
+
+if __name__ == '__main__':
+    unittest.main()

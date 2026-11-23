@@ -531,6 +531,107 @@ function fillColumns(prefix, stories, numCols) {
   });
 }
 
+// Strict Non-Market Irrelevant & Civic/Sports Filter
+function isIrrelevantClient(s) {
+  if (!s || !s.title) return true;
+  if (s.tier === 'Exclude' || s.category === 'Irrelevant') return true;
+  const t = s.title.toLowerCase();
+  const u = (s.url || '').toLowerCase();
+  if (/\/(sports|cricket|entertainment|lifestyle|trending|viral|travel|gaming|astrology|bollywood|horoscope)\//i.test(u)) return true;
+  if (/\b(cricket|test ton|test match|ipl|wpl|bcci|icc|world cup|asia cup|t20|odi|innings|wicket|bowler|batsman|batsmen|batting|bowling|rishabh pant|virat kohli|rohit sharma|ms dhoni|jasprit bumrah|kl rahul|hardik pandya|live streaming|when and where to watch|match prediction|rising stars match|playing xi|squad announced|fifa|football|soccer|tennis|badminton|olympics|medal)\b/i.test(t)) return true;
+  if (/\b(water crisis|water supply|water cut|supply disruption|pipeline burst|drinking water|panvel residents|auto strike|taxi strike|cab strike|bus strike|metro strike|commuters need to know|traffic advisory|traffic jam|route diverted|route diversion|local train delayed|road closed|thane and other maharashtra cities|weather forecast|heavy rains?|heatwave|dense fog|aqi level|air pollution in|air quality index)\b/i.test(t)) return true;
+  if (/\b(gta\s*[56v]|grand theft auto|playstation|xbox|video game|pubg|bgmi|pavel durov|telegram jibe|viral video|meme|box office collection|ott release|movie review|horoscope|astrology|tarot|rashifal|zodiac)\b/i.test(t)) return true;
+  if (/\b(thanksgiving holiday|delayed ahead of thanksgiving|flight delays? ahead of thanksgiving|holiday travel rush|black friday sales)\b/i.test(t)) return true;
+  return false;
+}
+
+// Strict Client-Side Global/India Isolation
+function isGlobalStoryClient(s) {
+  if (!s || !s.title) return false;
+  if (s.region === 'Global') return true;
+  const t = s.title.toLowerCase();
+  // Pure global indicators
+  const globalPattern = /\b(wall street|nasdaq|s&p 500|s&p|dow jones|dow|nyse|fed|federal reserve|fomc|jerome powell|us inflation|us economy|us jobs|us stocks|us treasury|treasury yields?|treasury futures|treasuries|dollar edges|dollar firms|dollar index|dxy|greenback|yen softens|yen|yuan|euro|pound sterling|trump|biden|white house|pentagon|yemen|houthi|saudi oil|saudi aramco|saudi arabia|saudi|opec|iran|tehran|israel|gaza|lebanon|beirut|middle east|ukraine|russia|putin|zelenskyy|china|chinese|beijing|xi jinping|taiwan\w*|south korea\w*|korea\w*|kospi|seoul|tokyo|japan\w*|nikkei|bank of japan|boj|australia\w*|south australian|sydney|bhp|rio tinto|indonesia\w*|prabowo|dalio|jakarta|ecb|european central bank|eurozone|frankfurt|london|ftse|bank of england|anthropic|openai|chatgpt|sam altman|coreweave|sellas|momentus|thanksgiving|global stocks|global equities)\b/i;
+
+  const indiaPattern = /\b(india|indian|rupee|inr|paise|nifty|sensex|rbi|sebi|dalal street|d-street|bse|nse|reliance|tcs|infosys|hdfc|icici|sbi|kotak|maruti|swiggy|zomato|paytm|tata steel|tata motors|adani)\b/i;
+
+  if (globalPattern.test(t)) {
+    if (!indiaPattern.test(t)) {
+      return true;
+    }
+  }
+
+  // Pure dollar-denominated earnings or commodity moves without India reference
+  if (/\$\s*\d|\busd\b|\bcents?\b/i.test(t) && !indiaPattern.test(t) && !/(₹|\brs\.?|\binr\b|\bcrore|\blakh)/i.test(t)) {
+    return true;
+  }
+
+  // Global commodities in $
+  if (/\b(copper|crude|brent|wti|metals? turmoil)\b.*(?:\$|\busd\b)|(?:\$|\busd\b).*(?:copper|crude|brent|wti)/i.test(t)) {
+    if (!indiaPattern.test(t)) {
+      return true;
+    }
+  }
+  return false;
+}
+
+// Substantive word extractor for near-duplicate detection
+function extractSubstantiveWords(title) {
+  if (!title) return new Set();
+  const filler = new Set('the a an and or to of in for on as at with by is are was were from after amid says said market markets stock stocks news live updates today what why how who when its their this that these those check here list into over under out up down than then share shares price prices point points gain gains jump jumps surge surges rally rallies rise rises slump slumps drop drops crash crashes tank tanks fall falls details ahead lies strong weak best top decode vs experts expert buzz buzzing trend trending key factors reasons behind buck trend day'.split(' '));
+  const words = title.toLowerCase().replace(/[^a-z0-9]/g, ' ').split(/\s+/).filter(w => w.length > 2 && !filler.has(w));
+  return new Set(words);
+}
+
+// Client-side story deduplication
+function isNearDuplicateStory(s1, s2) {
+  if (!s1 || !s2) return false;
+  if (s1.id && s2.id && s1.id === s2.id) return true;
+  const t1 = (s1.title || '').toLowerCase();
+  const t2 = (s2.title || '').toLowerCase();
+  if (t1 === t2) return true;
+
+  // Rupee / Currency intraday movement
+  if (/\b(rupee|inr|dollar)\b/i.test(t1) && /\b(rupee|inr|dollar)\b/i.test(t2)) {
+    if (/\b(decline|gain|rise|fall|drop|slump|paise|\$|against)\b/i.test(t1) && /\b(decline|gain|rise|fall|drop|slump|paise|\$|against)\b/i.test(t2)) {
+      return true;
+    }
+  }
+
+  // Intraday live market updates (e.g. Nifty slumps 350 pts vs Nifty down 200 pts)
+  if (/\b(sensex|nifty|market)\b/i.test(t1) && /\b(sensex|nifty|market)\b/i.test(t2)) {
+    if (/\b(down|slump|fall|falls|crash|drop|live|points|pts)\b/i.test(t1) && /\b(down|slump|fall|falls|crash|drop|live|points|pts)\b/i.test(t2)) {
+      return true;
+    }
+  }
+
+  // Check substantive word overlap
+  const w1 = extractSubstantiveWords(t1);
+  const w2 = extractSubstantiveWords(t2);
+  if (!w1.size || !w2.size) return false;
+  let inter = 0;
+  for (const w of w1) {
+    if (w2.has(w)) inter++;
+  }
+  const union = w1.size + w2.size - inter;
+  const jaccard = union > 0 ? inter / union : 0;
+  const minLen = Math.min(w1.size, w2.size);
+
+  // High word overlap or containment
+  if (jaccard >= 0.28 || (minLen >= 3 && inter / minLen >= 0.5) || inter >= 4) {
+    return true;
+  }
+
+  // Shared company + corporate action keywords
+  const sharedKeyWords = ['deal', 'acquisition', 'stake', 'merger', 'shares', 'stock', 'fall', 'falls', 'slump', 'drop', 'surge', 'rises', 'buy', 'buys'];
+  const hasSharedAction = sharedKeyWords.some(k => t1.includes(k) && t2.includes(k));
+  if (inter >= 2 && hasSharedAction) {
+    return true;
+  }
+
+  return false;
+}
+
 // Main Render Function
 function render() {
   const isMonday = new Date().toLocaleDateString('en-US', { ...ist, weekday: 'short' }) === 'Mon';
@@ -540,6 +641,7 @@ function render() {
     s.published &&
     s.published >= cutoff &&
     feedback[s.id] !== 'hide' &&
+    !isIrrelevantClient(s) &&
     (!$('new-only').checked || (s.published * 1000 > previousVisit))
   );
 
@@ -589,8 +691,8 @@ function render() {
   }
 
   let filtered = base;
-  if (region === 'Global') filtered = base.filter(s => s.region === 'Global');
-  else if (region === 'India') filtered = base.filter(s => s.region === 'India');
+  if (region === 'Global') filtered = base.filter(s => s.region === 'Global' || isGlobalStoryClient(s));
+  else if (region === 'India') filtered = base.filter(s => s.region === 'India' && !isGlobalStoryClient(s));
 
   // Render trending keywords list
   renderTrendingKeywords(filtered);
@@ -618,10 +720,17 @@ function render() {
     });
   }
 
+  // Deduplicate pool so redundant coverage does not fill multiple cards
+  const dedupedPool = [];
+  for (const s of pool) {
+    if (!dedupedPool.some(existing => isNearDuplicateStory(s, existing))) {
+      dedupedPool.push(s);
+    }
+  }
+
   // Primary front-page grid is strictly capped at FRONT_PAGE_LIMIT
-  primaryStories = pool.slice(0, FRONT_PAGE_LIMIT);
-  const primaryIds = new Set(primaryStories.map(s => s.id));
-  lowerStories = pool.slice(FRONT_PAGE_LIMIT);
+  primaryStories = dedupedPool.slice(0, FRONT_PAGE_LIMIT);
+  lowerStories = dedupedPool.slice(FRONT_PAGE_LIMIT);
   if (!highSignalCandidates.length) fallbackUsed = true;
 
   // Hero Carousel: Prioritize breaking, high-impact market drivers
@@ -638,10 +747,18 @@ function render() {
   }
 
   const mustKnow = filtered.filter(s => viewTier(s) === 'Must know');
-  const heroCandidates = activeLatestFirst
+  const sortedHeroCandidates = activeLatestFirst
     ? [...filtered].sort((a, b) => (Number(b.published) || 0) - (Number(a.published) || 0))
     : [...mustKnow].sort((a, b) => (heroRank(b) - heroRank(a)) || ((b.published || 0) - (a.published || 0)));
-  heroStories = heroCandidates.slice(0, 3);
+
+  // Deduplicate hero slides from each other
+  heroStories = [];
+  for (const c of sortedHeroCandidates) {
+    if (!heroStories.some(h => isNearDuplicateStory(c, h))) {
+      heroStories.push(c);
+      if (heroStories.length >= 3) break;
+    }
+  }
 
   if (heroStories.length) {
     if (heroIndex >= heroStories.length) heroIndex = 0;
@@ -655,9 +772,9 @@ function render() {
     $('hero-carousel').hidden = true;
   }
 
-  // Keep every high-signal story in the main grid, including drivers not on the rotating lead.
+  // Main grid: Exclude items featured in hero carousel OR near-duplicates of hero stories
   const heroIds = new Set(heroStories.map(s => s.id));
-  const gridStories = primaryStories.filter(s => !heroIds.has(s.id));
+  const gridStories = primaryStories.filter(s => !heroIds.has(s.id) && !heroStories.some(h => isNearDuplicateStory(s, h)));
 
   const width = window.innerWidth;
   const numCols = width <= 680 ? 1 : width <= 960 ? 2 : 3;
@@ -2806,10 +2923,13 @@ function getLatestSortedStories(options = {}) {
     // 1. Hide filter
     if (feedback[s.id] === 'hide') return false;
 
-    // 2. Unread filter
+    // 2. Irrelevant & non-financial filter
+    if (isIrrelevantClient(s)) return false;
+
+    // 3. Unread filter
     if (unreadOnly && isStoryRead(s.id)) return false;
 
-    // 3. Time cutoff (keep stories within horizon, but retain if published timestamp is slightly recent or unset)
+    // 4. Time cutoff (keep stories within horizon, but retain if published timestamp is slightly recent or unset)
     if (s.published && s.published < cutoff) return false;
 
     return true;
@@ -2827,8 +2947,8 @@ function getLatestSortedStories(options = {}) {
   }
 
   // If region is selected
-  if (targetRegion === 'Global') base = base.filter(s => s.region === 'Global');
-  else if (targetRegion === 'India') base = base.filter(s => s.region === 'India');
+  if (targetRegion === 'Global') base = base.filter(s => s.region === 'Global' || isGlobalStoryClient(s));
+  else if (targetRegion === 'India') base = base.filter(s => s.region === 'India' && !isGlobalStoryClient(s));
 
   // Strict sorting: latest news first
   base.sort((a, b) => {
@@ -2838,7 +2958,15 @@ function getLatestSortedStories(options = {}) {
     return (viewScore(b) || 0) - (viewScore(a) || 0);
   });
 
-  return base;
+  // Deduplicate near-redundant headlines
+  const deduped = [];
+  for (const s of base) {
+    if (!deduped.some(existing => isNearDuplicateStory(s, existing))) {
+      deduped.push(s);
+    }
+  }
+
+  return deduped;
 }
 
 function updateShortsFilterCounts() {
