@@ -126,6 +126,7 @@
     <section id="premarket-brief" class="premarket-brief" aria-label="Trading desk brief" hidden>
       <div class="premarket-header">
         <div class="premarket-title-wrap">
+          <div class="premarket-pulse-dot" aria-hidden="true"></div>
           <span id="premarket-tag" class="premarket-tag">PRE-MARKET DESK BRIEF</span>
           <span class="premarket-sep">·</span>
           <span id="premarket-bias-badge" class="premarket-bias-badge">--</span>
@@ -144,9 +145,11 @@
             </span>
           </button>
           <button id="signal-digest-btn" class="signal-digest-btn" title="View Executive Smart Signal Digest">
+            <span class="digest-icon">⚡</span>
             <span class="digest-label">Signal Digest</span>
           </button>
           <button id="share-card-btn" class="share-card-btn" title="Export & Share Pre-Market Card">
+            <span class="share-icon">↗</span>
             <span class="share-label">Share Card</span>
           </button>
           <button id="premarket-toggle" class="premarket-toggle" aria-expanded="true">Collapse ▴</button>
@@ -155,8 +158,11 @@
       <div id="premarket-body" class="premarket-body">
         <div id="premarket-cols" class="premarket-cols">
           <!-- Col 1: Indicated Open / Benchmark Pulse & Range -->
-          <div class="premarket-col">
-            <span id="pm-col-label" class="premarket-col-label">LATEST NIFTY QUOTE</span>
+          <div class="premarket-col pm-card">
+            <div class="pm-col-header-row">
+              <span id="pm-col-label" class="premarket-col-label">LATEST NIFTY QUOTE</span>
+              <span class="pm-card-badge">BENCHMARK</span>
+            </div>
             <div class="premarket-big-stat">
               <span id="pm-gift-nifty" class="pm-val">--</span>
               <span id="pm-gift-chg" class="pm-chg down">--</span>
@@ -182,21 +188,30 @@
           </div>
 
           <!-- Col 2: Institutional Flows & Sector Breadth -->
-          <div class="premarket-col">
+          <div class="premarket-col pm-card">
             <div class="pm-col-header-row">
               <span class="premarket-col-label">INSTITUTIONAL &amp; BREADTH</span>
               <span id="pm-vix-badge" class="pm-vix-badge" title="India VIX Volatility Gauge">VIX: --</span>
             </div>
             <div class="pm-flows-row">
-              <span class="flow-item"><span class="flow-name">FII:</span> <span id="pm-fii-val" class="flow-val down">--</span></span>
-              <span class="flow-sep">|</span>
-              <span class="flow-item"><span class="flow-name">DII:</span> <span id="pm-dii-val" class="flow-val up">--</span></span>
-              <span class="flow-sep">|</span>
-              <span class="flow-item"><span class="flow-name">Net:</span> <span id="pm-net-val" class="flow-val">--</span></span>
+              <div class="flow-item flow-fii">
+                <span class="flow-name">FII</span>
+                <span id="pm-fii-val" class="flow-val down">--</span>
+              </div>
+              <div class="flow-item flow-dii">
+                <span class="flow-name">DII</span>
+                <span id="pm-dii-val" class="flow-val up">--</span>
+              </div>
+              <div class="flow-item flow-net">
+                <span class="flow-name">NET</span>
+                <span id="pm-net-val" class="flow-val">--</span>
+              </div>
             </div>
             <div class="pm-breadth-row">
-              <span class="breadth-lbl">Sectors:</span>
-              <span id="pm-sector-ratio" class="breadth-ratio">--</span>
+              <div class="pm-breadth-header">
+                <span class="breadth-lbl">SECTORS:</span>
+                <span id="pm-sector-ratio" class="breadth-ratio">--</span>
+              </div>
               <div id="pm-sector-chips" class="pm-sector-chips-compact">
                 <!-- Sector chips populated dynamically -->
               </div>
@@ -205,22 +220,36 @@
           </div>
 
           <!-- Col 3: Overnight Macro -->
-          <div class="premarket-col">
-            <span class="premarket-col-label">OVERNIGHT MACRO CUES</span>
-            <div class="pm-overnight-grid">
-              <span class="cue-item"><span class="cue-k">S&amp;P 500:</span> <span id="pm-sp-val" class="cue-v down">--</span></span>
-              <span class="cue-item"><span class="cue-k">Brent:</span> <span id="pm-brent-val" class="cue-v up">--</span></span>
-              <span class="cue-item"><span class="cue-k">Nasdaq:</span> <span id="pm-nasdaq-val" class="cue-v down">--</span></span>
-              <span class="cue-item"><span class="cue-k">US 10Y:</span> <span id="pm-us10y-val" class="cue-v">--</span></span>
+          <div class="premarket-col pm-card">
+            <div class="pm-col-header-row">
+              <span class="premarket-col-label">OVERNIGHT MACRO CUES</span>
+              <span id="pm-macro-date" class="pm-card-badge">GLOBAL CLOSE</span>
             </div>
-            <p id="pm-gift-sub" class="pm-sub">--</p>
+            <div class="pm-overnight-grid">
+              <div class="cue-card">
+                <span class="cue-k">S&amp;P 500</span>
+                <span id="pm-sp-val" class="cue-v down">--</span>
+              </div>
+              <div class="cue-card">
+                <span class="cue-k">Nasdaq</span>
+                <span id="pm-nasdaq-val" class="cue-v down">--</span>
+              </div>
+              <div class="cue-card">
+                <span class="cue-k">Brent Oil</span>
+                <span id="pm-brent-val" class="cue-v up">--</span>
+              </div>
+              <div class="cue-card">
+                <span class="cue-k">US 10Y Yield</span>
+                <span id="pm-us10y-val" class="cue-v">--</span>
+              </div>
+            </div>
           </div>
         </div>
 
         <!-- 3-Pillar Post-Market / Evening Trading Desk (Active after 3:30 PM IST) -->
         <div id="postmarket-cols" class="postmarket-cols" hidden>
           <!-- Pillar 1: MCX & Commodity Pulse -->
-          <div class="premarket-col postmarket-pillar-col">
+          <div class="premarket-col postmarket-pillar-col pm-card">
             <div class="pm-col-header-row">
               <span class="premarket-col-label">🛢️ MCX &amp; COMMODITIES PULSE</span>
               <span class="pillar-status-badge live">● MCX LIVE</span>
@@ -235,7 +264,7 @@
           </div>
 
           <!-- Pillar 2: After-Hours Corporate Earnings & Board Filings -->
-          <div class="premarket-col postmarket-pillar-col">
+          <div class="premarket-col postmarket-pillar-col pm-card">
             <div class="pm-col-header-row">
               <span class="premarket-col-label">📑 AFTER-MARKET EARNINGS &amp; WIRE</span>
               <span class="pillar-status-badge prep">TOMORROW PREP</span>
@@ -246,7 +275,7 @@
           </div>
 
           <!-- Pillar 3: Global Markets & Overnight Matrix -->
-          <div class="premarket-col postmarket-pillar-col">
+          <div class="premarket-col postmarket-pillar-col pm-card">
             <div class="pm-col-header-row">
               <span class="premarket-col-label">🌐 GLOBAL INDICES &amp; OVERNIGHT</span>
               <span id="pm-global-vix-pill" class="pm-vix-badge">VIX: --</span>
@@ -262,7 +291,7 @@
         </div>
 
         <!-- Floor Pivots & Regime Strip -->
-        <div id="pm-pivots-strip" class="pm-pivots-strip">
+        <div id="pm-pivots-strip" class="pm-pivots-strip pm-card">
           <div class="pivots-title-row">
             <div class="pivots-title-wrap">
               <span class="pivots-title">CALCULATED FLOOR PIVOTS</span>
@@ -274,27 +303,36 @@
           <div class="pivots-grid">
             <div class="pivot-index-row">
               <span class="pvt-idx-name">NIFTY 50</span>
-              <span class="pvt-cell"><span class="pvt-lbl">S2</span> <span id="pm-nifty-s2" class="pvt-num">--</span></span>
-              <span class="pvt-cell"><span class="pvt-lbl">S1</span> <span id="pm-nifty-s1" class="pvt-num">--</span></span>
-              <span class="pvt-cell pivot-mid"><span class="pvt-lbl">P</span> <span id="pm-nifty-pivot" class="pvt-num">--</span></span>
-              <span class="pvt-cell"><span class="pvt-lbl">R1</span> <span id="pm-nifty-r1" class="pvt-num">--</span></span>
-              <span class="pvt-cell"><span class="pvt-lbl">R2</span> <span id="pm-nifty-r2" class="pvt-num">--</span></span>
+              <span class="pvt-cell pvt-s2"><span class="pvt-lbl">S2</span> <span id="pm-nifty-s2" class="pvt-num">--</span></span>
+              <span class="pvt-cell pvt-s1"><span class="pvt-lbl">S1</span> <span id="pm-nifty-s1" class="pvt-num">--</span></span>
+              <span class="pvt-cell pivot-mid"><span class="pvt-lbl">PIVOT</span> <span id="pm-nifty-pivot" class="pvt-num">--</span></span>
+              <span class="pvt-cell pvt-r1"><span class="pvt-lbl">R1</span> <span id="pm-nifty-r1" class="pvt-num">--</span></span>
+              <span class="pvt-cell pvt-r2"><span class="pvt-lbl">R2</span> <span id="pm-nifty-r2" class="pvt-num">--</span></span>
             </div>
             <div class="pivot-index-row">
               <span class="pvt-idx-name">BANK NIFTY</span>
-              <span class="pvt-cell"><span class="pvt-lbl">S2</span> <span id="pm-bn-s2" class="pvt-num">--</span></span>
-              <span class="pvt-cell"><span class="pvt-lbl">S1</span> <span id="pm-bn-s1" class="pvt-num">--</span></span>
-              <span class="pvt-cell pivot-mid"><span class="pvt-lbl">P</span> <span id="pm-bn-pivot" class="pvt-num">--</span></span>
-              <span class="pvt-cell"><span class="pvt-lbl">R1</span> <span id="pm-bn-r1" class="pvt-num">--</span></span>
-              <span class="pvt-cell"><span class="pvt-lbl">R2</span> <span id="pm-bn-r2" class="pvt-num">--</span></span>
+              <span class="pvt-cell pvt-s2"><span class="pvt-lbl">S2</span> <span id="pm-bn-s2" class="pvt-num">--</span></span>
+              <span class="pvt-cell pvt-s1"><span class="pvt-lbl">S1</span> <span id="pm-bn-s1" class="pvt-num">--</span></span>
+              <span class="pvt-cell pivot-mid"><span class="pvt-lbl">PIVOT</span> <span id="pm-bn-pivot" class="pvt-num">--</span></span>
+              <span class="pvt-cell pvt-r1"><span class="pvt-lbl">R1</span> <span id="pm-bn-r1" class="pvt-num">--</span></span>
+              <span class="pvt-cell pvt-r2"><span class="pvt-lbl">R2</span> <span id="pm-bn-r2" class="pvt-num">--</span></span>
             </div>
           </div>
         </div>
 
         <!-- Desk Takeaway -->
         <div class="premarket-takeaway">
-          <span class="takeaway-label">Desk Take:</span>
-          <span id="pm-takeaway-text" class="takeaway-text">Awaiting sourced market readings.</span>
+          <div class="takeaway-header">
+            <span class="takeaway-icon">⚡</span>
+            <span class="takeaway-label">DESK SYNTHESIS</span>
+          </div>
+          <div id="pm-takeaway-text" class="takeaway-text">Awaiting sourced market readings.</div>
+        </div>
+
+        <!-- Subtle Metadata Footer -->
+        <div class="pm-meta-footer">
+          <span class="pm-meta-icon">ℹ</span>
+          <span id="pm-gift-sub" class="pm-sub">--</span>
         </div>
       </div>
     </section>

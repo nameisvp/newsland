@@ -1025,7 +1025,8 @@ function renderPremarket(data) {
   }
   if ($('pm-gift-chg')) {
     const sign = isUp ? '+' : '';
-    $('pm-gift-chg').textContent = pts == null ? 'Unavailable' : `${sign}${pts} pts (${sign}${pct}%)`;
+    const arrow = isUp ? '▲ ' : '▼ ';
+    $('pm-gift-chg').textContent = pts == null ? 'Unavailable' : `${arrow}${sign}${pts} pts (${sign}${pct}%)`;
     $('pm-gift-chg').className = `pm-chg ${isUp ? 'up' : 'down'}`;
   }
   if ($('pm-collapsed-price')) {
@@ -1033,14 +1034,15 @@ function renderPremarket(data) {
   }
   if ($('pm-collapsed-chg')) {
     const sign = isUp ? '+' : '';
-    $('pm-collapsed-chg').textContent = pts == null ? '' : `${sign}${pts} pts (${sign}${pct}%)`;
+    const arrow = isUp ? '▲ ' : '▼ ';
+    $('pm-collapsed-chg').textContent = pts == null ? '' : `${arrow}${sign}${pts} pts (${sign}${pct}%)`;
     $('pm-collapsed-chg').className = `pm-collapsed-chg ${isUp ? 'up' : 'down'}`;
   }
 
   initSessionMonitorState();
 
   if ($('pm-gift-sub')) {
-    $('pm-gift-sub').textContent = `Quote session: ${data.quote_date || 'date unavailable'} · ${data.quote_source || 'source unavailable'} · Previous close ${data.nifty_prev_close || '--'} · Fetched ${data.quote_updated ? new Date(data.quote_updated).toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' }) + ' IST' : 'time unavailable'}`;
+    $('pm-gift-sub').textContent = `Quote session: ${data.quote_date || 'date unavailable'} · Source: ${data.quote_source || 'yfinance'} · Prev Close: ${data.nifty_prev_close || '--'} · Fetched: ${data.quote_updated ? new Date(data.quote_updated).toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' }) + ' IST' : 'time unavailable'}`;
   }
 
   const isPostMarket = (session.id === 'postmarket' || session.id === 'overnight');
@@ -1072,8 +1074,9 @@ function renderPremarket(data) {
       $('pm-net-val').className = `flow-val ${net >= 0 ? 'up' : 'down'}`;
     }
     if ($('pm-flows-sub')) {
-      const trend = `${data.fii_dii.date || 'Previous session'} · ${net >= 0 ? 'Net institutional buying' : 'Net institutional absorption'}`;
-      $('pm-flows-sub').textContent = `${trend} (${netSign}₹${Math.abs(Math.round(net)).toLocaleString('en-IN')} Cr)`;
+      const sessionDate = data.fii_dii.date || 'Previous session';
+      const actionDesc = net >= 0 ? 'Net institutional buying' : 'Net institutional absorption';
+      $('pm-flows-sub').textContent = `${sessionDate} · ${actionDesc} (${netSign}₹${Math.abs(Math.round(net)).toLocaleString('en-IN')} Cr)`;
     }
   } else {
     if ($('pm-fii-val')) $('pm-fii-val').textContent = '--';
@@ -1106,27 +1109,36 @@ function renderPremarket(data) {
     const nq = data.overnight.NASDAQ;
     const us10 = data.overnight.US10Y;
     if (sp && $('pm-sp-val')) {
-      $('pm-sp-val').textContent = `${sp.date || "date unavailable"} · ${sp.val} (${sp.pct >= 0 ? '+' : ''}${sp.pct}%)`;
-      $('pm-sp-val').className = `cue-v ${sp.pct >= 0 ? 'up' : 'down'}`;
+      const sign = (sp.pct || 0) >= 0 ? '+' : '';
+      const pctStr = sp.pct != null ? `${sign}${sp.pct}%` : '';
+      $('pm-sp-val').innerHTML = `<span class="cue-num">${esc(sp.val)}</span>${pctStr ? `<span class="cue-pill ${(sp.pct || 0) >= 0 ? 'up' : 'down'}">${pctStr}</span>` : ''}`;
+      $('pm-sp-val').className = `cue-v ${(sp.pct || 0) >= 0 ? 'up' : 'down'}`;
     }
     if (nq && $('pm-nasdaq-val')) {
-      $('pm-nasdaq-val').textContent = `${nq.date || "date unavailable"} · ${nq.val} (${nq.pct >= 0 ? '+' : ''}${nq.pct}%)`;
-      $('pm-nasdaq-val').className = `cue-v ${nq.pct >= 0 ? 'up' : 'down'}`;
+      const sign = (nq.pct || 0) >= 0 ? '+' : '';
+      const pctStr = nq.pct != null ? `${sign}${nq.pct}%` : '';
+      $('pm-nasdaq-val').innerHTML = `<span class="cue-num">${esc(nq.val)}</span>${pctStr ? `<span class="cue-pill ${(nq.pct || 0) >= 0 ? 'up' : 'down'}">${pctStr}</span>` : ''}`;
+      $('pm-nasdaq-val').className = `cue-v ${(nq.pct || 0) >= 0 ? 'up' : 'down'}`;
     }
     if (us10 && $('pm-us10y-val')) {
-      $('pm-us10y-val').textContent = `${us10.date || "date unavailable"} · ${us10.val}`;
+      $('pm-us10y-val').innerHTML = `<span class="cue-num">${esc(us10.val)}</span><span class="cue-pill neutral">10Y</span>`;
+      $('pm-us10y-val').className = 'cue-v';
+    }
+    if ($('pm-macro-date') && (sp?.date || nq?.date)) {
+      $('pm-macro-date').textContent = `${sp?.date || nq?.date} Close`;
     }
   }
   if (data.brent && $('pm-brent-val')) {
     const isUp = data.brent.direction === 'up';
     const sign = isUp ? '+' : '';
-    $('pm-brent-val').textContent = `${data.brent.price} (${sign}${data.brent.change_pct}%)`;
+    const pctStr = data.brent.change_pct != null ? `${sign}${data.brent.change_pct}%` : '';
+    $('pm-brent-val').innerHTML = `<span class="cue-num">${esc(data.brent.price)}</span>${pctStr ? `<span class="cue-pill ${isUp ? 'up' : 'down'}">${pctStr}</span>` : ''}`;
     $('pm-brent-val').className = `cue-v ${isUp ? 'up' : 'down'}`;
   }
 
   for (const id of ['pm-sp-val', 'pm-nasdaq-val', 'pm-us10y-val']) {
     const key = { 'pm-sp-val': 'SP500', 'pm-nasdaq-val': 'NASDAQ', 'pm-us10y-val': 'US10Y' }[id];
-    if (!data.overnight?.[key] && $(id)) $(id).textContent = 'Unavailable';
+    if (!data.overnight?.[key] && $(id)) $(id).innerHTML = '<span class="cue-num">--</span>';
   }
   for (const prefix of ['pm-nifty', 'pm-bn']) for (const key of ['s2', 's1', 'pivot', 'r1', 'r2']) {
     if ($(`${prefix}-${key}`)) $(`${prefix}-${key}`).textContent = '--';
@@ -1227,7 +1239,14 @@ function renderPremarket(data) {
       .replace(/Pivots are calculated references, not confirmed support or resistance\.\s*/gi, '')
       .replace(/Latest available Nifty quote:\s*[\d,.]+\s*\([^)]*\)\.\s*/gi, '')
       .trim();
-    $('pm-takeaway-text').textContent = cleanTake || data.trader_take;
+    if (!cleanTake) cleanTake = data.trader_take;
+
+    let formattedHtml = esc(cleanTake)
+      .replace(/(above the [\d,]+ pivot|below the [\d,]+ pivot)/gi, '<strong class="takeaway-highlight">$1</strong>')
+      .replace(/(Next calculated resistance above this reading:\s*[\d,]+)/gi, '<span class="takeaway-target">$1</span>')
+      .replace(/(Market regime:\s*[^.]+)/gi, '<span class="takeaway-regime">$1</span>')
+      .replace(/(Sector breadth:\s*[^.]+)/gi, '<span class="takeaway-breadth">$1</span>');
+    $('pm-takeaway-text').innerHTML = formattedHtml;
   }
 }
 
