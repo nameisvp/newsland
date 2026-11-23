@@ -1343,16 +1343,16 @@ html[data-theme="night"] .ticker-ruler-band {
 
 .pm-card {
   background: var(--card-bg);
-  border: 1px solid var(--border-whisper);
+  border: 1px solid var(--border);
   border-radius: 10px;
   padding: 12px 14px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.03);
   transition: border-color 0.15s ease, box-shadow 0.15s ease;
 }
 
 .pm-card:hover {
-  border-color: var(--border);
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  border-color: var(--ink-muted);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .pm-card-badge {
@@ -1655,32 +1655,33 @@ html[data-theme="night"] .pm-ruler-band {
 .cue-card {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: 6px 8px;
+  justify-content: space-between;
+  padding: 6px 9px;
   background: var(--bg-subtle);
   border: 1px solid var(--border-whisper);
   border-radius: 6px;
-  gap: 2px;
+  gap: 3px;
+  min-height: 42px;
 }
 
 .cue-k {
-  font-size: 9px;
+  font-size: 8.5px;
   font-weight: 750;
   color: var(--ink-secondary);
   text-transform: uppercase;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.04em;
 }
 
 .cue-v {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
   gap: 4px;
 }
 
 .cue-num {
   font-size: 11.5px;
-  font-weight: 750;
+  font-weight: 800;
   color: var(--ink);
   font-family: var(--font-mono, monospace);
   font-variant-numeric: tabular-nums;
@@ -1689,63 +1690,132 @@ html[data-theme="night"] .pm-ruler-band {
 .cue-pill {
   font-size: 9px;
   font-weight: 750;
-  padding: 1px 4px;
-  border-radius: 3px;
+  padding: 1.5px 5px;
+  border-radius: 4px;
   font-variant-numeric: tabular-nums;
   font-family: var(--font-mono, monospace);
+  white-space: nowrap;
 }
 
 .cue-pill.up {
   color: var(--green-ticker);
   background: rgba(0, 135, 90, 0.1);
+  border: 1px solid rgba(0, 135, 90, 0.2);
 }
 
 .cue-pill.down {
   color: var(--red-ticker);
   background: rgba(222, 53, 11, 0.1);
+  border: 1px solid rgba(222, 53, 11, 0.2);
 }
 
 .cue-pill.neutral {
   color: var(--ink-muted);
   background: var(--border-whisper);
+  border: 1px solid var(--border-light);
 }
 
 .premarket-takeaway {
   margin-top: 10px;
-  padding: 9px 13px;
+  padding: 10px 14px;
   background: var(--card-bg);
-  border: 1px solid var(--border-whisper);
+  border: 1px solid var(--border);
   border-left: 3.5px solid var(--accent-red);
   border-radius: 0 8px 8px 0;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.03);
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 6px;
 }
 
 .takeaway-header {
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 6px;
 }
 
 .takeaway-icon {
-  font-size: 10.5px;
+  font-size: 11px;
   color: var(--accent-red);
 }
 
 .takeaway-label {
   font-size: 9.5px;
   font-weight: 850;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.07em;
   text-transform: uppercase;
   color: var(--accent-red);
 }
 
 .takeaway-text {
   font-size: 11.5px;
-  line-height: 1.5;
+  line-height: 1.45;
   color: var(--ink-secondary);
+}
+
+.takeaway-chips {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  margin-top: 2px;
+}
+
+.takeaway-chip {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  background: var(--bg-subtle);
+  border: 1px solid var(--border-whisper);
+  border-radius: 6px;
+  padding: 6px 10px;
+}
+
+.takeaway-chip-k {
+  font-size: 8.5px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  color: var(--ink-muted);
+  text-transform: uppercase;
+}
+
+.takeaway-chip-v {
+  font-size: 11px;
+  font-weight: 650;
+  color: var(--ink);
+  line-height: 1.35;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.stance-dot {
+  font-size: 9px;
+  line-height: 1;
+}
+
+.stance-dot.up { color: var(--green-ticker); }
+.stance-dot.down { color: var(--red-ticker); }
+
+.regime-pill {
+  font-size: 9px;
+  font-weight: 800;
+  padding: 1px 5px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.regime-pill.up {
+  color: var(--green-ticker);
+  background: rgba(0, 135, 90, 0.1);
+  border: 1px solid rgba(0, 135, 90, 0.25);
+}
+
+.regime-pill.down {
+  color: var(--red-ticker);
+  background: rgba(222, 53, 11, 0.1);
+  border: 1px solid rgba(222, 53, 11, 0.25);
 }
 
 .takeaway-highlight {
@@ -3134,10 +3204,19 @@ html[data-font="sans"] .card-title {
     flex-wrap: wrap;
     gap: 4px;
   }
+  .pivot-header-row {
+    grid-template-columns: 78px repeat(5, minmax(58px, 1fr));
+    gap: 4px;
+    font-size: 8px;
+  }
   .pivot-index-row {
     grid-template-columns: 78px repeat(5, minmax(58px, 1fr));
     gap: 4px;
     font-size: 9.5px;
+  }
+  .takeaway-chips {
+    grid-template-columns: 1fr;
+    gap: 6px;
   }
 
   .feed-columns {
@@ -3283,9 +3362,9 @@ html[data-font="sans"] .card-title {
   margin-top: 12px;
   padding: 12px 14px;
   background: var(--card-bg);
-  border: 1px solid var(--border-whisper);
+  border: 1px solid var(--border);
   border-radius: 10px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.03);
   font-family: var(--font-sans);
 }
 
@@ -3320,8 +3399,31 @@ html[data-font="sans"] .card-title {
 .pivots-grid {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 5px;
 }
+
+.pivot-header-row {
+  display: grid;
+  grid-template-columns: 92px repeat(5, minmax(0, 1fr));
+  align-items: center;
+  gap: 6px;
+  padding: 0 2px;
+}
+
+.pvt-hdr-cell {
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+  text-align: center;
+}
+
+.pvt-hdr-cell.pvt-hdr-s2 { color: #64748b; }
+.pvt-hdr-cell.pvt-hdr-s1 { color: var(--green-ticker); }
+.pvt-hdr-cell.pvt-hdr-pivot { color: var(--accent-red); font-weight: 900; }
+.pvt-hdr-cell.pvt-hdr-r1 { color: var(--red-ticker); }
+.pvt-hdr-cell.pvt-hdr-r2 { color: #b91c1c; }
 
 .pivot-index-row {
   display: grid;
@@ -3333,7 +3435,7 @@ html[data-font="sans"] .card-title {
 
 .pvt-idx-name {
   font-size: 9.5px;
-  font-weight: 800;
+  font-weight: 850;
   letter-spacing: 0.04em;
   color: var(--ink);
   background: var(--bg-subtle);
@@ -3349,7 +3451,7 @@ html[data-font="sans"] .card-title {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 4px 6px;
+  padding: 5px 6px;
   background: var(--bg-subtle);
   border: 1px solid var(--border-whisper);
   border-radius: 5px;

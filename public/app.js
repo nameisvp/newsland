@@ -1074,9 +1074,9 @@ function renderPremarket(data) {
       $('pm-net-val').className = `flow-val ${net >= 0 ? 'up' : 'down'}`;
     }
     if ($('pm-flows-sub')) {
-      const sessionDate = data.fii_dii.date || 'Previous session';
+      const sessionDate = data.fii_dii.date ? data.fii_dii.date.replace(/\s*\(Prev Close\)/gi, '') : 'Previous session';
       const actionDesc = net >= 0 ? 'Net institutional buying' : 'Net institutional absorption';
-      $('pm-flows-sub').textContent = `${sessionDate} · ${actionDesc} (${netSign}₹${Math.abs(Math.round(net)).toLocaleString('en-IN')} Cr)`;
+      $('pm-flows-sub').textContent = `${sessionDate} · ${actionDesc}`;
     }
   } else {
     if ($('pm-fii-val')) $('pm-fii-val').textContent = '--';
@@ -1233,20 +1233,52 @@ function renderPremarket(data) {
     }
   }
 
-  // Desk Takeaway
-  if (data.trader_take && $('pm-takeaway-text')) {
-    let cleanTake = data.trader_take
-      .replace(/Pivots are calculated references, not confirmed support or resistance\.\s*/gi, '')
-      .replace(/Latest available Nifty quote:\s*[\d,.]+\s*\([^)]*\)\.\s*/gi, '')
-      .trim();
-    if (!cleanTake) cleanTake = data.trader_take;
+  // Desk Takeaway - Structured Executive Highlights
+  if ($('pm-takeaway-text')) {
+    const np = data.pivots?.nifty;
+    const post = data.posture;
+    const sb = data.sector_breadth;
 
-    let formattedHtml = esc(cleanTake)
-      .replace(/(above the [\d,]+ pivot|below the [\d,]+ pivot)/gi, '<strong class="takeaway-highlight">$1</strong>')
-      .replace(/(Next calculated resistance above this reading:\s*[\d,]+)/gi, '<span class="takeaway-target">$1</span>')
-      .replace(/(Market regime:\s*[^.]+)/gi, '<span class="takeaway-regime">$1</span>')
-      .replace(/(Sector breadth:\s*[^.]+)/gi, '<span class="takeaway-breadth">$1</span>');
-    $('pm-takeaway-text').innerHTML = formattedHtml;
+    if (np && post) {
+      const priceNum = parseFloat(String(data.live_nifty_price || '').replace(/,/g, ''));
+      const isAbovePivot = !isNaN(priceNum) && priceNum >= (np.pivot || 0);
+      const stanceText = isAbovePivot
+        ? `Above Pivot (${(np.pivot || '--').toLocaleString('en-IN')}) · Next Target R1: ${(np.r1 || '--').toLocaleString('en-IN')}`
+        : `Below Pivot (${(np.pivot || '--').toLocaleString('en-IN')}) · Next Support S1: ${(np.s1 || '--').toLocaleString('en-IN')}`;
+
+      const dmaSign = (post.pct_dma200 || 0) >= 0 ? '+' : '';
+      const isBull = (post.regime || '').includes('UPTREND');
+
+      let breadthDesc = sb?.summary || '--';
+      if (sb?.sectors && sb.sectors.length >= 2) {
+        const topS = sb.sectors[0];
+        const botS = sb.sectors[sb.sectors.length - 1];
+        breadthDesc = `${sb.summary} · Top: ${topS.name} (${topS.pct >= 0 ? '+' : ''}${topS.pct}%), Lag: ${botS.name} (${botS.pct >= 0 ? '+' : ''}${botS.pct}%)`;
+      }
+
+      $('pm-takeaway-text').innerHTML = `
+        <div class="takeaway-chips">
+          <div class="takeaway-chip">
+            <span class="takeaway-chip-k">PIVOT STANCE</span>
+            <span class="takeaway-chip-v"><span class="stance-dot ${isAbovePivot ? 'up' : 'down'}">●</span> ${stanceText}</span>
+          </div>
+          <div class="takeaway-chip">
+            <span class="takeaway-chip-k">MARKET REGIME</span>
+            <span class="takeaway-chip-v"><span class="regime-pill ${isBull ? 'up' : 'down'}">${esc(post.regime || 'OBSERVED')}</span> ${dmaSign}${post.pct_dma200}% vs 200-DMA</span>
+          </div>
+          <div class="takeaway-chip">
+            <span class="takeaway-chip-k">SECTOR BREADTH</span>
+            <span class="takeaway-chip-v">${esc(breadthDesc)}</span>
+          </div>
+        </div>
+      `;
+    } else if (data.trader_take) {
+      let cleanTake = data.trader_take
+        .replace(/Pivots are calculated references, not confirmed support or resistance\.\s*/gi, '')
+        .replace(/Latest available Nifty quote:\s*[\d,.]+\s*\([^)]*\)\.\s*/gi, '')
+        .trim();
+      $('pm-takeaway-text').textContent = cleanTake || data.trader_take;
+    }
   }
 }
 
