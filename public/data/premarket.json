@@ -1,8 +1,8 @@
 {
-  "updated": "2026-11-24T06:34:35.770722+00:00",
+  "updated": "2026-11-24T18:14:58.725852+00:00",
   "schema_version": 2,
   "is_live": false,
-  "quote_updated": "2026-11-24T06:34:35.770186+00:00",
+  "quote_updated": "2026-11-24T18:14:58.725444+00:00",
   "quote_date": "2026-11-23",
   "quote_source": "yfinance",
   "live_bias_label": "LATEST AVAILABLE QUOTE",
@@ -26,31 +26,31 @@
   },
   "overnight": {
     "SP500": {
-      "val": "7,237",
-      "pct": 4.73,
-      "date": "2026-11-23"
+      "val": "7,200",
+      "pct": -0.51,
+      "date": "2026-11-24"
     },
     "NASDAQ": {
-      "val": "24,090",
-      "pct": 6.51,
-      "date": "2026-11-23"
+      "val": "23,739",
+      "pct": -1.45,
+      "date": "2026-11-24"
     },
     "US10Y": {
-      "val": "4.92%",
-      "pct": 0.12,
-      "date": "2026-11-23"
+      "val": "4.90%",
+      "pct": -0.28,
+      "date": "2026-11-24"
     }
   },
   "brent": {
     "key": "BRENT",
     "quote_date": "2026-11-24",
     "label": "Brent Crude",
-    "price": "86.38",
-    "price_raw": 86.38,
-    "prev_close": 86.32,
-    "prev_close_fmt": "86.32",
-    "change": 0.06,
-    "change_pct": 0.07,
+    "price": "87.94",
+    "price_raw": 87.94,
+    "prev_close": 86.14,
+    "prev_close_fmt": "86.14",
+    "change": 1.8,
+    "change_pct": 2.09,
     "direction": "up",
     "unit": "USD/bbl",
     "range_52w": {
@@ -58,29 +58,29 @@
       "high": 126.1,
       "low_fmt": "58.72",
       "high_fmt": "126.10",
-      "pos_pct": 41.1,
-      "pct_from_high": -31.5
+      "pos_pct": 43.4,
+      "pct_from_high": -30.26
     }
   },
   "usdinr": {
     "key": "USDINR",
     "quote_date": "2026-11-24",
     "label": "INR / USD",
-    "price": "92.90",
-    "price_raw": 92.9,
+    "price": "92.71",
+    "price_raw": 92.71,
     "prev_close": 92.9,
     "prev_close_fmt": "92.90",
-    "change": 0.0,
-    "change_pct": 0.0,
-    "direction": "up",
+    "change": -0.19,
+    "change_pct": -0.2,
+    "direction": "down",
     "unit": "",
     "range_52w": {
       "low": 85.86,
       "high": 97.05,
       "low_fmt": "85.86",
       "high_fmt": "97.05",
-      "pos_pct": 62.9,
-      "pct_from_high": -4.28
+      "pos_pct": 61.2,
+      "pct_from_high": -4.48
     }
   },
   "pivots": {
@@ -154,7 +154,7 @@
       "num": "02",
       "title": "Crude and input costs",
       "bias": "Context",
-      "desc": "Latest Brent quote: 86.38 USD/bbl (+0.07%). Higher crude can raise import and input costs; lower crude can ease them. This quote alone does not establish the cause of the move."
+      "desc": "Latest Brent quote: 87.94 USD/bbl (+2.09%). Higher crude can raise import and input costs; lower crude can ease them. This quote alone does not establish the cause of the move."
     },
     {
       "num": "03",
@@ -170,12 +170,12 @@
         "key": "BRENT",
         "quote_date": "2026-11-24",
         "label": "Brent Crude",
-        "price": "86.38",
-        "price_raw": 86.38,
-        "prev_close": 86.32,
-        "prev_close_fmt": "86.32",
-        "change": 0.06,
-        "change_pct": 0.07,
+        "price": "87.94",
+        "price_raw": 87.94,
+        "prev_close": 86.14,
+        "prev_close_fmt": "86.14",
+        "change": 1.8,
+        "change_pct": 2.09,
         "direction": "up",
         "unit": "USD/bbl",
         "range_52w": {
@@ -183,62 +183,62 @@
           "high": 126.1,
           "low_fmt": "58.72",
           "high_fmt": "126.10",
-          "pos_pct": 41.1,
-          "pct_from_high": -31.5
+          "pos_pct": 43.4,
+          "pct_from_high": -30.26
         }
       },
       "wti": {
         "key": "WTI",
         "quote_date": "2026-11-24",
         "label": "WTI Crude",
-        "price": "79.74",
-        "price_raw": 79.74,
-        "prev_close": 79.79,
-        "prev_close_fmt": "79.79",
-        "change": -0.05,
-        "change_pct": -0.06,
-        "direction": "down",
+        "price": "81.38",
+        "price_raw": 81.38,
+        "prev_close": 79.59,
+        "prev_close_fmt": "79.59",
+        "change": 1.79,
+        "change_pct": 2.25,
+        "direction": "up",
         "unit": "USD/bbl",
         "range_52w": {
           "low": 54.98,
           "high": 119.48,
           "low_fmt": "54.98",
           "high_fmt": "119.48",
-          "pos_pct": 38.4,
-          "pct_from_high": -33.26
+          "pos_pct": 40.9,
+          "pct_from_high": -31.89
         }
       },
       "natgas": {
         "key": "NATGAS",
         "quote_date": "2026-11-24",
         "label": "Natural Gas",
-        "price": "3.54",
-        "price_raw": 3.544,
-        "prev_close": 3.545,
-        "prev_close_fmt": "3.55",
-        "change": -0.001,
-        "change_pct": -0.03,
-        "direction": "down",
+        "price": "3.70",
+        "price_raw": 3.703,
+        "prev_close": 3.542,
+        "prev_close_fmt": "3.54",
+        "change": 0.161,
+        "change_pct": 4.55,
+        "direction": "up",
         "unit": "USD/MMBtu",
         "range_52w": {
           "low": 2.48,
           "high": 7.83,
           "low_fmt": "2.48",
           "high_fmt": "7.83",
-          "pos_pct": 19.9,
-          "pct_from_high": -54.72
+          "pos_pct": 22.8,
+          "pct_from_high": -52.69
         }
       },
       "gold": {
         "key": "GOLD",
         "quote_date": "2026-11-24",
         "label": "Gold",
-        "price": "3,620.60",
-        "price_raw": 3620.6001,
-        "prev_close": 3630.2,
-        "prev_close_fmt": "3,630.20",
-        "change": -9.5999,
-        "change_pct": -0.26,
+        "price": "3,563.30",
+        "price_raw": 3563.3,
+        "prev_close": 3630.7,
+        "prev_close_fmt": "3,630.70",
+        "change": -67.3999,
+        "change_pct": -1.86,
         "direction": "down",
         "unit": "USD/oz",
         "range_52w": {
@@ -246,20 +246,20 @@
           "high": 5586.2,
           "low_fmt": "3,502.90",
           "high_fmt": "5,586.20",
-          "pos_pct": 5.6,
-          "pct_from_high": -35.19
+          "pos_pct": 2.9,
+          "pct_from_high": -36.21
         }
       },
       "silver": {
         "key": "SILVER",
         "quote_date": "2026-11-24",
         "label": "Silver",
-        "price": "42.03",
-        "price_raw": 42.035,
-        "prev_close": 42.405,
-        "prev_close_fmt": "42.40",
-        "change": -0.37,
-        "change_pct": -0.87,
+        "price": "40.83",
+        "price_raw": 40.83,
+        "prev_close": 42.45,
+        "prev_close_fmt": "42.45",
+        "change": -1.62,
+        "change_pct": -3.82,
         "direction": "down",
         "unit": "USD/oz",
         "range_52w": {
@@ -267,40 +267,35 @@
           "high": 121.3,
           "low_fmt": "40.93",
           "high_fmt": "121.30",
-          "pos_pct": 1.4,
-          "pct_from_high": -65.35
+          "pos_pct": 0.0,
+          "pct_from_high": -66.34
         }
       },
       "catalyst": {
-        "title": "Japanese bond yields fall as lower oil prices ease inflation concerns",
-        "url": "https://economictimes.indiatimes.com/markets/bonds/japanese-bond-yields-fall-as-lower-oil-prices-ease-inflation-concerns/articleshow/136118046.cms",
-        "why_it_matters": "Key determinant of central bank interest rate paths; elevated prints restrict policy easing and compress real yields.",
+        "title": "China, India set for record Russian oil imports in 2026, but demand seen peaking",
+        "url": "https://www.cnbctv18.com/market/commodities/china-india-set-for-record-russian-oil-imports-in-2026-but-demand-seen-peaking-20040457.htm",
+        "why_it_matters": "Crude affects India’s import bill and energy-sensitive sectors; the headline does not establish a clear price direction.",
         "source": ""
       }
     },
     "earnings": [
       {
-        "title": "5 energy stocks with attractive dividend yield - Hindustan Petroleum, Indian Oil, Bharat Petroleum, ONGC, to Gulf Oil",
-        "url": "https://www.livemint.com/market/stock-market-news/5-energy-stocks-with-attractive-dividend-yield-hindustan-petroleum-indian-oil-bharat-petroleum-ongc-to-gulf-oil-11795467131434.html",
-        "companies": [
-          {
-            "name": "ONGC",
-            "symbol": "ongc"
-          }
-        ],
-        "why_it_matters": "Crude affects India’s import bill and energy-sensitive sectors; the headline does not establish a clear price direction.",
-        "source": ""
-      },
-      {
-        "title": "Europe’s earnings boom challenges Wall Street, but may prove fleeting",
-        "url": "https://www.investing.com/news/stock-market-news/europes-earnings-boom-challengeswall-street-but-may-prove-fleeting-5047123",
+        "title": "Earnings call transcript: PennantPark Investment misses Q4 2026 estimates as shares fall",
+        "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-pennantpark-investment-misses-q4-2026-estimates-as-shares-fall-93CH-5048829",
         "companies": [],
         "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
         "source": ""
       },
       {
-        "title": "MIDHANI Faces Rs 1,500 Crore Revenue Ceiling. Can Its Rs 1,000 Crore Capex Unlock Next Growth Phase",
-        "url": "https://www.ndtvprofit.com/markets/midhani-faces-rs-1-500-crore-revenue-ceiling-can-its-rs-1-000-crore-capex-unlock-next-growth-phase-12369129#publisher=newsstand",
+        "title": "IKEA India Revenue Grows 14% In FY26; Targets Profitability By 2030, Plans 30 Stores",
+        "url": "https://www.ndtvprofit.com/business/ikea-india-revenue-grows-14-in-fy26-targets-profitability-by-2030-plans-30-stores-12372283#publisher=newsstand",
+        "companies": [],
+        "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
+        "source": ""
+      },
+      {
+        "title": "IKEA India Revenue Grows 14% In FY26; Targets Profitability By 2030, Plans 30 Stores",
+        "url": "https://www.ndtvprofit.com/business/ikea-india-revenue-grows-14-in-fy26-targets-profitability-by-2030-plans-30-stores-12372283#publisher=newsstand",
         "companies": [],
         "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
         "source": ""
@@ -309,25 +304,25 @@
     "global_macro": {
       "overnight": {
         "SP500": {
-          "val": "7,237",
-          "pct": 4.73,
-          "date": "2026-11-23"
+          "val": "7,200",
+          "pct": -0.51,
+          "date": "2026-11-24"
         },
         "NASDAQ": {
-          "val": "24,090",
-          "pct": 6.51,
-          "date": "2026-11-23"
+          "val": "23,739",
+          "pct": -1.45,
+          "date": "2026-11-24"
         },
         "US10Y": {
-          "val": "4.92%",
-          "pct": 0.12,
-          "date": "2026-11-23"
+          "val": "4.90%",
+          "pct": -0.28,
+          "date": "2026-11-24"
         }
       },
       "catalyst": {
-        "title": "Japanese bond yields fall as lower oil prices ease inflation concerns",
-        "url": "https://economictimes.indiatimes.com/markets/bonds/japanese-bond-yields-fall-as-lower-oil-prices-ease-inflation-concerns/articleshow/136118046.cms",
-        "why_it_matters": "Key determinant of central bank interest rate paths; elevated prints restrict policy easing and compress real yields.",
+        "title": "Treasury yields are steady after inflation warning from New York Fed's Williams, investors await 5-year auction",
+        "url": "https://www.cnbc.com/2026/11/24/treasury-yields-bonds-inflation.html",
+        "why_it_matters": "Guides global liquidity dynamics, US Dollar Index (DXY) trajectory, and foreign institutional (FII) capital allocations.",
         "source": ""
       }
     }

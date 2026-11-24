@@ -1,6 +1,58 @@
 {
-  "updated": "2026-11-24T06:34:38.277108+00:00",
+  "updated": "2026-11-24T18:15:01.118081+00:00",
   "calls": [
+    {
+      "id": "343e46ddd735df23",
+      "title": "Top defence stocks to buy: Apollo Micro Systems, BEL, Data Patterns, GRSE, Zen Technologies - check Choice's top picks",
+      "summary": "Choice Institutional Equities maintains a positive outlook on India’s defence sector and rates seven stocks Buy: Apollo Micro Systems, Bharat Electronics, Centum Electronics, Data Patterns, GRSE, Unimech Aerospace and Ze",
+      "url": "https://www.livemint.com/market/stock-market-news/top-defence-stocks-to-buy-apollo-micro-systems-bel-data-patterns-grse-zen-technologies-check-choices-top-picks-11795507257890.html",
+      "published": 1795511923.0,
+      "published_str": "24 Nov, 02:48 PM",
+      "source": "Mint Markets",
+      "sources": [
+        {
+          "name": "Mint Markets",
+          "url": "https://www.livemint.com/market/stock-market-news/top-defence-stocks-to-buy-apollo-micro-systems-bel-data-patterns-grse-zen-technologies-check-choices-top-picks-11795507257890.html"
+        }
+      ],
+      "brokerage": "Street Consensus",
+      "brokerages": [
+        "Street Consensus"
+      ],
+      "action": "BUY",
+      "action_label": "Buy ▲",
+      "sentiment": "bullish",
+      "target": null,
+      "stock": "Bharat Electronics",
+      "symbol": "BEL.NS",
+      "market": "India"
+    },
+    {
+      "id": "558281fcd684c3a5",
+      "title": "Jensen Huang is back $1 trn m-cap; Nvidia's ₹92.84 lakh cr comeback - 70% losses recovered; Baird is bullish; target",
+      "summary": "Nvidia shares surged 31.5% after Jensen Huang returned as CEO, recovering about 70% of recent losses and adding more than $1 trillion to the company’s market value. Several brokerages turned more positive, though export",
+      "url": "https://www.livemint.com/market/stock-market-news/jensen-huang-is-back-1-trn-m-cap-nvidias-rs-92-84-lakh-cr-comeback-70-losses-recovered-baird-is-bullish-target-11795500713599.html",
+      "published": 1795503270.0,
+      "published_str": "24 Nov, 12:24 PM",
+      "source": "Mint Markets",
+      "sources": [
+        {
+          "name": "Mint Markets",
+          "url": "https://www.livemint.com/market/stock-market-news/jensen-huang-is-back-1-trn-m-cap-nvidias-rs-92-84-lakh-cr-comeback-70-losses-recovered-baird-is-bullish-target-11795500713599.html"
+        }
+      ],
+      "brokerage": "Baird",
+      "brokerages": [
+        "Baird"
+      ],
+      "action": "NOTE",
+      "action_label": "Coverage ●",
+      "sentiment": "neutral",
+      "target": null,
+      "stock": "NVIDIA",
+      "symbol": "NVDA",
+      "market": "US"
+    },
     {
       "id": "26a109aa812297ff",
       "title": "Rubrik stock maintained at Buy by Goldman on growth outlook",
@@ -1193,16 +1245,20 @@
     }
   ],
   "stats": {
-    "total": 45,
-    "bullish": 29,
+    "total": 47,
+    "bullish": 30,
     "bearish": 9,
-    "neutral": 7,
-    "india": 38,
-    "us": 7,
+    "neutral": 8,
+    "india": 39,
+    "us": 8,
     "top_brokerages": [
       {
         "name": "Street Consensus",
-        "count": 11
+        "count": 12
+      },
+      {
+        "name": "Baird",
+        "count": 4
       },
       {
         "name": "BofA Securities",
@@ -1210,10 +1266,6 @@
       },
       {
         "name": "Bernstein",
-        "count": 3
-      },
-      {
-        "name": "Baird",
         "count": 3
       },
       {
