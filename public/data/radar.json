@@ -1,6 +1,84 @@
 {
-  "updated": "2026-11-23T22:53:03.846053+00:00",
+  "updated": "2026-11-24T06:34:38.277108+00:00",
   "calls": [
+    {
+      "id": "26a109aa812297ff",
+      "title": "Rubrik stock maintained at Buy by Goldman on growth outlook",
+      "summary": "",
+      "url": "https://www.investing.com/news/analyst-ratings/rubrik-stock-maintained-at-buy-by-goldman-on-growth-outlook-93CH-5047112",
+      "published": 1795500175.0,
+      "published_str": "24 Nov, 11:32 AM",
+      "source": "Investing.com",
+      "sources": [
+        {
+          "name": "Investing.com",
+          "url": "https://www.investing.com/news/analyst-ratings/rubrik-stock-maintained-at-buy-by-goldman-on-growth-outlook-93CH-5047112"
+        }
+      ],
+      "brokerage": "Goldman Sachs",
+      "brokerages": [
+        "Goldman Sachs"
+      ],
+      "action": "BUY",
+      "action_label": "Buy ▲",
+      "sentiment": "bullish",
+      "target": null,
+      "stock": "Rubrik",
+      "symbol": null,
+      "market": "India"
+    },
+    {
+      "id": "60091d7b5399d791",
+      "title": "Persistent Systems, Ather Energy shares: Top 2 stocks to buy on 25 Nov; check expected returns, stop loss, target price",
+      "summary": "Indian stock market will be closed on Tuesday, 24 November, for Prakash Gurpurb Sri Guru Nanak Dev. The closure follows steep losses on Monday, as the Sensex fell 1.77% and the Nifty 1.75%. Analyst Chandan Taparia recomm",
+      "url": "https://www.livemint.com/market/stock-market-news/persistent-systems-ather-energy-shares-top-2-stocks-to-buy-on-25-nov-check-expected-returns-stop-loss-target-price-11795486721247.html",
+      "published": 1795490146.0,
+      "published_str": "24 Nov, 08:45 AM",
+      "source": "Mint Markets",
+      "sources": [
+        {
+          "name": "Mint Markets",
+          "url": "https://www.livemint.com/market/stock-market-news/persistent-systems-ather-energy-shares-top-2-stocks-to-buy-on-25-nov-check-expected-returns-stop-loss-target-price-11795486721247.html"
+        }
+      ],
+      "brokerage": "Street Consensus",
+      "brokerages": [
+        "Street Consensus"
+      ],
+      "action": "BUY",
+      "action_label": "Buy ▲",
+      "sentiment": "bullish",
+      "target": null,
+      "stock": "Persistent Systems",
+      "symbol": "PERSISTENT.NS",
+      "market": "India"
+    },
+    {
+      "id": "d30d401219a29a58",
+      "title": "Morgan Stanley says this is a big buying opportunity: ‘We’re not going to miss it’",
+      "summary": "Last week's sell-off gave sentiment and portfolio positioning a clear 'capitulation signal,' creating a buying opportunity.",
+      "url": "https://www.cnbctv18.com/access/morgan-stanley-says-this-is-a-big-buying-opportunity-were-not-going-to-miss-it-20040319.htm",
+      "published": 1795482412.0,
+      "published_str": "24 Nov, 06:36 AM",
+      "source": "CNBC-TV18",
+      "sources": [
+        {
+          "name": "CNBC-TV18",
+          "url": "https://www.cnbctv18.com/access/morgan-stanley-says-this-is-a-big-buying-opportunity-were-not-going-to-miss-it-20040319.htm"
+        }
+      ],
+      "brokerage": "Morgan Stanley",
+      "brokerages": [
+        "Morgan Stanley"
+      ],
+      "action": "SELL",
+      "action_label": "Sell ▼",
+      "sentiment": "bearish",
+      "target": null,
+      "stock": "Multi / Sector",
+      "symbol": null,
+      "market": "India"
+    },
     {
       "id": "e0508efed65099a2",
       "title": "Jensen Huang Returns, Bernstein Flips: Nvidia Gets Two-Week Rating Rebound; With A $200 Catch",
@@ -1115,16 +1193,16 @@
     }
   ],
   "stats": {
-    "total": 42,
-    "bullish": 27,
-    "bearish": 8,
+    "total": 45,
+    "bullish": 29,
+    "bearish": 9,
     "neutral": 7,
-    "india": 35,
+    "india": 38,
     "us": 7,
     "top_brokerages": [
       {
         "name": "Street Consensus",
-        "count": 10
+        "count": 11
       },
       {
         "name": "BofA Securities",
@@ -1155,11 +1233,11 @@
         "count": 3
       },
       {
-        "name": "Motilal Oswal",
+        "name": "Goldman Sachs",
         "count": 2
       },
       {
-        "name": "Jefferies",
+        "name": "Morgan Stanley",
         "count": 2
       }
     ]
