@@ -1,6 +1,82 @@
 {
-  "updated": "2026-11-24T18:15:01.118081+00:00",
+  "updated": "2026-11-25T02:33:20.606490+00:00",
   "calls": [
+    {
+      "id": "eff11162ce5ccc52",
+      "title": "Sensex Today | Stock Market LIVE Updates: GIFT Nifty up 240 pts; JPMorgan cuts Tata Steel target",
+      "summary": "Sensex Today | Stock Market LIVE Updates: On the downside, the 23.6% retracement of the recent upmove seen comes to 25,167, which is another 200 points away. For the Nifty Bank, which saw a bigger fall compared to the Ni",
+      "url": "https://www.cnbctv18.com/market/stock-market-live-updates-sensex-nifty-50-ai-tariffs-it-nifty-bank-tata-steel-apl-apollo-zee-ril-adani-share-price-liveblog-20040632.htm",
+      "published": 1795573588.0,
+      "published_str": "25 Nov, 07:56 AM",
+      "source": "CNBC-TV18",
+      "sources": [
+        {
+          "name": "CNBC-TV18",
+          "url": "https://www.cnbctv18.com/market/stock-market-live-updates-sensex-nifty-50-ai-tariffs-it-nifty-bank-tata-steel-apl-apollo-zee-ril-adani-share-price-liveblog-20040632.htm"
+        },
+        {
+          "name": "Business Standard",
+          "url": "https://www.business-standard.com/markets/news/stock-market-live-november-25-gift-nifty-bse-sensex-today-nifty50-crude-oil-prices-ipo-today-126112500069_1.html"
+        },
+        {
+          "name": "ET Markets",
+          "url": "https://economictimes.indiatimes.com/markets/stocks/live-blog/bse-sensex-today-nifty50-stock-market-live-updates-gift-nifty-tata-steel-hindalco-share-price-25-november-2026/liveblog/136145716.cms"
+        },
+        {
+          "name": "Zerodha Pulse",
+          "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/global-market-today-asian-stocks-fall-as-ai-trade-doubts-resurface/articleshow/136145030.cms"
+        },
+        {
+          "name": "Mint Markets",
+          "url": "https://www.livemint.com/market/stock-market-news/top-stocks-to-watch-today-tata-steel-lenskart-adani-enterprises-physicswallah-hindalco-abb-and-9-others-in-focus-11795571323811.html"
+        },
+        {
+          "name": "Mint Companies",
+          "url": "https://www.livemint.com/companies/investors-proxy-firms-question-fairness-of-apl-apollos-28k-cr-tata-steel-deal-11795528424973.html"
+        },
+        {
+          "name": "NDTV Profit",
+          "url": "https://www.ndtvprofit.com/markets/stocks-to-watch-today-tata-steel-nalco-nlc-india-karur-vysya-bank-physicswallah-indian-bank-more-12367921#publisher=newsstand"
+        }
+      ],
+      "brokerage": "JPMorgan",
+      "brokerages": [
+        "JPMorgan"
+      ],
+      "action": "TARGET_CUT",
+      "action_label": "Target Cut ▼",
+      "sentiment": "bearish",
+      "target": null,
+      "stock": "Tata Steel",
+      "symbol": "TATASTEEL.NS",
+      "market": "India"
+    },
+    {
+      "id": "31eca36dd3a960ca",
+      "title": "Goldman Sachs, SocGen buy Rs 920 crore stake in Lenskart",
+      "summary": "Goldman Sachs and Societe Generale have jointly invested ₹920 crore to purchase a 1% stake in Lenskart Solutions, acquiring 65.21 lakh and 61.76 lakh shares priced at ₹725 each. Steadview Capital Management facilitated t",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/goldman-sachs-socgen-buy-rs-920-crore-stake-in-lenskart/articleshow/136145273.cms",
+      "published": 1795569961.0,
+      "published_str": "25 Nov, 06:56 AM",
+      "source": "ET Markets",
+      "sources": [
+        {
+          "name": "ET Markets",
+          "url": "https://economictimes.indiatimes.com/markets/stocks/news/goldman-sachs-socgen-buy-rs-920-crore-stake-in-lenskart/articleshow/136145273.cms"
+        }
+      ],
+      "brokerage": "Goldman Sachs",
+      "brokerages": [
+        "Goldman Sachs"
+      ],
+      "action": "BUY",
+      "action_label": "Buy ▲",
+      "sentiment": "bullish",
+      "target": null,
+      "stock": "Multi / Sector",
+      "symbol": null,
+      "market": "India"
+    },
     {
       "id": "343e46ddd735df23",
       "title": "Top defence stocks to buy: Apollo Micro Systems, BEL, Data Patterns, GRSE, Zen Technologies - check Choice's top picks",
@@ -1245,11 +1321,11 @@
     }
   ],
   "stats": {
-    "total": 47,
-    "bullish": 30,
-    "bearish": 9,
+    "total": 49,
+    "bullish": 31,
+    "bearish": 10,
     "neutral": 8,
-    "india": 39,
+    "india": 41,
     "us": 8,
     "top_brokerages": [
       {
@@ -1263,6 +1339,10 @@
       {
         "name": "BofA Securities",
         "count": 4
+      },
+      {
+        "name": "Goldman Sachs",
+        "count": 3
       },
       {
         "name": "Bernstein",
@@ -1283,10 +1363,6 @@
       {
         "name": "Citi",
         "count": 3
-      },
-      {
-        "name": "Goldman Sachs",
-        "count": 2
       },
       {
         "name": "Morgan Stanley",
