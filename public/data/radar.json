@@ -1,6 +1,62 @@
 {
-  "updated": "2026-11-26T12:42:51.072269+00:00",
+  "updated": "2026-11-26T21:59:25.887931+00:00",
   "calls": [
+    {
+      "id": "49fcd60ee0545c9a",
+      "title": "JPMorgan's 2027 India Stock List: 33 Top Picks, And The 10 Stocks It Wants You To Avoid",
+      "summary": "JPMorgan favours banks, healthcare, industrials and consumer discretionary stocks for 2027, while turning cautious on IT, metals and select financial and consumer names.",
+      "url": "https://www.ndtvprofit.com/business/jpmorgans-2027-india-stock-list-33-top-picks-and-the-10-stocks-it-wants-you-to-avoid-12382015#publisher=newsstand",
+      "published": 1795710377.0,
+      "published_str": "26 Nov, 09:56 PM",
+      "source": "Zerodha Pulse",
+      "sources": [
+        {
+          "name": "Zerodha Pulse",
+          "url": "https://www.ndtvprofit.com/business/jpmorgans-2027-india-stock-list-33-top-picks-and-the-10-stocks-it-wants-you-to-avoid-12382015#publisher=newsstand"
+        },
+        {
+          "name": "NDTV Profit",
+          "url": "https://www.ndtvprofit.com/business/jpmorgans-2027-india-stock-list-33-top-picks-and-the-10-stocks-it-wants-you-to-avoid-12382015#publisher=newsstand"
+        }
+      ],
+      "brokerage": "JPMorgan",
+      "brokerages": [
+        "JPMorgan"
+      ],
+      "action": "BUY",
+      "action_label": "Buy ▲",
+      "sentiment": "bullish",
+      "target": null,
+      "stock": "Multi / Sector",
+      "symbol": null,
+      "market": "India"
+    },
+    {
+      "id": "8fd85a465150a834",
+      "title": "JP Morgan sees Indian stocks rise further in 2027 after 'great comeback' of 2026",
+      "summary": "Calling India a diversification haven away from crowded AI trades, J.P. Morgan has set a base-case Nifty 50 target of 29,000 by end-2027—implying 12% upside—while forecasting 14% earnings growth, up to $100 billion in po",
+      "url": "https://www.cnbctv18.com/market/jp-morgan-sees-indian-stocks-rise-further-in-2027-after-great-comeback-of-2026-20042274.htm",
+      "published": 1795698337.0,
+      "published_str": "26 Nov, 06:35 PM",
+      "source": "CNBC-TV18",
+      "sources": [
+        {
+          "name": "CNBC-TV18",
+          "url": "https://www.cnbctv18.com/market/jp-morgan-sees-indian-stocks-rise-further-in-2027-after-great-comeback-of-2026-20042274.htm"
+        }
+      ],
+      "brokerage": "JPMorgan",
+      "brokerages": [
+        "JPMorgan"
+      ],
+      "action": "BUY",
+      "action_label": "Buy ▲",
+      "sentiment": "bullish",
+      "target": "12% Upside",
+      "stock": "Multi / Sector",
+      "symbol": null,
+      "market": "India"
+    },
     {
       "id": "9a1c45193d2cf2df",
       "title": "Check Nifty target, Top Stocks to Buy: PL Capital adds HUL, Astral, Grindwell to high-conviction list | Full List",
@@ -69,6 +125,10 @@
         {
           "name": "Mint Markets",
           "url": "https://www.livemint.com/market/stock-market-news/bpcl-vs-iocl-vs-hpcl-jefferies-names-its-top-omc-stocks-to-buy-as-crude-prices-fall-check-target-prices-rationale-11795681099588.html"
+        },
+        {
+          "name": "ET Markets",
+          "url": "https://economictimes.indiatimes.com/markets/stocks/stock-liveblog/bpcl-share-price-live-updates-26-nov-2026/liveblog/136178697.cms"
         }
       ],
       "brokerage": "Jefferies",
@@ -1896,11 +1956,11 @@
     }
   ],
   "stats": {
-    "total": 69,
-    "bullish": 45,
+    "total": 71,
+    "bullish": 47,
     "bearish": 15,
     "neutral": 9,
-    "india": 61,
+    "india": 63,
     "us": 8,
     "top_brokerages": [
       {
@@ -1914,6 +1974,10 @@
       {
         "name": "Bernstein",
         "count": 5
+      },
+      {
+        "name": "JPMorgan",
+        "count": 4
       },
       {
         "name": "Jefferies",
@@ -1937,10 +2001,6 @@
       },
       {
         "name": "Nomura",
-        "count": 3
-      },
-      {
-        "name": "UBS",
         "count": 3
       }
     ]
