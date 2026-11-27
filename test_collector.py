@@ -135,5 +135,20 @@ class BriefEvidenceTests(unittest.TestCase):
         self.assertEqual(detect_story_region('Rupee gains 20 paise to 92.47 against dollar: How far can the currency rise from here', 'Global'), 'India')
         self.assertEqual(detect_story_region('Rupee declines 23 paise to 92.85 against U.S. dollar in early trade', 'Global'), 'India')
 
+    def test_fii_dii_fetch_or_fallback(self):
+        from server import fetch_fii_dii
+        import json
+        from pathlib import Path
+        flows = fetch_fii_dii()
+        if not flows:
+            # Fallback to flows.json
+            p = Path(__file__).resolve().parent / 'data' / 'flows.json'
+            if p.exists():
+                flows = json.loads(p.read_text())
+        self.assertIsNotNone(flows)
+        self.assertIn('fii_net_cr', flows)
+        self.assertIn('dii_net_cr', flows)
+        self.assertIn('date', flows)
+
 if __name__ == '__main__':
     unittest.main()

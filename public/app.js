@@ -1171,9 +1171,9 @@ function renderPremarket(data) {
   }
 
   // Institutional flows
-  if (data.fii_dii) {
-    const fii = data.fii_dii.fii_net_cr ?? -2845.6;
-    const dii = data.fii_dii.dii_net_cr ?? 2135.4;
+  if (data.fii_dii && (data.fii_dii.fii_net_cr != null || data.fii_dii.dii_net_cr != null)) {
+    const fii = Number(data.fii_dii.fii_net_cr) || 0;
+    const dii = Number(data.fii_dii.dii_net_cr) || 0;
     const fiiSign = fii >= 0 ? '+' : '-';
     const diiSign = dii >= 0 ? '+' : '-';
     if ($('pm-fii-val')) {
@@ -1184,7 +1184,7 @@ function renderPremarket(data) {
       $('pm-dii-val').textContent = `${diiSign}₹${Math.abs(Math.round(dii)).toLocaleString('en-IN')} Cr`;
       $('pm-dii-val').className = `flow-val ${dii >= 0 ? 'up' : 'down'}`;
     }
-    const net = data.fii_dii.net_cr ?? (fii + dii);
+    const net = data.fii_dii.net_cr != null ? Number(data.fii_dii.net_cr) : (fii + dii);
     const netSign = net >= 0 ? '+' : '-';
     if ($('pm-net-val')) {
       $('pm-net-val').textContent = `${netSign}₹${Math.abs(Math.round(net)).toLocaleString('en-IN')} Cr`;

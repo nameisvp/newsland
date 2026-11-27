@@ -1083,6 +1083,55 @@ def refresh_market():
 # ── Pre-Market Trading Desk Brief ─────────────────────────────────────
 PREMARKET_DATA = {}
 
+def fetch_fii_dii():
+    """Fetch live official daily FII/DII cash market trade activity from NSE India."""
+    try:
+        from curl_cffi import requests as cffi_requests
+        s = cffi_requests.Session(impersonate='chrome120')
+        headers = {
+            'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+            'Accept': 'application/json, text/plain, */*',
+            'Referer': 'https://www.nseindia.com/',
+        }
+        s.get('https://www.nseindia.com', headers=headers, timeout=10)
+        resp = s.get('https://www.nseindia.com/api/fiidiiTradeReact', headers=headers, timeout=10)
+        if resp.status_code == 200:
+            data = resp.json()
+            fii_val, dii_val, date_str = None, None, None
+            for item in data:
+                cat = item.get('category', '').upper()
+                nv = float(item.get('netValue', 0))
+                date_str = item.get('date', date_str)
+                if 'FII' in cat or 'FPI' in cat:
+                    fii_val = nv
+                elif 'DII' in cat:
+                    dii_val = nv
+            if fii_val is not None and dii_val is not None:
+                net_val = round(fii_val + dii_val, 2)
+                try:
+                    dt = datetime.strptime(date_str, '%d-%b-%Y')
+                    formatted_date = dt.strftime('%d %b %Y')
+                except Exception:
+                    formatted_date = date_str
+                trend = 'FII & DII Inflows' if fii_val >= 0 and dii_val >= 0 else \
+                        'FII Selling / DII Absorbing' if fii_val < 0 and dii_val >= 0 else \
+                        'DII Selling / FII Absorbing' if fii_val >= 0 and dii_val < 0 else \
+                        'Broad Institutional Outflows'
+                flows = {
+                    'date': f"{formatted_date} (Prev Close)",
+                    'fii_net_cr': fii_val,
+                    'dii_net_cr': dii_val,
+                    'net_cr': net_val,
+                    'trend': trend,
+                    'source': 'https://www.nseindia.com/api/fiidiiTradeReact',
+                    'verified': True,
+                    'updated': datetime.now(timezone.utc).isoformat()
+                }
+                return flows
+    except Exception as e:
+        print(f"[fii_dii] fetch error: {e}")
+    return None
+
 def flow_context(flows):
     if not flows:
         return 'Institutional flows unavailable: a dated source is required.'
@@ -1214,14 +1263,26 @@ def refresh_premarket():
         pass
     flows = None
     try:
-        candidate = json.loads((DATA / 'flows.json').read_text())
-        if all(k in candidate for k in ('fii_net_cr', 'dii_net_cr')):
-            fii_val = float(candidate['fii_net_cr'])
-            dii_val = float(candidate['dii_net_cr'])
-            net_val = round(fii_val + dii_val, 2)
-            flows = dict(candidate, fii_net_cr=fii_val, dii_net_cr=dii_val, net_cr=net_val)
-    except (OSError, ValueError):
-        pass
+        live_flows = fetch_fii_dii()
+        if live_flows:
+            flows = live_flows
+            try:
+                (DATA / 'flows.json').write_text(json.dumps(flows, indent=2))
+            except Exception:
+                pass
+    except Exception as exc:
+        print(f"[fii_dii] live fetch exception: {exc}")
+
+    if not flows:
+        try:
+            candidate = json.loads((DATA / 'flows.json').read_text())
+            if all(k in candidate for k in ('fii_net_cr', 'dii_net_cr')):
+                fii_val = float(candidate['fii_net_cr'])
+                dii_val = float(candidate['dii_net_cr'])
+                net_val = round(fii_val + dii_val, 2)
+                flows = dict(candidate, fii_net_cr=fii_val, dii_net_cr=dii_val, net_cr=net_val)
+        except (OSError, ValueError):
+            pass
 
     vix_t = tickers.get('INDIAVIX')
     vix_info = None
