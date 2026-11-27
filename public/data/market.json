@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-27T03:36:45.361185+00:00",
+  "updated": "2026-11-27T03:38:25.414700+00:00",
   "tickers": [
     {
       "key": "SENSEX",
@@ -68,11 +68,11 @@
       "key": "GOLD",
       "quote_date": "2026-11-26",
       "label": "Gold",
-      "price": "3,654.50",
-      "price_raw": 3654.5,
+      "price": "3,654.30",
+      "price_raw": 3654.3,
       "prev_close": 3549.0,
       "prev_close_fmt": "3,549.00",
-      "change": 105.5,
+      "change": 105.3,
       "change_pct": 2.97,
       "direction": "up",
       "unit": "USD/oz",
@@ -89,12 +89,12 @@
       "key": "SILVER",
       "quote_date": "2026-11-26",
       "label": "Silver",
-      "price": "43.88",
-      "price_raw": 43.885,
+      "price": "43.94",
+      "price_raw": 43.935,
       "prev_close": 40.585,
       "prev_close_fmt": "40.58",
-      "change": 3.3,
-      "change_pct": 8.13,
+      "change": 3.35,
+      "change_pct": 8.25,
       "direction": "up",
       "unit": "USD/oz",
       "range_52w": {
@@ -102,20 +102,20 @@
         "high": 121.3,
         "low_fmt": "40.05",
         "high_fmt": "121.30",
-        "pos_pct": 4.7,
-        "pct_from_high": -63.82
+        "pos_pct": 4.8,
+        "pct_from_high": -63.78
       }
     },
     {
       "key": "BRENT",
       "quote_date": "2026-11-26",
       "label": "Brent Crude",
-      "price": "92.29",
-      "price_raw": 92.29,
+      "price": "92.19",
+      "price_raw": 92.19,
       "prev_close": 87.49,
       "prev_close_fmt": "87.49",
-      "change": 4.8,
-      "change_pct": 5.49,
+      "change": 4.7,
+      "change_pct": 5.37,
       "direction": "up",
       "unit": "USD/bbl",
       "range_52w": {
@@ -123,20 +123,20 @@
         "high": 126.1,
         "low_fmt": "58.72",
         "high_fmt": "126.10",
-        "pos_pct": 49.8,
-        "pct_from_high": -26.81
+        "pos_pct": 49.7,
+        "pct_from_high": -26.89
       }
     },
     {
       "key": "WTI",
       "quote_date": "2026-11-26",
       "label": "WTI Crude",
-      "price": "85.76",
-      "price_raw": 85.76,
+      "price": "85.69",
+      "price_raw": 85.69,
       "prev_close": 80.73,
       "prev_close_fmt": "80.73",
-      "change": 5.03,
-      "change_pct": 6.23,
+      "change": 4.96,
+      "change_pct": 6.14,
       "direction": "up",
       "unit": "USD/bbl",
       "range_52w": {
@@ -144,8 +144,8 @@
         "high": 119.48,
         "low_fmt": "54.98",
         "high_fmt": "119.48",
-        "pos_pct": 47.7,
-        "pct_from_high": -28.22
+        "pos_pct": 47.6,
+        "pct_from_high": -28.28
       }
     },
     {
