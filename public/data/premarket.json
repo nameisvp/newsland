@@ -1,16 +1,16 @@
 {
-  "updated": "2026-11-27T03:38:25.415135+00:00",
+  "updated": "2026-11-27T04:14:46.851025+00:00",
   "schema_version": 2,
   "is_live": false,
-  "quote_updated": "2026-11-27T03:38:25.414700+00:00",
-  "quote_date": "2026-11-26",
+  "quote_updated": "2026-11-27T04:14:46.850566+00:00",
+  "quote_date": "2026-11-27",
   "quote_source": "yfinance",
   "live_bias_label": "LATEST AVAILABLE QUOTE",
   "bias_label": "LATEST AVAILABLE QUOTE",
-  "live_nifty_price": "25,884",
-  "live_pts": 65,
-  "live_pct": 0.25,
-  "nifty_prev_close": "25,819",
+  "live_nifty_price": "25,868",
+  "live_pts": -17,
+  "live_pct": -0.07,
+  "nifty_prev_close": "25,884",
   "fii_dii": {
     "date": "26 Nov 2026 (Prev Close)",
     "fii_net_cr": 5843.33,
@@ -19,12 +19,12 @@
     "trend": "FII & DII Inflows",
     "source": "https://www.nseindia.com/api/fiidiiTradeReact",
     "verified": true,
-    "updated": "2026-11-27T03:38:27.651537+00:00"
+    "updated": "2026-11-27T04:14:49.130346+00:00"
   },
   "vix": {
-    "price": "16.84",
-    "change": "-0.80",
-    "change_pct": "-4.54%",
+    "price": "16.74",
+    "change": "-0.11",
+    "change_pct": "-0.67%",
     "regime": "Normal Volatility"
   },
   "overnight": {
@@ -48,12 +48,12 @@
     "key": "BRENT",
     "quote_date": "2026-11-26",
     "label": "Brent Crude",
-    "price": "92.19",
-    "price_raw": 92.19,
+    "price": "92.29",
+    "price_raw": 92.29,
     "prev_close": 87.49,
     "prev_close_fmt": "87.49",
-    "change": 4.7,
-    "change_pct": 5.37,
+    "change": 4.8,
+    "change_pct": 5.49,
     "direction": "up",
     "unit": "USD/bbl",
     "range_52w": {
@@ -61,20 +61,20 @@
       "high": 126.1,
       "low_fmt": "58.72",
       "high_fmt": "126.10",
-      "pos_pct": 49.7,
-      "pct_from_high": -26.89
+      "pos_pct": 49.8,
+      "pct_from_high": -26.81
     }
   },
   "usdinr": {
     "key": "USDINR",
     "quote_date": "2026-11-27",
     "label": "INR / USD",
-    "price": "92.46",
-    "price_raw": 92.46,
+    "price": "92.60",
+    "price_raw": 92.6,
     "prev_close": 92.435,
     "prev_close_fmt": "92.43",
-    "change": 0.025,
-    "change_pct": 0.03,
+    "change": 0.165,
+    "change_pct": 0.18,
     "direction": "up",
     "unit": "",
     "range_52w": {
@@ -82,8 +82,8 @@
       "high": 97.05,
       "low_fmt": "85.86",
       "high_fmt": "97.05",
-      "pos_pct": 58.9,
-      "pct_from_high": -4.73
+      "pos_pct": 60.2,
+      "pct_from_high": -4.59
     }
   },
   "pivots": {
@@ -105,18 +105,18 @@
     }
   },
   "posture": {
-    "dma50": 23616,
-    "dma50_fmt": "23,616",
-    "pct_dma50": 9.61,
-    "dma200": 24004,
-    "dma200_fmt": "24,004",
-    "pct_dma200": 7.83,
+    "dma50": 23665,
+    "dma50_fmt": "23,665",
+    "pct_dma50": 9.31,
+    "dma200": 24005,
+    "dma200_fmt": "24,005",
+    "pct_dma200": 7.76,
     "high52": 26373,
     "high52_fmt": "26,373",
     "low52": 22180,
     "low52_fmt": "22,180",
-    "pct_from_high52": -1.85,
-    "pos_52w": 88.3,
+    "pct_from_high52": -1.92,
+    "pos_52w": 87.9,
     "regime": "STRUCTURAL UPTREND"
   },
   "sector_breadth": {
@@ -124,24 +124,24 @@
     "total": 5,
     "sectors": [
       {
-        "name": "IT",
-        "pct": 3.66
-      },
-      {
         "name": "Metal",
-        "pct": 1.18
+        "pct": 1.57
       },
       {
         "name": "Bank",
-        "pct": -0.26
+        "pct": 0.49
       },
       {
         "name": "Auto",
-        "pct": -0.69
+        "pct": -0.07
       },
       {
         "name": "FMCG",
-        "pct": -0.94
+        "pct": -0.53
+      },
+      {
+        "name": "IT",
+        "pct": -1.15
       }
     ],
     "summary": "2/5 sectors in green"
@@ -157,28 +157,28 @@
       "num": "02",
       "title": "Crude and input costs",
       "bias": "Context",
-      "desc": "Latest Brent quote: 92.19 USD/bbl (+5.37%). Higher crude can raise import and input costs; lower crude can ease them. This quote alone does not establish the cause of the move."
+      "desc": "Latest Brent quote: 92.29 USD/bbl (+5.49%). Higher crude can raise import and input costs; lower crude can ease them. This quote alone does not establish the cause of the move."
     },
     {
       "num": "03",
       "title": "Market posture & breadth",
       "bias": "Context",
-      "desc": "Nifty is 1.9% below 52W high (26,373), trading 7.8% above 200-DMA (24,004). Sector participation: 2/5 sectors in green (Top: IT +3.66%)."
+      "desc": "Nifty is 1.9% below 52W high (26,373), trading 7.8% above 200-DMA (24,005). Sector participation: 2/5 sectors in green (Top: Metal +1.57%)."
     }
   ],
-  "trader_take": "Latest available Nifty quote: 25,884 (+0.25% versus previous close). Latest Nifty reading is above the 25,864 pivot. Next calculated resistance above this reading: 25,995. Pivots are calculated references, not confirmed support or resistance. Market regime: STRUCTURAL UPTREND (-1.9% from 52W peak, +7.8% vs 200-DMA). Sector breadth: 2/5 sectors in green.",
+  "trader_take": "Latest available Nifty quote: 25,868 (-0.07% versus previous close). Latest Nifty reading is above the 25,864 pivot. Next calculated resistance above this reading: 25,995. Pivots are calculated references, not confirmed support or resistance. Market regime: STRUCTURAL UPTREND (-1.9% from 52W peak, +7.8% vs 200-DMA). Sector breadth: 2/5 sectors in green.",
   "postmarket_pillars": {
     "commodities": {
       "brent": {
         "key": "BRENT",
         "quote_date": "2026-11-26",
         "label": "Brent Crude",
-        "price": "92.19",
-        "price_raw": 92.19,
+        "price": "92.29",
+        "price_raw": 92.29,
         "prev_close": 87.49,
         "prev_close_fmt": "87.49",
-        "change": 4.7,
-        "change_pct": 5.37,
+        "change": 4.8,
+        "change_pct": 5.49,
         "direction": "up",
         "unit": "USD/bbl",
         "range_52w": {
@@ -186,20 +186,20 @@
           "high": 126.1,
           "low_fmt": "58.72",
           "high_fmt": "126.10",
-          "pos_pct": 49.7,
-          "pct_from_high": -26.89
+          "pos_pct": 49.8,
+          "pct_from_high": -26.81
         }
       },
       "wti": {
         "key": "WTI",
         "quote_date": "2026-11-26",
         "label": "WTI Crude",
-        "price": "85.69",
-        "price_raw": 85.69,
+        "price": "85.77",
+        "price_raw": 85.77,
         "prev_close": 80.73,
         "prev_close_fmt": "80.73",
-        "change": 4.96,
-        "change_pct": 6.14,
+        "change": 5.04,
+        "change_pct": 6.24,
         "direction": "up",
         "unit": "USD/bbl",
         "range_52w": {
@@ -207,20 +207,20 @@
           "high": 119.48,
           "low_fmt": "54.98",
           "high_fmt": "119.48",
-          "pos_pct": 47.6,
-          "pct_from_high": -28.28
+          "pos_pct": 47.7,
+          "pct_from_high": -28.21
         }
       },
       "natgas": {
         "key": "NATGAS",
         "quote_date": "2026-11-26",
         "label": "Natural Gas",
-        "price": "3.60",
-        "price_raw": 3.598,
+        "price": "3.61",
+        "price_raw": 3.609,
         "prev_close": 3.721,
         "prev_close_fmt": "3.72",
-        "change": -0.123,
-        "change_pct": -3.31,
+        "change": -0.112,
+        "change_pct": -3.01,
         "direction": "down",
         "unit": "USD/MMBtu",
         "range_52w": {
@@ -228,20 +228,20 @@
           "high": 7.83,
           "low_fmt": "2.48",
           "high_fmt": "7.83",
-          "pos_pct": 20.9,
-          "pct_from_high": -54.03
+          "pos_pct": 21.1,
+          "pct_from_high": -53.89
         }
       },
       "gold": {
         "key": "GOLD",
         "quote_date": "2026-11-26",
         "label": "Gold",
-        "price": "3,654.30",
-        "price_raw": 3654.3,
+        "price": "3,655.80",
+        "price_raw": 3655.8,
         "prev_close": 3549.0,
         "prev_close_fmt": "3,549.00",
-        "change": 105.3,
-        "change_pct": 2.97,
+        "change": 106.8,
+        "change_pct": 3.01,
         "direction": "up",
         "unit": "USD/oz",
         "range_52w": {
@@ -249,20 +249,20 @@
           "high": 5586.2,
           "low_fmt": "3,425.20",
           "high_fmt": "5,586.20",
-          "pos_pct": 10.6,
-          "pct_from_high": -34.58
+          "pos_pct": 10.7,
+          "pct_from_high": -34.56
         }
       },
       "silver": {
         "key": "SILVER",
         "quote_date": "2026-11-26",
         "label": "Silver",
-        "price": "43.94",
-        "price_raw": 43.935,
+        "price": "43.74",
+        "price_raw": 43.745,
         "prev_close": 40.585,
         "prev_close_fmt": "40.58",
-        "change": 3.35,
-        "change_pct": 8.25,
+        "change": 3.16,
+        "change_pct": 7.79,
         "direction": "up",
         "unit": "USD/oz",
         "range_52w": {
@@ -270,8 +270,8 @@
           "high": 121.3,
           "low_fmt": "40.05",
           "high_fmt": "121.30",
-          "pos_pct": 4.8,
-          "pct_from_high": -63.78
+          "pos_pct": 4.5,
+          "pct_from_high": -63.94
         }
       },
       "catalyst": {
@@ -328,8 +328,8 @@
         }
       },
       "catalyst": {
-        "title": "Asian Markets Today: Nikkei, Kospi Rise As AI Stocks Stabilise, But Fed Rate Fears Keep Investors On Edge",
-        "url": "https://www.ndtvprofit.com/markets/asian-markets-today-nikkei-kospi-rise-as-ai-stocks-stabilise-but-fed-rate-fears-keep-investors-on-edge-asx-200-nifty-50-sensex-today-12382757#publisher=newsstand",
+        "title": "Gold drifts lower as Fed rate-hike fears loom",
+        "url": "https://www.livemint.com/market/gold-drifts-lower-as-fed-rate-hike-fears-loom-11795720313647.html",
         "why_it_matters": "Guides global liquidity dynamics, US Dollar Index (DXY) trajectory, and foreign institutional (FII) capital allocations.",
         "source": ""
       }
