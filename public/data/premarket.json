@@ -1,9 +1,9 @@
 {
-  "updated": "2026-11-27T22:42:48.752657+00:00",
+  "updated": "2026-11-28T04:22:32.257170+00:00",
   "schema_version": 2,
   "is_live": false,
-  "quote_updated": "2026-11-27T22:42:48.752161+00:00",
-  "quote_date": "2026-11-26",
+  "quote_updated": "2026-11-28T04:22:32.256690+00:00",
+  "quote_date": "2026-11-27",
   "quote_source": "yfinance",
   "live_bias_label": "LATEST AVAILABLE QUOTE",
   "bias_label": "LATEST AVAILABLE QUOTE",
@@ -19,12 +19,12 @@
     "trend": "DII Selling / FII Absorbing",
     "source": "https://www.nseindia.com/api/fiidiiTradeReact",
     "verified": true,
-    "updated": "2026-11-27T22:42:50.718378+00:00"
+    "updated": "2026-11-28T04:22:34.313838+00:00"
   },
   "vix": {
     "price": "16.55",
-    "change": "-0.31",
-    "change_pct": "-1.84%",
+    "change": "-0.30",
+    "change_pct": "-1.81%",
     "regime": "Normal Volatility"
   },
   "overnight": {
@@ -67,14 +67,14 @@
   },
   "usdinr": {
     "key": "USDINR",
-    "quote_date": "2026-11-27",
+    "quote_date": "2026-11-28",
     "label": "INR / USD",
-    "price": "92.98",
-    "price_raw": 92.98,
+    "price": "92.99",
+    "price_raw": 92.99,
     "prev_close": 92.435,
     "prev_close_fmt": "92.43",
-    "change": 0.545,
-    "change_pct": 0.59,
+    "change": 0.555,
+    "change_pct": 0.6,
     "direction": "up",
     "unit": "",
     "range_52w": {
@@ -82,41 +82,41 @@
       "high": 97.05,
       "low_fmt": "85.86",
       "high_fmt": "97.05",
-      "pos_pct": 63.6,
-      "pct_from_high": -4.2
+      "pos_pct": 63.7,
+      "pct_from_high": -4.19
     }
   },
   "pivots": {
     "nifty": {
-      "pivot": 25864,
-      "s1": 25754,
-      "r1": 25995,
-      "s2": 25623,
-      "r2": 26106,
-      "date": "2026-11-26"
+      "pivot": 25694,
+      "s1": 25479,
+      "r1": 25822,
+      "s2": 25351,
+      "r2": 26037,
+      "date": "2026-11-27"
     },
     "banknifty": {
-      "pivot": 63657,
-      "s1": 63210,
-      "r1": 63983,
-      "s2": 62885,
-      "r2": 64430,
-      "date": "2026-11-26"
+      "pivot": 63310,
+      "s1": 62689,
+      "r1": 63662,
+      "s2": 62336,
+      "r2": 64284,
+      "date": "2026-11-27"
     }
   },
   "posture": {
-    "dma50": 23616,
-    "dma50_fmt": "23,616",
-    "pct_dma50": 9.61,
-    "dma200": 24004,
-    "dma200_fmt": "24,004",
-    "pct_dma200": 7.83,
+    "dma50": 23660,
+    "dma50_fmt": "23,660",
+    "pct_dma50": 8.23,
+    "dma200": 24003,
+    "dma200_fmt": "24,003",
+    "pct_dma200": 6.68,
     "high52": 26373,
     "high52_fmt": "26,373",
     "low52": 22180,
     "low52_fmt": "22,180",
-    "pct_from_high52": -1.85,
-    "pos_52w": 88.3,
+    "pct_from_high52": -2.9,
+    "pos_52w": 81.7,
     "regime": "STRUCTURAL UPTREND"
   },
   "sector_breadth": {
@@ -163,10 +163,10 @@
       "num": "03",
       "title": "Market posture & breadth",
       "bias": "Context",
-      "desc": "Nifty is 1.9% below 52W high (26,373), trading 7.8% above 200-DMA (24,004). Sector participation: 1/5 sectors in green (Top: Metal +1.40%)."
+      "desc": "Nifty is 2.9% below 52W high (26,373), trading 6.7% above 200-DMA (24,003). Sector participation: 1/5 sectors in green (Top: Metal +1.40%)."
     }
   ],
-  "trader_take": "Latest available Nifty quote: 25,607 (-1.07% versus previous close). Latest Nifty reading is below the 25,864 pivot. Next calculated resistance above this reading: 25,995. Pivots are calculated references, not confirmed support or resistance. Market regime: STRUCTURAL UPTREND (-1.9% from 52W peak, +7.8% vs 200-DMA). Sector breadth: 1/5 sectors in green.",
+  "trader_take": "Latest available Nifty quote: 25,607 (-1.07% versus previous close). Latest Nifty reading is below the 25,694 pivot. Next calculated resistance above this reading: 25,822. Pivots are calculated references, not confirmed support or resistance. Market regime: STRUCTURAL UPTREND (-2.9% from 52W peak, +6.7% vs 200-DMA). Sector breadth: 1/5 sectors in green.",
   "postmarket_pillars": {
     "commodities": {
       "brent": {
@@ -283,6 +283,18 @@
     },
     "earnings": [
       {
+        "title": "Consumer earnings growth to hinge on margin recovery; Titan, Marico top picks: Motilal Oswal",
+        "url": "https://www.cnbctv18.com/market/titan-marico-radico-khaitan-fmcg-it-stocks-tech-mahindra-coforge-persistent-mphasis-motilal-oswal-2-alpha-article-20042668.htm",
+        "companies": [
+          {
+            "name": "Titan",
+            "symbol": "titan"
+          }
+        ],
+        "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
+        "source": ""
+      },
+      {
         "title": "Zee Entertainment ₹600 crore buyback opens on December 1; what eligible shareholders need to know",
         "url": "https://www.livemint.com/market/stock-market-news/zee-entertainment-rs-600-crore-buyback-opens-on-december-1-what-eligible-shareholders-need-to-know-11795797877733.html",
         "companies": [],
@@ -293,18 +305,6 @@
         "title": "3rd earnings upgrade in 2 decades: Jefferies lists stocks to play the trend",
         "url": "https://www.business-standard.com/markets/news/3rd-earnings-upgrade-in-2-decades-jefferies-lists-stocks-to-play-the-trend-126112700535_1.html",
         "companies": [],
-        "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
-        "source": ""
-      },
-      {
-        "title": "Consumer earnings growth to hinge on margin recovery; Titan, Marico top picks: Motilal Oswal",
-        "url": "https://www.cnbctv18.com/market/titan-marico-radico-khaitan-fmcg-it-stocks-tech-mahindra-coforge-persistent-mphasis-motilal-oswal-2-alpha-article-20042668.htm",
-        "companies": [
-          {
-            "name": "Titan",
-            "symbol": "titan"
-          }
-        ],
         "why_it_matters": "Directly benchmarks valuation multiples against quarterly operational delivery and forward revenue guidance.",
         "source": ""
       }
